@@ -195,6 +195,8 @@ TAG.Artifact=11
 TAG.IntelligenceBonus=8
 TAG.ManaRegeneration=4
 TAG.SpellDamageIncrease=10
+TAG.RESFIRE=5
+TAG.RESCOLD=9
 TAG.ResPoison=20
 TAG.ResEnergy=20
 REQSTR=10
@@ -202,7 +204,7 @@ CATEGORY=Provisions - Artifacts - Doom Gauntlet
 SUBSECTION=Unique Artifacts
 DESCRIPTION=Hat of the Magi
 ON=@Create
-COLOR=0047e
+COLOR=0481
 HITPOINTS=255
 
 [ITEMDEF i_helm_insight]
@@ -454,7 +456,7 @@ ID=i_mask_bear
 NAME=Spirit of the Totem
 TEVENTS=t_iprop
 TAG.Artifact=11
-TAG.StrenghtBonus=20
+TAG.StrengthBonus=20
 TAG.ReflectPhysicalDamage=15
 TAG.HitChanceIncrease=15
 TAG.ResPhysical=20
@@ -568,6 +570,9 @@ TAG.NightSight=1
 TAG.ReflectPhysicalDamage=15
 TAG.ResPhysical=24
 TAG.ResFire=34
+TAG.RESCOLD 4
+TAG.RESPOISON 1
+TAG.RESENERGY 2
 REQSTR=60
 CATEGORY=Provisions - Artifacts - Doom Gauntlet
 SUBSECTION=Unique Artifacts

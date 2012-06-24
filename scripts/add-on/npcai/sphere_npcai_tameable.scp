@@ -22,36 +22,41 @@ endif
 
 [EVENTS e_PackMount]
 ON=@ContextMenuRequest
-if <memoryfindtype.memory_ipet.link> == <src.uid>
-src.AddContextEntry 201,6145
-endif
+IF <MEMORYFINDTYPE.MEMORY_IPET.LINK> == <SRC.UID>
+ SRC.ADDCONTEXTENTRY 201,6145
+ENDIF
 
 ON=@ContextMenuSelect
-if <argn1> == 201
-	if !<findlayer.21>
-	serv.newitem i_backpack
-	new.layer = 21
-	new.cont = <uid>
-	endif
-src.useitem <findlayer.21.uid>
-endif
+IF <ARGN1> == 201
+ IF !<FINDLAYER.21>
+  REF1 <NEW>
+  SERV.NEWITEM I_BACKPACK
+  REF2 <NEW>
+  NEW <REF1>
+  REF2.LAYER 21
+  REF2.CONT <UID>
+ ENDIF
+ SRC.USEITEM <FINDLAYER.21.UID>
+ENDIF
 
-//ON=@ReceiveItem
-//if <memoryfindtype.memory_ipet.link> == <src.uid>
-//	if <argo.isfood>
-//	return 0
-//	endif
-//	if <eval <argo.weight> + <weight>> < <maxweight>
-//		if !<findlayer.21>
-//		serv.newitem i_backpack
-//		new.layer = 21
-//		new.cont = <uid>
-//		endif
-//	argo.cont <findlayer.21.uid>
-//	return 1
-//	endif
-//endif
-
+ON=@RECEIVEITEM
+IF <MEMORYFINDTYPE.MEMORY_IPET.LINK> == <SRC.UID>
+ IF <ARGO.ISFOOD>
+  RETURN 0
+ ENDIF
+ IF <EVAL <ARGO.WEIGHT> + <WEIGHT>> < <MAXWEIGHT>
+  IF !<FINDLAYER.21>
+   REF1 <NEW>
+   SERV.NEWITEM I_BACKPACK
+   REF2 <NEW>
+   NEW <REF1>
+   REF2.LAYER 21
+   REF2.CONT <UID>
+  ENDIF
+  ARGO.CONT <FINDLAYER.21.UID>
+  RETURN 1
+ ENDIF
+ENDIF
 
 [FUNCTION f_UnSubdue]
 if <hits> > <eval <maxhits> / 10>

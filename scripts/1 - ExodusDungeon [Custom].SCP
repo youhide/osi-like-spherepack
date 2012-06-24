@@ -1,0 +1,307 @@
+[DEFNAME def_exodus_dung_settings]
+EXODUS_DUNG_QUESTER 01f04b
+
+[EVENTS e_exodusdung_monster]
+ON=@Click
+MESSAGE @04ec,3,1 [Exodus Dungeon Quest]
+
+ON=@Death
+IF (<ATTACKER>)
+REF590=<ATTACKER.MAX>
+IF (<REF590.FLAGS>&STATF_PET)
+REF590=<REF590.MEMORYFINDTYPE.memory_ipet.LINK>
+ENDIF
+IF (<UID.EXODUS_DUNG_QUESTER.TAG0.<REF590>>)
+IF !(<UID.EXODUS_DUNG_QUESTER.TAG0.<REF590>>&<TAG0.DUNG1>)
+TRY UID.EXODUS_DUNG_QUESTER.TAG.<REF590>=<HVAL <UID.EXODUS_DUNG_QUESTER.TAG0.<REF590>>|<TAG0.DUNG1>>
+LOCAL.NEW=<NEW>
+SERV.NEWITEM=I_EXODUSDUNG_ORB
+NEW.COLOR=<TAG0.DUNG3>
+NEW.MORE1=<TAG0.DUNG2>
+NEW.LINK=<REF590>
+NEW.ATTR=ATTR_NEWBIE
+REF590.BOUNCE <NEW>
+NEW=<LOCAL.NEW>
+ENDIF
+ENDIF
+ENDIF
+
+/////////////////////////////
+
+[TYPEDEF t_exodus_chao]
+ON=@Step
+IF !(<ARGN1>)
+	IF (<SRC.ISPLAYER>)
+		IF !(<SRC.ISGM>)
+			IF (<LINK.TAG0.<SRC>>==01ff)
+			SRC.GO 1978,113,-28,2
+			ELIF !(<LINK.TAG0.<SRC>>)
+			LINK.SDIALOG d_DUNGEXODUS_QUEST
+			ENDIF
+		ENDIF
+	ENDIF
+ENDIF
+
+////////////////////////////
+
+[TYPEDEF t_bauexodusdung]
+ON=@Dropon_Self
+IF (<ARGO.BASEID>!=I_EXODUSDUNG_ORB)
+RETURN 1
+ELIF (<ARGO.COLOR>!=<COLOR>)
+SRC.SYSMESSAGE @55 Wrong chest.
+RETURN 1
+ELIF (<ARGO.LINK>!=<SRC>)
+SRC.SYSMESSAGE @55 You didn't earn this stone.
+RETURN 1
+ELSE
+TRY LINK.TAG.<SRC>=<HVAL <LINK.TAG0.<SRC>>|<ARGO.MORE1>>
+ARGO.TIMERF 1,REMOVE
+SAY @<COLOR>,3,1 Well done, now go to the next step.
+RETURN 1
+ENDIF
+
+ON=@Click
+MESSAGE <NAME>
+RETURN 1
+
+[EVENTS e_guardiao_exodusdung]
+ON=@GetHit
+RETURN 1
+
+ON=@SpellEffect
+RETURN 1
+
+[ITEMDEF I_EXODUSDUNG_ORB]
+ID=i_virtstone_1
+TYPE=t_normal
+NAME=Exodus Dung Orb
+
+////////////////////
+
+[DIALOG d_DUNGEXODUS_QUEST]
+250,150
+src.closealldialogs
+
+PAGE 0
+resizepic 0 0 2600 380 310
+resizepic 40 30 2620 300 240
+checkertrans 40 30 300 240
+tilepic 190 170 8717
+tilepic 150 170 8743
+
+PAGE 1
+dhtmlgump 45 40 290 220 0 0 <DEF.BFONT_WHITE>The entrance to this dungeon is allowed only to those who deem worthy!
+button 290 272 4005 4006 1 0 1
+dtext 230 270 0ad Start
+
+PAGE 2
+dhtmlgump 45 40 290 220 0 0 <DEF.BFONT_WHITE>You must bring me 4 magical Spheres and put them inside their respective chests on the four altars located around the temple. To know where to find each sphere just put your mouse over the chests and the Guardian's name and location will be shown.<DEF.BR>Good luck!
+
+[DIALOG d_DUNGEXODUS_QUEST BUTTON]
+ON=1
+IF (<CANSEELOS>)
+DIALOG d_DUNGEXODUS_QUEST 2
+TRY TAG.<SRC>=01
+ELSE
+SAY @55 Come closer, I can't see you.
+ENDIF
+
+////////////////////////
+
+[CHARDEF c_blood_golem]
+ID=c_iron_golem
+DEFNAME=c_blood_golem
+NAME=Blood Golem
+DAM=60,62
+ARMOR=20
+RESDISPDNID=c_man
+RESLEVEL=2
+RESDISPDNHUE=33
+TEVENTS=e_exodusdung_monster
+TAG.DUNG1=02
+TAG.DUNG2=04
+TAG.DUNG3=021
+CATEGORY=Monsters
+SUBSECTION=Exodus Dungeon Quest
+DESCRIPTION=Blood Golem
+
+ON=@Create 
+NPC=brain_monster
+COLOR=33
+FAME=10000 
+KARMA=-10000
+STR=300
+MAXHITS=1000
+INT=490
+DEX=300 
+MAGICRESISTANCE={90.0 100.0}
+TACTICS=900
+WRESTLING=900
+ANATOMY=1000
+EVALUATINGINTEL=1000
+
+////////////////////////
+
+[CHARDEF c_wind_guardian]
+ID=c_elem_air
+DEFNAME=c_wind_guardian
+NAME=Wind Guardian
+ARMOR=50
+RESDISPDNID=c_man
+RESLEVEL=2
+RESDISPDNHUE=33
+MOVERATE=80
+DAM=40,55
+TEVENTS=e_exodusdung_monster
+TAG.DUNG1=08
+TAG.DUNG2=010
+TAG.DUNG3=058
+CATEGORY=Monsters
+SUBSECTION=Exodus Dungeon Quest
+DESCRIPTION=Wind Guardian
+
+ON=@Create 
+NPC=brain_monster
+COLOR=058
+FAME=10000
+KARMA=-10000
+STR=200
+MAXHITS=2000
+INT=500
+DEX=200 
+MAGICRESISTANCE={110.0 125.0}
+TACTICS=400
+WRESTLING=600
+MAGERY=1250
+ITEMNEWBIE=i_spellbook
+ADDCIRCLE=8,1
+
+////////////////////////
+
+[CHARDEF c_exodus_firedrag]
+ID=c_wyvern_mutant
+NAME=Fire Dragon
+ARMOR=75
+RESDISPDNID=c_dragon_red
+RESLEVEL=2
+RESDISPDNHUE=33
+MOVERATE=60
+DAM=80,120
+TEVENTS=e_exodusdung_monster
+TAG.DUNG1=020
+TAG.DUNG2=040
+TAG.DUNG3=032
+CATEGORY=Monsters
+SUBSECTION=Exodus Dungeon Quest
+DESCRIPTION=Fire Dragon
+
+ON=@Create 
+NPC=brain_monster
+COLOR=032
+FAME=10000
+KARMA=-10000
+STR=500
+MAXHITS=5000
+INT=300
+DEX=300 
+MAGICRESISTANCE={80.0 90.0}
+TACTICS=800
+WRESTLING=1000
+MAGERY=700
+ITEMNEWBIE=i_spellbook
+ADDCIRCLE=8,1
+
+////////////////////////
+
+[CHARDEF c_iron_master]
+ID=c_iron_golem
+DEFNAME=c_iron_master
+NAME=Iron Master
+ARMOR=60
+RESDISPDNID=c_man
+RESLEVEL=2
+RESDISPDNHUE=03e1
+DAM=40,70
+TEVENTS=e_exodusdung_monster
+TAG.DUNG1=080
+TAG.DUNG2=0100
+TAG.DUNG3=03e1
+CATEGORY=Monsters
+SUBSECTION=Exodus Dungeon Quest
+DESCRIPTION=Iron Master
+
+ON=@Create 
+NPC=brain_monster
+COLOR=03e1
+FAME=10000
+KARMA=-10000
+STR=650
+MAXHITS=1500
+INT=200
+DEX=60 
+MAGICRESISTANCE={90.0 100.0}
+TACTICS=800
+WRESTLING=1000
+
+////////////////////////
+
+[CHARDEF c_exodus_master]
+ID=c_exodus_minionlord
+DEFNAME=c_exodus_master
+NAME=Exodus Master
+ARMOR=75
+DAM=135,160
+RESDISPDNID=c_man
+RESLEVEL=2
+RESDISPDNHUE=03e1
+CATEGORY=Monsters
+SUBSECTION=Exodus Dungeon Quest
+DESCRIPTION=Exodus Master
+
+ON=@Create 
+NPC=brain_monster
+COLOR=03e1
+FAME=10000
+KARMA=-10000
+STR={550 650}
+MAXHITS=18000
+INT=300
+DEX=300 
+MAGICRESISTANCE=150.0
+TACTICS=120.0
+WRESTLING=130.0
+ANATOMY=900
+EVALUATINGINTEL=1000
+
+ON=@NpcRestock
+ITEM=i_gold,{3000 4000}
+ITEM=i_power_scroll,1,R4
+ITEM=i_sea_mapa_tesouro
+
+ON=@Death
+FOR <R2,4>
+RANDMAGICITEMGREAT
+ENDFOR
+
+ON=@Hit
+IF (!(<R35>))
+LOCAL.OLDNEW=<NEW>
+SERV.NEWNPC C_EXODUS_OVERSEER
+NEW.REMOVETIMER=<EVAL 60*20>
+NEW.ATTACK <SRC>
+NEW.KARMA=-8000
+NEW=<LOCAL.OLDNEW>
+ENDIF
+
+ON=@GetHit
+IF (!(<R35>))
+LOCAL.OLDNEW=<NEW>
+SERV.NEWNPC C_EXODUS_OVERSEER
+NEW.REMOVETIMER=<EVAL 60*20>
+NEW.ATTACK <SRC>
+NEW.KARMA=-8000
+NEW=<LOCAL.OLDNEW>
+ENDIF
+
+[EOF]

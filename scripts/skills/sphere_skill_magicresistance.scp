@@ -28,7 +28,7 @@ STAT_DEX=40
 BONUS_STR=0
 BONUS_DEX=0
 BONUS_INT=100
-BONUS_STATS=50
+BONUS_STATS=0
 ADV_RATE=10.0,200.0,800.0
 
 [function spellcircle] //argn1=spell number

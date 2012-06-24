@@ -137,7 +137,7 @@ ON=@Create
    RESPOISON={10 20}
 ON=@NPCRestock
    ITEM=loot_ratman
-   ITEM={ random_weapon_sword_normal 299 i_sword_ratman 1 }
+   //ITEM={ random_weapon_sword_normal 299 i_sword_ratman 1 }
    //50 - 100 Gold.
 
 [CHARDEF 08e]

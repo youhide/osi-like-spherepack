@@ -43,17 +43,110 @@ VERSION=0.56b
 // scp.ItemProp_CraftingBonus - Not Done
 // scp.ItemProp_CraftingExceptionalBonus - Not Done
 
-[typedef t_iprop]
-on=@damage
+[TYPEDEF T_IPROP]
+
+///////////////////////////////////////////////////////// @DAMAGE
+
+ON=@DAMAGE
 // Self Repair, auto repairs the weapon for its intensity
 // SR 1 would add one point, SR 5 would add 5, and so...
-if <def.scp.ItemProp_SelfRepair>
-	if <tag0.selfrepair>
-	more1l += <tag0.selfrepair>
-	endif
-endif
+IF <DEF.SCP.ITEMPROP_SELFREPAIR>
+ IF <TAG0.SELFREPAIR>
+  IF <FLOATVAL 0.<dTAG.SELFREPAIR>> > <RANDOMDOUBLE>
+   IF <MORE1L> < <MORE1H>
+    MORE1L += 1
+   ENDIF
+  ENDIF
+ ENDIF
+ENDIF
+
+///////////////////////////////////////////////////////// @DCLICK
+
+ON=@DCLICK
+RESENDTOOLTIP 1
+
+///////////////////////////////////////////////////////// @EQUIPTEST
+
+ON=@EQUIPTEST
+IF <TAG0.LOWERREQUIREMENTS>
+ LOCAL.REQSTR <EVAL <REQSTR> - ((<REQSTR>*<TAG0.LOWERREQUIREMENTS>)/100)>
+ IF ( <SRC.STR> > <dLOCAL.REQSTR> ) && ( <SRC.STR> < <REQSTR> )
+  LOCAL.MODSTR <EVAL <REQSTR>-<SRC.STR>>
+  SRC.MODSTR += <dLOCAL.MODSTR>
+  SRC.TIMERF 0, SRC.MODSTR -= <dLOCAL.MODSTR>
+ ENDIF
+ENDIF
+IF <TAG0.ITEM.ELVEN>
+ IF !<SRC.ISELVEN> && !<SRC.ISGM>
+  SRC.SYSMESSAGE @,,1 Only elfs can wear it.
+  RETURN 1
+ ENDIF
+ENDIF
+IF <TAG0.ITEM.GARGOYLE>
+ IF !<SRC.ISGARGOYLE>
+  SRC.SYSMESSAGE @,,1 Only gargoyles can wear it.
+  RETURN 1
+ ENDIF
+ENDIF
+IF <TAG0.ITEM.FEMALE>
+ IF !<SRC.ISFEMALE> && !<SRC.ISGM>
+  SRC.SYSMESSAGE @,,1 Only females can wear it.
+  RETURN 1
+ ENDIF
+ENDIF
+
+///////////////////////////////////////////////////////// @EQUIP
 
 on=@equip
+IF (<TAG0.USEBESTWEAPONSKILL>)
+ IF (<SRC.SWORDSMANSHIP> > <SRC.FENCING>) && (<SRC.SWORDSMANSHIP> > <SRC.MACEFIGHTING>)
+  TAG.OVERRIDE.SKILL=41
+ ELIF (<SRC.FENCING> > <SRC.SWORDSMANSHIP>) && (<SRC.FENCING> > <SRC.MACEFIGHTING>)
+  TAG.OVERRIDE.SKILL=43
+ ELIF (<SRC.MACEFIGHTING> > <SRC.SWORDSMANSHIP>) && (<SRC.MACEFIGHTING> > <SRC.FENCING>)
+  TAG.OVERRIDE.SKILL=42
+ ENDIF
+ENDIF
+if <tag0.HitPhysicalArea>
+	if <def.scp.ItemProp_HitPhysicalArea> == 1
+	src.tag0.HitPhysicalArea += <tag0.HitPhysicalArea>
+	endif
+endif
+if <tag0.HitFireArea>
+	if <def.scp.ItemProp_HitFireArea> == 1
+	src.tag0.HitFireArea += <tag0.HitFireArea>
+	endif
+endif
+if <tag0.HitColdArea>
+	if <def.scp.ItemProp_HitColdArea> == 1
+	src.tag0.HitColdArea += <tag0.HitColdArea>
+	endif
+endif
+if <tag0.HitPoisonArea>
+	if <def.scp.ItemProp_HitPoisonArea> == 1
+	src.tag0.HitPoisonArea += <tag0.HitPoisonArea>
+	endif
+endif
+if <tag0.HitEnergyArea>
+	if <def.scp.ItemProp_HitEnergyArea> == 1
+	src.tag0.HitEnergyArea += <tag0.HitEnergyArea>
+	endif
+endif
+if <tag0.SwingSpeedIncrease>
+	if <def.scp.ItemProp_SwingSpeedIncrease> == 1
+	src.tag0.SwingSpeedIncrease += <TAG0.SwingSpeedIncrease>
+	endif
+endif
+if <tag0.HitLowerAttack>
+	if <def.scp.ItemProp_HitLowerAttack> == 1
+	src.tag0.HitLowerAttack += <TAG0.HitLowerAttack>
+	endif
+endif
+if <tag0.HitLowerDefense>
+	if <def.scp.ItemProp_HitLowerDefense> == 1
+	src.tag0.HitLowerDefense += <tag0.HitLowerDefense>
+	endif
+endif
 if <tag0.DamageIncrease>
 	if <def.scp.ItemProp_DamageIncrease> == 1
 	src.tag0.DamageIncrease += <tag0.DamageIncrease>
@@ -64,9 +157,9 @@ if <tag0.DefenseChanceIncrease>
 	src.tag0.DefenseChanceIncrease += <tag0.DefenseChanceIncrease>
 	endif
 endif
-if <tag0.DexterityBonus>
-	if <def.scp.ItemProp_DexterityBonus> == 1
-	src.ModDex += <tag0.DexterityBonus>
+if <tag0.HitChanceIncrease>
+	if <def.scp.ItemProp_HitChanceIncrease> == 1
+	src.tag0.HitChanceIncrease += <tag0.HitChanceIncrease>
 	endif
 endif
 if <tag0.FasterCastRecovery>
@@ -79,14 +172,49 @@ if <tag0.FasterCasting>
 	src.tag0.FasterCasting += <tag0.FasterCasting>
 	endif
 endif
-if <tag0.HitChanceIncrease>
-	if <def.scp.ItemProp_HitChanceIncrease> == 1
-	src.tag0.HitChanceIncrease += <tag0.HitChanceIncrease>
-	endif
-endif
 if <tag0.HitLifeLeech>
 	if <def.scp.ItemProp_HitLifeLeech> == 1
 	src.tag0.HitLifeLeech += <tag0.HitLifeLeech>
+	endif
+endif
+if <tag0.HitManaLeech>
+	if <def.scp.ItemProp_HitManaLeech> == 1
+	src.tag0.HitManaLeech += <tag0.HitManaLeech>
+	endif
+endif
+if <tag0.HitStaminaLeech>
+	if <def.scp.ItemProp_HitStaminaLeech> == 1
+	src.tag0.HitStaminaLeech += <tag0.HitStaminaLeech>
+	endif
+endif
+if <tag0.StrengthBonus>
+	if <def.scp.ItemProp_StrengthBonus> == 1
+	src.ModStr += <tag0.StrengthBonus>
+	endif
+endif
+if <tag0.DexterityBonus>
+	if <def.scp.ItemProp_DexterityBonus> == 1
+	src.ModDex += <tag0.DexterityBonus>
+	endif
+endif
+if <tag0.IntelligenceBonus>
+	if <def.scp.ItemProp_IntelligenceBonus> == 1
+	src.ModInt += <tag0.IntelligenceBonus>
+	endif
+endif
+if <tag0.HitPointRegeneration>
+	if <def.scp.ItemProp_HitPointRegeneration> == 1
+	src.tag0.HitPointRegeneration += <tag0.HitPointRegeneration>
+	endif
+endif
+if <tag0.ManaRegeneration>
+	if <def.scp.ItemProp_ManaRegeneration> == 1
+	src.tag0.ManaRegeneration += <tag0.ManaRegeneration>
+	endif
+endif
+if <tag0.StaminaRegeneration>
+	if <def.scp.ItemProp_StaminaRegeneration> == 1
+	src.tag0.StaminaRegeneration += <tag0.StaminaRegeneration>
 	endif
 endif
 if <tag0.HitPointIncrease>
@@ -94,9 +222,14 @@ if <tag0.HitPointIncrease>
 	src.tag0.HitPointIncrease += <tag0.HitpointIncrease>
 	endif
 endif
-if <tag0.IntelligenceBonus>
-	if <def.scp.ItemProp_IntelligenceBonus> == 1
-	src.ModInt += <tag0.IntelligenceBonus>
+if <tag0.ManaIncrease>
+	if <def.scp.ItemProp_ManaIncrease> == 1
+	src.tag0.ManaIncrease += <tag0.ManaIncrease>
+	endif
+endif
+if <tag0.StaminaIncrease>
+	if <def.scp.ItemProp_StaminaIncrease> == 1
+	src.tag0.StaminaIncrease += <tag0.StaminaIncrease>
 	endif
 endif
 if <tag0.LowerManaCost>
@@ -114,44 +247,15 @@ if <tag0.Luck>
 	src.Luck += <tag0.Luck>
 	endif
 endif
-if <tag0.ManaIncrease>
-	if <def.scp.ItemProp_ManaIncrease> == 1
-	src.tag0.ManaIncrease += <tag0.ManaIncrease>
-	endif
-endif
-if <tag0.ManaRegeneration>
-	if <def.scp.ItemProp_ManaRegeneration> == 1
-	src.tag0.ManaRegeneration += <tag0.ManaRegeneration>
-	endif
-endif
 if <tag0.ReflectPhysicalDamage>
 	if <def.scp.ItemProp_ReflectPhysicalDamage> == 1
 	src.tag0.ReflectPhysicalDamage += <tag0.ReflectPhysicalDamage>
 	endif
 endif
-if <tag0.HitPointRegeneration>
-	if <def.scp.ItemProp_HitPointRegeneration> == 1
-	src.tag0.HitPointRegeneration += <tag0.HitPointRegeneration>
-	endif
-endif
+
 if <tag0.SpellDamageIncrease>
 	if <def.scp.ItemProp_SpellDamageIncrease> == 1
 	src.tag0.SpellDamageIncrease += <tag0.SpellDamageIncrease>
-	endif
-endif
-if <tag0.StaminaIncrease>
-	if <def.scp.ItemProp_StaminaIncrease> == 1
-	src.tag0.StaminaIncrease += <tag0.StaminaIncrease>
-	endif
-endif
-if <tag0.StaminaRegeneration>
-	if <def.scp.ItemProp_StaminaRegeneration> == 1
-	src.tag0.StaminaRegeneration += <tag0.StaminaRegeneration>
-	endif
-endif
-if <tag0.StrengthBonus>
-	if <def.scp.ItemProp_StrengthBonus> == 1
-	src.ModStr += <tag0.StrengthBonus>
 	endif
 endif
 if <tag0.NightSight>
@@ -185,18 +289,75 @@ if <tag0.HitMagicArrow>
 	src.tag0.HitMagicArrow += <tag0.HitMagicArrow>
 	endif
 endif
-if <tag0.HitManaLeech>
-	if <def.scp.ItemProp_HitManaLeech> == 1
-	src.tag0.HitManaLeech += <tag0.HitManaLeech>
-	endif
-endif
-if <tag0.HitStaminaLeech>
-	if <def.scp.ItemProp_HitStaminaLeech> == 1
-	src.tag0.HitStaminaLeech += <tag0.HitStaminaLeech>
-	endif
-endif
 
-on=@unequip
+IF <TAG0.RESPHYSICAL>
+ SRC.MODAR += <TAG0.RESPHYSICAL>
+ENDIF
+IF <TAG0.RESFIRE>
+ SRC.RESFIRE += <TAG0.RESFIRE>
+ENDIF
+IF <TAG0.RESCOLD>
+ SRC.RESCOLD += <TAG0.RESCOLD>
+ENDIF
+IF <TAG0.RESPOISON>
+ SRC.RESPOISON += <TAG0.RESPOISON>
+ENDIF
+IF <TAG0.RESENERGY>
+ SRC.RESENERGY += <TAG0.RESENERGY>
+ENDIF
+
+FOR 1 3
+ IF (<TAG0.SKILL.BONUS.<dLOCAL._FOR>>)
+  LOCAL.SKILL <GETARGVX 1,<TAG0.SKILL.BONUS.<dLOCAL._FOR>>>
+  LOCAL.VALUE <GETARGVX 2,<TAG0.SKILL.BONUS.<dLOCAL._FOR>>>
+  SRC.<LOCAL.SKILL> += <EVAL (<LOCAL.VALUE>)*10>
+ ENDIF
+ENDFOR
+
+///////////////////////////////////////////////////////// @UNEQUIP
+
+ON=@UNEQUIP
+
+if <tag0.HitPhysicalArea>
+	if <def.scp.ItemProp_HitPhysicalArea> == 1
+	src.tag0.HitPhysicalArea -= <tag0.HitPhysicalArea>
+	endif
+endif
+if <tag0.HitFireArea>
+	if <def.scp.ItemProp_HitFireArea> == 1
+	src.tag0.HitFireArea -= <tag0.HitFireArea>
+	endif
+endif
+if <tag0.HitColdArea>
+	if <def.scp.ItemProp_HitColdArea> == 1
+	src.tag0.HitColdArea -= <tag0.HitColdArea>
+	endif
+endif
+if <tag0.HitPoisonArea>
+	if <def.scp.ItemProp_HitPoisonArea> == 1
+	src.tag0.HitPoisonArea -= <tag0.HitPoisonArea>
+	endif
+endif
+if <tag0.HitEnergyArea>
+	if <def.scp.ItemProp_HitEnergyArea> == 1
+	src.tag0.HitEnergyArea -= <tag0.HitEnergyArea>
+	endif
+endif
+if <tag0.SwingSpeedIncrease>
+	if <def.scp.ItemProp_SwingSpeedIncrease> == 1
+	src.tag0.SwingSpeedIncrease -= <TAG0.SwingSpeedIncrease>
+	endif
+endif
+if <tag0.HitLowerAttack>
+	if <def.scp.ItemProp_HitLowerAttack> == 1
+	src.tag0.HitLowerAttack -= <TAG0.HitLowerAttack>
+	endif
+endif
+if <tag0.HitLowerDefense>
+	if <def.scp.ItemProp_HitLowerDefense> == 1
+	src.tag0.HitLowerDefense -= <tag0.HitLowerDefense>
+	endif
+endif
 if <tag0.DamageIncrease>
 	if <def.scp.ItemProp_DamageIncrease> == 1
 	src.tag0.DamageIncrease -= <tag0.DamageIncrease>
@@ -207,9 +368,9 @@ if <tag0.DefenseChanceIncrease>
 	src.tag0.DefenseChanceIncrease -= <tag0.DefenseChanceIncrease>
 	endif
 endif
-if <tag0.DexterityBonus>
-	if <def.scp.ItemProp_DexterityBonus> == 1
-	src.ModDex -= <tag0.DexterityBonus>
+if <tag0.HitChanceIncrease>
+	if <def.scp.ItemProp_HitChanceIncrease> == 1
+	src.tag0.HitChanceIncrease -= <tag0.HitChanceIncrease>
 	endif
 endif
 if <tag0.FasterCastRecovery>
@@ -222,14 +383,49 @@ if <tag0.FasterCasting>
 	src.tag0.FasterCasting -= <tag0.FasterCasting>
 	endif
 endif
-if <tag0.HitChanceIncrease>
-	if <def.scp.ItemProp_HitChanceIncrease> == 1
-	src.tag0.HitChanceIncrease -= <tag0.HitChanceIncrease>
-	endif
-endif
 if <tag0.HitLifeLeech>
 	if <def.scp.ItemProp_HitLifeLeech> == 1
 	src.tag0.HitLifeLeech -= <tag0.HitLifeLeech>
+	endif
+endif
+if <tag0.HitManaLeech>
+	if <def.scp.ItemProp_HitManaLeech> == 1
+	src.tag0.HitManaLeech -= <tag0.HitManaLeech>
+	endif
+endif
+if <tag0.HitStaminaLeech>
+	if <def.scp.ItemProp_HitStaminaLeech> == 1
+	src.tag0.HitStaminaLeech -= <tag0.HitStaminaLeech>
+	endif
+endif
+if <tag0.StrengthBonus>
+	if <def.scp.ItemProp_StrengthBonus> == 1
+	src.ModStr -= <tag0.StrengthBonus>
+	endif
+endif
+if <tag0.DexterityBonus>
+	if <def.scp.ItemProp_DexterityBonus> == 1
+	src.ModDex -= <tag0.DexterityBonus>
+	endif
+endif
+if <tag0.IntelligenceBonus>
+	if <def.scp.ItemProp_IntelligenceBonus> == 1
+	src.ModInt -= <tag0.IntelligenceBonus>
+	endif
+endif
+if <tag0.HitPointRegeneration>
+	if <def.scp.ItemProp_HitPointRegeneration> == 1
+	src.tag0.HitPointRegeneration -= <tag0.HitPointRegeneration>
+	endif
+endif
+if <tag0.ManaRegeneration>
+	if <def.scp.ItemProp_ManaRegeneration> == 1
+	src.tag0.ManaRegeneration -= <tag0.ManaRegeneration>
+	endif
+endif
+if <tag0.StaminaRegeneration>
+	if <def.scp.ItemProp_StaminaRegeneration> == 1
+	src.tag0.StaminaRegeneration -= <tag0.StaminaRegeneration>
 	endif
 endif
 if <tag0.HitPointIncrease>
@@ -237,9 +433,14 @@ if <tag0.HitPointIncrease>
 	src.tag0.HitPointIncrease -= <tag0.HitpointIncrease>
 	endif
 endif
-if <tag0.IntelligenceBonus>
-	if <def.scp.ItemProp_IntelligenceBonus> == 1
-	src.ModInt -= <tag0.IntelligenceBonus>
+if <tag0.ManaIncrease>
+	if <def.scp.ItemProp_ManaIncrease> == 1
+	src.tag0.ManaIncrease -= <tag0.ManaIncrease>
+	endif
+endif
+if <tag0.StaminaIncrease>
+	if <def.scp.ItemProp_StaminaIncrease> == 1
+	src.tag0.StaminaIncrease -= <tag0.StaminaIncrease>
 	endif
 endif
 if <tag0.LowerManaCost>
@@ -254,17 +455,10 @@ if <tag0.LowerReagentCost>
 endif
 if <tag0.Luck>
 	if <def.scp.ItemProp_Luck> == 1
-	src.Luck -= <tag0.Luck>
-	endif
-endif
-if <tag0.ManaIncrease>
-	if <def.scp.ItemProp_ManaIncrease> == 1
-	src.tag0.ManaIncrease -= <tag0.ManaIncrease>
-	endif
-endif
-if <tag0.ManaRegeneration>
-	if <def.scp.ItemProp_ManaRegeneration> == 1
-	src.tag0.ManaRegeneration -= <tag0.ManaRegeneration>
+ 	 SRC.LUCK -= <TAG0.LUCK>
+ 	 IF <SRC.LUCK> < 0
+ 	  SRC.LUCK 0
+ 	 ENDIF
 	endif
 endif
 if <tag0.ReflectPhysicalDamage>
@@ -272,24 +466,10 @@ if <tag0.ReflectPhysicalDamage>
 	src.tag0.ReflectPhysicalDamage -= <tag0.ReflectPhysicalDamage>
 	endif
 endif
-if <tag0.HitPointRegeneration>
-	if <def.scp.ItemProp_HitPointRegeneration> == 1
-	src.tag0.HitPointRegeneration -= <tag0.HitPointRegeneration>
-	endif
-endif
+
 if <tag0.SpellDamageIncrease>
 	if <def.scp.ItemProp_SpellDamageIncrease> == 1
 	src.tag0.SpellDamageIncrease -= <tag0.SpellDamageIncrease>
-	endif
-endif
-if <tag0.StaminaIncrease>
-	if <def.scp.ItemProp_StaminaIncrease> == 1
-	src.tag0.StaminaIncrease -= <tag0.StaminaIncrease>
-	endif
-endif
-if <tag0.StrengthBonus>
-	if <def.scp.ItemProp_StrengthBonus> == 1
-	src.ModStr -= <tag0.StrengthBonus>
 	endif
 endif
 // NightSight requires a "special" code. It may be used by several layers.
@@ -329,5 +509,30 @@ if <tag0.HitMagicArrow>
 	endif
 endif
 
+tag.override.skill
+
+IF <TAG0.RESPHYSICAL>
+ SRC.MODAR -= <TAG0.RESPHYSICAL>
+ENDIF
+IF <TAG0.RESFIRE>
+ SRC.RESFIRE -= <TAG0.RESFIRE>
+ENDIF
+IF <TAG0.RESCOLD>
+ SRC.RESCOLD -= <TAG0.RESCOLD>
+ENDIF
+IF <TAG0.RESPOISON>
+ SRC.RESPOISON -= <TAG0.RESPOISON>
+ENDIF
+IF <TAG0.RESENERGY>
+ SRC.RESENERGY -= <TAG0.RESENERGY>
+ENDIF
+
+FOR 1 3
+ IF (<TAG0.SKILL.BONUS.<dLOCAL._FOR>>)
+  LOCAL.SKILL <GETARGVX 1,<TAG0.SKILL.BONUS.<dLOCAL._FOR>>>
+  LOCAL.VALUE <GETARGVX 2,<TAG0.SKILL.BONUS.<dLOCAL._FOR>>>
+  SRC.<LOCAL.SKILL> -= <EVAL (<LOCAL.VALUE>)*10>
+ ENDIF
+ENDFOR
 
 [eof]

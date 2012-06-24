@@ -19,5 +19,13 @@ if <argn1>
    endif
 endif
 
+ON=@TargOn_Item
+IF (<ARGO.CanSeeLos>) && (<ARGO.BASEID> == i_unholy_bone)
+ARGO.TAG0.LEVEL --
+	IF (!(<ARGO.TAG0.LEVEL>))
+	ARGO.REMOVE
+	ENDIF
+Return 1
+ENDIF
 
 [eof]

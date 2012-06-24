@@ -1,0 +1,554 @@
+[ITEMDEF i_multi_farm33]
+NAME=Farm 3x3
+ID=i_gold
+TYPE=t_multi
+VALUE=5000
+CATEGORY=Multis
+SUBSECTION=Novos
+DESCRIPTION=Farm 3x3
+MULTIREGION=0,1,0,0
+COMPONENT=088b -2 0 0 0
+COMPONENT=088b -2 1 0 0
+COMPONENT=088b -2 2 0 0
+COMPONENT=088b 1 2 0 0
+COMPONENT=088b 1 1 0 0
+COMPONENT=088b 1 0 0 0
+COMPONENT=i_fence_wood_2 -1 -1 0 0
+COMPONENT=i_fence_wood_2 0 -1 0 0
+COMPONENT=i_fence_wood_2 1 -1 0 0
+COMPONENT=i_fence_wood_2 -1 2 0 0
+COMPONENT=i_fence_wood_2 1 2 0 0
+COMPONENT=031f7 -1 0 0 0
+COMPONENT=031f7 0 0 0 0
+COMPONENT=031f7 1 0 0 0
+COMPONENT=031f7 -1 1 0 0
+COMPONENT=031f7 -1 2 0 0
+COMPONENT=031f7 0 1 0 0
+COMPONENT=031f7 0 2 0 0
+COMPONENT=031f7 1 1 0 0
+COMPONENT=031f7 1 2 0 0
+COMPONENT=i_gate_wood_3 0 2 0 0
+COMPONENT=0bcf -1 3 0 0
+
+ON=@create
+attr=attr_move_never
+SRC.ACCOUNT.TAG0.JATENHOFARMS ++
+fix
+
+on=@click
+if (<src.isgm>)
+message @0481 <uid.<more1>.name> (<more1>)
+else
+return 1
+endif
+
+///////////////////////
+
+[ITEMDEF i_multi_farm55]
+NAME=Farm 5x5
+ID=i_gold
+TYPE=t_multi
+VALUE=15000
+CATEGORY=Multis
+SUBSECTION=Novos
+DESCRIPTION=Farm 5x5
+MULTIREGION=0,0,0,0
+COMPONENT=088b -2 3 0 0
+COMPONENT=088b -2 4 0 0
+COMPONENT=088b -2 0 0 0
+COMPONENT=088b -2 1 0 0
+COMPONENT=088b -2 2 0 0
+COMPONENT=088b 3 3 0 0
+COMPONENT=088b 3 4 0 0
+COMPONENT=088b 3 0 0 0
+COMPONENT=088b 3 1 0 0
+COMPONENT=088b 3 2 0 0
+COMPONENT=i_fence_wood_2 -1 -1 0 0
+COMPONENT=i_fence_wood_2 0 -1 0 0
+COMPONENT=i_fence_wood_2 1 -1 0 0
+COMPONENT=i_fence_wood_2 2 -1 0 0
+COMPONENT=i_fence_wood_2 3 -1 0 0
+COMPONENT=i_fence_wood_2 -1 4 0 0
+COMPONENT=i_fence_wood_2 2 4 0 0
+COMPONENT=i_fence_wood_2 3 4 0 0
+COMPONENT=i_fence_wood_2 0 4 0 0
+COMPONENT=031f7 -1 0 0 0
+COMPONENT=031f7 0 0 0 0
+COMPONENT=031f7 1 0 0 0
+COMPONENT=031f7 2 0 0 0
+COMPONENT=031f7 3 0 0 0
+COMPONENT=031f7 -1 1 0 0
+COMPONENT=031f7 -1 2 0 0
+COMPONENT=031f7 -1 3 0 0
+COMPONENT=031f7 -1 4 0 0
+COMPONENT=031f7 0 1 0 0
+COMPONENT=031f7 0 2 0 0
+COMPONENT=031f7 0 3 0 0
+COMPONENT=031f7 0 4 0 0
+COMPONENT=031f7 1 1 0 0
+COMPONENT=031f7 1 2 0 0
+COMPONENT=031f7 1 3 0 0
+COMPONENT=031f7 1 4 0 0
+COMPONENT=031f7 2 1 0 0
+COMPONENT=031f7 2 2 0 0
+COMPONENT=031f7 2 3 0 0
+COMPONENT=031f7 2 4 0 0
+COMPONENT=031f7 3 1 0 0
+COMPONENT=031f7 3 2 0 0
+COMPONENT=031f7 3 3 0 0
+COMPONENT=031f7 3 4 0 0
+COMPONENT=i_gate_wood_3 1 4 0 0
+COMPONENT=0bcf -1 5 0 0
+
+ON=@create
+attr=attr_move_never
+SRC.ACCOUNT.TAG0.JATENHOFARMS ++
+fix
+
+on=@click
+if (<src.isgm>)
+message @0481 <uid.<more1>.name> (<more1>)
+else
+return 1
+endif
+
+///////////////////////
+
+[ITEMDEF i_multi_farm77]
+NAME=Farm 7x7
+ID=i_gold
+TYPE=t_multi
+VALUE=33000
+CATEGORY=Multis
+SUBSECTION=Novos
+DESCRIPTION=Farm 7x7
+MULTIREGION=0,0,0,0
+COMPONENT=088b -2 3 0 0
+COMPONENT=088b -2 4 0 0
+COMPONENT=088b -2 5 0 0
+COMPONENT=088b -2 6 0 0
+COMPONENT=088b -2 0 0 0
+COMPONENT=088b -2 1 0 0
+COMPONENT=088b -2 2 0 0
+COMPONENT=088b 5 3 0 0
+COMPONENT=088b 5 4 0 0
+COMPONENT=088b 5 5 0 0
+COMPONENT=088b 5 6 0 0
+COMPONENT=088b 5 0 0 0
+COMPONENT=088b 5 1 0 0
+COMPONENT=088b 5 2 0 0
+COMPONENT=i_fence_wood_2 -1 -1 0 0
+COMPONENT=i_fence_wood_2 0 -1 0 0
+COMPONENT=i_fence_wood_2 1 -1 0 0
+COMPONENT=i_fence_wood_2 2 -1 0 0
+COMPONENT=i_fence_wood_2 3 -1 0 0
+COMPONENT=i_fence_wood_2 4 -1 0 0
+COMPONENT=i_fence_wood_2 5 -1 0 0
+COMPONENT=i_fence_wood_2 -1 6 0 0
+COMPONENT=i_fence_wood_2 1 6 0 0
+COMPONENT=i_fence_wood_2 3 6 0 0
+COMPONENT=i_fence_wood_2 4 6 0 0
+COMPONENT=i_fence_wood_2 5 6 0 0
+COMPONENT=i_fence_wood_2 0 6 0 0
+COMPONENT=031f7 -1 0 0 0
+COMPONENT=031f7 0 0 0 0
+COMPONENT=031f7 1 0 0 0
+COMPONENT=031f7 2 0 0 0
+COMPONENT=031f7 3 0 0 0
+COMPONENT=031f7 4 0 0 0
+COMPONENT=031f7 5 0 0 0
+COMPONENT=031f7 -1 1 0 0
+COMPONENT=031f7 -1 2 0 0
+COMPONENT=031f7 -1 3 0 0
+COMPONENT=031f7 -1 4 0 0
+COMPONENT=031f7 -1 5 0 0
+COMPONENT=031f7 -1 6 0 0
+COMPONENT=031f7 0 1 0 0
+COMPONENT=031f7 0 2 0 0
+COMPONENT=031f7 0 3 0 0
+COMPONENT=031f7 0 4 0 0
+COMPONENT=031f7 0 5 0 0
+COMPONENT=031f7 0 6 0 0
+COMPONENT=031f7 1 1 0 0
+COMPONENT=031f7 1 2 0 0
+COMPONENT=031f7 1 3 0 0
+COMPONENT=031f7 1 4 0 0
+COMPONENT=031f7 1 5 0 0
+COMPONENT=031f7 1 6 0 0
+COMPONENT=031f7 2 1 0 0
+COMPONENT=031f7 2 2 0 0
+COMPONENT=031f7 2 3 0 0
+COMPONENT=031f7 2 4 0 0
+COMPONENT=031f7 2 5 0 0
+COMPONENT=031f7 2 6 0 0
+COMPONENT=031f7 3 1 0 0
+COMPONENT=031f7 3 2 0 0
+COMPONENT=031f7 3 3 0 0
+COMPONENT=031f7 3 4 0 0
+COMPONENT=031f7 3 5 0 0
+COMPONENT=031f7 3 6 0 0
+COMPONENT=031f7 4 1 0 0
+COMPONENT=031f7 4 2 0 0
+COMPONENT=031f7 4 3 0 0
+COMPONENT=031f7 4 4 0 0
+COMPONENT=031f7 4 5 0 0
+COMPONENT=031f7 4 6 0 0
+COMPONENT=031f7 5 1 0 0
+COMPONENT=031f7 5 2 0 0
+COMPONENT=031f7 5 3 0 0
+COMPONENT=031f7 5 4 0 0
+COMPONENT=031f7 5 5 0 0
+COMPONENT=031f7 5 6 0 0
+COMPONENT=i_gate_wood_3 2 6 0 0
+COMPONENT=0bcf -1 7 0 0
+
+ON=@create
+attr=attr_move_never
+SRC.ACCOUNT.TAG0.JATENHOFARMS ++
+fix
+
+on=@click
+if (<src.isgm>)
+message @0481 <uid.<more1>.name> (<more1>)
+else
+return 1
+endif
+
+/////////////////////////////////
+
+[ITEMDEF i_deed_farm33]
+NAME=Deed para Farm 3x3
+ID=i_deed
+RESOURCES=i_deed,i_multi_farm33
+VALUE=5000
+
+CATEGORY=Provisions - Deeds
+SUBSECTION=Farm Deeds
+DESCRIPTION=Farm 3x3
+
+ON=@Create
+MORE=i_multi_farm33
+
+ON=@TARGON_GROUND 
+IF (<NOTBUILDABLE <src.targp>>) 
+SRC.SYSMESSAGE @0481 You can't put this so near to another structure!
+RETURN 1 
+ENDIF
+IF (<src.account.tag0.jatenhofarms> > 1)
+src.sysmessage @0483 You already have 2 farms!
+return 1
+ENDIF
+
+/////////////////////////////////
+
+[ITEMDEF i_deed_farm55]
+NAME=Deed para Farm 5x5
+ID=i_deed
+RESOURCES=i_deed,i_multi_farm33
+VALUE=15000
+
+CATEGORY=Provisions - Deeds
+SUBSECTION=Farm Deeds
+DESCRIPTION=Farm 5x5
+
+ON=@Create
+MORE=i_multi_farm55
+
+ON=@TARGON_GROUND 
+IF (<NOTBUILDABLE <src.targp>>) 
+SRC.SYSMESSAGE @0481 You can't put this so near to another structure!
+RETURN 1 
+ENDIF
+IF (<src.account.tag0.jatenhofarms> > 1)
+src.sysmessage @0483 You already have 2 farms!
+return 1
+ENDIF
+
+/////////////////////////////////
+
+[ITEMDEF i_deed_farm77]
+NAME=Deed para Farm 7x7
+ID=i_deed
+RESOURCES=i_deed,i_multi_farm77
+VALUE=33000
+
+CATEGORY=Provisions - Deeds
+SUBSECTION=Farm Deeds
+DESCRIPTION=Farm 7x7
+
+ON=@Create
+MORE=i_multi_farm77
+
+ON=@TARGON_GROUND 
+IF (<NOTBUILDABLE <src.targp>>) 
+SRC.SYSMESSAGE @0481 You can't put this so near to another structure!
+RETURN 1 
+ENDIF
+IF (<src.account.tag0.jatenhofarms> > 1)
+src.sysmessage @0483 You already have 2 farms!
+return 1
+ENDIF
+
+////////////////////////
+
+[ITEMDEF i_semente_ns]
+ID=i_worldgem_bit
+TYPE=t_semente_farm
+NAME=Seed of NightShade
+VALUE=4
+
+ON=@Create
+MORE1=i_reag_nightshade
+MORE2=i_crop_nightshade
+COLOR=0ad
+
+[ITEMDEF i_semente_sa]
+ID=i_worldgem_bit
+TYPE=t_semente_farm
+NAME=Seed of Sulfurous Ash
+VALUE=4
+
+ON=@Create
+MORE1=i_reag_sulfur_ash
+MORE2=i_reag_sulfur_ash
+COLOR=036
+
+[ITEMDEF i_semente_ss]
+ID=i_worldgem_bit
+TYPE=t_semente_farm
+NAME=Seed of Spiders Silk
+VALUE=4
+
+ON=@Create
+MORE1=i_reag_spider_silk
+MORE2=i_plant_blade
+COLOR=036
+
+[ITEMDEF i_semente_mr]
+ID=i_worldgem_bit
+TYPE=t_semente_farm
+NAME=Seed of Mandrake Root
+VALUE=4
+
+ON=@Create
+MORE1=i_reag_mandrake_root
+MORE2=i_crop_mandrake
+COLOR=02e7
+
+[ITEMDEF i_semente_gs]
+ID=i_worldgem_bit
+TYPE=t_semente_farm
+NAME=Seed of Ginseng
+VALUE=4
+
+ON=@Create
+MORE1=i_reag_ginseng
+MORE2=i_crop_ginseng
+COLOR=038
+
+[ITEMDEF i_semente_gl]
+ID=i_worldgem_bit
+TYPE=t_semente_farm
+NAME=Seed of Garlic
+VALUE=4
+
+ON=@Create
+MORE1=i_reag_garlic
+MORE2=i_crop_garlic
+COLOR=017f
+
+[ITEMDEF i_semente_bm]
+ID=i_worldgem_bit
+TYPE=t_semente_farm
+NAME=Seed of Blood Moss
+VALUE=4
+
+ON=@Create
+MORE1=i_reag_blood_moss
+MORE2=i_crop_flax1
+COLOR=0ee
+
+[ITEMDEF i_semente_bp]
+ID=i_worldgem_bit
+TYPE=t_semente_farm
+NAME=Seed of Black Pearl
+VALUE=4
+
+ON=@Create
+MORE1=i_reag_black_pearl
+MORE2=i_flower_muck
+COLOR=01a2
+
+[TYPEDEF t_semente_farm]
+ON=@Dclick
+IF (<TOPOBJ.UID>==<src>) || (<SRC.ISGM>)
+IF (<src.findid.i_shovel>)
+TARGET Where to plant?
+ELSE
+SRC.SYSMESSAGE You need a shovel to plant.
+ENDIF
+ENDIF
+RETURN 1
+
+ON=@Targon_Char
+SRC.SYSMESSAGE You can't plant on someone!
+RETURN 1
+
+ON=@Targon_Item
+IF !(<src.findid.i_shovel>)
+src.sysmessage You need a shovel.
+ELIF !(<src.targ.canseelos>)
+src.sysmessage You can't see your target.
+ELSE
+LOCAL.TMP=<OBJ>
+OBJ=<SRC.TARG.REGION.UID>
+IF ((<OBJ.MORE1>!=<src>) || !(STRMATCH(*farm*,<uid.<src.region.uid>.name>)))
+SRC.SYSMESSAGE You can only plant on your farm's ground.
+ELIF (<SRC.TARG.BASEID>!=031f4)
+SRC.SYSMESSAGE You can only plant on your farm's ground.
+ELIF (<SRC.TARG.MORE1>)
+SRC.SYSMESSAGE There's already a plant here.
+ELSE
+IF (<R<EVAL <SRC.HERDING>+350>> >= 300)
+SRC.TARG.MORE1=1
+SERV.NEWITEM=i_broto
+NEW.MORE1=<more1>
+NEW.NAME Crop of <serv.itemdef.<more1>.name>
+NEW.P=<SRC.TARG.P>
+NEW.LINK=<SRC.TARG>
+NEW.ATTR=attr_move_never
+NEW.DISPID=<MORE2>
+LOCAL.HERD=<EVAL (4000-<SRC.HERDING>)/50>
+NEW.TIMER=<eval <LOCAL.HERD>*60>
+NEW.UPDATE
+REMOVE
+ELSE
+SRC.SYSMESSAGE @55 You aren't able to plant this seed.
+IF (!(<R10>))
+SRC.SYSMESSAGE @55 and lose 1 seed.
+CONSUME 1
+ENDIF
+ENDIF
+ENDIF
+ENDIF
+OBJ=<LOCAL.TMP>
+RETURN 1
+
+//////////////////////////////
+
+[ITEMDEF i_broto]
+NAME=Seed
+ID=i_crop_onion
+TYPE=t_normal
+
+ON=@Create
+ATTR=attr_move_never
+
+ON=@Timer
+SERV.NEWITEM=i_planta_farm
+NEW.P=<P>
+NEW.LINK=<LINK>
+NEW.ATTR=attr_move_never
+NEW.TIMER=<eval 60*60*4>
+NEW.MORE1=<MORE1>
+NEW.DISPID=<MORE1>
+NEW.NAME=Plant of <SERV.ITEMDEF.<MORE1>.NAME>
+NEW.UPDATE
+REMOVE
+RETURN 1
+
+[ITEMDEF i_planta_farm]
+NAME=Farm Plant
+ID=i_crop_onion
+TYPE=t_normal
+
+ON=@Dclick
+IF (<UID.<REGION.UID>.MORE1> == <src>) || (<SRC.ISGM>)
+IF !(<src.findid.i_shovel>)
+src.sysmessage You need a shovel.
+RETURN 1
+ENDIF
+SRC.SKILLGAIN HERDING <EVAL <SRC.HERDING>/10>
+LINK.MORE1=0
+LOCAL.AMOUNT=<EVAL <SRC.HERDING>/20>
+IF (<SRC.HERDING> > 100.0)
+LOCAL.AMOUNT += 10
+ENDIF
+IF !(<LOCAL.AMOUNT>)
+LOCAL.AMOUNT=1
+ENDIF
+OBJ=<UID>
+FORITEMS 10
+IF (<BASEID>==i_scarecrow) && (<UID.<REGION.UID>.MORE1>==<src>)
+LOCAL.AMOUNT += 10
+ENDIF
+ENDFOR
+IF (<OBJ.MORE1>!=i_algodao_magico)
+SRC.createitem <obj.more1>,<LOCAL.AMOUNT>
+ELSE
+SRC.createitem i_algodao_magico
+ENDIF
+OBJ.REMOVE
+RETURN 1
+ENDIF
+
+ON=@Timer
+LINK.MORE1=0
+REMOVE
+Return 1
+
+/////////////////
+
+[DIALOG d_farm]
+200,200
+src.closealldialogs
+PAGE 1
+resizepic 0 0 2600 330 330
+resizepic 70 20 3500 170 40
+dtext 100 27 0 Farm System
+resizepic 30 70 3500 270 40
+dtext 50 77 0 Owner: 
+dtext 90 77 2010 <uid.<uid.<region.uid>.more1>.name>
+resizepic 30 120 3500 270 50
+dtextentry 50 135 300 25 99 0 <name>
+button 110 175 0ef 0f0 1 0 1
+resizepic 30 220 3500 270 50
+dtext 50 235 99 Redeed (<EVAL <UID.<REGION.UID>.VALUE>/10>)
+button 110 275 0ef 0f0 1 0 2
+
+[DIALOG d_farm BUTTON]
+ON=1
+IF !(<ISBADSTR <ARGTXT[0]>>)
+NAME=<STRSUB 0 30 <ARGTXT[0]>>
+ENDIF
+
+ON=2
+IF !(<SRC.gold> > <EVAL (<UID.<REGION.UID>.VALUE>/10)-1>) && !(<SRC.ISGM>)
+src.sysmessage @048d You don't have enough money.
+SDIALOG d_farm 1
+ELSE
+src.gold -= <EVAL <UID.<REGION.UID>.VALUE>/10>
+local.tmp=<obj>
+obj=<uid.<region.uid>.more1>
+obj.account.tag0.jatenhofarms --
+IF !(<OBJ.ACCOUNT.TAG0.JATENHOFARMS>)
+obj.account.tag.jatenhofarms
+ENDIF
+obj=<local.tmp>
+serv.newitem i_deed_farm<strsub -2 0 <UID.<REGION.UID>.BASEID>>
+new.bounce
+try uid.<REGION.UID>.f_remove_farm
+ENDIF
+
+[FUNCTION f_remove_farm]
+LOCAL.TMP=<UID>
+OBJ=<UID>
+FORITEMS 15
+IF (<REGION.UID>==<OBJ>) && (<UID>!=<OBJ>)
+REMOVE
+ENDIF
+ENDFOR
+OBJ.REMOVE
+OBJ=<LOCAL.TMP>
+
+[EOF]

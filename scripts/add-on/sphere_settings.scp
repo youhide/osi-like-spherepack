@@ -71,7 +71,7 @@ scp.NewCrafting_Tinkering=1
 
 // If the item needs a recipe and the player doesn't have it, display resources as "????"
 // If this is 0, it will display the skillmake/resources normally.
-scp.NewCrafting_RecipeNeeded=1
+scp.NewCrafting_RecipeNeeded=0
 
 ///////////////////////////////////////////////////////////////
 //////// Skills Settings - Resource Gathering
@@ -86,7 +86,7 @@ scp.Mining_SmeltingPercent=75
 
 // Allow collect resource on ride?
 // <boolean> (1 if enable, 0 if not). Default = 0
-scp.mining_on_mount=0
+scp.mining_on_mount=1
 
 // Allow collect resource with poly?
 // <boolean> (1 if enable, 0 if not). Default = 0
@@ -215,7 +215,7 @@ scp.Poisoning_CleanWeapons=0
 
 // Weapons poison on hit (1 = yes, 0 = no) (NOTE: Turning this off will still poison the weapon)
 // Leave this on unless you plan on using things like Infectious Strike from the maneuvers system.
-scp.Poisoning_WeaponsPoison=1
+scp.Poisoning_WeaponsPoison=0
 
 // Minimum Healing required to cure
 // From 0 to 1000. Default = 0 (0.0%)
@@ -236,7 +236,7 @@ scp.Healing_PoisonNoBandage=1
 // Healing uses your form's brain?
 // Example: if you polymorphed into a bear, you would heal with veterinary
 // <boolean> (0 = No / 1 = Yes)
-scp.Healing_BasedOnForm=0
+scp.Healing_BasedOnForm=1
 
 // Minimum Veterinary required to cure
 // From 0 to 1000. Default = 0 (0.0%)
@@ -335,7 +335,7 @@ scp.PageSystem=1
 
 // Delay for re-resurrection in ankhs. 0 deactivates it.
 // In seconds. Default = 60
-scp.ResurrectionDelay=60
+scp.ResurrectionDelay=15
 
 // Activate or deactivate the calculation of stats according to OSI.
 // <boolean> (1 if yes, 0 if not). Default = 1
@@ -389,14 +389,14 @@ scp.ItemProp_BestWeaponSkill=1
 scp.ItemProp_DamageIncrease=1
 scp.ItemProp_DefenseChanceIncrease=1
 scp.ItemProp_DexterityBonus=1
-scp.ItemProp_EnhancePotion=0 // NOT DONE
+scp.ItemProp_EnhancePotion=1 // NOT DONE
 scp.ItemProp_FasterCastRecovery=1
 scp.ItemProp_FasterCasting=1
 scp.ItemProp_HitChanceIncrease=1
-scp.ItemProp_HitColdArea=0 // NOT DONE
+scp.ItemProp_HitColdArea=1 // NOT DONE
 scp.ItemProp_HitDispel=1
-scp.ItemProp_HitEnergyArea=0 // NOT DONE
-scp.ItemProp_HitFireArea=0 // NOT DONE
+scp.ItemProp_HitEnergyArea=1 // NOT DONE
+scp.ItemProp_HitFireArea=1 // NOT DONE
 scp.ItemProp_HitFireball=1
 scp.ItemProp_HitHarm=1
 scp.ItemProp_HitLifeLeech=1
@@ -405,13 +405,13 @@ scp.ItemProp_HitLowerAttack=1
 scp.ItemProp_HitLowerDefense=1
 scp.ItemProp_HitMagicArrow=1
 scp.ItemProp_HitManaLeech=1
-scp.ItemProp_HitPhysicalArea=0 // NOT DONE
-scp.ItemProp_HitPoisonArea=0 // NOT DONE
+scp.ItemProp_HitPhysicalArea=1 // NOT DONE
+scp.ItemProp_HitPoisonArea=1 // NOT DONE
 scp.ItemProp_HitStaminaLeech=1
 scp.ItemProp_HitPointIncrease=1
 scp.ItemProp_IntelligenceBonus=1
 scp.ItemProp_LowerManaCost=1
-scp.ItemProp_LowerReagentCost=0
+scp.ItemProp_LowerReagentCost=1
 scp.ItemProp_Luck=1
 scp.ItemProp_MageArmor=1
 scp.ItemProp_MageWeapon=1
@@ -429,8 +429,8 @@ scp.ItemProp_SpellDamageIncrease=1
 scp.ItemProp_StaminaIncrease=1
 scp.ItemProp_StrengthBonus=1
 scp.ItemProp_SwingSpeedIncrease=1
-scp.ItemProp_CraftingBonus=0 // NOT DONE
-scp.ItemProp_CraftingExceptionalBonus=0 // NOT DONE
+scp.ItemProp_CraftingBonus=1 // NOT DONE
+scp.ItemProp_CraftingExceptionalBonus=1 // NOT DONE
 scp.ItemProp_UsesRemaining=1
 
 // Determine the way of Luck to act with the NPC's Loot.
@@ -441,7 +441,7 @@ scp.ItemProp_LuckLoot=1
 
 // Luck Scale Factor, works to increase/decrease chances of player
 // Formula is: <PlayerLuck> @ <LuckScaleFactor> = Chances
-scp.ItemProp_LuckScaleFactor=0.55
+scp.ItemProp_LuckScaleFactor=0.5555555555555556
 
 ///////////////////////////////////////////////////////////////
 //////// Jail System Settings
@@ -452,14 +452,14 @@ scp.JailSystem=1
 
 // Choose where the player should go when he's unjailed
 // Both P and Region Name works fine.
-scp.JailSystem_GoUnjailed=Britain
+scp.JailSystem_GoUnjailed=Luna
 
 ///////////////////////////////////////////////////////////////
 //////// Karma/Fame Settings
 ///////////////////////////////////////////////////////////////
 // Enables or disables the EA Karma/Fame System.
 // <boolean> (0 = No / 1 = Yes)
-scp.EAKarmaFame=0
+scp.EAKarmaFame=1
 
 // Raising this value decreases gain. Lowering it increases gain.
 // Default = 100
@@ -502,7 +502,7 @@ scp.Champions_Respawn=60*60*{2 4}
 
 // Chance to get a champ artifact in % (0-100)
 // 100 = Always. 0 = Never.
-scp.Champions_ArtyChamp=30
+scp.Champions_ArtyChamp=50
 
 // Amount of monsters spawned by champion spawn.
 // Caution! Check MaxComplexity setting in sphere.ini!
@@ -514,18 +514,18 @@ scp.Champions_DistanceFromSpawn=60
 
 // Countdown timer for level restart or regression
 // In seconds. Example: 10*60 = 10 minutes
-scp.Champions_LevelMinutes=10*60
+scp.Champions_LevelMinutes=15*60
 
 ///////////////////////////////////////////////////////////////
 //////// AOS Custom Vendor System
 ///////////////////////////////////////////////////////////////
 // Max ammount of vendors that a player can own
 // 0 = Infinite
-scp.Vendor_PlayerMaxOwn=0
+scp.Vendor_PlayerMaxOwn=2
 
 // Max ammount of vendors that a player can rent
 // 0 = Infinite
-scp.Vendor_PlayerMaxRent=0
+scp.Vendor_PlayerMaxRent=2
 
 // Max characters allowed in items description
 scp.Vendor_MaxItemDescript=40
@@ -540,7 +540,7 @@ scp.Vendor_Redeed=0
 
 // Max weight that vendors can carry
 // Default = 390
-scp.Vendor_MaxWeight=390
+scp.Vendor_MaxWeight=10000
 
 // New vendors comes with this shop name
 scp.Vendor_DefaultShopName=Shop Not Yet Named
@@ -576,11 +576,11 @@ scp.House_UseDeeds=0
 // 1 = Decay, refreshed opening the menu
 // 2 = Decay, refreshed with money through the menu.
 // 3 = Decay, refreshed with money through the menu. But the money is a % of the house value
-scp.House_DecayUse=2
+scp.House_DecayUse=1
 
 // House decay timer, in days.
 // 0 = Decay Off
-scp.House_DecayTimer=30
+scp.House_DecayTimer=90
 
 // House decay fee, amount to pay for house refreshing. Will pay according time to decay
 // if scp.House_DecayUse is 2, this should be the total to pay.
@@ -592,7 +592,7 @@ scp.House_DecayFee=30000
 scp.House_DemolitionPend=5
 
 // Max number of houses allower per account.
-scp.House_MaxPerAccount=1
+scp.House_MaxPerAccount=2
 
 // All character of the house owner account will get owner access in the house?
 // <boolean> (0 = No / 1 = Yes)
@@ -620,7 +620,7 @@ scp.House_PlaceIlshenar=0
 
 // Period in days that a player must wait to place a new house before house placement.
 // Default = 7
-scp.House_PlaceWaitPeriod=7
+scp.House_PlaceWaitPeriod=0
 
 // % of house value that will be refunded on demolish
 // Default = 90
@@ -636,7 +636,7 @@ scp.House_GlobalSecStorage=600
 
 // Global max locked items allowed per house
 // This value will cont on Secure Storage Limit.
-scp.House_GlobalLockdown		100
+scp.House_GlobalLockdown=100
 
 // Owner of the house can change the door access?
 // <boolean> (0 = No / 1 = Yes)
@@ -649,18 +649,18 @@ scp.House_MaxCoowners=15
 scp.House_MaxFriends=50
 
 // Max number of bans allowed per house
-scp.House_MaxBans=50
+scp.House_MaxBans=0
 
 // Max number of players on access list allowed per house
-scp.House_MaxAccess=50
+scp.House_MaxAccess=0
 
 // Allow enter on private houses only who is in access list
 // <boolean> (0 = No / 1 = Yes)
-scp.House_DepthOfField=1
+scp.House_DepthOfField=0
 
 // Enable house ban engine?
 // <boolean> (0 = No / 1 = Yes)
-scp.House_BanEngine=1
+scp.House_BanEngine=0
 
 // Enable banking from the house sign?
 // <boolean> (0 = No / 1 = Yes)
@@ -680,7 +680,7 @@ scp.House_AoSDesignTool=1
 
 // Price per customized component, in gp's
 // Default = 500
-scp.House_PricePerComp=500
+scp.House_PricePerComp=250
 
 // Classic houses can be converted into custom foundations?
 // <boolean> (0 = No / 1 = Yes)
@@ -688,7 +688,7 @@ scp.House_AllowConvert=1
 
 // Enable house interactivity with custom vendors
 // <boolean> (0 = No / 1 = Yes)
-scp.House_UseVendors=0
+scp.House_UseVendors=1
 
 // Vendors can be placed only on public houses?
 // <boolean> (0 = No / 1 = Yes)

@@ -1,5 +1,5 @@
 //****************************************************************************
-//SPHERE by : Menasoft ©1997-2007
+//SPHERE by : Menasoft ï¿½1997-2007
 //www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -111,6 +111,18 @@ scripts/add-on/typedefs/
 scripts/add-on/virtues/
 scripts/add-on/specialmoves/
 scripts/add-on/ships/
+// -----------------------------------
+scripts/Engines/
+scripts/Engines/Paragons/
+scripts/Engines/GuildDomination/
+scripts/Engines/Virtues/
+scripts/Engines/Young/
+scripts/Engines/Insure/
+scripts/Engines/TreasuresOfTokuno/
+scripts/Engines/TreasuresOfTokuno/Minor/
+scripts/Engines/TreasuresOfTokuno/Major/
+scripts/Engines/Factions/
+scripts/Engines/Factions/Items/
 
 
 [OBSCENE]
@@ -229,7 +241,7 @@ Xen
 Ylem
 Zan
 
-[PLEVEL 1]	// extra player commands.
+[PLEVEL 1]    // extra player commands.
 AFK
 WHERE
 HUNGRY
@@ -247,7 +259,7 @@ GuildMenu
 GC
 TC
 
-[PLEVEL 2]	// extra counselor commands.
+[PLEVEL 2]    // extra counselor commands.
 ANIM
 DETAIL
 SLEEP

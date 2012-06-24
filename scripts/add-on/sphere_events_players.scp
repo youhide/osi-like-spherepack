@@ -79,31 +79,62 @@ endif
 
 // Context Menu Display
 on=@contextmenurequest
-if <uid> == <src.uid>
-	if <guild>
-	src.addcontextentry 101,6117
-	else
-	src.addcontextentry 101,6117,01
-	endif
-src.addcontextentry 102,6119
-else
-src.addcontextentry 200,6121
-endif
-return 0
+IF (<ARGN> == 1)
+ ARGN=2
+ELSE
+ IF (<SRC> == <UID>)
+  IF <GUILD>
+   SRC.AddContextEntry 101,6117 // GUILD MENU ON
+  ELSE
+   SRC.AddContextEntry 101,6117,01 // GUILD MENU OFF
+  ENDIF
+  SRC.AddContextEntry 102,6119 // QUEST LOG
+  SRC.AddContextEntry 300,6201 // TOGGLE ITEM INSURANCE
+  IF (!<TAG0.AUTORENEWINSURANCE>)
+   SRC.AddContextEntry 301,6200 // AUTO RENEW INVETORY INSURANCE
+  ELSE
+   SRC.AddContextEntry 302,6202 // CANCEL RENEW INVETORY INSURANCE
+  ENDIF
+  IF (<SRC.ISEVENT.e_justice_protected>)
+   SRC.AddContextEntry 303,100 // CANCEL PROTECTION
+  ENDIF
+ SRC.AddContextEntry 304,6229 // SELECT REWARD TITLE
+ SRC.AddContextEntry 305,6125 // EXAMINE PROPERTIES
+ //IF (<SKILLTOTAL> >= 720.0)
+ //	FOR 0 52
+ //		IF (<I.<SERV.SKILL.<dLOCAL._FOR>.KEY>>)
+ //		SRC.AddContextEntry <EVAL 1000+<LOCAL._FOR>>,<EVAL <DEF.TRAIN_SKILL_<dLOCAL._FOR>>>
+ //		ENDIF
+ //	ENDFOR
+ //ENDIF
+ ELSE
+  SRC.AddContextEntry 200,6121 // LOOK AT
+ ENDIF
+ENDIF
 
 // Context Menu Functions
 on=@contextmenuselect
-if <uid> == <src.uid>
-	if <argn> == 101
-	guildmenu
-	elif <argn> == 102
-	openquestlog
-	endif
-else
-	if <argn> == 200
-	src.face <uid>
-	endif
-endif
+IF <argn> == 101
+ guildmenu
+ELIF <ARGN> == 102
+ openquestlog
+ELIF ((<ARGN> == 300) && !(<SRC.FLAGS>&STATF_DEAD))
+ SRC.INSURE
+ELIF (<ARGN> == 301)
+ SRC.SYSMESSAGELOC 023,1060881
+ TAG.AUTORENEWINSURANCE=1
+ELIF (<ARGN> == 302)
+ SRC.SYSMESSAGELOC 023,1061075
+ SRC.TAG.AUTORENEWINSURANCE=
+ELIF (<ARGN> == 303)
+ cancelprotection
+ELIF (<ARGN> == 304)
+ DIALOG D_REWARD_TITLE_SELECT
+ELIF (<ARGN> == 305)
+ PROPS
+ELIF (<ARGN> >= 1000)
+ DIALOG D_ZERAR_SKILL 1 <EVAL <ARGN1>-1000>
+ENDIF
 
 // Quest Button
 on=@userquestbutton
@@ -117,7 +148,7 @@ return 1
 // Cancel use of Book of Arms
 // Until we script it and finish it!
 on=@userspecialmove
-return 1
+return 0
 
 // OSI Calculation + Stats Bonus
 on=@userstats
@@ -328,6 +359,16 @@ endif
 
 // Hunger System triggers
 on=@login
+IF <SRC.FINDID.I_MEMORY_REGEN>
+ SRC.FINDID.I_MEMORY_REGEN.TIMER 1
+ELSE
+ LOCAL.OLDNEW <NEW>
+ SERV.NEWITEM I_MEMORY_REGEN
+ REF1 <NEW>
+ NEW <LOCAL.OLDNEW>
+ SRC.EQUIP <REF1>
+ REF1.TIMER 1
+ENDIF
 if (<ddef0.scp.hunger_on_off>)
 	if (<src.findid.i_food_and_drink_sys_mem>)
 		src.findid.i_food_and_drink_sys_mem.timer=60
@@ -338,6 +379,7 @@ if (<ddef0.scp.hunger_on_off>)
 endif
 
 on=@logout
+SRC.FINDID.I_MEMORY_REGEN.TIMER -1
 if (<src.findid.i_food_and_drink_sys_mem>)
 	if (<src.findid.i_food_and_drink_sys_mem.timer> >= 0)
 		src.findid.i_food_and_drink_sys_mem.timer=-1

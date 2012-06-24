@@ -50,18 +50,18 @@ IF (<TAG0.ResEnergy>)
   SRC.AddCliloc 1060407,<dTAG0.ResEnergy>
 ENDIF
 
-ON=@Equip
-SRC.ModAR += <TAG0.ResPhysical>
-SRC.ResFire += <TAG0.ResFire>
-SRC.ResCold += <TAG0.ResCold>
-SRC.ResPoison += <TAG0.ResPoison>
-SRC.ResEnergy += <TAG0.ResEnergy>
+//ON=@Equip
+//SRC.ModAR += <TAG0.ResPhysical>
+//SRC.ResFire += <TAG0.ResFire>
+//SRC.ResCold += <TAG0.ResCold>
+//SRC.ResPoison += <TAG0.ResPoison>
+//SRC.ResEnergy += <TAG0.ResEnergy>
 
-ON=@Unequip
-SRC.ModAR -= <TAG0.ResPhysical>
-SRC.ResFire -= <TAG0.ResFire>
-SRC.ResCold -= <TAG0.ResCold>
-SRC.ResPoison -= <TAG0.ResPoison>
-SRC.ResEnergy -= <TAG0.ResEnergy>
+//ON=@Unequip
+//SRC.ModAR -= <TAG0.ResPhysical>
+//SRC.ResFire -= <TAG0.ResFire>
+//SRC.ResCold -= <TAG0.ResCold>
+//SRC.ResPoison -= <TAG0.ResPoison>
+//SRC.ResEnergy -= <TAG0.ResEnergy>
 
 [eof]

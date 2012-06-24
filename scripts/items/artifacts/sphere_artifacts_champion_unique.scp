@@ -40,8 +40,15 @@ TAG.ResPoison=18
 TAG.ResEnergy=16
 
 ON=@Create
-COLOR=0665
+COLOR=0276
 HITPOINTS=150
+
+on=@damage
+IF <MORE1L> < <MORE1H>
+ IF <FLOATVAL 0.5> > <RANDOMDOUBLE>
+  MORE1L += 1
+ ENDIF
+ENDIF
 
 [ITEMDEF i_pacify]
 ID=i_pike
