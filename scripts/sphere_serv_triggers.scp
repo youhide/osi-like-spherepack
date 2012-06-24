@@ -1,0 +1,175 @@
+//****************************************************************************
+//SPHERE by : Menasoft ©1997-2007
+//www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: 16-Nov-2006
+VERSION=0.56b
+
+//
+// This file contains function that are used as serv triggers.
+//
+
+[PLEVEL 7]
+f_onaccount_login
+f_onaccount_delete
+f_onchar_create
+f_onchar_delete
+f_onserver_start
+f_onserver_save
+f_onserver_save_ok
+f_onserver_save_fail
+f_onserver_save_finished
+f_onserver_exit
+f_onserver_blockip
+
+// This function is called after client entered the password.
+// ARGS --> username of the client logging in
+// ARGO --> the client logging in
+// RETURN
+//	  0 --> normal action (login)
+//	  1 --> disconnect the client
+[FUNCTION f_onaccount_login]
+
+// This function is called before an account is being deleted.
+// ARGS --> username of the account being deleted.
+// RETURN
+//	  0 --> normal action (delete)
+//	  1 --> account not deleted
+[FUNCTION f_onaccount_delete]
+
+// This function is called after client have created a new char.
+// SRC   --> char being created
+// ARGN1 --> flags
+// ARGN2 --> profession chosen
+// ARGN3 --> race (1=human, 2=elf, 3=gargoyle)
+// ARGS  --> account name
+// ARGO  --> the client creating the character
+[FUNCTION f_onchar_create]
+src.remove_invalid_houses
+
+// This function is called before client is going to delete a character.
+// SRC  --> char being deleted
+// ARGO --> the client deleting the character
+// RETURN
+//	  0 --> normal action (delete char)
+//	  1 --> denyes deletion
+[FUNCTION f_onchar_delete]
+
+// This function is called on server startup
+[FUNCTION f_onserver_start]
+if <serv.MySQL> == 1
+db.connect
+	if <db.connected>
+	serv.log @MySQL: Connected Succesfully!
+	else
+	serv.log @MySQL: Failed to Connect!
+	endif
+endif
+
+// This function is called before server is going to save.
+// ARGN1 --> save is forced (writable)
+// ARGN2 --> save stage (for backgroud save goes 1 to 6146 [sector count + 2])
+// RETURN
+//	  0 --> normal action (save)
+//	  1 --> denyes save
+[FUNCTION f_onserver_save]
+serv.savestatics
+
+
+// This function is called after server has saved correctly (once per stage with background save).
+[FUNCTION f_onserver_save_ok]
+
+
+// This function is called after server hasn't saved correctly (once per stage with background save).
+[FUNCTION f_onserver_save_fail]
+
+
+// This function is called after server completely finished saving (also at end of background save).
+// ARGS --> Time it took to save (in seconds, 4 digit precision)
+[FUNCTION f_onserver_save_finished]
+serv.allclients sysmessage @,,1 World save completed, took <args> seconds.
+
+// This function is called when a server is triggeted a shutdown, after all
+// saves and everything finished
+[FUNCTION f_onserver_exit]
+
+
+// This function is called when an IP is blocked from the server
+// ARGS  --> IP being blocked
+// ARGN1 --> Time to block the IP for in tenths of a second (writable)
+[FUNCTION f_onserver_blockip]
+
+[FUNCTION f_onserver_timer]
+VendorSalary
+
+[FUNCTION f_oncommand]
+if <def.scp.JailSystem> == 1
+	if !strcmpi(jail,<strarg <args>>)
+		if <account.plevel> >= 4
+		f_resenddialog d_jailcore
+		endif
+	return 1
+	elif !strcmpi(forgive,<strarg <args>>)
+		if <account.plevel> >= 4
+		targetf f_forgive
+		endif
+	return 1
+	endif
+endif
+if <def.scp.PageSystem> == 1
+	if !strcmpi(page,<strarg <args>>)
+		if <account.plevel> > 1
+			if !strcmpi(<streat <args>>,help)
+			sysmessage @,,1 .page delete = deletes the page you are handling
+			sysmessage @,,1 .page origin = goes to the position which the player sent the page you are handling
+			sysmessage @,,1 .page undo/queue = stop handling page
+			sysmessage @,,1 .page go = goes to the player's current position
+			sysmessage @,,1 .page jail = jails the player
+			return 1
+			endif
+			if <LIST.pages_handle.FINDELEM <uid>> != -1
+				if !strcmpi(<streat <args>>,delete)
+				PageRemove <LIST.pages_handle.FINDELEM <uid>>
+				sysmessage @,,1 Page has been removed.
+				return 1
+				elif !strcmpi(<streat <args>>,origin)
+				go <LIST.pages_pos.<LIST.pages_handle.FINDELEM <uid>>>
+				return 1
+				elif !strcmpi(<streat <args>>,undo) || !strcmpi(<streat <args>>,queue)
+				LIST.pages_handle.<LIST.pages_handle.FINDELEM <uid>> = 0
+				sysmessage @,,1 You stopped handling this page.
+				return 1
+				elif !strcmpi(<streat <args>>,go)
+				ref1 = <LIST.pages_uid.<LIST.pages_handle.FINDELEM <uid>>>
+				go <ref1.p>
+				return 1
+				elif !strcmpi(<streat <args>>,jail)
+					if <account.plevel> < 4
+					LIST.pages_handle.<LIST.pages_handle.FINDELEM <uid>> = 0
+					src.sysmessage You can't jail people.
+					return 1
+					endif
+				ref1 = <LIST.pages_uid.<LIST.pages_handle.FINDELEM <uid>>>
+				serv.newitem i_jail_timer
+				new.timer 60*15 // 15 minutes seemed appropriate to me
+				new.tag0.reason = Paging
+				ref1.equip <new.uid>
+				ref1.sysmessage <def.scp.jail_jailed>
+				sysmessage @,,1 <ref1.name> has been jailed.
+				return 1
+				endif
+			sdialog d_page_handling
+			return 1
+			endif
+		sdialog d_page_queue
+		return 1
+		endif
+	endif
+endif
+
+[EOF]

@@ -1,0 +1,828 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED:
+VERSION=0.56b
+
+[COMMENT comment_necromancy_spells]
+
+SCRIPT CREDITS
+--------------
+Wiccanian, ShiryuX, Anarch, Others...
+
+SCRIPT DOCUMENTATION
+--------------------
+This file contains the Spell definitions, all other supporting code is
+as the _extras.scp file.
+
+Necromancy main spell sections.
+* Animate Dead
+* Blood Oath
+* Corpse Skin
+* Curse Weapon
+* Pain Spike
+* Wither
+* Horrific Beast
+* Lich Form
+* Wraith Form
+Evil Omen
+Mind Rot
+Poison Strike
+Strangle
+Summon Familiar
+Vampiric Embrace
+Exorcism
+
+Regarding the 4 transformation spells, they are all implemented using the
+same i_mem_transform item so that:
+- they can reuse the special effect code defined as the t_iprop event.
+- they are permanent unlike the typical polymorph which wears off.
+
+Todo:
+- alter scripts so necromancers can easily change forms without first
+  cancelling the form they already have.
+
+[SPELL 101]
+DEFNAME=s_animate_dead
+NAME=Animate Dead
+SOUND=snd_spell_animate_dead
+RUNES=.Uus Corp
+CAST_TIME=1.5
+RESOURCES=i_reag_grave_dust, i_reag_daemon_blood
+RUNE_ITEM=i_rune_resurrection
+SCROLL_ITEM=i_scroll_animate_dead
+//FLAGS=spellflag_scripted
+FLAGS=spellflag_targ_item|spellflag_good|spellflag_summon|spellflag_fx_targ|spellflag_playeronly|spellflag_targ_no_player|spellflag_targ_no_npc
+EFFECT_ID=i_fx_smoke
+EFFECT=0
+DURATION=0
+MANAUSE=23
+SKILLREQ=Necromancy 40.0
+INTERRUPT=100.0,1.0
+ON=@Start
+   IF (<ACT.TYPE> != t_corpse)
+      SRC.SYSMESSAGELOC color_text,1061084//"You cannot animate that."
+      RETURN 1
+   ENDIF
+   IF (<ACT.LINK>!=04fffffff) || (<ACT.ATTR> & attr_static)
+      //You cannot animate a player corpse, or a static corpse.
+      SRC.SYSMESSAGELOC color_text,1061085//"There is not enough lifeforce there to animate."
+      RETURN 1
+   ENDIF
+   LOCAL.CorpseSlayerGroup=<SERV.CHARDEF(<ACT.TAG.CorpseType>).TAG.SlayerGroup>
+   IF STRMATCH(*UNDEAD*,<LOCAL.CorpseSlayerGroup>)
+      SRC.SYSMESSAGELOC color_text,1061086//"You cannot animate undead remains."
+      RETURN 1
+   ENDIF
+ON=@Success
+   SRC.SYSMESSAGE <DEF.SCP.spell_animatedead_target>
+   SRC.TARGETF f_AnimateDeadTarg
+
+[SPELL 102]
+DEFNAME=s_blood_oath
+NAME=Blood Oath
+SOUND=01e9
+RUNES=.In Jux Mani Xen
+CAST_TIME=1.5
+RESOURCES=i_reag_daemon_blood
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_blood_oath
+FLAGS=spellflag_dir_anim|spellflag_targ_char|spellflag_harm|spellflag_fx_targ|spellflag_resist|spellflag_targ_noself|spellflag_nounparalyze
+EFFECT_ID=i_fx_curse
+EFFECT=0
+DURATION=0
+MANAUSE=13
+SKILLREQ=Necromancy 20.0
+INTERRUPT=100.0,1.0
+PROMPT_MSG=Target a creature to put this curse on.
+ON=@Start
+   IF (<SRC.FINDID.memory_blood_oath>)
+      SRC.SYSMESSAGELOC color_text,1061607//"You are already bonded in a Blood Oath."
+      RETURN 1
+   ENDIF
+   IF (<ACT.FINDID.memory_blood_oath>)
+      IF (<ACT.ISPLAYER>)
+         SRC.SYSMESSAGELOC color_text,1061608//"That player is already bonded in a Blood Oath."
+      ELSE
+         SRC.SYSMESSAGELOC color_text,1061609//"That creature is already bonded in a Blood Oath."
+      ENDIF
+      RETURN 1
+   ENDIF
+   IF (<ACT.FLAGS> & statf_invul) && !(<SRC.ISGM>)
+      SRC.SYSMESSAGELOC color_text,1061621//"You can not perform this operation on an invulnerable target."
+      RETURN 1
+   ENDIF
+ON=@Success
+   LOCAL.TargetNAME=<ACT.NAME>
+   LOCAL.SkillDiff=<EVAL <SRC.SpiritSpeak> - <ACT.MagicResistance>>
+   IF (<LOCAL.SkillDiff> > 0)
+      LOCAL.Duration=<EVAL (<LOCAL.SkillDiff> / 8) + 8>
+   ELSE
+      LOCAL.Duration=8
+   ENDIF
+   REF1=<ACT>
+
+   SRC.NEWITEM=memory_blood_oath
+   LOCAL.BloodOathCasterMemory=<NEW>
+   REF2=<NEW>
+   NEW.MORE1=1
+   NEW.NAME=Blood Oath (<LOCAL.TargetName>)
+   NEW.CONT=<SRC>
+   NEW.TIMER=<LOCAL.Duration>
+   //SRC.SYSMESSAGELOG 032,1113717//"You have hit your target with a curse effect."
+   SRC.SYSMESSAGE @color_text,,1 Damage inflicted by <REF1.NAME> is reflected back at them.
+
+   REF1.NEWITEM=memory_blood_oath
+   REF1.EVENTS=+e_spell_effect_blood_oath
+   LOCAL.BloodOathVictimMemory=<NEW>
+   NEW.MORE1=2
+   NEW.NAME=Blood Oath (<SRC.NAME>)
+   NEW.CONT=<REF1>
+   NEW.TIMER=<LOCAL.Duration>
+   //SRC.SYSMESSAGELOG 032,1113718//"You have been hit with a curse effect."
+   REF1.SYSMESSAGE @color_text,,1 Damage dealt to <SRC.NAME> is reflected back to you.
+
+   REF2.LINK=<LOCAL.BloodOathVictimMemory>
+   NEW.LINK=<LOCAL.BloodOathCasterMemory>
+   REF1=
+//   f_AddBuff BloodOathCaster,<dLOCAL.Delay>,<ACT.NAME>
+//   ACT.f_AddBuff BloodOathCurse,<dLOCAL.Delay>,<NAME>
+
+[SPELL 103]
+DEFNAME=s_corpse_skin
+NAME=Corpse Skin
+SOUND=snd_spell_weaken
+RUNES=.In Agle Corp Ylem
+CAST_TIME=2.0
+RESOURCES=i_reag_grave_dust, i_reag_batwing
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_corpse_skin
+FLAGS=spellflag_dir_anim|spellflag_targ_char|spellflag_harm|spellflag_fx_targ|spellflag_resist|spellflag_nounparalyze
+EFFECT_ID=i_fx_sparkle
+EFFECT=0
+DURATION=0
+MANAUSE=11
+SKILLREQ=Necromancy 20.0
+INTERRUPT=100.0,1.0
+PROMPT_MSG=Target a creature to put this curse on.
+ON=@Success
+   REF1=<ACT>
+   LOCAL.SpellDuration=<EVAL ((<SRC.Spiritspeak> - <REF1.MagicResistance>) / 25) + 40>
+   //"<SRC.NAME> casts corpse skin on <REF1.NAME>, duration is <EVAL <LOCAL.SpellDuration>>"
+   IF (<REF1.FINDID.i_mem_corpse_skin>)
+      //"Found a <REF1.FINDID.i_mem_corpse_skin.NAME> (<REF1.FINDID.i_mem_corpse_skin.UID>) on <REF1.NAME> with time=<EVAL <REF1.FINDID.i_mem_corpse_skin.TIMER>>"
+      REF1.FINDID.i_mem_corpse_skin.TIMER=<LOCAL.SpellDuration>
+      //"Timer now <EVAL <REF1.FINDID.i_mem_corpse_skin.TIMER>>"
+   ELSE
+      REF1.SYSMESSAGELOC color_text,1061689//"Your skin turns dry and corpselike."
+      SRC.NEWITEM=i_mem_corpse_skin
+      NEW.LINK=<SRC.UID>
+      NEW.CONT=<REF1>
+      NEW.TIMER=<LOCAL.SpellDuration>
+      REF1.ResFire -= 15
+      REF1.ResPoison -= 15
+      REF1.ResCold += 10
+      REF1.TAG.ResPhysical=<EVAL <REF1.TAG0.ResPhysical> + 10>
+   ENDIF
+
+[SPELL 104]
+DEFNAME=s_curse_weapon
+NAME=Curse Weapon
+SOUND=snd_spell_curse
+RUNES=.An Sanct Gra Char
+CAST_TIME=1.0
+RESOURCES=i_reag_pig_iron
+//RUNE_ITEM=
+SCROLL_ITEM=i_scroll_curse_weapon
+FLAGS=spellflag_good
+EFFECT_ID=i_fx_sparkle
+EFFECT=0
+DURATION=0
+MANAUSE=7
+SKILLREQ=Necromancy 0.0
+INTERRUPT=100.0,1.0
+ON=@Start
+   IF (<SRC.FINDLAYER(1).ISWEAPON>)
+      //"<SRC.FINDLAYER(1).NAME> is a weapon."
+      RETURN 0
+   ELSEIF (<SRC.FINDLAYER(2).ISWEAPON>)
+      //"<SRC.FINDLAYER(2).NAME> is a weapon."
+      RETURN 0
+   ELSE
+      SRC.SYSMESSAGELOC color_text,501078//"You must be holding a weapon."
+      RETURN 1
+   ENDIF
+ON=@Success
+   IF (<SRC.FINDLAYER(1).ISWEAPON>)
+      REF1=<SRC.FINDLAYER(1)>
+   ELSEIF (<SRC.FINDLAYER(2).ISWEAPON>)
+      REF1=<SRC.FINDLAYER(2)>
+   ELSE
+      //"Error: <REF1.NAME> does not have a weapon equiped."
+      RETURN 1
+   ENDIF
+   SRC.UNEQUIP <REF1>
+   REF1.TAG.HitLifeLeech=<EVAL <REF1.TAG0.HitLifeLeech> + 50>
+   REF1.TAG.Cursed=1
+   SRC.EQUIP <REF1>
+
+   LOCAL.SpellDuration=<EVAL (<SRC.Spiritspeak> / 34) + 1>
+   //"<SRC.NAME> casts on <REF1.NAME>, duration is <EVAL <LOCAL.SpellDuration>>."
+
+   SRC.NEWITEM i_mem_curse_weapon
+   NEW.LINK=<REF1>
+   NEW.CONT=<SRC>
+   NEW.TIMER=<LOCAL.SpellDuration>
+
+[SPELL 105]
+DEFNAME=s_evil_omen
+NAME=Evil Omen
+SOUND=0245
+RUNES=.Pas Tym An Sanct
+CAST_TIME=1.0
+RESOURCES=i_reag_batwing, i_reag_nox_crystal
+//RUNE_ITEM=
+SCROLL_ITEM=i_scroll_evil_omen
+FLAGS=spellflag_dir_anim|spellflag_targ_char|spellflag_harm|spellflag_fx_targ|spellflag_resist|spellflag_targ_noself|spellflag_nounparalyze
+EFFECT_ID=i_fx_curse
+EFFECT=10,15
+DURATION=0
+MANAUSE=11
+SKILLREQ=Necromancy 20.0
+INTERRUPT=100.0,1.0
+PROMPT_MSG=Target a creature to put this curse on.
+ON=@Success
+   IF (<ACT.ISEVENT.e_evil_omen>)
+      ACT.EVENTS -e_evil_omen
+      RETURN 1
+   ENDIF
+   ACT.EVENTS +e_evil_omen
+
+[SPELL 106]
+DEFNAME=s_horrific_beast
+NAME=Horrific Beast
+SOUND=snd_spell_summon_daemon
+RUNES=.Rel Xen Vas Bal
+CAST_TIME=4.0
+RESOURCES=i_reag_daemon_blood, i_reag_batwing
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_horrific_beast
+FLAGS=spellflag_good|spellflag_playeronly
+EFFECT_ID=i_fx_smoke
+EFFECT=5,15
+DURATION=0
+MANAUSE=11
+SKILLREQ=Necromancy 40.0
+INTERRUPT=100.0,1.0
+ON=@Start
+   IF (<SRC.FLAGS> & statf_onhorse)
+      SYSMESSAGELOC color_text,1005583//"Please dismount first"
+      RETURN 1
+   ENDIF
+   IF (<FINDID.i_mem_transform>)
+      IF (<FINDID.i_mem_transform.TAG0.TransformCreature>==c_horrific_beast)
+         RETURN 0
+      ENDIF
+   ENDIF
+   IF (<SRC.BODY> != <SRC.OBODY>)
+      SYSMESSAGELOC color_text,1111896//"You may only change forms while in your original body."
+      RETURN 1
+   ENDIF
+ON=@Success
+   REF1=<FINDID.i_mem_transform>
+   IF (<REF1>)
+      SRC.DROP <REF1>//Drop will trigger unequip without the annoying message... but it does have an annoying sound.
+      REF1.REMOVE
+   ELSE
+      SRC.NEWITEM=i_mem_transform
+      NEW.NAME=liche form memory
+      NEW.TAG.TransformArticle=a
+      NEW.TAG.TransformCreature=c_horrific_beast
+      //Put special effect tags here:
+      NEW.TAG.HitpointRegeneration=10
+      NEW.TAG.DamageIncrease=10
+      NEW.TAG.Slayer=SLAYER_UNDEAD//Vulnerable to slayer weapons
+      EQUIP <NEW>
+   ENDIF
+   SRC.UPDATE
+
+[SPELL 107]
+DEFNAME=s_lich_form
+NAME=Lich Form
+SOUND=0fb
+RUNES=.Rel Xen Corp Ort
+CAST_TIME=4.0
+RESOURCES=i_reag_grave_dust,i_reag_nox_crystal,i_reag_daemon_blood
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_lich_form
+FLAGS=spellflag_good|spellflag_playeronly
+EFFECT_ID=i_fx_smoke
+EFFECT=5,15
+DURATION=0
+MANAUSE=23
+SKILLREQ=NECROMANCY 70.0
+INTERRUPT=100.0,1.0
+ON=@Start
+   IF (<SRC.FLAGS> & statf_onhorse)
+      SYSMESSAGELOC color_text,1005583//"Please dismount first"
+      RETURN 1
+   ENDIF
+   IF (<FINDID.i_mem_transform>)
+      IF (<FINDID.i_mem_transform.TAG0.TransformCreature>==c_liche_form)
+         //"Second casting so remove the effect."
+         RETURN 0
+      ENDIF
+   ENDIF
+   IF (<SRC.BODY> != <SRC.OBODY>)
+      SYSMESSAGELOC color_text,1111896//"You may only change forms while in your original body."
+      RETURN 1
+   ENDIF
+ON=@Success
+   REF1=<FINDID.i_mem_transform>
+   IF (<REF1>)
+      SRC.DROP <REF1>//Drop will trigger unequip without the annoying message... but it does have an annoying sound.
+      REF1.REMOVE
+   ELSE
+      SRC.NEWITEM=i_mem_transform
+      NEW.NAME=liche form memory
+      NEW.TAG.TransformArticle=a
+      NEW.TAG.TransformCreature=c_liche_form
+      //Put special effect tags here:
+      NEW.TAG.ManaRegeneration=13
+      NEW.TAG.RESCOLD=10
+      NEW.TAG.RESPOISON=10
+      NEW.TAG.RESFIRE=-10
+      NEW.TAG.HitpointRegeneration=-1
+      NEW.TAG.Slayer=SLAYER_UNDEAD//Vulnerable to slayer weapons
+      EQUIP <NEW>
+   ENDIF
+   SRC.UPDATE
+
+[SPELL 108]
+DEFNAME=s_mind_rot
+NAME=Mind Rot
+SOUND=0213
+RUNES=.Wis An Ben
+CAST_TIME=1.5
+RESOURCES=i_reag_batwing, i_reag_daemon_blood, i_reag_pig_iron
+//RUNE_ITEM=
+SCROLL_ITEM=i_scroll_mind_rot
+FLAGS=spellflag_dir_anim|spellflag_targ_char|spellflag_harm|spellflag_fx_targ|spellflag_resist|spellflag_targ_noself|spellflag_nounparalyze
+EFFECT_ID=i_fx_curse
+EFFECT=5,15
+DURATION=0
+MANAUSE=17
+SKILLREQ=Necromancy 30.0
+INTERRUPT=100.0,1.0
+PROMPT_MSG=Target a creature to put this curse on.
+ON=@Success
+   IF (<ACT.RESTEST i_mem_mind_rot>)
+      ACT.CONSUME i_mem_mind_rot
+   ENDIF
+   SERV.NEWITEM i_mem_mind_rot
+   ACT.EQUIP <NEW>
+   NEW.TIMER=<EVAL ((<SRC.SPIRITSPEAK>-<ACT.MAGICRESISTANCE>) / 50) + 20>
+
+[SPELL 109]
+DEFNAME=s_pain_spike
+NAME=Pain Spike
+SOUND=snd_spell_dispel_field
+RUNES=.In Sar
+CAST_TIME=1.0
+RESOURCES=i_reag_grave_dust, i_reag_pig_iron
+RUNE_ITEM=i_rune_poison
+SCROLL_ITEM=i_scroll_pain_spike
+FLAGS=spellflag_dir_anim|spellflag_targ_char|spellflag_harm|spellflag_fx_targ|spellflag_resist|spellflag_targ_noself
+EFFECT_ID=i_fx_curse
+EFFECT=0
+DURATION=0
+MANAUSE=5
+SKILLREQ=Necromancy 20.0
+INTERRUPT=100.0,1.0
+ON=@Success
+   REF1=<ACT.FINDID.i_mem_pain_spike>
+   IF (<REF1>)
+      LOCAL.ExtraDamage=<R3,7>
+      REF1.MORE1 += <LOCAL.ExtraDamage>
+      REF1.TIMER += 2
+      ACT.DAMAGE <LOCAL.ExtraDamage> <DEF.dam_god> <SRC>
+      //"<EVAL <LOCAL.ExtraDamage>> EXTRA damage applied to <ACT.NAME>."
+      //FIXME: How to increase the existing buff icon timer?
+   ELSE
+      IF (<ACT.ISPLAYER>)
+         LOCAL.Duration=<EVAL ((<SRC.SPIRITSPEAK> - <ACT.MAGICRESISTANCE>) / 10) + 30>
+      ELSE
+         LOCAL.Duration=<EVAL ((<SRC.SPIRITSPEAK> - <ACT.MAGICRESISTANCE>) / 100) + 18>
+      ENDIF
+      LOCAL.ExtraDamage=<R20,30>
+      ACT.NEWITEM i_mem_pain_spike
+      NEW.MORE1=<LOCAL.ExtraDamage>
+      NEW.LINK=<SRC>
+      ACT.EQUIP <NEW>
+      NEW.TIMER=<LOCAL.Duration>
+      ACT.f_AddBuff PainSpike,<dLOCAL.Duration>,<dLOCAL.ExtraDamage>
+   ENDIF
+   ACT.EFFECT 3,i_fx_glow_spike,1,18,0,39,3
+
+[SPELL 110]
+DEFNAME=s_poison_strike
+NAME=Poison Strike
+SOUND=snd_spell_poison_field
+RUNES=.In Vas Nox
+CAST_TIME=2.0
+RESOURCES=i_reag_nox_crystal
+RUNE_ITEM=i_rune_poison
+SCROLL_ITEM=i_scroll_poison_strike
+FLAGS=spellflag_dir_anim|spellflag_targ_char|spellflag_harm|spellflag_resist|spellflag_targ_noself|spellflag_playeronly|spellflag_nounparalyze
+EFFECT_ID=0
+EFFECT=0
+DURATION=1.0,15.0
+MANAUSE=17
+SKILLREQ=Necromancy 50.0
+INTERRUPT=100.0,1.0
+//FIXME: Test line of sight
+ON=@Success
+   SERV.NEWITEM=i_fx_explode
+   NEW.ATTR=attr_decay
+   NEW.TIMER=4
+   NEW.P=<P>
+   NEW.COLOR=04f8
+   NEW.TYPE=t_spell
+   NEW.NAME="Poison Strike"
+   NEW.MOVE 0 0 1
+   FORCHARS 2
+      DOSWITCH <ACT.DISTANCE>
+         SPELLEFFECT s_poison,<SRC.NECROMANCY>,1,<UID>
+         SPELLEFFECT s_poison,<SRC.NECROMANCY>/2,1,<UID>
+         SPELLEFFECT s_poison,<SRC.NECROMANCY>/3,1,<UID>
+      ENDDO
+   ENDFOR
+
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=30
+   new.timer={5 10}
+   new.p=<act.p>
+   serv.newitem i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=30
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move n
+   serv.newitem i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=30
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move s
+   serv.newitem i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=30
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move e
+   serv.newitem i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=30
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move w
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=15
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))> <eval(rand(6))>
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=15
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))> <eval(rand(6))>
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=15
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))> <eval(rand(6))>
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=15
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))> <eval(rand(6))>
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=15
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))> <eval(rand(6))>
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=10
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))+-(rand(6))> <eval(rand(6))+-(rand(6))>
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=10
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))+-(rand(6))> <eval(rand(6))+-(rand(6))>
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=10
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))+-(rand(6))> <eval(rand(6))+-(rand(6))>
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=10
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))+-(rand(6))> <eval(rand(6))+-(rand(6))>
+   serv.newitem=i_poison_cloud
+   new.attr=attr_static|attr_decay
+   new.more1=10
+   new.timer={5 10}
+   new.p=<act.p>
+   new.move <eval(rand(6))+-(rand(6))> <eval(rand(6))+-(rand(6))>
+
+[SPELL 111]
+DEFNAME=s_strangle
+NAME=Strangle
+SOUND=
+RUNES=.In Bal Nox
+CAST_TIME=2.5
+RESOURCES=i_reag_daemon_blood, i_reag_nox_crystal
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_strangle
+FLAGS=spellflag_dir_anim|spellflag_targ_char|spellflag_harm|spellflag_fx_targ|spellflag_resist|spellflag_targ_noself|spellflag_nounparalyze
+EFFECT_ID=i_fx_curse
+EFFECT=0
+DURATION=0
+MANAUSE=29
+SKILLREQ=Necromancy 65.0
+INTERRUPT=100.0,1.0
+ON=@Success
+   ACT.EFFECT 3,i_fx_heal,16,20,0,01,1
+   SERV.NEWITEM i_strangle
+   NEW.MORE1=<EVAL <SRC.SPIRITSPEAK> / 100>
+   NEW.MORE2=<EVAL <SRC.SPIRITSPEAK> / 100>
+   NEW.TIMER=<NEW.MORE1>
+   ACT.EQUIP <NEW>
+
+[SPELL 112]
+DEFNAME=s_summon_familiar
+NAME=Summon Familiar
+SOUND=0214
+RUNES=.Kal Xen Bal
+CAST_TIME=4.0
+RESOURCES=i_reag_batwing, i_reag_grave_dust, i_reag_daemon_blood
+//RUNE_ITEM=
+SCROLL_ITEM=i_scroll_summon_familiar
+FLAGS=spellflag_dir_anim|spellflag_targ_xyz|spellflag_summon|spellflag_playeronly
+//EFFECT_ID=0
+EFFECT=0
+DURATION=120.0,240.0
+MANAUSE=17
+SKILLREQ=Necromancy 30.0
+INTERRUPT=100.0,1.0
+ON=@Select
+   SYSMESSAGELOC color_text,1060147//"Choose thy familiar..."
+   SKILLMENU sm_summon_familiar
+   RETURN 1
+
+[SPELL 113]
+DEFNAME=s_vampiric_embrace
+NAME=Vampiric Embrace
+SOUND=01eb
+RUNES=.Rel Xen An Sanct
+CAST_TIME=4.0
+RESOURCES=i_reag_batwing, i_reag_pig_iron, i_reag_nox_crystal
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_vampiric_embrace
+FLAGS=spellflag_good|spellflag_playeronly
+EFFECT_ID=i_fx_smoke
+EFFECT=5,15
+DURATION=0
+MANAUSE=23
+SKILLREQ=Necromancy 99.0
+INTERRUPT=100.0,1.0
+ON=@Start
+   IF (<SRC.FLAGS> & statf_onhorse)
+      SYSMESSAGELOC color_text,1005583//"Please dismount first"
+      RETURN 1
+   ENDIF
+   IF (<FINDID.i_mem_transform>)
+      IF (<FINDID.i_mem_transform.TAG0.TransformCreature>==c_vampire_form)
+         //"Second casting so remove the effect."
+         RETURN 0
+      ENDIF
+   ENDIF
+   IF (<SRC.BODY> != <SRC.OBODY>)
+      SYSMESSAGELOC color_text,1111896//"You may only change forms while in your original body."
+      RETURN 1
+   ENDIF
+ON=@Success
+   REF1=<FINDID.i_mem_transform>
+   IF (<REF1>)
+      SRC.DROP <REF1>//Drop will trigger unequip without the annoying message... but it does have an annoying sound.
+      REF1.REMOVE
+   ELSE
+      SRC.NEWITEM=i_mem_transform
+      NEW.NAME=vampiric embrace memory
+      NEW.TAG.TransformArticle=a
+      NEW.TAG.TransformCreature=c_vampire_form
+      //Put special effect tags here:
+      NEW.TAG.HitLifeLeech=20
+      NEW.TAG.RESPOISON=80
+      NEW.TAG.RESFIRE=-25
+      NEW.TAG.ManaRegeneration=2
+      NEW.TAG.StaminaRegeneration=10
+      NEW.TAG.Slayer=SLAYER_UNDEAD//Vulnerable to slayer weapons
+      //FIXME: The following tag should implement vulnerability to garlic
+      NEW.TAG.Vampiric=1
+      EQUIP <NEW>
+   ENDIF
+   SRC.UPDATE
+
+[SPELL 114]
+DEFNAME=s_vengeful_spirit
+NAME=Vengeful Spirit
+SOUND=019c
+RUNES=.Kal Xen Bal Beh
+CAST_TIME=8.0
+RESOURCES=i_reag_batwing, i_reag_grave_dust, i_reag_pig_iron
+//RUNE_ITEM=
+SCROLL_ITEM=i_scroll_vengeful_spirit
+FLAGS=spellflag_dir_anim|spellflag_targ_char|spellflag_fx_targ|spellflag_targ_noself
+EFFECT_ID=i_fx_smoke
+EFFECT=0
+DURATION=0
+MANAUSE=41
+SKILLREQ=Necromancy 80.0
+INTERRUPT=100.0,1.0
+ON=@Select
+   IF (<SRC.RESTEST i_revenant_tracker>)
+      SRC.SYSMESSAGE You still have a revenant tracking a victim
+      RETURN 1
+   ENDIF
+ON=@Success
+   SERV.NEWITEM i_revenant_tracker
+   NEW.EQUIP <SRC>
+   TRYSRV SERV.NEWNPC c_revenant
+   NEW.FLAGS |= (statf_war|statf_conjured)
+   NEW.TAG.OWNER=<SRC.UID>
+   NEW.TAG.VICTIM=<ACT.UID>
+   NEW.P=<ACT.P>
+//   NEW.MOVE <EVAL (RAND(6)) - (RAND(6))>
+   LOCAL.NPC=<NEW.UID>
+   SERV.NEWITEM i_vengeful_spirit
+   NEW.MORE1=<EVAL ((<SRC.SPIRITSPEAK> * 80) / 12) + 10>
+   NEW.CONT <LOCAL.NPC>
+   NEW.CONT.FINDID.i_vengeful_spirit.trigger=@Equip
+   TRY UID.<LOCAL.NPC>.UPDATE
+
+[SPELL 115]
+DEFNAME=s_wither
+NAME=Wither
+SOUND=0108
+RUNES=.Kal Vas An Flam
+CAST_TIME=1.5
+RESOURCES=i_reag_grave_dust, i_reag_nox_crystal, i_reag_pig_iron
+//RUNE_ITEM=
+SCROLL_ITEM=i_scroll_wither
+FLAGS=spellflag_dir_anim|spellflag_harm|spellflag_fx_targ
+EFFECT_ID=i_fx_curse
+EFFECT=0
+DURATION=0
+MANAUSE=23
+SKILLREQ=Necromancy 60.0
+INTERRUPT=100.0,1.0
+ON=@Success
+   OBJ=<SRC>//OBJ is the attacker, SRC is the primary target
+   FORCHARS 5
+      //FIXME: Test line of sight
+      FORCHARMEMORYTYPE MEMORY_FIGHT
+         //"<CONT.NAME> is fighting <LINK.NAME>"
+         IF (<LINK>==<OBJ>) && !(<SRC>==<CONT.UID>)
+            //"since <LINK.NAME> is the caster, <CONT.NAME> should take damage"
+            CONT.SYSMESSAGELOC color_text,1070832//"An icy wind surrounds you, freezing your lungs as you try to breath!"
+            CONT.EFFECT 2,i_fx_sparkle,6,15,1,2
+            LOCAL.BaseDamage=<EVAL 10 + ((<OBJ.Necromancy> + <OBJ.SpiritSpeak>) / 100)>
+            IF (<CONT.KARMA> > 0)
+               //* Against a Neutral karma opponent:
+               //  42-50 damage at 100 Necro/SS
+               //  48-56 damage at 120 Necro/SS
+               //* Approx +13 to +17 damage against Level 5 Karma
+               LOCAL.ExtraDamage=<EVAL <CONT.KARMA> / 500>
+            ELSE
+               LOCAL.ExtraDamage=0
+            ENDIF
+            CONT.DAMAGE <EVAL <LOCAL.BaseDamage> + <LOCAL.ExtraDamage>> <DEF.dam_cold> <OBJ>
+         ENDIF
+      ENDFOR
+   ENDFOR
+   OBJ=
+
+[SPELL 116]
+DEFNAME=s_wraith_form
+NAME=Wraith Form
+SOUND=01d2
+RUNES=.Rel Xen Um
+CAST_TIME=4.0
+RESOURCES=i_reag_nox_crystal, i_reag_pig_iron
+RUNE_ITEM=i_rune_weaken
+SCROLL_ITEM=i_scroll_wraith_form
+FLAGS=spellflag_good|spellflag_playeronly
+EFFECT_ID=i_fx_smoke
+EFFECT=5,15
+DURATION=0
+MANAUSE=17
+SKILLREQ=Necromancy 20.0
+INTERRUPT=100.0,1.0
+ON=@Start
+   IF (<SRC.FLAGS> & statf_onhorse)
+      SYSMESSAGELOC color_text,1005583//"Please dismount first"
+      RETURN 1
+   ENDIF
+   IF (<FINDID.i_mem_transform>)
+      IF (<FINDID.i_mem_transform.TAG0.TransformCreature>==c_wraith_form)
+         //"Wraith Form: Second casting so remove the effect."
+         RETURN 0
+      ENDIF
+   ENDIF
+   IF (<SRC.BODY> != <SRC.OBODY>)
+      SYSMESSAGELOC color_text,1111896//"You may only change forms while in your original body."
+      RETURN 1
+   ENDIF
+ON=@Success
+   REF1=<FINDID.i_mem_transform>
+   IF (<REF1>)
+      SRC.DROP <REF1>//Drop will trigger unequip without the annoying message... but it does have an annoying sound.
+      REF1.REMOVE
+   ELSE
+      SRC.NEWITEM=i_mem_transform
+      NEW.NAME=wraith form memory
+      NEW.TAG.TransformArticle=a
+      NEW.TAG.TransformCreature=c_wraith_form
+      //Put special effect tags here:
+      NEW.TAG.RESPHYSICAL=15
+      NEW.TAG.RESFIRE=-5
+      NEW.TAG.RESENERGY=-5
+      NEW.TAG.HitManaLeech=<EVAL <SRC.SpiritSpeak>/5>
+      NEW.TAG.Slayer=SLAYER_UNDEAD//Vulnerable to slayer weapons
+      //FIXME: The following tag should give the caster:
+      //* the ability to always succeed when casting recall
+      //* immunity to bleed damage
+      //* the ability to walk thru people without losing stamina
+      NEW.TAG.WraithForm=1
+      EQUIP <NEW>
+   ENDIF
+   SRC.UPDATE
+
+[SPELL 117]
+DEFNAME=s_exorcism
+NAME=Exorcism
+SOUND=
+RUNES=.Ort Corp Grav
+CAST_TIME=2.0
+RESOURCES=i_reag_nox_crystal, i_reag_grave_dust
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_exorcism
+FLAGS=
+EFFECT_ID=0
+EFFECT=0
+DURATION=0
+MANAUSE=40
+SKILLREQ=Necromancy 80.0
+INTERRUPT=100.0,1.0
+ON=@Select
+   IF (<SPIRITSPEAK> < 100.0)
+      ACTDIFF = -1
+   ENDIF
+ON=@Success
+   REF11 = <UID>
+   FORCHARS 26
+      IF (<REGION.TAG0.Champion>==1)
+         IF (<ISPLAYER>)
+            IF (<FLAGS>&statf_dead)
+               IF (<ISNEARCORPSE 10>)
+                  DOSWITCH <MAPPLANE>
+                  GO r_chaos_shrine_fel
+                  GO r_chaos_shrine_fel // this should be trammel?
+                  GO r_chaos_shrine_ilsh
+                  GO r_chaos_shrine_malas
+                  GO r_chaos_shrine_tok
+                  GO r_chaos_shrine_termur
+                  ENDDO
+               ENDIF
+            ENDIF
+         ENDIF
+      ENDIF
+   ENDFOR
+
+[EOF]

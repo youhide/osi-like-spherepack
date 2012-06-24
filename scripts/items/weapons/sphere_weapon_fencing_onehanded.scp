@@ -1,0 +1,694 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 14, 2011
+VERSION=0.56b
+
+
+///////////////////////////////////////////////////////////////
+//////// ASSASSIN SPIKES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d21]
+DEFNAME=i_assassin_spike
+NAME=assassin spike
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=4
+REQSTR=15
+TWOHANDS=N
+RESOURCES=9 i_ingot_iron
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Assassin Spikes
+DESCRIPTION=Assassin Spike
+TEVENTS=t_iprop
+DUPELIST=02d2d
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02d2d]
+DUPEITEM=02d21
+
+[ITEMDEF i_charged_assassin_spike]
+ID=i_assassin_spike
+NAME=Charged Assassin Spike
+RESOURCES=9 i_ingot_iron, 1 i_gem_ecru_citrine
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitLightning=10
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Assassin Spikes
+DESCRIPTION=Charged Assassin Spike
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_flesh_ripper]
+ID=i_assassin_spike
+NAME=Flesh Ripper
+TEVENTS=t_iprop
+TAG.Skill.Bonus.1=Anatomy,10.0
+TAG.Slayer.Super=SSLAYER_MAGE
+TAG.StrengthBonus=5
+TAG.HitChanceIncrease=15
+TAG.SwingSpeedIncrease=40
+TAG.BestWeaponSkill=1
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Assassin Spikes
+DESCRIPTION=Flesh Ripper
+ON=@Create
+   COLOR=color_o_copper
+   HITPOINTS=255
+
+[ITEMDEF i_magekiller_assassin_spike]
+ID=i_assassin_spike
+NAME=Magekiller Assassin Spike
+RESOURCES=9 i_ingot_iron, 1 i_gem_brilliant_amber
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitManaLeech=15
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Assassin Spikes
+DESCRIPTION=Magekiller Assassin Spike
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_rune_carving_knife]
+ID=i_assassin_spike
+NAME=Rune Carving Knife
+RESOURCES=9 i_ingot_iron, 10 i_ingredient_muculent, 10 i_ingredient_putrefaction, 1 i_ingredient_dread_horn_mane
+SKILLMAKE=Blacksmithing 70.0
+TEVENTS=t_iprop
+TAG.HitManaLeech=40
+TAG.StaminaRegeneration=2
+TAG.DamageIncrease=30
+TAG.LowerManaCost=10
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Assassin Spikes
+DESCRIPTION=Rune Carving Knife
+ON=@Create
+   COLOR=048d
+   HITPOINTS=255
+
+[ITEMDEF i_true_assassin_spike]
+ID=i_assassin_spike
+NAME=True Assassin Spike
+RESOURCES=9 i_ingot_iron, 1 i_gem_dark_sapphire
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitChanceIncrease=4
+TAG.DamageIncrease=4
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Assassin Spikes
+DESCRIPTION=True Assassin Spike
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_wounding_assassin_spike]
+ID=i_assassin_spike
+NAME=Wounding Assassin Spike
+RESOURCES=9 i_ingot_iron, 1 i_gem_perfect_emerald
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitHarm=15
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Assassin Spikes
+DESCRIPTION=Wounding Assassin Spike
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// DAGGERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f51]
+DEFNAME=i_dagger
+NAME=dagger
+TYPE=t_weapon_fence
+DAM=10,11
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=1
+REQSTR=10
+TWOHANDS=N
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Blacksmithing 0.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Daggers
+DESCRIPTION=Dagger
+TEVENTS=t_iprop
+DUPELIST=0f52
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f52]
+DUPEITEM=0f51
+
+[ITEMDEF i_misericord]
+ID=i_dagger
+NAME=Misericord
+TEVENTS=t_iprop
+TAG.Slayer.Super=SSLAYER_WOLF
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Daggers
+DESCRIPTION=Misericord
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_night_kiss]
+ID=i_dagger
+NAME=Night's Kiss
+TEVENTS=t_iprop
+TAG.Slayer.Super=SSLAYER_REPOND
+TAG.HitLifeLeech=40
+TAG.SwingSpeedIncrease=30
+TAG.DamageIncrease=35
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Daggers
+DESCRIPTION=Night's Kiss
+ON=@Create
+   COLOR=color_o_shadow
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// KRYSSES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 01400]
+DEFNAME=i_kryss
+NAME=kryss
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=2
+REQSTR=10
+TWOHANDS=N
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 36.7
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Krysses
+DESCRIPTION=Kryss
+TEVENTS=t_iprop
+DUPELIST=01401
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 01401]
+DUPEITEM=01400
+
+[ITEMDEF i_blackthorn_kryss]
+ID=i_kryss
+NAME=Blackthorn's Kryss - Museum of Vesper Replica
+TEVENTS=t_iprop
+TAG.HitLifeLeech=22
+TAG.SwingSpeedIncrease=25
+TAG.DamageIncrease=50
+TAG.BestWeaponSkill=1
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Krysses
+DESCRIPTION=Blackthorn's Kryss - Museum of Vesper Replica
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255
+
+[ITEMDEF i_silver_serpent_blade]
+ID=i_kryss
+NAME=Silver Serpent Blade
+TEVENTS=t_iprop
+TAG.HitChanceIncrease=5
+TAG.SwingSpeedIncrease=10
+TAG.DamageIncrease=25
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Krysses
+DESCRIPTION=Silver Serpent Blade
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 53}
+
+
+///////////////////////////////////////////////////////////////
+//////// LANCES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026c0]
+DEFNAME=i_lance
+NAME=lance
+TYPE=t_weapon_fence
+DAM=17,18
+SKILL=Fencing
+SPEED=4.5
+VALUE=280
+WEIGHT=12
+REQSTR=95
+TWOHANDS=N
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 48.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Lances
+DESCRIPTION=Lance
+TEVENTS=t_iprop
+DUPELIST=026ca
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 026c4]
+DUPEITEM=026ba
+
+[ITEMDEF i_luna_lance]
+ID=i_lance
+NAME=Luna Lance
+TEVENTS=t_iprop
+TAG.Skill.Bonus.1=Chivalry,10.0
+TAG.StrengthBonus=5
+TAG.SwingSpeedIncrease=20
+TAG.DamageIncrease=35
+TAG.BestWeaponSkill=1
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Lances
+DESCRIPTION=Luna Lance
+ON=@Create
+   COLOR=0481
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// LEAFBLADES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d22]
+DEFNAME=i_leafblade
+NAME=leafblade
+TYPE=t_weapon_fence
+DAM=13,15
+FLIP=1
+SKILL=Fencing
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=8
+REQSTR=20
+TWOHANDS=N
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Leafblades
+DESCRIPTION=Leafblade
+TEVENTS=t_iprop
+DUPELIST=02d2e
+ON=@Create
+HITPOINTS={36 48}
+
+[ITEMDEF 02d2e]
+DUPEITEM=02d22
+
+[ITEMDEF i_leafblade_ease]
+ID=i_leafblade
+NAME=Leafblade of Ease
+RESOURCES=12 i_ingot_iron, 1 i_gem_perfect_emerald
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.BestWeaponSkill=1
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Leafblades
+DESCRIPTION=Leafblade of Ease
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_luckblade]
+ID=i_leafblade
+NAME=Luckblade
+RESOURCES=12 i_ingot_iron, 1 i_gem_white_pearl
+SKILLMAKE=Blacksmithing 70.0
+TEVENTS=t_iprop
+TAG.Luck=20
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Leafblades
+DESCRIPTION=Luckblade
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_magekiller_leafblade]
+ID=i_leafblade
+NAME=Magekiller Leafblade
+RESOURCES=12 i_ingot_iron, 1 i_gem_fire_ruby
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitManaLeech=16
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Leafblades
+DESCRIPTION=Magekiller Leafblade
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_true_leafblade]
+ID=i_leafblade
+NAME=True Leafblade
+RESOURCES=12 i_ingot_iron, 1 i_gem_blue_diamond
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.ResPoison=5
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Leafblades
+DESCRIPTION=True Leftblade
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// WAR FORKS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 01404]
+DEFNAME=i_war_fork
+NAME=war fork
+TYPE=t_weapon_fence
+DAM=12,13
+FLIP=1
+SKILL=Fencing
+SPEED=2.5
+//VALUE=FIXME
+WEIGHT=9
+REQSTR=45
+TWOHANDS=N
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 42.9
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=War Forks
+DESCRIPTION=War Fork
+TEVENTS=t_iprop
+DUPELIST=01405
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 01405]
+DUPEITEM=01404
+
+[ITEMDEF i_recaro_riposte]
+ID=i_war_fork
+NAME=Recaro's Riposte
+TEVENTS=t_iprop
+TAG.SwingSpeedIncrease=10
+TAG.DamageIncrease=25
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=War Forks
+DESCRIPTION=Recaro's Riposte
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=110
+
+
+///////////////////////////////////////////////////////////////
+//////// WAR FORKS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 08fe]
+DEFNAME=i_bloodblade
+NAME=bloodblade
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=4.0
+REQSTR=10
+TWOHANDS=N
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 44.1
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Bloodblades
+DESCRIPTION=Bloodblade
+TEVENTS=t_iprop
+DUPELIST=04072
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 04072]
+DUPEITEM=08fe
+
+
+///////////////////////////////////////////////////////////////
+//////// GARGISH DAGGERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0902]
+DEFNAME=i_gargish_dagger
+NAME=Gargish dagger
+TYPE=t_weapon_fence
+DAM=10,11
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=1.0
+REQSTR=10
+TWOHANDS=N
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Blacksmithing 0.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Gargish Daggers
+DESCRIPTION=Gargish Dagger
+TEVENTS=t_iprop
+DUPELIST=0406a
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 0406a]
+DUPEITEM=0902
+
+
+///////////////////////////////////////////////////////////////
+//////// GARGISH DAGGERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0907]
+DEFNAME=i_shortblade
+NAME=shortblade
+TYPE=t_weapon_fence
+DAM=9,13
+FLIP=1
+SKILL=Fencing
+SPEED=75
+//VALUE=FIXME
+WEIGHT=4.0
+REQSTR=10
+TWOHANDS=N
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 28.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Shortblades
+DESCRIPTION=Shortblade
+TEVENTS=t_iprop
+DUPELIST=04076
+ON=@Create
+ HITPOINTS={30 50}
+
+[ITEMDEF 04076]
+DUPEITEM=0907
+
+
+///////////////////////////////////////////////////////////////
+//////// WAR CLEAVERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d23]
+DEFNAME=i_war_cleaver
+NAME=war cleaver
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=5
+REQSTR=15
+TWOHANDS=N
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=War Cleavers
+DESCRIPTION=War Cleaver
+TEVENTS=t_iprop
+DUPELIST=02d2f
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02d2f]
+DUPEITEM=02d23
+
+[ITEMDEF i_butcher_war_cleaver]
+ID=i_war_cleaver
+NAME=Butcher's War Cleaver
+RESOURCES=18 i_ingot_iron, 1 i_gem_turquoise
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.Slayer.Super=SSLAYER_BOVINE
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=War Cleavers
+DESCRIPTION=Butcher's War Cleaver
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_knight_war_cleaver]
+ID=i_war_cleaver
+NAME=Knight's War Cleaver
+RESOURCES=18 i_ingot_iron, 1 i_gem_perfect_emerald
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitPointRegeneration=3
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=War Cleavers
+DESCRIPTION=Knight's War Cleaver
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_raed_glory]
+ID=i_war_cleaver
+NAME=Raed's Glory
+SPEED=2.2
+DAM=9,11
+TEVENTS=t_iprop
+TAG.SpellChanneling=1
+TAG.HitLifeLeech=35
+TAG.ManaIncrease=8
+TAG.SwingSpeedIncrease=20
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=War Cleavers
+DESCRIPTION=Raed's Glory
+ON=@Create
+   COLOR=024f
+   HITPOINTS=255
+
+[ITEMDEF i_serrated_war_cleaver]
+ID=i_war_cleaver
+NAME=Serrated War Cleaver
+RESOURCES=18 i_ingot_iron, 1 i_gem_ecru_citrine
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.DamageIncrease=7
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=War Cleavers
+DESCRIPTION=Serrated War Cleaver
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_true_war_cleaver]
+ID=i_war_cleaver
+NAME=True War Cleaver
+RESOURCES=18 i_ingot_iron, 1 i_gem_brilliant_amber
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitPointRegeneration=2
+TAG.DamageIncrease=4
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=War Cleavers
+DESCRIPTION=True War Cleaver
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// GARGISH
+///////////////////////////////////////////////////////////////
+
+[ITEMDEF 048bc]
+DEFNAME=i_gargish_kryss
+NAME=Gargish kryss
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=56//FIXME
+VALUE=51
+WEIGHT=8.0
+TWOHANDS=N
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 36.7
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Gargish Kryss
+REQSTR=10
+TAG.GargoyleOnly=1
+TEVENTS=t_iprop
+DUPELIST=048bd
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048bd]
+//gargish kryss
+DUPEITEM=048bc
+
+[ITEMDEF 048be]
+DEFNAME=i_gargish_war_fork
+NAME=Gargish war fork
+TYPE=t_weapon_fence
+DAM=12,13
+FLIP=1
+SKILL=Fencing
+SPEED=50//FIXME
+VALUE=78
+WEIGHT=8.0
+TWOHANDS=N
+RESOURCES=12 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 42.9
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Gargish War Fork
+REQSTR=40
+TAG.GargoyleOnly=1
+TEVENTS=t_iprop
+DUPELIST=048bf
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048bf]
+//gargish war fork
+DUPEITEM=048be
+
+[ITEMDEF 048ca]
+DEFNAME=i_gargish_lance
+NAME=Gargish lance
+TYPE=t_weapon_fence
+DAM=17,18
+FLIP=1
+SKILL=Fencing
+SPEED=26//FIXME
+RANGE=2
+VALUE=121
+WEIGHT=12.0
+TWOHANDS=N
+RESOURCES=20 i_ingot_iron,2 i_log
+SKILLMAKE=Blacksmithing 48.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Gargish Lance
+REQSTR=95
+TEVENTS=t_iprop
+DUPELIST=048cb
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048cb]
+//Gargish lance
+DUPEITEM=048ca
+
+
+[EOF]

@@ -1,0 +1,406 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Jueves, 14 de Enero de 2010
+VERSION=0.56b
+
+[events e_PlayerGenericEvent]
+on=@attack
+return <src.trigger @Attacked,<def.tat_as_argo>,<uid>>
+
+// Virtue System
+on=@UserVirtue
+if <def.scp.VirtueSystem> == 0
+return 1
+endif
+if (<argn1>==1)
+	for 0 8  // if the player doesn't have max status for first level of virtue
+		if !(<src.tag0.virtuemax_<dlocal._for>>)
+		src.tag0.virtuemax_<dlocal._for>=4000  // give him the cap.
+		endif
+	endfor
+argo.sdialog d_virtue_main
+else
+	if (<argn1>==112)  /// invoke valor virtue (coded for test.)
+	src.targetf f_valor_target
+	return 1
+	elif <argn1> == 107
+	f_start_honor
+	return 1
+	elif <argn1> == 105
+	sysmessage @,,2 1053001 // This virtue is not activated through the virtue menu.
+	return 1
+    endif
+     // TODO : Add virtue systems and check them here if is clicked.
+   //and do not forget to put return 1 for each virtue check.
+src.sysmessage @03c1,6,1,1 This virtue is not active.
+endif
+
+// Skill delays
+on=@skillwait
+if (<flags>&statf_freeze) || (<flags>&statf_stone)
+src.sysmessage <def.scp.skill_cantuse>
+return 1
+endif
+if <flags>&statf_dead
+src.sysmessage <def.scp.skill_youaredead>
+return 1
+endif
+if <def.scp.SkillWaitingTimes> == 1
+	if <ctag0.skillrecovery> > <serv.time>
+	src.sysmessage <def.scp.skill_mustwait>
+	return 1
+	endif
+endif
+
+// Limitations by Race
+on=@equiptest
+if <def.scp.LimitationRace> == 1
+	if <src.isgargoyle>
+		if !<tag0.item.gargoyle>
+		return 1
+		endif
+	endif
+	if <tag0.item.elven>
+		if !<src.iselven>
+		return 1
+		endif
+	endif
+endif
+if <def.scp.LimitationGenre> == 1
+	if <tag0.item.female>
+		if !<src.isfemale>
+		return 1
+		endif
+	endif
+endif
+
+// Context Menu Display
+on=@contextmenurequest
+if <uid> == <src.uid>
+	if <guild>
+	src.addcontextentry 101,6117
+	else
+	src.addcontextentry 101,6117,01
+	endif
+src.addcontextentry 102,6119
+else
+src.addcontextentry 200,6121
+endif
+return 0
+
+// Context Menu Functions
+on=@contextmenuselect
+if <uid> == <src.uid>
+	if <argn> == 101
+	guildmenu
+	elif <argn> == 102
+	openquestlog
+	endif
+else
+	if <argn> == 200
+	src.face <uid>
+	endif
+endif
+
+// Quest Button
+on=@userquestbutton
+openquestlog
+
+// OSI Guildstones Menu
+on=@userguildbutton
+src.guildmenu
+return 1
+
+// Cancel use of Book of Arms
+// Until we script it and finish it!
+on=@userspecialmove
+return 1
+
+// OSI Calculation + Stats Bonus
+on=@userstats
+if <def.scp.Followers> == 1
+	if <isgm>
+	maxfollower = 255
+	else
+	maxfollower = <def.scp.MaxFollowers>
+	endif
+endif
+
+// Followers control
+on=@itembuy
+if <def.scp.followers> == 1
+	if <act.type> == t_figurine
+	local.slots = <qval <serv.chardef.<act.tdata3>.tag0.control.slots> ? <serv.chardef.<act.tdata3>.tag0.control.slots> : 1>
+		if <eval <src.curfollower>+(<local.slots>*<argn>)> > <src.maxfollower>
+		src.sysmessage @,,2 1049612,<serv.chardef.<act.tdata3>.name> // ~1_NAME~ remained in the stables because you have too many followers.
+		src.newgold <local.totalcost>
+		return 1
+		endif
+	src.curfollower += <eval <local.slots>*<argn>>
+	endif
+endif
+
+// Ethereal Mounts
+on=@dismount
+if <argo.tag0.EthMount>
+serv.newitem <argo.tag.EthMount>
+new.cont = <src.uid>
+argo.remove
+return 1
+endif
+
+// Crafting System
+on=@skillmenu
+if <def.scp.CraftingSystem> == 0
+return 0
+endif
+if <args>==sm_blacksmith
+	if <def0.scp.NewCrafting_Blacksmithing> == 1
+	craftskill Blacksmithing
+	return 1
+	endif
+elif <args>==sm_alchemy
+	if <def0.scp.NewCrafting_Alchemy> == 1
+	craftskill Alchemy
+	return 1
+	endif
+elif <args>==sm_bowcraft
+	if <def0.scp.NewCrafting_Bowcraft> == 1
+	craftskill Bowcraft
+	return 1
+	endif
+elif <args>==sm_cartography
+	if <def0.scp.NewCrafting_Cartography> == 1
+	craftskill Cartography
+	return 1
+	endif
+elif <args>==sm_carpentry
+	if <def0.scp.NewCrafting_Carpentry> == 1
+	craftskill Carpentry
+	return 1
+	endif
+elif (<args>==sm_tailor_leather) || (<args>==sm_tailor_cloth)
+	if <def0.scp.NewCrafting_Tailoring> == 1
+	craftskill Tailoring
+	return 1
+	endif
+elif <args>==sm_tinker
+	if <def0.scp.NewCrafting_Tinkering> == 1
+	craftskill Tinkering
+	return 1
+	endif
+elif <args>==sm_inscription
+	if <def0.scp.NewCrafting_Inscription> == 1
+	craftskill Inscription
+	return 1
+	endif
+endif
+return 0
+
+// Fishing coast lines
+on=@RegionResourceFound
+if <src.action> == skill_fishing
+	if <def.scp.Fishing_CoastLines> == 1
+		if <serv.map(<src.targp.x>,<src.targp.y>,<src.targp.m>).type> == t_water
+		local.newbit = <serv.regiontype.r_water.resources.<eval <serv.regiontype.r_water.calcmemberindex <src.uid>>+1>.key>
+		argo.more1 = <local.newbit>
+		argo.amount = <r<serv.regionresource.<argo.more1>.amount>>
+		endif
+	endif
+endif
+
+// Chivalry Tithing Points
+on=@spellselect
+if (<argn1> > 199) && (<argn1> < 211)
+	if <tithing> < <def.scp.spell.<argn1>.tithing>
+	sysmessage <def.scp.magery_notithing>
+	return 1
+	endif
+endif
+
+// OSI Spell Difficulty
+// Magic WOPs
+on=@spellcast
+if <def.scp.OSISpellDiff> == 1
+local.skill = <serv.skill.<streat <serv.spell.<argn1>.skillreq>>.key>
+actdiff = <eval (((<<local.skill>> - <argn2>) * 2.5) + 50.0)>
+endif
+if !<npc>
+	if <isempty <serv.spell.<argn1>.runes>>
+		if <account.plevel> > 2
+			if <serv.wopstaff>
+				if <isnum <def.scp.spell_<argn1>_wop>>
+				say @<serv.wopcolor>,<serv.wopfont>,2 <def.scp.spell_<argn1>_wop>
+				else
+				say @<serv.wopcolor>,<serv.wopfont> <def.scp.spell_<argn1>_wop>
+				endif
+			endif
+		elif <account.plevel> < 2
+			if <isnum <def.spell.<argn1>.wop>>
+			say @<serv.wopcolor>,<serv.wopfont>,2 <def.scp.spell_<argn1>_wop>
+			else
+			say @<serv.wopcolor>,<serv.wopfont> <def.scp.spell_<argn1>_wop>
+			endif
+		endif
+	endif
+endif
+
+// Magic Reflection Spell
+on=@spelleffect
+if <flags>&statf_reflection
+	if <src.uid> != <uid>
+		if (<serv.spell.<argn1>.flags>&spellflag_harm) || <argn> == 41
+		flags &= ~statf_reflection
+		findid.i_rune_magic_reflection.remove
+		effect 3,i_fx_bless_effect,16,16
+			if <src.flags>&statf_reflection
+			src.flags &= ~statf_reflection
+			src.findid.i_rune_magic_reflection.remove
+			src.effect 3,i_fx_bless_effect,16,16
+			else
+			spelleffect <argn1> <argn2> <argo.uid>
+			return 1
+			endif
+		endif
+	endif
+endif
+
+// Proper Statlock Fix
+on=@statchange
+local.statsum = <qval <tag0.override.statsum> ? <tag0.override.statsum> : <serv.skillclass.0.statsum>>
+local.stats = <eval <ostr>+<odex>+<oint>>
+if <local.stats> == <local.statsum>
+	if <statlock[<argn1>]> == lock_locked
+	return 1
+	endif
+	if <statlock[<argn1>]> == lock_up
+		for 0 2
+			if <local._for> != <argn1>
+				if <statlock[<dlocal._for>]> == lock_down
+					if (<eval <o<def.stat_<dlocal._for>_name>>-1> > 0)
+					o<def.stat_<dlocal._for>_name> = <eval <o<def.stat_<dlocal._for>_name>>-1>
+					return 0
+					endif
+				return 1
+				endif
+			endif
+		endfor
+	return 1
+	endif
+endif
+
+// Quest System
+on=@skillmakeitem
+if <tag0.quests>
+	for x <tag0.quests>
+		for y <def.quest_<dtag0.quest.<local._for>.id>_objective_amount>
+			if <def.quest_<dtag0.quest.<local._for>.id>_objective_<dlocal.y>_type> == questobj_craft
+				if <argo.id> == <def.quest_<dtag0.quest.<local._for>.id>_objective_<dlocal.y>_craft>
+				f_quest_craftitem <argo.uid>,<local.x>,<local.y>
+				endif
+			endif
+		endfor
+	endfor
+endif
+
+// Death Robe Fix
+on=@death
+if <findlayer.22>
+tag.robe=<findlayer.22.uid>
+	if <findlayer.3>
+	tag.feet=<findlayer.3.uid>
+	endif
+endif
+
+on=@deathcorpse
+if <tag0.robe>
+uid.<tag.robe>.z = 3
+	if <tag0.feet>
+	uid.<tag.feet>.z = 8
+	endif
+tag.robe=
+tag.feet=
+argo.update
+endif
+
+// Hunger System triggers
+on=@login
+if (<ddef0.scp.hunger_on_off>)
+	if (<src.findid.i_food_and_drink_sys_mem>)
+		src.findid.i_food_and_drink_sys_mem.timer=60
+	else
+		src.f_alimentation
+	endif
+	return 0
+endif
+
+on=@logout
+if (<src.findid.i_food_and_drink_sys_mem>)
+	if (<src.findid.i_food_and_drink_sys_mem.timer> >= 0)
+		src.findid.i_food_and_drink_sys_mem.timer=-1
+	endif
+	return 0
+endif
+
+ON=@ITEMDCLICK
+IF (<DDEF0.SCP.HUNGER_ON_OFF>)
+	IF (!<SRC.FINDID.i_food_and_drink_sys_mem>)
+		SRC.F_ALIMENTATION
+	ENDIF
+	IF (<ACT.TYPE> == T_FOOD) || (<ACT.TYPE> == t_fruit)
+		IF (<SRC.FOOD> >= <DDEF0.SCP.MAXFOOD>)
+			SRC.SYSMESSAGELOC -1,1042971,You're satiated.
+			RETURN 1
+		ELSEIF (<SRC.RESTEST 1 <ACT.BASEID>>)
+			SRC.CONSUME 1 <ACT.BASEID>
+			IF (<SRC.FOOD> < <DDEF0.SCP.MAXFOOD>)
+				SRC.FOOD_INCREASE
+				RETURN 0
+			ELSE
+				SRC.SYSMESSAGELOC -1,1042971,You're satiated.
+				RETURN 1	
+			ENDIF
+		ELSE
+			SRC.SYSMESSAGELOC -1,1042971,You must have it in your pack.
+			RETURN 1
+		ENDIF
+	ELSEIF (<ACT.TYPE> == t_booze) || (<ACT.TYPE> == t_drink) || (<ACT.TYPE> == t_water_wash)
+		IF (<SRC.DTAG0.DRINK> >= <DDEF0.SCP.MAXDRINK>)
+			SRC.SYSMESSAGELOC -1,1042971,You aren't thirsty.
+			RETURN 1
+		ELSEIF (<SRC.RESTEST 1 <ACT.BASEID>>)
+			SRC.CONSUME 1 <ACT.BASEID>
+			IF (<SRC.DTAG0.DRINK> < 10)
+				SRC.DRINK_INCREASE
+				RETURN 0
+			ELSE
+				SRC.SYSMESSAGELOC -1,1042971,You aren't thirsty.
+				RETURN 1	
+			ENDIF
+		ELSE
+			SRC.SYSMESSAGELOC -1,1042971,You must have it in your pack.
+			RETURN 1
+		ENDIF
+	ENDIF
+ENDIF
+
+ON=@Hunger
+IF (<DDEF0.SCP.HUNGER_ON_OFF>)
+	RETURN 1
+ENDIF
+
+
+ON=@ItemSell
+IF (<ACT.TYPE> == t_container)
+ FORCONT <act.uid> 0	//Looking for ANY item in the container.
+  IF <IsItem>
+   SMSGL -1,500196	//You may not sell containers unless they are empty
+   RETURN 1		//Stop the sale.
+  ENDIF
+ ENDFOR
+ENDIF
+
+[eof]

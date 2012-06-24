@@ -1,0 +1,453 @@
+[PLEVEL 4]
+ADDQUEST
+
+[FUNCTION ADDQUEST]
+EVENTS +e_questers
+TAG0.QUESTS += 1
+TRY TAG.QUEST<dTAG0.QUESTS>.ID=<ARGN>
+SRC.SYSMESSAGE @33,3,1 Quest added!
+
+[FUNCTION openquestlog]
+SDIALOG d_quest_log
+
+/////////////////////////////////
+
+[FUNCTION STARTQUEST]
+IF (<SRC.TAG0.QUESTS> >= 10)
+SAY @88 You're already doing too many tasks, come back when you have done some of them.
+RETURN 1
+ENDIF
+IF (<TAG0.ESCORTED>)
+SAY @946,,2 500897
+RETURN 1
+ENDIF
+SRC.sysmessage @,,2 1049019
+FOR 10
+IF (<SRC.TAG0.QUEST<dLOCAL._FOR>.ID>==<ARGN1>)
+SDIALOG d_QUEST_OFFER 6
+RETURN 1
+ELIF !(<SRC.TAG0.QUEST<dLOCAL._FOR>.ID>)
+SRC.TAG0.QUESTS += 1
+TRY SRC.TAG.QUEST<dLOCAL._FOR>.ID=<ARGN1>
+TRY SRC.TAG.QUEST<dLOCAL._FOR>.QUESTERUID=<UID>
+IF (0<DEF.QUEST_<ARGN1>_ITEMTOGIVE>)
+FOR cx 1 <DEF.QUEST_<ARGN1>_ITEMTOGIVE>
+SRC.createitem <DEF.QUEST_<ARGN1>_ITEMTOGIVE<EVAL <LOCAL.CX>>>
+ENDFOR
+ENDIF
+FOR x 1 <DEF.QUEST_<ARGN1>_OBJECTIVEAMOUNT>
+IF (0<DEF.QUEST_<ARGN1>_OBJECTIVE<EVAL <LOCAL.X>>_TIME>)
+SERV.NEWITEM i_quest_timer
+NEW.MORE1=<ARGN1>
+NEW.TIMER=<DEF.QUEST_<ARGN1>_OBJECTIVE<EVAL <LOCAL.X>>_TIME>
+NEW.CONT=<SRC>
+ENDIF
+IF (0<DEF.QUEST_<ARGN1>_OBJECTIVE<EVAL <LOCAL.X>>_TYPE>==3)
+SERV.NEWITEM <STREAT <DEF.QUEST_<ARGN1>_OBJECTIVE<EVAL <LOCAL.X>>>>
+NEW.AMOUNT=<STRARG <DEF.QUEST_<ARGN1>_OBJECTIVE<EVAL <LOCAL.X>>>>
+NEW.ATTR |= attr_newbie
+NEW.EVENTS +t_quest_deliver_item
+NEW.TAG.QUESTDELIVERID=<ARGN1>
+NEW.TAG.QUESTGIVER=<UID>
+NEW.BOUNCE
+ELIF (0<DEF.QUEST_<ARGN1>_OBJECTIVE<EVAL <LOCAL.X>>_TYPE>==2)
+TRY SRC.TAG.QUEST<dLOCAL._FOR>.SLAY<STREAT <DEF.QUEST_<ARGN1>_OBJECTIVE<EVAL <LOCAL.X>>>>=<STRARG <DEF.QUEST_<ARGN1>_OBJECTIVE<EVAL <LOCAL.X>>>>
+ELIF (0<DEF.QUEST_<ARGN1>_OBJECTIVE<EVAL <LOCAL.X>>_TYPE>==4)
+TAG.ESCORTED=1
+TAG.OLDHOME=<HOME>
+HOME=-1,-1
+HOMEDIST
+LOCAL.OLDNEW=<NEW>
+SERV.NEWITEM i_questsys_escorted,1,<UID>
+NEW.TIMER=1
+NEW.MORE1=<SRC>
+NEW.MORE2=<ARGN1>
+serv.newitem=i_memory
+new.color=02
+new.link=<src>
+new.cont=<uid>
+new.timer=-1
+new.name=<src.name>
+GOTO <SRC.P>
+NEW=<LOCAL.OLDNEW>
+elif (<def0.quest_<argn1>_objective<dlocal.x>_type> == 5)
+try src.tag.quest<local._for>.craft<streat <def.quest_<argn1>_objective<dlocal.x>>> = <strarg <def.quest_<argn1>_objective<dlocal.x>>>
+endif
+ENDFOR
+SDIALOG d_QUEST_OFFER 6
+SRC.SDIALOG d_QUESTUPDATE
+RETURN 1
+ENDIF
+ENDFOR
+
+///////////////////////////////////
+
+[CHARDEF c_quester_elff]
+ID=c_elf_female
+NAME=quest dummy
+TEVENTS=e_questers
+CAN=MT_USEHANDS|MT_EQUIP|MT_FEMALE
+
+ON=@Create
+FLAGS=statf_invul
+NPC=BRAIN_HUMAN
+DEX=10
+INT=10
+STR=10
+
+[CHARDEF c_quester_elfm]
+ID=c_elf_male
+NAME=quest dummy
+TEVENTS=e_questers
+CAN=MT_USEHANDS|MT_EQUIP
+
+ON=@Create
+FLAGS=statf_invul
+NPC=BRAIN_HUMAN
+DEX=10
+INT=10
+STR=10
+
+[EVENTS e_questers]
+ON=@GetHit
+RETURN 1
+
+ON=@Attack
+ACTION -1
+RETURN 1
+
+ON=@HitTry
+RETURN 1
+
+ON=@ClientToolTip
+SRC.ADDCLILOC 1072269
+
+ON=@Dclick
+IF (<TAG0.ESCORTED>)
+IF (<FINDID.i_questsys_escorted.MORE1> != <SRC>)
+SAY @946,,2 500897
+RETURN 1
+ENDIF
+ENDIF
+IF (<CHECKCOMPLETEQUEST>)
+RETURN 1
+ENDIF
+DIALOG d_quest_offer
+
+ON=@NPCSEENEWPLAYER
+DORAND 13
+SAY @946,,2 1074209
+SAY @946,,2 1074193
+SAY @946,,2 1074189
+SAY @946,,2 1074195
+SAY @946,,2 1074196
+SAY @946,,2 1074197
+SAY @946,,2 1074198
+SAY @946,,2 1074199
+SAY @946,,2 1074204
+SAY @946,,2 1074205
+SAY @946,,2 1074206
+SAY @946,,2 1074209
+MESSAGE @946,,2 1074212
+ENDDO
+
+ON=@Click
+MESSAGE @946,,2 1049644,Quester
+
+///////////////////////
+
+[FUNCTION QUITQUEST]
+REF2=<UID> //PLAYER
+REF3=<TAG0.QUEST<ARGN1>.QUESTERUID> //QUESTER
+CTAG.QUESTVIEWID=<ARGN1>
+TRY TAG.QUEST<ARGN1>.FAILED
+FOR j 1 <DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_OBJECTIVEAMOUNT>
+	IF (0<DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_OBJECTIVE<EVAL <LOCAL.J>>_TIME>)
+		FORCONTID i_quest_timer
+			IF (<MORE1>==<REF2.TAG0.QUEST<ARGN1>.ID>)
+			REMOVE
+			ENDIF
+		ENDFOR
+	ENDIF
+	IF (<DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_OBJECTIVE<EVAL <LOCAL.J>>_TYPE>==2)
+	TRY TAG.QUEST<ARGN1>.SLAY<STREAT <DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_OBJECTIVE<EVAL <LOCAL.J>>>>
+	ELIF (<DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_OBJECTIVE<EVAL <LOCAL.J>>_TYPE>==3)
+	CONSUME <DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_OBJECTIVE<EVAL <LOCAL.J>>>
+	ELIF (<DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_OBJECTIVE<EVAL <LOCAL.J>>_TYPE>==4)
+	REF3.FINDID.i_questsys_escorted.REMOVE
+	REF3.TIMERF 4,TAG.ESCORTED
+	REF3.HOME=<REF3.TAG0.OLDHOME>
+	REF3.TAG.OLDHOME
+	REF3.REMOVEESCORTOWNER
+	REF3.GOTO <REF3.HOME>
+		IF (!(STRMATCH(<HOME>,-1)))
+		REF3.TIMERF 3,GO <REF3.HOME>
+		REF3.TIMERF 3,HOMEDIST=3
+		ENDIF
+		IF (<ARGN2>)
+		F_COMPASSION_ESCORT
+		ENDIF
+	ENDIF
+ENDFOR
+IF (0<ARGN2>)
+	IF (0<DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_CHAIN>)
+		IF (<UID.<ARGN2>.TAG0.QUESTS>)
+			FOR t 1 <UID.<ARGN2>.TAG0.QUESTS>
+				IF (<UID.<ARGN2>.TAG0.QUEST<EVAL <LOCAL.t>>.ID> == <DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_CHAIN>)
+				CTAG.QUESTVIEWID=<LOCAL.t>
+				TRY UID.<ARGN2>.SDIALOG d_QUEST_OFFER 2
+				LOCAL.STARTEDACHAIN=1
+				ENDIF
+			ENDFOR
+		ENDIF
+		IF !(<LOCAL.STARTEDACHAIN>)
+			FOR u 1 <REF3.TAG0.QUESTS>
+				IF (<DEF.QUEST_<EVAL <TAG0.QUEST<ARGN1>.ID>>_CHAIN> == <TAG0.QUEST<EVAL <LOCAL.u>>.ID>)
+				CTAG.QUESTVIEWID=<LOCAL.U>
+				ENDIF
+			ENDFOR
+		REF3.SDIALOG d_QUEST_OFFER 2
+		ENDIF
+	ENDIF
+ENDIF
+TRY TAG.QUEST<ARGN1>.ID
+TRY TAG.QUEST<ARGN1>.QUESTERUID
+TAG0.QUESTS -= 1
+IF !(<TAG0.QUESTS>)
+TAG.QUESTS
+RETURN 1
+ENDIF
+if <argn1> != 10
+	for <hval <argn1>+1> 11
+		for z <def.quest_<dtag0.quest<dlocal._for>.id>_objectiveamount>
+			if <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.z>_type> == 2
+			tag.quest<eval <local._for>-1>.slay<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.z>>> = <tag.quest<dlocal._for>.slay<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.z>>>>
+			tag.quest<dlocal._for>.slay<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.z>>>
+			elif <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.z>_type> == 5
+			tag.quest<eval <local._for>-1>.craft<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.z>>> = <tag.quest<dlocal._for>.craft<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.z>>>>
+			tag.quest<dlocal._for>.craft<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.z>>>
+			endif
+		tag.quest<eval <local._for>-1>.id = <tag.quest<dlocal._for>.id>
+		tag.quest<eval <local._for>-1>.questeruid = <tag.quest<dlocal._for>.questeruid>
+		endfor
+	endfor
+endif
+
+///////////////////
+
+[FUNCTION QUESTTIMEREMAINING]
+FORCONTID i_quest_timer
+IF (<MORE1>==<ARGN1>)
+RETURN <EVAL <TIMER>>
+ENDIF
+ENDFOR
+
+[FUNCTION REMOVEALLQUESTIMERS]
+FORCONTID i_quest_timer
+IF (<MORE1>==<ARGN1>)
+REMOVE
+ENDIF
+ENDFOR
+
+[ITEMDEF i_quest_timer]
+ID=i_memory
+NAME=quest timer
+TYPE=T_EQ_SCRIPT
+
+ON=@Timer
+FOR <CONT.TAG0.QUESTS>
+IF (<CONT.TAG0.QUEST<dLOCAL._FOR>.ID>==<MORE1>)
+TRY CONT.TAG.QUEST<dLOCAL._FOR>.FAILED=1
+CONT.sysmessage @,,2 1074777
+CONT.REMOVEALLQUESTIMERS <MORE1>
+RETURN 1
+ENDIF
+ENDFOR
+REMOVE
+RETURN 1
+
+[TYPEDEF t_quest_deliver_item]
+ON=@Dropon_Ground
+FOR <SRC.TAG0.QUESTS>
+IF !(<LOCAL.QUESTDELIVERID>)
+IF (<SRC.TAG0.QUEST<dLOCAL._FOR>.ID>==<TAG0.QUESTDELIVERID>)
+LOCAL.QUESTDELIVERID=<LOCAL._FOR>
+ENDIF
+ENDIF
+ENDFOR
+TRY SRC.TAG.QUEST<EVAL <LOCAL.QUESTDELIVERID>>.FAILED=1
+SRC.sysmessage @,,2 1074777
+REMOVE
+
+ON=@Dropon_Item
+IF (<ARGO.UID>!=<SRC.FINDLAYER.21>)
+SRC.SYSMESSAGE @946,3,1 The item must stay on your main pack.
+RETURN 1
+ENDIF
+
+ON=@EquipTest
+SRC.SYSMESSAGE @946,3,1 The item must stay on your main pack.
+RETURN 1
+
+ON=@Dropon_Char
+FOR <SRC.TAG0.QUESTS>
+IF !(<LOCAL.QUESTDELIVERID>)
+IF (<SRC.TAG0.QUEST<dLOCAL._FOR>.ID>==<TAG0.QUESTDELIVERID>)
+LOCAL.QUESTDELIVERID=<LOCAL._FOR>
+ENDIF
+ENDIF
+ENDFOR
+
+FOR <DEF.QUEST_<EVAL <SRC.TAG0.QUEST<EVAL <LOCAL.QUESTDELIVERID>>.ID>>_OBJECTIVEAMOUNT>
+IF !(STRCMPI(<ARGO.NAME>,<DEF.QUEST_<EVAL <SRC.TAG0.QUEST<EVAL <LOCAL.QUESTDELIVERID>>.ID>>_OBJECTIVE<dLOCAL._FOR>_RECEIVER>))
+IF (0<DEF.QUEST_<EVAL <TAG0.QUESTDELIVERID>>_CHAIN>)
+IF (<ARGO.TAG0.QUESTS>)
+FOR h 1 <ARGO.TAG0.QUESTS>
+IF (<ARGO.TAG0.QUEST<EVAL <LOCAL.h>>.ID> == <DEF.QUEST_<EVAL <TAG0.QUESTDELIVERID>>_CHAIN>)
+SRC.CTAG.QUESTVIEWID=<LOCAL.QUESTDELIVERID>
+ARGO.DIALOG d_QUEST_OFFER 7
+RETURN 1
+ENDIF
+ENDFOR
+ELSE
+SRC.CTAG.QUESTVIEWID=<LOCAL.QUESTDELIVERID>
+TRY UID.<TAG0.QUESTGIVER>.DIALOG d_QUEST_OFFER 7
+RETURN 1
+ENDIF
+ENDIF
+SRC.CTAG.QUESTVIEWID=<LOCAL.QUESTDELIVERID>
+SDIALOG d_QUEST_OFFER 7
+RETURN 1
+ENDIF
+ENDFOR
+
+TRY SRC.TAG.QUEST<EVAL <LOCAL.QUESTDELIVERID>>.FAILED=1
+SRC.sysmessage @,,2 1074777
+REMOVE
+RETURN 1
+
+ON=@ClientToolTip
+SRC.ADDCLILOC 1072351
+
+////////////////////////////////
+
+[FUNCTION CHECKCOMPLETEQUEST]
+IF (<SRC.TAG0.QUESTS>)
+FOR <TAG0.QUESTS>
+FOR x 1 <SRC.TAG0.QUESTS>
+IF !(<SRC.TAG0.QUEST<EVAL <LOCAL.x>>.FAILED>)
+IF (<SRC.TAG0.QUEST<EVAL <LOCAL.x>>.ID>==<TAG0.QUEST<dLOCAL._FOR>.ID>)
+IF (<SRC.TAG0.QUEST<EVAL <LOCAL.x>>.QUESTERUID>==<UID>)
+local.completetasks = 0
+for y 1 <def.quest_<eval <tag0.quest<dlocal._for>.id>>_objectiveamount>
+	if (<def.quest_<eval <tag0.quest<dlocal._for>.id>>_objective<eval <local.y>>_type> == 1)
+		if (<src.restest <def.quest_<eval <tag0.quest<dlocal._for>.id>>_objective<eval <local.y>>>>)
+		local.completetasks ++
+		endif
+	elif (<def.quest_<eval <tag0.quest<dlocal._for>.id>>_objective<eval <local.y>>_type> == 2)
+		if (<src.tag0.quest<eval <local.x>>.slay<streat <def.quest_<eval <src.tag0.quest<eval <local.x>>.id>>_objective<eval <local.y>>>>> == 0)
+		local.completetasks ++
+		endif
+	elif (<def.quest_<dtag0.quest<dlocal._for>.id>_objective<eval <local.y>>_type> == 4)
+		if (!(strcmpi(<region.name>,<def.quest_<eval <tag0.quest<dlocal._for>.id>>_objective<eval <local.y>>>)))
+		local.completetasks ++
+		endif
+	elif <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.y>_type> == 5
+		if <src.tag0.quest<dlocal.x>.craft<streat <def.quest_<src.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>>>> == 0
+		local.completetasks ++
+		endif
+	elif <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.y>_type> == 6
+		if (<src.restest <def.quest_<src.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_targ>>)
+		local.completetasks ++
+		endif
+	endif
+endfor
+IF (<LOCAL.COMPLETETASKS>==<DEF.QUEST_<EVAL <TAG0.QUEST<dLOCAL._FOR>.ID>>_OBJECTIVEAMOUNT>)
+SRC.CTAG.QUESTVIEWID <LOCAL.X>
+SDIALOG d_QUEST_OFFER 7
+RETURN 1
+ENDIF
+ENDIF
+ENDIF
+ENDIF
+ENDFOR
+ENDFOR
+ENDIF
+RETURN 0
+
+[FUNCTION HASTHISCHAIN]
+FOR <TAG0.QUESTS>
+IF (0<DEF.QUEST_<EVAL <TAG0.QUEST<dLOCAL._FOR>.ID>>_ISCHAIN>)
+IF (STRMATCH(*<ARGN1>*,<DEF.QUEST_<EVAL <TAG0.QUEST<dLOCAL._FOR>.ID>>_ISCHAIN>))
+RETURN 1
+ENDIF
+ENDIF
+ENDFOR
+RETURN 0
+
+[FUNCTION ITEMTILEPICCOLOR]
+LOCAL.OLDNEW=<NEW>
+SERV.NEWITEM <ARGS>
+LOCAL.ITEMCOLOR=<NEW.COLOR>
+NEW.REMOVE
+NEW=<LOCAL.OLDNEW>
+RETURN <EVAL <LOCAL.ITEMCOLOR>>
+
+[ITEMDEF i_questsys_escorted]
+ID=i_memory
+NAME=questsys escorting
+TYPE=T_EQ_SCRIPT
+WEIGHT=0
+
+ON=@Create
+attr=attr_invis|attr_newbie|attr_move_never
+
+ON=@Timer
+REF1=<MORE1>
+IF ((!(<REF1.ISONLINE>)) || (<REF1.TAG0.EVENT.ID>) || (<REF1.FLAGS>&STATF_DEAD))
+WHILE (<LOCAL.QUEST> != <MORE2>)
+LOCAL.QUEST=<REF1.TAG0.QUEST<dLOCAL._WHILE>.ID>
+LOCAL.QUESTRIGHT=<LOCAL._WHILE>
+ENDWHILE
+CONT.SAY @946,,2 500902
+REF1.QUITQUEST <LOCAL.QUESTRIGHT>
+RETURN 1
+ELIF (<CONT.DISTANCE <REF1>> >= 12)
+CONT.REMOVEFROMVIEW
+CONT.MOVETO <REF1.P>
+CONT.UPDATE
+ENDIF
+//CONT.GOTO <REF1.P>
+TIMER=1
+RETURN 1
+
+[FUNCTION REMOVEESCORTOWNER]
+FORCHARMEMORYTYPE MEMORY_IPET
+REMOVE
+ENDFOR
+FORCHARMEMORYTYPE MEMORY_FOLLOW
+REMOVE
+ENDFOR
+
+[FUNCTION EHNUM]
+IF (STRMATCH(0*,<ARGV[0]>))
+RETURN 1
+ELSE
+RETURN 0
+ENDIF
+
+[function f_quest_gotitem]
+local.x = <argv[1]>
+local.y = <argv[2]>
+if !<isempty <def.quest_<dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_diff>>
+	if <r<def.quest_<dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_diff>> > 1
+	return 1
+	endif
+endif
+serv.newitem <streat <def.quest_<dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_targ>>,1,<findlayer.layer_pack.uid>
+sysmessage You got <new.name> from <uid.<argv[0]>.name>.
+if <restest <def.quest_<dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_targ>>
+updatequestlog
+endif
+
+[EOF]

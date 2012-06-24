@@ -1,0 +1,287 @@
+//****************************************************************************
+//SPHERE by : Menasoft ©1997-2007
+//www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: 18-Oct-2009
+
+//
+// Mysticism Spells
+//
+[Spell 678]
+// deals damage to target
+DEFNAME=s_nether_bolt
+NAME=Nether Bolt
+CAST_TIME=0.5
+RUNES=ICY
+RESOURCES=i_reag_black_pearl, i_reag_sulfur_ash
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_DIR_ANIM | SPELLFLAG_HARM| SPELLFLAG_RESIST
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_nether_bolt
+EFFECT_ID=0
+EFFECT=5,15
+DURATION=0.0
+MANAUSE=4
+SKILLREQ=Mysticism 0.0
+INTERRUPT=100.0,100.0
+
+[Spell 679]
+// conjures healing stone to heal caster when used
+DEFNAME=s_healing_stone
+NAME=Healing Stone
+CAST_TIME=0.5
+RUNES=KIM
+RESOURCES=i_reag_bone, i_reag_garlic, i_reag_ginseng, i_reag_spider_silk
+FLAGS=0
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_healing_stone
+EFFECT_ID=i_fx_heal
+EFFECT=5,20
+DURATION=0.0
+MANAUSE=4
+SKILLREQ=Mysticism 0.0
+INTERRUPT=100.0,100.0
+
+[Spell 680]
+// dispels beneficial spell from target
+DEFNAME=s_purge_magic
+NAME=Purge Magic
+CAST_TIME=0.7
+RUNES=AOS
+RESOURCES=i_reag_fertile_dirt, i_reag_garlic, i_reag_mandrake_root, i_reag_sulfur_ash
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_DIR_ANIM | SPELLFLAG_HARM| SPELLFLAG_RESIST
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_purge_magic
+EFFECT_ID=i_fx_curse
+EFFECT=3,15
+DURATION=0.0
+MANAUSE=6
+SKILLREQ=Mysticism 8.0
+INTERRUPT=100.0,100.0
+
+[Spell 681]
+// enchants weapon with selected spell
+DEFNAME=s_enchant
+NAME=Enchant
+CAST_TIME=1.0
+RUNES=IOY
+RESOURCES=i_reag_spider_silk, i_reag_mandrake_root, i_reag_sulfur_ash
+FLAGS=SPELLFLAG_TARG_ITEM
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_enchant
+EFFECT_ID=0
+EFFECT=3,15
+DURATION=45.0,60.0
+MANAUSE=9
+SKILLREQ=Mysticism 20.0
+INTERRUPT=100.0,100.0
+
+[Spell 682]
+// sends target to sleep (unable to attack or cast, slow movement)
+DEFNAME=s_sleep
+NAME=Sleep
+CAST_TIME=1.0
+RUNES=IZ
+RESOURCES=i_reag_nightshade, i_reag_spider_silk, i_reag_black_pearl
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_DIR_ANIM | SPELLFLAG_HARM| SPELLFLAG_RESIST
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_sleep
+EFFECT_ID=i_fx_curse
+EFFECT=5,30
+DURATION=45.0,60.0
+MANAUSE=9
+SKILLREQ=Mysticism 20.0
+INTERRUPT=100.0,100.0
+
+[Spell 683]
+// summons an eagle
+DEFNAME=s_eagle_strike
+NAME=Eagle Strike
+CAST_TIME=1.0
+RUNES=KPZ
+RESOURCES=i_reag_blood_moss, i_reag_bone, i_reag_spider_silk, i_reag_mandrake_root
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_DIR_ANIM | SPELLFLAG_HARM
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_eagle_strike
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=0.0
+MANAUSE=9
+SKILLREQ=Mysticism 20.0
+INTERRUPT=100.0,100.0
+
+[Spell 684]
+// summons an animated weapon to automatically fight
+DEFNAME=s_animated_weapon
+NAME=Animated Weapon
+CAST_TIME=1.0
+RUNES=IJPY
+RESOURCES=i_reag_bone, i_reag_black_pearl, i_reag_mandrake_root, i_reag_nightshade
+FLAGS=SPELLFLAG_SUMMON
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_animated_weapon
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=45.0,60.0
+MANAUSE=11
+SKILLREQ=Mysticism 33.0
+INTERRUPT=100.0,100.0
+
+[Spell 685]
+// improves caster physical stats and armour, reduces movement/casting/attack speed
+DEFNAME=s_stone_form
+NAME=Stone Form
+CAST_TIME=1.0
+RUNES=IRY
+RESOURCES=i_reag_blood_moss, i_reag_fertile_dirt, i_reag_garlic
+FLAGS=0
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_stone_form
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=45.0,60.0
+MANAUSE=11
+SKILLREQ=Mysticism 33.0
+INTERRUPT=100.0,100.0
+
+[Spell 686]
+// charges a spell stone with a selected spell, to be instantly cast when used
+DEFNAME=s_spell_trigger
+NAME=Spell Trigger
+CAST_TIME=1.0
+RUNES=IVOE
+RESOURCES=i_reag_dragon_blood, i_reag_garlic, i_reag_mandrake_root, i_reag_spider_silk
+FLAGS=SPELLFLAG_TARG_ITEM
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_spell_trigger
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=0.0
+MANAUSE=14
+SKILLREQ=Mysticism 45.0
+INTERRUPT=100.0,100.0
+
+[Spell 687]
+// area-effect sleep
+DEFNAME=s_mass_sleep
+NAME=Mass Sleep
+CAST_TIME=1.0
+RUNES=VZ
+RESOURCES=i_reag_ginseng, i_reag_nightshade, i_reag_spider_silk
+FLAGS=0
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_mass_sleep
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=0.0
+MANAUSE=14
+SKILLREQ=Mysticism 45.0
+INTERRUPT=100.0,100.0
+
+[Spell 688]
+// cure, remove curse and heal target
+DEFNAME=s_cleansing_winds
+NAME=Cleansing Winds
+CAST_TIME=1.0
+RUNES=IVMH
+RESOURCES=i_reag_dragon_blood, i_reag_garlic, i_reag_ginseng, i_reag_mandrake_root
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_DIR_ANIM
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_cleansing_winds
+EFFECT_ID=i_fx_heal
+EFFECT=5,30
+DURATION=0.0
+MANAUSE=20
+SKILLREQ=Mysticism 58.0
+INTERRUPT=100.0,100.0
+
+[Spell 689]
+// damages target, chance to knockback/stun
+DEFNAME=s_bombard
+NAME=Bombard
+CAST_TIME=1.0
+RUNES=CPY
+RESOURCES=i_reag_blood_moss, i_reag_dragon_blood, i_reag_garlic, i_reag_sulfur_ash
+FLAGS=SPELLFLAG_TARG_CHAR | SPELLFLAG_DIR_ANIM | SPELLFLAG_HARM
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_bombard
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=0.0
+MANAUSE=20
+SKILLREQ=Mysticism 58.0
+INTERRUPT=100.0,100.0
+
+[Spell 690]
+// area of effect, affected targets receive damage when dealing damage (attack/spell)
+DEFNAME=s_spell_plague
+NAME=Spell Plague
+CAST_TIME=1.0
+RUNES=VRJO
+RESOURCES=i_reag_daemon_bone, i_reag_dragon_blood, i_reag_nightshade, i_reag_sulfur_ash
+FLAGS=SPELLFLAG_HARM
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_spell_plague
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=0.0
+MANAUSE=40
+SKILLREQ=Mysticism 70.0
+INTERRUPT=100.0,100.0
+
+[Spell 691]
+// area of effect, deals damage
+DEFNAME=s_hail_storm
+NAME=Hail Storm
+CAST_TIME=1.0
+RUNES=KDY
+RESOURCES=i_reag_dragon_blood, i_reag_blood_moss, i_reag_black_pearl, i_reag_mandrake_root
+FLAGS=SPELLFLAG_HARM
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_hail_storm
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=0.0
+MANAUSE=40
+SKILLREQ=Mysticism 70.0
+INTERRUPT=100.0,100.0
+
+[Spell 692]
+// area of effect, deals damage and reduces mana/stamina
+DEFNAME=s_nether_cyclone
+NAME=Nether Cyclone
+CAST_TIME=1.0
+RUNES=GH
+RESOURCES=i_reag_mandrake_root, i_reag_nightshade, i_reag_sulfur_ash, i_reag_blood_moss
+FLAGS=SPELLFLAG_HARM
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_nether_cyclone
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=30.0,45.0
+MANAUSE=50
+SKILLREQ=Mysticism 83.0
+INTERRUPT=100.0,100.0
+
+[Spell 693]
+// summons colossal stone titan
+DEFNAME=s_rising_colossus
+NAME=Rising Collossus
+CAST_TIME=1.0
+RUNES=KVXCP
+RESOURCES=i_reag_daemon_bone, i_reag_dragon_blood, i_reag_fertile_dirt, i_reag_nightshade
+FLAGS=SPELLFLAG_SUMMON
+RUNE_ITEM=
+SCROLL_ITEM=i_scroll_rising_colossus
+EFFECT_ID=0
+EFFECT=5,30
+DURATION=30.0,45.0
+MANAUSE=50
+SKILLREQ=Mysticism 83.0
+INTERRUPT=100.0,100.0
+
+[EOF]

@@ -1,0 +1,103 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, January 14, 2012
+VERSION=0.56b
+//
+// SCRIPT CREDITS
+// --------------
+// Anarch Cassius - Original scripter of this
+// ShiryuX - Updated it and changed some code.
+//
+// SCRIPT DOCUMENTATION
+// --------------------
+// Followers functions and support.
+
+[FUNCTION f_transfer_pet]
+REF12=<ARGS>
+IF (<ARGO.UID>==<UID>)
+   SYSMESSAGELOC @color_text,501387//"You cannot transfer ownership to yourself!"
+   RETURN 1
+ENDIF
+IF (<DEF.SCP.Followers>==1)
+   LOCAL.Slots=<QVAL <REF12.TAG0.control.slots> ? <REF12.TAG0.control.slots> : 1>
+   IF (<EVAL <ARGO.CURFOLLOWER>+<LOCAL.slots>> > <ARGO.MAXFOLLOWER>)
+      ARGO.SYSMESSAGELOC @color_text,1049607//"You have too many followers to control that creature."
+      RETURN 1
+   ENDIF
+   IF (<ARGO.FINDTYPE.t_eq_trade_window>)
+      SYSMESSAGELOC @color_text,1010507//"You cannot transfer a pet with a trade pending."
+      RETURN 1
+   ENDIF
+   ARGO.EVENTS +e_pet_transfer
+   SERV.NEWITEM=<SERV.CHARDEF.<REF12.BASEID>.ICON>
+   NEW.ATTR=attr_move_never
+   NEW.COLOR=<REF12.COLOR>
+   NEW.LINK=<ARGS>
+   NEW.MORE1=<ARGO.UID>
+   NEW.TYPE=t_trade_pet
+   NEW.TIMERF 2,trigger @timer
+   ARGO.TRYSRC <UID> TradeWindow <NEW>
+   RETURN 1
+ENDIF
+
+[EVENTS e_pet_transfer]
+ON=@TradeAccepted
+   FOR <ARGN1>
+      IF (<REF<dLOCAL._FOR>.TYPE>==t_trade_pet)
+         IF (<DEF.SCP.Followers>==1)
+            LOCAL.SLOTS=<QVAL <REF<dLOCAL._FOR>.LINK.TAG0.control.slots> ? <REF<dLOCAL._FOR>.LINK.TAG0.control.slots> : 1>
+            IF (<EVAL <CURFOLLOWER>+<LOCAL.slots>> > <MAXFOLLOWER>)
+               SYSMESSAGELOC @color_text,1049607//"You have too many followers to control that creature."
+               RETURN 1
+            ENDIF
+            SRC.CURFOLLOWER -= <LOCAL.slots>
+            CURFOLLOWER += <LOCAL.slots>
+         ENDIF
+         REF<dLOCAL._FOR>.LINK.MEMORYFINDTYPE.memory_ipet.REMOVE
+         REF<dLOCAL._FOR>.LINK.f_MakePetOf <UID>
+         REF<dLOCAL._FOR>.REMOVE
+      ENDIF
+   ENDFOR
+   EVENTS -e_pet_transfer
+
+[TYPEDEF t_trade_pet]
+ON=@Click
+   MESSAGE <LINK.NAME>
+   RETURN 1
+ON=@ClientToolTip
+   SRC.ADDCLILOC 1062613,<LINK.NAME>//"~"
+ON=@Timer
+   IF (<CONT.TYPE>==t_eq_trade_window)
+      TIMERF 2,TRIGGER @Timer
+   ELSE
+      UID.<MORE1>.EVENTS -e_pet_transfer
+      REMOVE
+   ENDIF
+   RETURN 1
+
+[FUNCTION f_stable_npc]
+IF (<ARGO.UID> == <SRC.UID>)
+   SRC.SYSMESSAGELOC @color_text,502672//"HA HA HA! Sorry, I am not an inn."
+   RETURN 1
+ENDIF
+IF (<ARGO.MEMORYFINDTYPE.memory_ipet.LINK>==<SRC.UID>)
+   LOCAL.StableNPC=<ARGO.UID>
+   SRC.CURFOLLOWER -= <QVAL <ARGO.TAG0.control.slots> ? <ARGO.TAG0.control.slots> : 1>
+   ARGO.SHRINK
+   FORITEMS 10
+      IF (<TYPE>==t_figurine)
+          IF (<MORE2>==<LOCAL.StableNPC>)
+             REF77=<UID>
+          ENDIF
+      ENDIF
+   ENDFOR
+   REF77.REMOVEFROMVIEW
+   REF77.TAG0.Master=<SRC.UID>
+   REF77.CONT=<ARGS>
+   ARGO.SYSMESSAGELOC @color_text,1049677//"Your pet has been stabled."
+ENDIF
+
+[EOF]

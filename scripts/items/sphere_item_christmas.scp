@@ -1,0 +1,494 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 14, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 02328]
+DEFNAME=i_snowman
+TYPE=t_normal
+FLIP=1
+WEIGHT=113.5
+RESOURCES=100 i_snow,1 i_fruit_carrot,12 i_reag_eye_of_newt,1 i_ribbon,1 i_hat_floppy
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Snowman
+DUPELIST=02329
+
+[ITEMDEF 02329]
+//snowman
+DUPEITEM=02328
+
+[ITEMDEF 0232c]
+DEFNAME=i_wreath
+TYPE=t_normal
+FLIP=1
+WEIGHT=10.2
+RESOURCES=10 i_twig,1 i_mistletoe
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Wreath
+DUPELIST=0232d
+
+[ITEMDEF 0232d]
+//wreath
+DUPEITEM=0232c
+
+[ITEMDEF 0232e]
+DEFNAME=i_snowflake1
+TYPE=t_normal
+WEIGHT=0.1
+RESOURCES=1 i_snow
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Snowflake
+
+[ITEMDEF 0232f]
+DEFNAME=i_snowflake2
+TYPE=t_normal
+WEIGHT=0.1
+RESOURCES=1 i_snow
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Snowflake 2
+
+[ITEMDEF 02330]
+DEFNAME=i_pointsetia_red
+TYPE=t_normal
+WEIGHT=10.0
+RESOURCES=10 i_log
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Red Pointsetia
+
+[ITEMDEF 02331]
+DEFNAME=i_pointsetia_white
+TYPE=t_normal
+WEIGHT=10.0
+RESOURCES=10 i_log
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=White Pointsetia
+
+[ITEMDEF 02332]
+DEFNAME=fx_decorative_lights
+NAME=decorative lights
+TYPE=t_normal
+FLIP=1
+WEIGHT=0.1
+RESOURCES=1 i_glass_raw
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Decorative Lights
+DUPELIST=02333,02334,02335,02336,02337,02338,02339
+
+[ITEMDEF 02333]
+//Decorative Lights
+DUPEITEM=02332
+
+[ITEMDEF 02334]
+//Decorative Lights
+DUPEITEM=02332
+
+[ITEMDEF 02335]
+//Decorative Lights
+DUPEITEM=02332
+
+[ITEMDEF 02336]
+//Decorative Lights
+DUPEITEM=02332
+
+[ITEMDEF 02337]
+//Decorative Lights
+DUPEITEM=02332
+
+[ITEMDEF 02338]
+//Decorative Lights
+DUPEITEM=02332
+
+[ITEMDEF 02339]
+//Decorative Lights
+DUPEITEM=02332
+
+
+[ITEMDEF 0236e]
+DEFNAME=i_candle_holiday
+TYPE=t_normal
+VALUE=100
+WEIGHT=2.1
+RESOURCES=10 i_beeswax,1 i_string,1 i_ribbon
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Holiday Candle
+DUPELIST=0236f,02370,02371,02372,02373
+
+[ITEMDEF 0236f]
+//holiday candle
+DUPEITEM=0236e
+
+[ITEMDEF 02370]
+//holiday candle
+DUPEITEM=0236e
+
+[ITEMDEF 02371]
+//holiday candle
+DUPEITEM=0236e
+
+[ITEMDEF 02372]
+//holiday candle
+DUPEITEM=0236e
+
+[ITEMDEF 02373]
+//holiday candle
+DUPEITEM=0236e
+
+[ITEMDEF 02374]
+DEFNAME=i_mistletoe
+TYPE=t_normal
+FLIP=1
+VALUE=100
+WEIGHT=0.2
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Mistletoe
+DUPELIST=02375
+
+[ITEMDEF 02375]
+//mistletoe
+DUPEITEM=02374
+
+[ITEMDEF 02376]
+DEFNAME=i_cactus_festive
+TYPE=t_normal
+WEIGHT=28.0
+RESOURCES=i_pot_flower_large,1 i_plant_cactus,1 i_dirt
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Festive Cactus
+
+[ITEMDEF 02377]
+DEFNAME=i_tree_snowy
+TYPE=t_normal
+WEIGHT=28.0
+RESOURCES=i_pot_flower_large,1 i_tree_sapling,1 i_dirt
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Snowy Tree
+
+[ITEMDEF 02378]
+DEFNAME=i_tree_decorative
+TYPE=t_normal
+WEIGHT=28.0
+RESOURCES=i_pot_flower_large 1 i_tree_sapling,1 i_dirt
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Decorative Topiary
+
+
+[ITEMDEF 02b14]
+//Cannot be opened?
+DEFNAME=i_stocking_green2
+NAME=Christmas Stocking
+TYPE=t_container
+TDATA2=0103
+VALUE=12
+WEIGHT=1.2
+RESOURCES=1 i_wool,1 i_thread,1 i_cloth
+SKILLMAKE=Tailoring 39.2,t_sewing_kit
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Christmas Stocking (broken)
+
+[ITEMDEF 02bd9]
+DEFNAME=i_stocking_green
+NAME=Christmas stocking
+TYPE=t_container
+TDATA2=0103
+WEIGHT=1.2
+VALUE=12
+RESOURCES=1 i_wool,1 i_thread,1 i_cloth
+SKILLMAKE=Tailoring 39.2,t_sewing_kit
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Christmas Stocking (green)
+DUPELIST=02bda
+
+[ITEMDEF 02bda]
+//Christmas Stocking (green)
+DUPEITEM=02bd9
+
+[ITEMDEF 02bdb]
+DEFNAME=i_stocking_red
+NAME=Christmas stocking
+TYPE=t_container
+TDATA2=0103
+WEIGHT=1.2
+VALUE=12
+RESOURCES=1 i_wool,1 i_thread,1 i_cloth
+SKILLMAKE=Tailoring 39.2,t_sewing_kit
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Containers
+DESCRIPTION=Christmas Stocking (red)
+DUPELIST=02bdc
+
+[ITEMDEF 02bdc]
+//Christmas Stocking (red)
+DUPEITEM=02bdb
+
+[ITEMDEF 03a55]
+DEFNAME=i_reindeer
+NAME=Reindeer
+TYPE=t_normal
+RESLEVEL=5
+RESDISPDNID=16382
+CATEGORY=Holiday
+SUBSECTION=Christmas Items
+DESCRIPTION=Reindeer
+DUPELIST=03a56,03a57,03a58,03a59,03a5a,03a5b,03a5c,03a5d,03a5e,03a5f,03a60,03a61,03a62,03a63,03a64,03a65,03a66,03a67,03a68,03a69,03a6a,03a6b,03a6c,03a6d,03a6e,03a6f,03a70,03a71,03a72
+
+[ITEMDEF 03a56]
+DUPEITEM=03a55
+
+[ITEMDEF 03a57]
+DUPEITEM=03a55
+
+[ITEMDEF 03a58]
+DUPEITEM=03a55
+
+[ITEMDEF 03a59]
+DUPEITEM=03a55
+
+[ITEMDEF 03a5a]
+DUPEITEM=03a55
+
+[ITEMDEF 03a5b]
+DUPEITEM=03a55
+
+[ITEMDEF 03a5c]
+DUPEITEM=03a55
+
+[ITEMDEF 03a5d]
+DUPEITEM=03a55
+
+[ITEMDEF 03a5e]
+DUPEITEM=03a55
+
+[ITEMDEF 03a5f]
+DUPEITEM=03a55
+
+[ITEMDEF 03a60]
+DUPEITEM=03a55
+
+[ITEMDEF 03a61]
+DUPEITEM=03a55
+
+[ITEMDEF 03a62]
+DUPEITEM=03a55
+
+[ITEMDEF 03a63]
+DUPEITEM=03a55
+
+[ITEMDEF 03a64]
+DUPEITEM=03a55
+
+[ITEMDEF 03a65]
+DUPEITEM=03a55
+
+[ITEMDEF 03a66]
+DUPEITEM=03a55
+
+[ITEMDEF 03a67]
+DUPEITEM=03a55
+
+[ITEMDEF 03a68]
+DUPEITEM=03a55
+
+[ITEMDEF 03a69]
+DUPEITEM=03a55
+
+[ITEMDEF 03a6a]
+DUPEITEM=03a55
+
+[ITEMDEF 03a6b]
+DUPEITEM=03a55
+
+[ITEMDEF 03a6c]
+DUPEITEM=03a55
+
+[ITEMDEF 03a6d]
+DUPEITEM=03a55
+
+[ITEMDEF 03a6e]
+DUPEITEM=03a55
+
+[ITEMDEF 03a6f]
+DUPEITEM=03a55
+
+[ITEMDEF 03a70]
+DUPEITEM=03a55
+
+[ITEMDEF 03a71]
+DUPEITEM=03a55
+
+[ITEMDEF 03a72]
+DUPEITEM=03a55
+
+[ITEMDEF 03a73]
+DEFNAME=i_sleigh
+NAME=Sleigh
+TYPE=t_normal
+RESLEVEL=5
+RESDISPDNID=i_crate_lg
+RESDISPDNHUE=33
+CATEGORY=Holiday
+SUBSECTION=Christmas Items
+DESCRIPTION=Sleigh
+DUPELIST=03a74,03a75,03a76,03a77,03a78,03a79,03a7a,03a7b,03a7c,03a7d,03a7e,03a7f,03a80,03a81,03a82,03a83,03a84,03a85,03a86,03a87,03a88,03a89,03a8a,03a8b,03a8c,03a8d,03a8e,03a8f,03a90,03a91,03a92
+
+[ITEMDEF 03a74]
+DUPEITEM=03a73
+
+[ITEMDEF 03a75]
+DUPEITEM=03a73
+
+[ITEMDEF 03a76]
+DUPEITEM=03a73
+
+[ITEMDEF 03a77]
+DUPEITEM=03a73
+
+[ITEMDEF 03a78]
+DUPEITEM=03a73
+
+[ITEMDEF 03a79]
+DUPEITEM=03a73
+
+[ITEMDEF 03a7a]
+DUPEITEM=03a73
+
+[ITEMDEF 03a7b]
+DUPEITEM=03a73
+
+[ITEMDEF 03a7c]
+DUPEITEM=03a73
+
+[ITEMDEF 03a7d]
+DUPEITEM=03a73
+
+[ITEMDEF 03a7e]
+DUPEITEM=03a73
+
+[ITEMDEF 03a7f]
+DUPEITEM=03a73
+
+[ITEMDEF 03a80]
+DUPEITEM=03a73
+
+[ITEMDEF 03a81]
+DUPEITEM=03a73
+
+[ITEMDEF 03a82]
+DUPEITEM=03a73
+
+[ITEMDEF 03a83]
+DUPEITEM=03a73
+
+[ITEMDEF 03a84]
+DUPEITEM=03a73
+
+[ITEMDEF 03a85]
+DUPEITEM=03a73
+
+[ITEMDEF 03a86]
+DUPEITEM=03a73
+
+[ITEMDEF 03a87]
+DUPEITEM=03a73
+
+[ITEMDEF 03a88]
+DUPEITEM=03a73
+
+[ITEMDEF 03a89]
+DUPEITEM=03a73
+
+[ITEMDEF 03a8a]
+DUPEITEM=03a73
+
+[ITEMDEF 03a8b]
+DUPEITEM=03a73
+
+[ITEMDEF 03a8c]
+DUPEITEM=03a73
+
+[ITEMDEF 03a8d]
+DUPEITEM=03a73
+
+[ITEMDEF 03a8e]
+DUPEITEM=03a73
+
+[ITEMDEF 03a8f]
+DUPEITEM=03a73
+
+[ITEMDEF 03a90]
+DUPEITEM=03a73
+
+[ITEMDEF 03a91]
+DUPEITEM=03a73
+
+[ITEMDEF 03a92]
+DUPEITEM=03a73
+
+[ITEMDEF 046ec]
+DEFNAME=i_nutcracker_small
+TYPE=t_normal//FIXME: When dclicked, it should animate once
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Small Nutcracker
+DUPELIST=046ef
+
+[ITEMDEF 046ed]
+//small nutcracker (animation frame)
+
+[ITEMDEF 046ee]
+//small nutcracker (animation frame)
+
+[ITEMDEF 046ef]
+//small nutcracker
+DUPEITEM=046ec
+
+[ITEMDEF 046f0]
+//small nutcracker (animation frame)
+
+[ITEMDEF 046f1]
+//small nutcracker (animation frame)
+
+[ITEMDEF 046f2]
+DEFNAME=i_nutcracker_large
+TYPE=t_normal//FIXME: When dclicked, it should animate once
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Large Nutcracker
+DUPELIST=046f5
+
+[ITEMDEF 046f3]
+//large nutcracker (animation frame)
+
+[ITEMDEF 046f4]
+//large nutcracker (animation frame)
+
+[ITEMDEF 046f5]
+//large nutcracker
+DUPEITEM=046f2
+
+[ITEMDEF 046f6]
+//large nutcracker (animation frame)
+
+[ITEMDEF 046f7]
+//large nutcracker (animation frame)
+
+[EOF]

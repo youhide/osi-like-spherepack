@@ -1,0 +1,45 @@
+SPHERE COMMUNITY PACK - README
+INSTALLATION AND USAGE INSTRUCTIONS
+-----------------------------------
+
+1. Requirements
+- SphereServer 0.56b Lastest (Do'h)
+
+2. Instructions
+- Download the pack and uncompress it in your sphere folder. 
+  Just like you do with the default script pack. 
+  Get the last version from: http://scripts.sphere.torfo.org/
+
+- IMPORTANT! To avoid a bugs with the house/vendor system, you must do the following:
+  Open sphere.ini and below AGREE=1, add the following line:
+  PACKET149=f_hue_picker
+  PACKET215=f_custom_house
+  
+- To enable jail system, search the following line in sphere.ini:
+  //CommandTrigger=f_oncommand
+  And uncomment it, it should look like this:
+  CommandTrigger=f_oncommand
+
+- To enable main systems, add the following events to your ini:
+  (NOTE: Replace the original settings)
+  EventsPet=e_NpcGenericEvent,e_NpcCombatEvent,e_NpcPropertiesEvent
+  EventsPlayer=e_PlayerGenericEvent,e_PlayerCraftingEvent,e_PlayerCombatEvent,e_PlayerPropertiesEvent
+
+- To enable optional/experimental systems, add the following events:
+  (NOTE: Attach the events at the end of the lines in the last step)
+  EventsPlayer=e_PlayerTooltipEvent,e_special_moves
+  * e_PlayerTooltipEvent: New Item Tooltips Generator (Experimental)
+  * e_special_moves : EA Special Moves (optional)
+
+- Other *needed* settings:
+  Mana, Stamina, Dexterity Regeneration, in EA they use 10-second gains for stats.
+  Our systems calculate the amount of points regenerated every 10 seconds.
+  Check your ini for the following settings and edit them to fit the example here:
+  Regen0=10
+  Regen1=10
+  Regen2=10
+
+- To configure the system, check in your scripts folder the file:
+  scripts/add-on/sphere_settings.scp
+
+- Enjoy it!

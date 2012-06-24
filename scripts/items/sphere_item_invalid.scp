@@ -1,0 +1,7735 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 21, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0]
+DEFNAME=i_unused
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile
+
+[ITEMDEF 01]
+DEFNAME=i_nodraw
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile
+
+
+[ITEMDEF 0c3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Default KR 0c3
+
+[ITEMDEF 0c4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0c4
+
+
+[ITEMDEF 01fa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fa
+
+[ITEMDEF 01fb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fb
+
+[ITEMDEF 01fc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fc
+
+[ITEMDEF 01fd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fd
+
+[ITEMDEF 01fe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fe
+
+
+[ITEMDEF 0224]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0224
+
+[ITEMDEF 0225]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0225
+
+
+[ITEMDEF 028b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 028b
+
+[ITEMDEF 028c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 028c
+
+[ITEMDEF 028d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 028d
+
+[ITEMDEF 028e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 028e
+
+[ITEMDEF 028f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 028f
+
+[ITEMDEF 0290]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0290
+
+
+[ITEMDEF 02af]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02af
+
+
+[ITEMDEF 02c1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02c1
+
+[ITEMDEF 02c2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c2
+
+[ITEMDEF 02c3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02c3
+
+[ITEMDEF 02c4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02c4
+
+[ITEMDEF 02c5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02c5
+
+[ITEMDEF 02c6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02c6
+
+
+[ITEMDEF 02dc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02dc
+
+[ITEMDEF 02dd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02dd
+
+
+[ITEMDEF 02ed]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02ed
+
+[ITEMDEF 02ee]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ee
+
+
+[ITEMDEF 02f5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f5
+
+[ITEMDEF 02f6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02f6
+
+[ITEMDEF 02f7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f7
+
+[ITEMDEF 02f8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f8
+
+
+[ITEMDEF 030f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 030f
+
+
+[ITEMDEF 0312]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0312
+
+[ITEMDEF 0313]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0313
+
+
+[ITEMDEF 0366]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0366
+
+[ITEMDEF 0367]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0367
+
+
+[ITEMDEF 037e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 037e
+
+
+[ITEMDEF 03a1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03a1
+
+[ITEMDEF 03a2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03a2
+
+[ITEMDEF 03a3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03a3
+
+[ITEMDEF 03a4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03a4
+
+
+[ITEMDEF 03b1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 03b1
+
+[ITEMDEF 03b2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03b2
+
+
+[ITEMDEF 03e3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03e3
+
+[ITEMDEF 03e4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03e4
+
+[ITEMDEF 03e5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 03e5
+
+[ITEMDEF 03e6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 03e6
+
+[ITEMDEF 03e7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 03e7
+
+[ITEMDEF 03e8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 03e8
+
+[ITEMDEF 03e9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03e9
+
+[ITEMDEF 03ea]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03ea
+
+[ITEMDEF 03eb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03eb
+
+[ITEMDEF 03ec]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 03ec
+
+[ITEMDEF 03ed]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 03ed
+
+
+[ITEMDEF 0436]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0436
+
+[ITEMDEF 0437]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0437
+
+
+[ITEMDEF 0454]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0454
+
+[ITEMDEF 0455]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0455
+
+[ITEMDEF 0456]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0456
+
+[ITEMDEF 0457]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0457
+
+[ITEMDEF 0458]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0458
+
+
+[ITEMDEF 0467]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0467
+
+[ITEMDEF 0468]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0468
+
+[ITEMDEF 0469]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0469
+
+
+[ITEMDEF 0470]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0470
+
+[ITEMDEF 0471]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0471
+
+[ITEMDEF 0472]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0472
+
+[ITEMDEF 0473]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0473
+
+[ITEMDEF 0474]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0474
+
+
+[ITEMDEF 0481]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0481
+
+
+[ITEMDEF 0488]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0488
+
+
+[ITEMDEF 048f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 048f
+
+
+[ITEMDEF 0499]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0499
+
+[ITEMDEF 049a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 049a
+
+
+[ITEMDEF 052d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 052d
+
+[ITEMDEF 052e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 052e
+
+
+[ITEMDEF 05d5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 05d5
+
+
+[ITEMDEF 05ed]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 05ed
+
+[ITEMDEF 05ee]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 05ee
+
+
+[ITEMDEF 063f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 063f
+
+[ITEMDEF 0640]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0640
+
+[ITEMDEF 0641]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0641
+
+[ITEMDEF 0642]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0642
+
+[ITEMDEF 0643]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0643
+
+[ITEMDEF 0644]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0644
+
+[ITEMDEF 0645]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0645
+
+[ITEMDEF 0646]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0646
+
+[ITEMDEF 0647]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0647
+
+
+[ITEMDEF 06f7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 06f7
+
+[ITEMDEF 06f8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 06f8
+
+[ITEMDEF 06f9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 06f9
+
+[ITEMDEF 06fa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 06fa
+
+[ITEMDEF 06fb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 06fb
+
+[ITEMDEF 06fc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 06fc
+
+
+[ITEMDEF 0701]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0701
+
+[ITEMDEF 0702]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0702
+
+[ITEMDEF 0703]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0703
+
+[ITEMDEF 0704]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0704
+
+[ITEMDEF 0705]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0705
+
+[ITEMDEF 0706]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0706
+
+[ITEMDEF 0707]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0707
+
+[ITEMDEF 0708]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0708
+
+
+[ITEMDEF 07d1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 07d1
+
+[ITEMDEF 07d2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 07d2
+
+[ITEMDEF 07d3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 07d3
+
+[ITEMDEF 07d4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 07d4
+
+[ITEMDEF 07d5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 07d5
+
+
+[ITEMDEF 07db]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 07db
+
+[ITEMDEF 07dc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 07dc
+
+[ITEMDEF 07dd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 07dd
+
+[ITEMDEF 07de]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 07de
+
+
+[ITEMDEF 0819]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0819
+
+[ITEMDEF 081a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 081a
+
+[ITEMDEF 081b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 081b
+
+[ITEMDEF 081c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 081c
+
+
+[ITEMDEF 081e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 081e
+
+[ITEMDEF 081f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 081f
+
+[ITEMDEF 0820]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0820
+
+
+[ITEMDEF 0879]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0879
+
+
+[ITEMDEF 088d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 088d
+
+[ITEMDEF 088e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 088e
+
+[ITEMDEF 088f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 088f
+
+[ITEMDEF 0890]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0890
+
+[ITEMDEF 0891]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0891
+
+[ITEMDEF 0892]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0892
+
+[ITEMDEF 0893]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0893
+
+[ITEMDEF 0894]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0894
+
+[ITEMDEF 0895]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0895
+
+[ITEMDEF 0896]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0896
+
+[ITEMDEF 0897]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0897
+
+[ITEMDEF 0898]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0898
+
+
+[ITEMDEF 08a7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 08a7
+
+[ITEMDEF 08a8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 08a8
+
+[ITEMDEF 08a9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 08a9
+
+[ITEMDEF 08aa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 08aa
+
+[ITEMDEF 08ab]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 08ab
+
+[ITEMDEF 08ac]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 08ac
+
+[ITEMDEF 08ad]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 08ad
+
+
+[ITEMDEF 0919]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0919
+
+
+[ITEMDEF 096d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 096d
+
+[ITEMDEF 096e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 096e
+
+[ITEMDEF 096f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 096f
+
+
+[ITEMDEF 098f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 098f
+
+
+[ITEMDEF 0a21]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0a21
+
+
+[ITEMDEF 0a54]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0a54
+
+
+[ITEMDEF 0a96]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0a96
+
+
+[ITEMDEF 0aa6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0aa6
+
+[ITEMDEF 0aa7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0aa7
+
+[ITEMDEF 0aa8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0aa8
+
+
+[ITEMDEF 0afb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0afb
+
+[ITEMDEF 0afc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0afc
+
+
+[ITEMDEF 0b19]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 0b19
+
+
+[ITEMDEF 0b29]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0b29
+
+[ITEMDEF 0b2a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0b2a
+
+[ITEMDEF 0b2b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0b2b
+
+
+[ITEMDEF 0b3b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0b3b
+
+
+[ITEMDEF 0b4d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0b4d
+
+
+[ITEMDEF 0c0f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0c0f
+
+
+[ITEMDEF 0cc2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0cc2
+
+
+[ITEMDEF 0d3e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0d3e
+
+
+[ITEMDEF 0db6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0db6
+
+
+[ITEMDEF 0dc6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0dc6
+
+[ITEMDEF 0dc7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0dc7
+
+
+[ITEMDEF 0ddf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0ddf
+
+[ITEMDEF 0de0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0de0
+
+
+[ITEMDEF 0e0f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e0f
+
+[ITEMDEF 0e10]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e10
+
+[ITEMDEF 0e11]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e11
+
+
+[ITEMDEF 0e54]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e54
+
+[ITEMDEF 0e55]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e55
+
+
+[ITEMDEF 0e5a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e5a
+
+[ITEMDEF 0e5b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e5b
+
+
+[ITEMDEF 0e84]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e84
+
+
+[ITEMDEF 0e97]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e97
+
+[ITEMDEF 0e98]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e98
+
+[ITEMDEF 0e99]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e99
+
+[ITEMDEF 0e9a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0e9a
+
+
+[ITEMDEF 0ea9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Portrait Tile 0ea9
+
+
+[ITEMDEF 0f05]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0f05
+
+
+[ITEMDEF 0f33]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0f33
+
+
+[ITEMDEF 0f3d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0f3d
+
+
+[ITEMDEF 0f77]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0f77
+
+
+[ITEMDEF 0f92]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0f92
+
+[ITEMDEF 0f93]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0f93
+
+[ITEMDEF 0f94]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0f94
+
+
+[ITEMDEF 0fb2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0fb2
+
+[ITEMDEF 0fb3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0fb3
+
+
+[ITEMDEF 0fb9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0fb9
+
+[ITEMDEF 0fba]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0fba
+
+
+[ITEMDEF 0fc3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0fc3
+
+
+[ITEMDEF 0fe5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0fe5
+
+
+[ITEMDEF 0ff5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0ff5
+
+
+[ITEMDEF 01097]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01097
+
+
+[ITEMDEF 010a7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010a7
+
+[ITEMDEF 010a8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010a8
+
+[ITEMDEF 010a9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010a9
+
+[ITEMDEF 010aa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010aa
+
+[ITEMDEF 010ab]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010ab
+
+
+[ITEMDEF 010b2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010b2
+
+[ITEMDEF 010b3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010b3
+
+[ITEMDEF 010b4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010b4
+
+[ITEMDEF 010b5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010b5
+
+[ITEMDEF 010b6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010b6
+
+[ITEMDEF 010b7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010b7
+
+
+[ITEMDEF 010de]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010de
+
+[ITEMDEF 010df]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010df
+
+[ITEMDEF 010e0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010e0
+
+
+[ITEMDEF 010ea]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010ea
+
+[ITEMDEF 010eb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010eb
+
+[ITEMDEF 010ec]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010ec
+
+[ITEMDEF 010ed]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010ed
+
+
+[ITEMDEF 010f4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 010f4
+
+
+[ITEMDEF 0113f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0113f
+
+
+[ITEMDEF 01150]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01150
+
+[ITEMDEF 01151]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01151
+
+[ITEMDEF 01152]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01152
+
+
+[ITEMDEF 0115f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0115f
+
+[ITEMDEF 01160]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01160
+
+[ITEMDEF 01161]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01161
+
+[ITEMDEF 01162]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01162
+
+[ITEMDEF 01163]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01163
+
+[ITEMDEF 01164]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01164
+
+
+[ITEMDEF 0118a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0118a
+
+
+[ITEMDEF 011cd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 011cd
+
+
+[ITEMDEF 0120d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0120d
+
+
+[ITEMDEF 01217]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01217
+
+
+[ITEMDEF 0121c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0121c
+
+
+[ITEMDEF 01229]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01229
+
+
+[ITEMDEF 01236]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01236
+
+
+[ITEMDEF 0123f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0123f
+
+
+[ITEMDEF 01248]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01248
+
+
+[ITEMDEF 01264]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01264
+
+
+[ITEMDEF 0126a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0126a
+
+
+[ITEMDEF 0127d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0127d
+
+
+[ITEMDEF 012ad]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 012ad
+
+
+[ITEMDEF 012b4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 012b4
+
+
+[ITEMDEF 012f3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 012f3
+
+
+[ITEMDEF 012ff]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 012ff
+
+
+[ITEMDEF 01305]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01305
+
+
+[ITEMDEF 0130b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0130b
+
+
+[ITEMDEF 01311]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01311
+
+
+[ITEMDEF 01317]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01317
+
+
+[ITEMDEF 0131d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0131d
+
+
+[ITEMDEF 0134e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0134e
+
+
+[ITEMDEF 0136f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0136f
+
+
+[ITEMDEF 0137a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0137a
+
+[ITEMDEF 0137b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0137b
+
+[ITEMDEF 0137c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0137c
+
+[ITEMDEF 0137d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0137d
+
+
+[ITEMDEF 0137f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0137f
+
+
+[ITEMDEF 01381]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01381
+
+
+[ITEMDEF 01387]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01387
+
+[ITEMDEF 01388]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01388
+
+[ITEMDEF 01389]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01389
+
+[ITEMDEF 0138a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0138a
+
+[ITEMDEF 0138b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0138b
+
+[ITEMDEF 0138c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0138c
+
+[ITEMDEF 0138d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0138d
+
+[ITEMDEF 0138e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0138e
+
+[ITEMDEF 0138f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0138f
+
+[ITEMDEF 01390]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01390
+
+[ITEMDEF 01391]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01391
+
+[ITEMDEF 01392]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01392
+
+[ITEMDEF 01393]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01393
+
+[ITEMDEF 01394]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01394
+
+[ITEMDEF 01395]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01395
+
+[ITEMDEF 01396]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01396
+
+
+[ITEMDEF 01398]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01398
+
+[ITEMDEF 01399]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01399
+
+
+[ITEMDEF 013f3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 013f3
+
+
+[ITEMDEF 0141d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0141d
+
+[ITEMDEF 0141e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0141e
+
+[ITEMDEF 0141f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0141f
+
+
+[ITEMDEF 01444]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01444
+
+[ITEMDEF 01445]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01445
+
+[ITEMDEF 01446]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01446
+
+[ITEMDEF 01447]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01447
+
+[ITEMDEF 01448]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01448
+
+
+[ITEMDEF 0144a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0144a
+
+[ITEMDEF 0144b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0144b
+
+[ITEMDEF 0144c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0144c
+
+[ITEMDEF 0144d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0144d
+
+
+[ITEMDEF 01458]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01458
+
+
+[ITEMDEF 0149b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0149b
+
+[ITEMDEF 0149c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0149c
+
+[ITEMDEF 0149d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0149d
+
+[ITEMDEF 0149e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0149e
+
+
+[ITEMDEF 01519]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01519
+
+
+[ITEMDEF 01528]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01528
+
+[ITEMDEF 01529]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01529
+
+[ITEMDEF 0152a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0152a
+
+[ITEMDEF 0152b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0152b
+
+
+[ITEMDEF 01532]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01532
+
+[ITEMDEF 01533]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01533
+
+[ITEMDEF 01534]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01534
+
+
+[ITEMDEF 0155a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0155a
+
+[ITEMDEF 0155b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0155b
+
+
+[ITEMDEF 01644]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01644
+
+
+[ITEMDEF 01670]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01670
+
+[ITEMDEF 01671]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01671
+
+
+[ITEMDEF 01691]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01691
+
+[ITEMDEF 01692]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01692
+
+[ITEMDEF 01693]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01693
+
+
+[ITEMDEF 016b5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016b5
+
+[ITEMDEF 016b6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016b6
+
+[ITEMDEF 016b7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016b7
+
+[ITEMDEF 016b8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016b8
+
+
+[ITEMDEF 016da]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016da
+
+[ITEMDEF 016db]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016db
+
+[ITEMDEF 016dc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016dc
+
+[ITEMDEF 016dd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016dd
+
+[ITEMDEF 016de]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016de
+
+[ITEMDEF 016df]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016df
+
+[ITEMDEF 016e0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e0
+
+[ITEMDEF 016e1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e1
+
+[ITEMDEF 016e2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e2
+
+[ITEMDEF 016e3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e3
+
+[ITEMDEF 016e4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e4
+
+[ITEMDEF 016e5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e5
+
+[ITEMDEF 016e6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e6
+
+[ITEMDEF 016e7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e7
+
+[ITEMDEF 016e8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e8
+
+[ITEMDEF 016e9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016e9
+
+[ITEMDEF 016ea]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016ea
+
+[ITEMDEF 016eb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016eb
+
+[ITEMDEF 016ec]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016ec
+
+[ITEMDEF 016ed]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016ed
+
+[ITEMDEF 016ee]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016ee
+
+[ITEMDEF 016ef]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016ef
+
+[ITEMDEF 016f0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016f0
+
+[ITEMDEF 016f1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016f1
+
+[ITEMDEF 016f2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016f2
+
+[ITEMDEF 016f3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016f3
+
+[ITEMDEF 016f4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016f4
+
+[ITEMDEF 016f5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016f5
+
+[ITEMDEF 016f6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016f6
+
+[ITEMDEF 016f7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 016f7
+
+
+[ITEMDEF 01709]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01709
+
+[ITEMDEF 0170a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0170a
+
+
+[ITEMDEF 0172f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0172f
+
+[ITEMDEF 01730]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01730
+
+
+[ITEMDEF 0175b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0175b
+
+[ITEMDEF 0175c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0175c
+
+
+[ITEMDEF 0176c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0176c
+
+[ITEMDEF 0176d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0176d
+
+[ITEMDEF 0176e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0176e
+
+[ITEMDEF 0176f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0176f
+
+[ITEMDEF 01770]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01770
+
+
+[ITEMDEF 0178a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0178a
+
+[ITEMDEF 0178b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0178b
+
+[ITEMDEF 0178c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0178c
+
+[ITEMDEF 0178d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0178d
+
+[ITEMDEF 0178e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0178e
+
+[ITEMDEF 0178f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0178f
+
+[ITEMDEF 01790]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01790
+
+[ITEMDEF 01791]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01791
+
+[ITEMDEF 01792]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01792
+
+[ITEMDEF 01793]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01793
+
+[ITEMDEF 01794]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01794
+
+[ITEMDEF 01795]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01795
+
+
+[ITEMDEF 017b3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017b3
+
+[ITEMDEF 017b4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017b4
+
+[ITEMDEF 017b5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017b5
+
+[ITEMDEF 017b6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017b6
+
+[ITEMDEF 017b7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017b7
+
+[ITEMDEF 017b8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017b8
+
+[ITEMDEF 017b9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017b9
+
+[ITEMDEF 017ba]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017ba
+
+[ITEMDEF 017bb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017bb
+
+[ITEMDEF 017bc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017bc
+
+
+[ITEMDEF 017f3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017f3
+
+[ITEMDEF 017f4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017f4
+
+[ITEMDEF 017f5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017f5
+
+[ITEMDEF 017f6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017f6
+
+[ITEMDEF 017f7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017f7
+
+[ITEMDEF 017f8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017f8
+
+[ITEMDEF 017f9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017f9
+
+[ITEMDEF 017fa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017fa
+
+[ITEMDEF 017fb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 017fb
+
+
+[ITEMDEF 0180e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0180e
+
+[ITEMDEF 0180f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0180f
+
+
+[ITEMDEF 0185f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0185f
+
+[ITEMDEF 01860]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01860
+
+[ITEMDEF 01861]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01861
+
+[ITEMDEF 01862]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01862
+
+[ITEMDEF 01863]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01863
+
+[ITEMDEF 01864]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01864
+
+
+[ITEMDEF 01867]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01867
+
+[ITEMDEF 01868]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01868
+
+
+[ITEMDEF 0187a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0187a
+
+[ITEMDEF 0187b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0187b
+
+[ITEMDEF 0187c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0187c
+
+[ITEMDEF 0187d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0187d
+
+
+[ITEMDEF 0188c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0188c
+
+[ITEMDEF 0188d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0188d
+
+[ITEMDEF 0188e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0188e
+
+[ITEMDEF 0188f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0188f
+
+[ITEMDEF 01890]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01890
+
+[ITEMDEF 01891]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01891
+
+[ITEMDEF 01892]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01892
+
+
+[ITEMDEF 0189c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0189c
+
+[ITEMDEF 0189d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0189d
+
+[ITEMDEF 0189e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0189e
+
+
+[ITEMDEF 018b6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018b6
+
+[ITEMDEF 018b7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018b7
+
+[ITEMDEF 018b8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018b8
+
+[ITEMDEF 018b9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018b9
+
+[ITEMDEF 018ba]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018ba
+
+[ITEMDEF 018bb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018bb
+
+[ITEMDEF 018bc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018bc
+
+[ITEMDEF 018bd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018bd
+
+[ITEMDEF 018be]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018be
+
+[ITEMDEF 018bf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018bf
+
+[ITEMDEF 018c0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c0
+
+[ITEMDEF 018c1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c1
+
+[ITEMDEF 018c2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c2
+
+[ITEMDEF 018c3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c3
+
+[ITEMDEF 018c4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c4
+
+[ITEMDEF 018c5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c5
+
+[ITEMDEF 018c6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c6
+
+[ITEMDEF 018c7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c7
+
+[ITEMDEF 018c8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c8
+
+[ITEMDEF 018c9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018c9
+
+[ITEMDEF 018ca]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018ca
+
+[ITEMDEF 018cb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018cb
+
+[ITEMDEF 018cc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018cc
+
+[ITEMDEF 018cd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018cd
+
+
+[ITEMDEF 018d4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018d4
+
+[ITEMDEF 018d5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018d5
+
+[ITEMDEF 018d6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018d6
+
+[ITEMDEF 018d7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018d7
+
+[ITEMDEF 018d8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018d8
+
+
+[ITEMDEF 018ed]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018ed
+
+[ITEMDEF 018ee]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018ee
+
+[ITEMDEF 018ef]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 018ef
+
+
+[ITEMDEF 01938]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01938
+
+
+[ITEMDEF 01958]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01958
+
+[ITEMDEF 01959]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01959
+
+[ITEMDEF 0195a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0195a
+
+[ITEMDEF 0195b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0195b
+
+[ITEMDEF 0195c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0195c
+
+[ITEMDEF 0195d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0195d
+
+[ITEMDEF 0195e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0195e
+
+[ITEMDEF 0195f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0195f
+
+[ITEMDEF 01960]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01960
+
+[ITEMDEF 01961]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01961
+
+[ITEMDEF 01962]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01962
+
+[ITEMDEF 01963]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01963
+
+
+[ITEMDEF 01974]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01974
+
+[ITEMDEF 01975]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01975
+
+[ITEMDEF 01976]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01976
+
+
+[ITEMDEF 019be]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019be
+
+[ITEMDEF 019bf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019bf
+
+[ITEMDEF 019c0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019c0
+
+[ITEMDEF 019c1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019c1
+
+[ITEMDEF 019c2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019c2
+
+
+[ITEMDEF 019ed]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019ed
+
+[ITEMDEF 019ee]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019ee
+
+[ITEMDEF 019ef]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019ef
+
+[ITEMDEF 019f0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019f0
+
+
+[ITEMDEF 019fd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019fd
+
+[ITEMDEF 019fe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019fe
+
+[ITEMDEF 019ff]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 019ff
+
+[ITEMDEF 01a00]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a00
+
+
+[ITEMDEF 01a0f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a0f
+
+[ITEMDEF 01a10]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a10
+
+[ITEMDEF 01a11]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a11
+
+[ITEMDEF 01a12]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a12
+
+[ITEMDEF 01a13]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a13
+
+[ITEMDEF 01a14]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a14
+
+[ITEMDEF 01a15]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a15
+
+[ITEMDEF 01a16]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a16
+
+[ITEMDEF 01a17]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a17
+
+[ITEMDEF 01a18]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a18
+
+
+[ITEMDEF 01a7f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a7f
+
+[ITEMDEF 01a80]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a80
+
+[ITEMDEF 01a81]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a81
+
+
+[ITEMDEF 01a84]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a84
+
+[ITEMDEF 01a85]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a85
+
+
+[ITEMDEF 01a89]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a89
+
+[ITEMDEF 01a8a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a8a
+
+
+[ITEMDEF 01a8c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a8c
+
+[ITEMDEF 01a8d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a8d
+
+[ITEMDEF 01a8e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a8e
+
+[ITEMDEF 01a8f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a8f
+
+[ITEMDEF 01a90]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a90
+
+[ITEMDEF 01a91]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a91
+
+
+[ITEMDEF 01a97]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a97
+
+[ITEMDEF 01a98]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01a98
+
+
+[ITEMDEF 01aa3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01aa3
+
+
+[ITEMDEF 01aee]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01aee
+
+[ITEMDEF 01aef]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01aef
+
+[ITEMDEF 01af0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01af0
+
+[ITEMDEF 01af1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01af1
+
+[ITEMDEF 01af2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01af2
+
+
+[ITEMDEF 01afc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01afc
+
+[ITEMDEF 01afd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01afd
+
+[ITEMDEF 01afe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01afe
+
+[ITEMDEF 01aff]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01aff
+
+[ITEMDEF 01b00]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01b00
+
+
+[ITEMDEF 01b49]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01b49
+
+
+[ITEMDEF 01b52]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01b52
+
+
+[ITEMDEF 01b5e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01b5e
+
+
+[ITEMDEF 01b94]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01b94
+
+[ITEMDEF 01b95]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01b95
+
+[ITEMDEF 01b96]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01b96
+
+
+[ITEMDEF 01bb3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bb3
+
+
+[ITEMDEF 01bbe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bbe
+
+
+[ITEMDEF 01bc2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bc2
+
+
+[ITEMDEF 01bc8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bc8
+
+[ITEMDEF 01bc9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bc9
+
+[ITEMDEF 01bca]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bca
+
+[ITEMDEF 01bcb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bcb
+
+[ITEMDEF 01bcc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bcc
+
+[ITEMDEF 01bcd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bcd
+
+[ITEMDEF 01bce]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bce
+
+[ITEMDEF 01bcf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bcf
+
+[ITEMDEF 01bd0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bd0
+
+
+[ITEMDEF 01bff]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01bff
+
+
+[ITEMDEF 01c0e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 01c0e
+
+[ITEMDEF 01c0f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 01c0f
+
+[ITEMDEF 01c10]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 01c10
+
+
+[ITEMDEF 01c17]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01c17
+
+
+[ITEMDEF 01cc0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01cc0
+
+[ITEMDEF 01cc1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01cc1
+
+[ITEMDEF 01cc2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01cc2
+
+[ITEMDEF 01cc3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01cc3
+
+[ITEMDEF 01cc4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01cc4
+
+[ITEMDEF 01cc5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01cc5
+
+[ITEMDEF 01cc6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01cc6
+
+
+[ITEMDEF 01e3f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01e3f
+
+
+[ITEMDEF 01e52]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01e52
+
+
+[ITEMDEF 01f2c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01f2c
+
+
+[ITEMDEF 01fd9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fd9
+
+[ITEMDEF 01fda]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fda
+
+[ITEMDEF 01fdb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fdb
+
+[ITEMDEF 01fdc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fdc
+
+[ITEMDEF 01fdd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fdd
+
+
+[ITEMDEF 01fec]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 01fec
+
+
+[ITEMDEF 02037]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02037
+
+[ITEMDEF 02038]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02038
+
+[ITEMDEF 02039]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02039
+
+[ITEMDEF 0203a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0203a
+
+
+[ITEMDEF 02051]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02051
+
+[ITEMDEF 02052]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02052
+
+
+[ITEMDEF 02063]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02063
+
+[ITEMDEF 02064]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02064
+
+[ITEMDEF 02065]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Reserved for MultiT
+
+[ITEMDEF 02066]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02066
+
+[ITEMDEF 02067]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02067
+
+
+[ITEMDEF 02069]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02069
+
+
+[ITEMDEF 02128]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile
+
+[ITEMDEF 02129]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile
+
+
+[ITEMDEF 0213a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile
+
+
+[ITEMDEF 02145]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02145
+
+[ITEMDEF 02146]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02146
+
+[ITEMDEF 02147]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02147
+
+
+[ITEMDEF 02155]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02155
+
+
+[ITEMDEF 02158]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02158
+
+[ITEMDEF 02159]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02159
+
+
+[ITEMDEF 0215d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0215d
+
+[ITEMDEF 0215e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0215e
+
+[ITEMDEF 0215f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0215f
+
+[ITEMDEF 02160]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02160
+
+[ITEMDEF 02161]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02161
+
+[ITEMDEF 02162]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02162
+
+[ITEMDEF 02163]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02163
+
+[ITEMDEF 02164]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02164
+
+[ITEMDEF 02165]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02165
+
+
+[ITEMDEF 0216a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0216a
+
+[ITEMDEF 0216b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0216b
+
+[ITEMDEF 0216c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0216c
+
+[ITEMDEF 0216d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0216d
+
+[ITEMDEF 0216e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0216e
+
+[ITEMDEF 0216f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0216f
+
+
+[ITEMDEF 02198]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 02198
+
+[ITEMDEF 02199]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 02199
+
+[ITEMDEF 0219a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 0219a
+
+[ITEMDEF 0219b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 0219b
+
+[ITEMDEF 0219c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 0219c
+
+[ITEMDEF 0219d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 0219d
+
+[ITEMDEF 0219e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 0219e
+
+
+[ITEMDEF 021a0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 021a0
+
+[ITEMDEF 021a1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 021a1
+
+[ITEMDEF 021a2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 021a2
+
+[ITEMDEF 021a3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 021a3
+
+[ITEMDEF 021a4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 021a4
+
+
+[ITEMDEF 021b9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021b9
+
+[ITEMDEF 021ba]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021ba
+
+[ITEMDEF 021bb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Nodraw Tile 021bb
+
+[ITEMDEF 021bc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=No Draw Tile 021bc
+
+
+[ITEMDEF 021f2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021f2
+
+[ITEMDEF 021f3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021f3
+
+[ITEMDEF 021f4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021f4
+
+[ITEMDEF 021f5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021f5
+
+[ITEMDEF 021f6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021f6
+
+[ITEMDEF 021f7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021f7
+
+[ITEMDEF 021f8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021f8
+
+[ITEMDEF 021f9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021f9
+
+[ITEMDEF 021fa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021fa
+
+[ITEMDEF 021fb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 021fb
+
+
+[ITEMDEF 02205]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02205
+
+
+[ITEMDEF 0220f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0220f
+
+
+[ITEMDEF 02219]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02219
+
+
+[ITEMDEF 02223]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02223
+
+
+[ITEMDEF 0222d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0222d
+
+
+[ITEMDEF 02255]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Ghost Missile 02255
+
+
+[ITEMDEF 0225c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0225c
+
+[ITEMDEF 0225d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0225d
+
+[ITEMDEF 0225e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0225e
+
+[ITEMDEF 0225f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0225f
+
+
+[ITEMDEF 0227d]
+//close wounds
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0227d
+
+[ITEMDEF 0227e]
+//consecrate weapon
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0227e
+
+[ITEMDEF 0227f]
+//dispel evil
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0227f
+
+[ITEMDEF 02280]
+//divine fury
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02280
+
+[ITEMDEF 02281]
+//enemy of one
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02281
+
+[ITEMDEF 02282]
+//holy light
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02282
+
+[ITEMDEF 02283]
+//noble sacrifice
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02283
+
+[ITEMDEF 02284]
+//remove curse
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02284
+
+[ITEMDEF 02285]
+//sacred journey
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02285
+
+[ITEMDEF 02286]
+//armor ignore
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02286
+
+[ITEMDEF 02287]
+//bleed attack
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02287
+
+[ITEMDEF 02288]
+//concussion blow
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02288
+
+[ITEMDEF 02289]
+//crushing blow
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02289
+
+[ITEMDEF 0228a]
+//disarm
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0228a
+
+[ITEMDEF 0228b]
+//dismount
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0228b
+
+[ITEMDEF 0228c]
+//double strike
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0228c
+
+[ITEMDEF 0228d]
+//infecting
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0228d
+
+[ITEMDEF 0228e]
+//mortal strike
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0228e
+
+[ITEMDEF 0228f]
+//moving shot
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0228f
+
+[ITEMDEF 02290]
+//paralyzing blow
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02290
+
+[ITEMDEF 02291]
+//shadow strike
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02291
+
+[ITEMDEF 02292]
+//whirlwind attack
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02292
+
+[ITEMDEF 02293]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02293
+
+[ITEMDEF 02294]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02294
+
+[ITEMDEF 02295]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02295
+
+[ITEMDEF 02296]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02296
+
+[ITEMDEF 02297]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02297
+
+[ITEMDEF 02298]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02298
+
+[ITEMDEF 02299]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02299
+
+[ITEMDEF 0229a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0229a
+
+[ITEMDEF 0229b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0229b
+
+[ITEMDEF 0229c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0229c
+
+[ITEMDEF 0229d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0229d
+
+[ITEMDEF 0229e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0229e
+
+[ITEMDEF 0229f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0229f
+
+[ITEMDEF 022a0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a0
+
+[ITEMDEF 022a1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a1
+
+[ITEMDEF 022a2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a2
+
+[ITEMDEF 022a3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a3
+
+[ITEMDEF 022a4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a4
+
+[ITEMDEF 022a5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a5
+
+[ITEMDEF 022a6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a6
+
+[ITEMDEF 022a7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a7
+
+[ITEMDEF 022a8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a8
+
+[ITEMDEF 022a9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022a9
+
+[ITEMDEF 022aa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022aa
+
+[ITEMDEF 022ab]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022ab
+
+[ITEMDEF 022ac]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022ac
+
+[ITEMDEF 022ad]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022ad
+
+[ITEMDEF 022ae]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022ae
+
+[ITEMDEF 022af]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022af
+
+[ITEMDEF 022b0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b0
+
+[ITEMDEF 022b1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b1
+
+[ITEMDEF 022b2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b2
+
+[ITEMDEF 022b3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b3
+
+[ITEMDEF 022b4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b4
+
+[ITEMDEF 022b5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b5
+
+[ITEMDEF 022b6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b6
+
+[ITEMDEF 022b7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b7
+
+[ITEMDEF 022b8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b8
+
+[ITEMDEF 022b9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022b9
+
+[ITEMDEF 022ba]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022ba
+
+[ITEMDEF 022bb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022bb
+
+[ITEMDEF 022bc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022bc
+
+[ITEMDEF 022bd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022bd
+
+[ITEMDEF 022be]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022be
+
+[ITEMDEF 022bf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022bf
+
+[ITEMDEF 022c0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022c0
+
+[ITEMDEF 022c1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022c1
+
+[ITEMDEF 022c2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022c2
+
+[ITEMDEF 022c3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 022c3
+
+
+[ITEMDEF 0231a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0231a
+
+[ITEMDEF 0231b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0231b
+
+[ITEMDEF 0231c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0231c
+
+[ITEMDEF 0231d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0231d
+
+[ITEMDEF 0231e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0231e
+
+[ITEMDEF 0231f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0231f
+
+[ITEMDEF 02320]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02320
+
+[ITEMDEF 02321]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02321
+
+[ITEMDEF 02322]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02322
+
+[ITEMDEF 02323]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02323
+
+[ITEMDEF 02324]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02324
+
+[ITEMDEF 02325]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02325
+
+[ITEMDEF 02326]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02326
+
+[ITEMDEF 02327]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02327
+
+
+[ITEMDEF 0233a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0233a
+
+[ITEMDEF 0233b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0233b
+
+
+[ITEMDEF 02379]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02379
+
+[ITEMDEF 0237a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0237a
+
+[ITEMDEF 0237b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0237b
+
+[ITEMDEF 0237c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0237c
+
+[ITEMDEF 0237d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0237d
+
+[ITEMDEF 0237e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0237e
+
+[ITEMDEF 0237f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0237f
+
+[ITEMDEF 02380]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02380
+
+[ITEMDEF 02381]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02381
+
+[ITEMDEF 02382]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02382
+
+[ITEMDEF 02383]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02383
+
+[ITEMDEF 02384]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02384
+
+[ITEMDEF 02385]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02385
+
+[ITEMDEF 02386]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02386
+
+[ITEMDEF 02387]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02387
+
+[ITEMDEF 02388]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02388
+
+[ITEMDEF 02389]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02389
+
+[ITEMDEF 0238a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0238a
+
+[ITEMDEF 0238b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0238b
+
+
+[ITEMDEF 02393]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02393
+
+[ITEMDEF 02394]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02394
+
+[ITEMDEF 02395]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02395
+
+[ITEMDEF 02396]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02396
+
+[ITEMDEF 02397]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02397
+
+[ITEMDEF 02398]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02398
+
+[ITEMDEF 02399]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02399
+
+
+[ITEMDEF 0239c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0239c
+
+[ITEMDEF 0239d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0239d
+
+[ITEMDEF 0239e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0239e
+
+[ITEMDEF 0239f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0239f
+
+
+[ITEMDEF 023a9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Smoke Bomb 023a9
+
+[ITEMDEF 023aa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023aa
+
+[ITEMDEF 023ab]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023ab
+
+[ITEMDEF 023ac]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023ac
+
+[ITEMDEF 023ad]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023ad
+
+[ITEMDEF 023ae]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023ae
+
+[ITEMDEF 023af]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023af
+
+[ITEMDEF 023b0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b0
+
+[ITEMDEF 023b1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b1
+
+[ITEMDEF 023b2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b2
+
+[ITEMDEF 023b3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b3
+
+[ITEMDEF 023b4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b4
+
+[ITEMDEF 023b5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b5
+
+[ITEMDEF 023b6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b6
+
+[ITEMDEF 023b7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b7
+
+[ITEMDEF 023b8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b8
+
+[ITEMDEF 023b9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023b9
+
+[ITEMDEF 023ba]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023ba
+
+[ITEMDEF 023bb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023bb
+
+[ITEMDEF 023bc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023bc
+
+[ITEMDEF 023bd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 023bd
+
+
+[ITEMDEF 02400]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02400
+
+[ITEMDEF 02401]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02401
+
+[ITEMDEF 02402]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02402
+
+[ITEMDEF 02403]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02403
+
+[ITEMDEF 02404]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02404
+
+[ITEMDEF 02405]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02405
+
+[ITEMDEF 02406]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02406
+
+[ITEMDEF 02407]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02407
+
+[ITEMDEF 02408]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02408
+
+
+[ITEMDEF 024ea]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Jungle Wall Tile 024ea
+
+
+[ITEMDEF 0256a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Scale Shield 0256a
+
+
+[ITEMDEF 025de]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025de
+
+[ITEMDEF 025df]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025df
+
+[ITEMDEF 025e0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025e0
+
+[ITEMDEF 025e1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025e1
+
+[ITEMDEF 025e2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025e2
+
+[ITEMDEF 025e3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025e3
+
+
+[ITEMDEF 025f4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025f4
+
+[ITEMDEF 025f5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025f5
+
+[ITEMDEF 025f6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025f6
+
+[ITEMDEF 025f7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025f7
+
+
+[ITEMDEF 025fd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025fd
+
+[ITEMDEF 025fe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025fe
+
+[ITEMDEF 025ff]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 025ff
+
+[ITEMDEF 02600]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02600
+
+[ITEMDEF 02601]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02601
+
+
+[ITEMDEF 02636]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02636
+
+[ITEMDEF 02637]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02637
+
+[ITEMDEF 02638]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02638
+
+[ITEMDEF 02639]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02639
+
+[ITEMDEF 0263a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0263a
+
+[ITEMDEF 0263b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0263b
+
+[ITEMDEF 0263c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0263c
+
+[ITEMDEF 0263d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0263d
+
+[ITEMDEF 0263e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0263e
+
+[ITEMDEF 0263f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0263f
+
+[ITEMDEF 02640]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02640
+
+
+[ITEMDEF 02669]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02669
+
+[ITEMDEF 0266a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0266a
+
+
+[ITEMDEF 0266f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0266f
+
+[ITEMDEF 02670]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02670
+
+
+[ITEMDEF 02675]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02675
+
+[ITEMDEF 02676]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02676
+
+
+[ITEMDEF 02688]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02688
+
+
+[ITEMDEF 02693]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02693
+
+[ITEMDEF 02694]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02694
+
+[ITEMDEF 02695]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02695
+
+[ITEMDEF 02696]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02696
+
+[ITEMDEF 02697]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02697
+
+[ITEMDEF 02698]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02698
+
+[ITEMDEF 02699]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02699
+
+[ITEMDEF 0269a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0269a
+
+[ITEMDEF 0269b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0269b
+
+[ITEMDEF 0269c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0269c
+
+
+[ITEMDEF 0269f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0269f
+
+[ITEMDEF 026a0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026a0
+
+
+[ITEMDEF 026a5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026a5
+
+[ITEMDEF 026a6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026a6
+
+[ITEMDEF 026a7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026a7
+
+[ITEMDEF 026a8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026a8
+
+[ITEMDEF 026a9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026a9
+
+[ITEMDEF 026aa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026aa
+
+[ITEMDEF 026ab]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026ab
+
+
+[ITEMDEF 026f5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026f5
+
+
+[ITEMDEF 026f7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 026f7
+
+
+[ITEMDEF 0270d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0270d
+
+[ITEMDEF 0270e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0270e
+
+[ITEMDEF 0270f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0270f
+
+
+[ITEMDEF 0278c]
+//unused tile named chainmail haidate
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0278c
+
+
+[ITEMDEF 02795]
+//unused tile named tabi boots tall
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02795
+
+
+[ITEMDEF 0279e]
+//unused tile named kimono male dress
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0279e
+
+[ITEMDEF 0279f]
+//unused tile named kimono female dress
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0279f
+
+
+[ITEMDEF 027b0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b0
+
+[ITEMDEF 027b1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b1
+
+[ITEMDEF 027b2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b2
+
+[ITEMDEF 027b3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b3
+
+[ITEMDEF 027b4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b4
+
+[ITEMDEF 027b5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b5
+
+[ITEMDEF 027b6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b6
+
+[ITEMDEF 027b7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b7
+
+[ITEMDEF 027b8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b8
+
+[ITEMDEF 027b9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027b9
+
+[ITEMDEF 027ba]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027ba
+
+[ITEMDEF 027bb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027bb
+
+[ITEMDEF 027bc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027bc
+
+[ITEMDEF 027bd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027bd
+
+[ITEMDEF 027be]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027be
+
+
+[ITEMDEF 027d7]
+//unused tile named mail haidate
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027d7
+
+
+[ITEMDEF 027e0]
+//unused tile named tabi boots tall
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027e0
+
+
+[ITEMDEF 027e9]
+//unused tile named kimono male dress
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027e9
+
+[ITEMDEF 027ea]
+//unused tile named kimono female dress
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027ea
+
+
+[ITEMDEF 027fb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027fb
+
+[ITEMDEF 027fc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027fc
+
+[ITEMDEF 027fd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027fd
+
+[ITEMDEF 027fe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027fe
+
+[ITEMDEF 027ff]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 027ff
+
+[ITEMDEF 02800]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02800
+
+[ITEMDEF 02801]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02801
+
+[ITEMDEF 02802]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02802
+
+[ITEMDEF 02803]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02803
+
+
+[ITEMDEF 0280a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0280a
+
+
+[ITEMDEF 0281d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0281d
+
+[ITEMDEF 0281e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0281e
+
+[ITEMDEF 0281f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0281f
+
+[ITEMDEF 02820]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02820
+
+[ITEMDEF 02821]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02821
+
+[ITEMDEF 02822]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02822
+
+[ITEMDEF 02823]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02823
+
+[ITEMDEF 02824]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02824
+
+[ITEMDEF 02825]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02825
+
+[ITEMDEF 02826]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02826
+
+[ITEMDEF 02827]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02827
+
+[ITEMDEF 02828]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02828
+
+[ITEMDEF 02829]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02829
+
+[ITEMDEF 0282a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 0282a
+
+[ITEMDEF 0282b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 0282b
+
+[ITEMDEF 0282c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 0282c
+
+[ITEMDEF 0282d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 0282d
+
+[ITEMDEF 0282e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 0282e
+
+[ITEMDEF 0282f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 0282f
+
+
+[ITEMDEF 028ef]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Ceramic Roof Tile 028ef
+
+
+[ITEMDEF 02a2f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a2f
+
+
+[ITEMDEF 02a4d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a4d
+
+[ITEMDEF 02a4e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a4e
+
+[ITEMDEF 02a4f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a4f
+
+[ITEMDEF 02a50]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a50
+
+[ITEMDEF 02a51]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a51
+
+[ITEMDEF 02a52]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a52
+
+[ITEMDEF 02a53]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a53
+
+[ITEMDEF 02a54]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a54
+
+[ITEMDEF 02a55]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a55
+
+[ITEMDEF 02a56]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a56
+
+[ITEMDEF 02a57]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02a57
+
+
+[ITEMDEF 02ab9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02ab9
+
+[ITEMDEF 02aba]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02aba
+
+[ITEMDEF 02abb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02abb
+
+[ITEMDEF 02abc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02abc
+
+[ITEMDEF 02abd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02abd
+
+[ITEMDEF 02abe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02abe
+
+[ITEMDEF 02abf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02abf
+
+
+[ITEMDEF 02ac7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ac7
+
+
+[ITEMDEF 02aca]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02aca
+
+[ITEMDEF 02acb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02acb
+
+[ITEMDEF 02acc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02acc
+
+
+[ITEMDEF 02acf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02acf
+
+[ITEMDEF 02ad0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ad0
+
+[ITEMDEF 02ad1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ad1
+
+[ITEMDEF 02ad2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ad2
+
+[ITEMDEF 02ad3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ad3
+
+[ITEMDEF 02ad4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ad4
+
+[ITEMDEF 02ad5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ad5
+
+[ITEMDEF 02ad6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ad6
+
+[ITEMDEF 02ad7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ad7
+
+[ITEMDEF 02ad8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name Tile 02ad8
+
+[ITEMDEF 02ad9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ad9
+
+[ITEMDEF 02ada]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ada
+
+[ITEMDEF 02adb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02adb
+
+
+[ITEMDEF 02ae1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ae1
+
+[ITEMDEF 02ae2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ae2
+
+[ITEMDEF 02ae3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02ae3
+
+
+[ITEMDEF 02af1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02af1
+
+[ITEMDEF 02af2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02af2
+
+[ITEMDEF 02af3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02af3
+
+[ITEMDEF 02af4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02af4
+
+[ITEMDEF 02af5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02af5
+
+[ITEMDEF 02af6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02af6
+
+[ITEMDEF 02af7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02af7
+
+
+[ITEMDEF 02b15]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b15
+
+[ITEMDEF 02b16]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b16
+
+[ITEMDEF 02b17]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b17
+
+[ITEMDEF 02b18]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b18
+
+[ITEMDEF 02b19]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b19
+
+[ITEMDEF 02b1a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b1a
+
+[ITEMDEF 02b1b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b1b
+
+[ITEMDEF 02b1c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b1c
+
+[ITEMDEF 02b1d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b1d
+
+[ITEMDEF 02b1e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b1e
+
+[ITEMDEF 02b1f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b1f
+
+[ITEMDEF 02b20]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b20
+
+[ITEMDEF 02b21]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b21
+
+[ITEMDEF 02b22]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b22
+
+[ITEMDEF 02b23]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b23
+
+[ITEMDEF 02b24]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b24
+
+[ITEMDEF 02b25]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b25
+
+[ITEMDEF 02b26]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b26
+
+[ITEMDEF 02b27]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b27
+
+[ITEMDEF 02b28]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b28
+
+[ITEMDEF 02b29]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b29
+
+[ITEMDEF 02b2a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b2a
+
+[ITEMDEF 02b2b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b2b
+
+[ITEMDEF 02b2c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b2c
+
+[ITEMDEF 02b2d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b2d
+
+[ITEMDEF 02b2e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b2e
+
+[ITEMDEF 02b2f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b2f
+
+[ITEMDEF 02b30]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b30
+
+[ITEMDEF 02b31]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b31
+
+[ITEMDEF 02b32]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b32
+
+[ITEMDEF 02b33]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b33
+
+[ITEMDEF 02b34]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b34
+
+[ITEMDEF 02b35]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b35
+
+[ITEMDEF 02b36]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b36
+
+[ITEMDEF 02b37]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b37
+
+[ITEMDEF 02b38]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b38
+
+[ITEMDEF 02b39]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b39
+
+[ITEMDEF 02b3a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b3a
+
+[ITEMDEF 02b3b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b3b
+
+[ITEMDEF 02b3c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b3c
+
+[ITEMDEF 02b3d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b3d
+
+
+[ITEMDEF 02b3f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b3f
+
+
+[ITEMDEF 02b41]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b41
+
+
+[ITEMDEF 02b43]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b43
+
+
+[ITEMDEF 02b46]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b46
+
+
+[ITEMDEF 02b4a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b4a
+
+
+[ITEMDEF 02b4c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b4c
+
+
+[ITEMDEF 02b4e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b4e
+
+
+[ITEMDEF 02b51]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b51
+
+
+[ITEMDEF 02b55]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b55
+
+
+[ITEMDEF 02b57]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b57
+
+
+[ITEMDEF 02b59]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b59
+
+[ITEMDEF 02b5a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b5a
+
+[ITEMDEF 02b5b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b5b
+
+
+[ITEMDEF 02b5d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b5d
+
+
+[ITEMDEF 02b5f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b5f
+
+
+[ITEMDEF 02b66]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02b66
+
+
+[ITEMDEF 02bd0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02bd0
+
+
+[ITEMDEF 02be9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02be9
+
+[ITEMDEF 02bea]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bea
+
+[ITEMDEF 02beb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02beb
+
+[ITEMDEF 02bec]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bec
+
+[ITEMDEF 02bed]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bed
+
+[ITEMDEF 02bee]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bee
+
+[ITEMDEF 02bef]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bef
+
+[ITEMDEF 02bf0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf0
+
+[ITEMDEF 02bf1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf1
+
+[ITEMDEF 02bf2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf2
+
+[ITEMDEF 02bf3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf3
+
+[ITEMDEF 02bf4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf4
+
+[ITEMDEF 02bf5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf5
+
+[ITEMDEF 02bf6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf6
+
+[ITEMDEF 02bf7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf7
+
+[ITEMDEF 02bf8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf8
+
+[ITEMDEF 02bf9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bf9
+
+[ITEMDEF 02bfa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bfa
+
+[ITEMDEF 02bfb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bfb
+
+[ITEMDEF 02bfc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bfc
+
+[ITEMDEF 02bfd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bfd
+
+[ITEMDEF 02bfe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bfe
+
+[ITEMDEF 02bff]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02bff
+
+[ITEMDEF 02c00]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c00
+
+[ITEMDEF 02c01]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c01
+
+[ITEMDEF 02c02]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c02
+
+[ITEMDEF 02c03]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c03
+
+[ITEMDEF 02c04]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c04
+
+[ITEMDEF 02c05]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c05
+
+[ITEMDEF 02c06]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c06
+
+[ITEMDEF 02c07]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c07
+
+[ITEMDEF 02c08]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c08
+
+[ITEMDEF 02c09]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c09
+
+[ITEMDEF 02c0a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c0a
+
+[ITEMDEF 02c0b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c0b
+
+[ITEMDEF 02c0c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c0c
+
+[ITEMDEF 02c0d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c0d
+
+[ITEMDEF 02c0e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c0e
+
+[ITEMDEF 02c0f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c0f
+
+[ITEMDEF 02c10]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c10
+
+[ITEMDEF 02c11]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c11
+
+[ITEMDEF 02c12]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c12
+
+[ITEMDEF 02c13]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c13
+
+[ITEMDEF 02c14]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c14
+
+[ITEMDEF 02c15]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c15
+
+[ITEMDEF 02c16]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c16
+
+[ITEMDEF 02c17]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c17
+
+[ITEMDEF 02c18]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c18
+
+[ITEMDEF 02c19]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c19
+
+[ITEMDEF 02c1a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c1a
+
+[ITEMDEF 02c1b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c1b
+
+[ITEMDEF 02c1c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c1c
+
+[ITEMDEF 02c1d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c1d
+
+[ITEMDEF 02c1e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c1e
+
+[ITEMDEF 02c1f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c1f
+
+[ITEMDEF 02c20]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c20
+
+[ITEMDEF 02c21]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c21
+
+[ITEMDEF 02c22]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c22
+
+[ITEMDEF 02c23]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 02c23
+
+
+[ITEMDEF 02d0d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d0d
+
+
+[ITEMDEF 02d75]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d75
+
+[ITEMDEF 02d76]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d76
+
+[ITEMDEF 02d77]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d77
+
+[ITEMDEF 02d78]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d78
+
+[ITEMDEF 02d79]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d79
+
+[ITEMDEF 02d7a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d7a
+
+[ITEMDEF 02d7b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d7b
+
+[ITEMDEF 02d7c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d7c
+
+[ITEMDEF 02d7d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d7d
+
+[ITEMDEF 02d7e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d7e
+
+[ITEMDEF 02d7f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d7f
+
+[ITEMDEF 02d80]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d80
+
+[ITEMDEF 02d81]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02d81
+
+
+[ITEMDEF 02dbb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02dbb
+
+[ITEMDEF 02dbc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02dbc
+
+[ITEMDEF 02dbd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02dbd
+
+[ITEMDEF 02dbe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02dbe
+
+
+[ITEMDEF 02dd2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02dd2
+
+
+[ITEMDEF 02e48]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e48
+
+[ITEMDEF 02e49]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e49
+
+[ITEMDEF 02e4a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e4a
+
+[ITEMDEF 02e4b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e4b
+
+[ITEMDEF 02e4c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e4c
+
+[ITEMDEF 02e4d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e4d
+
+[ITEMDEF 02e4e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e4e
+
+[ITEMDEF 02e4f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e4f
+
+[ITEMDEF 02e50]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e50
+
+[ITEMDEF 02e51]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e51
+
+[ITEMDEF 02e52]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e52
+
+[ITEMDEF 02e53]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e53
+
+[ITEMDEF 02e54]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e54
+
+[ITEMDEF 02e55]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e55
+
+[ITEMDEF 02e56]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e56
+
+[ITEMDEF 02e57]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e57
+
+[ITEMDEF 02e58]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e58
+
+[ITEMDEF 02e59]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e59
+
+[ITEMDEF 02e5a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e5a
+
+[ITEMDEF 02e5b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e5b
+
+[ITEMDEF 02e5c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e5c
+
+[ITEMDEF 02e5d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e5d
+
+[ITEMDEF 02e5e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e5e
+
+[ITEMDEF 02e5f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e5f
+
+[ITEMDEF 02e60]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e60
+
+[ITEMDEF 02e61]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e61
+
+[ITEMDEF 02e62]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e62
+
+[ITEMDEF 02e63]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e63
+
+[ITEMDEF 02e64]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e64
+
+[ITEMDEF 02e65]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e65
+
+[ITEMDEF 02e66]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e66
+
+[ITEMDEF 02e67]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e67
+
+[ITEMDEF 02e68]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02e68
+
+
+[ITEMDEF 02edc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02edc
+
+[ITEMDEF 02edd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02edd
+
+[ITEMDEF 02ede]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ede
+
+[ITEMDEF 02edf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02edf
+
+[ITEMDEF 02ee0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02ee0
+
+
+[ITEMDEF 02f0f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Terrain Tile 02f0f
+
+[ITEMDEF 02f10]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Terrain Tile 02f10
+
+[ITEMDEF 02f11]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Terrain Tile 02f11
+
+[ITEMDEF 02f12]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Terrain Tile 02f12
+
+
+[ITEMDEF 02f29]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f29
+
+[ITEMDEF 02f2a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f2a
+
+[ITEMDEF 02f2b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f2b
+
+[ITEMDEF 02f2c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f2c
+
+[ITEMDEF 02f2d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f2d
+
+[ITEMDEF 02f2e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02f2e
+
+[ITEMDEF 02f2f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02f2f
+
+[ITEMDEF 02f30]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f30
+
+[ITEMDEF 02f31]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f31
+
+[ITEMDEF 02f32]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f32
+
+[ITEMDEF 02f33]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f33
+
+[ITEMDEF 02f34]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f34
+
+[ITEMDEF 02f35]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f35
+
+[ITEMDEF 02f36]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f36
+
+[ITEMDEF 02f37]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f37
+
+[ITEMDEF 02f38]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f38
+
+[ITEMDEF 02f39]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f39
+
+[ITEMDEF 02f3a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f3a
+
+[ITEMDEF 02f3b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f3b
+
+[ITEMDEF 02f3c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02f3c
+
+[ITEMDEF 02f3d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02f3d
+
+[ITEMDEF 02f3e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02f3e
+
+[ITEMDEF 02f3f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02f3f
+
+[ITEMDEF 02f40]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02f40
+
+[ITEMDEF 02f41]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02f41
+
+[ITEMDEF 02f42]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02f42
+
+[ITEMDEF 02f43]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02f43
+
+[ITEMDEF 02f44]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f44
+
+[ITEMDEF 02f45]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f45
+
+[ITEMDEF 02f46]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f46
+
+[ITEMDEF 02f47]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f47
+
+[ITEMDEF 02f48]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f48
+
+[ITEMDEF 02f49]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f49
+
+[ITEMDEF 02f4a]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f4a
+
+[ITEMDEF 02f4b]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f4b
+
+[ITEMDEF 02f4c]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f4c
+
+[ITEMDEF 02f4d]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f4d
+
+[ITEMDEF 02f4e]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f4e
+
+[ITEMDEF 02f4f]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f4f
+
+[ITEMDEF 02f50]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f50
+
+[ITEMDEF 02f51]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f51
+
+[ITEMDEF 02f52]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f52
+
+[ITEMDEF 02f53]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f53
+
+[ITEMDEF 02f54]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f54
+
+[ITEMDEF 02f55]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f55
+
+[ITEMDEF 02f56]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 02f56
+
+
+[ITEMDEF 02fd3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 02fd3
+
+
+[ITEMDEF 02fd9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 02fd9
+
+[ITEMDEF 02fda]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02fda
+
+[ITEMDEF 02fdb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02fdb
+
+
+[ITEMDEF 02fe0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02fe0
+
+[ITEMDEF 02fe1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02fe1
+
+
+[ITEMDEF 02fe8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tall Crystal Mirror? 02fe8
+
+[ITEMDEF 02fe9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tall Crystal Mirror? 02fe9
+
+
+[ITEMDEF 02fee]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02fee
+
+[ITEMDEF 02fef]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02fef
+
+[ITEMDEF 02ff0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02ff0
+
+[ITEMDEF 02ff1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02ff1
+
+
+[ITEMDEF 02ff7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02ff7
+
+[ITEMDEF 02ff8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 02ff8
+
+
+[ITEMDEF 03002]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03002
+
+[ITEMDEF 03003]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03003
+
+
+[ITEMDEF 03018]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03018
+
+[ITEMDEF 03019]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03019
+
+[ITEMDEF 0301a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0301a
+
+[ITEMDEF 0301b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0301b
+
+[ITEMDEF 0301c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0301c
+
+[ITEMDEF 0301d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0301d
+
+[ITEMDEF 0301e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0301e
+
+[ITEMDEF 0301f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0301f
+
+
+[ITEMDEF 0302d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0302d
+
+[ITEMDEF 0302e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0302e
+
+[ITEMDEF 0302f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0302f
+
+[ITEMDEF 03030]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03030
+
+[ITEMDEF 03031]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03031
+
+[ITEMDEF 03032]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03032
+
+[ITEMDEF 03033]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03033
+
+[ITEMDEF 03034]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03034
+
+[ITEMDEF 03035]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03035
+
+[ITEMDEF 03036]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03036
+
+[ITEMDEF 03037]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03037
+
+[ITEMDEF 03038]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03038
+
+[ITEMDEF 03039]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03039
+
+[ITEMDEF 0303a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0303a
+
+[ITEMDEF 0303b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0303b
+
+[ITEMDEF 0303c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0303c
+
+[ITEMDEF 0303d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0303d
+
+[ITEMDEF 0303e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0303e
+
+[ITEMDEF 0303f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 0303f
+
+[ITEMDEF 03040]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03040
+
+[ITEMDEF 03041]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03041
+
+[ITEMDEF 03042]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03042
+
+[ITEMDEF 03043]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03043
+
+[ITEMDEF 03044]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03044
+
+[ITEMDEF 03045]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03045
+
+[ITEMDEF 03046]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03046
+
+[ITEMDEF 03047]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Assigned to CMI 03047
+
+
+[ITEMDEF 0304e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Elven Bed Assets 0304e
+
+[ITEMDEF 0304f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Elven Bed Assets 0304f
+
+
+[ITEMDEF 03064]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=MultiTile Assets 03064
+
+[ITEMDEF 03065]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=MultiTile Assets 03065
+
+
+[ITEMDEF 03125]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 03125
+
+[ITEMDEF 03126]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Valid Art 03126
+
+
+[ITEMDEF 0312b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0312b
+
+[ITEMDEF 0312c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0312c
+
+
+[ITEMDEF 03131]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03131
+
+[ITEMDEF 03132]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03132
+
+[ITEMDEF 03133]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03133
+
+[ITEMDEF 03134]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03134
+
+[ITEMDEF 03135]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03135
+
+[ITEMDEF 03136]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03136
+
+[ITEMDEF 03137]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03137
+
+[ITEMDEF 03138]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03138
+
+[ITEMDEF 03139]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03139
+
+[ITEMDEF 0313a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0313a
+
+[ITEMDEF 0313b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0313b
+
+[ITEMDEF 0313c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0313c
+
+[ITEMDEF 0313d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0313d
+
+[ITEMDEF 0313e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0313e
+
+[ITEMDEF 0313f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0313f
+
+[ITEMDEF 03140]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03140
+
+[ITEMDEF 03141]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03141
+
+[ITEMDEF 03142]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03142
+
+[ITEMDEF 03143]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03143
+
+[ITEMDEF 03144]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03144
+
+[ITEMDEF 03145]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03145
+
+[ITEMDEF 03146]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03146
+
+[ITEMDEF 03147]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03147
+
+[ITEMDEF 03148]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03148
+
+[ITEMDEF 03149]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03149
+
+[ITEMDEF 0314a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0314a
+
+[ITEMDEF 0314b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0314b
+
+
+[ITEMDEF 03182]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused 03182
+
+
+[ITEMDEF 031b0]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b0
+
+[ITEMDEF 031b1]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b1
+
+[ITEMDEF 031b2]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b2
+
+[ITEMDEF 031b3]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b3
+
+[ITEMDEF 031b4]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b4
+
+[ITEMDEF 031b5]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b5
+
+[ITEMDEF 031b6]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b6
+
+[ITEMDEF 031b7]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b7
+
+[ITEMDEF 031b8]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b8
+
+[ITEMDEF 031b9]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031b9
+
+[ITEMDEF 031ba]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031ba
+
+[ITEMDEF 031bb]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031bb
+
+[ITEMDEF 031bc]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031bc
+
+[ITEMDEF 031bd]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031bd
+
+[ITEMDEF 031be]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031be
+
+[ITEMDEF 031bf]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031bf
+
+[ITEMDEF 031c0]
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 031c0
+
+
+[ITEMDEF 031c1]
+[ITEMDEF 031c2]
+[ITEMDEF 031c3]
+[ITEMDEF 031c4]
+[ITEMDEF 031c5]
+[ITEMDEF 031c6]
+[ITEMDEF 031c7]
+[ITEMDEF 031c8]
+[ITEMDEF 031c9]
+[ITEMDEF 031ca]
+[ITEMDEF 031cb]
+[ITEMDEF 031cc]
+[ITEMDEF 031cd]
+[ITEMDEF 031ce]
+[ITEMDEF 031cf]
+[ITEMDEF 031d0]
+[ITEMDEF 031d1]
+[ITEMDEF 031d2]
+[ITEMDEF 031d3]
+[ITEMDEF 031d4]
+[ITEMDEF 031d5]
+[ITEMDEF 031d6]
+[ITEMDEF 031d7]
+[ITEMDEF 031d8]
+[ITEMDEF 031d9]
+[ITEMDEF 031da]
+[ITEMDEF 031db]
+[ITEMDEF 031dc]
+[ITEMDEF 031dd]
+[ITEMDEF 031de]
+[ITEMDEF 031df]
+[ITEMDEF 031e0]
+[ITEMDEF 031e1]
+[ITEMDEF 031e2]
+[ITEMDEF 031e3]
+[ITEMDEF 031e4]
+[ITEMDEF 031e5]
+[ITEMDEF 031e6]
+[ITEMDEF 031e7]
+[ITEMDEF 031e8]
+[ITEMDEF 031e9]
+[ITEMDEF 031ea]
+[ITEMDEF 031eb]
+[ITEMDEF 031ec]
+[ITEMDEF 031ed]
+[ITEMDEF 031ee]
+[ITEMDEF 031ef]
+[ITEMDEF 031f0]
+[ITEMDEF 031f1]
+[ITEMDEF 031f2]
+[ITEMDEF 031f3]
+
+
+[ITEMDEF 031fc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 031fc
+
+[ITEMDEF 031fd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 031fd
+
+[ITEMDEF 031fe]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 031fe
+
+[ITEMDEF 031ff]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 031ff
+
+[ITEMDEF 03200]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03200
+
+[ITEMDEF 03201]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03201
+
+[ITEMDEF 03202]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03202
+
+[ITEMDEF 03203]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03203
+
+[ITEMDEF 03204]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03204
+
+[ITEMDEF 03205]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03205
+
+[ITEMDEF 03206]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03206
+
+[ITEMDEF 03207]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03207
+
+[ITEMDEF 03208]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03208
+
+
+[ITEMDEF 0320b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0320b
+
+[ITEMDEF 0320c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0320c
+
+
+[ITEMDEF 03212]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03212
+
+
+[ITEMDEF 03219]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03219
+
+
+[ITEMDEF 0321f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0321f
+
+
+[ITEMDEF 03225]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03225
+
+
+[ITEMDEF 0322b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0322b
+
+
+[ITEMDEF 03235]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03235
+
+
+[ITEMDEF 03240]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03240
+
+
+[ITEMDEF 032b2]
+[ITEMDEF 032b3]
+[ITEMDEF 032b4]
+[ITEMDEF 032b5]
+[ITEMDEF 032b6]
+[ITEMDEF 032b7]
+[ITEMDEF 032b8]
+[ITEMDEF 032b9]
+[ITEMDEF 032ba]
+[ITEMDEF 032bb]
+[ITEMDEF 032bc]
+[ITEMDEF 032bd]
+[ITEMDEF 032be]
+[ITEMDEF 032bf]
+[ITEMDEF 032c0]
+[ITEMDEF 032c1]
+[ITEMDEF 032c2]
+[ITEMDEF 032c3]
+
+
+[ITEMDEF 032cb]
+[ITEMDEF 032cc]
+[ITEMDEF 032cd]
+[ITEMDEF 032ce]
+[ITEMDEF 032cf]
+[ITEMDEF 032d0]
+[ITEMDEF 032d1]
+[ITEMDEF 032d2]
+[ITEMDEF 032d3]
+[ITEMDEF 032d4]
+[ITEMDEF 032d5]
+[ITEMDEF 032d6]
+[ITEMDEF 032d7]
+[ITEMDEF 032d8]
+[ITEMDEF 032d9]
+[ITEMDEF 032da]
+[ITEMDEF 032db]
+[ITEMDEF 032dc]
+[ITEMDEF 032dd]
+[ITEMDEF 032de]
+[ITEMDEF 032df]
+[ITEMDEF 032e0]
+[ITEMDEF 032e1]
+[ITEMDEF 032e2]
+[ITEMDEF 032e3]
+[ITEMDEF 032e4]
+[ITEMDEF 032e5]
+[ITEMDEF 032e6]
+[ITEMDEF 032e7]
+
+
+[ITEMDEF 032ec]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 032ec
+
+[ITEMDEF 032ed]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 032ed
+
+[ITEMDEF 032ee]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 032ee
+
+[ITEMDEF 032ef]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 032ef
+
+
+[ITEMDEF 032f1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 032f1
+
+
+[ITEMDEF 032f9]
+[ITEMDEF 032fa]
+[ITEMDEF 032fb]
+[ITEMDEF 032fc]
+[ITEMDEF 032fd]
+[ITEMDEF 032fe]
+[ITEMDEF 032ff]
+[ITEMDEF 03300]
+[ITEMDEF 03301]
+[ITEMDEF 03302]
+[ITEMDEF 03303]
+[ITEMDEF 03304]
+[ITEMDEF 03305]
+[ITEMDEF 03306]
+[ITEMDEF 03307]
+[ITEMDEF 03308]
+[ITEMDEF 03309]
+[ITEMDEF 0330a]
+[ITEMDEF 0330b]
+[ITEMDEF 0330c]
+[ITEMDEF 0330d]
+[ITEMDEF 0330e]
+[ITEMDEF 0330f]
+[ITEMDEF 03310]
+[ITEMDEF 03311]
+[ITEMDEF 03312]
+[ITEMDEF 03313]
+[ITEMDEF 03314]
+[ITEMDEF 03315]
+[ITEMDEF 03316]
+[ITEMDEF 03317]
+[ITEMDEF 03318]
+[ITEMDEF 03319]
+[ITEMDEF 0331a]
+[ITEMDEF 0331b]
+[ITEMDEF 0331c]
+[ITEMDEF 0331d]
+[ITEMDEF 0331e]
+[ITEMDEF 0331f]
+[ITEMDEF 03320]
+[ITEMDEF 03321]
+[ITEMDEF 03322]
+[ITEMDEF 03323]
+[ITEMDEF 03324]
+[ITEMDEF 03325]
+[ITEMDEF 03326]
+[ITEMDEF 03327]
+[ITEMDEF 03328]
+[ITEMDEF 03329]
+[ITEMDEF 0332a]
+[ITEMDEF 0332b]
+[ITEMDEF 0332c]
+[ITEMDEF 0332d]
+[ITEMDEF 0332e]
+[ITEMDEF 0332f]
+[ITEMDEF 03330]
+[ITEMDEF 03331]
+[ITEMDEF 03332]
+[ITEMDEF 03333]
+[ITEMDEF 03334]
+[ITEMDEF 03335]
+[ITEMDEF 03336]
+[ITEMDEF 03337]
+[ITEMDEF 03338]
+[ITEMDEF 03339]
+[ITEMDEF 0333a]
+[ITEMDEF 0333b]
+[ITEMDEF 0333c]
+[ITEMDEF 0333d]
+[ITEMDEF 0333e]
+[ITEMDEF 0333f]
+[ITEMDEF 03340]
+
+
+[ITEMDEF 03352]
+[ITEMDEF 03353]
+[ITEMDEF 03354]
+[ITEMDEF 03355]
+[ITEMDEF 03356]
+[ITEMDEF 03357]
+[ITEMDEF 03358]
+[ITEMDEF 03359]
+[ITEMDEF 0335a]
+[ITEMDEF 0335b]
+[ITEMDEF 0335c]
+[ITEMDEF 0335d]
+[ITEMDEF 0335e]
+[ITEMDEF 0335f]
+[ITEMDEF 03360]
+[ITEMDEF 03361]
+[ITEMDEF 03362]
+[ITEMDEF 03363]
+[ITEMDEF 03364]
+[ITEMDEF 03365]
+[ITEMDEF 03366]
+[ITEMDEF 03367]
+[ITEMDEF 03368]
+[ITEMDEF 03369]
+[ITEMDEF 0336a]
+[ITEMDEF 0336b]
+[ITEMDEF 0336c]
+[ITEMDEF 0336d]
+[ITEMDEF 0336e]
+[ITEMDEF 0336f]
+[ITEMDEF 03370]
+[ITEMDEF 03371]
+[ITEMDEF 03372]
+[ITEMDEF 03373]
+[ITEMDEF 03374]
+[ITEMDEF 03375]
+[ITEMDEF 03376]
+[ITEMDEF 03377]
+[ITEMDEF 03378]
+[ITEMDEF 03379]
+[ITEMDEF 0337a]
+[ITEMDEF 0337b]
+[ITEMDEF 0337c]
+[ITEMDEF 0337d]
+[ITEMDEF 0337e]
+[ITEMDEF 0337f]
+[ITEMDEF 03380]
+[ITEMDEF 03381]
+[ITEMDEF 03382]
+[ITEMDEF 03383]
+[ITEMDEF 03384]
+[ITEMDEF 03385]
+[ITEMDEF 03386]
+[ITEMDEF 03387]
+[ITEMDEF 03388]
+[ITEMDEF 03389]
+[ITEMDEF 0338a]
+[ITEMDEF 0338b]
+[ITEMDEF 0338c]
+[ITEMDEF 0338d]
+[ITEMDEF 0338e]
+[ITEMDEF 0338f]
+[ITEMDEF 03390]
+[ITEMDEF 03391]
+[ITEMDEF 03392]
+[ITEMDEF 03393]
+[ITEMDEF 03394]
+[ITEMDEF 03395]
+[ITEMDEF 03396]
+[ITEMDEF 03397]
+[ITEMDEF 03398]
+[ITEMDEF 03399]
+[ITEMDEF 0339a]
+[ITEMDEF 0339b]
+[ITEMDEF 0339c]
+[ITEMDEF 0339d]
+[ITEMDEF 0339e]
+[ITEMDEF 0339f]
+[ITEMDEF 033a0]
+[ITEMDEF 033a1]
+[ITEMDEF 033a2]
+[ITEMDEF 033a3]
+[ITEMDEF 033a4]
+[ITEMDEF 033a5]
+[ITEMDEF 033a6]
+[ITEMDEF 033a7]
+[ITEMDEF 033a8]
+[ITEMDEF 033a9]
+[ITEMDEF 033aa]
+[ITEMDEF 033ab]
+[ITEMDEF 033ac]
+[ITEMDEF 033ad]
+[ITEMDEF 033ae]
+[ITEMDEF 033af]
+[ITEMDEF 033b0]
+[ITEMDEF 033b1]
+[ITEMDEF 033b2]
+[ITEMDEF 033b3]
+[ITEMDEF 033b4]
+[ITEMDEF 033b5]
+[ITEMDEF 033b6]
+[ITEMDEF 033b7]
+[ITEMDEF 033b8]
+[ITEMDEF 033b9]
+[ITEMDEF 033ba]
+[ITEMDEF 033bb]
+[ITEMDEF 033bc]
+[ITEMDEF 033bd]
+[ITEMDEF 033be]
+[ITEMDEF 033bf]
+[ITEMDEF 033c0]
+[ITEMDEF 033c1]
+[ITEMDEF 033c2]
+[ITEMDEF 033c3]
+[ITEMDEF 033c4]
+[ITEMDEF 033c5]
+[ITEMDEF 033c6]
+[ITEMDEF 033c7]
+[ITEMDEF 033c8]
+[ITEMDEF 033c9]
+[ITEMDEF 033ca]
+[ITEMDEF 033cb]
+[ITEMDEF 033cc]
+[ITEMDEF 033cd]
+[ITEMDEF 033ce]
+[ITEMDEF 033cf]
+[ITEMDEF 033d0]
+[ITEMDEF 033d1]
+[ITEMDEF 033d2]
+[ITEMDEF 033d3]
+[ITEMDEF 033d4]
+[ITEMDEF 033d5]
+[ITEMDEF 033d6]
+[ITEMDEF 033d7]
+[ITEMDEF 033d8]
+[ITEMDEF 033d9]
+[ITEMDEF 033da]
+[ITEMDEF 033db]
+[ITEMDEF 033dc]
+[ITEMDEF 033dd]
+[ITEMDEF 033de]
+[ITEMDEF 033df]
+[ITEMDEF 033e0]
+[ITEMDEF 033e1]
+[ITEMDEF 033e2]
+[ITEMDEF 033e3]
+[ITEMDEF 033e4]
+[ITEMDEF 033e5]
+[ITEMDEF 033e6]
+[ITEMDEF 033e7]
+[ITEMDEF 033e8]
+[ITEMDEF 033e9]
+[ITEMDEF 033ea]
+[ITEMDEF 033eb]
+[ITEMDEF 033ec]
+[ITEMDEF 033ed]
+[ITEMDEF 033ee]
+[ITEMDEF 033ef]
+[ITEMDEF 033f0]
+[ITEMDEF 033f1]
+[ITEMDEF 033f2]
+[ITEMDEF 033f3]
+[ITEMDEF 033f4]
+[ITEMDEF 033f5]
+[ITEMDEF 033f6]
+[ITEMDEF 033f7]
+[ITEMDEF 033f8]
+[ITEMDEF 033f9]
+[ITEMDEF 033fa]
+[ITEMDEF 033fb]
+[ITEMDEF 033fc]
+[ITEMDEF 033fd]
+[ITEMDEF 033fe]
+[ITEMDEF 033ff]
+[ITEMDEF 03400]
+[ITEMDEF 03401]
+[ITEMDEF 03402]
+[ITEMDEF 03403]
+[ITEMDEF 03404]
+[ITEMDEF 03405]
+[ITEMDEF 03406]
+[ITEMDEF 03407]
+[ITEMDEF 03408]
+[ITEMDEF 03409]
+[ITEMDEF 0340a]
+[ITEMDEF 0340b]
+[ITEMDEF 0340c]
+[ITEMDEF 0340d]
+[ITEMDEF 0340e]
+[ITEMDEF 0340f]
+[ITEMDEF 03410]
+[ITEMDEF 03411]
+[ITEMDEF 03412]
+[ITEMDEF 03413]
+[ITEMDEF 03414]
+[ITEMDEF 03415]
+[ITEMDEF 03416]
+[ITEMDEF 03417]
+[ITEMDEF 03418]
+[ITEMDEF 03419]
+[ITEMDEF 0341a]
+[ITEMDEF 0341b]
+[ITEMDEF 0341c]
+[ITEMDEF 0341d]
+[ITEMDEF 0341e]
+[ITEMDEF 0341f]
+[ITEMDEF 03420]
+
+
+[ITEMDEF 03425]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Missing Name 03425
+
+
+[ITEMDEF 0343a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0343a
+
+
+[ITEMDEF 03446]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03446
+
+
+[ITEMDEF 0344d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0344d
+
+
+[ITEMDEF 03458]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03458
+
+
+[ITEMDEF 03461]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03461
+
+
+[ITEMDEF 03467]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03467
+
+
+[ITEMDEF 0346d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0346d
+
+
+[ITEMDEF 034bc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034bc
+
+
+[ITEMDEF 034c1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034c1
+
+
+[ITEMDEF 034c6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034c6
+
+
+[ITEMDEF 034cb]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034cb
+
+[ITEMDEF 034cc]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034cc
+
+[ITEMDEF 034cd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034cd
+
+[ITEMDEF 034ce]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034ce
+
+[ITEMDEF 034cf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034cf
+
+[ITEMDEF 034d0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034d0
+
+
+[ITEMDEF 034d6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034d6
+
+[ITEMDEF 034d7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Dirt 034d7
+
+[ITEMDEF 034d8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 034d8
+
+
+[ITEMDEF 03529]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03529
+
+[ITEMDEF 0352a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0352a
+
+[ITEMDEF 0352b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0352b
+
+[ITEMDEF 0352c]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0352c
+
+
+[ITEMDEF 03531]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03531
+
+[ITEMDEF 03532]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03532
+
+[ITEMDEF 03533]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03533
+
+[ITEMDEF 03534]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03534
+
+[ITEMDEF 03535]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03535
+
+[ITEMDEF 03536]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03536
+
+[ITEMDEF 03537]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03537
+
+[ITEMDEF 03538]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03538
+
+
+[ITEMDEF 0353d]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0353d
+
+[ITEMDEF 0353e]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0353e
+
+[ITEMDEF 0353f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0353f
+
+[ITEMDEF 03540]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03540
+
+[ITEMDEF 03541]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03541
+
+[ITEMDEF 03542]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03542
+
+[ITEMDEF 03543]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03543
+
+[ITEMDEF 03544]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03544
+
+[ITEMDEF 03545]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03545
+
+
+[ITEMDEF 03562]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03562
+
+[ITEMDEF 03563]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03563
+
+[ITEMDEF 03564]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03564
+
+[ITEMDEF 03565]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03565
+
+[ITEMDEF 03566]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03566
+
+
+[ITEMDEF 0357f]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0357f
+
+[ITEMDEF 03580]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03580
+
+[ITEMDEF 03581]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03581
+
+[ITEMDEF 03582]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03582
+
+[ITEMDEF 03583]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03583
+
+
+[ITEMDEF 035a2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035a2
+
+[ITEMDEF 035a3]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035a3
+
+[ITEMDEF 035a4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035a4
+
+[ITEMDEF 035a5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035a5
+
+[ITEMDEF 035a6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035a6
+
+[ITEMDEF 035a7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035a7
+
+[ITEMDEF 035a8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035a8
+
+[ITEMDEF 035a9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035a9
+
+[ITEMDEF 035aa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035aa
+
+[ITEMDEF 035ab]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035ab
+
+[ITEMDEF 035ac]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035ac
+
+[ITEMDEF 035ad]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 035ad
+
+
+[ITEMDEF 036a4]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036a4
+
+[ITEMDEF 036a5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036a5
+
+[ITEMDEF 036a6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036a6
+
+[ITEMDEF 036a7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036a7
+
+[ITEMDEF 036a8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036a8
+
+[ITEMDEF 036a9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036a9
+
+[ITEMDEF 036aa]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036aa
+
+[ITEMDEF 036ab]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036ab
+
+[ITEMDEF 036ac]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036ac
+
+[ITEMDEF 036ad]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036ad
+
+[ITEMDEF 036ae]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036ae
+
+[ITEMDEF 036af]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 036af
+
+
+[ITEMDEF 037e5]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 037e5
+
+[ITEMDEF 037e6]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 037e6
+
+[ITEMDEF 037e7]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 037e7
+
+[ITEMDEF 037e8]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 037e8
+
+[ITEMDEF 037e9]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 037e9
+
+[ITEMDEF 037ea]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 037ea
+
+
+[ITEMDEF 03810]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03810
+
+[ITEMDEF 03811]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03811
+
+[ITEMDEF 03812]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03812
+
+[ITEMDEF 03813]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03813
+
+[ITEMDEF 03814]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03814
+
+[ITEMDEF 03815]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03815
+
+[ITEMDEF 03816]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03816
+
+[ITEMDEF 03817]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03817
+
+
+[ITEMDEF 03822]
+[ITEMDEF 03823]
+[ITEMDEF 03824]
+[ITEMDEF 03825]
+[ITEMDEF 03826]
+[ITEMDEF 03827]
+[ITEMDEF 03828]
+[ITEMDEF 03829]
+[ITEMDEF 0382a]
+[ITEMDEF 0382b]
+[ITEMDEF 0382c]
+[ITEMDEF 0382d]
+[ITEMDEF 0382e]
+[ITEMDEF 0382f]
+[ITEMDEF 03830]
+[ITEMDEF 03831]
+[ITEMDEF 03832]
+[ITEMDEF 03833]
+[ITEMDEF 03834]
+[ITEMDEF 03835]
+[ITEMDEF 03836]
+[ITEMDEF 03837]
+[ITEMDEF 03838]
+[ITEMDEF 03839]
+[ITEMDEF 0383a]
+[ITEMDEF 0383b]
+[ITEMDEF 0383c]
+[ITEMDEF 0383d]
+[ITEMDEF 0383e]
+[ITEMDEF 0383f]
+[ITEMDEF 03840]
+[ITEMDEF 03841]
+[ITEMDEF 03842]
+[ITEMDEF 03843]
+[ITEMDEF 03844]
+[ITEMDEF 03845]
+[ITEMDEF 03846]
+[ITEMDEF 03847]
+[ITEMDEF 03848]
+[ITEMDEF 03849]
+[ITEMDEF 0384a]
+[ITEMDEF 0384b]
+[ITEMDEF 0384c]
+[ITEMDEF 0384d]
+[ITEMDEF 0384e]
+[ITEMDEF 0384f]
+[ITEMDEF 03850]
+[ITEMDEF 03851]
+[ITEMDEF 03852]
+[ITEMDEF 03853]
+[ITEMDEF 03854]
+[ITEMDEF 03855]
+[ITEMDEF 03856]
+[ITEMDEF 03857]
+[ITEMDEF 03858]
+[ITEMDEF 03859]
+[ITEMDEF 0385a]
+[ITEMDEF 0385b]
+[ITEMDEF 0385c]
+[ITEMDEF 0385d]
+[ITEMDEF 0385e]
+[ITEMDEF 0385f]
+[ITEMDEF 03860]
+[ITEMDEF 03861]
+[ITEMDEF 03862]
+[ITEMDEF 03863]
+[ITEMDEF 03864]
+[ITEMDEF 03865]
+[ITEMDEF 03866]
+[ITEMDEF 03867]
+[ITEMDEF 03868]
+
+
+[ITEMDEF 03911]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03911
+
+[ITEMDEF 03912]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03912
+
+[ITEMDEF 03913]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03913
+
+
+[ITEMDEF 0392a]
+[ITEMDEF 0392b]
+[ITEMDEF 0392c]
+[ITEMDEF 0392d]
+[ITEMDEF 0392e]
+[ITEMDEF 0392f]
+[ITEMDEF 03930]
+[ITEMDEF 03931]
+[ITEMDEF 03932]
+[ITEMDEF 03933]
+[ITEMDEF 03934]
+[ITEMDEF 03935]
+[ITEMDEF 03936]
+[ITEMDEF 03937]
+[ITEMDEF 03938]
+[ITEMDEF 03939]
+[ITEMDEF 0393a]
+[ITEMDEF 0393b]
+[ITEMDEF 0393c]
+[ITEMDEF 0393d]
+[ITEMDEF 0393e]
+[ITEMDEF 0393f]
+[ITEMDEF 03940]
+[ITEMDEF 03941]
+[ITEMDEF 03942]
+[ITEMDEF 03943]
+[ITEMDEF 03944]
+[ITEMDEF 03945]
+
+
+[ITEMDEF 03965]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03965
+
+[ITEMDEF 03966]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 03966
+
+
+[ITEMDEF 0398b]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 0398b
+
+
+[ITEMDEF 0390a]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 039a0
+
+[ITEMDEF 039a1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 039a1
+
+[ITEMDEF 039a2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 039a2
+
+
+[ITEMDEF 039b0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Unused Tile 039b0
+
+
+[ITEMDEF 039bd]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Tile 039bd
+
+[ITEMDEF 039be]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Tile 039be
+
+[ITEMDEF 039bf]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Tile 039bf
+
+[ITEMDEF 039c0]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Tile 039c0
+
+[ITEMDEF 039c1]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Tile 039c1
+
+[ITEMDEF 039c2]
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=Tree Tile 039c2
+
+
+
+[EOF]

@@ -1,0 +1,835 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, March 27, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0e24]
+DEFNAME=i_vial_empty
+RESOURCES=5 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Empty Vial
+
+[ITEMDEF 0e25]
+DEFNAME=i_bottle
+RESOURCES=5 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Bottle
+DUPELIST=0efd
+
+[ITEMDEF 0e26]
+DEFNAME=i_bottle_2
+RESOURCES=5 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Bottle 2
+DUPELIST=0efe
+
+[ITEMDEF 0e28]
+DEFNAME=i_bottle_3
+RESOURCES=5 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Bottle 3
+DUPELIST=0f00
+
+[ITEMDEF 0e29]
+DEFNAME=i_bottle_4
+RESOURCES=5 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Bottle 4
+DUPELIST=0f01
+
+[ITEMDEF 0e2a]
+DEFNAME=i_bottle_5
+RESOURCES=5 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Bottle 5
+DUPELIST=0f02
+
+[ITEMDEF 0e2b]
+DEFNAME=i_bottle_6
+RESOURCES=5 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Bottle 6
+DUPELIST=0f03
+
+[ITEMDEF 0e2c]
+DEFNAME=i_bottle_7
+RESOURCES=5 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Bottle
+DUPELIST=0f04
+
+[ITEMDEF 0e44]
+DEFNAME=i_jars
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Empty Jars
+DUPELIST=0e45,0e46,0e47
+
+[ITEMDEF 0e45]
+DUPEITEM=0e44
+
+[ITEMDEF 0e46]
+DUPEITEM=0e44
+
+[ITEMDEF 0e47]
+DUPEITEM=0e44
+
+[ITEMDEF 0e48]
+//full jars
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Full Jars
+DUPELIST=0e49,0e4a,0e4b
+
+[ITEMDEF 0e49]
+//full jars
+DUPEITEM=0e48
+
+[ITEMDEF 0e4a]
+//full jars
+DUPEITEM=0e48
+
+[ITEMDEF 0e4b]
+//full jars
+DUPEITEM=0e48
+
+[ITEMDEF 0e4c]
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Jars
+DUPELIST=0e4d,0e4e,0e4f
+
+[ITEMDEF 0e4d]
+//jars
+DUPEITEM=0e4c
+
+[ITEMDEF 0e4e]
+//jars
+DUPEITEM=0e4c
+
+[ITEMDEF 0e4f]
+//jars
+DUPEITEM=0e4c
+
+[ITEMDEF 0e5d]
+//glowing rune
+DUPEITEM=0e5c
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 01
+
+[ITEMDEF 0e5e]
+//rune
+DUPEITEM=0e5c
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Rune 01
+
+[ITEMDEF 0e60]
+//glowing rune
+DUPEITEM=0e5f
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 02
+
+[ITEMDEF 0e61]
+//rune
+DUPEITEM=0e5f
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Rune 02
+
+[ITEMDEF 0e63]
+//glowing rune
+DUPEITEM=0e62
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 03
+
+[ITEMDEF 0e64]
+//rune
+DUPEITEM=0e62
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Rune 03
+
+[ITEMDEF 0e66]
+//glowing rune
+DUPEITEM=0e65
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 04
+
+[ITEMDEF 0e67]
+//glowing rune
+DUPEITEM=0e65
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Rune 04
+
+[ITEMDEF 0e69]
+//glowing rune
+DUPEITEM=0e68
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 05
+
+[ITEMDEF 0e6a]
+//rune
+DUPEITEM=0e68
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Rune 05
+
+[ITEMDEF 0efb]
+//bottle
+DEFNAME=i_bottle_8
+RESOURCES=1 i_sand
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Bottle
+
+[ITEMDEF 0efc]
+//bottle
+DEFNAME=i_bottle_9
+RESOURCES=1 i_sand
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Bottle
+
+[ITEMDEF 0efd]
+//bottle
+DUPEITEM=0e25
+
+[ITEMDEF 0efe]
+//bottle
+DUPEITEM=0e26
+
+[ITEMDEF 0eff]
+//Hair Dye
+DUPEITEM=0e27
+
+[ITEMDEF 0f00]
+//bottle
+DUPEITEM=0e28
+
+[ITEMDEF 0f01]
+//bottle
+DUPEITEM=0e29
+
+[ITEMDEF 0f02]
+//bottle
+DUPEITEM=0e2a
+
+[ITEMDEF 0f03]
+//bottle
+DUPEITEM=0e2b
+
+[ITEMDEF 0f04]
+//bottle
+DUPEITEM=0e2c
+
+[ITEMDEF 01005]
+DEFNAME=i_jar_empty
+RESOURCES=2 i_sand
+WEIGHT=1
+//TYPE=T_POTION
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Empty Jar
+
+[ITEMDEF 01006]
+DEFNAME=i_jar_full
+RESOURCES=2 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Full Jar
+
+[ITEMDEF 01007]
+DEFNAME=i_jar_half_full
+RESOURCES=2 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Half Empty Jar
+
+[ITEMDEF 01810]
+DEFNAME=i_hourglass
+RESOURCES=1 i_board, 1 i_glass, 1 i_sand
+WEIGHT=2
+TYPE=t_clock
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Hourglass
+DUPELIST=01811,01812,01813,01814,01815,01816,01817,01818,01819,0181a,0181b,0181c
+
+[ITEMDEF 01811]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 01812]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 01813]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 01814]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 01815]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 01816]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 01817]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 01818]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 01819]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 0181a]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 0181b]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 0181c]
+//hourglass
+DUPEITEM=01810
+
+[ITEMDEF 0181d]
+//alchemical symbol
+DEFNAME=i_rune_alchem_1
+TYPE=t_telepad
+RESOURCES=1 i_stone_sand
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Alchemical Symbol
+
+[ITEMDEF 01829]
+DEFNAME=i_flaskstand
+RESOURCES=1 i_ingot_iron
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask Stand
+
+[ITEMDEF 0182a]
+DEFNAME=i_flask1_blue
+TYPE=t_drink
+TDATA1=i_flask1_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask (Blue Liquid)
+
+[ITEMDEF 0182b]
+DEFNAME=i_flask1_orange
+TYPE=t_drink
+TDATA1=i_flask1_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask (Orange Liquid)
+
+[ITEMDEF 0182c]
+DEFNAME=i_flask1_red
+TYPE=t_drink
+TDATA1=i_flask1_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask (Red Liquid)
+
+[ITEMDEF 0182d]
+DEFNAME=i_flask1_empty
+RESOURCES=2 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask (Empty)
+
+[ITEMDEF 0182e]
+DEFNAME=i_beaker1_orange
+TYPE=t_drink
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Beaker (Orange Liquid)
+
+[ITEMDEF 0182f]
+DEFNAME=i_beaker1_red
+TYPE=t_drink
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Beaker (Red liquid)
+
+[ITEMDEF 01830]
+DEFNAME=i_beaker1_blue
+TYPE=t_drink
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Beaker (Blue Liquid)
+
+[ITEMDEF 01831]
+DEFNAME=i_beaker1_green
+TYPE=t_drink
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Beaker (Green Liquid)
+
+[ITEMDEF 01832]
+DEFNAME=i_beaker2_empty
+RESOURCES=2 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 02 (Empty)
+DUPELIST=01835
+
+[ITEMDEF 01833]
+DEFNAME=i_beaker2_red
+TYPE=t_drink
+TDATA1=i_beaker2_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 02 (Red Liquid)
+
+[ITEMDEF 01834]
+DEFNAME=i_beaker2_teal
+TYPE=t_drink
+TDATA1=i_beaker2_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 02 (Teal Liquid)
+
+[ITEMDEF 01835]
+//Flask 02 (Empty)
+DUPEITEM=01832
+
+[ITEMDEF 01836]
+DEFNAME=i_beaker2_blue
+TYPE=t_drink
+TDATA1=i_beaker2_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 02 (Blue Liquid)
+
+[ITEMDEF 01837]
+DEFNAME=i_beaker_2_green
+TYPE=t_drink
+TDATA1=i_beaker2_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 02 (Green Liquid)
+
+[ITEMDEF 01838]
+DEFNAME=i_flask2_red
+TYPE=t_drink
+TDATA1=i_flask2_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 03 (Red Liquid)
+
+[ITEMDEF 01839]
+DEFNAME=i_flask2_purple
+TYPE=t_drink
+TDATA1=i_flask2_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 03 (Purple Liquid)
+
+[ITEMDEF 0183a]
+DEFNAME=i_flask2_empty
+TYPE=t_drink
+RESOURCES=2 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 03 (Empty)
+
+[ITEMDEF 0183b]
+DEFNAME=i_FLASK_LONG_orange
+TYPE=t_drink
+TDATA1=i_flask_long_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 04 (Orange Liquid)
+
+[ITEMDEF 0183c]
+DEFNAME=i_FLASK_LONG_purple
+TYPE=t_drink
+TDATA1=i_flask_long_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 04 (Purple Liquid)
+
+[ITEMDEF 0183d]
+DEFNAME=i_flask_long_empty
+TYPE=t_drink
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 04 (Empty)
+
+[ITEMDEF 0183e]
+DEFNAME=i_flask2_red_anim
+TYPE=t_drink
+TDATA1=i_flask2_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 03 (Red Liquid)
+DUPELIST=0183f,01840
+
+[ITEMDEF 0183f]
+//red peppermill flask with animated bubbles
+DUPEITEM=0183e
+
+[ITEMDEF 01840]
+//red peppermill flask with animated bubbles
+DUPEITEM=0183e
+
+[ITEMDEF 01841]
+DEFNAME=i_FLASK_LONG_purple_anim
+TYPE=t_drink
+TDATA1=i_flask_long_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask 04 (Purple Liquid)
+DUPELIST=01842,01843
+
+[ITEMDEF 01842]
+//large sleek flask with purple liquid with animated bubbles
+DUPEITEM=01841
+
+[ITEMDEF 01843]
+//large sleek flask with purple liquid with animated bubbles
+DUPEITEM=01841
+
+[ITEMDEF 01844]
+DEFNAME=i_flask1_blue_anim
+TYPE=t_drink
+TDATA1=i_flask1_empty
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask (Blue Liquid)
+DUPELIST=01845,01846
+
+[ITEMDEF 01845]
+//flask blue liquid with animated bubbles
+DUPEITEM=01844
+
+[ITEMDEF 01846]
+//flask blue liquid with animated bubbles
+DUPEITEM=01844
+
+[ITEMDEF 01847]
+DEFNAME=i_flask_small
+RESOURCES=1 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask (Small & Empty)
+
+[ITEMDEF 01848]
+DEFNAME=i_flask_small_green
+RESOURCES=1 i_sand
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Flask (Small & Green Liquid)
+
+[ITEMDEF 01849]
+DEFNAME=i_heating_stand
+TYPE=t_light_out
+TDATA3=i_heating_stand_lit
+RESOURCES=1 i_candle, 1 i_ingot_iron, 1 i_ingot_copper
+WEIGHT=3
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Heating stand
+DUPELIST=0184d
+ON=@Create
+	MOREZ=1
+
+[ITEMDEF 0184a]
+DEFNAME=i_heating_stand_lit
+TYPE=t_light_lit
+TDATA3=i_heating_stand
+TDATA4=i_heating_stand_lit
+RESOURCES=i_heating_stand
+WEIGHT=3
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Heating stand
+DUPELIST=0184b,0184c,0184e,0184f,01850
+
+[ITEMDEF 0184b]
+//heating stand
+DUPEITEM=0184a
+
+[ITEMDEF 0184c]
+//heating stand
+DUPEITEM=0184a
+
+[ITEMDEF 0184d]
+//heating stand
+DUPEITEM=01849
+
+[ITEMDEF 0184e]
+//heating stand
+DUPEITEM=0184a
+
+[ITEMDEF 0184f]
+//heating stand
+DUPEITEM=0184a
+
+[ITEMDEF 01850]
+//heating stand
+DUPEITEM=0184a
+
+[ITEMDEF 01851]
+DEFNAME=i_scales
+RESOURCES=3 i_ingot_bronze
+WEIGHT=3
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Weigh Scales
+DUPELIST=01852
+
+[ITEMDEF 01852]
+//weigh scales
+DUPEITEM=01851
+
+[ITEMDEF 0185b]
+DEFNAME=i_testtube_rack
+RESOURCES=1 i_board, 1 i_nails, 3 i_vial_empty
+WEIGHT=4
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Rack of Empty Vials
+DUPELIST=0185c
+
+[ITEMDEF 0185c]
+//rack of empty vials facing SE
+DUPEITEM=0185b
+
+[ITEMDEF 0185d]
+//rack of full vials facing sw
+DEFNAME=i_testtube_rack_full
+RESOURCES=1 i_board, 1 i_nails, 3 i_vial_empty
+WEIGHT=4
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Rack of Full Vials
+DUPELIST=0185e
+
+[ITEMDEF 0185e]
+//rack of full vials facing se
+DUPEITEM=0185d
+
+[ITEMDEF 01865]
+DEFNAME=i_dishing_stump
+RESOURCES=1 i_tree_stump
+WEIGHT=10
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Dishing Stump
+DUPELIST=01866
+
+[ITEMDEF 01866]
+//dishing stump
+DUPEITEM=01865
+
+[ITEMDEF 0181e]
+DEFNAME=i_rune_alchem_2
+//DEFNAME2=I_SYMBOL_Alchemists_2
+TYPE=t_telepad
+
+[ITEMDEF 0181f]
+DEFNAME=i_rune_alchem_3
+//DEFNAME2=I_SYMBOL_Alchemists_3
+TYPE=t_telepad
+
+[ITEMDEF 01820]
+DEFNAME=i_rune_alchem_4
+//DEFNAME2=I_SYMBOL_Alchemists_4
+TYPE=t_telepad
+
+[ITEMDEF 01821]
+DEFNAME=i_rune_alchem_5
+//DEFNAME2=I_SYMBOL_Alchemists_5
+TYPE=t_telepad
+
+[ITEMDEF 01822]
+DEFNAME=i_rune_alchem_6
+//DEFNAME2=I_SYMBOL_Alchemists_6
+TYPE=t_telepad
+
+[ITEMDEF 01823]
+DEFNAME=i_rune_alchem_7
+//DEFNAME2=I_SYMBOL_Alchemists_7
+TYPE=t_telepad
+
+[ITEMDEF 01824]
+DEFNAME=i_rune_alchem_8
+//DEFNAME2=I_SYMBOL_Alchemists_8
+TYPE=t_telepad
+
+[ITEMDEF 01825]
+DEFNAME=i_rune_alchem_9
+//DEFNAME2=I_SYMBOL_Alchemists_9
+TYPE=t_telepad
+
+[ITEMDEF 01826]
+DEFNAME=i_rune_alchem_10
+//DEFNAME2=I_SYMBOL_Alchemists_10
+TYPE=t_telepad
+
+[ITEMDEF 01827]
+//alchemical symbol
+DEFNAME=i_rune_alchem_11
+TYPE=t_telepad
+
+[ITEMDEF 01828]
+//alchemical symbol
+DEFNAME=i_rune_alchem_12
+TYPE=t_telepad
+
+[ITEMDEF 02dae]
+//healing stone
+
+[ITEMDEF 02daf]
+//spell stone
+
+[ITEMDEF 02dd3]
+DEFNAME=i_elven_alchemy_table
+NAME=elven alchemy table
+TYPE=t_normal
+FLIP=1
+VALUE=118
+WEIGHT=66.0
+RESOURCES=30 i_log_maple,1 i_book_lg,1 i_bone_skull,1 i_testtube_rack
+SKILLMAKE=Carpentry 85.0,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Alchemists
+DESCRIPTION=Elven Alchemy Table
+DUPELIST=02dd4,03077,03078,03079,0307a
+
+[ITEMDEF 02dd4]
+//elven alchemy table
+DUPEITEM=02dd3
+
+[ITEMDEF 03077]
+//elven alchemy table
+DUPEITEM=02dd3
+
+[ITEMDEF 03078]
+//elven alchemy table
+DUPEITEM=02dd3
+
+[ITEMDEF 03079]
+//elven alchemy table
+DUPEITEM=02dd3
+
+[ITEMDEF 0307a]
+//elven alchemy table
+DUPEITEM=02dd3
+
+[ITEMDEF 04078]
+DEFNAME=i_healing_stone
+NAME=healing stone
+TYPE=t_normal
+WEIGHT=0.1
+CATEGORY=Spells
+SUBSECTION=Mysticism
+DESCRIPTION=Healing Stone
+ON=@DropOn_Char
+   RETURN 1
+   ENDIF
+ON=@DropOn_Ground
+   REMOVE
+ON=@DropOn_Item
+   IF (<ARGO>!=<SRC.FINDLAYER(21).UID>)
+      RETURN 1
+   ENDIF
+//ON=@DClick
+// * The healing stone will have stored life energy or healing points which determine how many times the stone can be used before being destroyed. (The life energy is determined by the casters Mysticism and Focus/Imbuing skills)
+// * The maximum amount the stone can heal for in a single usage is determined by the casters mysticism and focus/imbuing skills.
+// * The stone now has healing energy which determines how much of the maximum healing can be used at a time. This healing energy is completely consumed with each use and must take time to recharge before being able to heal for the maximum amount.
+// * The cool down on healing usage for the stone is 2 seconds, and it takes 15 seconds to replenish the stones energy completely.
+// * The healing stone can now be used to cure poison. The chance to cure is based on the users mysticism and focus/imbuing skills. The life energy cost to cure poison is based on the level of poison. Failing to cure poison only costs 1/3rd of the life energy as curing.
+// * Curing will not affect the stones energy.
+// * Summoning time for the Healing Stone has been increased significantly. 
+
+[ITEMDEF 04079]
+//Stores one Mysticism spell in a spell stone. The stone can be activated to instantly cast the stored spell. 
+DEFNAME=i_spell_stone
+NAME=spell stone
+TYPE=t_normal
+WEIGHT=0.1
+CATEGORY=Spells
+SUBSECTION=Mysticism
+DESCRIPTION=Spell Stone
+ON=@DropOn_Char
+   RETURN 1
+   ENDIF
+ON=@DropOn_Ground
+   REMOVE
+ON=@DropOn_Item
+   IF (<ARGO>!=<SRC.FINDLAYER(21).UID>)
+      RETURN 1
+   ENDIF
+//ON=@DClick
+
+[EOF]

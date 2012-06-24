@@ -1,0 +1,613 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 14, 2011
+VERSION=0.56b
+
+
+///////////////////////////////////////////////////////////////
+//////// BLACK STAVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0df0]
+DEFNAME=i_staff_black
+NAME=black staff
+TYPE=t_weapon_mace_staff
+DAM=13,16
+FLIP=1
+SKILL=MaceFighting
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=6
+REQSTR=35
+TWOHANDS=Y
+RESOURCES=6 i_log
+SKILLMAKE=Carpentry 75.9, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Black Staves
+DESCRIPTION=Black Staff
+TEVENTS=t_iprop
+DUPELIST=0df1
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0df1]
+DUPEITEM=0df0
+
+[ITEMDEF i_staff_power]
+ID=i_staff_black
+NAME=Staff of Power
+TEVENTS=t_iprop
+TAG.SpellChanneling=1
+TAG.MageWeapon=-15
+TAG.FasterCastRecovery=2
+TAG.SpellDamageIncrease=5
+TAG.LowerManaCost=5
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Black Staves
+DESCRIPTION=Staff of Power
+ON=@Create
+   COLOR=04f2
+   HITPOINTS={36 48}
+
+[ITEMDEF i_staff_pyros]
+ID=i_staff_black
+NAME=Staff of Pyros
+TEVENTS=t_iprop
+TAG.Artifact=12
+TAG.Slayer.Super=SSLAYER_UNDEAD
+TAG.MageWeapon=0
+TAG.SpellChanneling=1
+TAG.FasterCasting=1
+TAG.DamageIncrease=30
+TAG.DamFire=100
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Black Staves
+DESCRIPTION=Staff of Pyros
+ON=@Create
+   COLOR=<ColorElementalType>
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// GNARLED STAVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013f8]
+DEFNAME=i_staff_gnarled
+NAME=gnarled staff
+TYPE=t_weapon_mace_staff
+DAM=15,17
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.2
+//VALUE=FIXME
+WEIGHT=3
+REQSTR=20
+TWOHANDS=Y
+RESOURCES=7 i_log
+SKILLMAKE=Carpentry 78.9, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Gnarled Staves
+DESCRIPTION=Gnarled Staff
+TEVENTS=t_iprop
+DUPELIST=013f9
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013f9]
+DUPEITEM=013f8
+
+[ITEMDEF i_jaana_staff]
+ID=i_staff_gnarled
+NAME=Jaana's Staff
+TEVENTS=t_iprop
+TAG.Artifact=11
+TAG.SpellChanneling=1
+TAG.MageWeapon=-20
+TAG.Luck=220
+TAG.DefenseChanceIncrease=15
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Gnarled Staves
+DESCRIPTION=Jaana's Staff
+ON=@Create
+   COLOR=0 //FIXME: Unknown color
+   HITPOINTS=120
+
+[ITEMDEF i_wrath_dryad]
+ID=i_staff_gnarled
+NAME=Wrath of the Dryad
+TEVENTS=t_iprop
+TAG.HitLightning=33
+TAG.HitManaLeech=50
+TAG.HitChanceIncrease=15
+TAG.DamageIncrease=40
+TAG.DamPoison=100
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Gnarled Staves
+DESCRIPTION=Wrath of the Dryad
+ON=@Create
+   COLOR=<ColorElementalType>
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// NUNCHAKUS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027ae]
+DEFNAME=i_nunchaku
+NAME=nunchaku
+TYPE=t_weapon_mace_staff
+DAM=11,13
+FLIP=1
+SKILL=Macefighting
+SPEED=2.5
+VALUE=112
+WEIGHT=5
+REQSTR=15
+TWOHANDS=Y
+RESOURCES=8 i_log, 3 i_ingot_iron
+SKILLMAKE=Tinkering 70.0, t_tinker_tools
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Nunchakus
+DESCRIPTION=Nunchaku
+TEVENTS=t_iprop
+DUPELIST=027f9
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027f9]
+DUPEITEM=027ae
+
+[ITEMDEF i_dragon_nunchaku]
+ID=i_nunchaku
+NAME=Dragon Nunchaku
+TEVENTS=t_iprop
+TAG.HitFireball=50
+TAG.SelfRepair=3
+TAG.SwingSpeedIncrease=20
+TAG.DamageIncrease=40
+TAG.FireResist=5
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Nunchakus
+DESCRIPTION=Dragon Nunchaku
+ON=@Create
+   COLOR=0 //FIXME: Unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// QUARTER STAVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0e89]
+DEFNAME=i_staff_quarter
+NAME=quarter staff
+TYPE=t_weapon_mace_staff
+DAM=11,14
+FLIP=1
+SKILL=MaceFighting
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=3
+REQSTR=20
+TWOHANDS=Y
+RESOURCES=6 i_log
+SKILLMAKE=Carpentry 73.6, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Quarter Staves
+DESCRIPTION=Quarter Staff
+TEVENTS=t_iprop
+DUPELIST=0e8a
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0e8a]
+DUPEITEM=0e89
+
+[ITEMDEF i_ember_staff]
+ID=i_staff_quarter
+NAME=Ember Staff
+REQSTR=10
+TEVENTS=t_iprop
+TAG.HitFireball=15
+TAG.MageWeapon=-10
+TAG.SpellChanneling=1
+TAG.FasterCasting=-1
+TAG.LowerRequirements=50
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Quarter Staves
+DESCRIPTION=Ember Staff
+ON=@Create
+   COLOR=0 //FIXME: Unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// SHEPHERD CROOKS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013f4]
+DEFNAME=i_shepherds_crook
+TYPE=t_weapon_mace_crook
+DAM=13,15
+FLIP=1
+SKILL=Macefighting
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=4
+REQSTR=20
+TWOHANDS=Y
+RESOURCES=7 i_log
+SKILLMAKE=Carpentry 78.9, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Shepherd's Crooks
+DESCRIPTION=Shepherd's Crook
+TEVENTS=t_iprop
+DUPELIST=013f5
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013f5]
+DUPEITEM=013f4
+
+[ITEMDEF 0e81]
+DEFNAME=i_crook_thin
+TYPE=t_weapon_mace_crook
+DAM=13,15
+FLIP=1
+SKILL=MaceFighting
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=4
+REQSTR=20
+TWOHANDS=Y
+RESOURCES=7 i_log
+SKILLMAKE=Carpentry 78.9, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Shepherd's Crooks
+DESCRIPTION=Sheperds Crook
+TEVENTS=t_iprop
+DUPELIST=0e82
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0e82]
+DUPEITEM=0e81
+
+[ITEMDEF i_katrina_crook]
+ID=i_shepherds_crook
+NAME=Katrina's Crook
+TEVENTS=t_iprop
+TAG.Artifact=11
+TAG.HitStaminaLeech=40
+TAG.HitManaLeech=55
+TAG.HitLifeLeech=55
+TAG.DamageIncrease=60
+TAG.ResPhysical=15
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Shepherd's Crooks
+DESCRIPTION=Katrina's Crook
+ON=@Create
+   COLOR=0 //FIXME: Unknown color  
+   HITPOINTS=120
+
+
+///////////////////////////////////////////////////////////////
+//////// TESSENS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027a3]
+DEFNAME=i_tessen
+NAME=tessen
+TYPE=t_weapon_mace_sharp
+DAM=10,12
+FLIP=1
+LAYER=layer_hand2
+SKILL=Fencing
+SPEED=2.0
+VALUE=124
+WEIGHT=6
+REQSTR=10
+TWOHANDS=Y
+RESOURCES=16 i_ingot_iron, 10 i_cloth
+SKILLMAKE=Blacksmithing 85.0, Tailoring 50.0
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Tessens
+DESCRIPTION=Tessen
+TEVENTS=t_iprop
+DUPELIST=027ee
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027ee]
+DUPEITEM=027a3
+
+[ITEMDEF i_pilfered_dancer_fans]
+ID=i_tessen
+NAME=Pilfedered Dancer Fans
+TEVENTS=t_iprop
+TAG.SpellChanneling=1
+TAG.DefenseChanceIncrease=5
+TAG.FasterCastRecovery=2
+TAG.SwingSpeedIncrease=20
+TAG.DamageIncrease=20
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Tessens
+DESCRIPTION=Pilfered Dancer Fans
+ON=@Create
+   COLOR=0 //FIXME: Unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_wind_edge]
+ID=i_tessen
+NAME=Wind's Edge
+TEVENTS=t_iprop
+TAG.HitManaLeech.2
+TAG.DefenseChanceIncrease=10
+TAG.SwingSpeedIncrease=50
+TAG.DamageIncrease=50
+TAG.DamEnergy=100
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Tessens
+DESCRIPTION=Wind's Edge
+ON=@Create
+   COLOR=0 //FIXME: Unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// TETSUBOS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027a6]
+DEFNAME=i_tetsubo
+NAME=tetsubo
+TYPE=t_weapon_mace_smith
+DAM=12,14
+FLIP=1
+SKILL=MaceFighting
+SPEED=2.5
+VALUE=148
+WEIGHT=8.0
+REQSTR=35
+TWOHANDS=N
+RESOURCES=10 i_log
+SKILLMAKE=Carpentry 80.0, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Tetsubos
+DESCRIPTION=Tetsubo
+TEVENTS=t_iprop
+DUPELIST=027f1
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027f1]
+DUPEITEM=027a6
+
+[ITEMDEF i_exiler]
+ID=i_tetsubo
+NAME=Exiler
+TEVENTS=t_iprop
+TAG.Slayer.Super=SSLAYER_DEMON
+TAG.HitDispel=33
+TAG.SwingSpeedIncrease=20
+TAG.DamageIncrease=40
+TAG.DamEnergy=100
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Tetsubos
+DESCRIPTION=Exiler
+ON=@Create
+   COLOR=0 //FIXME: Unknown color
+   HITPOINTS=255 //FIXME: Is this right?
+
+///////////////////////////////////////////////////////////////
+//////// WAR HAMMERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 01438]
+DEFNAME=i_hammer_war
+NAME=war hammer
+TYPE=t_weapon_mace_smith
+DAM=17,18
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.2
+//VALUE=FIXME
+WEIGHT=10
+REQSTR=95
+TWOHANDS=Y
+RESOURCES=16 i_ingot_iron
+SKILLMAKE=Blacksmithing 34.2
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=War Hammers
+DESCRIPTION=War Hammer
+TEVENTS=t_iprop
+DUPELIST=01439
+ON=@Create
+HITPOINTS={36 48}
+
+[ITEMDEF 01439]
+DUPEITEM=01438
+
+[ITEMDEF i_carapace_crusher]
+ID=i_hammer_war
+NAME=Carapace Crusher
+TEVENTS=t_iprop
+TAG.HitFireball=40
+TAG.HitLifeLeech=50
+TAG.Slayer.Super=SSLAYER_SPIDER
+TAG.DamageIncrease=50
+TAG.BestWeaponSkill=1
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=War Hammers
+DESCRIPTION=Carapace Crusher
+ON=@Create
+   COLOR=colors_black
+   HITPOINTS={36 48}
+
+[ITEMDEF i_titan_hammer]
+ID=i_hammer_war
+NAME=Titan's Hammer
+TEVENTS=t_iprop
+TAG.Artifact=10
+TAG.HitEnergyArea=100
+TAG.StrengthBonus=15
+TAG.HitChanceIncrease=15
+TAG.DamageIncrease=50
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=War Hammers
+DESCRIPTION=Titan's Hammer
+ON=@Create
+   COLOR=0 //FIXME: Unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// SERPENTSTONE STAVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0906]
+DEFNAME=i_serpentstone_staff
+NAME=serpentstone staff
+TYPE=t_weapon_mace_staff
+DAM=15,17
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.2
+//VALUE=FIXME
+WEIGHT=3.0
+REQSTR=35
+TWOHANDS=Y
+RESOURCES=16 i_log, 1 i_gem_ecru_citrine
+SKILLMAKE=Carpentry 63.8, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Serpentstone Staves
+DESCRIPTION=Serpentstone Staff
+TEVENTS=t_iprop
+TAG.Item.Gargoyle=1
+DUPELIST=0406f
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 0406f]
+DUPEITEM=0906
+
+
+///////////////////////////////////////////////////////////////
+//////// GLASS STAVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0905]
+DEFNAME=i_glass_staff
+NAME=glass staff
+TYPE=t_weapon_mace_smith
+DAM=11,14
+FLIP=1
+SKILL=macefighting
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=4.0
+REQSTR=20
+TWOHANDS=Y
+RESOURCES=10 i_sand
+SKILLMAKE=Alchemy 53.6
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Glass Staves
+DESCRIPTION=Glass Staff
+TEVENTS=t_iprop
+TAG.Item.Gargoyle=1
+DUPELIST=04070
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 04070]
+DUPEITEM=0905
+
+
+///////////////////////////////////////////////////////////////
+//////// GARGISH
+///////////////////////////////////////////////////////////////
+
+[ITEMDEF 048b8]
+DEFNAME=i_gargish_staff_gnarled
+NAME=Gargish gnarled staff
+TYPE=t_weapon_mace_staff
+DAM=15,17
+FLIP=1
+SKILL=Macefighting
+SPEED=41//FIXME
+VALUE=8
+WEIGHT=3.0
+TWOHANDS=Y
+RESOURCES=7 i_log
+SKILLMAKE=Carpentry 78.9,t_carpentry
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Gargish Gnarled Staff
+REQSTR=20
+TAG.GargoyleOnly=1
+TEVENTS=t_iprop
+DUPELIST=048b9
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048b9]
+//gargish gnarled staff
+DUPEITEM=048b8
+
+
+[ITEMDEF 048c0]
+DEFNAME=i_gargish_hammer_war
+NAME=Gargish war hammer
+TYPE=t_weapon_mace_smith
+DAM=17,18
+FLIP=1
+SKILL=Macefighting
+SPEED=35//FIXME
+VALUE=103
+WEIGHT=10.0
+TWOHANDS=Y
+RESOURCES=16 i_ingot_iron,1 i_board
+SKILLMAKE=Blacksmithing 34.2
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Gargish War Hammer
+REQSTR=95
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=048c1
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048c1]
+//gargish war hammer
+DUPEITEM=048c0
+
+
+[ITEMDEF 048cc]
+DEFNAME=i_gargish_tessen
+NAME=Gargish tessen
+TYPE=t_weapon_mace_sharp
+DAM=10,12
+FLIP=1
+//LAYER=layer_hand2
+SKILL=Macefighting
+SPEED=56//FIXME
+VALUE=174
+WEIGHT=6.0
+TWOHANDS=Y
+RESOURCES=16 i_ingot_iron,10 i_cloth
+SKILLMAKE=Blacksmithing 85.0,Tailoring 50.0,t_sewing_kit
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Gargish Tessen
+REQSTR=10
+TEVENTS=t_iprop
+DUPELIST=048cd
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048cd]
+//Gargish tessen
+DUPEITEM=048cc
+
+
+[EOF]
+

@@ -1,0 +1,359 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, July 9, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0240]
+DEFNAME=i_power_crystal
+NAME=power crystal
+TYPE=t_normal
+VALUE=25
+WEIGHT=0.1
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Power Crystal
+
+
+[ITEMDEF 01ecd]
+DEFNAME=i_crystal_green
+TYPE=t_normal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Glowing Green Crystal (blinking)
+DUPELIST=01ece,01ecf
+
+[ITEMDEF 01ece]
+DUPEITEM=01ecd
+DESCRIPTION=Glowing Green Crystal (dim)
+
+[ITEMDEF 01ecf]
+DUPEITEM=01ecd
+DESCRIPTION=Glowing Green Crystal (bright)
+
+
+[ITEMDEF 01ed0]
+DEFNAME=i_crystal_red
+TYPE=t_normal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Glowing Red Crystal (blinking)
+DUPELIST=01ed1,01ed2
+
+[ITEMDEF 01ed1]
+DUPEITEM=01ed0
+DESCRIPTION=Glowing Red Crystal (dim)
+
+[ITEMDEF 01ed2]
+DUPEITEM=01ed0
+DESCRIPTION=Glowing Red Crystal (bright)
+
+
+[ITEMDEF 01f19]
+DEFNAME=i_crystal_green_big
+TYPE=t_normal
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Green Crystal (blinking)
+DUPELIST=01f1a,01f1b
+
+[ITEMDEF 01f1a]
+DUPEITEM=01f19
+DESCRIPTION=Green Crystal (dim)
+
+[ITEMDEF 01f1b]
+DUPEITEM=01f19
+DESCRIPTION=Green Crystal (bright)
+
+
+[ITEMDEF 01f1c]
+DEFNAME=i_crystal_purple
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Purple Crystal (blinking)
+DUPELIST=01f1d,01f1e
+
+[ITEMDEF 01f1d]
+DUPEITEM=01f1c
+DESCRIPTION=Purple Crystal (dim)
+
+[ITEMDEF 01f1e]
+DUPEITEM=01f1c
+DESCRIPTION=Purple Crystal (bright)
+
+
+[ITEMDEF 02206]
+DEFNAME=i_crystal_1
+NAME=crystal
+TYPE=t_wall
+CAN=can_i_block
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Crystal 1 (large)
+DUPELIST=02207,02208,02209,0220a,0220b,0220c,0220d,0220e
+
+[ITEMDEF 02207]
+//crystal 1
+DUPEITEM=02206
+
+[ITEMDEF 02208]
+//crystal 1
+DUPEITEM=02206
+
+[ITEMDEF 02209]
+//crystal 1
+DUPEITEM=02206
+
+[ITEMDEF 0220a]
+//crystal 1
+DUPEITEM=02206
+
+[ITEMDEF 0220b]
+//crystal 1
+DUPEITEM=02206
+
+[ITEMDEF 0220c]
+//crystal 1
+DUPEITEM=02206
+
+[ITEMDEF 0220d]
+//crystal 1
+DUPEITEM=02206
+
+[ITEMDEF 0220e]
+//crystal 1
+DUPEITEM=02206
+
+[ITEMDEF 02210]
+DEFNAME=i_crystal_2
+NAME=crystal
+TYPE=t_wall
+CAN=can_i_block
+DUPELIST=02211,02212,02213,02214,02215,02216,02217,02218
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Crystal 2 (large)
+
+[ITEMDEF 02211]
+//crystal 2
+DUPEITEM=02210
+
+[ITEMDEF 02212]
+//crystal 2
+DUPEITEM=02210
+
+[ITEMDEF 02213]
+//crystal 2
+DUPEITEM=02210
+
+[ITEMDEF 02214]
+//crystal 2
+DUPEITEM=02210
+
+[ITEMDEF 02215]
+//crystal 2
+DUPEITEM=02210
+
+[ITEMDEF 02216]
+//crystal 2
+DUPEITEM=02210
+
+[ITEMDEF 02217]
+//crystal 2
+DUPEITEM=02210
+
+[ITEMDEF 02218]
+//crystal 2
+DUPEITEM=02210
+
+[ITEMDEF 0221a]
+DEFNAME=i_crystal_3
+NAME=crystal
+TYPE=t_wall
+CAN=can_i_block
+DUPELIST=0221b,0221c,0221d,0221e,0221f,02220,02221,02222
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Crystal 3 (large)
+
+[ITEMDEF 0221b]
+//crystal 3
+DUPEITEM=0221a
+
+[ITEMDEF 0221c]
+//crystal 3
+DUPEITEM=0221a
+
+[ITEMDEF 0221d]
+//crystal 3
+DUPEITEM=0221a
+
+[ITEMDEF 0221e]
+//crystal 3
+DUPEITEM=0221a
+
+[ITEMDEF 0221f]
+//crystal 3
+DUPEITEM=0221a
+
+[ITEMDEF 02220]
+//crystal 3
+DUPEITEM=0221a
+
+[ITEMDEF 02221]
+//crystal 3
+DUPEITEM=0221a
+
+[ITEMDEF 02222]
+//crystal 3
+DUPEITEM=0221a
+
+[ITEMDEF 02224]
+DEFNAME=i_crystal_4
+NAME=crystal
+TYPE=t_wall
+CAN=can_i_block
+DUPELIST=02225,02226,02227,02228,02229,0222a,0222b,0222c
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Crystal 4 (large)
+
+[ITEMDEF 02225]
+//crystal 4
+DUPEITEM=02224
+
+[ITEMDEF 02226]
+//crystal 4
+DUPEITEM=02224
+
+[ITEMDEF 02227]
+//crystal 4
+DUPEITEM=02224
+
+[ITEMDEF 02228]
+//crystal 4
+DUPEITEM=02224
+
+[ITEMDEF 02229]
+//crystal 4
+DUPEITEM=02224
+
+[ITEMDEF 0222a]
+//crystal 4
+DUPEITEM=02224
+
+[ITEMDEF 0222b]
+//crystal 4
+DUPEITEM=02224
+
+[ITEMDEF 0222c]
+//crystal 4
+DUPEITEM=02224
+
+[ITEMDEF 0223a]
+DEFNAME=i_crystals_broken
+NAME=broken crystals
+TYPE=t_normal
+VALUE=5
+WEIGHT=10.0
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Broken Crystals
+DUPELIST=0223b,0223c,0223d,0223e,0223f,02240,02241,02242,02243,02244,02245,02246,02247,02248,02249
+
+[ITEMDEF 0223b]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 0223c]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 0223d]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 0223e]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 0223f]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02240]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02241]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02242]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02243]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02244]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02245]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02246]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02247]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02248]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02249]
+//broken crystals
+DUPEITEM=0223a
+
+[ITEMDEF 02fdc]
+DEFNAME=i_crystal_green_tall
+NAME=crystal
+TYPE=t_normal
+FLIP=1
+VALUE={120 240}
+WEIGHT=10.0
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Green Crystal (tall)
+DUPELIST=02fdd
+
+[ITEMDEF 02fdd]
+//Green Crystal (tall)
+DUPEITEM=02fdc
+
+[ITEMDEF 02fe6]
+DEFNAME=i_crystal_purple_tall
+NAME=crystal
+TYPE=t_normal
+VALUE={120 240}
+WEIGHT=10.0
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Crystals
+DESCRIPTION=Purple Crystal (tall)
+DUPELIST=02fe7
+
+[ITEMDEF 02fe7]
+//Purple Crystal (tall)
+DUPEITEM=02fe6
+
+
+[EOF]

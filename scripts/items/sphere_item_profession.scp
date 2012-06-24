@@ -1,0 +1,2229 @@
+//****************************************************************************
+//SphereServer ©1997-2009
+//This script is part from the Sphere Community Script Pack.
+//You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+//FILE LAST UPDATED: Sunday, August 28, 2011
+VERSION=0.56b
+
+
+///////////////////////
+// Masonry Equipment //
+///////////////////////
+
+[ITEMDEF 012b3]
+DEFNAME=i_mallet_and_chisel
+WEIGHT=4
+RESOURCES=2 i_ingot_iron, 1 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Masons
+DESCRIPTION=Mallet and Chisel
+
+[ITEMDEF 032f8]
+DEFNAME=i_hammer_and_chisel
+NAME=stone hammer and chisel
+VALUE=34
+WEIGHT=8.0
+RESOURCES=1 i_hammer,1 i_chisels
+CATEGORY=Items by Professions
+SUBSECTION=Masons
+DESCRIPTION=Hammer and Chisel
+
+
+/////////////////////////
+// Beekeeper Equipment //
+/////////////////////////
+
+[ITEMDEF 091a]
+DEFNAME=i_beehive
+TYPE=t_bee_hive
+VALUE=2
+WEIGHT=6
+CATEGORY=Items by Professions
+SUBSECTION=Beekeepers/Candlers
+DESCRIPTION=Beehive
+
+[ITEMDEF 01420]
+DEFNAME=i_string
+FLIP=1
+WEIGHT=1
+RESOURCES=1 i_cotton
+CATEGORY=Items by Professions
+SUBSECTION=Beekeepers/Candlers
+DESCRIPTION=String
+DUPELIST=01421
+
+[ITEMDEF 01421]
+//string
+DUPEITEM=01420
+
+[ITEMDEF 01422]
+DEFNAME=i_beeswax
+NAME=beeswax
+FLIP=1
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Beekeepers/Candlers
+DESCRIPTION=Beeswax
+DUPELIST=01423
+
+[ITEMDEF 01423]
+//Beeswax
+DUPEITEM=01422
+
+[ITEMDEF 01424]
+DEFNAME=i_beeswax_2
+NAME=beeswax
+FLIP=1
+WEIGHT=2
+RESOURCES=1 i_beeswax
+CATEGORY=Items by Professions
+SUBSECTION=Beekeepers/Candlers
+DESCRIPTION=Beeswax (2)
+DUPELIST=01425
+
+[ITEMDEF 01425]
+//Beeswax (2)
+DUPEITEM=01422
+
+[ITEMDEF 01426]
+DEFNAME=i_beeswax_3
+NAME=beeswax
+FLIP=1
+WEIGHT=3
+RESOURCES=2 i_beeswax
+CATEGORY=Items by Professions
+SUBSECTION=Beekeepers/Candlers
+DESCRIPTION=Beeswax (3)
+DUPELIST=01427
+
+[ITEMDEF 01427]
+//Beeswax (3)
+DUPEITEM=01422
+
+[ITEMDEF 01428]
+DEFNAME=i_dipping_stick
+NAME=dipping stick
+FLIP=1
+WEIGHT=1
+RESOURCES=1 i_sticks,1 i_string
+SKILLMAKE=Alchemy 10.0,i_pot_of_wax
+CATEGORY=Items by Professions
+SUBSECTION=Beekeepers/Candlers
+DESCRIPTION=Dipping Stick
+DUPELIST=01429
+
+[ITEMDEF 01429]
+//dipping stick
+DUPEITEM=01428
+
+[ITEMDEF 0142a]
+DEFNAME=i_cauldron_of_wax
+NAME=cauldron of wax
+WEIGHT=24.0
+RESOURCES=12 i_beeswax, 1 i_cauldron
+CATEGORY=Items by Professions
+SUBSECTION=Beekeepers/Candlers
+DESCRIPTION=Cauldron of Wax
+
+[ITEMDEF 0142b]
+DEFNAME=i_pot_of_wax
+NAME=pot of wax
+WEIGHT=1.3
+RESOURCES=3 i_beeswax, 1 i_pot
+CATEGORY=Items by Professions
+SUBSECTION=Beekeepers/Candlers
+DESCRIPTION=Pot of Wax
+
+
+/////////////////////////
+// Fisherman Equipment //
+/////////////////////////
+
+[ITEMDEF 0dc8]
+DEFNAME=i_fishing_net
+RESOURCES=10 i_rope, 10 i_thread, 4 i_shell
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Fishing Net
+
+[ITEMDEF 0dc9]
+//fishing net
+DEFNAME=i_fishing_net_2
+RESOURCES=10 i_rope, 10 i_thread, 4 i_shell
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Fishing Net
+
+[ITEMDEF 0dca]
+//fishing net
+DEFNAME=i_fishing_net_3
+RESOURCES=10 i_rope, 10 i_thread, 4 i_shell
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Fishing Net
+
+[ITEMDEF 0dcb]
+//fishing net
+DEFNAME=i_fishing_net_4
+RESOURCES=10 i_rope, 10 i_thread, 4 i_shell
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Fishing Net
+DUPELIST=0dd0,0dd1,0dd2,0dd3,0dd4,0dd5
+
+[ITEMDEF 0dcc]
+//fishing weight
+DEFNAME=i_fishing_weight
+WEIGHT=1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Fishing Weight
+DUPELIST=0dcd,0dce,0dcf
+
+[ITEMDEF 0dcd]
+//fishing weight
+DUPEITEM=0dcc
+
+[ITEMDEF 0dce]
+//fishing weight
+DUPEITEM=0dcc
+
+[ITEMDEF 0dcf]
+//fishing weight
+DUPEITEM=0dcc
+
+[ITEMDEF 0dd0]
+//fishing net
+DUPEITEM=0dcb
+
+[ITEMDEF 0dd1]
+//fishing net
+DUPEITEM=0dcb
+
+[ITEMDEF 0dd2]
+//fishing net
+DUPEITEM=0dcb
+
+[ITEMDEF 0dd3]
+//fishing net
+DUPEITEM=0dcb
+
+[ITEMDEF 0dd4]
+//fishing net
+DUPEITEM=0dcb
+
+[ITEMDEF 0dd5]
+//fishing net
+DUPEITEM=0dcb
+
+[ITEMDEF 01ea3]
+DEFNAME=i_net
+NAME=fishing net
+FLIP=1
+WEIGHT=50.0
+RESOURCES=25 i_rope,25 i_thread,8 i_fishing_weight
+SKILLMAKE=Carpentry 68.4,Fishing 55.0
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Weighted Fishing Net
+DUPELIST=01ea4,01ea5,01ea6,03d8e,03d8f
+
+[ITEMDEF 01ea4]
+//Weighted Fishing Net
+DUPEITEM=01ea3
+
+[ITEMDEF 01ea5]
+//Weighted Fishing Net
+DUPEITEM=01ea3
+
+[ITEMDEF 01ea6]
+//Weighted Fishing Net
+DUPEITEM=01ea3
+
+[ITEMDEF 03d8e]
+//Weighted Fishing Net
+DUPEITEM=01ea3
+
+[ITEMDEF 03d8f]
+//Weighted Fishing Net
+DUPEITEM=01ea3
+
+[ITEMDEF 04b44]
+DEFNAME=i_fishhook_magic
+NAME=magic fish hook
+FLIP=1
+VALUE=5
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron
+SKILLMAKE=Tinkering 21.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Magic Fish Hook
+DUPELIST=04b45
+
+[ITEMDEF 04b45]
+//Magic Fish Hook
+DUPEITEM=04b44
+
+[ITEMDEF 04b46]
+DEFNAME=i_fishhook
+NAME=fish hook
+FLIP=1
+VALUE=5
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron
+SKILLMAKE=Tinkering 21.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Fish Hook
+DUPELIST=04b47
+
+[ITEMDEF 04b47]
+//Fish Hook
+DUPEITEM=04b46
+
+//////////////////////
+// Healer Equipment //
+//////////////////////
+
+[ITEMDEF 0e20]
+DEFNAME=i_bandage_bloody
+TYPE=t_bandage_blood
+RESOURCES=1 i_bandage 1 i_blood
+WEIGHT=.1
+CATEGORY=Items by Professions
+SUBSECTION=Healers
+DESCRIPTION=Bloody Bandages
+DUPELIST=0e22
+
+[ITEMDEF 0e21]
+DEFNAME=i_bandage
+RESOURCES=i_cloth
+TYPE=t_bandage
+WEIGHT=.1
+DUPELIST=0ee9
+CATEGORY=Items by Professions
+SUBSECTION=Healers
+DESCRIPTION=Clean Bandages
+
+[ITEMDEF 0e22]
+//bloody bandages
+DUPEITEM=0e20
+
+[ITEMDEF 0e23]
+DEFNAME=i_water_bloody
+RESOURCES=1 i_blood, 1 i_water, 1 i_basin
+CATEGORY=Items by Professions
+SUBSECTION=Healers
+DESCRIPTION=Bloody Water
+
+[ITEMDEF 0ee9]
+//clean bandages
+DUPEITEM=0e21
+
+
+/////////////////////////////
+// Fortuneteller Equipment //
+/////////////////////////////
+
+[ITEMDEF 0e2d]
+DEFNAME=i_crystal_ball_blank
+TYPE=t_crystal_ball
+WEIGHT=3
+RESOURCES=2 i_board, 7 i_sand
+CATEGORY=Items by Professions
+SUBSECTION=Fortune Tellers
+DESCRIPTION=Crystal ball (blank)
+DUPELIST=0e2e,0e2f,0e30
+
+[ITEMDEF 0e2e]
+DUPEITEM=0e2d
+DEFNAME=i_crystal_ball
+DESCRIPTION=Crystal ball (animated)
+
+[ITEMDEF 0e2f]
+//crystal ball animation frame
+DUPEITEM=0e2d
+
+[ITEMDEF 0e30]
+//crystal ball animation frame
+DUPEITEM=0e2d
+
+[ITEMDEF 012a5]
+DEFNAME=i_cards_tarot
+RESOURCES=13 i_paper
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Fortune Tellers
+DESCRIPTION=Tarot Cards
+DUPELIST=012a6,012a7,012a8,012a9,012aa,012ab,012ac
+
+[ITEMDEF 012a6]
+//tarot
+DUPEITEM=012a5
+
+[ITEMDEF 012a7]
+//tarot
+DUPEITEM=012a5
+
+[ITEMDEF 012a8]
+//tarot
+DUPEITEM=012a5
+
+[ITEMDEF 012a9]
+//tarot
+DUPEITEM=012a5
+
+[ITEMDEF 012aa]
+//tarot
+DUPEITEM=012a5
+
+[ITEMDEF 012ab]
+//tarot
+DUPEITEM=012a5
+
+[ITEMDEF 012ac]
+//tarot
+DUPEITEM=012a5
+
+[ITEMDEF 035ef]
+TYPE=t_crystal_ball
+NAME=crystal ball
+FLIP=1
+VALUE=194
+WEIGHT=15.0
+RESOURCES=15 i_crystal_ice
+SKILLMAKE=Tinkering 95.7,Alchemy 50.0,Magery 85.1,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Fortune Tellers
+DESCRIPTION=Ice Ball
+DUPELIST=035f0,035f1,035f2,035f3,035f4,035f5
+
+[ITEMDEF 035f0]
+//Ice ball
+DUPEITEM=035ef
+
+[ITEMDEF 035f1]
+//Ice ball
+DUPEITEM=035ef
+
+[ITEMDEF 035f2]
+//Ice ball
+DUPEITEM=035ef
+
+[ITEMDEF 035f3]
+//Ice ball
+DUPEITEM=035ef
+
+[ITEMDEF 035f4]
+//Ice ball
+DUPEITEM=035ef
+
+[ITEMDEF 035f5]
+//Ice ball
+DUPEITEM=035ef
+
+[ITEMDEF 0468a]
+DEFNAME=i_crystal_ball_small
+TYPE=t_crystal_ball
+VALUE=321
+WEIGHT=9.6
+RESOURCES=2 i_board,7 i_glass_raw,6 i_gem_diamond
+SKILLMAKE=Tinkering 95.7,ALCHEMY 50.0,MAGERY 85.1,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Fortune Tellers
+DESCRIPTION=Crystal Ball (small)
+
+[ITEMDEF 0468b]
+DEFNAME=i_crystal_ball_large
+TYPE=t_crystal_ball
+VALUE=321
+WEIGHT=9.6
+RESOURCES=2 i_board,7 i_glass_raw,6 i_gem_diamond
+SKILLMAKE=Tinkering 95.7,ALCHEMY 50.0,MAGERY 85.1,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Fortune Tellers
+DESCRIPTION=Crystal Ball (large)
+
+
+///////////////////////
+// Painter Equipment //
+///////////////////////
+
+[ITEMDEF 0e9f]
+DEFNAME=i_portrait_1
+WEIGHT=3
+RESOURCES=15 i_log,25 i_cloth
+SKILLMAKE=carpentry 80.0, tailoring 65.0, t_carpentry, t_sewing_kit
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Portrait 1
+DUPELIST=0ec8
+
+[ITEMDEF 0ea0]
+DEFNAME=i_portrait_big
+WEIGHT=3
+RESOURCES=25 i_log,35 i_cloth
+SKILLMAKE=carpentry 85.0, tailoring 70.0, t_carpentry, t_sewing_kit
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Portrait (big)
+
+[ITEMDEF 0ea1]
+DEFNAME=i_portrait_2
+WEIGHT=3
+RESOURCES=1 i_log,25 i_cloth
+SKILLMAKE=carpentry 85.0, tailoring 70.0, t_carpentry, t_sewing_kit
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Portrait 2
+DUPELIST=0ea2
+
+[ITEMDEF 0ea2]
+//painting 2
+DUPEITEM=0ea1
+
+[ITEMDEF 0ea3]
+DEFNAME=i_portrait_3
+WEIGHT=3
+RESOURCES=15 i_log,25 i_cloth
+SKILLMAKE=carpentry 80.0, tailoring 65.0, t_carpentry, t_sewing_kit
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Portrait 3
+DUPELIST=0ea4
+
+[ITEMDEF 0ea4]
+//painting 3
+DUPEITEM=0ea3
+
+[ITEMDEF 0ea5]
+DEFNAME=i_portrait_4
+WEIGHT=3
+RESOURCES=15 i_log,25 i_cloth
+SKILLMAKE=carpentry 80.0, tailoring 65.0, t_carpentry, t_sewing_kit
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Portrait 4
+DUPELIST=0ea6
+
+[ITEMDEF 0ea6]
+//portrait 4
+DUPEITEM=0ea5
+
+[ITEMDEF 0ea7]
+DEFNAME=i_portrait_5
+WEIGHT=5
+RESOURCES=15 i_log,25 i_cloth
+SKILLMAKE=carpentry 80.0, tailoring 65.0, t_carpentry, t_sewing_kit
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Portrait 5
+DUPELIST=0ea8
+
+[ITEMDEF 0ea8]
+//portrait 5
+DUPEITEM=0ea7
+
+[ITEMDEF 0ec8]
+//portrait 1
+DUPEITEM=0e9f
+
+[ITEMDEF 0ec9]
+//portrait 7
+DUPEITEM=0ee7
+
+[ITEMDEF 0ee7]
+DEFNAME=i_portrait_7
+WEIGHT=5
+RESOURCES=15 i_log,25 i_cloth
+SKILLMAKE=carpentry 80.0, tailoring 65.0, t_carpentry, t_sewing_kit
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Portrait 7
+DUPELIST=0ec9
+
+[ITEMDEF 0f65]
+DEFNAME=i_easel
+TYPE=t_normal
+FLIP=1
+WEIGHT=15
+RESOURCES=15 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Easel
+DUPELIST=0f67,0f69
+
+[ITEMDEF 0f66]
+DEFNAME=i_easel_with_canvas
+TYPE=t_normal
+FLIP=1
+WEIGHT=24
+RESOURCES=20 i_log
+SKILLMAKE=Carpentry 86.8, t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Easel with Canvas
+DUPELIST=0f68,0f6a
+
+[ITEMDEF 0f67]
+//easel
+DUPEITEM=0f65
+
+[ITEMDEF 0f68]
+//easel with canvas
+DUPEITEM=0f66
+
+[ITEMDEF 0f69]
+//easel
+DUPEITEM=0f65
+
+[ITEMDEF 0f6a]
+//easel with canvas
+DUPEITEM=0f66
+
+[ITEMDEF 0f71]
+DEFNAME=i_canvases_rack
+RESOURCES=3 i_canvas, 1 i_easel
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Rack of Canvases
+DUPELIST=0f72,0f73,0f74,0f75,0f76
+
+[ITEMDEF 0f72]
+//rack of canvases
+DUPEITEM=0f71
+
+[ITEMDEF 0f73]
+//rack of canvases
+DUPEITEM=0f71
+
+[ITEMDEF 0f74]
+//rack of canvases
+DUPEITEM=0f71
+
+[ITEMDEF 0f75]
+//rack of canvases
+DUPEITEM=0f71
+
+[ITEMDEF 0f76]
+//rack of canvases
+DUPEITEM=0f71
+
+[ITEMDEF 0fc1]
+DEFNAME=i_palette
+RESOURCES=1 i_brush, 6 i_dyes, 1 i_board
+WEIGHT=4
+CATEGORY=Items by Professions
+SUBSECTION=Painters
+DESCRIPTION=Paints & Brushes
+
+
+////////////////////////////
+// Stablemaster Equipment //
+////////////////////////////
+
+[ITEMDEF 0f34]
+DEFNAME=i_hay_scattered
+FLIP=1
+RESOURCES=1 i_hay_sheaf
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Hay (Scattered on Floor)
+DUPELIST=0f35
+
+[ITEMDEF 0f35]
+//hay scattered on floor
+DUPEITEM=0f34
+
+[ITEMDEF 0f37]
+DEFNAME=i_saddle
+FLIP=1
+WEIGHT=3
+RESOURCES=15 i_log
+SKILLMAKE=carpentry 80.0, t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Saddle
+DUPELIST=0f38
+
+[ITEMDEF 0f38]
+//saddle
+DUPEITEM=0f37
+
+[ITEMDEF 0f3b]
+DEFNAME=i_horse_dung
+FLIP=1
+VALUE=1
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Horse Dung
+DUPELIST=0f3c
+
+[ITEMDEF 0f3c]
+//horse dung
+DUPEITEM=0f3b
+
+[ITEMDEF 0f36]
+//Sheaf of Hay
+DEFNAME=i_hay_sheaf
+TYPE=t_grain
+VALUE=3
+WEIGHT=10
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Hay (Sheaf)
+DUPELIST=0100c,0100d
+
+[ITEMDEF 0100c]
+//hay sheaf
+DUPEITEM=0f36
+
+[ITEMDEF 0100d]
+//hay sheaf
+DUPEITEM=0f36
+
+[ITEMDEF 01036]
+DEFNAME=i_hay_bits_scattered_small
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Hay Bits
+
+[ITEMDEF 01037]
+DEFNAME=i_hay
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Hay
+
+[ITEMDEF 01370]
+DEFNAME=i_brush_horse
+WEIGHT=2
+RESOURCES=1 i_board, 50 i_straw
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Brush
+
+[ITEMDEF 01371]
+DEFNAME=i_brush_horse_2
+WEIGHT=2
+RESOURCES=1 i_board, 50 i_straw
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Brush 2
+
+[ITEMDEF 01372]
+DEFNAME=i_brush_horse_3
+WEIGHT=2
+RESOURCES=1 i_board, 50 i_straw
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Brush 3
+
+[ITEMDEF 01373]
+DEFNAME=i_brush_horse_4
+WEIGHT=2
+RESOURCES=1 i_board, 50 i_straw
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Brush 4
+
+[ITEMDEF 01374]
+DEFNAME=i_bridle_horse
+WEIGHT=5
+RESOURCES=2 i_hide, 1 i_ingot_iron
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Bridle
+
+[ITEMDEF 01375]
+DEFNAME=i_bridle_horse_2
+WEIGHT=5
+RESOURCES=2 i_hide, 1 i_ingot_iron
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Bridle
+
+[ITEMDEF 01376]
+DEFNAME=i_barding_horse_1
+FLIP=1
+WEIGHT=50
+RESOURCES=2 i_hide, 20 i_ingot_iron, 6 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Horse Barding (01/02) (W)
+DUPELIST=01377
+
+[ITEMDEF 01377]
+//horse barding
+DUPEITEM=01376
+DESCRIPTION=Horse Barding (02/02) (W)
+
+[ITEMDEF 01378]
+DEFNAME=i_barding_horse_2
+WEIGHT=50
+RESOURCES=2 i_hide, 20 i_ingot_iron, 6 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Horse Barding (01/02) (N)
+DUPELIST=01379
+
+[ITEMDEF 01379]
+//horse barding 2
+DUPEITEM=01378
+DESCRIPTION=Horse Barding (02/02) (N)
+
+[ITEMDEF 01449]
+DEFNAME=i_grain_loose
+TYPE=t_grain
+VALUE=1
+WEIGHT=1
+RESOURCES=1 i_wheat_sheaf
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Loose Grain
+
+[ITEMDEF 014e7]
+DEFNAME=i_post_hitching
+FLIP=1
+WEIGHT=7
+RESOURCES=5 i_ingot_iron, 1 i_ingot_gold
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Hitching Post
+DUPELIST=014e8
+
+[ITEMDEF 014e8]
+//hitching post
+DUPEITEM=014e7
+
+
+/////////////////////////
+// Scripting Equipment //
+/////////////////////////
+
+[ITEMDEF 0fbd]
+//brown open book facing SE
+DEFNAME=i_book_open
+RESOURCES=1 i_book_lg_pub
+WEIGHT=2
+TYPE=t_book
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Book (W)
+DUPELIST=0fbe
+
+[ITEMDEF 0fbe]
+//brown open book facing SW
+DUPEITEM=0fbd
+
+[ITEMDEF 0fbf]
+DEFNAME=i_pen_and_ink
+FLIP=1
+WEIGHT=2
+RESOURCES=1 i_feather,1 i_ink_pot
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Pen & Ink
+DUPELIST=0fc0
+
+[ITEMDEF 0fc0]
+//pen and ink
+DUPEITEM=0fbf
+
+[ITEMDEF 0fef]
+//brown book facing NE
+DEFNAME=i_book_lg_pub
+RESOURCES=1 i_canvas, 10 i_paper, 1 i_thread, 1 i_hide
+WEIGHT=2
+TYPE=t_book
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Brown Book
+
+[ITEMDEF 0ff0]
+//light tan book facing NE
+DEFNAME=i_book_sm_pub
+RESOURCES=1 i_canvas, 10 i_paper, 1 i_thread, 1 i_hide
+WEIGHT=2
+TYPE=t_book
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Light Tan Book
+
+[ITEMDEF 0ff1]
+//dark brown book facing NE
+DEFNAME=i_book_sm
+RESOURCES=1 i_canvas, 10 i_paper, 1 i_thread, 1 i_hide
+WEIGHT=2
+TYPE=t_book
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Dark Brown Book
+
+[ITEMDEF 0ff2]
+//purple book facing NE
+DEFNAME=i_book_lg
+RESOURCES=1 i_canvas, 10 i_paper, 1 i_thread, 1 i_hide
+WEIGHT=2
+TYPE=t_book
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Purple Book
+
+[ITEMDEF 0ff3]
+//small open book facing SE
+DEFNAME=i_book_sm_open
+RESOURCES=1 i_canvas, 10 i_paper, 1 i_thread, 1 i_hide
+WEIGHT=2
+TYPE=t_book
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Small Open Book
+
+[ITEMDEF 0ff4]
+//large open book facing SE
+DEFNAME=i_book_lg_open
+RESOURCES=1 i_canvas, 10 i_paper, 1 i_thread, 1 i_hide
+WEIGHT=2
+TYPE=t_book
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Large Open Book
+
+[ITEMDEF 01c11]
+DEFNAME=i_book_giant
+NAME=blue book
+TYPE=t_book
+WEIGHT=2.0
+RESOURCES=2 i_canvas,20 i_parchment,2 i_thread,1 i_hides_cut
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Huge Book
+
+[ITEMDEF 01e20]
+DEFNAME=i_book_open_red
+RESOURCES=20 i_paper, i_thread, i_hide
+WEIGHT=2
+//red book, opened on the ground facing down
+TYPE=t_book
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Red Book (Open and Face Down)
+
+[ITEMDEF 01e21]
+DEFNAME=i_book_open_two_brown
+RESOURCES=2 i_book_open
+WEIGHT=4
+//2 brown books, opened on the ground facing down
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Brown Books (Open and Face Down)
+
+[ITEMDEF 01e22]
+DEFNAME=i_book_open_two_red
+RESOURCES=2 i_book_open
+WEIGHT=4
+//2 red books opened facing up
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Red Books (Open and Face Up)
+
+[ITEMDEF 01e23]
+DEFNAME=i_book_open_two_blue
+RESOURCES=2 i_book_open
+WEIGHT=4
+//2 blue books opened facing up
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Blue Books (Open and Face Up)
+
+[ITEMDEF 01e24]
+DEFNAME=i_book_open_3_red
+RESOURCES=2 i_book_open
+WEIGHT=4
+//stack of several books
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Stack of Books
+
+[ITEMDEF 01e25]
+DEFNAME=i_book_open_two_green
+RESOURCES=6 i_book_open
+WEIGHT=12
+//another stack of several books
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Stack of Books
+
+[ITEMDEF 0207f]
+DEFNAME=i_bookstand_elven
+NAME=bookstand
+TYPE=t_normal
+VALUE=16
+WEIGHT=4.1
+RESOURCES=4 i_log_willow,1 i_nails
+SKILLMAKE=Carpentry 32.1,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Elven Bookstand
+
+[ITEMDEF 02d4b]
+DEFNAME=i_bookstand_closedbook
+TYPE=t_normal
+NAME=bookstand
+FLIP=1
+VALUE=82
+WEIGHT=5.1
+RESOURCES=4 i_bookstand_elven,1 i_book_sm
+SKILLMAKE=Carpentry 42.3,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Elven Bookstand (closed book)
+DUPELIST=02d4c
+
+[ITEMDEF 02d4c]
+//bookstand elven (closed book)
+DUPEITEM=02d4b
+
+[ITEMDEF 02d4d]
+DEFNAME=i_bookstand_openbook
+TYPE=t_normal
+NAME=bookstand
+FLIP=1
+VALUE=82
+WEIGHT=5.1
+RESOURCES=4 i_bookstand_elven,1 i_book_sm
+SKILLMAKE=Carpentry 42.3,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Elven Bookstand (open book)
+DUPELIST=02d4c
+
+[ITEMDEF 02d4e]
+//bookstand elven (open book)
+DUPEITEM=02d4d
+
+[ITEMDEF 02d61]
+DEFNAME=i_ink_well
+NAME=ink well
+FLIP=1
+VALUE=5
+WEIGHT=1.0
+RESOURCES=1 i_ingot_iron
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Ink Well
+DUPELIST=02d62
+
+[ITEMDEF 02d62]
+//ink well
+DUPEITEM=02d61
+
+[ITEMDEF 02ddd]
+DEFNAME=i_podium_elven
+NAME=elven podium
+TYPE=t_normal
+FLIP=1
+VALUE=56
+WEIGHT=20.0
+RESOURCES=20 i_board
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Scribes
+DESCRIPTION=Elven Podium
+DUPELIST=02dde
+
+[ITEMDEF 02dde]
+//elven podium
+DUPEITEM=02ddd
+
+
+///////////////////////////
+// Cartography Equipment //
+///////////////////////////
+
+[ITEMDEF 01047]
+DEFNAME=i_globe
+RESOURCES=10 i_board, 2 i_cloth
+WEIGHT=6
+CATEGORY=Items by Professions
+SUBSECTION=Cartographers
+DESCRIPTION=Globe
+DUPELIST=01048
+SKILLMAKE=carpentry 80.0, cartography 40.0, t_carpentry
+
+[ITEMDEF 01048]
+//globe
+DUPEITEM=01047
+
+[ITEMDEF 014eb]
+DEFNAME=i_map
+TYPE=t_map
+FLIP=1
+RESOURCES=i_paper
+SKILLMAKE=carpentry 40.0, tinkering 40.0
+TDATA1=500
+TDATA2=500
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Cartographers
+DESCRIPTION=Map (Empty)
+DUPELIST=014ec
+
+[ITEMDEF 014ec]
+//map
+DUPEITEM=014eb
+
+[ITEMDEF 014ed]
+DEFNAME=i_map_rolled
+FLIP=1
+RESOURCES=i_map
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Cartographers
+DESCRIPTION=Map (Rolled)(Empty)
+DUPELIST=014ee
+
+[ITEMDEF 014ee]
+//rolled map
+DUPEITEM=014ed
+
+
+//////////////////////////////
+// Weaver/Spinner Equipment //
+//////////////////////////////
+
+[ITEMDEF 0df8]
+DEFNAME=i_wool
+TYPE=t_wool
+FLIP=1
+VALUE=3
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Wool (pile)
+DUPELIST=0101f
+
+[ITEMDEF 0e1d]
+DEFNAME=i_yarn_ball
+TYPE=t_yarn
+FLIP=1
+VALUE=3
+WEIGHT=0.1
+RESOURCES=1 i_wool
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Ball of Yarn
+DUPELIST=0e1e,0e1f
+
+[ITEMDEF 0e1e]
+//ball of yarn
+DUPEITEM=0e1d
+
+[ITEMDEF 0e1f]
+//ball of yarn
+DUPEITEM=0e1d
+
+[ITEMDEF 0f95]
+DEFNAME=i_cloth_bolt
+TYPE=t_cloth_bolt
+FLIP=1
+DYE=1
+WEIGHT=5
+VALUE=155
+RESOURCES=50 i_cloth
+SKILLMAKE=Tailoring 0.1
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Bolt of Cloth
+DUPELIST=0f96,0f97,0f98,0f99,0f9a,0f9b,0f9c
+
+[ITEMDEF 0f96]
+//bolt of cloth
+DUPEITEM=0f95
+
+[ITEMDEF 0f97]
+//bolt of cloth
+DUPEITEM=0f95
+
+[ITEMDEF 0f98]
+//bolt of cloth
+DUPEITEM=0f95
+
+[ITEMDEF 0f99]
+//bolt of cloth
+DUPEITEM=0f95
+
+[ITEMDEF 0f9a]
+//bolt of kilt cloth
+DUPEITEM=0f95
+
+[ITEMDEF 0f9b]
+//bolt of cloth
+DUPEITEM=0f95
+
+[ITEMDEF 0f9c]
+//bolt of cloth
+DUPEITEM=0f95
+
+[ITEMDEF 0fa0]
+DEFNAME=i_thread
+TYPE=t_thread
+DYE=1
+FLIP=1
+VALUE=3
+WEIGHT=0.1
+RESOURCES=1 i_flax_bundle
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Spool of Thread
+DUPELIST=0fa1
+
+[ITEMDEF 0fa1]
+//spool of thread
+DUPEITEM=0fa0
+
+[ITEMDEF 01015]
+DEFNAME=i_spinning_wheel
+TYPE=t_spinwheel
+FLIP=1
+WEIGHT=15
+RESOURCES=20 i_board,1 i_ingot_iron
+SKILLMAKE=Carpentry 73.6, Tailoring 65.0, t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Spinning Wheel
+DUPELIST=01016,01017,01019,0101a,0101b,0101c,0101d,0101e,010a4,010a5,010a6
+
+[ITEMDEF 01016]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 01017]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 01019]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 0101a]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 0101b]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 0101c]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 0101d]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 0101e]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 010a4]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 010a5]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 010a6]
+//spinning wheel
+DUPEITEM=01015
+
+[ITEMDEF 0105f]
+DEFNAME=i_loom_upright
+TYPE=t_loom
+FLIP=1
+WEIGHT=20
+RESOURCES=15 i_board, 1 i_ingot_iron, 1 i_nails
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Upright Loom
+DUPELIST=01060,01061,01062,01063,01064,01065,01066
+
+[ITEMDEF 01060]
+//upright loom
+DUPEITEM=0105f
+
+[ITEMDEF 01061]
+//upright loom
+DUPEITEM=0105f
+
+[ITEMDEF 01062]
+//upright loom
+DUPEITEM=0105f
+
+[ITEMDEF 01063]
+//upright loom
+DUPEITEM=0105f
+
+[ITEMDEF 01064]
+//upright loom
+DUPEITEM=0105f
+
+[ITEMDEF 01065]
+//upright loom
+DUPEITEM=0105f
+
+[ITEMDEF 01066]
+//upright loom
+DUPEITEM=0105f
+
+[ITEMDEF 0101f]
+//wool (pile)
+DUPEITEM=0df8
+
+[ITEMDEF 01049]
+DEFNAME=i_bench_loom
+TYPE=t_chair
+FLIP=1
+RESOURCES=8 i_board
+SKILLMAKE=Carpentry 10.0, t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Loom Bench
+DUPELIST=0104a
+
+[ITEMDEF 0104a]
+//loom bench
+DUPEITEM=01049
+
+[ITEMDEF 0175d]
+DEFNAME=i_cloth
+TYPE=t_cloth
+DYE=1
+FLIP=1
+VALUE=3
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Folded Cloth
+DUPELIST=0175e,0175f,01760,01761,01762,01763,01764,01765,01767
+
+[ITEMDEF 0175e]
+//folded cloth
+DUPEITEM=0175d
+
+[ITEMDEF 0175f]
+//folded cloth
+DUPEITEM=0175d
+
+[ITEMDEF 01760]
+//folded cloth
+DUPEITEM=0175d
+
+[ITEMDEF 01761]
+//folded cloth
+DUPEITEM=0175d
+
+[ITEMDEF 01762]
+//folded cloth
+DUPEITEM=0175d
+
+[ITEMDEF 01763]
+//folded cloth
+DUPEITEM=0175d
+
+[ITEMDEF 01764]
+//folded cloth
+DUPEITEM=0175d
+
+[ITEMDEF 01765]
+//folded cloth
+DUPEITEM=0175d
+
+[ITEMDEF 01766]
+DEFNAME=i_cloth_cut
+TYPE=t_cloth
+VALUE=3
+WEIGHT=1
+RESOURCES=1 i_cloth
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Cut Cloth
+DUPELIST=01768
+
+[ITEMDEF 01767]
+//folded cloth
+DUPEITEM=0175d
+
+[ITEMDEF 01768]
+//cut cloth
+DUPEITEM=01766
+
+[ITEMDEF 02dd9]
+DEFNAME=i_spinning_wheel_elven
+NAME=elven spinning wheel
+TYPE=t_spinwheel
+FLIP=1
+VALUE=73
+WEIGHT=21.3
+RESOURCES=10 i_log,1 i_ingot_iron,1 i_hinge,1 i_axel,1 i_gears
+SKILLMAKE=Carpentry 73.6,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Weaver/Spinner
+DESCRIPTION=Elven Spinning Wheel
+//TEVENTS=t_spinwheel_elven
+DUPELIST=02dda,02e3c,02e3d,02e3e,02e3f
+
+[ITEMDEF 02dda]
+//elven spinning wheel
+DUPEITEM=02dd9
+
+[ITEMDEF 02e3c]
+//elven spinning wheel
+DUPEITEM=02dd9
+
+[ITEMDEF 02e3d]
+//elven spinning wheel
+DUPEITEM=02dd9
+
+[ITEMDEF 02e3e]
+//elven spinning wheel
+DUPEITEM=02dd9
+
+[ITEMDEF 02e3f]
+//elven spinning wheel
+DUPEITEM=02dd9
+
+
+//////////////////////
+// Tanner Equipment //
+//////////////////////
+
+[ITEMDEF 01069]
+DEFNAME=i_hide_stretched
+TYPE=t_leather
+WEIGHT=6
+RESOURCES=1 i_hide,2 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Tanner
+DESCRIPTION=Stretched Hide
+DUPELIST=0107a
+
+[ITEMDEF 0106a]
+DEFNAME=i_hide_stretched_2
+TYPE=t_leather
+WEIGHT=6
+RESOURCES=1 i_hide,2 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Tanner
+DESCRIPTION=Stretched Hide 2
+DUPELIST=0107b
+
+[ITEMDEF 0106b]
+DEFNAME=i_hide_stretched_3
+TYPE=t_leather
+WEIGHT=6
+RESOURCES=1 i_hide,2 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Tanner
+DESCRIPTION=Stretched Hide 3
+DUPELIST=0107c
+
+[ITEMDEF 0106c]
+DEFNAME=i_hide_stretched_4
+TYPE=t_leather
+WEIGHT=10
+RESOURCES=1 i_hide,2 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Tanner
+DESCRIPTION=Stretched Hide 4 (two part)
+DUPELIST=0106d,0107d,0107e
+
+[ITEMDEF 0106d]
+//stretched hide 4
+DUPEITEM=0106c
+
+[ITEMDEF 0106e]
+DEFNAME=i_hide_stretched_5
+TYPE=t_leather
+WEIGHT=10
+RESOURCES=1 i_hide,2 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Tanner
+DESCRIPTION=Stretched Hide 5 (two part)
+DUPELIST=0106f,0107f,01080
+
+[ITEMDEF 0106f]
+//stretched hide 5
+DUPEITEM=0106e
+
+[ITEMDEF 0107a]
+//stretched hide
+DUPEITEM=01069
+
+[ITEMDEF 0107b]
+//stretched hide 2
+DUPEITEM=0106a
+
+[ITEMDEF 0107c]
+//stretched hide 3
+DUPEITEM=0106b
+
+[ITEMDEF 0107d]
+//stretched hide 4
+DUPEITEM=0106c
+
+[ITEMDEF 0107e]
+//stretched hide 4
+DUPEITEM=0106c
+
+[ITEMDEF 0107f]
+//stretched hide 5
+DUPEITEM=0106e
+
+[ITEMDEF 01080]
+//stretched hide 5
+DUPEITEM=0106e
+
+[ITEMDEF 011f4]
+DEFNAME=i_fur_dark
+TYPE=t_fur
+FLIP=1
+VALUE=5
+WEIGHT=5
+CATEGORY=Items by Professions
+SUBSECTION=Tanner
+DESCRIPTION=Fur (Dark)
+DUPELIST=011f5,011f8,011f9,017f3,017f4,017f5,017f6
+
+[ITEMDEF 011f5]
+//fur (dark)
+DUPEITEM=011f4
+
+[ITEMDEF 011f6]
+DEFNAME=i_fur_light
+TYPE=t_fur
+FLIP=1
+VALUE=5
+WEIGHT=5
+CATEGORY=Items by Professions
+SUBSECTION=Tanner
+DESCRIPTION=Fur (light)
+DUPELIST=011f7,011fa,011fb,017f7,017f8,017f9,017fa
+
+[ITEMDEF 011f7]
+//fur (light)
+DUPEITEM=011f6
+
+[ITEMDEF 011f8]
+//fur (dark)
+DUPEITEM=011f4
+
+[ITEMDEF 011f9]
+//fur (dark)
+DUPEITEM=011f4
+
+[ITEMDEF 011fa]
+//fur (light)
+DUPEITEM=011f6
+
+[ITEMDEF 011fb]
+//fur (light)
+DUPEITEM=011f6
+
+[ITEMDEF 01f73]
+//fur (dark)
+DUPEITEM=011f4
+
+[ITEMDEF 01f74]
+//fur (dark)
+DUPEITEM=011f4
+
+[ITEMDEF 01f75]
+//fur (dark)
+DUPEITEM=011f4
+
+[ITEMDEF 01f76]
+//fur (dark)
+DUPEITEM=011f4
+
+[ITEMDEF 01f77]
+//fur (light)
+DUPEITEM=011f6
+
+[ITEMDEF 01f78]
+//fur (light)
+DUPEITEM=011f6
+
+[ITEMDEF 01f79]
+//fur (light)
+DUPEITEM=011f6
+
+[ITEMDEF 01f7a]
+//fur (light)
+DUPEITEM=011f6
+
+[ITEMDEF 01875]
+DEFNAME=i_fur
+NAME=fur
+TYPE=t_fur
+DYE=1
+VALUE=5
+WEIGHT=1.0
+CATEGORY=Items by Professions
+SUBSECTION=Tanner
+DESCRIPTION=Fur
+
+
+//////////////////////
+// Tinker Equipment //
+//////////////////////
+
+[ITEMDEF 0104b]
+DEFNAME=i_clock
+RESOURCES=i_clock_frame,i_clock_parts
+WEIGHT=2
+TYPE=t_clock
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Clock
+DUPELIST=0104c
+SKILLMAKE=tinkering 30.7,t_tinker_tools
+
+[ITEMDEF 0104c]
+//clock
+DUPEITEM=0104b
+
+[ITEMDEF 0104d]
+DEFNAME=i_clock_frame
+RESOURCES=6 i_log
+WEIGHT=2
+//TYPE=T_CLOCK
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Clock Frame
+DUPELIST=0104e
+SKILLMAKE=tinkering 30.4,t_tinker_tools
+
+[ITEMDEF 0104e]
+//clock frame
+DUPEITEM=0104d
+
+[ITEMDEF 0104f]
+DEFNAME=i_clock_parts
+RESOURCES=1 i_ingot_iron
+WEIGHT=1
+//TYPE=T_CLOCK
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Clock Parts
+DUPELIST=01050
+SKILLMAKE=tinkering 30.5,t_tinker_tools
+
+[ITEMDEF 01050]
+//clock parts
+DUPEITEM=0104f
+
+[ITEMDEF 01051]
+DEFNAME=i_axel_and_gears
+RESOURCES=2 i_log
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Axle with Gears
+DUPELIST=01052
+SKILLMAKE=tinkering 30.4,t_tinker_tools
+
+[ITEMDEF 01052]
+//axle with gears
+DUPEITEM=01051
+
+[ITEMDEF 01053]
+//gears
+DEFNAME=i_gears
+RESOURCES=1 i_ingot_iron
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Gears
+DUPELIST=01054
+SKILLMAKE=tinkering 14.7,t_tinker_tools
+
+[ITEMDEF 01054]
+//gears
+DUPEITEM=01053
+
+[ITEMDEF 01055]
+DEFNAME=i_hinge
+RESOURCES=1 i_ingot_iron
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Hinge
+DUPELIST=01056
+SKILLMAKE=tinkering 14.8,t_tinker_tools
+
+[ITEMDEF 01056]
+//hinge
+DUPEITEM=01055
+
+[ITEMDEF 01059]
+DEFNAME=i_sextant_parts
+RESOURCES=3 i_ingot_iron
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Sextant Parts
+DUPELIST=0105a
+SKILLMAKE=tinkering 31.0,t_tinker_tools
+
+[ITEMDEF 0105a]
+//sextant parts
+DUPEITEM=01059
+
+[ITEMDEF 0105b]
+DEFNAME=i_axel
+RESOURCES=1 i_ingot_iron
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Axle
+DUPELIST=0105c
+SKILLMAKE=tinkering 30.4,t_tinker_tools
+
+[ITEMDEF 0105c]
+//axle
+DUPEITEM=0105b
+
+[ITEMDEF 0105d]
+DEFNAME=i_springs
+RESOURCES=1 i_ingot_iron
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Springs
+DUPELIST=0105e
+SKILLMAKE=tinkering 13.7,t_tinker_tools
+
+[ITEMDEF 0105e]
+//springs
+DUPEITEM=0105d
+
+[ITEMDEF 01876]
+DEFNAME=i_wire_iron
+RESOURCES=1 i_ingot_iron
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Iron Wire
+
+[ITEMDEF 01877]
+DEFNAME=i_wire_silver
+RESOURCES=1 i_ingot_iron
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Silver Wire
+
+[ITEMDEF 01878]
+DEFNAME=i_wire_gold
+RESOURCES=1 i_ingot_gold
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Gold Wire
+
+[ITEMDEF 01879]
+DEFNAME=i_wire_copper
+RESOURCES=1 i_ingot_copper
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Copper Wire
+
+[ITEMDEF 01eba]
+DEFNAME=i_toolcase
+RESOURCES=i_toolcase_empty, 4 i_ingot_iron,1 i_log
+SKILLMAKE=tinkering 50.0,t_tinker_tools
+WEIGHT=6
+TYPE=t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Tool Case
+DUPELIST=01ebb
+
+[ITEMDEF 01ebb]
+DUPEITEM=01eba
+
+[ITEMDEF 01ebc]
+DEFNAME=i_tinker_tools
+TYPE=t_tinker_tools
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Tinkers
+DESCRIPTION=Tinker Tools
+SKILLMAKE=tinkering 35.0,t_tinker_tools
+RESOURCES=4 i_ingot_iron
+
+
+///////////////////////
+// Sailing Equipment //
+///////////////////////
+
+[ITEMDEF 01057]
+DEFNAME=i_sextant
+TYPE=t_sextant
+RESOURCES=i_sextant_parts
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Sailors
+DESCRIPTION=Sextant
+DUPELIST=01058
+SKILLMAKE=tinkering 30.7,t_tinker_tools
+
+[ITEMDEF 01058]
+//sextant
+DUPEITEM=01057
+
+[ITEMDEF 014f3]
+DEFNAME=i_model_ship
+FLIP=1
+WEIGHT=1
+RESOURCES=10 i_board
+SKILLMAKE=carpentry 95.0, t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Sailors
+DESCRIPTION=Ship Model (N)
+DUPELIST=014f4
+
+[ITEMDEF 014f4]
+//ship model
+DUPEITEM=014f3
+
+[ITEMDEF 014f5]
+DEFNAME=i_spyglass
+TYPE=t_spy_glass
+FLIP=1
+RESOURCES=2 i_ingot_iron, 1 i_glass
+WEIGHT=3
+CATEGORY=Items by Professions
+SUBSECTION=Sailors
+DESCRIPTION=SpyGlass (N)
+DUPELIST=014f6
+
+[ITEMDEF 014f6]
+//spyglass
+DUPEITEM=014f5
+
+[ITEMDEF 014f7]
+DEFNAME=i_anchor
+FLIP=1
+WEIGHT=40
+RESOURCES=40 i_ingot_iron, 1 i_rope
+CATEGORY=Items by Professions
+SUBSECTION=Sailors
+DESCRIPTION=Anchor (W)
+DUPELIST=014f9
+
+[ITEMDEF 014f8]
+DEFNAME=i_rope
+FLIP=1
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Sailors
+DESCRIPTION=Rope (W)
+DUPELIST=014fa
+
+[ITEMDEF 014f9]
+//anchor
+DUPEITEM=014f7
+
+[ITEMDEF 014fa]
+//rope
+DUPEITEM=014f8
+
+
+///////////////////////////////
+// Weapons Trainer Equipment //
+///////////////////////////////
+
+[ITEMDEF 01070]
+DEFNAME=i_training_dummy
+TYPE=t_train_dummy
+SKILLMAKE=carpentry 85.0, tailoring 70.0, t_sewing_kit, t_carpentry
+RESOURCES=15 i_cloth, 35 i_straw, 8 i_board, 1 i_ingot_iron
+WEIGHT=35
+CATEGORY=Items by Professions
+SUBSECTION=Fighters
+DESCRIPTION=Training Dummy
+DUPELIST=01071,01072,01073
+
+[ITEMDEF 01071]
+//training dummy
+DUPEITEM=01070
+
+[ITEMDEF 01072]
+//training dummy
+DUPEITEM=01070
+
+[ITEMDEF 01073]
+//training dummy
+DUPEITEM=01070
+
+[ITEMDEF 01074]
+//training dummy
+DEFNAME=i_training_dummy_n
+TYPE=t_train_dummy
+SKILLMAKE=carpentry 85.0, tailoring 70.0, t_sewing_kit, t_carpentry
+RESOURCES=15 i_cloth, 35 i_straw, 8 i_board, 1 i_ingot_iron
+WEIGHT=35
+CATEGORY=Items by Professions
+SUBSECTION=Fighters
+DESCRIPTION=Training Dummy (N)
+DUPELIST=01075,01076,01077
+
+[ITEMDEF 01075]
+//training dummy
+DUPEITEM=01074
+
+[ITEMDEF 01076]
+//training dummy
+DUPEITEM=01074
+
+[ITEMDEF 01077]
+//training dummy
+DUPEITEM=01074
+
+
+/////////////////////
+// Thief Equipment //
+/////////////////////
+
+[ITEMDEF 014fb]
+DEFNAME=i_lockpick
+TYPE=t_lockpick
+FLIP=1
+RESOURCES=1 i_ingot_iron
+WEIGHT=.5
+CATEGORY=Items by Professions
+SUBSECTION=Thieves
+DESCRIPTION=Lockpick
+DUPELIST=014fc
+SKILLMAKE=tinkering 48.5,t_tinker_tools
+
+[ITEMDEF 014fc]
+//lockpick
+DUPEITEM=014fb
+
+[ITEMDEF 014fd]
+DEFNAME=i_lockpick_set
+TYPE=t_lockpick
+FLIP=1
+WEIGHT=1
+RESOURCES=3 i_lockpick
+CATEGORY=Items by Professions
+SUBSECTION=Thieves
+DESCRIPTION=Lockpicks (Set)
+DUPELIST=014fe
+
+[ITEMDEF 014fe]
+//lockpicks
+DUPEITEM=014fd
+
+[ITEMDEF 01e2c]
+DEFNAME=i_pickpocket_dip
+TYPE=t_train_pickpocket
+SKILLMAKE=carpentry 80.0, tailoring 60.0, t_sewing_kit, t_carpentry
+RESOURCES=65 i_log,65 i_cloth
+//WEIGHT=60
+CATEGORY=Items by Professions
+SUBSECTION=Thieves
+DESCRIPTION=Pickpocket Dip
+DUPELIST=01e2d,01ec0,01ec1,01ec2,01ec3,01ec4,01ec5
+
+[ITEMDEF 01e2d]
+//pickpocket dip
+DUPEITEM=01e2c
+CATEGORY=Items by Professions
+SUBSECTION=Thieves
+DESCRIPTION=Pickpocket Dip
+
+[ITEMDEF 01ec0]
+DEFNAME=i_pickpocket_dip_n
+DUPEITEM=01e2c
+CATEGORY=Items by Professions
+SUBSECTION=Thieves
+DESCRIPTION=Pickpocket Dip (w)
+
+[ITEMDEF 01ec1]
+DUPEITEM=01e2c
+
+[ITEMDEF 01ec2]
+DUPEITEM=01e2c
+
+[ITEMDEF 01ec3]
+DEFNAME=i_pickpocket_dip_w
+DUPEITEM=01e2c
+CATEGORY=Items by Professions
+SUBSECTION=Thieves
+DESCRIPTION=Pickpocket Dip (n)
+
+[ITEMDEF 01ec4]
+DUPEITEM=01e2c
+
+[ITEMDEF 01ec5]
+DUPEITEM=01e2c
+
+
+///////////////////////
+// Farming Equipment //
+///////////////////////
+
+[ITEMDEF 01500]
+DEFNAME=i_plough
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Farmers
+DESCRIPTION=Plough
+DUPELIST=01501,01502,01503
+
+[ITEMDEF 01501]
+//plough
+DUPEITEM=01500
+
+[ITEMDEF 01502]
+//plough
+DUPEITEM=01500
+
+[ITEMDEF 01503]
+//plough
+DUPEITEM=01500
+
+[ITEMDEF 01504]
+DEFNAME=i_harrow_part_1
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Farmers
+DESCRIPTION=Harrow
+DUPELIST=01505,01506,01507
+
+[ITEMDEF 01505]
+//harrow
+DUPEITEM=01504
+
+[ITEMDEF 01506]
+//harrow
+DUPEITEM=01504
+
+[ITEMDEF 01507]
+//harrow
+DUPEITEM=01504
+
+[ITEMDEF 01e34]
+DEFNAME=i_scarecrow
+RESOURCES=4 i_log, 14 i_straw, i_rope, i_hat_straw
+WEIGHT=23
+CATEGORY=Items by Professions
+SUBSECTION=Farmers
+DESCRIPTION=Scarecrow
+DUPELIST=01e35
+
+[ITEMDEF 01e35]
+//scarecrow
+DUPEITEM=01e34
+
+
+///////////////////////
+// Butcher Equipment //
+///////////////////////
+//Butcher knives are in the weapons files
+
+[ITEMDEF 01871]
+DEFNAME=i_carcass_beef
+FLIP=1
+VALUE=14
+WEIGHT=20
+CATEGORY=Items by Professions
+SUBSECTION=Butchers
+DESCRIPTION=Beef Carcass
+DUPELIST=01872
+
+[ITEMDEF 01872]
+//beef carcass
+DUPEITEM=01871
+
+[ITEMDEF 01873]
+DEFNAME=i_carcass_sheep
+FLIP=1
+VALUE=14
+WEIGHT=10
+CATEGORY=Items by Professions
+SUBSECTION=Butchers
+DESCRIPTION=Sheep Carcass
+DUPELIST=01874
+
+[ITEMDEF 01874]
+//sheep carcass
+DUPEITEM=01873
+
+
+////////////////////////
+// Surveyor Equipment //
+////////////////////////
+
+[ITEMDEF 0194b]
+DEFNAME=i_scope_surveyor
+NAME=surveyor scope
+TYPE=t_sextant
+FLIP=1
+VALUE=51
+WEIGHT=0.6
+RESOURCES=1 i_sextant_parts,1 i_spyglass
+SKILLMAKE=tinkering 30.7,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Surveyors/Architects
+DESCRIPTION=Surveyor Scope
+DUPELIST=0194c
+
+[ITEMDEF 0194c]
+//surveyor scope
+DUPEITEM=0194b
+
+
+//////////////////////
+// Mining Equipment //
+//////////////////////
+
+[ITEMDEF 0f39]
+//Uses weapon type but cannot be equiped
+DEFNAME=i_shovel
+TYPE=t_weapon_mace_pick
+FLIP=1
+WEIGHT=5
+SKILLMAKE=tinkering 40.0, t_tinker_tools
+RESOURCES=4 i_ingot_iron
+CATEGORY=Items by Professions
+SUBSECTION=Miners
+DESCRIPTION=Shovel
+TEVENTS=t_shovel
+DUPELIST=0f3a
+ON=@Create
+	HITPOINTS={50 60}
+
+[ITEMDEF 0f3a]
+//shovel
+DUPEITEM=0f39
+
+[ITEMDEF 01a82]
+DEFNAME=i_cart_ore_ne_1
+RESOURCES=2 i_log, 2 i_board, 1 i_nails
+WEIGHT=6
+CATEGORY=Items by Professions
+SUBSECTION=Blacksmiths
+DESCRIPTION=Ore Cart
+DUPELIST=01a83,01a86,01a87,01a88,01a8b
+
+[ITEMDEF 01a83]
+DEFNAME=i_cart_ore_ne_2
+DUPEITEM=01a82
+
+[ITEMDEF 01a86]
+DEFNAME=i_cart_ore_ne_3
+DUPEITEM=01a82
+
+[ITEMDEF 01a87]
+DEFNAME=i_cart_ore_nw_1
+DUPEITEM=01a82
+
+[ITEMDEF 01a88]
+DEFNAME=i_cart_ore_nw_2
+DUPEITEM=01a82
+
+[ITEMDEF 01a8b]
+DEFNAME=i_cart_ore_nw_3
+DUPEITEM=01a82
+
+[ITEMDEF 01be4]
+//Pile of 3 copper ingots facing SE
+DUPEITEM=01be3
+
+[ITEMDEF 01be5]
+//Pile of 5 copper ingots facing SE
+DUPEITEM=01be3
+
+[ITEMDEF 01be6]
+//copper ingot facing SE
+DUPEITEM=01be3
+
+[ITEMDEF 01be7]
+//Pile of 3 copper ingots facing SW
+DUPEITEM=01be3
+
+[ITEMDEF 01be8]
+//Pile of 5 copper ingots facing SW
+DUPEITEM=01be3
+
+[ITEMDEF 01bea]
+//Pile of 3 gold ingots facing SE
+DUPEITEM=01be9
+
+[ITEMDEF 01beb]
+//Pile of 5 gold ingots facing SE
+DUPEITEM=01be9
+
+[ITEMDEF 01bec]
+//gold ingot facing SW
+DUPEITEM=01be9
+
+[ITEMDEF 01bed]
+//Pile of 3 gold ingots facing SW
+DUPEITEM=01be9
+
+[ITEMDEF 01bee]
+//Pile of 5 gold ingots facing SW
+DUPEITEM=01be9
+
+[ITEMDEF 01bf0]
+//Pile of 3 iron ingots facing SE
+DUPEITEM=01bef
+
+[ITEMDEF 01bf1]
+//Pile of 5 iron ingots facing SE
+DUPEITEM=01bef
+
+[ITEMDEF 01bf2]
+//Iron ingot facing SW
+DUPEITEM=01bef
+
+[ITEMDEF 01bf3]
+//Pile of 3 iron ingots facing SW
+DUPEITEM=01bef
+
+[ITEMDEF 01bf4]
+//Pile of 5 iron ingots facing SW
+DUPEITEM=01bef
+
+[ITEMDEF 01bf6]
+//Pile of 3 silver ingots facing SE
+DUPEITEM=01bf5
+
+[ITEMDEF 01bf7]
+//Pile of 5 silver ingots facing SE
+DUPEITEM=01bf5
+
+[ITEMDEF 01bf8]
+//silver ingot facing SW
+DUPEITEM=01bf5
+
+[ITEMDEF 01bf9]
+//Pile of 3 silver ingots facing SW
+DUPEITEM=01bf5
+
+[ITEMDEF 01bfa]
+//Pile of 5 silver ingots facing SW
+DUPEITEM=01bf5
+
+[EOF]

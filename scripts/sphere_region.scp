@@ -1,0 +1,212 @@
+//****************************************************************************
+//SPHERE by : Menasoft ©1997-2007
+//www.sphereserver.net
+// All SPHERE script files and formats are copyright Menasoft & Partners.
+// This file may be freely edited for personal use, but may not be distributed
+// in whole or in part, in any format without express written permission from
+// Menasoft & Partners.  All donations and contributions
+// become the property of Menasoft & Partners.
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, August 13, 2005
+
+VERSION=0.56b
+
+[REGIONTYPE r_default_sand t_sand]
+// Default sand area resources
+RESOURCES=25.0 mr_nothing
+RESOURCES=50.0 mr_sand
+
+[REGIONTYPE r_default_rock t_rock]
+// Default rock area resources
+RESOURCES=25.0 mr_nothing
+RESOURCES=50.0 mr_iron
+RESOURCES=11.2 mr_dull_copper
+RESOURCES=9.8 mr_shadow
+RESOURCES=8.4 mr_copper
+RESOURCES=7.0 mr_bronze
+RESOURCES=5.6 mr_gold
+RESOURCES=4.2 mr_agapite
+RESOURCES=2.8 mr_verite
+RESOURCES=1.4 mr_valorite
+
+[REGIONTYPE r_default_water t_water]
+// Default water area resources
+// This is not ocean. More like coastlines.
+RESOURCES=50.0 mr_nothing
+RESOURCES=20.0 mr_fish1
+RESOURCES=20.0 mr_fish2
+RESOURCES=20.0 mr_fish3
+RESOURCES=20.0 mr_fish4
+RESOURCES=0.2 mr_footwear
+
+[REGIONTYPE r_water t_water]
+// Default water area resources
+// This IS ocean. Maybe can find creatures here?
+RESOURCES=25.0 mr_nothing
+RESOURCES=25.0 mr_fish1
+RESOURCES=25.0 mr_fish2
+RESOURCES=25.0 mr_fish3
+RESOURCES=25.0 mr_fish4
+RESOURCES=1.5 mr_fish_highly_peculiar
+RESOURCES=1.5 mr_fish_prized
+RESOURCES=1.5 mr_fish_wondrous
+RESOURCES=1.5 mr_fish_truly_rare
+RESOURCES=0.5 mr_sos_bottle
+
+[REGIONTYPE r_default_tree t_tree]
+// Default tree area resources.
+// They all produce the same log anyway.
+RESOURCES=50.0 mr_tree
+RESOURCES=8.4 mr_oak
+RESOURCES=7.0 mr_ash
+RESOURCES=4.2 mr_yew
+RESOURCES=2.8 mr_heartwood
+RESOURCES=1.4 mr_bloodwood
+RESOURCES=1.2 mr_frostwood
+RESOURCES=0.2 mr_bark_fragment
+
+[REGIONTYPE r_default_grass t_grass]
+// Default grass area resources
+// Can be eaten by animals?
+RESOURCES=1.0 mr_grass
+
+
+
+
+
+[REGIONTYPE r_default]
+// Unclaimed regions.
+ON=@ENTER
+SRC.MUSIC=midi_britain1,midi_ForestA,midi_JungleA,midi_MountainA,midi_Plains,midi_Victory
+
+ON=@CLIPERIODIC
+SRC.MUSIC=midi_britain1,midi_ForestA,midi_JungleA,midi_MountainA,midi_Plains,midi_Victory
+
+[REGIONTYPE r_brit t_rock]
+// Brit
+RESOURCES=40.0 mr_nothing
+RESOURCES=30.0 mr_iron
+
+ON=@ENTER
+SRC.MESSAGE Welcome to Britain <SRC.NAME>!
+SRC.MESSAGE Lord British Guards are here to protect you!
+SRC.MUSIC=midi_britain1,midi_britain2
+
+ON=@CLIPERIODIC
+SRC.MUSIC=midi_britain1,midi_britain2
+
+[REGIONTYPE r_brit_castle]
+// Lord brit castle.
+ON=@ENTER
+SRC.MUSIC=midi_LBCastle
+
+ON=@CLIPERIODIC
+SRC.MUSIC=midi_LBCastle
+
+[REGIONTYPE r_guard_tower]
+// Guard tower.
+ON=@ENTER
+SRC.MUSIC=midi_ForestA
+
+ON=@CLIPERIODIC
+SRC.MUSIC=midi_ForestA
+
+[REGIONTYPE r_black_castle]
+// Lord Blackthorne's Castle
+ON=@ENTER
+SRC.MUSIC=midi_BtCastle
+
+ON=@CLIPERIODIC
+SRC.MUSIC=midi_BtCastle
+
+[REGIONTYPE r_bucs_den]
+// Bucs den
+ON=@ENTER
+IF <SRC.KILLS> > 5
+SRC.MESSAGE Welcome to Bucs Den <SRC.NAME> You are a murderer and you feel at home here
+SRC.MUSIC=midi_BucsDen
+RETURN 0
+ELSE
+SRC.MUSIC=midi_BucsDen
+ENDIF
+
+ON=@CLIPERIODIC
+SRC.MUSIC=midi_BucsDen
+
+[REGIONTYPE r_spooky t_rock]
+// Spooky outdoor area.
+RESOURCES=20.0 mr_nothing
+RESOURCES=30.0 mr_iron
+RESOURCES=5.0 mr_shadow
+
+ON=@ENTER
+SRC.MUSIC=midi_Approach
+
+ON=@CLIPERIODIC
+SRC.MUSIC=midi_Approach
+
+[REGIONTYPE r_dungeon t_rock]
+// Dungeon sounds same day or night.
+// Shadow ore is only found here.
+RESOURCES=20.0 mr_nothing
+RESOURCES=30.0 mr_iron
+RESOURCES=5.0 mr_shadow
+
+ON=@REGPERIODIC
+src.SFX={021f,1,0243,1,0244,1,0245,1}
+
+[REGIONTYPE r_plains]
+// Plains night and day.
+ON=@REGPERIODIC
+src.SFX={0a,1,0b,1}
+
+[REGIONTYPE r_forests]
+// Forest Day and night.
+
+ON=@REGPERIODIC
+IF <src.sector.ISNIGHTTIME>
+src.SFX={00,2,01,2,02,2,07d,1}
+ELSE
+src.SFX={08,10,09,10,0219,1,07d,1}
+ENDIF
+
+[REGIONTYPE r_jungle]
+// Jungle Day and night.
+ON=@REGPERIODIC
+IF <src.sector.ISNIGHTTIME>
+src.SFX={0c,2,0d,2,0b3,1}
+ELSE
+src.SFX={03,2,04,2,05,2,0b3,1}
+ENDIF
+
+[REGIONTYPE r_swamp t_rock]
+// Swamp Day and night.
+// Never anything to mine here.
+ON=@REGPERIODIC
+src.SFX={0e,10,0f,10,022,1,023,1,024,1,0267,1}
+
+[REGIONTYPE r_graveyards]
+// Creepy sounds day or night.
+
+[REGIONTYPE r_ruins]
+// Creepy sounds day or night.
+
+[REGIONTYPE r_goblin_camp]
+
+[REGIONTYPE r_dungeon_abyss]
+[REGIONTYPE r_dungeon_bedlam]
+[REGIONTYPE r_dungeon_bedlam]
+[REGIONTYPE r_dungeon_blighted_grove]
+[REGIONTYPE r_dungeon_destard]
+[REGIONTYPE r_dungeon_doom]
+[REGIONTYPE r_dungeon_exodus]
+[REGIONTYPE r_dungeon_fire]
+[REGIONTYPE r_dungeon_khaldun]
+[REGIONTYPE r_dungeon_labyrinth]
+[REGIONTYPE r_dungeon_paroxysmus]
+[REGIONTYPE r_dungeon_prism_of_light]
+[REGIONTYPE r_dungeon_terathan_keep]
+[REGIONTYPE r_dungeon_twisted_weald]
+
+[EOF]
+

@@ -1,0 +1,1968 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 28, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0980]
+DEFNAME=i_curtain_red
+DYE=1
+FLIP=1
+WEIGHT=12.0
+RESOURCES=10 i_cloth,1 i_ingot_gold
+CATEGORY=Decoration - Curtains
+SUBSECTION=Curtains
+DESCRIPTION=Red Curtain Parts
+DUPELIST=0981,0982,0983,0984,0985,0986,0987,0988,0989,098a,098b,03ed8,03ed9,03eda,03edb
+
+[ITEMDEF 0981]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 0982]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 0983]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 0984]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 0985]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 0986]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 0987]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 0988]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 0989]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 098a]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 098b]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 0eaa]
+DEFNAME=i_tapestry
+FLIP=1
+WEIGHT=8
+RESOURCES=1 i_cloth_bolt, 2 i_dyes, 1 i_log, 1 i_rope
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 01 (01/02) (N)
+DUPELIST=0eab
+
+[ITEMDEF 0eab]
+DUPEITEM=0eaa
+DESCRIPTION=Tapestry 01 (02/02) (N)
+
+[ITEMDEF 0eac]
+DEFNAME=i_tapestry_2
+FLIP=1
+WEIGHT=8
+RESOURCES=1 i_cloth_bolt, 2 i_dyes, 1 i_log, 1 i_rope
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 02 (01/02) (N)
+DUPELIST=0ead
+
+[ITEMDEF 0ead]
+DUPEITEM=0eac
+DESCRIPTION=Tapestry 02 (02/02) (N)
+
+[ITEMDEF 0eae]
+DEFNAME=i_tapestry_3
+FLIP=1
+WEIGHT=8
+RESOURCES=1 i_cloth_bolt, 2 i_dyes, 1 i_log, 1 i_rope
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 03 (01/02) (W)
+DUPELIST=0eaf
+
+[ITEMDEF 0eaf]
+DUPEITEM=0eae
+DESCRIPTION=Tapestry 03 (02/02) (W)
+
+[ITEMDEF 0fd5]
+DEFNAME=i_tapestry_4_n
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 04
+DUPELIST=0fd6,0fd7,0fd8
+
+[ITEMDEF 0fd6]
+//tapestry 4
+DUPEITEM=0fd5
+
+[ITEMDEF 0fd7]
+DEFNAME=i_tapestry_4_w
+DUPEITEM=0fd5
+
+[ITEMDEF 0fd8]
+//tapestry 4
+DUPEITEM=0fd5
+
+[ITEMDEF 0fd9]
+DEFNAME=i_tapestry_5_n
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 05
+DUPELIST=0fda,0fdb,0fdc
+
+[ITEMDEF 0fda]
+//tapestry 5
+DUPEITEM=0fd9
+
+[ITEMDEF 0fdb]
+DEFNAME=i_tapestry_5_w
+DUPEITEM=0fd9
+
+[ITEMDEF 0fdc]
+//tapestry 5
+DUPEITEM=0fd9
+
+[ITEMDEF 0fdd]
+DEFNAME=i_tapestry_6_n
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 06
+DUPELIST=0fde,0fdf,0fe0
+
+[ITEMDEF 0fde]
+//tapestry 6
+DUPEITEM=0fdd
+
+[ITEMDEF 0fdf]
+DEFNAME=i_tapestry_6_w
+DUPEITEM=0fdd
+
+[ITEMDEF 0fe0]
+//tapestry 6
+DUPEITEM=0fdd
+
+[ITEMDEF 0fe1]
+DEFNAME=i_tapestry_7_n
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Tapestry 07
+DUPELIST=0fe2,0fe3,0fe4
+
+[ITEMDEF 0fe2]
+//tapestry 7
+DUPEITEM=0fe1
+
+[ITEMDEF 0fe3]
+DEFNAME=i_tapestry_7_w
+DUPEITEM=0fe1
+
+[ITEMDEF 0fe4]
+//tapestry 7
+DUPEITEM=0fe1
+
+[ITEMDEF 012da]
+DEFNAME=i_curtain_long_animated
+NAME=long curtain
+DYE=1
+FLIP=1
+WEIGHT=10.0
+RESOURCES=10 i_cloth
+CATEGORY=Decoration - Curtains
+SUBSECTION=Curtain
+DESCRIPTION=Long Curtain (animated)
+DUPELIST=012db,012dc,012dd,012de,012df,012e0,012e1,012e5,012e6,012e7,012e8,012e9,012ea,012eb,012ec
+
+[ITEMDEF 012db]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012dc]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012dd]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012de]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animated)
+
+[ITEMDEF 012df]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e0]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e1]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e2]
+DEFNAME=i_curtain_sash
+DYE=1
+FLIP=1
+WEIGHT=10.0
+RESOURCES=10 i_cloth
+CATEGORY=Decoration - Curtains
+SUBSECTION=Curtain
+DESCRIPTION=Curtain Sash
+DUPELIST=012e3,012e4,012e3,012ed
+
+[ITEMDEF 012e3]
+//Curtain Sash
+DUPEITEM=012e2
+
+[ITEMDEF 012e4]
+//Curtain Sash
+DUPEITEM=012e2
+
+[ITEMDEF 012e5]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animated)
+
+[ITEMDEF 012e6]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e7]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e8]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012e9]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animated)
+
+[ITEMDEF 012ea]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012eb]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012ec]
+DUPEITEM=012da
+DESCRIPTION=Long Curtain (animation frame)
+
+[ITEMDEF 012ed]
+//Curtain Sash
+DUPEITEM=012e2
+
+[ITEMDEF 0154e]
+DEFNAME=i_curtain_freestanding
+FLIP=1
+WEIGHT=6
+RESOURCES=3 i_ingot_iron, 8 i_cloth
+CATEGORY=Decoration - Curtains
+SUBSECTION=Single Red
+DESCRIPTION=@
+DUPELIST=0154f,01557
+
+[ITEMDEF 0154f]
+//curtains
+DUPEITEM=0154e
+
+[ITEMDEF 01557]
+//curtain
+DUPEITEM=0154e
+
+[ITEMDEF 01586]
+DEFNAME=i_banner_1_part_1
+FLIP=1
+WEIGHT=3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 01
+DUPELIST=01587,01588
+
+[ITEMDEF 01587]
+DUPEITEM=01586
+DEFNAME=i_banner_1_part_2
+
+[ITEMDEF 01588]
+DUPEITEM=01586
+DEFNAME=i_banner_1_part_3
+
+[ITEMDEF 01589]
+DEFNAME=i_banner_2_part_1
+FLIP=1
+WEIGHT=3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 02
+DUPELIST=0158a,0158b
+
+[ITEMDEF 0158a]
+DUPEITEM=01589
+DEFNAME=i_banner_2_part_2
+
+[ITEMDEF 0158b]
+DUPEITEM=01589
+DEFNAME=i_banner_2_part_3
+
+[ITEMDEF 0158c]
+DEFNAME=i_banner_3_part_1
+FLIP=1
+WEIGHT=3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 03
+DUPELIST=0158d,0158e
+
+[ITEMDEF 0158d]
+DUPEITEM=0158c
+DEFNAME=i_banner_3_part_2
+
+[ITEMDEF 0158e]
+DUPEITEM=0158c
+DEFNAME=i_banner_3_part_3
+
+[ITEMDEF 0158f]
+DEFNAME=i_banner_hanger_ne
+WEIGHT=1
+RESOURCES=1 i_board, 1 i_nails
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner Hanger
+
+[ITEMDEF 01590]
+DEFNAME=i_banner_4_part_1
+FLIP=1
+WEIGHT=3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 04
+DUPELIST=01591
+
+[ITEMDEF 01591]
+DUPEITEM=01590
+DEFNAME=i_banner_4_part_2
+
+[ITEMDEF 01592]
+DEFNAME=i_banner_5_part_1
+FLIP=1
+WEIGHT=3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 05
+DUPELIST=01593
+
+[ITEMDEF 01593]
+DUPEITEM=01592
+DEFNAME=i_banner_5_part_2
+
+[ITEMDEF 01594]
+DEFNAME=i_banner_6_part_1
+FLIP=1
+WEIGHT=3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 06
+DUPELIST=01595
+
+[ITEMDEF 01595]
+DUPEITEM=01594
+DEFNAME=i_banner_6_part_2
+
+[ITEMDEF 01596]
+DEFNAME=i_banner_6_part_3
+FLIP=1
+WEIGHT=3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 06
+DUPELIST=01597
+
+[ITEMDEF 01597]
+DUPEITEM=01596
+DEFNAME=i_banner_6_part_4
+
+[ITEMDEF 01598]
+DEFNAME=i_banner_7_part_1
+FLIP=1
+WEIGHT=3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 07
+
+[ITEMDEF 01599]
+DEFNAME=i_banner_8_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 08
+
+[ITEMDEF 0159a]
+DEFNAME=i_banner_8_part_2
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 08
+
+[ITEMDEF 0159b]
+DEFNAME=i_banner_7_part_2
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 07
+
+[ITEMDEF 0159c]
+DEFNAME=i_banner_7_part_3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 07
+
+[ITEMDEF 0159d]
+DEFNAME=i_banner_8_part_3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 08
+
+[ITEMDEF 0159e]
+DEFNAME=i_curtain_banner_nw
+FLIP=1
+WEIGHT=3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+CATEGORY=Decoration - Curtains
+SUBSECTION=Single White
+DESCRIPTION=@
+DUPELIST=0159f
+
+[ITEMDEF 0159f]
+DEFNAME=i_curtain_banner_ne
+DUPEITEM=0159e
+
+[ITEMDEF 015a0]
+DEFNAME=i_banner_9_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 09
+
+[ITEMDEF 015a1]
+DEFNAME=i_banner_9_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 09
+
+[ITEMDEF 015a2]
+DEFNAME=i_banner_10_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 10
+
+[ITEMDEF 015a3]
+DEFNAME=i_banner_10_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 10
+
+[ITEMDEF 015a4]
+DEFNAME=i_banner_11_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 11
+
+[ITEMDEF 015a5]
+DEFNAME=i_banner_11_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 11
+
+[ITEMDEF 015a6]
+DEFNAME=i_banner_12_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 12
+
+[ITEMDEF 015a7]
+DEFNAME=i_banner_12_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 12
+
+[ITEMDEF 015a8]
+DEFNAME=i_banner_13_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 13
+
+[ITEMDEF 015a9]
+DEFNAME=i_banner_13_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 13
+
+[ITEMDEF 015aa]
+DEFNAME=i_banner_14_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 14
+
+[ITEMDEF 015ab]
+DEFNAME=i_banner_14_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 14
+
+[ITEMDEF 015ac]
+DEFNAME=i_banner_15_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 15
+
+[ITEMDEF 015ad]
+DEFNAME=i_banner_15_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 15
+
+[ITEMDEF 015ae]
+DEFNAME=i_banner_post_1_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 01
+
+[ITEMDEF 015af]
+DEFNAME=i_banner_post_1_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 01
+
+[ITEMDEF 015b0]
+DEFNAME=i_banner_post_2_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 02
+
+[ITEMDEF 015b1]
+DEFNAME=i_banner_post_2_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 02
+
+[ITEMDEF 015b2]
+DEFNAME=i_banner_post_3_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 03
+
+[ITEMDEF 015b3]
+DEFNAME=i_banner_post_3_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 03
+
+[ITEMDEF 015b4]
+DEFNAME=i_banner_post_4_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 04
+
+[ITEMDEF 015b5]
+DEFNAME=i_banner_post_4_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 04
+
+[ITEMDEF 015b6]
+DEFNAME=i_banner_post_5_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 05
+
+[ITEMDEF 015b7]
+DEFNAME=i_banner_post_5_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 05
+
+[ITEMDEF 015b8]
+DEFNAME=i_banner_post_6_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 06
+
+[ITEMDEF 015b9]
+DEFNAME=i_banner_post_6_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 06
+
+[ITEMDEF 015ba]
+DEFNAME=i_banner_post_7_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 07
+
+[ITEMDEF 015bb]
+DEFNAME=i_banner_post_7_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 07
+
+[ITEMDEF 015bc]
+DEFNAME=i_banner_post_8_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 08
+
+[ITEMDEF 015bd]
+DEFNAME=i_banner_post_8_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 08
+
+[ITEMDEF 015be]
+DEFNAME=i_banner_post_9_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 09
+
+[ITEMDEF 015bf]
+DEFNAME=i_banner_post_9_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 09
+
+[ITEMDEF 015c0]
+DEFNAME=i_banner_post_10_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 10
+
+[ITEMDEF 015c1]
+DEFNAME=i_banner_post_10_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 10
+
+[ITEMDEF 015c2]
+DEFNAME=i_banner_post_11_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 11
+
+[ITEMDEF 015c3]
+DEFNAME=i_banner_post_11_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 11
+
+[ITEMDEF 015c4]
+DEFNAME=i_banner_post_12_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 12
+
+[ITEMDEF 015c5]
+DEFNAME=i_banner_post_12_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 12
+
+[ITEMDEF 015c6]
+DEFNAME=i_banner_post_13_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 13
+
+[ITEMDEF 015c7]
+DEFNAME=i_banner_post_13_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 13
+
+[ITEMDEF 015c8]
+DEFNAME=i_banner_post_14_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 14
+
+[ITEMDEF 015c9]
+DEFNAME=i_banner_post_14_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 14
+
+[ITEMDEF 015ca]
+DEFNAME=i_banner_post_15_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 15
+
+[ITEMDEF 015cb]
+DEFNAME=i_banner_post_15_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 15
+
+[ITEMDEF 015cc]
+DEFNAME=i_banner_post_16_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 16
+
+[ITEMDEF 015cd]
+DEFNAME=i_banner_post_16_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 16
+
+[ITEMDEF 015ce]
+DEFNAME=i_banner_post_17_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 17
+
+[ITEMDEF 015cf]
+DEFNAME=i_banner_post_17_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 17
+
+[ITEMDEF 015d0]
+DEFNAME=i_banner_post_18_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 18
+
+[ITEMDEF 015d1]
+DEFNAME=i_banner_post_18_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 18
+
+[ITEMDEF 015d2]
+DEFNAME=i_banner_post_19_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 19
+
+[ITEMDEF 015d3]
+DEFNAME=i_banner_post_19_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 19
+
+[ITEMDEF 015d4]
+DEFNAME=i_banner_post_20_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 20
+
+[ITEMDEF 015d5]
+DEFNAME=i_banner_post_20_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 20
+
+[ITEMDEF 015d6]
+DEFNAME=i_banner_post_21_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 21
+
+[ITEMDEF 015d7]
+DEFNAME=i_banner_post_21_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 21
+
+[ITEMDEF 015d8]
+DEFNAME=i_banner_post_22_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 22
+
+[ITEMDEF 015d9]
+DEFNAME=i_banner_post_22_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 22
+
+[ITEMDEF 015da]
+DEFNAME=i_banner_post_23_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 23
+
+[ITEMDEF 015db]
+DEFNAME=i_banner_post_23_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 23
+
+[ITEMDEF 015dc]
+DEFNAME=i_banner_post_24_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 24
+
+[ITEMDEF 015dd]
+DEFNAME=i_banner_post_24_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 24
+
+[ITEMDEF 015de]
+DEFNAME=i_banner_post_25_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 25
+
+[ITEMDEF 015df]
+DEFNAME=i_banner_post_25_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 25
+
+[ITEMDEF 015e0]
+DEFNAME=i_banner_post_26_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 26
+
+[ITEMDEF 015e1]
+DEFNAME=i_banner_post_26_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 26
+
+[ITEMDEF 015e2]
+DEFNAME=i_banner_post_27_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 27
+
+[ITEMDEF 015e3]
+DEFNAME=i_banner_post_27_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 27
+
+[ITEMDEF 015e4]
+DEFNAME=i_banner_post_28_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 28
+
+[ITEMDEF 015e5]
+DEFNAME=i_banner_post_28_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 28
+
+[ITEMDEF 015e6]
+DEFNAME=i_banner_post_29_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 29
+
+[ITEMDEF 015e7]
+DEFNAME=i_banner_post_29_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 29
+
+[ITEMDEF 015e8]
+DEFNAME=i_banner_post_30_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 30
+
+[ITEMDEF 015e9]
+DEFNAME=i_banner_post_30_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 30
+
+[ITEMDEF 015ea]
+DEFNAME=i_banner_post_31_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 31
+
+[ITEMDEF 015eb]
+DEFNAME=i_banner_post_31_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 31
+
+[ITEMDEF 015ec]
+DEFNAME=i_banner_post_32_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 32
+
+[ITEMDEF 015ed]
+DEFNAME=i_banner_post_32_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 32
+
+[ITEMDEF 015ee]
+DEFNAME=i_banner_post_33_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 33
+
+[ITEMDEF 015ef]
+DEFNAME=i_banner_post_33_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 33
+
+[ITEMDEF 015f0]
+DEFNAME=i_banner_post_34_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 34
+
+[ITEMDEF 015f1]
+DEFNAME=i_banner_post_34_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 34
+
+[ITEMDEF 015f2]
+DEFNAME=i_banner_post_35_ne
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 35
+
+[ITEMDEF 015f3]
+DEFNAME=i_banner_post_35_nw
+RESOURCES=1 i_log, 1 i_ingot_bronze, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 35
+
+[ITEMDEF 015f4]
+DEFNAME=i_banner_post_36_ne
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 36
+
+[ITEMDEF 015f5]
+DEFNAME=i_banner_post_36_nw
+RESOURCES=1 i_log, 1 i_ingot_iron, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Post Banners
+DESCRIPTION=Post Banner 36
+
+[ITEMDEF 015f6]
+DEFNAME=i_plain_white_curtain
+RESOURCES=1 i_cloth
+WEIGHT=1
+CATEGORY=Decoration - Curtains
+SUBSECTION=Small White
+DESCRIPTION=@
+DUPELIST=015f7
+
+[ITEMDEF 015f7]
+//curtain
+DUPEITEM=015f6
+
+
+[ITEMDEF 0160d]
+DEFNAME=i_single_red_curtain
+FLIP=1
+WEIGHT=2
+RESOURCES=2 i_cloth, 1 i_thread
+CATEGORY=Decoration - Curtains
+SUBSECTION=Single Red
+DESCRIPTION=@
+DUPELIST=0160e
+
+[ITEMDEF 0160e]
+//curtain
+DUPEITEM=0160d
+
+[ITEMDEF 0160f]
+DEFNAME=i_banner_16_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 16
+
+[ITEMDEF 01610]
+DEFNAME=i_banner_16_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 16
+
+[ITEMDEF 01611]
+DEFNAME=i_banner_17_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 17
+
+[ITEMDEF 01612]
+DEFNAME=i_banner_17_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 17
+
+[ITEMDEF 01613]
+DEFNAME=i_banner_18_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 18
+
+[ITEMDEF 01614]
+DEFNAME=i_banner_18_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 18
+
+[ITEMDEF 01615]
+DEFNAME=i_banner_19_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 19
+
+[ITEMDEF 01616]
+DEFNAME=i_banner_19_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 19
+
+[ITEMDEF 01617]
+DEFNAME=i_banner_20_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 20
+
+[ITEMDEF 01618]
+DEFNAME=i_banner_20_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 20
+
+[ITEMDEF 01619]
+DEFNAME=i_banner_21_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 21
+
+[ITEMDEF 0161a]
+DEFNAME=i_banner_21_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 21
+
+[ITEMDEF 0161b]
+DEFNAME=i_banner_22_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 22
+
+[ITEMDEF 0161c]
+DEFNAME=i_banner_22_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 22
+
+[ITEMDEF 0161d]
+DEFNAME=i_banner_23_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 23
+
+[ITEMDEF 0161e]
+DEFNAME=i_banner_23_part_2
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 23
+
+[ITEMDEF 0161f]
+DEFNAME=i_banner_23_part_3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 23
+
+[ITEMDEF 01620]
+DEFNAME=i_banner_24_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 24
+
+[ITEMDEF 01621]
+DEFNAME=i_banner_24_part_2
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 24
+
+[ITEMDEF 01622]
+DEFNAME=i_banner_24_part_3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 24
+
+[ITEMDEF 01623]
+DEFNAME=i_banner_25_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 25
+
+[ITEMDEF 01624]
+DEFNAME=i_banner_25_part_2
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 25
+
+[ITEMDEF 01625]
+DEFNAME=i_banner_25_part_3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 25
+
+[ITEMDEF 01626]
+DEFNAME=i_banner_hanger_nw
+RESOURCES=1 i_board, 1 i_nails
+WEIGHT=1
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner Hanger
+
+[ITEMDEF 01627]
+DEFNAME=i_banner_26_part_1
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 26
+
+[ITEMDEF 01628]
+DEFNAME=i_banner_26_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 26
+
+[ITEMDEF 01629]
+DEFNAME=i_banner_27_part_1
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 27
+
+[ITEMDEF 0162a]
+DEFNAME=i_banner_27_part_2
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 27
+
+[ITEMDEF 0162b]
+DEFNAME=i_banner_28_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 28
+
+[ITEMDEF 0162c]
+DEFNAME=i_banner_28_part_2
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 28
+
+[ITEMDEF 0162d]
+DEFNAME=i_banner_28_part_3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 28
+
+[ITEMDEF 0162e]
+DEFNAME=i_banner_29_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 29
+
+[ITEMDEF 0162f]
+DEFNAME=i_banner_30_part_1
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 30
+
+[ITEMDEF 01630]
+DEFNAME=i_banner_30_part_2
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 30
+
+[ITEMDEF 01631]
+DEFNAME=i_banner_29_part_2
+RESOURCES=1 i_log, 1 i_cloth, 1 i_thread
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 29
+
+[ITEMDEF 01632]
+DEFNAME=i_banner_29_part_3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 29
+
+[ITEMDEF 01633]
+DEFNAME=i_banner_30_part_3
+RESOURCES=1 i_log, 1 i_board, 1 i_cloth, 1 i_thread, 1 i_nails
+WEIGHT=3
+CATEGORY=Decoration - Banners & Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Banner 30
+
+[ITEMDEF 01638]
+DEFNAME=i_curtain_plain_red
+FLIP=1
+WEIGHT=1
+RESOURCES=1 i_cloth
+CATEGORY=Decoration - Curtains
+SUBSECTION=Small Red
+DESCRIPTION=@
+DUPELIST=01639
+
+[ITEMDEF 01639]
+//curtain
+DUPEITEM=01638
+
+[ITEMDEF 0234e]
+DEFNAME=i_tapestry_sosaria
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Sosaria Tapestry
+DUPELIST=0234f
+
+[ITEMDEF 0234f]
+//sosaria tapestry
+DUPEITEM=0234e
+
+[ITEMDEF 02409]
+DEFNAME=i_fan_small
+TYPE=t_normal
+FLIP=1
+WEIGHT=6.0
+RESOURCES=1 i_log_bamboo,4 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Japanese
+DESCRIPTION=Fan (small)
+DUPELIST=0240a
+
+[ITEMDEF 0240a]
+//fan (small)
+DUPEITEM=02409
+
+[ITEMDEF 0240b]
+DEFNAME=i_fan_large
+TYPE=t_normal
+FLIP=1
+WEIGHT=10.0
+RESOURCES=1 i_log_bamboo,8 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Japanese
+DESCRIPTION=Fan (large)
+DUPELIST=0240c
+
+[ITEMDEF 0240c]
+//fan (large)
+DUPEITEM=0240b
+
+[ITEMDEF 0240d]
+DEFNAME=i_painting_japan1
+TYPE=t_normal
+FLIP=1
+WEIGHT=6.0
+RESOURCES=1 i_log_bamboo,4 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Japanese
+DESCRIPTION=Painting 1
+DUPELIST=0240e
+
+[ITEMDEF 0240e]
+//Painting 1
+DUPEITEM=0240d
+
+[ITEMDEF 0240f]
+DEFNAME=i_painting_japan2
+TYPE=t_normal
+FLIP=1
+WEIGHT=6.0
+RESOURCES=1 i_log_bamboo,4 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Japanese
+DESCRIPTION=Painting 2
+DUPELIST=02410
+
+[ITEMDEF 02410]
+//Painting 2
+DUPEITEM=0240f
+
+[ITEMDEF 02411]
+DEFNAME=i_painting_japan3
+TYPE=t_normal
+FLIP=1
+WEIGHT=6.0
+RESOURCES=1 i_log_bamboo,4 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Japanese
+DESCRIPTION=Painting 3
+DUPELIST=02412
+
+[ITEMDEF 02412]
+//Painting 3
+DUPEITEM=02411
+
+[ITEMDEF 02413]
+DEFNAME=i_painting_japan4
+TYPE=t_normal
+FLIP=1
+WEIGHT=6.0
+RESOURCES=1 i_log_bamboo,4 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Japanese
+DESCRIPTION=Painting 4
+DUPELIST=02414
+
+[ITEMDEF 02414]
+//Painting 4
+DUPEITEM=02413
+
+[ITEMDEF 02415]
+DEFNAME=i_painting_japan5
+TYPE=t_normal
+FLIP=1
+WEIGHT=6.0
+RESOURCES=1 i_log_bamboo,4 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Japanese
+DESCRIPTION=Painting 5
+DUPELIST=02416
+
+[ITEMDEF 02416]
+//Painting 5
+DUPEITEM=02415
+
+[ITEMDEF 02417]
+DEFNAME=i_painting_japan6
+TYPE=t_normal
+FLIP=1
+WEIGHT=6.0
+RESOURCES=1 i_log_bamboo,4 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Japanese
+DESCRIPTION=Painting 6
+DUPELIST=02418
+
+[ITEMDEF 02418]
+//Painting 6
+DUPEITEM=02417
+
+[ITEMDEF 02886]
+DEFNAME=i_wall_panel
+FLIP=1
+WEIGHT=26.4
+RESOURCES=12 i_log,24 i_paper
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Japanese
+DESCRIPTION=Wall Panel
+DUPELIST=02887
+
+[ITEMDEF 02887]
+//wall panel
+DUPEITEM=02886
+
+[ITEMDEF 02d6f]
+DEFNAME=i_tapestry_elven_1
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Elven Tapestry 1
+DUPELIST=02d70
+
+[ITEMDEF 02d70]
+//elven tapestry 1
+DUPEITEM=02d6f
+
+[ITEMDEF 02d71]
+DEFNAME=i_tapestry_elven_2
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Elven Tapestry 2
+DUPELIST=02d72
+
+[ITEMDEF 02d72]
+//elven tapestry 2
+DUPEITEM=02d71
+
+[ITEMDEF 02d73]
+DEFNAME=i_tapestry_elven_3
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Elven Tapestry 3
+DUPELIST=02d74
+
+[ITEMDEF 02d74]
+//elven tapestry 3
+DUPEITEM=02d73
+
+[ITEMDEF 02ff2]
+DEFNAME=i_tapestry_colorful
+FLIP=1
+WEIGHT=54.0
+RESOURCES=1 i_cloth_bolt,2 i_dyes,1 i_board,1 i_rope
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tapestries
+DESCRIPTION=Colorful Tapestry
+DUPELIST=02ff3
+
+[ITEMDEF 02ff3]
+//colorful tapestry
+DUPEITEM=02ff2
+
+[ITEMDEF 02fff]
+DEFNAME=i_banner_tattered_dark
+WEIGHT=25.0
+FLIP=1
+RESOURCES=1 i_log,25 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tattered
+DESCRIPTION=Large Tattered Banner (dark)
+DUPELIST=03000
+
+[ITEMDEF 03000]
+//Large Tattered Banner (dark)
+DUPEITEM=02fff
+
+[ITEMDEF 03bb6]
+DEFNAME=i_tapestry_map
+NAME=map of the world
+WEIGHT=5.0
+RESOURCES=1 i_log,5 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tattered
+DESCRIPTION=Tapestry of map 0
+DUPELIST=03bb7
+ON=@Create
+   NAME=Map of <SERV.SERVNAME>
+
+[ITEMDEF 03bb7]
+//Tapestry of map 0
+DUPEITEM=03bb6
+
+
+[ITEMDEF 03d9c]
+DEFNAME=i_curtain_long
+NAME=long curtain
+DYE=1
+FLIP=1
+WEIGHT=10.0
+RESOURCES=10 i_cloth
+CATEGORY=Decoration - Curtains
+SUBSECTION=Curtains
+DESCRIPTION=Long Curtain
+DUPELIST=03d9d,03d9e,03d9f,03da0,03da1,03da3,03da4,03da5,03da6,03da7,03da8,03dab,03dac,03dad,03dae
+
+[ITEMDEF 03d9d]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03d9e]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03d9f]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03da0]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03da1]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03da3]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03da4]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03da5]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03da6]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03da7]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03da8]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03dab]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03dac]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03dad]
+//Long Curtain
+DUPEITEM=03d9c
+
+[ITEMDEF 03dae]
+//Long Curtain
+DUPEITEM=03d9c
+
+
+[ITEMDEF 03ed8]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 03ed9]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 03eda]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 03edb]
+//Red curtain
+DUPEITEM=0980
+
+[ITEMDEF 049a0]
+DEFNAME=i_tapestry_sacrifice
+NAME=sacrifice tapestry
+FLIP=1
+WEIGHT=5.0
+RESOURCES=10 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 51.0,t_sewing_kit
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Virtue
+DESCRIPTION=Sacrifice Tapestry
+DUPELIST=049b4
+
+[ITEMDEF 049a1]
+DEFNAME=i_tapestry_spirituality
+NAME=spirituality tapestry
+FLIP=1
+WEIGHT=5.0
+RESOURCES=10 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 51.0,t_sewing_kit
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Virtue
+DESCRIPTION=Spirituality Tapestry
+DUPELIST=049b9
+
+[ITEMDEF 049a2]
+DEFNAME=i_tapestry_honesty
+NAME=honesty tapestry
+FLIP=1
+WEIGHT=5.0
+RESOURCES=10 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 51.0,t_sewing_kit
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Virtue
+DESCRIPTION=Honesty Tapestry
+DUPELIST=049bf
+
+[ITEMDEF 049a3]
+DEFNAME=i_tapestry_humility
+NAME=humility tapestry
+FLIP=1
+WEIGHT=5.0
+RESOURCES=10 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 51.0,t_sewing_kit
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Virtue
+DESCRIPTION=Humility Tapestry
+DUPELIST=049c0
+
+[ITEMDEF 049a7]
+DEFNAME=i_tapestry_justice
+NAME=justice tapestry
+FLIP=1
+WEIGHT=5.0
+RESOURCES=10 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 51.0,t_sewing_kit
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Virtue
+DESCRIPTION=Justice Tapestry
+DUPELIST=049ba
+
+[ITEMDEF 049a8]
+DEFNAME=i_tapestry_compassion
+NAME=compassion tapestry
+FLIP=1
+WEIGHT=5.0
+RESOURCES=10 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 51.0,t_sewing_kit
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Virtue
+DESCRIPTION=Compassion Tapestry
+DUPELIST=049b5
+
+[ITEMDEF 049b2]
+DEFNAME=i_tapestry_honor
+NAME=honor tapestry
+FLIP=1
+WEIGHT=5.0
+RESOURCES=10 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 51.0,t_sewing_kit
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Virtue
+DESCRIPTION=Honor Tapestry
+DUPELIST=049be
+
+[ITEMDEF 049b3]
+DEFNAME=i_tapestry_valor
+NAME=valor tapestry
+FLIP=1
+WEIGHT=5.0
+RESOURCES=10 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 51.0,t_sewing_kit
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Virtue
+DESCRIPTION=Valor Tapestry
+DUPELIST=049bb
+
+[ITEMDEF 049b4]
+//sacrifice tapestry
+DUPEITEM=049a0
+
+[ITEMDEF 049b5]
+//compassion tapestry
+DUPEITEM=049a8
+
+[ITEMDEF 049b9]
+//spirituality tapestry
+DUPEITEM=049a1
+
+[ITEMDEF 049ba]
+//justice tapestry
+DUPEITEM=049a7
+
+[ITEMDEF 049bb]
+//valor tapestry
+DUPEITEM=049b3
+
+[ITEMDEF 049be]
+//honor tapestry
+DUPEITEM=049b2
+
+[ITEMDEF 049bf]
+//honesty tapestry
+DUPEITEM=049a2
+
+[ITEMDEF 049c0]
+//humility tapestry
+DUPEITEM=049a3
+
+
+[EOF]
