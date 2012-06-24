@@ -1,0 +1,130 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, April 2, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 02779]
+DEFNAME=i_platemail_mempo
+NAME=platemail mempo
+TYPE=t_armor
+FLIP=1
+WEIGHT=3.0
+REQSTR=50
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 80.0
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Platemail Samurai Armor
+DESCRIPTION=Platemail Mempo
+TAG.ResPhysical=5
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+DUPELIST=027c4
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027c4]
+DUPEITEM=02779
+
+[ITEMDEF 0277d]
+DEFNAME=i_platemail_do
+NAME=platemail do
+TYPE=t_armor
+FLIP=1
+WEIGHT=10.0
+REQSTR=85
+RESOURCES=28 i_ingot_iron
+SKILLMAKE=Blacksmithing 87.0
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Platemail Samurai Armor
+DESCRIPTION=Platemail Do
+TAG.ResPhysical=5
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+DUPELIST=027c8
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027c8]
+DUPEITEM=0277d
+
+[ITEMDEF 02780]
+DEFNAME=i_platemail_hiro_sode
+NAME=platemail hiro sode
+TYPE=t_armor
+FLIP=1
+WEIGHT=2.0
+REQSTR=75
+RESOURCES=16 i_ingot_iron
+SKILLMAKE=Blacksmithing 80.0
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Platemail Samurai Armor
+DESCRIPTION=Platemail Hiro Sode
+TAG.ResPhysical=5
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+DUPELIST=027cb
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027cb]
+DUPEITEM=02780
+
+[ITEMDEF 02788]
+DEFNAME=i_platemail_suneate
+NAME=platemail suneate
+TYPE=t_armor
+FLIP=1
+WEIGHT=7.0
+REQSTR=80
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 65.0
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Platemail Samurai Armor
+DESCRIPTION=Platemail Suneate
+TAG.ResPhysical=5
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+DUPELIST=027d3
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027d3]
+DUPEITEM=02788
+
+[ITEMDEF 0278d]
+DEFNAME=i_platemail_haidate
+NAME=platemail haidate
+TYPE=t_armor
+FLIP=1
+WEIGHT=7.0
+REQSTR=80
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 65.0
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Platemail Samurai Armor
+DESCRIPTION=Platemail Haidate
+TAG.ResPhysical=5
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+DUPELIST=027d8
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027d8]
+DUPEITEM=0278d
+
+[EOF]

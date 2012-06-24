@@ -1,0 +1,262 @@
+[TEMPLATE loot_ice_dragon]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Ice Dragon
+CONTAINER=i_backpack
+ITEM=Random_Potion
+ITEM=Random_Potion
+ITEM=i_treasure_map_lvl_4,R99 //Tattered Treasure Map Level 3
+ITEM=i_gold,{600 1400}
+
+
+
+
+[TEMPLATE loot_frost_troll]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Frost Troll
+CONTAINER=i_backpack
+ITEM=i_gold,{125 175}
+ITEM=random_jewelry
+ITEM=random_weapon
+
+[TEMPLATE loot_frost_troll_luck]
+CATEGORY=Item Templates
+SUBSECTION=Monster Special Loot Templates
+DESCRIPTION=Frost Troll
+ITEM=i_treasure_map_lvl_1
+
+
+
+
+[TEMPLATE loot_ophidian_apprentice_mage]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Ophidian Apprentice Mage
+CONTAINER=i_backpack
+ITEM=i_gold,{125 175}
+ITEM=random_scroll_low,1
+ITEM=random_reagent,10
+ITEM=random_scroll_medium,1
+
+[TEMPLATE loot_ophidian_enforcer]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Ophidian Enforcer
+CONTAINER=i_backpack
+ITEM=i_gold,{175 225}
+
+[TEMPLATE loot_ophidian_enforcer_luck]
+CATEGORY=Item Templates
+SUBSECTION=Monster Special Loot Templates
+DESCRIPTION=Ophidian Enforcer
+ITEM=i_treasure_map_lvl_1
+
+[TEMPLATE loot_ophidian_knight]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Ophidian Knight
+CONTAINER=i_backpack
+ITEM=i_gold,{550 650}
+ITEM=random_jewelry,{1 2}
+ITEM=random_potion,{1 2}
+ITEM=random_wands,{1 2}
+ITEM=random_scroll_medium,{2 3}
+
+[TEMPLATE loot_ophidian_knight_luck]
+CATEGORY=Item Templates
+SUBSECTION=Monster Special Loot Templates
+DESCRIPTION=Ophidian Knight
+ITEM=i_treasure_map_lvl_3
+
+[TEMPLATE loot_ophidian_zealot]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Ophidian Zealot
+CONTAINER=i_backpack
+ITEM=i_gold,{275 325}
+ITEM=random_reagent,{5 15}
+ITEM=random_reagent_necro,{5 15}
+ITEM=random_scroll_medium,2
+
+[TEMPLATE loot_ophidian_zealot_luck]
+CATEGORY=Item Templates
+SUBSECTION=Monster Special Loot Templates
+DESCRIPTION=Ophidian Zealot
+ITEM=i_treasure_map_lvl_2
+
+[TEMPLATE loot_ophidian_mage]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Ophidian Mage
+CONTAINER=i_backpack
+ITEM=i_gold,{50 150}
+ITEM=random_potion
+ITEM=random_potion
+ITEM=random_reagent,{ 4 6 }
+ITEM=random_reagent,{ 4 6 }
+ITEM=random_scroll
+ITEM=random_scroll
+ITEM=i_treasure_map_lvl_3,1,R99
+
+[TEMPLATE loot_ophidian_archmage]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Ophidian ArchMage
+CONTAINER=i_backpack
+ITEM=i_gold,{200 400}
+ITEM=random_potion
+ITEM=random_potion
+ITEM=random_jewel
+ITEM=random_jewel
+ITEM=i_treasure_map_lvl_1,1,R99
+
+
+
+
+
+[TEMPLATE UNDEAD_BACKPACK]
+CATEGORY=Item Templates
+SUBSECTION=Loot Templates
+DESCRIPTION=Undead Backpack
+CONTAINER=i_backpack
+ITEM={ rich_gold_pile 1 pouch_rich 1}
+ITEM={ random_potion 1 0 3 }
+
+[TEMPLATE POOR_UNDEAD_BACKPACK]
+CATEGORY=Item Templates
+SUBSECTION=Loot Templates
+DESCRIPTION=Poor Undead Backpack
+CONTAINER=i_backpack
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 5 }
+ITEM={ random_poor_magic_loot 1 0 300 }
+ITEM={ poor_gold_pile 5 0 2 }
+ITEM={ random_jewel 1 0 10 }
+
+[TEMPLATE MEAGER_UNDEAD_BACKPACK]
+CATEGORY=Item Templates
+SUBSECTION=Loot Templates
+DESCRIPTION=Meager Undead Backpack
+CONTAINER=i_backpack
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 3 }
+ITEM={ random_meager_magic_loot 1 0 150 }
+ITEM={ meager_gold_pile 4 0 1 }
+ITEM={ random_jewel 1 0 4 }
+
+[TEMPLATE AVERAGE_UNDEAD_BACKPACK]
+CATEGORY=Item Templates
+SUBSECTION=Loot Templates
+DESCRIPTION=Average Undead Backpack
+CONTAINER=i_backpack
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 0 1 }
+ITEM={ random_average_magic_loot 1 0 75 }
+ITEM=average_gold_pile
+ITEM={ random_jewel 1 0 2 }
+ITEM={ random_scroll 1 0 2 }
+ITEM={ random_reagent 1 0 2 },{ 2 5 }
+
+[TEMPLATE RICH_UNDEAD_BACKPACK]
+CATEGORY=Item Templates
+SUBSECTION=Loot Templates
+DESCRIPTION=Rich Undead Backpack
+CONTAINER=i_backpack
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 }
+ITEM={ random_rich_magic_loot 1 0 40 }
+ITEM=rich_gold_pile
+ITEM={ random_jewel 1 0 1 },{ 1 3 }
+ITEM={ random_scroll 1 0 2 }
+ITEM={ random_scroll 1 0 2 }
+ITEM={ random_reagent 1 0 2 },{ 5 20 }
+ITEM={ random_reagent 1 0 2 },{ 3 10 }
+
+[TEMPLATE FILTHY_RICH_UNDEAD_BACKPACK]
+CATEGORY=Item Templates
+SUBSECTION=Loot Templates
+DESCRIPTION=Filthy Rich Undead Backpack
+CONTAINER=i_backpack
+ITEM={ random_body_parts_1 1 random_body_parts_2 1 }
+ITEM={ random_filthy_rich_magic_loot 1 0 20 }
+ITEM=filthy_rich_gold_pile
+ITEM={ random_jewel 3 0 1 },{ 1 5 }
+ITEM={ random_scroll 1 0 2 }
+ITEM={ random_scroll 1 0 2 }
+ITEM={ random_scroll 1 0 2 }
+ITEM={ random_reagent 1 0 2 },{ 5 20 }
+ITEM={ random_reagent 1 0 2 },{ 5 20 }
+ITEM={ random_reagent 1 0 2 },{ 5 20 }
+
+[TEMPLATE loot_bone_knight]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Bone Knight
+CONTAINER=i_backpack
+ITEM=i_gold,{1 150}
+ITEM=i_shield_wood
+ITEM=i_scimitar
+ITEM=random_armor
+
+[TEMPLATE loot_bone_magi]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Bone Mage
+CONTAINER=i_backpack
+ITEM=i_gold,{50 200}
+ITEM=random_jewel
+ITEM=i_reag_bone
+ITEM=random_scroll
+ITEM=random_scroll,1,R2
+ITEM=random_average_magic_loot
+
+[TEMPLATE loot_wraith]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Wraith
+CONTAINER=i_backpack
+ITEM=i_gold,{50 100}
+ITEM=random_reagent,{4 6}
+ITEM=random_reagent,{4 6}
+
+[TEMPLATE loot_shade]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Shade
+CONTAINER=i_backpack
+ITEM=i_gold,{50 100}
+ITEM=random_reagent,{4 6}
+ITEM=random_reagent,{4 6}
+
+
+
+
+[TEMPLATE loot_predator_hellcat]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Predator Hellcat
+
+[TEMPLATE loot_slime_corrosive]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Slime (corrosive)
+ITEM=i_gold,{25 50}
+ITEM=random_jewel,1,R3
+
+[TEMPLATE loot_plague_beast]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Plague Beast
+ITEM=i_gold,{250 300}
+ITEM=random_jewel,{1 3}
+ITEM=random_armor
+CONTAINER=i_chest_metal
+ITEM=i_gold,{200 300}
+ITEM=random_jewel,{1 2},R2
+//ITEM=random_item_magic,R50
+
+[TEMPLATE loot_plague_spawn]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Plague Spawn
+ITEM=i_gold,{25 50}
+
+
+[EOF]

@@ -1,0 +1,151 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Thursday, March 10, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 01e2e]
+DEFNAME=i_dartboard
+NAME=dartboard
+TYPE=t_normal
+SKILLMAKE=Carpentry 15.7, t_carpentry
+RESOURCES=5 i_log
+WEIGHT=10
+DUPELIST=01e2f
+CATEGORY=Decoration - Furniture
+SUBSECTION=Misc
+DESCRIPTION=Dartboard
+
+[ITEMDEF 01e2f]
+DUPEITEM=01e2e
+
+[ITEMDEF 024cb]
+DEFNAME=i_shoji_screen
+NAME=shoji screen
+TYPE=t_normal
+FLIP=1
+WEIGHT=10
+RESOURCES=50 i_paper,10 i_log_bamboo
+SKILLMAKE=Carpentry 73.9,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Screens
+DESCRIPTION=Shoji Screen
+DUPELIST=024cc
+
+[ITEMDEF 024cc]
+//paper screen
+DUPEITEM=024cb
+
+[ITEMDEF 024cd]
+DEFNAME=i_shoji_screen2
+NAME=shoji screen
+TYPE=t_normal
+FLIP=1
+VALUE=130
+WEIGHT=15.0
+RESOURCES=50 i_paper,10 i_log_bamboo
+SKILLMAKE=Carpentry 73.9,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Screens
+DESCRIPTION=Shoji Screen 2
+DUPELIST=024ce,024cf
+
+[ITEMDEF 024ce]
+//shoji screen 2
+DUPEITEM=024cd
+
+[ITEMDEF 024cf]
+//shoji screen 2
+DUPEITEM=024cd
+
+[ITEMDEF 024d0]
+DEFNAME=i_bamboo_screen
+NAME=bamboo screen
+TYPE=t_normal
+FLIP=1
+WEIGHT=10
+RESOURCES=50 i_log_bamboo,10 i_string
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Screens
+DESCRIPTION=Bamboo Screen
+DUPELIST=024d2
+
+[ITEMDEF 024d1]
+//bamboo screen 1
+DUPEITEM=024d0
+
+[ITEMDEF 024d2]
+DEFNAME=i_bamboo_screen2
+NAME=bamboo screen
+TYPE=t_normal
+FLIP=1
+WEIGHT=10
+RESOURCES=50 i_log_bamboo,10 i_string
+SKILLMAKE=Carpentry 80.0,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Screens
+DESCRIPTION=Bamboo Screen 2
+DUPELIST=024d3,024d4
+
+[ITEMDEF 024d3]
+//bamboo screen 2
+DUPEITEM=024d2
+
+[ITEMDEF 024d4]
+//bamboo screen 2
+DUPEITEM=024d2
+
+[ITEMDEF 02ff4]
+DEFNAME=i_parrot_perch
+NAME=parrot perch
+TYPE=t_parrot_perch
+SKILLMAKE=Carpentry 50.0, t_carpentry
+RESOURCES=50 i_log
+WEIGHT=15
+DUPELIST=02ff5
+CATEGORY=Decoration - Furniture
+SUBSECTION=Misc
+DESCRIPTION=Parrot Perch
+
+[ITEMDEF 02ff5]
+DUPEITEM=02ff4
+
+[ITEMDEF 024e3]
+TYPE=t_normal
+FLIP=1
+WEIGHT=2.0
+RESOURCES=1 i_board,1 i_sand
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Japanese
+DESCRIPTION=Zen Rock Garden
+DUPELIST=02434,024e5
+
+[ITEMDEF 024e4]
+//rock garden
+DUPEITEM=024e3
+
+[ITEMDEF 024e5]
+//rock garden
+DUPEITEM=024e3
+
+[ITEMDEF 02fea]
+DEFNAME=i_displaycase_elven
+NAME=elven displaycase
+FLIP=1
+WEIGHT=8.1
+RESOURCES=2 i_board,1 i_nails,6 i_glass_raw
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Display Case
+DESCRIPTION=Elven Display Case
+DUPELIST=02feb
+
+[ITEMDEF 02feb]
+//elven displaycase
+DUPEITEM=02fea
+
+
+[EOF]

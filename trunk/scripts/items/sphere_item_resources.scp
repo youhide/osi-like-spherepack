@@ -1,0 +1,303 @@
+//****************************************************************************
+//SphereServer ©1997-2009
+//This script is part from the Sphere Community Script Pack.
+//You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+//FILE LAST UPDATED: Thursday, March 10, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 09b4]
+DEFNAME=i_eggshells
+VALUE=1
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=Eggshells
+
+[ITEMDEF 0df9]
+DEFNAME=i_cotton
+TYPE=t_cotton
+FLIP=1
+VALUE=3
+WEIGHT=0.4
+CATEGORY=Items by Professions
+SUBSECTION=Weaver
+DESCRIPTION=Bales of Cotton
+DUPELIST=0def
+
+[ITEMDEF 0def]
+//pile of raw cotton
+DUPEITEM=0df9
+
+[ITEMDEF 01a9c]
+DEFNAME=i_flax_bundle
+TYPE=t_cotton
+FLIP=1
+VALUE=2
+WEIGHT=0.2
+CATEGORY=Items by Professions
+SUBSECTION=Weaver
+DESCRIPTION=Bundle of Flax
+DUPELIST=01a9d
+
+[ITEMDEF 01a9d]
+//flax bundle
+DUPEITEM=01a9c
+
+[ITEMDEF 0dfe]
+DEFNAME=i_hair_cut
+VALUE=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Cut Hair
+
+[ITEMDEF 0e5c]
+DEFNAME=i_rune_glowing_1
+TYPE=t_light_lit
+TDATA4=i_rune_glowing_1
+VALUE=2
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 01
+DUPELIST=0e5d,0e5e
+
+[ITEMDEF 0e5f]
+DEFNAME=i_rune_glowing_2
+TYPE=t_light_lit
+TDATA4=i_rune_glowing_2
+VALUE=2
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 02
+DUPELIST=0e60,0e61
+
+[ITEMDEF 0e62]
+DEFNAME=i_rune_glowing_3
+TYPE=t_light_lit
+TDATA4=i_rune_glowing_3
+VALUE=2
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 03
+DUPELIST=0e63,0e64
+
+[ITEMDEF 0e65]
+DEFNAME=i_rune_glowing_4
+TYPE=t_light_lit
+TDATA4=i_rune_glowing_4
+VALUE=2
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 04
+DUPELIST=0e66,0e67
+
+[ITEMDEF 0e68]
+DEFNAME=i_rune_glowing_5
+TYPE=t_light_lit
+TDATA4=i_rune_glowing_5
+VALUE=2
+CATEGORY=Items by Professions
+SUBSECTION=Mage
+DESCRIPTION=Glowing Rune 05
+DUPELIST=0e69,0e6a
+
+[ITEMDEF 0eea]
+DEFNAME=i_coin_copper
+VALUE=1
+TYPE=t_coin
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Coins
+DESCRIPTION=Copper Coin
+DUPELIST=0eeb,0eec
+
+[ITEMDEF 0eed]
+DEFNAME=i_gold
+TYPE=t_gold
+VALUE=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Coins
+DESCRIPTION=Gold Coin
+DUPELIST=0eee,0eef
+ON=@Create
+   ATTR=attr_identified
+
+[ITEMDEF 0ef0]
+DEFNAME=i_coin_silver
+VALUE=1
+TYPE=t_coin
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Coins
+DESCRIPTION=Silver Coin
+DUPELIST=0ef1,0ef2
+
+[ITEMDEF 01bd1]
+DEFNAME=i_feather
+TYPE=t_feather
+VALUE=2
+WEIGHT=.1
+CATEGORY=Items by Professions
+SUBSECTION=Archers/Bowyers
+DESCRIPTION=Feathers (White)
+DUPELIST=0dfa,0dfb,01bd2,01bd3
+ON=@DClick
+   SRC.SKILLMENU=sm_bolts
+   RETURN 1
+
+[ITEMDEF 0dfa]
+//feathers 2
+DUPEITEM=01bd1
+
+[ITEMDEF 0dfb]
+//feathers 2
+DUPEITEM=01bd1
+
+
+[ITEMDEF 010ee]
+DEFNAME=i_garbage
+TYPE=t_garbage
+VALUE=1
+WEIGHT=.2
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=Garbage
+DUPELIST=010ef,010f0,010f1,010f2,010f3
+
+[ITEMDEF 010ef]
+//pile of garbage
+DUPEITEM=010ee
+
+[ITEMDEF 010f0]
+//pile of garbage
+DUPEITEM=010ee
+
+[ITEMDEF 010f1]
+//pile of garbage
+DUPEITEM=010ee
+
+[ITEMDEF 010f2]
+//pile of garbage
+DUPEITEM=010ee
+
+[ITEMDEF 010f3]
+//pile of garbage
+DUPEITEM=010ee
+
+[ITEMDEF 0fc4]
+DEFNAME=i_shell
+VALUE=1
+WEIGHT=.1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Shells
+DESCRIPTION=Conch Shell
+DUPELIST=0fc5,0fc6,0fc7,0fc8,0fc9,0fca,0fcb,0fcc
+
+[ITEMDEF 0fc5]
+DUPEITEM=0fc4
+DESCRIPTION=Shells 1
+
+[ITEMDEF 0fc6]
+DUPEITEM=0fc4
+DESCRIPTION=Shells 2
+
+[ITEMDEF 0fc7]
+DUPEITEM=0fc4
+DESCRIPTION=Nautilus
+
+[ITEMDEF 0fc8]
+DUPEITEM=0fc4
+DESCRIPTION=Shell 1
+
+[ITEMDEF 0fc9]
+DUPEITEM=0fc4
+DESCRIPTION=Shell 2
+
+[ITEMDEF 0fca]
+DUPEITEM=0fc4
+DESCRIPTION=Shells 3
+
+[ITEMDEF 0fcb]
+DUPEITEM=0fc4
+DESCRIPTION=Shell 3
+
+[ITEMDEF 0fcc]
+DUPEITEM=0fc4
+DESCRIPTION=Shell 4
+
+
+//**************************************************
+// Mineral matter.
+
+[ITEMDEF i_clay]
+ID=i_rock_2
+NAME=clay
+VALUE=10
+WEIGHT=1
+
+[ITEMDEF i_stone_marble]
+//FIXME: Should use an ID that stacks...
+ID=i_pillow
+NAME=marble
+VALUE=5
+WEIGHT=10
+
+[ITEMDEF i_stone_sand]
+//FIXME: Should use an ID that stacks...
+ID=i_pillow
+NAME=sand
+VALUE=5
+WEIGHT=10
+ON=@Create
+   COLOR=colors_yellow
+
+[ITEMDEF i_glass_raw]
+ID=0f8e
+NAME=raw glass
+TYPE=t_ingot
+TDATA1=55.0
+TDATA2=80.0
+VALUE=2
+WEIGHT=2.0
+RESOURCES=i_sand
+SKILLMAKE=MINING 60.0
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Raw Glass
+ON=@Create
+   COLOR=05b
+
+[ITEMDEF i_sand]
+ID=i_ore_iron
+NAME=sand
+TYPE=t_ore //t_sand
+TDATA1=i_glass_raw
+VALUE=1
+WEIGHT=3.0
+SKILLMAKE=MINING 60.0
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Sand
+ON=@Create
+   COLOR=035
+
+//**************************************************
+// Vegetable matter.
+
+[ITEMDEF i_straw]
+ID=i_hay_sheaf
+NAME=straw
+VALUE=1
+
+[ITEMDEF i_grass]
+ID=i_hay_sheaf
+NAME=grass
+VALUE=1
+ON=@Create
+   COLOR=colors_green
+
+[ITEMDEF i_canvas]
+ID=i_hay_sheaf
+NAME=canvas
+VALUE=1
+
+
+[EOF]

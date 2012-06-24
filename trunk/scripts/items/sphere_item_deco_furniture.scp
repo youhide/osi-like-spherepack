@@ -1,0 +1,1888 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 14, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0a2c]
+DEFNAME=i_bureau
+TYPE=t_container
+TDATA2=051
+FLIP=1
+VALUE=150
+WEIGHT=20
+RESOURCES=5 i_board, 10 i_nails, 3 i_drawer
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Chest of Drawers (Light Wood)
+DUPELIST=0a34
+
+[ITEMDEF 0a2d]
+DEFNAME=i_drawer
+TYPE=t_container
+TDATA2=051
+FLIP=1
+RESOURCES=5 i_board, 2 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Drawer (Light Wood)
+DUPELIST=0a2e,0a2f,0a35,0a36,0a37
+
+[ITEMDEF 0a2e]
+//drawer (light wood)
+DUPEITEM=0a2d
+
+[ITEMDEF 0a2f]
+//drawer (light wood)
+DUPEITEM=0a2d
+
+[ITEMDEF 0a30]
+DEFNAME=i_bureau_2
+TYPE=t_container
+TDATA2=048
+FLIP=1
+WEIGHT=20
+RESOURCES=25 i_log
+SKILLMAKE=Carpentry 85.0, t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Chest of Drawers (Dark Wood)
+DUPELIST=0a38
+
+[ITEMDEF 0a31]
+DEFNAME=i_drawer_2
+TYPE=t_container
+TDATA2=048
+FLIP=1
+RESOURCES=25 i_log
+SKILLMAKE=Carpentry 85.0, t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Drawer (Dark Wood)
+DUPELIST=0a32,0a33,0a39,0a3a,0a3b
+
+[ITEMDEF 0a32]
+//drawer (dark wood)
+DUPEITEM=0a31
+
+[ITEMDEF 0a33]
+//drawer (dark wood)
+DUPEITEM=0a31
+
+[ITEMDEF 0a34]
+//chest of drawers (light wood)
+DUPEITEM=0a2c
+
+[ITEMDEF 0a35]
+//drawer (light wood)
+DUPEITEM=0a2d
+
+[ITEMDEF 0a36]
+//drawer (light wood)
+DUPEITEM=0a2d
+
+[ITEMDEF 0a37]
+//drawer (light wood)
+DUPEITEM=0a2d
+
+[ITEMDEF 0a38]
+//chest of drawers (dark wood)
+DUPEITEM=0a30
+
+[ITEMDEF 0a39]
+//drawer (dark wood)
+DUPEITEM=0a31
+
+[ITEMDEF 0a3a]
+//drawer (dark wood)
+DUPEITEM=0a31
+
+[ITEMDEF 0a3b]
+//drawer (dark wood)
+DUPEITEM=0a31
+
+[ITEMDEF 0a3c]
+DEFNAME=i_dresser
+TYPE=t_container
+TDATA2=051
+FLIP=1
+WEIGHT=30
+RESOURCES=8 i_board, 20 i_nails, 6 i_dresser_drawer, 1 i_ingot_iron, 5 i_glass_raw
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Dresser (Vanity)
+DUPELIST=0a3d,0a44,0a45
+
+[ITEMDEF 0a3d]
+//dresser  (Vanity)
+DUPEITEM=0a3c
+
+[ITEMDEF 0a3e]
+DEFNAME=i_dresser_drawer
+TYPE=t_container
+TDATA2=051
+FLIP=1
+RESOURCES=2 i_board, 2 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Drawer (Vanity)
+DUPELIST=0a3f,0a40,0a41,0a42,0a43,0a46,0a47,0a48,0a49,0a4a,0a4b
+
+[ITEMDEF 0a3f]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a40]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a41]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a42]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a43]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a44]
+//dresser (Vanity)
+DUPEITEM=0a3c
+
+[ITEMDEF 0a45]
+//dresser (Vanity)
+DUPEITEM=0a3c
+
+[ITEMDEF 0a46]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a47]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a48]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a49]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a4a]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a4b]
+//drawer (Vanity)
+DUPEITEM=0a3e
+
+[ITEMDEF 0a55]
+DEFNAME=i_bedroll
+TYPE=t_bedroll
+FLIP=1
+WEIGHT=5
+RESOURCES=5 i_cloth, 1 i_canvas, 50 i_feather, 1 i_hides_cut
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed Roll (Unrolled)
+DUPELIST=0a56
+
+[ITEMDEF 0a56]
+//bedroll (Unrolled)
+DUPEITEM=0a55
+
+[ITEMDEF 0a57]
+DEFNAME=i_bedroll_2
+TYPE=t_bedroll
+FLIP=1
+WEIGHT=5
+RESOURCES=i_bedroll
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bedroll (Rolled Up)
+DUPELIST=0a58,0a59
+
+[ITEMDEF 0a58]
+//bedroll  (Rolled Up)
+DUPEITEM=0a57
+
+[ITEMDEF 0a59]
+//bedroll (Rolled Up)
+DUPEITEM=0a57
+
+[ITEMDEF 0a5a]
+//brown twin lower half, from head against NW wall
+DEFNAME=i_bed_1
+TYPE=t_bed
+TDATA1=0
+RESOURCES=30 i_board, 1 i_bedroll, 10 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Twin Bed (Brown) (NW Wall)
+DUPELIST=0a5b
+
+[ITEMDEF 0a5b]
+//brown twin bed upper half, from head against NW wall
+DUPEITEM=0a5a
+
+[ITEMDEF 0a5e]
+//white twin bed upper half, from head against NE wall
+DEFNAME=i_bed_3
+TYPE=t_bed
+TDATA1=0
+RESOURCES=30 i_board, 1 i_bedroll, 10 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Twin Bed (White) (NE)
+DUPELIST=0a5f
+
+[ITEMDEF 0a5f]
+//white twin bed lower half, from head against NE wall
+DUPEITEM=0a5e
+
+[ITEMDEF 0a60]
+//white twin bed upper half, from head against NW wall
+DEFNAME=i_bed_4
+TYPE=t_bed
+TDATA1=0
+RESOURCES=30 i_board, 1 i_bedroll, 10 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Twin Bed (White) (NW)
+DUPELIST=0a61
+
+[ITEMDEF 0a61]
+//white twin bed lower half, from head against NW wall
+DUPEITEM=0a60
+
+[ITEMDEF 0a64]
+//brown twin bed upper half, from head against NE wall
+DEFNAME=i_bed_6
+TYPE=t_bed
+TDATA1=0
+RESOURCES=30 i_board, 1 i_bedroll, 10 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Twin Bed (Brown) (NE)
+DUPELIST=0a65
+
+[ITEMDEF 0a65]
+//brown twin bed lower half, from head against NE wall
+DUPEITEM=0a64
+
+[ITEMDEF 0a66]
+//white twin bed upper half, from head against NE wall with gray sheet & pillow
+DEFNAME=i_bed_7
+TYPE=t_bed
+TDATA1=0
+WEIGHT=20
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Twin Bed (White) (NE)
+DUPELIST=0a67
+
+SKILLMAKE=CARPENTRY 94.7, TAILORING 75.0, t_carpentry, t_sewing_kit
+RESOURCES=40 i_board, 100 i_cloth
+
+[ITEMDEF 0a67]
+//white twin bed upper half, from head against NE wall with gray sheet
+DUPEITEM=0a66
+
+[ITEMDEF 0a68]
+//twin bed bottom half, from head against NE wall with gray blanket
+DEFNAME=i_bed_8
+TYPE=t_bed
+TDATA1=0
+WEIGHT=20
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Twin Bed (Gray Blankets) (NE)
+
+SKILLMAKE=CARPENTRY 94.7, TAILORING 75.0, t_carpentry, t_sewing_kit
+RESOURCES=100 i_log, 100 i_cloth
+
+[ITEMDEF 0a69]
+//white twin bed upper half, from head against NW wall with gray sheet & pillow
+DEFNAME=i_bed_9
+TYPE=t_bed
+TDATA1=0
+WEIGHT=20
+SKILLMAKE=CARPENTRY 94.7, TAILORING 75.0, t_carpentry, t_sewing_kit
+RESOURCES=100 i_log, 100 i_cloth
+
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Twin Bed (Grey Blankets) (NW)
+
+[ITEMDEF 0a6a]
+//white twin bed upper half, from head against NW wall with gray sheet
+DEFNAME=i_bed_10
+TYPE=t_bed
+TDATA1=0
+RESOURCES=30 i_board, 1 i_bedroll, 10 i_nails, 1 i_sheet, 1 i_pillow
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Twin Bed (Gray Blankets) (NW)
+
+[ITEMDEF 0a6b]
+//twin bed bottom half, from head against NW wall with gray blanket
+DEFNAME=i_bed_11
+TYPE=t_bed
+TDATA1=0
+WEIGHT=20
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Twin Bed (Gray Blanket) (NW)
+
+SKILLMAKE=CARPENTRY 94.7, TAILORING 75.0, t_carpentry, t_sewing_kit
+RESOURCES=100 i_log,100 i_cloth
+
+[ITEMDEF 0a6c]
+//folded blanket
+DEFNAME=i_blanket
+RESOURCES=5 i_cloth
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Folded Blanket
+DUPELIST=0a6d,0a6e,0a6f
+
+[ITEMDEF 0a6d]
+//folded blanket
+DUPEITEM=0a6c
+
+[ITEMDEF 0a6e]
+//folded blanket
+DUPEITEM=0a6c
+
+[ITEMDEF 0a6f]
+//folded blanket
+DUPEITEM=0a6c
+
+[ITEMDEF 0a70]
+//fancy double bed headboard against NW wall - W CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_12
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed (HeadBoard) (NW Wall - West Corner)
+
+[ITEMDEF 0a71]
+//fancy double bed foot corner against NW & NE wall - S CORNER PIECE
+//must be  overlapped
+DEFNAME=i_bed_13
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed (Foot) (NW & NE Wall)
+
+[ITEMDEF 0a72]
+//fancy double bed foot corner against NW wall - E CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_14
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed (Foot) (NW Wall - East Corner)
+
+[ITEMDEF 0a73]
+//fancy double bed headboard corner against NW wall - N CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_15
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed (Head) (NW Wall - N Corner)
+
+[ITEMDEF 0a74]
+//fancy double bed head corner against NE wall - E CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_16
+TYPE=t_bed
+TDATA1=0
+DYE=1
+WEIGHT=20
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed (Head) (NE Wall - E Corner)
+
+SKILLMAKE=CARPENTRY 94.7, TAILORING 75.0, t_carpentry, t_sewing_kit
+RESOURCES=150 i_log,150 i_cloth
+
+[ITEMDEF 0a75]
+//fancy double bed foot corner against NE & NW wall - S CORNER PIECE
+//must be  overlapped
+DEFNAME=i_bed_17
+TYPE=t_bed
+TDATA1=0
+DYE=1
+WEIGHT=20
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed (Foot) (NE - NW Wall)
+
+SKILLMAKE=CARPENTRY 94.7, TAILORING 75.0, t_carpentry, t_sewing_kit
+RESOURCES=150 i_log, 150 i_cloth
+
+[ITEMDEF 0a76]
+//fancy double bed foot against NE wall - W CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_18
+TYPE=t_bed
+TDATA1=0
+DYE=1
+WEIGHT=20
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed (Foot) (NE Wall - W Corner)
+
+SKILLMAKE=CARPENTRY 94.7, TAILORING 75.0, t_carpentry, t_sewing_kit
+RESOURCES=150 i_log, 150 i_cloth
+
+[ITEMDEF 0a77]
+//fancy double bed header against NE wall - N CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_19
+TYPE=t_bed
+TDATA1=0
+DYE=1
+WEIGHT=20
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed (Head) (NE Wall - N Corner)
+
+SKILLMAKE=CARPENTRY 94.7, TAILORING 75.0, t_carpentry, t_sewing_kit
+RESOURCES=150 i_log, 150 i_cloth
+
+[ITEMDEF 0a7a]
+//Fancy Bed with Blankets
+//fancy double bed headboard against NW wall - W CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_22
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed w/ Blankets (Head) (NW Wall - W Corner)
+
+[ITEMDEF 0a7b]
+//Fancy Bed with Blankets
+//fancy double bed headboard corner against NW wall - N CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_23
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow, 2 i_blanket
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed w/ Blankets (Head) (NW Wall - N Corner)
+
+[ITEMDEF 0a80]
+//Fancy Bed with Blankets
+//fancy double bed headboard corner against NE wall - N CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_28
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow, 2 i_blanket
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed w/ Blankets (Head) (NE Wall - N Corner)
+
+[ITEMDEF 0a81]
+//Fancy Bed with Blankets
+//fancy double bed headboard corner against NE wall - E CORNER PIECE
+//must be overlapped
+DEFNAME=i_bed_29
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow, 2 i_blanket
+DYE=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Fancy Dbl Bed w/ Blankets (Head) (NE Wall- E Corner)
+
+[ITEMDEF 0a84]
+//bed
+DEFNAME=i_bed_30
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow, 2 i_blanket
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed
+DUPELIST=0a85,0a86,0a87,0a88,0a89,0a8a,0a8b,0a8c,0a8d,0a8e,0a8f,0a90,0a91
+
+[ITEMDEF 0a85]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a86]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a87]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a88]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a89]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a8a]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a8b]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a8c]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a8d]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a8e]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a8f]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a90]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a91]
+//bed
+DUPEITEM=0a84
+
+[ITEMDEF 0a92]
+DEFNAME=i_sheet
+DYE=1
+FLIP=1
+VALUE=32
+WEIGHT=1.5
+RESOURCES=5 i_cloth,5 i_thread
+SKILLMAKE=Tailoring 35.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Folded Sheet
+DUPELIST=0a93
+
+[ITEMDEF 0a93]
+//folded sheet
+DUPEITEM=0a92
+
+[ITEMDEF 0a94]
+DEFNAME=i_sheet_rich
+DYE=1
+FLIP=1
+VALUE=64
+WEIGHT=1.5
+RESOURCES=5 i_cloth,25 i_thread
+SKILLMAKE=Tailoring 35.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Folded Sheet (rich)
+DUPELIST=0a93
+
+[ITEMDEF 0a95]
+//folded sheet
+DUPEITEM=0a94
+
+[ITEMDEF 0a97]
+DEFNAME=i_bookcase_full
+//bookcase
+//dark wood, full of books facing SW
+RESOURCES=8 i_board, 2 i_nails, 20 i_book_sm
+SKILLMAKE=CARPENTRY 36.5, t_carpentry
+TYPE=t_container
+TDATA2=04d
+FLIP=1
+VALUE=120
+WEIGHT=10
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bookcase
+DESCRIPTION=Bookcase (Dark Wood) (Books)
+DUPELIST=0a98,0a99,0a9a,0a9b,0a9c
+
+[ITEMDEF 0a98]
+//bookcase
+//dark wood full of books facing SW
+DUPEITEM=0a97
+
+[ITEMDEF 0a99]
+//bookcase
+//dark wood, full of books facing SE
+DUPEITEM=0a97
+
+[ITEMDEF 0a9a]
+//bookcase
+//dark wood, full of books facing SE
+DUPEITEM=0a97
+
+[ITEMDEF 0a9b]
+//bookcase
+//dark wood full of books facing SW
+DUPEITEM=0a97
+
+[ITEMDEF 0a9c]
+//bookcase
+//dark wood full of books facing SE
+DUPEITEM=0a97
+
+[ITEMDEF 0a9f]
+DEFNAME=i_displaycase_rail_custom_edge
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0aa0,0aa1,0aa2
+
+[ITEMDEF 0aa0]
+//custom displaycase rail edge S
+DUPEITEM=0a9f
+
+[ITEMDEF 0aa1]
+//custom displaycase rail edge W
+DUPEITEM=0a9f
+
+[ITEMDEF 0aa2]
+//custom displaycase rail edge N
+DUPEITEM=0a9f
+
+[ITEMDEF 0aa3]
+DEFNAME=i_displaycase_rail_custom_corner
+//custom displaycase base nw corner
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0aa4,0aa5,0b18
+
+[ITEMDEF 0aa4]
+//custom displaycase base ne corner
+DUPEITEM=0aa3
+
+[ITEMDEF 0aa5]
+//custom displaycase base sw corner
+DUPEITEM=0aa3
+
+[ITEMDEF 0afd]
+DEFNAME=i_displaycase_rail_long_end
+//long displaycase rail end e
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0aff,0b03,0b05
+
+[ITEMDEF 0afe]
+DEFNAME=i_displaycase_rail_long_center
+//long displaycase rail center e-w
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0b04
+
+[ITEMDEF 0aff]
+//long displaycase rail end w
+DUPEITEM=0afd
+
+[ITEMDEF 0b00]
+DEFNAME=i_displaycase_base_long_end
+//long displaycase base e
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0b02,0b06,0b08
+
+[ITEMDEF 0b01]
+DEFNAME=i_displaycase_base_long_center
+//long displaycase base center e-w
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0b07
+
+[ITEMDEF 0b02]
+//long displaycase base w
+DUPEITEM=0b00
+
+[ITEMDEF 0b03]
+//long displaycase rail end s
+DUPEITEM=0afd
+
+[ITEMDEF 0b04]
+//long displaycase rail center n-s
+DUPEITEM=0afe
+
+[ITEMDEF 0b05]
+//long displaycase rail end n
+DUPEITEM=0afd
+
+[ITEMDEF 0b06]
+//long displaycase base s
+DUPEITEM=0b00
+
+[ITEMDEF 0b07]
+//long displaycase base center n-s
+DUPEITEM=0b01
+
+[ITEMDEF 0b08]
+//long displaycase base n
+DUPEITEM=0b00
+
+[ITEMDEF 0b09]
+DEFNAME=i_displaycase_1_base
+//displaycase base n-s
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0b0a
+
+[ITEMDEF 0b0a]
+//displaycase base e-w
+DUPEITEM=0b09
+
+[ITEMDEF 0b0b]
+DEFNAME=i_displaycase_1_rail
+//displaycase base n-s
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0b0c
+
+[ITEMDEF 0b0c]
+//displaycase base e-w
+DUPEITEM=0b0b
+
+[ITEMDEF 0b0d]
+DEFNAME=i_displaycase_2_base
+//displaycase base n-s
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0b0e
+
+[ITEMDEF 0b0e]
+//displaycase
+DUPEITEM=0b0d
+
+[ITEMDEF 0b0f]
+DEFNAME=i_displaycase_base_custom_block
+//Custom displaycase center block
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+
+[ITEMDEF 0b10]
+DEFNAME=i_displaycase_base_custom_corner
+//Custom displaycase corner nw
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0b11,0b12,0b13
+
+[ITEMDEF 0b11]
+//Custom displaycase corner se
+DUPEITEM=0b10
+
+[ITEMDEF 0b12]
+//Custom displaycase corner sw
+DUPEITEM=0b10
+
+[ITEMDEF 0b13]
+//Custom displaycase corner ne
+DUPEITEM=0b10
+
+[ITEMDEF 0b14]
+DEFNAME=i_displaycase_base_custom_edge
+//Custom displaycase edge e
+RESOURCES=15 i_board, 2 i_nails, 6 i_sand, 2 i_cloth
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=@
+DUPELIST=0b15,0b16,0b17
+
+[ITEMDEF 0b15]
+//Custom displaycase edge s
+DUPEITEM=0b14
+
+[ITEMDEF 0b16]
+//Custom displaycase edge w
+DUPEITEM=0b14
+
+[ITEMDEF 0b17]
+//Custom displaycase edge n
+DUPEITEM=0b14
+
+[ITEMDEF 0b18]
+//custom displaycase base se corner
+DUPEITEM=0aa3
+
+[ITEMDEF 0b41]
+//water trough
+DEFNAME=i_trough_water
+RESOURCES=15 i_log
+TYPE=t_water_wash
+//WEIGHT=10
+CATEGORY=Items by Professions
+SUBSECTION=StableMaster
+DESCRIPTION=Water Trough
+SKILLMAKE=Carpentry 80.0, t_carpentry
+DUPELIST=0b42,0b43,0b44
+
+[ITEMDEF 0b42]
+//water trough
+DUPEITEM=0b41
+
+[ITEMDEF 0b43]
+//water trough
+DUPEITEM=0b41
+
+[ITEMDEF 0b44]
+//water trough
+DUPEITEM=0b41
+
+[ITEMDEF 0b45]
+DEFNAME=i_vase_large_1
+WEIGHT=15.0
+RESOURCES=15 i_clay
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Large Vase 1
+
+[ITEMDEF 0b46]
+DEFNAME=i_vase_small_1
+WEIGHT=3.0
+RESOURCES=3 i_clay
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Small Vase 1
+
+[ITEMDEF 0b47]
+DEFNAME=i_vase_large_2
+WEIGHT=15.0
+RESOURCES=15 i_clay
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Large Vase 2
+
+[ITEMDEF 0b48]
+DEFNAME=i_vase_small_2
+WEIGHT=3.0
+RESOURCES=3 i_clay
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Small Vase 2
+
+[ITEMDEF 0c12]
+//broken armoire
+RESOURCES=10 i_board
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Armoire
+DUPELIST=0c13
+
+[ITEMDEF 0c13]
+//broken armoire
+DUPEITEM=0c12
+
+[ITEMDEF 0c14]
+//ruined bookcase
+RESOURCES=4 i_board, 1 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Bookcase
+DUPELIST=0c15
+
+[ITEMDEF 0c15]
+//ruined bookcase
+DUPEITEM=0c14
+
+[ITEMDEF 0c16]
+DEFNAME=i_book_damaged
+RESOURCES=20 i_paper, 1 i_thread, 1 i_hide
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Books
+
+[ITEMDEF 0c1f]
+//broken clock
+RESOURCES=1 i_clock_frame, 1 i_parchment, 1 i_board
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Clock
+
+[ITEMDEF 0c20]
+//broken dresser
+RESOURCES=5 i_board, 10 i_nails, 2 i_dresser_drawer, 1 i_sand
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Dresser (Vanity)
+DUPELIST=0c21,0c22,0c23
+
+[ITEMDEF 0c21]
+//broken dresser
+DUPEITEM=0c20
+
+[ITEMDEF 0c22]
+//broken dresser
+DUPEITEM=0c20
+
+[ITEMDEF 0c23]
+//broken dresser
+DUPEITEM=0c20
+
+[ITEMDEF 0c24]
+//broken furniture
+RESOURCES=5 i_board, 8 i_nails, 1 i_dresser_drawer
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Dresser
+DUPELIST=0c25
+
+[ITEMDEF 0c25]
+//broken furniture
+DUPEITEM=0c24
+
+[ITEMDEF 0c26]
+//ruined bed
+DEFNAME=i_bed_ruined
+TYPE=t_bed
+TDATA1=0
+RESOURCES=5 i_board, 8 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Bed
+
+[ITEMDEF 0c27]
+//ruined bed
+DEFNAME=i_bed_ruined_2
+TYPE=t_bed
+TDATA1=0
+RESOURCES=5 i_board, 8 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Bed
+
+[ITEMDEF 0c28]
+//ruined bed
+DEFNAME=i_bed_ruined_3
+TYPE=t_bed
+TDATA1=0
+RESOURCES=5 i_board, 8 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Bed
+
+[ITEMDEF 0c29]
+//ruined bed
+DEFNAME=i_bed_ruined_4
+TYPE=t_bed
+TDATA1=0
+RESOURCES=5 i_board, 8 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Bed
+
+[ITEMDEF 0c2a]
+//ruined bed
+DEFNAME=i_bed_ruined_5
+TYPE=t_bed
+TDATA1=0
+RESOURCES=5 i_board, 8 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Bed
+
+[ITEMDEF 0c2b]
+//ruined bed
+DEFNAME=i_bed_ruined_6
+TYPE=t_bed
+TDATA1=0
+RESOURCES=5 i_board, 8 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Bed
+
+[ITEMDEF 0c2c]
+//ruined painting
+DEFNAME=i_painting_ruined
+RESOURCES=5 i_board, 8 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Painting
+
+[ITEMDEF 0c2d]
+//debris
+DEFNAME=i_debris
+RESOURCES=3 i_board, 1 i_nails, 2 i_dirt
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Debris
+
+[ITEMDEF 0c2e]
+//debris
+DEFNAME=i_debris_2
+RESOURCES=3 i_board, 1 i_nails, 2 i_dirt
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Debris
+
+[ITEMDEF 0c2f]
+//debris
+DEFNAME=i_debris_3
+RESOURCES=3 i_board, 1 i_nails, 2 i_dirt
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Debris
+
+[ITEMDEF 0c30]
+//debris
+DEFNAME=i_debris_4
+RESOURCES=3 i_board, 1 i_nails, 2 i_dirt
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Debris
+
+[ITEMDEF 0c39]
+DEFNAME=i_pegbaord
+RESOURCES=2 i_board
+CATEGORY=Decoration - Furniture
+SUBSECTION=PegBoard
+DESCRIPTION=@
+DUPELIST=0c3a
+
+[ITEMDEF 0c3a]
+DUPEITEM=0c39
+
+[ITEMDEF 0db0]
+//bed
+DEFNAME=i_bed_31
+TYPE=t_bed
+TDATA1=0
+RESOURCES=30 i_board, 1 i_bedroll, 10 i_nails
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed
+DUPELIST=0db1,0db2,0db3,0db4,0db5
+
+[ITEMDEF 0db1]
+//bed
+DUPEITEM=0db0
+
+[ITEMDEF 0db2]
+//bed
+DUPEITEM=0db0
+
+[ITEMDEF 0db3]
+//bed
+DUPEITEM=0db0
+
+[ITEMDEF 0db4]
+//bed
+DUPEITEM=0db0
+
+[ITEMDEF 0db5]
+//bed
+DUPEITEM=0db0
+
+[ITEMDEF 010ac]
+DEFNAME=i_POLE_HANGING_w_1
+RESOURCES=1 i_ingot_iron, 1 i_log
+WEIGHT=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Hanging Pole
+DESCRIPTION=Hanging Pole (W) (01/03)
+
+[ITEMDEF 010ad]
+DEFNAME=i_POLE_HANGING_w_2
+RESOURCES=1 i_ingot_iron, 1 i_log
+WEIGHT=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Hanging Pole
+DESCRIPTION=Hanging Pole (W) (02/03)
+
+[ITEMDEF 010ae]
+DEFNAME=i_POLE_HANGING_w_3
+RESOURCES=1 i_ingot_iron, 1 i_log
+WEIGHT=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Hanging Pole
+DESCRIPTION=Hanging Pole (W) (03/03)
+
+[ITEMDEF 010af]
+DEFNAME=i_POLE_HANGING_n_1
+RESOURCES=1 i_ingot_iron, 1 i_log
+WEIGHT=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Hanging Pole
+DESCRIPTION=Hanging Pole (N) (01/03)
+
+[ITEMDEF 010b0]
+DEFNAME=i_POLE_HANGING_n_2
+RESOURCES=1 i_ingot_iron, 1 i_log
+WEIGHT=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Hanging Pole
+DESCRIPTION=Hanging Pole (N) (02/03)
+
+[ITEMDEF 010b1]
+DEFNAME=i_POLE_HANGING_n_3
+RESOURCES=1 i_ingot_iron, 1 i_log
+WEIGHT=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Hanging Pole
+DESCRIPTION=Hanging Pole (N) (03/03)
+
+[ITEMDEF 011ce]
+DEFNAME=i_bed_double_1
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow
+WEIGHT=40
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed 01 (01/04)
+DUPELIST=011cf,011d0,011d1
+
+[ITEMDEF 011cf]
+//DOUBLE_BED_1 PART 2
+DUPEITEM=011CE
+
+[ITEMDEF 011d0]
+//DOUBLE_BED_1 PART 3
+DUPEITEM=011CE
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed 01 (03/04)
+
+[ITEMDEF 011d1]
+//DOUBLE_BED_1 PART 4
+DUPEITEM=011CE
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed 01 (04/04)
+
+[ITEMDEF 011d2]
+DEFNAME=i_BED_DOUBLE_2
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet, 2 i_pillow
+WEIGHT=40
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed 02 (01/04)
+DUPELIST=011d3,011d4,011d5
+
+[ITEMDEF 011d3]
+//DOUBLE_BED_2 PART 2
+DUPEITEM=011D2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed 02 (02/04)
+
+[ITEMDEF 011d4]
+//DOUBLE_BED_2 PART 3
+DUPEITEM=011D2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed 02 (03/04)
+
+[ITEMDEF 011d5]
+//DOUBLE_BED_2 PART 4
+DUPEITEM=011D2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Bed 02 (04/04)
+
+[ITEMDEF 011e2]
+DEFNAME=i_mat_grass
+RESOURCES=2 i_plant_grasses
+WEIGHT=2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mats
+DESCRIPTION=Mat (Grass)
+DUPELIST=011e3,011e4,011e5
+
+[ITEMDEF 011e3]
+DUPEITEM=011e2
+
+[ITEMDEF 011e4]
+//grass mat
+DUPEITEM=011e2
+
+[ITEMDEF 011e5]
+//grass mat
+DUPEITEM=011e2
+
+[ITEMDEF 011e6]
+DEFNAME=i_MAT_WOVEN
+RESOURCES=2 i_straw
+WEIGHT=2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Mats
+DESCRIPTION=Mat (Woven)
+DUPELIST=011e7,011e8,011e9
+
+[ITEMDEF 011e7]
+//woven mat
+DUPEITEM=011e6
+
+[ITEMDEF 011e8]
+//woven mat
+DUPEITEM=011e6
+
+[ITEMDEF 011e9]
+//woven mat
+DUPEITEM=011e6
+
+[ITEMDEF 011ea]
+DEFNAME=i_PILLOW_STRAW
+RESOURCES=1 i_straw
+WEIGHT=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Straw Pillow
+DUPELIST=011eb
+
+[ITEMDEF 011eb]
+//straw pillow
+DUPEITEM=011ea
+
+[ITEMDEF 011f0]
+DEFNAME=i_hammock
+RESOURCES=1 i_rope, 2 i_bamboo, 2 i_canvas
+WEIGHT=8
+CATEGORY=Decoration - Furniture
+SUBSECTION=Hammocks & Cots
+DESCRIPTION=Hammock
+DUPELIST=011f1,011f2,011f3
+
+[ITEMDEF 011f1]
+//hammock
+DUPEITEM=011f0
+
+[ITEMDEF 011f2]
+//hammock
+DUPEITEM=011f0
+
+[ITEMDEF 011f3]
+//hammock
+DUPEITEM=011f0
+
+[ITEMDEF 011fd]
+DEFNAME=i_cot_sw
+TYPE=t_bed
+TDATA1=2
+RESOURCES=4 i_bamboo, 3 i_canvas
+WEIGHT=10
+CATEGORY=Decoration - Furniture
+SUBSECTION=Hammocks & Cots
+DESCRIPTION=Cot
+DUPELIST=011fe,011ff,01200
+
+[ITEMDEF 011fe]
+//cot
+DUPEITEM=011fd
+
+[ITEMDEF 011ff]
+//cot
+DUPEITEM=011fd
+
+[ITEMDEF 01200]
+//cot
+DUPEITEM=011fd
+
+[ITEMDEF 01397]
+DEFNAME=i_pillow
+RESOURCES=4 i_cloth, 2 i_wool
+WEIGHT=2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+DUPELIST=013a6
+
+[ITEMDEF 013a4]
+DEFNAME=i_pillow_2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+DUPELIST=013a5
+
+[ITEMDEF 013a5]
+//pillow
+DUPEITEM=013a4
+
+[ITEMDEF 013a6]
+//pillow
+DUPEITEM=01397
+
+[ITEMDEF 013a7]
+DEFNAME=i_pillow_3
+RESOURCES=4 i_cloth, 2 i_wool
+WEIGHT=2
+
+[ITEMDEF 013a8]
+DEFNAME=i_pillow_4
+RESOURCES=4 i_cloth, 2 i_wool
+WEIGHT=2
+DUPELIST=013a9,013aa
+
+[ITEMDEF 013a9]
+DEFNAME=i_pillow_5
+DUPEITEM=013a8
+
+[ITEMDEF 013aa]
+//pillow
+DUPEITEM=013a8
+
+[ITEMDEF 013ab]
+DEFNAME=i_pillow_6
+RESOURCES=4 i_cloth, 2 i_wool, 4 i_thread
+WEIGHT=2
+
+[ITEMDEF 013ac]
+DEFNAME=i_pillow_7
+RESOURCES=4 i_cloth, 2 i_wool, 4 i_thread
+WEIGHT=2
+DUPELIST=013ad,013ae
+
+[ITEMDEF 013ad]
+DEFNAME=i_pillow_8
+DUPEITEM=013ac
+
+[ITEMDEF 013ae]
+//pillow
+DUPEITEM=013ac
+
+[ITEMDEF 0163a]
+DEFNAME=i_PILLOW_LARGE
+RESOURCES=6 i_cloth, 4 i_wool
+WEIGHT=4
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 0163b]
+DEFNAME=i_pillow_9
+RESOURCES=4 i_cloth, 2 i_wool, 4 i_thread
+WEIGHT=2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 0163c]
+DEFNAME=i_pillow_10
+RESOURCES=4 i_cloth, 2 i_wool, 4 i_thread
+WEIGHT=2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 01894]
+DEFNAME=i_bed_ruined_7
+TYPE=t_bed
+TDATA1=0
+RESOURCES=50 i_board, 2 i_bedroll, 20 i_nails, 2 i_sheet
+WEIGHT=20
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Ruined Bed
+DUPELIST=01895,01896,01897,01898,01899,0189a,0189b
+
+[ITEMDEF 01895]
+//ruined bed
+DUPEITEM=01894
+
+[ITEMDEF 01896]
+//ruined bed
+DUPEITEM=01894
+
+[ITEMDEF 01897]
+//ruined bed
+DUPEITEM=01894
+
+[ITEMDEF 01898]
+//ruined bed
+DUPEITEM=01894
+
+[ITEMDEF 01899]
+//ruined bed
+DUPEITEM=01894
+
+[ITEMDEF 0189a]
+//ruined bed
+DUPEITEM=01894
+
+[ITEMDEF 0189b]
+//ruined bed
+DUPEITEM=01894
+
+[ITEMDEF 018db]
+DEFNAME=i_display_minaxwand
+NAME=Display of Minax's Wand
+TYPE=t_normal
+VALUE=1059
+WEIGHT=25.0
+RESOURCES=10 i_log,1 i_nails,1 i_pillow_fancy,1 i_wand_minax
+CATEGORY=Quest
+SUBSECTION=Minax
+DESCRIPTION=Minax's Wand Display Case
+
+[ITEMDEF 018dc]
+DEFNAME=i_display_minaxwand_empty
+NAME=Display of Minax's Wand (empty)
+TYPE=t_normal
+VALUE=59
+WEIGHT=25.0
+RESOURCES=10 i_log,1 i_nails,1 i_pillow_fancy
+CATEGORY=Quest
+SUBSECTION=Minax
+DESCRIPTION=Minax's Wand Display Case (empty)
+
+[ITEMDEF 0190e]
+// Not really a real door. (but ghosts should go thru it.)
+DEFNAME=i_bar_door_ne
+TYPE=t_door
+RESOURCES=30 i_log
+WEIGHT=5
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bar
+DESCRIPTION=Bar Door
+SKILLMAKE=CARPENTRY 80.0, t_carpentry
+DUPELIST=0190f
+
+[ITEMDEF 0190f]
+DEFNAME=i_bar_door_nw
+DUPEITEM=0190e
+
+[ITEMDEF 01910]
+DEFNAME=i_bar_piece
+WEIGHT=4
+RESOURCES=30 i_log
+SKILLMAKE=CARPENTRY 80.0, t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bar
+DESCRIPTION=Bar
+DUPELIST=01911,01912,01913,01918,01919,0191a,0191b,0191c,0191d,0191e,0191f,01941,01942,01943
+
+[ITEMDEF 01911]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 01912]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 01913]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 01914]
+DEFNAME=i_towel
+RESOURCES=3 i_cloth
+WEIGHT=2
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Towel
+
+[ITEMDEF 01915]
+DEFNAME=i_pillow_11
+RESOURCES=2 i_cloth, 1 i_wool
+WEIGHT=1
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Pillow
+
+[ITEMDEF 01918]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 01919]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191a]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191b]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191c]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191d]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191e]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 0191f]
+//bar
+DUPEITEM=01910
+
+[ITEMDEF 01941]
+//bar piece with glass mugs on it
+DUPEITEM=01910
+DEFNAME=i_mugs_glass_bartop
+DESCRIPTION=Bar (with glass mugs on it)
+
+[ITEMDEF 01942]
+//bar piece with pewter goblets and tankards on it
+DUPEITEM=01910
+DEFNAME=i_goblets_pewter_bartop
+DESCRIPTION=Bar (with pewter goblets and tankards on it)
+
+[ITEMDEF 01943]
+//bar piece with pewter goblets and tankards on it
+DUPEITEM=01910
+DEFNAME=i_tankards_pewter_bartop
+DESCRIPTION=Bar (with pewter tankards on it)
+
+[ITEMDEF 01944]
+DEFNAME=i_pillow_fancy
+NAME=fancy pillow
+DYE=1
+VALUE=34
+WEIGHT=4.3
+RESOURCES=4 i_cloth,2 i_wool,1 i_thread
+SKILLMAKE=Tailoring 79.0,t_sewing_kit
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedding
+DESCRIPTION=Fancy Pillow
+
+[ITEMDEF 01945]
+DEFNAME=i_screen_wooden_carved
+NAME=wooden screen
+FLIP=1
+VALUE=76
+WEIGHT=24.4
+RESOURCES=24 i_log_cherry,4 i_hinge
+SKILLMAKE=Carpentry 81.4,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Screens
+DESCRIPTION=Carved Wooden Screen
+DUPELIST=01946
+
+[ITEMDEF 01946]
+//carved wooden screen
+DUPEITEM=01945
+
+[ITEMDEF 01db3]
+DEFNAME=i_barrel_broken
+RESOURCES=16 i_board, 2 i_barrel_hoop, i_barrel
+WEIGHT=21
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Broken Barrel
+DUPELIST=01db4,01db5,01db6
+
+[ITEMDEF 01db4]
+//broken barrel
+DUPEITEM=01db3
+
+[ITEMDEF 01db5]
+//broken barrel
+DUPEITEM=01db3
+
+[ITEMDEF 01db6]
+//broken barrel
+DUPEITEM=01db3
+
+[ITEMDEF 01db7]
+DEFNAME=i_barrel_hoop
+NAME=barrel hoops
+RESOURCES=4 i_ingot_iron
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Barrel Hoops
+
+[ITEMDEF 02bd1]
+DEFNAME=i_dresser_drawer_2
+TYPE=t_container
+TDATA2=051
+FLIP=1
+VALUE=21
+WEIGHT=2.2
+RESOURCES=2 i_board,2 i_nails
+SKILLMAKE=Carpentry 71.6,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Drawer (Vanity 2)
+DUPELIST=02bd2,02bd3,02bd4,02bd5,02bd6
+
+[ITEMDEF 02bd2]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd3]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd4]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd5]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd6]
+//drawer 2
+DUPEITEM=02bd1
+
+[ITEMDEF 02bd7]
+DEFNAME=i_dresser_2
+TYPE=t_container
+FLIP=1
+VALUE=272
+WEIGHT=28.9
+RESOURCES=8 i_board,20 i_nails,6 i_dresser_drawer,1 i_ingot_silver,5 i_glass_raw
+SKILLMAKE=Carpentry 87.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Dresser (Vanity 2)
+DUPELIST=02bd8
+
+[ITEMDEF 02bd8]
+//dresser
+DUPEITEM=02bd7
+
+[ITEMDEF 030df]
+DEFNAME=i_elven_washbasin_parts
+TYPE=t_water
+FLIP=1
+WEIGHT=48.0
+RESOURCES=40 i_board,4 i_ingot_iron,4 i_clay
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Elven Wash Basin Parts
+DUPELIST=030e0,030e1,030e2
+
+[ITEMDEF 030e0]
+//elven washbasin parts
+DUPEITEM=030df
+
+[ITEMDEF 030e1]
+//elven washbasin parts
+DUPEITEM=030df
+
+[ITEMDEF 030e2]
+//elven washbasin parts
+DUPEITEM=030df
+
+[ITEMDEF 030e3]
+DEFNAME=i_elven_dresser_parts
+TYPE=t_container
+TDATA2=010e
+FLIP=1
+WEIGHT=28.9
+RESOURCES=8 i_board,20 i_nails,6 i_dresser_drawer,1 i_ingot_silver,5 i_glass_raw
+SKILLMAKE=Carpentry 87.3,t_carpentry
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Elven Dresser Parts
+DUPELIST=030e4,030e5,030e6
+
+[ITEMDEF 030e4]
+//elven dresser parts
+DUPEITEM=030e3
+
+[ITEMDEF 030e5]
+//elven dresser parts
+DUPEITEM=030e3
+
+[ITEMDEF 030e6]
+//elven dresser parts
+DUPEITEM=030e3
+
+
+[ITEMDEF 0400c]
+DEFNAME=i_bed_small_gargish
+NAME=Gargish single bed
+TYPE=t_bed
+TDATA1=0
+FLIP=1
+VALUE=301
+WEIGHT=64.0
+RESOURCES=20 i_rock_granite,1 i_blanket,1 i_pillow_11
+SKILLMAKE=Carpentry 81.3,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Gargish Single Bed
+DUPELIST=0400d,0400e,0400f
+
+[ITEMDEF 0400d]
+//Gargish single bed
+DUPEITEM=0400c
+
+[ITEMDEF 0400e]
+//Gargish single bed
+DUPEITEM=0400c
+
+[ITEMDEF 0400f]
+//Gargish single bed
+DUPEITEM=0400c
+
+
+[ITEMDEF 04010]
+DEFNAME=i_bed_large_gargish
+NAME=Gargish double bed
+TYPE=t_bed
+TDATA1=0
+FLIP=1
+VALUE=301
+WEIGHT=64.0
+RESOURCES=40 i_rock_granite,1 i_blanket,1 i_pillow_11
+SKILLMAKE=Carpentry 81.3,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Gargish Double Bed
+DUPELIST=04011,04012,04013,04014,04015,04016,04017,04018,04019,0401a,0401b,0401c,0401d,0401e,0401f,04020,04021
+
+[ITEMDEF 04011]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04012]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04013]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04014]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04015]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04016]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04017]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04018]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04019]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 0401a]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 0401b]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 0401c]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 0401d]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 0401e]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 0401f]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04020]
+//Gargish double bed
+DUPEITEM=04010
+
+[ITEMDEF 04021]
+//Gargish double bed
+DUPEITEM=04010
+
+
+[ITEMDEF 0402b]
+DEFNAME=i_gargish_dresser
+NAME=Gargish dresser
+TYPE=t_container
+FLIP=1
+WEIGHT=50
+RESOURCES=20 i_rock_plain
+SKILLMAKE=Carpentry 85.6,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Gargish Dresser
+DUPELIST=0402c,0402d,0402e
+
+[ITEMDEF 0402c]
+//Gargish dresser
+DUPEITEM=0402b
+
+[ITEMDEF 0402d]
+//Gargish dresser
+DUPEITEM=0402b
+
+[ITEMDEF 0402e]
+//Gargish dresser
+DUPEITEM=0402b
+
+
+
+[EOF]

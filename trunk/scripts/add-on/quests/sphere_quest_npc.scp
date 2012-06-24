@@ -1,0 +1,143 @@
+[CHARDEF c_quester_humanm]
+ID=c_man
+NAME=#NAMES_HUMANMALE
+TEVENTS=e_questers
+CAN=MT_USEHANDS|MT_EQUIP
+CATEGORY=Civilized
+SUBSECTION=Questers
+DESCRIPTION=Human Male
+
+ON=@Create
+FLAGS=statf_invul
+NPC=BRAIN_HUMAN
+DEX=10
+INT=10
+STR=10
+
+[CHARDEF c_quester_humanf]
+ID=c_woman
+NAME=#NAMES_HUMANFEMALE
+TEVENTS=e_questers
+CAN=MT_USEHANDS|MT_EQUIP|MT_FEMALE
+CATEGORY=Civilized
+SUBSECTION=Questers
+DESCRIPTION=Human Female
+
+ON=@Create
+FLAGS=statf_invul
+NPC=BRAIN_HUMAN
+DEX=10
+INT=10
+STR=10
+
+//Quest npcs required
+
+//quests 4 & 35
+[CHARDEF c_saliva]
+ID=c_harpy
+NAME=Saliva
+DAM=9,16
+ARMOR=18
+CAN=MT_WALK|MT_FLY|MT_FEMALE|MT_USEHANDS
+RESOURCES=9 i_ribs_raw,50 i_feather
+FOODTYPE=5 t_meat_raw
+DESIRES=i_gold, c_harpy
+//SHELTER=r_forests,r_mountains
+AVERSIONS=r_civilization
+CATEGORY=Do Not use
+SUBSECTION=Quest System
+DESCRIPTION=Saliva
+
+ON=@Create
+	NPC=brain_monster
+	FAME={300 1000}
+	KARMA={-2000 -2999}
+	//ALIGNMENT=EVIL
+	STR={120 140}
+	DEX={110 150}
+	INT={75 100}
+	PARRYING={90.0 95.0}
+	MAGICRESISTANCE={75.0 85.0}
+	TACTICS={80.0 100.0}
+	WRESTLING={80.0 100.0}
+
+ON=@NPCRestock
+	ITEM=i_backpack
+	ITEM=loot_harpy
+	ITEM=i_salivas_feather
+
+
+[CHARDEF c_enforcer_gargoyle]
+ID=c_gargoyle
+NAME=Enforcer Gargoyle
+SOUND=snd_MONSTER_GARGYL1
+ICON=i_pet_GARG
+ANIM=03fbc7f
+CAN=MT_WALK|MT_FLY|MT_USEHANDS
+DAM=3,18
+ARMOR=16
+RESOURCES=8 i_ribs_raw
+FOODTYPE=15 t_meat_raw
+DESIRES=c_GARGOYLE
+//SHELTER=r_caves,r_dungeon
+AVERSIONS=t_TRAP,r_civilization
+CATEGORY=Do Not use
+SUBSECTION=Quest System
+DESCRIPTION=Enforcer Gargoyle
+
+ON=@Create
+	COLOR=colors_red
+	NPC=brain_monster
+	FAME=5000
+	KARMA={-4000 -4999}
+	STR={180 200}
+	DEX={95 120}
+	INT={100 125}
+	PARRYING={60.0 80.0}
+	MAGERY={85.0 95.0}
+	MAGICRESISTANCE={85.0 95.0}
+	TACTICS={70.0 90.0}
+	WRESTLING={70.0 90.0}
+	//ALIGNMENT=EVIL
+	//SPELLCIRCLES=4 8
+
+ON=@NPCRestock
+	ITEM=loot_GARGOYLE
+
+[chardef c_abscess]
+id=c_Hydra
+name=abscess
+//SOUND=snd_monster_daemon1
+ICON=i_worldgem_bit
+RESLEVEL=5
+RESDISPDNHUE=33
+RESDISPDNID=c_man
+DAM=20,35
+ARMOR=30
+RESOURCES=15 i_ribs_raw
+DESIRES=i_gold,e_notoriety
+AVERSIONS=t_TRAP,t_eerie_stuff
+CAN=MT_WALK
+CATEGORY=Do Not use
+SUBSECTION=Quest System
+DESCRIPTION=Abscess
+
+ON=@Create
+	NPC=brain_monster
+	FAME={100 3000}
+	KARMA={-5000 -6999}
+	STR={150 220}
+	MAXHITS=250
+	INT={150 300}
+	DEX={100 200}
+	PARRYING={70.0 95.0}
+	MAGICRESISTANCE={60.0 70.0}
+	MAGERY={70.0 85.0}
+	TACTICS={100.0 120.0}
+	WRESTLING={70.0 90.0}
+
+ON=@NpcRestock
+	ITEM=random_jewel,{1 4}
+	ITEM=i_gold,{80 130}
+
+[EOF]

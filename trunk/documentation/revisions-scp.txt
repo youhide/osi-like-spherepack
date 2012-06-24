@@ -1,0 +1,585 @@
+04-09-2009, ShiryuX
+- Added: Base files. Project Started.
+
+07-09-2009, ShiryuX
+- Added: a few skills scripts.
+- Updated: magic properties to be able to activate/deactivate them using the settings file.
+
+14-09-2009, ShiryuX
+- Added: OSI Guildstone System (by coruja747)
+
+27-10-2009, ShiryuX
+- Added: Cloud_BR's quest system.
+- Added: some skills settings and others.
+- Added: Necromancy and Chivalry (complete)
+- Added: 2 spells of spellweaving.
+- Added: OSI Doom dungeon.
+- Added: Mysticism spells definition.
+- Added: House system.
+- Added: OSI Ore smelt formula.
+- Added: Tithing points and resurrect delay for ankhs.
+- Updated: skills with the new SA skills definitions.
+- Updated: champion system settings to sphere_settings.scp
+- Updated: moved spells to separate files (by skill)
+- Updated: spheretables.scp to load all scripts.
+- Updated: resisting spells to be able to switch.
+
+28-10-2009, ShiryuX
+- Added: missing scrolls from necromancy.
+- Added: crafting system! finally! not 100% working but near that.
+- Fixed: defnames for spells and etc.
+
+31-10-2009, ShiryuX
+- Added: some general functions for all scripts.
+- Fixed: crafting system, just small details here and there.
+
+01-11-2009, ShiryuX
+- Added: @SkillPreSelect, fired when the player runs a skill from the menu or from a macro and before any hardcoded check takes place. 
+	 ARGN1 is the skill number. (Thanks MrSugarCube for idea)
+- Added: working blacksmithing, inscription, alchemy and bowcraft.
+- Added: new buffs function to support necro/chival spell buffs. List can be found in sphere_pack_defs.scp
+- Updated: moved new messages to the messages file.
+- Updated: crafting system a little, made some fixes.
+- Updated: sphere_item_christimas.scp -> sphere_item_christmas.scp
+- Updated: Enticement -> Discordance
+- Fixed: more crafting issues like wrong messages and such.
+- Moved: some messages to a new file, so it's easier to change them.
+
+02-11-2009, Khaos
+* Fixed: AxisCats in sphere_item_christmas earlier. (Forgot to note)
+* sphere_newb.scp - Major Edits within. Read comments at the top! (Need feedback on tactics edits!!) Note: Removetrap and spellweaving should NOT have comments removed in def's. They are placeholders. They cannot be chosen as beginning skills according to EA.
+* sphere_item_resources.scp - Added Necro reagents true to AoS. Only one duplication within for categorizing til I sort through all the necromancy spells, scrolls.
+
+03-11-2009, Khaos
+* Removed i_reag_dragon_scale from sphere_item_provisions_armor_aos.scp
+* Removed Scales 026B1 - 026B6 from sphere_item_misc_se.scp It was redundant to even be in SE packs when they were implemented way before. All Scale resources moved to sphere_item_resources_scales.scp
+* New Axis Cat was added for above resources to find them easier. Provisions - Blacksmithing / Scales, will be moving ingots and ores to their own provisions too.
+* Added AoS Dragon Scale Resources intp sphere_item_resources_scales.scp colors are as close as I can get them. Type = t_reagent instead of t_normal; in case anyone uses them for their casting systems.
+* Removed i_reag_dragon_scale from sphere_item_provisions_armor_aos.scp
+* Updates: sphere_name.scp
+* Edited and added to Controller, Daemon, evil mage names. Missing # amount in controllers. Daemon and Evil Mage added 1 or 2 more names.
+* Added: names_balron, names_evil_mage_lord, names_gargoyle_fire, names_dark_father, names_darknight_creeper, names_impaler. They match EA: UO name lists.
+* sphere_item_provisions_ore.scp: color_o_iron is now switched to the option, so it can be used in colors for other items and npcs now.
+* sphere_item_resources.scp: Removed all reagents. Correctly relabeled Necromancy reagents. Changed defnames. Made a secondary item for any itemdef that was changed. 
+* Added Files: sphere_item_provisions_armor_sa.scp, sphere_item_provisions_clothing_sa.scp, sphere_item_provisions_weapons_sa.scp. Are empty for now.
+* sphere_item_provisions_clothing_se.scp: Contains all my Samurai Empire Clothing files.
+
+03-11-2009, ShiryuX
+- Added: a base for barding skills.
+- Added: extras and documentation folders.
+- Updated: tag.slots_needed -> tag.control.slots
+- Updated: more messages to the msgs file.
+
+04-11-2009, Khaos
+* sphere_spells_necromancy.scp: Added in words of power, though they are commented out right now (These were added in @Start). Fixed reagents to match new ones added.
+Note: We are missing a spell it seems. Exorcism is non-existant.
+
+04-11-2009, ShiryuX
+- Added: OSI Spell Actdiff calculation.
+- Fixed: Now LMC is working even with LRC disabled.
+- Fixed: Necromancy WOP displayed twice.
+
+05-11-2009, ShiryuX
+- Updated: sphere_pack_msgs.scp with missing WoP section. Sorry about that.
+- Fixed: wops wrong defname, now corrected according pack standard.
+
+05-11-2009, Khaos
+* sphere_pack_msgs.scp; Added in spell_117_wop "Ort Corp Grav" This is the "Exorcism" spell's words of power.
+* sphere_spells_necromancy.scp; Added in spell 117. Exorcism. Has all the checks minus "issameguild", "issamealliance", "issameparty", and "issamefaction". These needed to be added, but as I see it, we need a stable faction/party/alliance/guild system that won't get changed to add these functions.
+* sphere_pack_msgs.scp; Added in ALL Stygian Abyss spells WOP's.
+
+06-11-2009, ShiryuX
+- Added: carpentry and tailoring tables for crafting.
+- Updated: defs with new buff icons of gargoyle things.
+
+11-11-2009, Khaos
+* sphere_item_magic_weapon.scp Added in Mystic weapons to all weapons listed. Mystic runs a morey of 120.0. Added in Hatchets, daggers, smith hammer,  cleavers, all staves, skinning knives, butcher knives, and long sword b. Removed all ITEMDEF 0#### as these will interfere with SA items. Fixed Axis cats for i_bow_vanq. Added in halberd of Force and Vanquishing. Added Crossbow of Force and vanq, same with scimitars.. They were missing or out of place.
+More to be added later. Will be adding in all and I repeat all ML, SE, AOS, SA items as well as time goes on.
+Note: Mystic weapons were introduced during Ophidian Wars.
+* sphere_item_provisions_weapons_*.scp; all expansion files had def changes done. A backwards compatibility def list is included in the sphere_backward_compatibility.scp Transitioning the new def's should not be an issue. I suggest minor updating to crafting systems if their is issues. Otherwise please don't change these new def's. Whole deflists for magic items are done with them and magic items use these new def's. (Note: If they are reverted, I will drop all work on those said items and anything to do with them, their def's made little sensibility e.g. i_mace_wildstaff.. wtf? i_wild_staff is new def. Seems more sensible.)
+* sphere_item_magic_weapon.scp; added in all weapons from AoS, SE, ML weapons. Each weapon type has ruin - mystic attributes. SA will get done later today.
+* sphere_backwards_compatibility.scp; updated in old weapon defs which I changed to make more sense, this should allow any use with old def items spawned to have the def information converted to the new formatting. Hope the crafting systems will transition well with this.
+*sphere_item_provisions_weapons_sa.scp; completed every single SA weapon minus stone war sword and serpentstone staff, they are not defined on stratics. All the throwing weapons are type t_weapon_bow. Since we don't have a type for throwing yet. I will make one later most likely. Everything is EA accurate so far.
+
+17-11-2009, ShiryuX
+- Added: healing and veterinary scripts
+- Updated: sphere_settings.scp with some healing settings.
+- Updated: maps to use tag.override.map.width and tag.override.map.height.
+
+18-11-2009, Khaos
+* Added several new informative documents to the Documentation Folder. Adding a file for the following three guides: sphere-speed-conversion-table, sphere-npc-behaviours, sphere-armor-calculations, and sphere-override-guide
+* sphere_item_provisions_clothing_ml and sphere_item_provisions_clothing_se; changed axis cats. Category=Provisions - Clothing is now: Provisions - Clothes.
+* Added names_humanmale_tokuno, names_humanfemale_tokuno to sphere_name.scp. 50 of each. Will add more later.
+* updated sphere_name.scp Added two more names to names_daemon.
+
+18-11-2009, ShiryuX
+- Added: a few taming messages.
+- Added: new animal taming, osi-like (thanks jeem)
+- Fixed: some code of followers was missing.
+- Fixed: enticement -> discordance in newbie block.
+- Removed: @SkillPreSelect until find a fix for it.
+
+19-11-2009, ShiryuX
+- Added: installation instructions.
+
+22-11-2009, ShiryuX
+- Moved: some functions of necromancy to its extra file.
+- Moved: random necro spell template to template file.
+- Updated: curse weapon to curse the weapon in the hand.
+
+01-12-2009, ShiryuX
+- Fixed: misspell with skill settings.
+
+02-12-2009, ShiryuX
+- Added: full necromancy and mysticism scrolls + book template.
+- Updated: templates names, descriptions, etc.
+- Updated: just a peacemaking message.
+- Updated: defs with some sounds of SA and others.
+- Fixed #4: Misspell on sphere_crafting_functions.scp (skillgan -> skillgain)
+- Fixed #3: Some function errors with animal taming script (cem.onal92, real nick?)
+- Fixed: forgot to add a check for OSIFollowers setting in the shrinked pets.
+- Fixed: inexistant runes in spell sections.
+- Fixed: several bugs on peacemaking skill.
+---- Released 0.1c
+
+02-12-2009, ShiryuX
+- Added: osi-like runebook by pyromapes2k with small changes
+- Added: map5 files, though they were already there.
+- Added: small cooking file, no tool yet, just a base.
+- Added: new script for Taste ID skill (thanks jeem)
+- Added: sand mining, only using a shovel in sand.
+- Updated: barding system to be able to activate/deactivate each skill separate from the main setting, deactivating barding setting deactivates every skill.
+- Updated: runes with some new settings (thanks pyro)
+- Updated: proper way to override words of power. now only the wops in sphere_pack_msgs.scp will be used if the runes setting in spell section is empty.
+- Fixed #2: wrong button in crafting categories
+- Fixed: two small typos in the script (sorry, can't remember every word)
+- Fixed: also some crafting bugs, (in *theory*) in the sidebar buttons.
+- Fixed: @SkillPreSelect now working, forgot to add a little 1 in here. =P
+
+03-12-2009, ShiryuX
+- Added: logs according to osi and moved them to separate file.
+- Updated: ores according to osi. old ores are still there.
+- Updated: organized a lot the region file, regionresource
+- Updated: moved misc spells to separate file
+- Updated: many headers with credits to the skill files.
+- Updated: sphere_spells.scp -> sphere_spells_magery.scp
+- Updated: moved spells files to the spell folder.
+- Updated: moved ingots to own file. 
+- Updated: moved color settings to def file.
+- Updated: moved all the ore [regionresource] to sphere_region_resources.scp
+- Updated: blacksmithing table according to the SA files.
+- Updated: foundations prices according to SA files.
+
+04-12-2009, ShiryuX
+- Added: missing mr_sand region resource.
+- Added: fishing according to EA. needs treasure sys to be done.
+- Added: some basic support for SOS treasure system. stills needs to be finished, not usable yet.
+- Updated: alchemy skillmenu according to SA files.
+- Updated: merged some spells file into the main one (sphere_spells_tithing -> sphere_pack_defs.scp and sphere_spells_damage_bonus.scp -> sphere_general_functions.scp)
+- Updated: moved scripts/add-on/spells/ files to scripts/spells/.
+- Updated: moved crafting skillmenues to their own skillmenu folder. (need to finish other skills)
+- Updated: fixed and finished the SOS treasure system.
+- Updated: separated inscription file into skill and skillmenu.
+- Moved: evalint from add-on/skills to skills and merged with definition.
+- Moved: anatomy and fishing to the main skills folder (the rest of skills will be moved as I update them)
+- Fixed: now chivalry spells consume tithing points in all cases.
+- Fixed: misspell in sphere_events_players.scp.
+- Fixed: misspell in sphere_pack_defs.scp
+- Removed: old file for bowcraft.
+
+05-12-2009, ShiryuX
+- Added: provocation script (not tested yet)
+- Updated: some enchants tag names to be more descriptive.
+- Updated: peacemaking script with delays between strokes.
+- Updated: removed deeds for guildstones from vendors as they are no longer used.
+- Moved: carpentry, tailoring and tinkering skillmenu moved to the according folder.
+- Fixed: moved a @start spell trigger from necro to @select.
+- Fixed: additem custom function renamed to f_additem to avoid several problems.
+- Fixed: missing code for the guild button.
+- Fixed: missing skillmake/resources section in the black staff and in the copper key override.
+
+05-12-2009, jeem
+- Added: hiding and stealth skills.
+- Fixed: @SkillPreSelect trigger has been fixed for the last time, it's working perfectly now.
+
+06-12-2009, jeem
+- Updated: sphere_skill_animal_taming.scp, added stat&skill loss on taming. also added TAG.taming_stat_loss for creatures which loses stats on taming.
+- Updated: animallore can be gained while taming now.
+- Updated: some minor details with taming. cu cidhes can only be tamed by elves now.
+- Fixed: a check for skill delays.
+- Fixed: sphere_skill_animal_taming.scp. a typo.
+
+07-12-2009, ShiryuX
+- Added: @craft called on item when it is crafted, argo is the player. 
+- Added: @itemcraft called on player when he crafts an item, argo is the item.
+- Added: new setting "_aftercraft" for crafting skillmenu. which is the name of the function to call on the item after the player crafts it. note: if you set this setting to material, both the default and the material functions will be called.
+- Added: support code (by coruja) for the AoS elemental combat, but only the display behavior.
+- Updated: every armor to use TAG.Res* 
+- Updated: colored armor into new folder inside items folder. also removed the old file since it is no longer needed.
+
+08-12-2009, jeem
+- Updated: every skill has its own file in scripts/skills folder now.
+- Updated: sphere_events_players.scp, skill delays change.
+- Updated: sphere_general_functions.scp, skill delay function.
+- Updated: sphere_skill_anatomy.scp, added skill delay for test purposes. it's not complete for all skills at the moment.
+- Updated: armors, added stealth penalty tags.
+- Updated: sphere_skillx_stealth.scp, f_armor_rating function works now.
+- Updated: changed the names of the files in add-on/skills/ to avoid conflicts.
+- Updated: arcane circle and gift of renewal rescripted to match EA better. i will be scripting other spells.
+- Updated: sphere_spells_spellweaving.scp.
+- Moved: spellweaving functions moved to sphere_spells_spellweaving_extra.scp
+- Fixed: override/sphere_override_armor.scp, fixed clilocs showing hexadecimals.
+
+08-12-2009, Khaos
+- Added: sphere_fame_karma_system.scp, matches EA as closely as possible, since there is no current formula's listed. Only thing not added was Title Locking. I will adjust later for that. (Needs testing)
+
+08-12-2009, ShiryuX
+- Added: some of the SA items (thanks Valios)
+- Updated: EA karma/fame system according to the scripting rules.
+- Updated: rescripted crafting system to use ML crafting menu. needs several testing.
+- Updated: messages and clilocs from crafting menu.
+- Fixed: inscription using runes id instead of scrolls
+- Fixed: wrong listing in bowcraft skillmenu.
+---- Released 0.2a
+
+09-12-2009, ShiryuX
+- Added: experimental code for new item properties. please, try to not touch this since i'm still scripting it.
+- Updated: several scripts using the default pack for SA compatibility.
+- Updated: renamed crafting event to e_PlayerCraftingEvent
+- Updated: now tithing points are always required (even they are not consumed by LRC)
+- Fixed: experimental tooltips, some statements added.
+- Fixed: missing resources and skillmake for smith's hammer.
+
+09-12-2009, jeem
+- Added: new combat system. it's in beta version so we need feedbacks. thanks to Anarch Cassius.
+- Updated: sphere_tooltips.scp. added missing ACT references.
+- Fixed: menu option LAST TEN showing in black.
+
+10-12-2009, jeem
+- Added: plantgrowing system. thanks to Xantier.
+- Updated: sphere_spells_spellweaving.scp. scripted attune weapon spell.
+- Updated: sphere_spells_spellweaving_extra.scp. attune weapon functions added.
+- Updated: combat/combat_events.scp. added a new @AfterHit trigger.
+- Updated: sphere_spells_spellweaving_extra.scp. attune weapon now uses @AfterHit trigger.
+- Updated: added weapon uid (argn2) to @AfterHit trigger.
+
+11-12-2009, ShiryuX
+- Added: slayers, mana regen and self repair pseudo-code. maybe it works, maybe not, needs testing.
+
+11-12-2009, jeem
+- Updated: support for tag.override.skill on weapons.
+
+16-12-2009, jeem
+- Updated: combat system delays.
+
+16-12-2009, ShiryuX
+- Added: basic jail system. suggestions needed.
+- Updated: install instructions and scripts loaded by spheretables.scp.
+- Updated: SCP with default new scripts from Sphere for compatibility with SA. Thanks MrSugarCube.
+
+17-12-2009, jeem
+- Updated: ShiryuX jail system. Modified the way it adds reason to avoid conflicts. And also fixed a misspell: e_jail --> e_jailed.
+- Updated: renamed PsnSys_Max and PsnSys_Min functions to MAX and MIN.
+- Updated: sphere_spells_spellweaving.scp. some little tweaks.
+
+17-12-2009, ShiryuX
+- Added: missing "ftime" function, which reads any numerical value and returns it in "# days, # hours, etc" or just "20 sec", depends on the argument used.
+- Added: new meditation checks, this include a new tag for items "tag.penalty.meditation" which if is 1 or 666 it will stop meditation (if this setting is enabled)
+- Added: sphere_msgs.scp at extra folder, which is almost the same as default, but it uses some clilocs instead of raw messages.
+- Updated: item properties, fixed some, added slayers, etc.
+- Updated: sphere_settings.scp with new item properties settings and removed old since the new are better =P
+- Removed: some old code from the main event and tweaked some to use the new item properties.
+---- Released 0.2b
+
+18-12-2009, jeem
+- Fixed: copper ingot defname.
+
+19-12-2009, ShiryuX
+- Added: NPC's loot generator, if you want to try, added the e_NpcPropertiesEvent to the NPCs and set them the tag.luck.loot tag
+- Updated: moved getargv to general functions file.
+- Fixed: missing type in the swing speed increase entry.
+- Fixed: some typos and wrong names with the item properties.
+- Fixed: missing "end" at the fame/karma thing, crashed the server.
+- Fixed: using same defname for meditation settings and defname.
+
+19-12-2009, jeem
+- Updated: sphere_serv_triggers.scp. added savestatics command to world save.
+- Updated: how to install.txt
+
+20-12-2009, jeem
+- Added: death robe fix by pyromapes2k.
+- Updated: sphere_item_properties.scp
+- Fixed: experimental item properties not showing in clilocs.
+- Fixed: damage increase property didn't have cliloc.
+
+21-12-2009, ShiryuX
+- Fixed: issue with reqstr at tooltips, now working fine.
+- Fixed: missing > at leech property, may cause instant-kill.
+
+22-12-2009, ShiryuX
+- Added: small test code for skill bonus property.
+- Fixed: items not removing properties/bonus from players
+- Removed: old item properties code (enchants)
+---- Released 0.2c
+---- Changed version numbers, now using revisions
+
+23-12-2009, ShiryuX
+- Added: gargoyle horn definitions (thx MrSugarCube)
+- Updated: moved @skillpreselect -> @skillwait.
+- Updated: mixed hiding and stealth files into the main ones using @wait.
+- Fixed: hiding and stealth using statf_mounted instead of statf_onhorse.
+
+27-12-2009, ShiryuX
+- Added: Lower Reagent Cost, Hit Defense Increase & Hit Chance Increase item properties
+- Updated: moved hit leech properties to @gethit.
+- Updated: best weapon skill, now just use a simple tag.
+- Updated: maps to use tdata instead of tags.
+- Updated: combat system merged into the pack now. settings are in sphere_settings.scp and code was reduced as some things were removed (and some will be added in time).
+
+02-01-2010, ShiryuX
+- Updated: exceptional function now holds the player uid as argument.
+- Updated: blacksmithing excep. bonus for weapons is osi like now.
+- Updated: dragon armors with res* and meditation tags.
+- Updated: gargoyles to use garg. icon pet.
+- Removed: duplicated code of spell recovery.
+
+03-01-2010, ShiryuX
+- Added: blacksmithing materials menu
+- Added: basic code for race items, just a tag in the item, tag.item.gargoyle for gargs and tag.item.elven for elfs.
+- Updated: installation notes.
+- Updated: crafting system a lot, fixed some bugs and added materials support now.
+- Updated: armors to have more reasonable names/defnames according to their base item and with crafting system.
+- Fixed: blacksmithing wrong ids in the list.
+- Fixed: mana returning 1sec value, not the 10 second value.
+- Fixed: wrong dull copper color defname (color_o_dullcopper)
+
+04-01-2010, jeem
+- Added: future support for skill waiting times.
+- Added: skill wait times for the following skills: anatomy, animallore, armslore, begging, itemid.
+- Updated: sphere_events_players.scp. waiting time modifications.
+- Updated: waiting times table.
+
+04-01-2010, ShiryuX
+- Added: Basic traps system, which works based on Spells. Needs a lot of work.
+- Added: Hit Lower Attack & Hit Lower Defense to Item Properties.
+- Added: ColorElementalType which returns a number according to the % of best damage type.
+- Added: Darkwood armor. Set properties have not been added yet.
+- Added: Peerless Ingredients and Gems. Imbuing ingredients file for placeholder.
+- Updated: Moved Woodland armor to separate file inside armors folder.
+- Updated: Now tooltips displays correctly on Bows and added a few clilocs also.
+- Updated: SPEED property modified, now it takes tenths of seconds as argument. 
+	   The new formulas used:
+           * SPHERE: SpeedScaleFactor / ((Dex + 100) * (150 / WeaponSpeed))
+	   * UOR: 150000 / ((Stamina + 100) * (150 / WeaponSpeed))
+	   * AOS: (((WeaponSpeed * 4) - (Stamina / 30)) * (100.0 / (100 + SwingSpeedIncrease))) / 4
+ 	   COMBAT SYSTEM EVENT IS NOW MANDATORY!
+- Updated: Rescripted, fixed and added lots and lots of weapons with the right Speed/Damage properties
+	   New weapons can be found on items/weapons/ folder, separated by skill and layer.
+	   Total: 299 weapons scripted.
+
+05-01-2010, jeem
+- Added: skill waiting times almost completed. only few skills left
+- Updated: almost every selected skill has been made so that it won't be effected by combat
+- Fixed: small typo in sphere_combat_events.scp.
+- Moved: some skill files
+- Removed: unnecessary skill files
+
+05-01-2010, ShiryuX
+- Updated: reorganized, rescripted most of the armors, still a few like shields and helmets needs to be finished. 
+
+06-01-2010, ShiryuX
+- Added: isgargoyle, iselven, isfemale functions.
+- Added: Crafting items/lists generator according to materials in your skill menu. 
+  It's still beta but usable. Documentation included in the file.
+- Added: New setting to crafting items, "_opt". Also added _options_default to skills.
+  Format is: "exceptional,markable,colored,recipe,expansion"
+  1. If can be exceptionally crafted.
+  2. If can be marked	
+  3. If can be colored by the resource used.
+  4. If need a recipe to craft this.
+  5. Expansion (ResDisp) needed to see/craft item.
+- Added: Option files for Blacksmithing, Bowcraft and Carpentry.
+- Updated: Crafting dialogs to work with new _opt setting.
+- Updated: Blacksmithing with new magical and gargish items.
+- Updated: Crafting tables to work with the new generator.
+- Updated: Item limitations by genre/race with settings switch.
+- Updated: Even more armors, this time some helmets.
+- Updated: Removed color setting from Dragon Armor.
+- Fixed: Tailoring settings named as Alchemy
+- Fixed: Few wrong defnames and names in armors/weapons.
+- Removed: Duplicate entry for i_wrath_dryad.
+---- Packed Revision 137
+
+06-01-2010, ShiryuX
+- Updated: some typos in the crafting dialogs which caused errors.
+- Updated: now tooltips also displays the item amount.
+
+07-01-2010, jeem
+- Fixed: updated the code to fix robes not showing on corpses
+
+07-01-2010, ShiryuX
+- Fixed: a typo in sphere_settings.scp (scp.SkillWaitingTimes was named scp.SkillWaitingTime)
+- Removed: some duplicated items.
+- Removed: log line from crafting dialog.
+
+08-01-2010, ShiryuX
+- Updated: Several blacksmithing options.
+- Updated: Scripted a group more of items, reorganized the items folder in subfolders such as decoration, building, multis, etc.
+- Fixed: A lot more of Axis Tags in the items. Also, now resources (from resource gathering) have their own sections "Resources - Skill" 
+
+09-01-2010, ShiryuX
+- Fixed: kama using t_weapon_sword and axes using t_weapon_sword instead of t_weapon_axe.
+
+10-01-2010, jeem
+- Added: ea-like camping skill. thanks pyromapes2k.
+- Added: new remove trap skill which works with ShiryuX's traps
+- Updated: meditation skill to match EA better
+- Updated: skill delays for meditation and remove trap
+- Updated: player can logout instantly with camping now.
+- Fixed: revealing in hiding and stealth when using skills
+- Fixed: failing animal taming when the animal was never attacked by anyone.
+- Fixed: small mistake in camping.
+- Fixed: typo in sphere_skill_meditation.scp
+- Removed: add-on/skills folder and moved its content to skills folder.
+
+11-01-2010, ShiryuX
+- Added: scripted Uses Remaining and Night Sight properties, should work fine.
+- Updated: reorganized item properties, added data of hit spells and hit area.
+- Updated: Several properties to be Item Tag Only. This would reduce memory/space needed.
+  Also, the tag won't be added to player if the property is disabled.
+- Updated: now buff icons will be auto-removed if delay > 0.
+- Updated: Tooltips data:
+  * Not display props if they are disabled.
+  * Display RES* and DAM* tags independient of if it's a weapon or armor.
+  * Show Durability tooltip if use Hitpoints (and not a more value)
+- Updated: region resources % to be more reasonable.
+- Updated: moved some skills messages to sphere_pack_msgs.scp, a lot more to go.
+- Fixed: missing skillsuccess function replaced with internal skillusequick.
+- Fixed: physical damage not reduced if weapon's tag is 0 (or 100 in theory)
+- Fixed: now some item properties 1/0 switches works fine.
+- Fixed: wrong property, was using Mage Weapon as Spell Channeling and Mage Armor wrong.
+- Fixed: meditation was not removing tag when it finish and not using Mage Armor.
+- Fixed: missing loading of items/resources/ folder in spheretables.scp
+
+11-01-2010, jeem
+- Updated: some little tweaks on stealth.
+
+12-01-2010, ShiryuX
+- Updated: t_trap -> t_trapped to avoid confusion.
+- Updated: a few containers for carpentry.
+- Fixed: combat system calculating spells damage, it doesn't affect it anymore!
+- Fixed: bamboo flute id and removed duplicates.
+- Fixed: buffs now are only sent to players and not npcs.
+
+13-01-2010, xantier
+- Added: gump layout for virtues, still need to script behavior.
+
+13-01-2010, jeem
+- Updated: remove trap skill to match changes in trapping code
+
+13-01-2010, ShiryuX
+- Updated: combat system fix to avoid problems with calls of damage function.
+- Updated: traps with pyro's scripts.
+- Updated: removed add-on/skills/ from spheretables.scp
+- Fixed: crafting menu canceling spells menu.
+- Fixed: splash sound every 15/30 seconds no longer plays.
+---- Packed Revision 160
+
+13-01-2010, jeem
+- Fixed: small mistakes in taming
+
+14-01-2010, ShiryuX
+- Added: @UserQuestFinish, fired on player and argn1 is the player's quest id.
+You should use <tag.quest.<dargn1>.id> to get the real id.
+- Added: f_compassion_escort added when player finish a escort quest. It should
+add compassion points.
+- Updated: mixed spells bonus with combat system, it belongs there.
+- Updated: scp.OSISpellDamage to scp.Combat_SpellBonus.
+- Updated: virtue system dialogs, added a switch and splited dialogs and
+functions into separate files.
+- Fixed: missing local line at traps.
+- Fixed: skillgain lines where arguments can be 0.
+
+15-01-2010, ShiryuX
+- Added: Stamina Regeneration property.
+- Updated: a few more items for Carpentry.
+---- Packed Revision 181
+
+16-01-2010, jeem
+- Updated: some optimizations in virtues
+
+16-01-2010, xantier
+- Added correct compassion gain point.
+
+17-01-2010, ShiryuX
+- Fixed: Wrong reagent id at alchemy start block.
+
+18-01-2010, ShiryuX
+- Added: Definitions for Ninjitsu and Bushido spells.
+- Fixed: Wrong Armor IDs used on vendor template.
+- Fixed: Small console error when creating a brass sign without a house.
+- Fixed: Iron color should be 0 by default.
+
+18-01-2010, jeem
+- Fixed: two little bugs.
+
+19-01-2010, ShiryuX
+- Updated: A lot more of items for carpentry. And still some more to go.
+- Fixed: Unknown function in 2 NPCs.
+---- Packed Revision 189
+
+26-01-2010, jeem
+- Added: detecting hidden skill. ea-like.
+
+29-01-2010, jeem
+- Fixed: ctags were being used on NPC combat event
+- Fixed: tags in combat event not being deleted after calculations
+- Fixed: misspell in sphere_events_npc.scp
+---- Packed Revision 191
+
+31-01-2010, jeem
+- Fixed: spell damage calculations
+- Fixed: console errors when skill waiting time function is used on npcs
+- Fixed: wrong resource id for i_potion_invisibility. changed i_reag_worm_heart
+to i_reag_wyrm_heart
+
+05-02-2010, jeem
+- Fixed: necromancy spells had small typos.
+---- Packed Revision 195
+
+17-10-2010, Khaos
+- Fixed: Typo in the hides resources in an ITEMDEF with i_leather_barbed, was 
+i_leather_barded !
+- Modified: Added Axis Cats to ash log.
+- Added: sphere_item_resources_boards. Containers all the boards for their respective
+  log entries.
+
+27-10-2010, NeliX
+- Added: Hunger System with 2 illiness in. The main system is in sphere_hunger_system.scp
+  file, settings and messages are in sphere_setting.scp and sphere_pack_msgs.scp. EnJoy!
+
+28-10-2010, Khaos
+- Added: Check for container with items in it on sale to a vendor. If there is items in
+  the container it will stop the sale.
+- Removed: spherechar_human.scp all files are now seperated individually and placed in
+  folders. Removed Numeric Chardef values as well as this might interfere with later
+  animation updates from EA. They now use their defnames.
+
+30-10-2010, Khaos
+- Updated: Most of the NPC's that are human or elf have been updated. I reorganized townfolk;
+  which is now the Civilized section for the final time. Remember most female counterparts are
+  in same file as the original males.
+- Fixed: All elf type NPCs now use elven bodies with resdisp settings for older clients.
+- Updated: Removed numeric defs and replaced with the defname strings incase of overwrite from
+  EA animations.
+- Fixed: Cleaned up some bad axis cats on NPC's.
+- Updated: spheretables.scp to access the folders. Sorry, I forgot to update it last time.
+
+01-04-2012, Khaos
+- Updated: sphere_defs.scp; added in the mountid for ethereal boura mount. This is a veteran
+  reward on EA.
+
+02-04-2012, Khaos
+- Fixed: sphere_general_functions.scp; IsMale and IsFemale was looking for ID types. It now checks
+  for CAN flags instead. mt_male and mt_female respectively. Also, I fixed a typo in IsHumanoid.
+  It was reading IsHumanaid. Need to see if the dependencies are incorrect as well.

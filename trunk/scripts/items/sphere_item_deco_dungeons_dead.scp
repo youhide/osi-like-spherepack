@@ -1,0 +1,3358 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Monday, August 1, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0eca]
+DEFNAME=i_bones
+TYPE=t_corpse
+TDATA2=09
+VALUE=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Bones (skeleton corpse)
+DUPELIST=0ecb,0ecc,0ecd,0ece,0ecf,0ed0,0ed1,0ed2
+
+[ITEMDEF 0ecb]
+//bones (skeleton corpse)
+DUPEITEM=0eca
+
+[ITEMDEF 0ecc]
+//bones (skeleton corpse)
+DUPEITEM=0eca
+
+[ITEMDEF 0ecd]
+//bones (skeleton corpse)
+DUPEITEM=0eca
+
+[ITEMDEF 0ece]
+//bones (skeleton corpse)
+DUPEITEM=0eca
+
+[ITEMDEF 0ecf]
+//bones (skeleton corpse)
+DUPEITEM=0eca
+
+[ITEMDEF 0ed0]
+//bones (skeleton corpse)
+DUPEITEM=0eca
+
+[ITEMDEF 0ed1]
+//bones (skeleton corpse)
+DUPEITEM=0eca
+
+[ITEMDEF 0ed2]
+//bones (skeleton corpse)
+DUPEITEM=0eca
+
+[ITEMDEF 0ed3]
+DEFNAME=i_grave_dirt
+FLIP=1
+TYPE=t_grave
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Grave Dirt
+DUPELIST=0edf,0ee0,0ee1,0ee2,0ee8
+
+[ITEMDEF 0ed4]
+DEFNAME=i_gravestone
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+RESOURCES=4 i_rock_plain
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone
+DUPELIST=0ed5
+
+[ITEMDEF 0ed5]
+//gravestone
+DUPEITEM=0ed4
+
+[ITEMDEF 0ed6]
+DEFNAME=i_gravestone_damaged
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+RESOURCES=4 i_rock_plain
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone (damaged)
+
+[ITEMDEF 0ed7]
+DEFNAME=i_gravestone_2
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+RESOURCES=2 i_rock_plain
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 02
+DUPELIST=0ed8
+
+[ITEMDEF 0ed8]
+//gravestone 02
+DUPEITEM=0ed7
+
+[ITEMDEF 0ed9]
+DEFNAME=i_gravestone_3
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+RESOURCES=1 i_rock_plain
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 03
+DUPELIST=0eda
+
+[ITEMDEF 0eda]
+//gravestone 03
+DUPEITEM=0ed9
+
+[ITEMDEF 0edb]
+DEFNAME=i_gravestone_4
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+RESOURCES=4 i_rock_plain
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=GraveStone 04
+DUPELIST=0edc
+
+[ITEMDEF 0edc]
+//gravestone 04
+DUPEITEM=0edb
+
+[ITEMDEF 0edd]
+DEFNAME=i_guildstone
+TYPE=t_stone_guild
+FLIP=1
+VALUE=15000
+//RESOURCES=4 i_rock_plain
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone (Guildstone)
+DUPELIST=0ede
+
+[ITEMDEF 0ede]
+//gravestone (guildstone)
+DUPEITEM=0edd
+
+[ITEMDEF i_stone_alliance]
+ID=i_guildstone
+TYPE=t_normal
+VALUE=15000
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=GraveStone (Alliance Stone)
+
+[ITEMDEF 0edf]
+//grave dirt
+DUPEITEM=0ed3
+
+[ITEMDEF 0ee0]
+//grave dirt
+DUPEITEM=0ed3
+
+[ITEMDEF 0ee1]
+//grave dirt
+DUPEITEM=0ed3
+
+[ITEMDEF 0ee2]
+//grave dirt
+DUPEITEM=0ed3
+
+[ITEMDEF 0ee3]
+DEFNAME=i_spider_web
+TYPE=t_web
+VALUE=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Spider Web
+DESCRIPTION=Spider Web 01 (N)
+DUPELIST=0ee4,0ee5,0ee6
+
+[ITEMDEF 0ee4]
+//spiderweb
+DUPEITEM=0ee3
+DESCRIPTION=Spider Web 01 (W)
+
+[ITEMDEF 0ee5]
+//spiderweb
+DUPEITEM=0ee3
+DESCRIPTION=Spider Web 02 (N)
+
+[ITEMDEF 0ee6]
+//spiderweb
+DUPEITEM=0ee3
+DESCRIPTION=Spider Web 02 (W)
+
+[ITEMDEF 0ee8]
+//grave dirt
+DUPEITEM=0ed3
+
+[ITEMDEF 010b8]
+DEFNAME=i_spiderweb
+TYPE=t_web
+VALUE=2
+WEIGHT=.1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 01 (01/05)
+DUPELIST=010b9,010ba,010bb,010bc,010bd,010be,010bf,010c0,010c1,010c2,010c3,010c4,010c5,010c6,010c7,010c8,010c9,010ca,010cb,010cc,010cd,010ce,010cf,010d0,010d1
+
+[ITEMDEF 010b9]
+//SPIDERWEB_1_LARGE_2
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 01 (02/05)
+
+[ITEMDEF 010ba]
+//SPIDERWEB_1_LARGE_3
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 01 (03/05)
+
+[ITEMDEF 010bb]
+//SPIDERWEB_1_LARGE_4
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 01 (04/05)
+
+[ITEMDEF 010bc]
+//SPIDERWEB_1_LARGE_5
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 01 (05/05)
+
+[ITEMDEF 010bd]
+//SPIDERWEB_2_LARGE_1
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 02 (01/05)
+
+[ITEMDEF 010be]
+//SPIDERWEB_2_LARGE_2
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 02 (02/05)
+
+[ITEMDEF 010bf]
+//SPIDERWEB_2_LARGE_3
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 02 (03/05)
+
+[ITEMDEF 010c0]
+//SPIDERWEB_2_LARGE_4
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 02 (04/05)
+
+[ITEMDEF 010c1]
+//SPIDERWEB_2_LARGE_5
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 02 (05/05)
+
+[ITEMDEF 010c2]
+//SPIDERWEB_3_LARGE_1
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 03 (01/04)
+
+[ITEMDEF 010c3]
+//SPIDERWEB_3_LARGE_2
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 03 (02/04)
+
+[ITEMDEF 010c4]
+//SPIDERWEB_3_LARGE_3
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 03 (03/04)
+
+[ITEMDEF 010c5]
+//SPIDERWEB_3_LARGE_4
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 03 (04/04)
+
+[ITEMDEF 010c6]
+//SPIDERWEB_4_LARGE_1
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 04 (01/04)
+
+[ITEMDEF 010c7]
+//SPIDERWEB_4_LARGE_2
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 04 (02/04)
+
+[ITEMDEF 010c8]
+//SPIDERWEB_4_LARGE_3
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 04 (03/04)
+
+[ITEMDEF 010c9]
+//SPIDERWEB_4_LARGE_4
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 04 (04/04)
+
+[ITEMDEF 010ca]
+//SPIDERWEB_5_LARGE_1
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 05 (01/04)
+
+[ITEMDEF 010cb]
+//SPIDERWEB_5_LARGE_2
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 05 (02/04)
+
+[ITEMDEF 010cc]
+//SPIDERWEB_5_LARGE_3
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 05 (03/04)
+
+[ITEMDEF 010cd]
+//SPIDERWEB_5_LARGE_4
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 05 (04/04)
+
+[ITEMDEF 010ce]
+//SPIDERWEB_6_LARGE_1
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 06 (01/04)
+
+[ITEMDEF 010cf]
+//SPIDERWEB_6_LARGE_2
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 06 (02/04)
+
+[ITEMDEF 010d0]
+//SPIDERWEB_6_LARGE_3
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 06 (03/04)
+
+[ITEMDEF 010d1]
+//i_SPIDERWEB_6_LARGE_4
+DUPEITEM=010b8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Large SpiderWebs
+DESCRIPTION=SpiderWeb 06 (04/04)
+
+[ITEMDEF 010d2]
+//i_SPIDERWEB_SMALL
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Spider Web
+DESCRIPTION=Small Web
+DUPELIST=010d3,010d4,010d5,010d6,010d7
+
+[ITEMDEF 010d3]
+//small web
+DUPEITEM=010d2
+
+[ITEMDEF 010d4]
+//small web
+DUPEITEM=010d2
+
+[ITEMDEF 010d5]
+//small web
+DUPEITEM=010d2
+
+[ITEMDEF 010d6]
+//small web
+DUPEITEM=010d2
+
+[ITEMDEF 010d7]
+//small web
+DUPEITEM=010d2
+
+[ITEMDEF 010d8]
+DEFNAME=i_web_cocooon
+RESOURCES=10 i_spiderweb
+WEIGHT=10
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Spider Web
+DESCRIPTION=Egg Case Web
+DUPELIST=010d9,010da,010db,010dc,010dd
+
+[ITEMDEF 010d9]
+//WEB_COCOOON_2
+DUPEITEM=010d8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Spider Web
+DESCRIPTION=Egg Case
+
+[ITEMDEF 010da]
+//WEB_COCOOON_3
+DUPEITEM=010d8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Spider Web
+DESCRIPTION=Cocoon
+
+[ITEMDEF 010db]
+//WEB_COCOOON_4
+DUPEITEM=010d8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Spider Web
+DESCRIPTION=Cocoon
+
+[ITEMDEF 010dc]
+//WEB_COCOOON_5
+DUPEITEM=010d8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Spider Web
+DESCRIPTION=Cocoon
+
+[ITEMDEF 010dd]
+//WEB_COCOOON_6
+DUPEITEM=010d8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Spider Web
+DESCRIPTION=Cocoon Web
+
+[ITEMDEF 01165]
+DEFNAME=i_gravestone_5
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 05
+DUPELIST=01166
+
+[ITEMDEF 01166]
+//gravestone 05
+DUPEITEM=01165
+
+[ITEMDEF 01167]
+DEFNAME=i_gravestone_6
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 06
+DUPELIST=01168
+
+[ITEMDEF 01168]
+//gravestone 06
+DUPEITEM=01167
+
+[ITEMDEF 01169]
+DEFNAME=i_gravestone_7
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 07
+DUPELIST=0116a
+
+[ITEMDEF 0116a]
+//gravestone 07
+DUPEITEM=01169
+
+[ITEMDEF 0116b]
+DEFNAME=i_gravestone_8
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 08
+DUPELIST=0116c
+
+[ITEMDEF 0116c]
+//gravestone 08
+DUPEITEM=0116b
+
+[ITEMDEF 0116d]
+DEFNAME=i_gravestone_9
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 09
+DUPELIST=0116e
+
+[ITEMDEF 0116e]
+//gravestone 09
+DUPEITEM=0116d
+
+[ITEMDEF 0116f]
+DEFNAME=i_gravestone_10
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 10
+DUPELIST=01170
+
+[ITEMDEF 01170]
+//gravestone 10
+DUPEITEM=0116f
+
+[ITEMDEF 01171]
+DEFNAME=i_gravestone_11
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 11
+DUPELIST=01172
+
+[ITEMDEF 01172]
+//gravestone 11
+DUPEITEM=01171
+
+[ITEMDEF 01173]
+DEFNAME=i_gravestone_12
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 12
+DUPELIST=01174
+
+[ITEMDEF 01174]
+//gravestone 12
+DUPEITEM=01173
+
+[ITEMDEF 01175]
+DEFNAME=i_gravestone_13
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 13
+DUPELIST=01176
+
+[ITEMDEF 01176]
+//gravestone 13
+DUPEITEM=01175
+
+[ITEMDEF 01177]
+DEFNAME=i_gravestone_14
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 14
+DUPELIST=01178
+
+[ITEMDEF 01178]
+//gravestone 14
+DUPEITEM=01177
+
+[ITEMDEF 01179]
+DEFNAME=i_gravestone_15
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 15
+DUPELIST=0117a
+
+[ITEMDEF 0117a]
+//gravestone 15
+DUPEITEM=01179
+
+[ITEMDEF 0117b]
+DEFNAME=i_gravestone_16
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=065
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 16
+DUPELIST=0117c
+
+[ITEMDEF 0117c]
+//gravestone 16
+DUPEITEM=0117b
+
+[ITEMDEF 0117d]
+DEFNAME=i_gravestone_17
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 17
+DUPELIST=0117e
+
+[ITEMDEF 0117e]
+//gravestone 17
+DUPEITEM=0117d
+
+[ITEMDEF 0117f]
+DEFNAME=i_gravestone_18
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 18
+DUPELIST=01180
+
+[ITEMDEF 01180]
+//gravestone 18
+DUPEITEM=0117f
+
+[ITEMDEF 01181]
+DEFNAME=i_gravestone_19
+TYPE=t_sign_gump
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 19
+
+[ITEMDEF 01182]
+DEFNAME=i_gravestone_20
+TYPE=t_sign_gump
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 20
+
+[ITEMDEF 01183]
+DEFNAME=i_gravestone_21
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 21
+
+[ITEMDEF 01184]
+DEFNAME=i_gravestone_22
+TYPE=t_sign_gump
+FLIP=1
+TDATA2=066
+WEIGHT=20
+RESOURCES=4 i_stone_marble
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Gravestone 22
+
+[ITEMDEF 01185]
+DEFNAME=i_memorial
+NAME=memorial to Gwenno
+//TYPE=t_sign_gump
+//TDATA2=066
+FLIP=1
+WEIGHT=800
+RESOURCES=80 i_rock_plain
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Graves & Gravestones
+DESCRIPTION=Memorial to Gwenno
+DUPELIST=01186,01187,01188,01189
+
+[ITEMDEF 01186]
+//memorial to Gwenno
+DUPEITEM=01185
+
+[ITEMDEF 01187]
+//memorial to Gwenno
+DUPEITEM=01185
+
+[ITEMDEF 01188]
+//memorial to Gwenno
+DUPEITEM=01185
+
+[ITEMDEF 01189]
+//memorial to Gwenno
+DUPEITEM=01185
+
+[ITEMDEF 0122a]
+DEFNAME=i_blood_pool_large
+RESOURCES=2 i_blood
+TYPE=t_blood
+//WEIGHT=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Blood
+DESCRIPTION=Blood Pool
+DUPELIST=0122b,0122c,0122d,0122e
+
+[ITEMDEF 0122b]
+//blood
+DUPEITEM=0122a
+
+[ITEMDEF 0122c]
+//blood
+DUPEITEM=0122a
+
+[ITEMDEF 0122d]
+//blood
+DUPEITEM=0122a
+
+[ITEMDEF 0122e]
+//blood
+DUPEITEM=0122a
+
+[ITEMDEF 0122f]
+DEFNAME=i_blood_smear
+RESOURCES=1 i_blood
+TYPE=t_blood
+//WEIGHT=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Blood
+DESCRIPTION=Blood Smear
+
+[ITEMDEF 01230]
+DEFNAME=i_guillotine_n
+NAME=guillotine
+VALUE=223
+WEIGHT=130.2
+RESOURCES=100 i_log_oak,1 i_basket,20 i_ingot_iron,2 i_nails
+SKILLMAKE=Carpentry 98.5,t_carpentry
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Guillotine (N)
+DUPELIST=01245,01246,01247
+
+[ITEMDEF 01245]
+//guillotine (N)
+DUPEITEM=01230
+
+[ITEMDEF 01246]
+//guillotine (N)
+DUPEITEM=01230
+
+[ITEMDEF 01247]
+//guillotine (N)
+DUPEITEM=01230
+
+[ITEMDEF 0125e]
+DEFNAME=i_guillotine_w
+VALUE=223
+WEIGHT=130.2
+RESOURCES=100 i_log_oak,1 i_basket,20 i_ingot_iron,2 i_nails
+SKILLMAKE=Carpentry 98.5,t_carpentry
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Guillotine (W)
+DUPELIST=01260,01268,01269
+
+[ITEMDEF 01260]
+//guillotine (W)
+DUPEITEM=0125e
+
+[ITEMDEF 01268]
+//guillotine (W)
+DUPEITEM=0125e
+
+[ITEMDEF 01269]
+//guillotine (W)
+DUPEITEM=0125e
+
+[ITEMDEF 01249]
+DEFNAME=i_iron_maiden
+RESOURCES=20 i_ingot_iron
+WEIGHT=30
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Iron Maiden
+DUPELIST=0124a,0124b,0124c,0124d
+
+[ITEMDEF 0124a]
+//iron maiden
+DUPEITEM=01249
+
+[ITEMDEF 0124b]
+//iron maiden
+DUPEITEM=01249
+
+[ITEMDEF 0124c]
+//iron maiden
+DUPEITEM=01249
+
+[ITEMDEF 0124d]
+//iron maiden
+DUPEITEM=01249
+
+[ITEMDEF 0124e]
+DEFNAME=i_torture_rack
+RESOURCES=20 i_board, 2 i_ingot_iron, 5 i_rope
+WEIGHT=30
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Rack
+DUPELIST=0124f,01250,01251,01252,01253,01254,01255,01256,01257,01258,01259,0125a,0125b,0125c,0125d,0125f,01261
+
+[ITEMDEF 0124f]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01250]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01251]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01252]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01253]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01254]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01255]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01256]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01257]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01258]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01259]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 0125a]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 0125b]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 0125c]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 0125d]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 0125f]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01261]
+//rack
+DUPEITEM=0124e
+
+[ITEMDEF 01262]
+DEFNAME=i_shackles_hanging
+RESOURCES=2 i_ingot_iron
+WEIGHT=3
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Shackles
+DUPELIST=01263
+
+[ITEMDEF 01263]
+DEFNAME=i_shackles_hanging_ne
+DUPEITEM=01262
+
+[ITEMDEF 0126b]
+DEFNAME=i_chopping_block
+NAME=chopping block
+RESOURCES=10 i_log
+WEIGHT=10
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Chopping Block
+DESCRIPTION=Chopping Block
+DUPELIST=0126c,0126d,0126e,0126f,01270,01271,01272,01273,01274,01275,01276,01277,01278,01279,0127a,0127b,0127c
+
+[ITEMDEF 0126c]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 0126d]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 0126e]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 0126f]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01270]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01271]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01272]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01273]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01274]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01275]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01276]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01277]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01278]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 01279]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 0127a]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 0127b]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 0127c]
+//chopping block
+DUPEITEM=0126b
+
+[ITEMDEF 0127e]
+DEFNAME=i_pillory
+NAME=pillory
+RESOURCES=5 i_board, 2 i_ingot_iron
+WEIGHT=5
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Pillory
+DUPELIST=0127f,01280,01281,01282,01283,01284,01285,01286,01287,01288,01289,0128a,0128b,0128c,0128d,0128e,0128f,01290,01291,01292,01293,01294,01295
+
+[ITEMDEF 0127f]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01280]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01281]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01282]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01283]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01284]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01285]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01286]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01287]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01288]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01289]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 0128a]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 0128b]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 0128c]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 0128d]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 0128e]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 0128f]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01290]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01291]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01292]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01293]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01294]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 01295]
+//pillory
+DUPEITEM=0127e
+
+[ITEMDEF 0108c]
+DEFNAME=i_lever
+TYPE=t_switch
+WEIGHT=3
+RESOURCES=2 i_ingot_iron
+CATEGORY=Levers and Switches
+SUBSECTION=Levers
+DESCRIPTION=Lever 1 (position 1)
+ON=@Create
+   MORE1=0108d
+
+[ITEMDEF 0108d]
+TYPE=t_switch
+WEIGHT=3
+RESOURCES=2 i_ingot_iron
+CATEGORY=Levers and Switches
+SUBSECTION=Levers
+DESCRIPTION=Lever 1 (position 2)
+ON=@Create
+   MORE1=0108e
+
+[ITEMDEF 0108e]
+TYPE=t_switch
+WEIGHT=3
+RESOURCES=2 i_ingot_iron
+CATEGORY=Levers and Switches
+SUBSECTION=Levers
+DESCRIPTION=Lever 1 (position 3)
+ON=@Create
+   MORE1=0108c
+
+[ITEMDEF 0108f]
+DEFNAME=i_switch
+TYPE=t_switch
+CATEGORY=Levers and Switches
+SUBSECTION=Switchs
+DESCRIPTION=Switch 1 (on)
+ON=@Create
+   MORE1=01090
+
+[ITEMDEF 01090]
+TYPE=t_switch
+CATEGORY=Levers and Switches
+SUBSECTION=Switchs
+DESCRIPTION=Switch 1 (off)
+ON=@Create
+   MORE1=0108f
+
+[ITEMDEF 01091]
+TYPE=t_switch
+CATEGORY=Levers and Switches
+SUBSECTION=Switchs
+DESCRIPTION=Switch 2 (off)
+ON=@Create
+   MORE1=01092
+
+[ITEMDEF 01092]
+DEFNAME=i_switch_2
+TYPE=t_switch
+CATEGORY=Levers and Switches
+SUBSECTION=Switchs
+DESCRIPTION=Switch 2 (on)
+ON=@Create
+   MORE1=01091
+
+[ITEMDEF 01093]
+DEFNAME=i_lever_2
+TYPE=t_switch
+WEIGHT=3
+RESOURCES=2 i_ingot_iron
+CATEGORY=Levers and Switches
+SUBSECTION=Levers
+DESCRIPTION=Lever 2 (position 1)
+ON=@Create
+   MORE1=01094
+
+[ITEMDEF 01094]
+TYPE=t_switch
+WEIGHT=3
+RESOURCES=2 i_ingot_iron
+CATEGORY=Levers and Switches
+SUBSECTION=Levers
+DESCRIPTION=Lever 2 (position 2)
+ON=@Create
+   MORE1=01095
+
+[ITEMDEF 01095]
+TYPE=t_switch
+WEIGHT=3
+RESOURCES=2 i_ingot_iron
+CATEGORY=Levers and Switches
+SUBSECTION=Levers
+DESCRIPTION=Lever 2 (position 3)
+ON=@Create
+   MORE1=01093
+
+[ITEMDEF 01122]
+DEFNAME=i_floorswitch
+TYPE=t_switch
+WEIGHT=3
+RESOURCES=2 i_ingot_iron
+CATEGORY=Levers and Switches
+SUBSECTION=Floor Switch
+DESCRIPTION=Floor Switch (position 1)
+ON=@Create
+   MORE1=01123
+   MOREX=1
+
+[ITEMDEF 01123]
+TYPE=t_switch
+WEIGHT=3
+RESOURCES=2 i_ingot_iron
+CATEGORY=Levers and Switches
+SUBSECTION=Floor Switch
+DESCRIPTION=Floor Switch (position 2)
+ON=@Create
+   MORE1=01124
+   MOREX=1
+
+[ITEMDEF 01124]
+TYPE=t_switch
+WEIGHT=3
+RESOURCES=2 i_ingot_iron
+CATEGORY=Levers and Switches
+SUBSECTION=Floor Switch
+DESCRIPTION=Floor Switch (position 3)
+ON=@Create
+   MORE1=01122
+   MOREX=1
+
+[ITEMDEF 01640]
+DEFNAME=i_pole_shackles
+WEIGHT=6
+RESOURCES=2 i_ingot_iron, 2 i_log, 1 i_nails
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Pole with shackles
+
+[ITEMDEF 01645]
+DEFNAME=i_blood_spatter
+TYPE=t_blood
+RESOURCES=1 i_blood
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Blood
+DESCRIPTION=Blood Spatter
+
+[ITEMDEF 0166d]
+DEFNAME=i_pole_shackles_broken
+WEIGHT=6
+RESOURCES=2 i_ingot_iron, 2 i_log, 1 i_nails
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Pole with broken shackles
+
+[ITEMDEF 0166e]
+DEFNAME=i_whip
+RESOURCES=10 i_hides_cut, 1 i_hide, 1 i_cat_gut
+WEIGHT=8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Whip
+
+[ITEMDEF 0166f]
+DEFNAME=i_cat_o_ninetails
+RESOURCES=10 i_hides_cut, 1 i_hide, 1 i_cat_gut
+WEIGHT=8
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Torture
+DESCRIPTION=Cat o' Ninetails
+
+[ITEMDEF 01a01]
+DEFNAME=i_skeleton_boots
+TDATA1=i_skeleton_hang
+RESOURCES=1 i_skeleton_hang,1 i_boots_calf
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (Boots) West
+ON=@Timer
+   ID=i_skeleton_hang
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a02]
+DEFNAME=i_skeleton_boots_2
+TDATA1=i_skeleton_hang_2
+RESOURCES=1 i_skeleton_hang_2,1 i_boots_calf
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (Boots) North
+ON=@Timer
+   ID=i_skeleton_hang_2
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a03]
+DEFNAME=i_skeleton_hang_2
+TDATA1=i_skeleton_broken_2
+RESOURCES=1 i_shackles_hanging_2,1 i_skeleton
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (Hang) North
+ON=@Timer
+   ID=i_skeleton_broken_2
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a04]
+DEFNAME=i_skeleton_hang
+TDATA1=i_skeleton_broken
+RESOURCES=1 i_shackles_hanging,1 i_skeleton
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (Hang) West
+ON=@Timer
+   ID=i_skeleton_broken
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a05]
+DEFNAME=i_skeleton_broken
+TDATA1=i_skeleton_morebroken
+RESOURCES=i_shackles_hanging
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (broken) West
+ON=@Timer
+   ID=i_skeleton_morebroken
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a06]
+DEFNAME=i_skeleton_broken_2
+TDATA1=i_skeleton_morebroken_2
+RESOURCES=i_shackles_hanging_2
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (Broken) North
+ON=@Timer
+   ID=i_skeleton_morebroken_2
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a07]
+DEFNAME=i_shackles_hanging
+RESOURCES=2 i_ingot_iron
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Hanging Shackles West
+ON=@Timer
+   ID=i_skeleton_flesh
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a08]
+DEFNAME=i_shackles_hanging_2
+RESOURCES=2 i_ingot_iron
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Hanging Shackles North
+ON=@Timer
+   ID=i_skeleton_flesh_2
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a09]
+DEFNAME=i_skeleton_morebroken
+TDATA1=i_shackles_hanging
+RESOURCES=i_shackles_hanging
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (morebroken) West
+ON=@Timer
+   ID=i_shackles_hanging
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a0a]
+DEFNAME=i_skeleton_morebroken_2
+TDATA1=i_shackles_hanging_2
+RESOURCES=i_shackles_hanging_2
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (morebroken) North
+ON=@Timer
+   ID=i_shackles_hanging_2
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01a0b]
+//chained skeleton
+
+[ITEMDEF 01a0c]
+//chained skeleton
+
+[ITEMDEF 01a0d]
+//chained skeleton
+
+[ITEMDEF 01a0e]
+//chained skeleton
+
+[ITEMDEF 01ad8]
+DEFNAME=i_skull_pile
+TYPE=t_bone
+WEIGHT=180
+RESOURCES=45 i_bone_skull
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Pile of Skulls
+DUPELIST=01ad9,01ada,01adb,01adc,01add,01ade,01adf
+
+[ITEMDEF 01ad9]
+//pile of skulls
+DUPEITEM=01ad8
+
+[ITEMDEF 01ada]
+//pile of skulls
+DUPEITEM=01ad8
+
+[ITEMDEF 01adb]
+//pile of skulls
+DUPEITEM=01ad8
+
+[ITEMDEF 01adc]
+//pile of skulls
+DUPEITEM=01ad8
+
+[ITEMDEF 01add]
+//pile of skulls
+DUPEITEM=01ad8
+
+[ITEMDEF 01ade]
+//pile of skulls
+DUPEITEM=01ad8
+
+[ITEMDEF 01adf]
+//pile of skulls
+DUPEITEM=01ad8
+
+[ITEMDEF 01b09]
+DEFNAME=i_bone_pile
+TYPE=t_bone
+WEIGHT=17
+RESOURCES=12 i_bone, 5 i_bone_shards
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Bone Pile
+DUPELIST=01b0a,01b0b,01b0c,01b0d,01b0e,01b0f,01b10
+
+[ITEMDEF 01b0a]
+//bone pile
+DUPEITEM=01b09
+
+[ITEMDEF 01b0b]
+//bone pile
+DUPEITEM=01b09
+
+[ITEMDEF 01b0c]
+//bone pile
+DUPEITEM=01b09
+
+[ITEMDEF 01b0d]
+//bone pile
+DUPEITEM=01b09
+
+[ITEMDEF 01b0e]
+//bone pile
+DUPEITEM=01b09
+
+[ITEMDEF 01b0f]
+//bone pile
+DUPEITEM=01b09
+
+[ITEMDEF 01b10]
+//bone pile
+DUPEITEM=01b09
+
+[ITEMDEF 01b11]
+DEFNAME=i_bone
+TYPE=t_bone
+FLIP=1
+VALUE=1
+WEIGHT=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Bone
+DUPELIST=01b12
+
+[ITEMDEF 01b12]
+//bone
+DUPEITEM=01b11
+
+[ITEMDEF 01b13]
+DEFNAME=i_bone_jaw
+TYPE=t_bone
+FLIP=1
+VALUE=1
+WEIGHT=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Jaw Bone
+DUPELIST=01b14
+
+[ITEMDEF 01b14]
+//jaw bone
+DUPEITEM=01b13
+
+[ITEMDEF 01b15]
+DEFNAME=i_bone_pelvis
+TYPE=t_bone
+FLIP=1
+VALUE=1
+WEIGHT=4
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Pelvis Bone
+DUPELIST=01b16
+
+[ITEMDEF 01b16]
+//pelvis bone
+DUPEITEM=01b15
+
+[ITEMDEF 01b17]
+DEFNAME=i_bone_ribcage
+TYPE=t_bone
+FLIP=1
+VALUE=1
+WEIGHT=4
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Rib Cage
+DUPELIST=01b18
+
+[ITEMDEF 01b18]
+//rib cage
+DUPEITEM=01b17
+
+[ITEMDEF 01b19]
+DEFNAME=i_bone_shards
+TYPE=t_bone
+FLIP=1
+VALUE=1
+WEIGHT=2
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Bone Shards
+DUPELIST=01b1a
+
+[ITEMDEF 01b1a]
+//bone shards
+DUPEITEM=01b19
+
+[ITEMDEF 01b1b]
+DEFNAME=i_bone_spine
+TYPE=t_bone
+FLIP=1
+VALUE=2
+WEIGHT=4
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Spine
+DUPELIST=01b1c
+
+[ITEMDEF 01b1c]
+//spine
+DUPEITEM=01b1b
+
+[ITEMDEF 01b1d]
+DEFNAME=i_skeleton_flesh
+TDATA1=i_skeleton_boots
+WEIGHT=50
+RESOURCES=i_skeleton_boots, i_flesh_torso, i_flesh_right_leg, i_flesh_left_leg
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (Meat)
+ON=@TIMER
+   ID=i_skeleton_boots
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01b1e]
+DEFNAME=i_skeleton_flesh_2
+RESOURCES=1 i_skeleton_boots_2,1 i_flesh_torso,1 i_flesh_right_leg,1 i_flesh_left_leg
+TDATA1=i_skeleton_boots_2
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (Meat) North
+ON=@Timer
+   ID=i_skeleton_boots_2
+   TIMER=5000
+   UPDATE
+   RETURN 1
+
+[ITEMDEF 01b7c]
+RESOURCES=1 i_skeleton_hang,1 i_boots_calf
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (Boots) West
+DUPELIST=01b7d
+
+[ITEMDEF 01b7d]
+//skeleton
+DUPEITEM=01b7c
+
+[ITEMDEF 01b7f]
+RESOURCES=1 i_skeleton_hang_2,1 i_boots_calf
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skeleton (Boots) North
+DUPELIST=01b80
+
+[ITEMDEF 01b80]
+//skeleton
+DUPEITEM=01b7f
+
+[ITEMDEF 01bbf]
+DEFNAME=i_floorswitch_stone
+TYPE=t_switch
+RESOURCES=3 i_rock_plain
+CATEGORY=Levers and Switches
+SUBSECTION=Floor Switch
+DESCRIPTION=Stone Floor Switch (position 1)
+ON=@Create
+   MORE1=01bc0
+   MOREX=1
+
+[ITEMDEF 01bc0]
+TYPE=t_switch
+RESOURCES=3 i_rock_plain
+CATEGORY=Levers and Switches
+SUBSECTION=Floor Switch
+DESCRIPTION=Stone Floor Switch (position 2)
+ON=@Create
+   MORE1=01bc1
+   MOREX=1
+
+[ITEMDEF 01bc1]
+TYPE=t_switch
+RESOURCES=3 i_rock_plain
+CATEGORY=Levers and Switches
+SUBSECTION=Floor Switch
+DESCRIPTION=Stone Floor Switch (position 3)
+ON=@Create
+   MORE1=01bbf
+   MOREX=1
+
+[ITEMDEF 01c20]
+DEFNAME=i_body_shrouded
+FLIP=1
+WEIGHT=157.0
+RESOURCES=100 i_bandage,1 i_corpse_blank
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Wrapped Body
+DESCRIPTION=Wrapped Body
+DUPELIST=01c21
+
+[ITEMDEF 01c21]
+//Wrapped Body
+DUPEITEM=01c20
+
+[ITEMDEF 01c22]
+DEFNAME=i_casket_wood
+WEIGHT=32
+RESOURCES=32 i_board, 2 i_nails, 3 i_cloth
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Casket
+DESCRIPTION=@
+DUPELIST=01c23,01c24,01c25,01c26,01c27,01c28,01c29,01c2a,01c2b,01c2c,01c2d,01c2e,01c2f,01c30,01c31,01c32,01c33,01c34,01c35,01c36,01c37,01c38,01c39,01c3a
+
+[ITEMDEF 01c23]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c24]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c25]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c26]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c27]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c28]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c29]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c2a]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c2b]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c2c]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c2d]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c2e]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c2f]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c30]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c31]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c32]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c33]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c34]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c35]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c36]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c37]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c38]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c39]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c3a]
+//casket
+DUPEITEM=01c22
+
+[ITEMDEF 01c3b]
+DUPEITEM=01c22
+
+[ITEMDEF 01ae0]
+DEFNAME=i_bone_skull
+TYPE=t_bone
+VALUE=1
+WEIGHT=3
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=Skull
+DUPELIST=01ae1,01ae2,01ae3,01ae4
+
+[ITEMDEF 01ae1]
+//skull
+DUPEITEM=01ae0
+
+[ITEMDEF 01ae2]
+//skull
+DUPEITEM=01ae0
+
+[ITEMDEF 01ae3]
+//skull
+DUPEITEM=01ae0
+
+[ITEMDEF 01ae4]
+//skull
+DUPEITEM=01ae0
+
+[ITEMDEF 01c3c]
+DEFNAME=i_casket_wood_2
+WEIGHT=32
+RESOURCES=32 i_board, 2 i_nails
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Coffin
+DESCRIPTION=@
+DUPELIST=01c3d,01c3e,01c3f,01c40,01c41,01c42,01c43,01c44,01c45,01c46,01c47,01c48,01c49,01c4a,01c4b,01c4c,01c4d,01c4e,01c4f,01c50,01c51,01c52,01c53,01c54,01c55,01c56,01c57,01c58,01c59,01c5a,01c5b,01c5c,01c5d,01c5e,01c5f
+
+[ITEMDEF 01c3d]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c3e]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c3f]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c40]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c41]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c42]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c43]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c44]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c45]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c46]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c47]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c48]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c49]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c4a]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c4b]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c4c]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c4d]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c4e]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c4f]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c50]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c51]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c52]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c53]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c54]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c55]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c56]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c57]
+//coffin
+DUPEITEM=01c3c
+
+[ITEMDEF 01c58]
+//coffin lid
+DUPEITEM=01c3c
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c59]
+//coffin lid
+DUPEITEM=01c3c
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c5a]
+//coffin lid
+DUPEITEM=01c3c
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c5b]
+//coffin lid
+DUPEITEM=01c3c
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c5c]
+//coffin lid
+DUPEITEM=01c3c
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c5d]
+//coffin lid
+DUPEITEM=01c3c
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c5e]
+//coffin lid
+DUPEITEM=01c3c
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c5f]
+//coffin lid
+DUPEITEM=01c3c
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c60]
+DEFNAME=i_sarcophagus
+RESOURCES=42 i_stone_sand
+WEIGHT=42
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Sarcophagus
+DESCRIPTION=@
+DUPELIST=01c61,01c62,01c63,01c64,01c65,01c66,01c67,01c68,01c69,01c6a,01c6b,01c6c,01c6d,01c6e,01c6f,01c70,01c71,01c72,01c73,01c74,01c75,01c76,01c77,01c78,01c79,01c7a,01c7b,01c7c,01c7d,01c7e,01c7f,01c80,01c81,01c82,01c83,01c84,01c85,01c86,01c87,01c88,01c89,01c8a,01c8b,01c8c,01c8d,01c8e,01c8f,01c90,01c91,01c92,01c93,01c94,01c95,01c96,01c97,01c98,01c99,01c9a,01c9b,01c9c,01c9d,01c9e,01c9f,01ca0,01ca1,01ca2,01ca3,01ca4,01ca5,01ca6,01ca7,01ca8,01ca9,01caa,01cab,01cac,01cad,01cae,01caf,01cb0,01cb1,01cb2,01cb3,01cb4,01cb5,01cb6,01cb7,01cb8,01cb9,01cba,01cbb,01cbc,01cbd,01cbe,01cbf
+
+[ITEMDEF 01c61]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c62]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c63]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c64]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c65]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c66]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c67]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c68]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c69]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c6a]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c6b]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c6c]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c6d]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c6e]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c6f]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c70]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c71]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c72]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c73]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c74]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c75]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c76]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c77]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c78]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c79]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c7a]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c7b]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c7c]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c7d]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c7e]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c7f]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c80]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c81]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c82]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c83]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c84]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c85]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c86]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c87]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c88]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c89]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c8a]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c8b]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c8c]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c8d]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c8e]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c8f]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c90]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c91]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c92]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c93]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c94]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c95]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c96]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c97]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c98]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c99]
+//sarcophagus
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01c9a]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c9b]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c9c]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c9d]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c9e]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01c9f]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca0]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca1]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca2]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca3]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca4]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca5]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca6]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca7]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca8]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01ca9]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01caa]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cab]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cac]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cad]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01cae]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01caf]
+//sarcophagus lid
+DUPEITEM=01c60
+DESCRIPTION=@ Lid
+
+[ITEMDEF 01cb0]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cb1]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cb2]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cb3]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cb4]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cb5]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cb6]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cb7]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cb8]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cb9]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cba]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cbb]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cbc]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cbd]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cbe]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cbf]
+//sarcophagus
+DUPEITEM=01c60
+
+[ITEMDEF 01cc7]
+DEFNAME=i_blood_tile
+TYPE=t_blood
+VALUE=3
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Blood
+DESCRIPTION=Bloody Floor Tiles
+DUPELIST=01cc8,01cc9,01cca,01ccb,01ccc,01ccd,01cce,01ccf,01cd0,01cd1,01cd2,01cd3,01cd4,01cd5,01cd6,01cd7,01cd8,01cd9,01cda,01cdb,01cdc
+
+[ITEMDEF 01cc8]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cc9]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cca]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01ccb]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01ccc]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01ccd]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cce]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01ccf]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd0]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd1]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd2]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd3]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd4]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd5]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd6]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd7]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd8]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cd9]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cda]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cdb]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cdc]
+//bloody floor tiles
+DUPEITEM=01cc7
+
+[ITEMDEF 01cdd]
+DEFNAME=i_flesh_arm_right
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+FLIP=1
+VALUE=3
+WEIGHT=5
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Arm
+DUPELIST=01ce5
+
+[ITEMDEF 01cde]
+DEFNAME=i_flesh_upper_body
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+FLIP=1
+WEIGHT=22
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Upper Body
+DUPELIST=01ce6
+
+[ITEMDEF 01cdf]
+DEFNAME=i_flesh_leggings
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+FLIP=1
+WEIGHT=18
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Legs
+DUPELIST=01ce7
+
+[ITEMDEF 01ce0]
+DEFNAME=i_flesh_torso_2
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+FLIP=1
+WEIGHT=20
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Torso
+DUPELIST=01ce8
+
+[ITEMDEF 01ce1]
+DEFNAME=i_flesh_head
+RESOURCES=i_bone_skull, i_bone_jaw, i_flesh_brain
+FLIP=1
+WEIGHT=20
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Head
+DUPELIST=01ce9
+
+[ITEMDEF 01ce2]
+DEFNAME=i_flesh_leg
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+FLIP=1
+WEIGHT=18
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Leg
+DUPELIST=01cec
+
+[ITEMDEF 01ce3]
+DEFNAME=i_flesh
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+FLIP=1
+WEIGHT=4
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Body Part
+DUPELIST=01cea
+
+[ITEMDEF 01ce4]
+DEFNAME=i_flesh_legs_3
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+FLIP=1
+WEIGHT=18
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Legs
+DUPELIST=01ceb
+
+[ITEMDEF 01ce5]
+DEFNAME=i_flesh_arm_left
+DUPEITEM=01cdd
+
+[ITEMDEF 01ce6]
+DEFNAME=i_flesh_upper_body_2
+DUPEITEM=01cde
+
+[ITEMDEF 01ce7]
+DEFNAME=i_flesh_legs_4
+DUPEITEM=01cdf
+
+[ITEMDEF 01ce8]
+DEFNAME=i_flesh_torso_3
+DUPEITEM=01ce0
+
+[ITEMDEF 01ce9]
+DUPEITEM=01ce1
+
+[ITEMDEF 01cea]
+DEFNAME=i_flesh_2
+DUPEITEM=01ce3
+
+[ITEMDEF 01ceb]
+DEFNAME=i_flesh_legs_5
+DUPEITEM=01ce4
+
+[ITEMDEF 01cec]
+DEFNAME=i_flesh_leg_2
+DUPEITEM=01ce2
+
+[ITEMDEF 01d13]
+DEFNAME=i_casket_wood_2_with_body
+WEIGHT=32
+RESOURCES=32 i_board, 2 i_nails, i_body_shrouded
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Casket
+DESCRIPTION=@ (with body)
+DUPELIST=01d14,01d15,01d16,01d17,01d18,01d19,01d1a,01d1b,01d1c,01d1d,01d1e,01d1f,01d20,01d21,01d22,01d23,01d24,01d25,01d26,01d27,01d28,01d29,01d2a,01d2b,01d2c,01d2d,01d2e,01d2f,01d30,01d31,01d32,01d33,01d34,01d35,01d36,01d37,01d38,01d39,01d3a,01d3b,01d3c,01d3d,01d3e,01d3f,01d40,01d41,01d42,01d43,01d44,01d45,01d46,01d47,01d48,01d49,01d4a,01d4b
+
+[ITEMDEF 01d14]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d15]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d16]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d17]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d18]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d19]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d1a]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d1b]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d1c]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d1d]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d1e]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d1f]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d20]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d21]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d22]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d23]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d24]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d25]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d26]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d27]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d28]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d29]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d2a]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d2b]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d2c]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d2d]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d2e]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d2f]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d30]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d31]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d32]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d33]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d34]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d35]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d36]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d37]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d38]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d39]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d3a]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d3b]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d3c]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d3d]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d3e]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d3f]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d40]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d41]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d42]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d43]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d44]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d45]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d46]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d47]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d48]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d49]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d4a]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d4b]
+//body
+DUPEITEM=01d13
+
+[ITEMDEF 01d4c]
+DEFNAME=i_casket_wood_2_with_skeleton
+RESOURCES=32 i_BOARD, 2 i_NAILS, i_SKELETON
+WEIGHT=32
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=@
+DUPELIST=01d4d,01d4e,01d4f,01d50,01d51,01d52,01d53,01d54,01d55,01d56,01d57,01d58,01d59,01d5a,01d5b,01d5c,01d5d,01d5e,01d5f,01d60,01d61,01d62,01d63,01d64,01d65,01d66,01d67,01d68,01d69,01d6a,01d6b,01d6c,01d6d,01d6e,01d6f,01d70,01d71,01d72,01d73,01d74,01d75,01d76,01d77,01d78,01d79,01d7a,01d7b,01d7c,01d7d,01d7e,01d7f,01d80,01d81,01d82,01d83,01d84,01d85,01d86,01d87,01d88,01d89
+
+[ITEMDEF 01d4d]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d4e]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d4f]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d50]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d51]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d52]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d53]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d54]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d55]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d56]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d57]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d58]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d59]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d5a]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d5b]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d5c]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d5d]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d5e]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d5f]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d60]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d61]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d62]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d63]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d64]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d65]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d66]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d67]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d68]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d69]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d6a]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d6b]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d6c]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d6d]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d6e]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d6f]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d70]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d71]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d72]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d73]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d74]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d75]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d76]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d77]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d78]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d79]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d7a]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d7b]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d7c]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d7d]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d7e]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d7f]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d80]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d81]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d82]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d83]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d84]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d85]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d86]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d87]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d88]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d89]
+//skeleton
+DUPEITEM=01d4c
+
+[ITEMDEF 01d8a]
+DEFNAME=i_body_shrouded_2
+RESOURCES=7 i_cloth, i_corpse_blank
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body in wrappings
+DESCRIPTION=@
+DUPELIST=01d8b,01d8c,01d8d
+
+[ITEMDEF 01d8b]
+//body
+DUPEITEM=01d8a
+
+[ITEMDEF 01d8c]
+//body
+DUPEITEM=01d8a
+
+[ITEMDEF 01d8d]
+//body
+DUPEITEM=01d8a
+
+[ITEMDEF 01d8e]
+DEFNAME=i_skeleton
+WEIGHT=18
+RESOURCES=i_bone_skull, i_bone_jaw, 16 i_bone, i_bone_pelvis, i_bone_ribcage, 10 i_bone shards, i_bone_spine
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Skeletons
+DESCRIPTION=@
+DUPELIST=01d8f,01d90,01d91
+
+[ITEMDEF 01d8f]
+DEFNAME=i_skeleton_sw_part_2
+DUPEITEM=01d8e
+
+[ITEMDEF 01d90]
+DEFNAME=i_skeleton_se_part_1
+DUPEITEM=01d8e
+
+[ITEMDEF 01d91]
+DEFNAME=i_skeleton_se_part_2
+DUPEITEM=01d8e
+
+[ITEMDEF 01d92]
+DEFNAME=i_blood_drips
+TYPE=t_blood
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Blood
+DESCRIPTION=Bloodstains on Walls
+DUPELIST=01d93,01d94,01d95,01d96
+
+[ITEMDEF 01d93]
+//blood
+DUPEITEM=01d92
+
+[ITEMDEF 01d94]
+//blood
+DUPEITEM=01d92
+
+[ITEMDEF 01d95]
+//blood
+DUPEITEM=01d92
+
+[ITEMDEF 01d96]
+//blood
+DUPEITEM=01d92
+
+[ITEMDEF 01d9f]
+DEFNAME=i_flesh_torso
+VALUE=1
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+RESOURCES=i_flesh_heart, 2 i_ribs_raw, i_flesh_liver, i_flesh_entrails, i_blood
+WEIGHT=20
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Torso
+DUPELIST=01dad
+
+[ITEMDEF 01da0]
+// smaller head.
+DEFNAME=i_flesh_head_2
+VALUE=1
+RESOURCES=i_bone_skull, i_bone_jaw, i_flesh_brain, i_blood
+WEIGHT=20
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Head
+DUPELIST=01dae
+
+[ITEMDEF 01da1]
+DEFNAME=i_flesh_left_arm
+VALUE=1
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+WEIGHT=7
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Left Arm
+DUPELIST=01daf
+
+[ITEMDEF 01da2]
+DEFNAME=i_flesh_right_arm
+VALUE=1
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+WEIGHT=7
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Right Arm
+DUPELIST=01db0
+
+[ITEMDEF 01da3]
+DEFNAME=i_flesh_left_leg
+VALUE=1
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+WEIGHT=11
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Left Leg
+DUPELIST=01db1
+
+[ITEMDEF 01da4]
+DEFNAME=i_flesh_right_leg
+VALUE=1
+TYPE=t_meat_raw
+TDATA1=i_ribs_cooked
+WEIGHT=11
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Right leg
+DUPELIST=01db2
+
+
+[ITEMDEF 01dae]
+//head
+DUPEITEM=01da0
+
+[ITEMDEF 01daf]
+//right arm
+DUPEITEM=01da1
+
+[ITEMDEF 01db0]
+//left arm
+DUPEITEM=01da2
+
+[ITEMDEF 01db1]
+//right leg
+DUPEITEM=01da3
+
+[ITEMDEF 01db2]
+//left leg
+DUPEITEM=01da4
+
+[ITEMDEF 01dad]
+//body
+DUPEITEM=01d9f
+
+[ITEMDEF 021fc]
+DEFNAME=i_skull_spikes
+NAME=skull spikes
+TYPE=t_bone
+WEIGHT=130.0
+RESOURCES=10 i_bone,40 i_bone_skull
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Skull Spikes
+
+[ITEMDEF 02203]
+DEFNAME=i_skull_large
+NAME=large skull
+TYPE=t_bone
+VALUE=10
+WEIGHT=10.0
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Skull (large)
+
+[ITEMDEF 0224e]
+DEFNAME=i_skull_demon
+NAME=demon skull
+TYPE=t_bone
+FLIP=1
+WEIGHT=10.0
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Skull (demon 1)
+DUPELIST=0224f
+
+[ITEMDEF 0224f]
+//Skull (demon 1)
+DUPEITEM=0224e
+
+[ITEMDEF 02250]
+DEFNAME=i_skull_demon_2
+NAME=demon skull
+TYPE=t_bone
+FLIP=1
+WEIGHT=10.0
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Skull (demon 2)
+DUPELIST=02251
+
+[ITEMDEF 02251]
+//Skull (demon 2)
+DUPEITEM=02250
+
+[ITEMDEF 02ff9]
+DEFNAME=i_coffin_stone
+FLIP=1
+WEIGHT=350.0
+RESOURCES=35 i_rock_plain,10 i_cloth
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Stone Coffin
+DESCRIPTION=Stone Coffin
+DUPELIST=02ffa,03048,03049,0304a,0304b
+
+[ITEMDEF 02ffa]
+//stone coffin
+DUPEITEM=02ff9
+
+[ITEMDEF 03048]
+//stone coffin
+DUPEITEM=02ff9
+
+[ITEMDEF 03049]
+//stone coffin
+DUPEITEM=02ff9
+
+[ITEMDEF 0304a]
+//stone coffin
+DUPEITEM=02ff9
+
+[ITEMDEF 0304b]
+//stone coffin
+DUPEITEM=02ff9
+
+
+[ITEMDEF 0312d]
+DEFNAME=i_servered_elf_ears
+NAME=severed elf ears
+TYPE=t_normal
+FLIP=1
+VALUE=10
+WEIGHT=0.1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Servered Elf Ears
+DUPELIST=0312e
+
+[ITEMDEF 0312e]
+//severed elf ears
+DUPEITEM=0312d
+
+[ITEMDEF 0312f]
+DEFNAME=i_servered_human_ears
+NAME=servered human ears
+TYPE=t_normal
+FLIP=1
+VALUE=10
+WEIGHT=0.1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Body Parts
+DESCRIPTION=Servered Human Ears
+DUPELIST=03130
+
+[ITEMDEF 03130]
+//severed human ears
+DUPEITEM=0312f
+
+
+[EOF]

@@ -1,0 +1,210 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 14, 2011
+VERSION=0.56b
+
+
+///////////////////////////////////////////////////////////////
+//////// BOOMERANGS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 08ff]
+DEFNAME=i_boomerang
+NAME=boomerang
+TYPE=t_weapon_bow
+TDATA3=//nothing is consumed... the weapon itself is thrown
+TDATA4=i_boomerang
+DAM=8,12
+FLIP=1
+SKILL=Throwing
+SPEED=2.0
+RANGE=1,4
+VALUE=20
+WEIGHT=4.0
+REQSTR=25
+TWOHANDS=N
+RESOURCES=5 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Boomerangs
+DESCRIPTION=Boomerang
+TEVENTS=t_iprop
+TAG.Item.Gargoyle=1
+DUPELIST=04067
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 04067]
+DUPEITEM=08ff
+
+
+///////////////////////////////////////////////////////////////
+//////// CYCLONES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0901]
+DEFNAME=i_cyclone
+NAME=cyclone
+TYPE=t_weapon_bow
+TDATA3=//nothing is consumed... the weapon itself is thrown
+TDATA4=i_cyclone
+DAM=13,17
+SKILL=Throwing
+SPEED=3.0
+RANGE=1,6
+VALUE=36
+WEIGHT=6.0
+REQSTR=40
+TWOHANDS=N
+RESOURCES=9 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Cyclones
+DESCRIPTION=Cyclone
+TEVENTS=t_iprop
+TAG.Item.Gargoyle=1
+DUPELIST=0406c
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 0406c]
+DUPEITEM=0901
+
+[ITEMDEF 048d3]
+DEFNAME=i_cyclone_animation
+NAME=cyclone
+TYPE=t_normal
+
+
+///////////////////////////////////////////////////////////////
+//////// SOUL GLAIVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 090a]
+DEFNAME=i_soul_glaive
+NAME=soul glaive
+TYPE=t_weapon_bow
+TDATA3=//nothing is consumed... the weapon itself is thrown
+TDATA4=i_glaive_anim_x
+DAM=18,22
+FLIP=1
+SKILL=Throwing
+SPEED=4.0
+RANGE=1,8
+VALUE=36
+WEIGHT=8.0
+REQSTR=60
+TWOHANDS=N
+RESOURCES=9 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Soul Glaives
+DESCRIPTION=Soul Glaive
+TEVENTS=t_iprop
+TAG.Item.Gargoyle=1
+DUPELIST=0406b
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 0406b]
+DUPEITEM=090a
+
+[ITEMDEF 0909]
+DEFNAME=i_glaive_anim_x
+NAME=soul glaive
+DUPELIST=04069
+
+[ITEMDEF 04069]
+DUPEITEM=0909
+
+[ITEMDEF 048d2]
+DEFNAME=i_glaive_animation
+NAME=glaive
+TYPE=t_normal
+
+
+///////////////////////////////////////////////////////////////
+//////// BOLAS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026ac]
+DEFNAME=i_bola
+NAME=bola
+TYPE=t_bola
+WEIGHT=4.0
+SKILLMAKE=Tinkering 60.0, t_tinker_tools
+RESOURCES=4 i_bola_ball, 3 i_hides_cut
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Bolas
+DESCRIPTION=Bola
+
+[ITEMDEF i_bola_ball]
+//The bola ball is used to craft a bola, is is not actually ammunition
+ID=i_cannon_ball
+NAME=bola ball%s
+TYPE=t_normal
+WEIGHT=4.0
+SKILLMAKE=Tinkering 45.0, t_tinker_tools
+RESOURCES=10 i_ingot_iron
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Bolas
+DESCRIPTION=Bola Ball
+ON=@Create
+   COLOR=08ac
+
+
+///////////////////////////////////////////////////////////////
+//////// SHURIKENS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027ac]
+DEFNAME=i_shuriken
+NAME=shuriken%s
+TYPE=t_ninja_shuriken
+FLIP=1
+WEIGHT=0.1
+RESOURCES=5 i_ingot_iron
+SKILLMAKE=Blacksmithing 45.0
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Shurikens
+DESCRIPTION=Shuriken
+DUPELIST=027f7
+
+[ITEMDEF 027f7]
+//Shuriken
+DUPEITEM=027ac
+
+
+///////////////////////////////////////////////////////////////
+//////// SMOKE BOMBS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02808]
+//This weapon is not equiped, it is thrown
+DEFNAME=i_bomb_smoke
+NAME=smoke bomb
+TYPE=t_weapon_thrown//fixme:t_smokebomb?
+VALUE=7
+WEIGHT=0.7
+RESOURCES=6 i_reag_volcanic_ash,1 i_egg_small
+SKILLMAKE=ALCHEMY 95.1
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Smoke Bombs
+DESCRIPTION=Smoke Bomb
+
+
+///////////////////////////////////////////////////////////////
+//////// EGG BOMBS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02809]
+//This weapon is not equiped, it is thrown
+DEFNAME=i_bomb_egg
+NAME=egg bomb
+TYPE=t_weapon_thrown//fixme:t_egg_bomb
+VALUE=7
+WEIGHT=0.7
+RESOURCES=6 i_reag_volcanic_ash,1 i_egg_small
+SKILLMAKE=ALCHEMY 95.1
+CATEGORY=Provisions - Weapons - Throwing
+SUBSECTION=Egg Bombs
+DESCRIPTION=Egg Bomb
+
+
+[EOF]

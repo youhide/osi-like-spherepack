@@ -1,0 +1,1015 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 14, 2011
+VERSION=0.56b
+
+
+///////////////////////////////////////////////////////////////
+//////// AXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f49]
+DEFNAME=i_axe
+TYPE=t_weapon_axe
+DAM=14,16
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.0
+VALUE=62
+WEIGHT=4
+REQSTR=35
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 34.2
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Axes
+DESCRIPTION=Axe
+TEVENTS=t_iprop
+DUPELIST=0f4a
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f4a]
+DUPEITEM=0f49
+
+
+///////////////////////////////////////////////////////////////
+//////// BARDICHES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f4d]
+DEFNAME=i_bardiche
+TYPE=t_weapon_axe
+DAM=17,18
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.2
+VALUE=111
+WEIGHT=7
+REQSTR=45
+TWOHANDS=Y
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 31.7
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Bardiches
+DESCRIPTION=Bardiche
+TEVENTS=t_iprop
+DUPELIST=0f4e
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f4e]
+DUPEITEM=0f4d
+
+
+///////////////////////////////////////////////////////////////
+//////// BATTLE AXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f47]
+DEFNAME=i_axe_battle
+TYPE=t_weapon_axe
+DAM=15,17
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.5
+VALUE=59
+WEIGHT=4
+REQSTR=35
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 30.5
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Axes
+DESCRIPTION=Battle Axe
+TEVENTS=t_iprop
+DUPELIST=0f48
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f48]
+DUPEITEM=0f47
+
+
+///////////////////////////////////////////////////////////////
+//////// BLADED STAVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026bd]
+DEFNAME=i_bladed_staff
+NAME=bladed staff
+TYPE=t_weapon_mace_sharp
+DAM=14,16
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.0
+VALUE=69
+WEIGHT=4
+REQSTR=40
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 40.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Bladed Staves
+DESCRIPTION=Bladed Staff
+TEVENTS=t_iprop
+DUPELIST=026c7
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 026c7]
+DUPEITEM=026bd
+
+
+///////////////////////////////////////////////////////////////
+//////// CRESCENT BLADES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026c1]
+DEFNAME=i_crescent_blade
+NAME=crescent blade
+TYPE=t_weapon_sword
+DAM=11,14
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.5
+VALUE=110
+WEIGHT=4.0
+REQSTR=55
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 45.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Crescent Blades
+DESCRIPTION=Crescent Blade
+TEVENTS=t_iprop
+DUPELIST=026cb
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 026cb]
+DUPEITEM=026c1
+
+
+///////////////////////////////////////////////////////////////
+//////// DAISHOS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027a9]
+DEFNAME=i_daisho
+NAME=daisho
+TYPE=t_weapon_sword
+DAM=13,15
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.2
+VALUE=166
+WEIGHT=8.0
+REQSTR=40
+TWOHANDS=Y
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 60.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Daishos
+DESCRIPTION=Daisho
+TEVENTS=t_iprop
+DUPELIST=027f4
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027f4]
+DUPEITEM=027a9
+
+[ITEMDEF i_swords_prosperity]
+ID=i_daisho
+NAME=Swords of Prosperity
+TEVENTS=t_iprop
+TAG.MageWeapon=0
+TAG.Luck=200
+TAG.FasterCasting=1
+TAG.DamFire=100
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Daishos
+DESCRIPTION=Swords of Prosperity
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// DOUBLE AXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f4b]
+DEFNAME=i_axe_double
+TYPE=t_weapon_axe
+DAM=15,17
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.2
+VALUE=103
+WEIGHT=8
+REQSTR=45
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 29.3
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Double Axes
+DESCRIPTION=Double Axe
+TEVENTS=t_iprop
+DUPELIST=0f4c
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f4c]
+DUPEITEM=0f4b
+
+
+///////////////////////////////////////////////////////////////
+//////// EXECUTIONER'S AXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f45]
+DEFNAME=i_axe_exec
+TYPE=t_weapon_axe
+DAM=15,17
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.2
+VALUE=74
+WEIGHT=8
+REQSTR=40
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 34.2
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Executioner's Axes
+DESCRIPTION=Executioner's Axe
+TEVENTS=t_iprop
+DUPELIST=0f46
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f46]
+DUPEITEM=0f45
+
+[ITEMDEF i_geoffrey_axe]
+ID=i_axe_exec
+NAME=Geoffrey's Axe - Museum of Vesper Replica
+TEVENTS=t_iprop
+TAG.StrengthBonus=10
+TAG.Luck=150
+TAG.HitChanceIncrease=15
+TAG.DamageIncrease=40
+TAG.ResFire=10
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Executioner's Axes
+DESCRIPTION=Geoffrey's Axe - Museum of Vesper Replica
+ON=@Create
+   COLOR=colors_red
+   HITPOINTS=80
+
+[ITEMDEF i_zyronic_claw]
+DEFNAME=i_doom_zyronic_claw
+ID=i_axe_exec
+NAME=Zyronic Claw
+TEVENTS=t_iprop
+TAG.Artifact=10
+TAG.Slayer.Super=SSLAYER_ELEMENTAL
+TAG.HitManaLeech=81
+TAG.HitChanceIncrease=30
+TAG.DamageIncrease=50
+TAG.DamPhysical=20
+TAG.DamFire=20
+TAG.DamCold=20
+TAG.DamPoison=20
+TAG.DamEnergy=20
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Executioner's Axes
+DESCRIPTION=Zyronic Claw
+ON=@Create
+   COLOR=color_o_bloodrock
+   HITPOINTS=255
+
+///////////////////////////////////////////////////////////////
+//////// HALBERDS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0143e]
+DEFNAME=i_halberd
+TYPE=t_weapon_axe
+DAM=18,19
+FLIP=1
+SKILL=Swordsmanship
+SPEED=4.2
+VALUE=134
+WEIGHT=16
+REQSTR=95
+TWOHANDS=Y
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 39.1
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Halberds
+DESCRIPTION=Halberd
+TEVENTS=t_iprop
+DUPELIST=0143f
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0143f]
+DUPEITEM=0143e
+
+[ITEMDEF i_blaze_death]
+ID=i_halberd
+NAME=Blaze of Death
+TEVENTS=t_iprop
+TAG.HitFireball=50
+TAG.HitFireArea=50
+TAG.SwingSpeedIncrease=25
+TAG.DamageIncrease=35
+TAG.ResFire=10
+TAG.DamPhysical=50
+TAG.DamFire=50
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Halberds
+DESCRIPTION=Blaze of Death
+ON=@Create
+   COLOR=51
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// HATCHETS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f43]
+DEFNAME=i_hatchet
+TYPE=t_weapon_axe
+DAM=13,15
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.2
+VALUE=33
+WEIGHT=4
+REQSTR=20
+TWOHANDS=N
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=TINKERING 30.0, t_tinker_tools
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Hatchets
+DESCRIPTION=Hatchet
+TEVENTS=t_iprop
+DUPELIST=0f44
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f44]
+DUPEITEM=0f43
+
+[ITEMDEF i_melisande_corroded_hatchet]
+ID=i_hatchet
+NAME=Melisande's Corroded Hatchet
+TEVENTS=t_iprop
+TAG.Skill.Bonus.1=Lumberjacking,5.0
+TAG.SelfRepair=4
+TAG.SpellChanneling=1
+TAG.SwingSpeedIncrease=15
+TAG.DamageIncrease=-50
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Hatchets
+DESCRIPTION=Melisande's Corroded Hatchet
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=56
+
+
+///////////////////////////////////////////////////////////////
+//////// LARGE BATTLE AXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013fa]
+DEFNAME=i_axe_battle_large
+TYPE=t_weapon_axe
+DAM=16,17
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.2
+VALUE=117
+WEIGHT=6
+REQSTR=80
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 28.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Large Battle Axes
+DESCRIPTION=Large Battle Axe
+TEVENTS=t_iprop
+DUPELIST=013fb
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013fb]
+DUPEITEM=013fa
+
+
+///////////////////////////////////////////////////////////////
+//////// NO-DACHI
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027a2]
+DEFNAME=i_no_dachi
+NAME=no-dachi
+TYPE=t_weapon_sword
+DAM=16,18
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.5
+VALUE=137
+WEIGHT=10
+REQSTR=40
+TWOHANDS=Y
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=No-Dachi
+DESCRIPTION=No-Dachi
+TEVENTS=t_iprop
+DUPELIST=027ed
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027ed]
+//no-dachi
+DUPEITEM=027a2
+
+[ITEMDEF i_sword_stampede]
+ID=i_no_dachi
+NAME=Sword of the Stampede
+TEVENTS=t_iprop
+TAG.HitHarm=100
+TAG.DamageIncrease=60
+TAG.DamCold=100
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=No-Dachi
+DESCRIPTION=Sword of the Stampede
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255
+
+[ITEMDEF i_destroyer]
+ID=i_no_dachi
+NAME=The Destroyer
+DAM=9,11
+SPEED=2.0
+WEIGHT=7
+REQSTR=15
+TEVENTS=t_iprop
+TAG.ReflectPhysicalDamage=10
+TAG.DefenseChanceIncrease=10
+TAG.DamageIncrease=35
+TAG.ResFire=10
+TAG.ResPoison=10
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=No-Dachi
+DESCRIPTION=The Destroyer
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// ORNATE AXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d28]
+DEFNAME=i_ornate_axe
+NAME=ornate axe
+TYPE=t_weapon_axe
+DAM=18,20
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.5
+VALUE=124
+WEIGHT=12
+REQSTR=45
+TWOHANDS=Y
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Ornate Axes
+DESCRIPTION=Ornate Axe
+TEVENTS=t_iprop
+DUPELIST=02d34
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02d34]
+DUPEITEM=02d28
+
+[ITEMDEF i_guardian_axe]
+ID=i_ornate_axe
+NAME=Guardian Axe
+RESOURCES=18 i_ingot_iron, 1 i_gem_blue_diamond
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitPointIncrease=4
+TAG.HitPointRegeneration=1
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Ornate Axes
+DESCRIPTION=Guardian Axe
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_heavy_ornate_axe]
+ID=i_ornate_axe
+NAME=Heavy Ornate Axe
+RESOURCES=18 i_ingot_iron, 1 i_gem_turquoise
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.DamageIncrease=8
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Ornate Axes
+DESCRIPTION=Heavy Ornate Axe
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_singing_axe]
+ID=i_ornate_axe
+NAME=Singing Axe
+RESOURCES=18 i_ingot_iron, 1 i_gem_brilliant_amber
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.Skill.Bonus.1=Musicianship,5.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Ornate Axes
+DESCRIPTION=Singing Axe
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_talon_bite]
+ID=i_ornate_axe
+NAME=Talon Bite
+TEVENTS=t_iprop
+TAG.Skill.Bonus.1=Tactics,10.0
+TAG.HitHarm=33
+TAG.DexterityBonus=8
+TAG.SwingSpeedIncrease=20
+TAG.DamageIncrease=35
+TAG.BestWeaponSkill=1
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Ornate Axes
+DESCRIPTION=Talon Bite
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255
+
+[ITEMDEF i_thundering_axe]
+ID=i_ornate_axe
+NAME=Thundering Axe
+RESOURCES=18 i_ingot_iron, 1 i_gem_ecru_citrine
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitLightning=10
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Ornate Axes
+DESCRIPTION=Thundering Axe
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// PALADIN SWORDS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026ce]
+//FIXME: this is not on stratics?
+DEFNAME=i_paladin_sword
+NAME=paladin sword
+TYPE=t_weapon_sword
+DAM=20,24
+FLIP=1
+SKILL=swordsmanship
+SPEED=5.0
+VALUE=142
+WEIGHT=6.0
+REQSTR=85
+RESOURCES=16 i_ingot_iron
+SKILLMAKE=Blacksmithing 46.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Paladin Swords
+DESCRIPTION=Paladin Sword
+TEVENTS=t_iprop
+DUPELIST=026cf
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 026cf]
+DUPEITEM=026ce
+
+[ITEMDEF i_redeemer]
+ID=i_paladin_sword
+NAME=The Redeemer
+TEVENTS=t_iprop
+TAG.Artifact=7
+TAG.Slayer.Less=SSLAYER_UNDEAD
+TAG.Slayer.Super=SSLAYER_DEMON
+TAG.DamageIncrease=55
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Paladin Swords
+DESCRIPTION=The Redeemer
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=100
+
+[ITEMDEF i_corredor_sword]
+ID=i_paladin_sword
+NAME=The Great Sword
+DAM=15,35
+//TEVENTS=t_aos_weapon
+//TEVENTS=T_PROPRIEDADES
+//TEVENTS=t_luck_item
+TEVENTS=t_iprop
+TAG.DamageIncrease=30
+TAG.HitChanceIncrease=60
+TAG.Luck=70
+ON=@Create
+	COLOR=35
+	HITPOINTS=252
+	MOREM=2
+
+
+///////////////////////////////////////////////////////////////
+//////// RUNE BLADES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d26]
+DEFNAME=i_rune_blade
+NAME=rune blade
+TYPE=t_weapon_sword
+DAM=15,17
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.0
+VALUE=104
+WEIGHT=7
+REQSTR=30
+TWOHANDS=Y
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Rune Blades
+DESCRIPTION=Rune Blade
+TEVENTS=t_iprop
+DUPELIST=02d32
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02d32]
+DUPEITEM=02d26
+
+[ITEMDEF i_blade_dance]
+ID=i_rune_blade
+NAME=Blade Dance
+TEVENTS=t_iprop
+TAG.SpellChanneling=1
+TAG.HitManaLeech=30
+TAG.ManaIncrease=8
+TAG.DamageIncrease=30
+TAG.BestWeaponSkill=1
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Rune Blades
+DESCRIPTION=Blade Dance
+ON=@Create
+   COLOR=color_o_bloodrock
+   HITPOINTS=255
+
+[ITEMDEF i_corrupted_rune_blade]
+ID=i_rune_blade
+NAME=Corruped Rune Blade
+RESOURCES=15 i_ingot_iron, 1 i_ingredient_corruption
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.ResPhysical=-5
+TAG.ResPoison=12
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Rune Blades
+DESCRIPTION=Corrupted Rune Blade
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_luminous_rune_blade]
+ID=i_rune_blade
+NAME=Luminous Rune Blade
+RESOURCES=15 i_ingot_iron, 10 i_ingredient_corruption, 10 i_ingredient_putrefaction, 10 i_ingredient_grizzled_bones
+SKILLMAKE=Blacksmithing 70.0
+TEVENTS=t_iprop
+TAG.HitLightning=40
+TAG.SelfRepair=5
+TAG.NightSight=1
+TAG.SwingSpeedIncrease=25
+TAG.DamageIncrease=55
+TAG.DamEnergy=100
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Rune Blades
+DESCRIPTION=Luminous Rune Blade
+ON=@Create
+   COLOR=<ColorElementalType>
+   HITPOINTS=255
+
+[ITEMDEF i_mage_rune_blade]
+ID=i_rune_blade
+NAME=Mage's Rune Blade
+RESOURCES=15 i_ingot_iron, 1 i_gem_blue_diamond
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.FasterCasting=1
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Rune Blades
+DESCRIPTION=Mage's Rune Blade
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_rune_blade_knowledge]
+ID=i_rune_blade
+NAME=Rune Blade of Knowledge
+RESOURCES=15 i_ingot_iron, 1 i_gem_ecru_citrine
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.SpellDamageIncrease=5
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Rune Blades
+DESCRIPTION=Rune Blade of Knowledge
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_runesabre]
+ID=i_rune_blade
+NAME=Runesabre
+RESOURCES=15 i_ingot_iron, 1 i_gem_turquoise
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.Skill.Bonus.1=MagicResistance,5.0
+TAG.MageWeapon=-29
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Rune Blades
+DESCRIPTION=Runesabre
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// SCYTHES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026ba]
+DEFNAME=i_scythe
+NAME=scythe
+TYPE=t_weapon_sword
+DAM=15,18
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.5
+VALUE=81
+WEIGHT=5
+REQSTR=45
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 39.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Scythes
+DESCRIPTION=Scythe
+TEVENTS=t_iprop
+DUPELIST=026c4
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 026ca]
+DUPEITEM=026c0
+
+
+///////////////////////////////////////////////////////////////
+//////// TWO HANDED AXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 01442]
+DEFNAME=i_axe_two_hand
+TYPE=t_weapon_axe
+DAM=16,17
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.5
+VALUE=99
+WEIGHT=8
+REQSTR=40
+TWOHANDS=Y
+RESOURCES=16 i_ingot_iron
+SKILLMAKE=Blacksmithing 33.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Two Handed Axes
+DESCRIPTION=Two Handed Axe
+TEVENTS=t_iprop
+DUPELIST=01443
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 01443]
+DUPEITEM=01442
+
+///////////////////////////////////////////////////////////////
+//////// DUAL SHORT AXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 08fd]
+DEFNAME=i_dual_short_axes
+NAME=dual short axes
+TYPE=t_weapon_axe
+DAM=14,16
+SKILL=Swordsmanship
+SPEED=3.0
+//VALUE=FIXME
+WEIGHT=4.0
+REQSTR=35
+TWOHANDS=Y
+RESOURCES=24 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Dual Short Axes
+DESCRIPTION=Dual Short Axes
+TEVENTS=t_iprop
+DUPELIST=04068
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 04068]
+DUPEITEM=08fd
+
+
+///////////////////////////////////////////////////////////////
+//////// GARGISH TALWARS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0908]
+DEFNAME=i_gargish_talwar
+NAME=Gargish talwar
+TYPE=t_weapon_sword
+DAM=16,18
+SKILL=Swordsmanship
+SPEED=3.5
+//VALUE=FIXME
+WEIGHT=4.0
+REQSTR=40
+TWOHANDS=Y
+RESOURCES=18 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Gargish Talwars
+DESCRIPTION=Gargish Talwar
+DUPELIST=04075
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 04075]
+DUPEITEM=0908
+
+
+///////////////////////////////////////////////////////////////
+//////// GARGISH 
+///////////////////////////////////////////////////////////////
+
+[ITEMDEF 048b0]
+DEFNAME=i_gargish_axe_battle
+NAME=Gargish battle axe
+TYPE=t_weapon_axe
+DAM=15,17
+FLIP=1
+SKILL=Swordsmanship
+SPEED=38//FIXME
+VALUE=59
+WEIGHT=6.3
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 30.5
+CATEGORY=Provisions - Weapons
+SUBSECTION=Swordsmanship
+DESCRIPTION=Gargish Battle Axe
+REQSTR=35
+TAG.GargoyleOnly=1
+TEVENTS=t_iprop
+DUPELIST=048b1
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048b1]
+//gargish battle axe
+DUPEITEM=048b0
+
+
+[ITEMDEF 048b2]
+DEFNAME=i_gargish_axe
+NAME=Gargish axe
+TYPE=t_weapon_axe
+DAM=14,16
+FLIP=1
+SKILL=Swordsmanship
+SPEED=44//FIXME
+VALUE=59
+WEIGHT=6.3
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 34.2
+CATEGORY=Provisions - Weapons
+SUBSECTION=Swordsmanship
+DESCRIPTION=Gargish Battle Axe
+REQSTR=35
+TAG.GargoyleOnly=1
+TEVENTS=t_iprop
+DUPELIST=048b3
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048b3]
+//gargish axe
+DUPEITEM=048b2
+
+
+[ITEMDEF 048b4]
+DEFNAME=i_gargish_bardiche
+NAME=Gargish bardiche
+TYPE=t_weapon_sword
+DAM=17,18
+FLIP=1
+SPEED=35//FIXME
+SKILL=Swordsmanship
+VALUE=111
+WEIGHT=13.5
+TWOHANDS=Y
+RESOURCES=18 i_ingot_iron,2 i_log
+SKILLMAKE=Blacksmithing 31.7
+CATEGORY=Provisions - Weapons
+SUBSECTION=Swordsmanship
+DESCRIPTION=Gargish Bardiche
+REQSTR=45
+TAG.GargoyleOnly=1
+TEVENTS=t_iprop
+DUPELIST=048b5
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048b5]
+//gargish bardiche
+DUPEITEM=048b4
+
+
+[ITEMDEF 048c4]
+DEFNAME=i_gargish_scythe
+NAME=Gargish scythe
+TYPE=t_weapon_sword
+DAM=15,18
+FLIP=1
+SKILL=Swordsmanship
+SPEED=38//FIXME
+RANGE=2
+VALUE=81
+WEIGHT=5.0
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron,2 i_board
+SKILLMAKE=Blacksmithing 39.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Swordsmanship
+DESCRIPTION=Gargish Scythe
+REQSTR=45
+TEVENTS=t_iprop
+DUPELIST=048c5
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048c5]
+//Gargish scythe
+DUPEITEM=048c4
+
+
+[ITEMDEF 048d0]
+DEFNAME=i_gargish_daisho
+NAME=Gargish daisho
+TYPE=t_weapon_sword
+DAM=13,15
+FLIP=1
+SKILL=Swordsmanship
+SPEED=47//FIXME
+VALUE=166
+WEIGHT=8.0
+TWOHANDS=Y
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 60.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Swordsmanship
+DESCRIPTION=Gargish Daisho
+REQSTR=40
+TEVENTS=t_iprop
+DUPELIST=048d1
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048d1]
+//Gargish daisho
+DUPEITEM=048d0
+
+
+[EOF]

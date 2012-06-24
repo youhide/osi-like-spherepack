@@ -1,0 +1,2880 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Monday, February 20, 2012
+VERSION=0.56b
+
+
+[ITEMDEF 09b2]
+DEFNAME=i_bankbox
+NAME=Bank Box
+LAYER=layer_bankbox
+TYPE=t_eq_bank_box
+TDATA2=04a
+
+[ITEMDEF 0eb0]
+//FIXME: used for BBoard messages
+DEFNAME=i_vase_rose
+NAME=rose in a vase
+TYPE=t_message
+WEIGHT=1.1
+RESOURCES=1 i_vase_small_1, 1 i_flower_rose_white
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Vase with Rose
+ON=@DClick
+   RETURN 1
+
+[ITEMDEF 0f31]
+DEFNAME=i_twig
+WEIGHT=0.1
+CATEGORY=Vegetation
+SUBSECTION=Sticks and Wood
+DESCRIPTION=Twig
+DUPELIST=0f32
+
+[ITEMDEF 0f32]
+//twig
+DUPEITEM=0f31
+
+[ITEMDEF 0f5b]
+//FIXME: Is this right? should it be a fireball anim?
+//DUPEITEM=0f53
+
+[ITEMDEF 0faa]
+DEFNAME=i_game_mahjong
+//NAME=mahjong
+//TYPE=t_game_board
+//TDATA2=02c00
+WEIGHT=5.0
+//RESOURCES=10 i_ivory,10 i_ebony
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=MahJong
+
+[ITEMDEF 0152c]
+DEFNAME=i_mousehole
+NAME=mousehole
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Wall Mousehole
+DESCRIPTION=Mousehole
+DUPELIST=0152d
+
+[ITEMDEF 0152d]
+// mousehole
+DUPEITEM=0152c
+
+[ITEMDEF 01646]
+DEFNAME=i_dark_source
+WEIGHT=0
+LAYER=layer_talisman//FIXME: test this
+ON=@Create
+   ATTR=attr_magic|attr_newbie
+   MOREZ=024
+
+[ITEMDEF 01647]
+DEFNAME=i_light_source
+TYPE=t_light_lit
+WEIGHT=0
+LAYER=layer_light
+TDATA4=i_light_source
+ON=@Create
+   ATTR=attr_magic|attr_newbie
+
+[ITEMDEF 01950]
+DEFNAME=i_dartboard_mongbat
+NAME=mongbat dartboard
+//FLIP=1
+TYPE=t_archery_butte
+VALUE=75
+WEIGHT=15.0
+RESOURCES=15 i_log,1 i_cloth,1 i_nails,10 i_fur_dark
+SKILLMAKE=Carpentry 15.7,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=Mongbat Dartboard
+DUPELIST=01951,01952,01953,01954,01955
+
+[ITEMDEF 01951]
+//mongbat dartboard
+DUPEITEM=01950
+
+[ITEMDEF 01952]
+//mongbat dartboard
+DUPEITEM=01950
+
+[ITEMDEF 01953]
+//mongbat dartboard
+DUPEITEM=01950
+
+[ITEMDEF 01954]
+//mongbat dartboard
+DUPEITEM=01950
+
+[ITEMDEF 01955]
+//mongbat dartboard
+DUPEITEM=01950
+
+[ITEMDEF 01b70]
+DEFNAME=i_target_tile
+CATEGORY=Ground Tiles
+SUBSECTION=Target Tile
+DESCRIPTION=Target Tile
+
+[ITEMDEF 01bc6]
+DEFNAME=i_shield_scale
+//TYPE=t_shield
+//ARMOR=16
+FLIP=1
+VALUE=158
+WEIGHT=20.0
+RESOURCES=10 i_ingot_silver,4 i_ingot_blackrock,2 i_ingot_gold
+CATEGORY=Provisions - Armor
+SUBSECTION=Shields
+DESCRIPTION=Scale Shield (unwearable)
+DUPELIST=01bc7
+
+[ITEMDEF 01bc7]
+//scale shield
+DUPEITEM=01bc6
+
+[ITEMDEF 01ea7]
+//Worldgem bit plain and small (see fancy bit at 1f13)
+DEFNAME=i_worldgem_bit
+TYPE=t_spawn_char
+CATEGORY=Provisions - GM Items
+SUBSECTION=Special Items
+DESCRIPTION=Worldgem Bit
+
+[ITEMDEF 01f13]
+//fancy medium sized worldgem bit (see plain at 01ea7)
+DEFNAME=i_worldgem_lg
+TYPE=t_spawn_char
+CATEGORY=Provisions - GM Items
+SUBSECTION=Special Items
+DESCRIPTION=Large Worldgem Bit
+
+[ITEMDEF 01f23]
+DEFNAME=i_deed2
+NAME=deed
+TYPE=t_deed
+WEIGHT=0.2
+RESOURCES=1 i_paper,1 i_wax_seal
+CATEGORY=Provisions - Deeds
+SUBSECTION=House Deeds
+DESCRIPTION=Deed 2 (Blank)
+
+[ITEMDEF 02005]
+// Invis marker
+DEFNAME=i_eq_marker
+
+[ITEMDEF 02007]
+DEFNAME=i_memory
+NAME=memory object
+TYPE=t_eq_memory_obj
+LAYER=layer_special
+CATEGORY=Miscellaneous
+SUBSECTION=Bad Tiles
+DESCRIPTION=NonGen (Memory) Object
+
+[ITEMDEF 0207d]
+//unnecessary copy of item 0db?
+DEFNAME=i_pillar
+NAME=pillar
+
+[ITEMDEF 02256]
+DEFNAME=i_bagball_small
+TYPE=t_normal
+VALUE=5
+WEIGHT=0.5
+RESOURCES=1 i_hides_cut
+CATEGORY=Miscellaneous
+SUBSECTION=Games
+DESCRIPTION=Bagball
+
+[ITEMDEF 02257]
+DEFNAME=i_bagball_large
+TYPE=t_normal
+VALUE=10
+WEIGHT=1.0
+RESOURCES=2 i_hides_cut
+CATEGORY=Miscellaneous
+SUBSECTION=Games
+DESCRIPTION=Bagball (large)
+
+[ITEMDEF 02258]
+DEFNAME=i_bulk_order_deed
+TYPE=t_normal
+WEIGHT=1.0
+RESOURCES=1 i_parchment
+CATEGORY=Miscellaneous
+SUBSECTION=BOD
+DESCRIPTION=Bulk Order Deed
+
+[ITEMDEF 02259]
+DEFNAME=i_bulk_order_book
+TYPE=t_normal
+WEIGHT=4.0
+RESOURCES=10 i_bulk_order_deed
+CATEGORY=Miscellaneous
+SUBSECTION=BOD
+DESCRIPTION=Bulk Order Book
+
+
+[ITEMDEF 0241c]
+DEFNAME=i_urn_1
+TYPE=t_normal
+VALUE=10
+WEIGHT=2.0
+RESOURCES=2 i_clay
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Urn
+
+[ITEMDEF 0241d]
+DEFNAME=i_urn_2
+TYPE=t_normal
+VALUE=20
+WEIGHT=4.0
+RESOURCES=4 i_clay
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Urn
+
+[ITEMDEF 0241e]
+DEFNAME=i_urn_3
+TYPE=t_normal
+VALUE=15
+WEIGHT=3.0
+RESOURCES=3 i_clay
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Urn
+
+[ITEMDEF 02653]
+DEFNAME=i_platemail_waraji
+TYPE=t_armor
+FLIP=1
+//LAYER=layer_gloves
+ARMOR=30
+VALUE=76
+WEIGHT=12.0
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 59.7,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Waraji (3d client only)
+TAG.REQSTR=20
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=02654
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 02654]
+//waraji
+DUPEITEM=02653
+
+[ITEMDEF 02659]
+DEFNAME=i_amazon_heavy
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=175
+WEIGHT=25.0
+RESOURCES=25 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Amazon
+DESCRIPTION=Heavy (broken)
+TAG.REQSTR=60
+TAG.FemaleOnly=1
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0265a
+ON=@Create
+   HITPOINTS={51 65}
+
+[ITEMDEF 0265a]
+//amazon heavy
+DUPEITEM=02659
+
+[ITEMDEF 0265b]
+DEFNAME=i_amazon_medium
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+LAYER=layer_shirt//weird
+VALUE=140
+WEIGHT=20.0
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Amazon
+DESCRIPTION=Medium (broken)
+TAG.REQSTR=60
+TAG.FemaleOnly=1
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0265c
+ON=@Create
+   HITPOINTS={51 65}
+
+[ITEMDEF 0265c]
+//amazon medium
+DUPEITEM=0265b
+
+[ITEMDEF 0265d]
+DEFNAME=i_amazon_light
+TYPE=t_armor
+FLIP=1
+ARMOR=20
+LAYER=layer_shirt//weird
+VALUE=140
+WEIGHT=20.0
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Amazon
+DESCRIPTION=Light (broken)
+TAG.REQSTR=60
+TAG.FemaleOnly=1
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0265e
+ON=@Create
+   HITPOINTS={51 65}
+
+[ITEMDEF 0265e]
+//amazon light
+DUPEITEM=0265d
+
+[ITEMDEF 02677]
+DEFNAME=i_gloves_kote1
+TYPE=t_armor_leather
+FLIP=1
+LAYER=layer_gloves
+ARMOR=13
+VALUE=23
+WEIGHT=3.0
+RESOURCES=3 i_hides_cut
+SKILLMAKE=Tailoring 56.8,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Kote Gloves (broken)
+TAG.REQSTR=10
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=02678
+ON=@Create
+   HITPOINTS={31 37}
+
+[ITEMDEF 02678]
+//kote gloves
+DUPEITEM=02677
+
+[ITEMDEF 02679]
+DEFNAME=i_gloves_kote2
+TYPE=t_armor_leather
+FLIP=1
+LAYER=layer_gloves
+ARMOR=13
+VALUE=23
+WEIGHT=3.0
+RESOURCES=3 i_hides_cut
+SKILLMAKE=Tailoring 56.8,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Kote Gloves 2 (cannot equip)
+TAG.REQSTR=10
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0267a
+ON=@Create
+   HITPOINTS={31 37}
+
+[ITEMDEF 0267a]
+//kote gloves
+DUPEITEM=02679
+
+[ITEMDEF 02689]
+DEFNAME=i_helm_winged
+NAME=winged helmet
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+WEIGHT=10.0
+VALUE=65
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 63.0,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Helmets
+DESCRIPTION=Winged Helm
+TAG.REQSTR=40
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0268a
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 0268a]
+//winged helm
+DUPEITEM=02689
+
+[ITEMDEF 0268b]
+DEFNAME=i_hachimaki
+NAME=hachimaki
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=65
+WEIGHT=10.0
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 63.0,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Helmets
+DESCRIPTION=Hachimaki (not visible when worn)
+TAG.REQSTR=40
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0268c
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 0268c]
+//hachimaki
+DUPEITEM=0268b
+
+[ITEMDEF 0268d]
+DEFNAME=i_kabuto
+NAME=decorative kabuto
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=65
+WEIGHT=10.0
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 63.0,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Helmets
+DESCRIPTION=Kabuto (unwearable)
+TAG.REQSTR=40
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0268e
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 0268e]
+//kabuto
+DUPEITEM=0268d
+
+[ITEMDEF 0268f]
+DEFNAME=i_kabuto_mempo
+NAME=decorative kabuto mempo
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=65
+WEIGHT=10.0
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 63.0,Armslore 25.0
+CATEGORY=Provisions - Armor
+SUBSECTION=Helmets
+DESCRIPTION=Kabuto Mempo (unwearable)
+TAG.REQSTR=40
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=02690
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 02690]
+//kabuto mempo
+DUPEITEM=0268f
+
+[ITEMDEF 026b7]
+//FIXME: Zoogi Fungus can be transformed into Powder of Translocation by a Solen Queen.
+DEFNAME=i_crop_fungus_zoogi
+VALUE=1
+WEIGHT=0.1
+CATEGORY=Vegetation
+SUBSECTION=Mushrooms
+DESCRIPTION=Zoogi Fungus
+DUPELIST=0d0d
+
+[ITEMDEF 026b8]
+DEFNAME=i_powder_translocation
+NAME=translocation powder
+TYPE=t_normal
+VALUE=10
+WEIGHT=0.1
+CATEGORY=Quest
+SUBSECTION=Solen
+DESCRIPTION=Translocation Powder
+
+[ITEMDEF 026b9]
+DEFNAME=i_bowl_plant
+TYPE=t_normal //type=t_planter
+VALUE=10
+WEIGHT=2.0
+RESOURCES=2 i_clay
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Plant Bowl
+
+
+[ITEMDEF 02832]
+DEFNAME=i_windchime
+TYPE=t_normal
+VALUE=13
+WEIGHT=3.1
+RESOURCES=1 i_log,1 i_paper,1 i_ingot_iron
+SKILLMAKE=Tinkering 58.1,t_tinker_tools
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Japanese
+DESCRIPTION=Windchime
+ON=@DClick
+   IF (<R2>)
+      SRC.SOUND snd_special_windchimes1
+   ELSE
+      SRC.SOUND snd_special_windchimes2
+   ENDIF
+   RETURN 1
+
+[ITEMDEF 02833]
+DEFNAME=i_windchime_fancy
+TYPE=t_normal
+VALUE=15
+WEIGHT=3.1
+RESOURCES=1 i_log,1 i_paper,1 i_ingot_iron
+SKILLMAKE=Tinkering 69.3,t_tinker_tools
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Japanese
+DESCRIPTION=Windchime (fancy)
+ON=@DClick
+   SRC.SOUND snd_special_windchimes3
+   RETURN 1
+
+
+[ITEMDEF 02834]
+DEFNAME=i_bento_box_empty
+TYPE=t_normal
+FLIP=1
+WEIGHT=0.5
+RESOURCES=5 i_paper
+CATEGORY=Items by Professions
+SUBSECTION=Chef
+DESCRIPTION=Bento Box (empty)
+DUPELIST=02835
+
+[ITEMDEF 02835]
+//bento box (empty)
+DUPEITEM=02834
+
+
+[ITEMDEF 02842]
+DEFNAME=i_sword_display_empty
+TYPE=t_normal
+FLIP=1
+WEIGHT=20.0
+RESOURCES=10 i_log
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Empty Sword Display
+DUPELIST=02843
+
+[ITEMDEF 02843]
+//empty sword display
+DUPEITEM=02842
+
+[ITEMDEF 02844]
+DEFNAME=i_sword_display_empty2
+TYPE=t_normal
+FLIP=1
+WEIGHT=20.0
+RESOURCES=10 i_log
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Empty Sword Display
+DUPELIST=02845
+
+[ITEMDEF 02845]
+//empty sword display 2
+DUPEITEM=02844
+
+
+[ITEMDEF 0284a]
+DEFNAME=i_flower_arrangement
+VALUE=20
+WEIGHT=2.0
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Japanese
+DESCRIPTION=Flowers
+
+[ITEMDEF 02851]
+DEFNAME=i_display_swords_red
+NAME=sword display
+TYPE=t_normal
+FLIP=1
+WEIGHT=38.0
+RESOURCES=10 i_log,1 i_daisho
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Red Sword Display
+DUPELIST=02852
+
+[ITEMDEF 02852]
+//red sword display
+DUPEITEM=02851
+
+[ITEMDEF 02853]
+DEFNAME=i_display_swords_black
+NAME=sword display
+TYPE=t_normal
+FLIP=1
+WEIGHT=38.0
+RESOURCES=10 i_log,1 i_daisho
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Black Sword Display
+DUPELIST=02854
+
+[ITEMDEF 02854]
+//black sword display
+DUPEITEM=02853
+
+[ITEMDEF 02855]
+DEFNAME=i_display_swords_white
+NAME=sword display
+TYPE=t_normal
+FLIP=1
+WEIGHT=41.0
+RESOURCES=10 i_log,1 i_no_dachi
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=White Sword Display
+DUPELIST=02856
+
+[ITEMDEF 02856]
+//white sword display
+DUPEITEM=02855
+
+
+[ITEMDEF 0291c]
+DEFNAME=i_display_swords_blue
+NAME=sword display
+TYPE=t_normal
+FLIP=1
+WEIGHT=38.0
+RESOURCES=10 i_log,1 i_daisho
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Blue Sword Display
+DUPELIST=0291d
+
+[ITEMDEF 0291d]
+//blue sword display
+DUPEITEM=0291c
+
+[ITEMDEF 0291e]
+DEFNAME=i_display_swords_yellow
+NAME=sword display
+TYPE=t_normal
+FLIP=1
+WEIGHT=38.0
+RESOURCES=10 i_log,1 i_daisho
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Yellow Sword Display
+DUPELIST=0291f
+
+[ITEMDEF 0291f]
+//yellow sword display
+DUPEITEM=0291e
+
+
+[ITEMDEF 02936]
+DEFNAME=i_abacus
+TYPE=t_normal
+FLIP=1
+WEIGHT=2.0
+RESOURCES=1 i_log,10 i_beads
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Japanese
+DESCRIPTION=Abacus
+DUPELIST=02937
+
+[ITEMDEF 02937]
+//abacus
+DUPEITEM=02936
+
+
+[ITEMDEF 0295c]
+DEFNAME=i_futon
+TYPE=t_normal
+FLIP=1
+VALUE=100
+WEIGHT=18.4
+RESOURCES=4 i_canvas,4 i_cloth,10 i_wool,4 i_thread
+CATEGORY=Decoration - Furniture
+SUBSECTION=Japanese
+DESCRIPTION=Futon
+DUPELIST=0295d
+
+[ITEMDEF 0295d]
+//futon
+DUPEITEM=0295c
+
+[ITEMDEF 0295e]
+DEFNAME=i_futon2
+TYPE=t_normal
+FLIP=1
+VALUE=100
+WEIGHT=18.4
+RESOURCES=4 i_canvas,4 i_cloth,10 i_wool,4 i_thread
+CATEGORY=Decoration - Furniture
+SUBSECTION=Japanese
+DESCRIPTION=Futon 2
+DUPELIST=0295f
+
+[ITEMDEF 0295f]
+//futon 2
+DUPEITEM=0295e
+
+
+[ITEMDEF 02a2a]
+DEFNAME=i_sword_display_red2
+NAME=sword display
+TYPE=t_normal
+WEIGHT=38.0
+RESOURCES=10 i_log,1 i_daisho
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Red Sword Display 2
+
+
+[ITEMDEF 02a45]
+NAME=sword display
+TYPE=t_normal
+FLIP=1
+WEIGHT=38.0
+RESOURCES=10 i_log,1 i_daisho
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Red Sword Display
+DUPELIST=02a46
+
+[ITEMDEF 02a46]
+//Red Sword Display
+DUPEITEM=02a45
+
+[ITEMDEF 02a47]
+NAME=sword display
+TYPE=t_normal
+FLIP=1
+WEIGHT=38.0
+RESOURCES=10 i_log,1 i_daisho
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Black Sword Display
+DUPELIST=02a48
+
+[ITEMDEF 02a48]
+//Black Sword Display
+DUPEITEM=02a47
+
+[ITEMDEF 02a49]
+NAME=sword display
+TYPE=t_normal
+FLIP=1
+WEIGHT=38.0
+RESOURCES=10 i_log,1 i_daisho
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Purple Sword Display
+DUPELIST=02a4a
+
+[ITEMDEF 02a4a]
+//Purple Sword Display
+DUPEITEM=02a49
+
+[ITEMDEF 02a4b]
+NAME=sword display
+TYPE=t_normal
+FLIP=1
+WEIGHT=38.0
+RESOURCES=10 i_log,1 i_daisho
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Green Sword Display
+DUPELIST=02a4c
+
+[ITEMDEF 02a4c]
+//Green Sword Display
+DUPEITEM=02a4b
+
+
+[ITEMDEF 02aaa]
+DEFNAME=i_promo_token
+NAME=token
+VALUE=100
+WEIGHT=1.0
+TYPE=t_normal
+CATEGORY=Quest
+SUBSECTION=Token
+DESCRIPTION=Promo Token
+
+[ITEMDEF 02aab]
+DEFNAME=i_class_samurai
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Samurai
+
+[ITEMDEF 02aac]
+DEFNAME=i_class_ninja
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Ninja
+
+[ITEMDEF 02aad]
+DEFNAME=i_class_necromancer
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Necromancer
+
+[ITEMDEF 02aae]
+DEFNAME=i_class_paladin
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Paladin
+
+[ITEMDEF 02aaf]
+DEFNAME=i_class_treasurehunter
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Treasure Hunter
+
+[ITEMDEF 02ab0]
+DEFNAME=i_class_mage
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Mage
+
+[ITEMDEF 02ab1]
+DEFNAME=i_class_swordsman
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Swordsman
+
+[ITEMDEF 02ab2]
+DEFNAME=i_class_fencer
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Fencer
+
+[ITEMDEF 02ab3]
+DEFNAME=i_class_macer
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Macer
+
+[ITEMDEF 02ab4]
+DEFNAME=i_class_archer
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Archer
+
+[ITEMDEF 02ab5]
+DEFNAME=i_class_blacksmith
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Blacksmith
+
+[ITEMDEF 02ab6]
+DEFNAME=i_class_bard
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Bard
+
+[ITEMDEF 02ab7]
+DEFNAME=i_class_tamer
+RESOURCES=3 i_board,1 i_ingot_iron
+CATEGORY=Decoration - Signs
+SUBSECTION=Classes
+DESCRIPTION=Tamer
+
+
+[ITEMDEF 02af8]
+//shopkeeper container
+DEFNAME=i_vendorbox
+NAME=Vendor Box
+TYPE=t_eq_vendor_box
+TDATA2=04a
+
+
+[ITEMDEF 02db4]
+DEFNAME=i_head_stygian_dragon
+NAME=stygian dragon head
+TYPE=t_normal
+VALUE=1000
+WEIGHT=5.0
+CATEGORY=Quest
+SUBSECTION=Stygian
+DESCRIPTION=Stygian Dragon Head
+
+[ITEMDEF 02db5]
+DEFNAME=i_liche_dust
+NAME=liche dust
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+CATEGORY=Quest
+SUBSECTION=Liche
+DESCRIPTION=Liche Dust
+
+[ITEMDEF 02db6]
+DEFNAME=i_blood_medusa
+NAME=Medusa blood
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+CATEGORY=Quest
+SUBSECTION=Medusa
+DESCRIPTION=Medusa Blood
+
+[ITEMDEF 02db7]
+DEFNAME=i_horn_abyssal
+NAME=horn of Abyssal Infernal
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+CATEGORY=Quest
+SUBSECTION=Abyssal Infernal
+DESCRIPTION=Horn of Abyssal Infernal
+
+[ITEMDEF 02db8]
+DEFNAME=i_claw_slasher_of_veils
+NAME=claw of Slasher of Veils
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+CATEGORY=Quest
+SUBSECTION=Slasher of Veils
+DESCRIPTION=Claw of Slasher of Veils
+
+
+[ITEMDEF 02f57]
+DEFNAME=i_prism_runed
+NAME=runed prism
+TYPE=t_normal
+VALUE=23
+RESOURCES=1 i_prism_hollow,1 i_reag_black_pearl,1 i_reag_spider_silk,1 i_scroll_blank
+SKILLMAKE=Inscription 45.0
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Prism (runed)
+
+
+[ITEMDEF 02f5c]
+DEFNAME=i_switch_enchanted
+NAME=enchanted switch
+TYPE=t_normal
+VALUE=27
+WEIGHT=0.1
+RESOURCES=1 i_switch_normal,1 i_reag_black_pearl,1 i_reag_spider_silk,1 i_scroll_blank
+SKILLMAKE=Inscription 45.0
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Enchanted Switch
+
+[ITEMDEF 02f5d]
+DEFNAME=i_prism_hollow
+NAME=hollow prism
+TYPE=t_normal
+VALUE=8
+WEIGHT=0.1
+RESOURCES=8 i_sand
+SKILLMAKE=Alchemy 100.0,t_glassblowing
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Prism (hollow)
+
+[ITEMDEF 02f5e]
+DEFNAME=i_filigree_jeweled
+NAME=jeweled filigree
+TYPE=t_normal
+VALUE=73
+WEIGHT=0.1
+RESOURCES=2 i_ingot_iron,1 i_gem_ruby,1 i_gem_star_sapphire
+SKILLMAKE=Tinkering 70.0,t_tinker_tools
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Jeweled Filigree
+
+[ITEMDEF 02f5f]
+DEFNAME=i_switch_normal
+NAME=wood switch
+TYPE=t_normal
+VALUE=12
+WEIGHT=0.1
+CATEGORY=Resources
+SUBSECTION=Lumberjacking
+DESCRIPTION=Switch
+
+[ITEMDEF 02f60]
+DEFNAME=i_light_wisps
+NAME=wisps of light
+TYPE=t_normal
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Wisps of Light
+
+[ITEMDEF 02f61]
+DEFNAME=i_switch_runed
+NAME=runed switch
+TYPE=t_normal
+VALUE=127
+RESOURCES=2 i_board,1 i_switch_enchanted,1 i_filigree_jeweled,1 i_prism_runed
+SKILLMAKE=Carpentry 70.0,t_carpentry
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Switch (runed)
+
+
+[ITEMDEF 02fb6]
+DEFNAME=i_parrot_perch_special
+NAME=special parrot perch
+TYPE=t_normal
+WEIGHT=4.0
+RESOURCES=2 i_log
+CATEGORY=Quest
+SUBSECTION=Parrot Perch
+DESCRIPTION=Special Parrot Perch
+
+[ITEMDEF 02fb7]
+DEFNAME=i_elven_quiver
+NAME=elven quiver
+TYPE=t_clothing//t_container
+TDATA2=047
+FLIP=1
+LAYER=layer_tunic
+ARMOR=8
+VALUE=32
+WEIGHT=5.1
+RESOURCES=4 i_hides_cut,1 i_thread,1 i_wire_silver
+SKILLMAKE=Tailoring 59.0,t_sewing_kit
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quivers
+DESCRIPTION=Elven Quiver
+TEVENTS=t_iprop
+DUPELIST=03171
+//FIXME: quiver loading event
+ON=@Create
+   HITPOINTS={31 37}
+
+[ITEMDEF 03171]
+//elven quiver
+DUPEITEM=02fb7
+
+[ITEMDEF 02fcb]
+DEFNAME=i_leaf_chest_female
+NAME=leaf female chest
+TYPE=t_armor
+FLIP=1
+ARMOR=13
+VALUE=117
+WEIGHT=13.1
+RESOURCES=12 i_hide,1 i_ingot_iron,1 i_thread
+SKILLMAKE=Tailoring 77.2,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Elven
+DESCRIPTION=Leaf Chest Female
+TAG.REQSTR=15
+TAG.FemaleOnly=1
+TEVENTS=t_iprop
+DUPELIST=03181
+ON=@Create
+   HITPOINTS={31 37}
+
+[ITEMDEF 03181]
+//light female chest
+DUPEITEM=02fcb
+
+[ITEMDEF 03066]
+DEFNAME=i_displaycase_monster
+NAME=monster showcase
+FLIP=1
+WEIGHT=36.4
+RESOURCES=12 i_board,4 i_nails,24 i_glass_raw
+CATEGORY=Decoration - Furniture
+SUBSECTION=Display Case
+DESCRIPTION=Monster Display Case
+DUPELIST=03067,03068,03069,0306a,0306b
+
+[ITEMDEF 03067]
+//monster showcase
+DUPEITEM=03066
+
+[ITEMDEF 03068]
+//monster showcase
+DUPEITEM=03066
+
+[ITEMDEF 03069]
+//monster showcase
+DUPEITEM=03066
+
+[ITEMDEF 0306a]
+//monster showcase
+DUPEITEM=03066
+
+[ITEMDEF 0306b]
+//monster showcase
+DUPEITEM=03066
+
+
+
+[ITEMDEF 03156]
+DEFNAME=i_mangled_dread_horn
+NAME=mangled dread horn head
+TYPE=t_normal
+FLIP=1
+VALUE=150
+WEIGHT=1.0
+CATEGORY=Quest
+SUBSECTION=Twisted Weald
+DESCRIPTION=Mangled Dread Horn Head
+DUPELIST=03157
+
+[ITEMDEF 03157]
+//mangled dread horn
+DUPEITEM=03156
+
+[ITEMDEF 0315a]
+DEFNAME=i_pristine_dread_horn
+NAME=pristine dread horn
+TYPE=t_normal
+FLIP=1
+VALUE=2000
+WEIGHT=3.2
+CATEGORY=Quest
+SUBSECTION=Twisted Weald
+DESCRIPTION=Pristine Dread Horn Head
+DUPELIST=0315b
+
+[ITEMDEF 0315b]
+//pristine dread horn
+DUPEITEM=0315a
+
+[ITEMDEF 0315c]
+DEFNAME=i_horn_dread
+NAME=horn of dread horn
+TYPE=t_normal
+FLIP=1
+VALUE=150
+WEIGHT=1.0
+CATEGORY=Quest
+SUBSECTION=Twisted Weald
+DESCRIPTION=Dread Horn Horn
+DUPELIST=0315d
+
+[ITEMDEF 0315d]
+//horn of dread horn
+DUPEITEM=0315c
+
+
+[ITEMDEF 0318f]
+DEFNAME=i_bark
+NAME=bark
+TYPE=t_normal
+VALUE=120
+WEIGHT=0.1
+TAG.NoVendor=1
+CATEGORY=Quest
+SUBSECTION=Miscellaneous
+DESCRIPTION=Bark
+
+[ITEMDEF 03190]
+DEFNAME=i_plant_parasitic
+NAME=parasitic plant
+TYPE=t_normal
+VALUE=120
+WEIGHT=0.1
+TAG.NoVendor=1
+CATEGORY=Quest
+SUBSECTION=Miscellaneous
+DESCRIPTION=Parasitic Plant
+
+[ITEMDEF 03191]
+DEFNAME=i_fungi_luminescent
+NAME=luminescent fungi
+TYPE=t_normal
+VALUE=120
+WEIGHT=0.1
+TAG.NoVendor=1
+CATEGORY=Quest
+SUBSECTION=Miscellaneous
+DESCRIPTION=Luminescent Fungi
+
+//FIXME: the following benches cannot be sat on
+[ITEMDEF 0319a]
+NAME=bench
+
+[ITEMDEF 0319b]
+NAME=bench
+
+
+[ITEMDEF 03584]
+//Gumpid=091b
+DEFNAME=i_gamepiece_checker_w
+NAME=checker
+NAME=red checker
+TYPE=t_game_piece
+
+[ITEMDEF 03585]
+//Gumpid=091c
+DEFNAME=i_gamepiece_bishop_w
+NAME=bishop
+TYPE=t_game_piece
+
+[ITEMDEF 03586]
+//Gumpid=091d
+DEFNAME=i_gamepiece_rook_w
+NAME=rook
+TYPE=t_game_piece
+
+[ITEMDEF 03587]
+//Gumpid=091e
+DEFNAME=i_gamepiece_queen_w
+NAME=queen
+TYPE=t_game_piece
+
+[ITEMDEF 03588]
+//Gumpid=091f
+DEFNAME=i_gamepiece_knight_w
+NAME=knight
+TYPE=t_game_piece
+
+[ITEMDEF 03589]
+//Gumpid=0920
+DEFNAME=i_gamepiece_pawn_w
+NAME=pawn
+TYPE=t_game_piece
+
+[ITEMDEF 0358a]
+//Gumpid=0921
+DEFNAME=i_gamepiece_king_w
+NAME=king
+TYPE=t_game_piece
+
+[ITEMDEF 0358b]
+//Gumpid=0922
+DEFNAME=i_gamepiece_checker_b
+NAME=checker
+TYPE=t_game_piece
+
+[ITEMDEF 0358c]
+//Gumpid=0923
+DEFNAME=i_gamepiece_bishop_b
+NAME=bishop
+TYPE=t_game_piece
+
+[ITEMDEF 0358d]
+//Gumpid=0924
+DEFNAME=i_gamepiece_rook_b
+NAME=rook
+TYPE=t_game_piece
+
+[ITEMDEF 0358e]
+//Gumpid=0925
+DEFNAME=i_gamepiece_queen_b
+NAME=queen
+TYPE=t_game_piece
+
+[ITEMDEF 0358f]
+//Gumpid=0926
+DEFNAME=i_gamepiece_knight_b
+NAME=knight
+TYPE=t_game_piece
+
+[ITEMDEF 03590]
+//Gumpid=0927
+DEFNAME=i_gamepiece_pawn_b
+NAME=pawn
+TYPE=t_game_piece
+
+[ITEMDEF 03591]
+//Gumpid=0928
+DEFNAME=i_gamepiece_king_b
+NAME=king
+TYPE=t_game_piece
+
+[ITEMDEF 03592]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 03593]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 03594]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 03595]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 03596]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 03597]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 03598]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 03599]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 0359a]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 0359b]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 0359c]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 0359d]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 0359e]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 0359f]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 035a0]
+//game piece
+TYPE=t_game_piece
+
+[ITEMDEF 035a1]
+//game piece
+TYPE=t_game_piece
+
+
+[ITEMDEF 0364e]
+DEFNAME=i_rock_obsidian
+NAME=obsidian rock
+TYPE=t_arock
+VALUE=100
+WEIGHT=
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Rocks
+DESCRIPTION=Obsidian Rock
+
+[ITEMDEF 0364f]
+DEFNAME=i_shard_obsidian
+NAME=obsidian shard
+TYPE=t_arock
+VALUE=100
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Rocks
+DESCRIPTION=Obsidian Shard
+
+[ITEMDEF 03650]
+DEFNAME=i_shadow_pillar
+NAME=shadow pillar
+TYPE=t_arock
+VALUE=100
+CATEGORY=Boulders, Rocks, and Crystals
+SUBSECTION=Rocks
+DESCRIPTION=Shadow Pillar
+
+[ITEMDEF 03651]
+DEFNAME=i_fire_pit_shadow
+NAME=shadow fire pit
+TYPE=t_fire
+FLIP=1
+RESOURCES=1 i_kindling,50 i_rock_obsidian
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Campfires
+DESCRIPTION=Shadow Fire Pit
+DUPELIST=03652,03653,03654,03655,03656
+
+[ITEMDEF 03652]
+//shadow fire pit
+DUPEITEM=03651
+
+[ITEMDEF 03653]
+//shadow fire pit
+DUPEITEM=03651
+
+[ITEMDEF 03654]
+//shadow fire pit
+DUPEITEM=03651
+
+[ITEMDEF 03655]
+//shadow fire pit
+DUPEITEM=03651
+
+[ITEMDEF 03656]
+//shadow fire pit
+DUPEITEM=03651
+
+[ITEMDEF 03657]
+DEFNAME=i_globe_of_sosaria
+NAME=globe of Sosaria
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Cartographer
+DESCRIPTION=Globe of Sosaria
+DUPELIST=03658,03659
+
+[ITEMDEF 03658]
+//globe of Sosaria
+DUPEITEM=03657
+
+[ITEMDEF 03659]
+//globe of Sosaria
+DUPEITEM=03657
+
+[ITEMDEF 0365c]
+DEFNAME=i_banner_shadow
+NAME=shadow banner
+FLIP=1
+WEIGHT=5.0
+RESOURCES=1 i_log,5 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Tattered
+DESCRIPTION=Shadow Banner
+DUPELIST=0365d,0365e,0365f
+
+[ITEMDEF 0365d]
+//shadow banner
+DUPEITEM=0365c
+
+[ITEMDEF 0365e]
+//shadow banner
+DUPEITEM=0365c
+
+[ITEMDEF 0365f]
+//shadow banner
+DUPEITEM=0365c
+
+[ITEMDEF 03660]
+DEFNAME=i_globe_animation
+NAME=Sosaria
+CATEGORY=Animations
+SUBSECTION=Globe
+DESCRIPTION=Globe
+DUPELIST=3661,03662,03663,03664,03665,03666,03667,03668,03669,0366a,0366b,0366c,0366d,0366e,0366f
+
+[ITEMDEF 03661]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 03662]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 03663]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 03664]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 03665]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 03666]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 03667]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 03668]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 03669]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 0366a]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 0366b]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 0366c]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 0366d]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 0366e]
+//globe animation frame
+DUPEITEM=03660
+
+[ITEMDEF 0366f]
+//globe animation frame
+DUPEITEM=03660
+
+
+[ITEMDEF 03678]
+DEFNAME=i_crystal_token
+NAME=Crystal Token
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Crystal Token
+
+[ITEMDEF 03679]
+DEFNAME=i_shadow_token
+NAME=Shadow Token
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Shadow Token
+
+[ITEMDEF 0367a]
+DEFNAME=i_heritage_token
+NAME=Heritage Token
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Heritage Token
+
+[ITEMDEF 036a0]
+//Duplicate of peach leaves item 0d9d
+TYPE=t_foliage
+
+[ITEMDEF 036a1]
+//Duplicate of maple leaves item 0247c
+TYPE=t_foliage
+
+[ITEMDEF 036a2]
+DEFNAME=i_book_sm_quest
+NAME=book
+TYPE=t_book
+WEIGHT=1.0
+RESOURCES=1 i_canvas,10 i_paper,1 i_thread,1 i_hides_cut
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Light Tan Book
+
+[ITEMDEF 036a3]
+DEFNAME=i_book_sm_quest_2
+NAME=book
+TYPE=t_book
+WEIGHT=1.0
+RESOURCES=1 i_canvas,10 i_paper,1 i_thread,1 i_hides_cut
+CATEGORY=Quest
+SUBSECTION=Unknown
+DESCRIPTION=Reddish Book
+
+
+[ITEMDEF 03af9]
+DEFNAME=i_coral
+NAME=coral
+TYPE=t_aquarium_item
+VALUE=10
+WEIGHT=1.0
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral
+
+[ITEMDEF 03afa]
+DEFNAME=i_coral_2
+NAME=coral
+TYPE=t_aquarium_item
+VALUE=10
+WEIGHT=1.0
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (2)
+
+[ITEMDEF 03afb]
+DEFNAME=i_coral_3
+NAME=coral
+TYPE=t_aquarium_item
+VALUE=10
+WEIGHT=1.0
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Coral (3)
+
+[ITEMDEF 03afc]
+DEFNAME=i_crab_speckled
+NAME=speckled crab
+TYPE=t_fish
+VALUE=10
+WEIGHT=1.0
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Speckled Crab
+
+[ITEMDEF 03b0f]
+DEFNAME=i_island_totem
+NAME=Moai
+TYPE=t_aquarium_item
+VALUE=250
+WEIGHT=500.0
+RESOURCES=50 i_rock_plain
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Moai
+
+[ITEMDEF 03b12]
+DEFNAME=i_shell_2
+NAME=shell
+TYPE=t_aquarium_item
+VALUE=10
+WEIGHT=1.0
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Shell (2)
+
+[ITEMDEF 03b13]
+DEFNAME=i_shell_3
+NAME=shell
+TYPE=t_aquarium_item
+VALUE=10
+WEIGHT=1.0
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Aquarium
+DESCRIPTION=Shell (3)
+
+
+[ITEMDEF 03d12]
+//grapevines
+//duplicate of 0d21
+
+[ITEMDEF 03d17]
+//corn crop
+//duplicate of 0c7e
+
+[ITEMDEF 03d18]
+//corn crop
+//shorter duplicate of 0c7d
+
+[ITEMDEF 03d19]
+//corn (fruit)
+//duplicate of 0c7f
+
+[ITEMDEF 03d1a]
+//corn (fruit)
+//duplicate of 0c80
+
+[ITEMDEF 03d1b]
+//corn (fruit)
+//duplicate of 0c81
+
+[ITEMDEF 03d1c]
+//corn (fruit)
+//duplicate of 0c82
+
+
+[ITEMDEF 03eea]
+//ship part - duplicate of 3e8a
+
+[ITEMDEF 03eeb]
+//ship part - duplicate of 3eb2
+
+[ITEMDEF 03eec]
+//ship part - duplicate of 3eb1
+
+[ITEMDEF 03eed]
+//
+
+[ITEMDEF 03eee]
+//
+
+[ITEMDEF 03eef]
+//
+
+[ITEMDEF 03ef0]
+//
+
+[ITEMDEF 03ef1]
+//
+
+
+[ITEMDEF 04005]
+DEFNAME=i_toxic_venom_sac
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Toxic Venom Sac
+ON=@Create
+   COLOR=049
+
+[ITEMDEF 04006]
+DEFNAME=i_softened_reed
+TYPE=t_normal
+VALUE=10
+WEIGHT=0.1
+RESOURCES=2 i_dry_reed,1 i_scouring_toxin
+SKILLMAKE=Alchemy 75.0
+CATEGORY=Resources
+SUBSECTION=Fabricated
+DESCRIPTION=Softened Reed
+
+[ITEMDEF 04007]
+DEFNAME=i_void_essence
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+CATEGORY=Resources
+SUBSECTION=Animal
+DESCRIPTION=Void Essence
+
+[ITEMDEF 04008]
+DEFNAME=i_crystal_granule
+TYPE=t_normal
+VALUE=100
+WEIGHT=0.1
+SKILLMAKE=Alchemy 75.0,t_glassblowing
+RESOURCES=1 i_shimmering_crystal
+CATEGORY=Resources
+SUBSECTION=Fabricated
+DESCRIPTION=Crystal Granule
+
+[ITEMDEF 04009]
+DEFNAME=i_crystal_dust
+TYPE=t_normal
+VALUE=10
+WEIGHT=0.1
+SKILLMAKE=Alchemy 75.0
+RESOURCES=4 i_crystals_broken
+CATEGORY=Resources
+SUBSECTION=Fabricated
+DESCRIPTION=Crystal Dust
+
+[ITEMDEF 0400a]
+//wilted soul fragment
+
+[ITEMDEF 0400b]
+DEFNAME=i_soul_gem
+TYPE=t_normal
+VALUE=1000
+WEIGHT=0.1
+CATEGORY=Resources
+SUBSECTION=Mineral
+DESCRIPTION=Soul Gem
+
+
+[ITEMDEF i_dry_reed]
+//obtained by using Clippers on a plant
+ID=01bd5
+NAME=dry reed%s
+TYPE=t_normal
+VALUE=1
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Gardeners
+DESCRIPTION=Dry Reeds
+
+[ITEMDEF 04022]
+//obtained by using Clippers on a plant
+DEFNAME=i_plant_clippings
+TYPE=t_normal
+VALUE=1
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Gardeners
+DESCRIPTION=Plant Clippings
+
+
+[ITEMDEF 0403a]
+DEFNAME=i_gargish_mirror
+NAME=Gargish floor mirror
+FLIP=1
+WEIGHT=20.2
+RESOURCES=12 i_rock_plain,12 i_glass_raw
+SKILLMAKE=Alchemy 72.0,Carpentry 60.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Gargish Mirror
+DUPELIST=04046
+
+
+[ITEMDEF 0403d]
+DEFNAME=i_painting_gargoyle
+NAME=gargoyle painting
+FLIP=1
+VALUE=280
+WEIGHT=19.0
+RESOURCES=4 i_board,10 i_canvas,5 i_dyes
+SKILLMAKE=Carpentry 90.0,i_palette
+CATEGORY=Items by Professions
+SUBSECTION=Artists
+DESCRIPTION=Gargoyle Painting
+DUPELIST=0403e
+
+[ITEMDEF 0403e]
+//gargoyle painting
+DUPEITEM=0403d
+
+[ITEMDEF 0403f]
+DEFNAME=i_sculpture_gargoyle
+NAME=gargoyle sculpture
+TYPE=t_normal
+VALUE=30
+WEIGHT=50.0
+RESOURCES=9 i_rock_plain,1 i_log_yew
+SKILLMAKE=Carpentry 85.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Sculptures
+DESCRIPTION=Gargoyle Sculpture
+DUPELIST=04040
+
+[ITEMDEF 04040]
+//gargoyle sculpture
+DUPEITEM=0403f
+
+
+[ITEMDEF 04042]
+//Gargish vase (tall)
+FLIP=1
+DUPELIST=04043
+
+[ITEMDEF 04043]
+//Gargish vase (tall)
+DUPEITEM=04042
+
+[ITEMDEF 04044]
+DEFNAME=i_gargish_mirror_wall
+NAME=Gargish wall mirror
+FLIP=1
+WEIGHT=16.2
+RESOURCES=8 i_rock_plain,12 i_glass_raw
+SKILLMAKE=Alchemy 72.0,Carpentry 60.0,t_masonry_tool
+CATEGORY=Decoration - Furniture
+SUBSECTION=Bedroom Furniture
+DESCRIPTION=Gargish Wall Mirror
+DUPELIST=04045
+
+[ITEMDEF 04045]
+//Gargish mirror (wall)
+DUPEITEM=04044
+
+[ITEMDEF 04046]
+//Gargish mirror (tall)
+DUPEITEM=0403a
+
+
+[ITEMDEF 04077]
+DEFNAME=i_reag_dragon_blood_new
+TYPE=t_reagent
+PILE=1
+VALUE=30
+WEIGHT=0.1
+CATEGORY=Provisions - Alchemy & Magic
+SUBSECTION=Reagents - Pagan
+DESCRIPTION=Dragons Blood (new)
+
+[ITEMDEF 0407a]
+//projectile for the eagle strike spell
+DEFNAME=i_eagle_strike_projectile
+
+[ITEMDEF 0407b]
+DEFNAME=i_basket_unfinished
+//unfinished basket frame
+//used in crafting menu to obfuscate basket images if the basketweaving skill is not known.
+
+
+[ITEMDEF 040bd]
+DEFNAME=i_statue_pushme_pullyou
+NAME=statue
+WEIGHT=120.0
+RESOURCES=12 i_rock_plain
+SKILLMAKE=Carpentry 88.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Two Headed Horse
+
+
+[ITEMDEF 0410a]
+DEFNAME=i_key_skeleton
+TYPE=t_key
+FLIP=1
+VALUE=16
+WEIGHT=0.1
+RESOURCES=2 i_ingot_iron,1 i_ingot_copper
+SKILLMAKE=Tinkering 43.0,t_tinker_tools
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Keys
+DESCRIPTION=Skeleton Key
+DUPELIST=0410b
+ON=@Create
+   ATTR=attr_newbie
+
+[ITEMDEF 0410b]
+//skeleton key
+DUPEITEM=0410a
+
+
+[FUNCTION f_ResetMailboxFlag]
+LOCAL.HasAnItem=0
+FORCONT <UID> 0
+   LOCAL.HasAnItem += 1
+ENDFOR
+IF (<LOCAL.HasAnItem>)
+   ID=<TAG.FullID>
+ELSE
+   ID=<TAG.EmptyID>
+ENDIF
+UPDATE
+
+[TYPEDEF t_mailbox]
+//FIXME: Implement keys, secure locks, pickable locks, and traps.
+ON=@DropOn_Self
+   ID=<TAG.FullID>
+   UPDATE
+ON=@PickUp_Self
+   TIMERF 0,f_ResetMailboxFlag
+
+[ITEMDEF 04141]
+DEFNAME=i_mailbox_s
+NAME=mailbox
+TYPE=t_container
+TDATA2=011a
+TEVENTS=t_mailbox
+TAG.FullID=04141
+TAG.EmptyID=04142
+CATEGORY=House Decoration
+SUBSECTION=Mailbox
+DESCRIPTION=Mailbox South (full)
+
+[ITEMDEF 04142]
+NAME=mailbox
+TYPE=t_container
+TDATA2=011a
+TEVENTS=t_mailbox
+TAG.FullID=04141
+TAG.EmptyID=04142
+CATEGORY=House Decoration
+SUBSECTION=Mailbox
+DESCRIPTION=Mailbox South
+
+[ITEMDEF 04143]
+DEFNAME=i_mailbox_w
+NAME=mailbox
+TYPE=t_container
+TEVENTS=t_mailbox
+TDATA2=011a
+TAG.FullID=04143
+TAG.EmptyID=04144
+CATEGORY=House Decoration
+SUBSECTION=Mailbox
+DESCRIPTION=Mailbox West (full)
+
+[ITEMDEF 04144]
+NAME=mailbox
+TYPE=t_container
+TDATA2=011a
+TEVENTS=t_mailbox
+TAG.FullID=04143
+TAG.EmptyID=04144
+CATEGORY=House Decoration
+SUBSECTION=Mailbox
+DESCRIPTION=Mailbox West
+
+
+[ITEMDEF 041ad]
+DEFNAME=i_weaponstand1_full
+NAME=weapon stand
+TYPE=t_normal
+FLIP=1
+WEIGHT=34.0
+RESOURCES=i_weaponstand1,6 i_shortblade
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Weapon Stand 1 (full)
+DUPELIST=041b3
+
+[ITEMDEF 041ae]
+DEFNAME=i_weaponstand2_full
+NAME=weapon stand
+TYPE=t_normal
+FLIP=1
+WEIGHT=34.0
+RESOURCES=i_weaponstand2,6 i_shortblade
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Weapon Stand 2 (full)
+DUPELIST=041b4
+
+[ITEMDEF 041b3]
+//Weapon Stand 1 (full)
+DUPEITEM=041ad
+
+[ITEMDEF 041b4]
+//Weapon Stand 2 (full)
+DUPEITEM=041ae
+
+
+[ITEMDEF 041c0]
+DEFNAME=i_weaponstand1
+NAME=weapon stand
+TYPE=t_normal
+FLIP=1
+WEIGHT=20.0
+RESOURCES=20 i_board
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Weapon Stand 1
+DUPELIST=041cd
+
+[ITEMDEF 041c1]
+DEFNAME=i_weaponstand2
+NAME=weapon stand
+TYPE=t_normal
+FLIP=1
+WEIGHT=20.0
+RESOURCES=20 i_board
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Weapon Stand 2
+DUPELIST=041ce
+
+[ITEMDEF 041cd]
+//Weapon Stand 1
+DUPEITEM=041c0
+
+[ITEMDEF 041ce]
+//Weapon Stand 2
+DUPEITEM=041c1
+
+
+[ITEMDEF 041da]
+DEFNAME=i_mace_rack_full
+NAME=rack of maces
+TYPE=t_normal
+FLIP=1
+WEIGHT=44.0
+RESOURCES=10 i_log,6 i_mace
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Weapon Racks
+DESCRIPTION=Rack of Maces (full)
+DUPELIST=041db,041e6,041e7
+
+[ITEMDEF 041db]
+//Rack of Maces (full)
+DUPEITEM=041da
+
+[ITEMDEF 041e6]
+//Rack of Maces (full)
+DUPEITEM=041da
+
+[ITEMDEF 041e7]
+//Rack of Maces (full)
+DUPEITEM=041da
+
+
+[ITEMDEF 041fc]
+DEFNAME=i_harp_gargoyle
+NAME=Gargish harp
+TYPE=t_musical
+TDATA1=045
+TDATA2=046
+FLIP=1
+VALUE=37
+WEIGHT=14.0
+RESOURCES=10 i_log,4 i_wire_iron
+SKILLMAKE=Tinkering 56.5,Musicianship 65.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Bards
+DESCRIPTION=Gargish Harp
+DUPELIST=041fd
+
+[ITEMDEF 041fd]
+//Gargoyle Harp
+DUPEITEM=041fc
+
+[ITEMDEF 041fe]
+DEFNAME=i_weapon_rack_full
+NAME=weapon rack
+TYPE=t_normal
+FLIP=1
+WEIGHT=34.0
+RESOURCES=10 i_log,6 i_shortblade
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Weapon Rack (full)
+DUPELIST=041ff,0420e,0420f
+
+[ITEMDEF 041ff]
+//Weapon Rack (full)
+DUPEITEM=041fe
+
+[ITEMDEF 0420c]
+DEFNAME=i_lute_gargoyle
+NAME=Gargish lute
+TYPE=t_musical
+TDATA1=04c
+TDATA2=04d
+FLIP=1
+VALUE=18
+WEIGHT=7.0
+RESOURCES=6 i_log,1 i_wire_iron
+SKILLMAKE=Tinkering 52.0,Musicianship 65.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Bards
+DESCRIPTION=Lute (gargoyle)
+DUPELIST=0420d
+
+[ITEMDEF 0420d]
+//Lute (gargoyle)
+DUPEITEM=0420c
+
+[ITEMDEF 0420e]
+//Weapon Rack (full)
+DUPEITEM=041fe
+
+[ITEMDEF 0420f]
+//Weapon Rack (full)
+DUPEITEM=041fe
+
+
+[ITEMDEF 04214]
+DEFNAME=i_toy_rockinghorse
+NAME=rocking horse
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Rocking Horse
+DUPELIST=04215
+
+[ITEMDEF 04215]
+//toy rocking horse
+DUPEITEM=04214
+
+
+[ITEMDEF 0421e]
+DEFNAME=i_weapon_rack_smallarms
+NAME=weapon rack
+TYPE=t_normal
+FLIP=1
+WEIGHT=34.0
+RESOURCES=10 i_log,6 i_gargish_dagger
+CATEGORY=Decoration - Weapons & Shields
+SUBSECTION=Sword Display
+DESCRIPTION=Weapon Rack (small arms)
+DUPELIST=0421f,04226,04227
+
+[ITEMDEF 0421f]
+//Weapon Rack (small arms)
+DUPEITEM=0421e
+
+[ITEMDEF 04226]
+//Weapon Rack (small arms)
+DUPEITEM=0421e
+
+[ITEMDEF 04227]
+//Weapon Rack (small arms)
+DUPEITEM=0421e
+
+
+[ITEMDEF 04244]
+DEFNAME=i_musical_instrument
+NAME=musical instrument
+TYPE=t_musical
+TDATA1=04c
+TDATA2=04d
+FLIP=1
+VALUE=18
+WEIGHT=7.0
+RESOURCES=6 i_log,1 i_wire_iron
+SKILLMAKE=Tinkering 52.0,Musicianship 65.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Bards
+DESCRIPTION=Musical Instrument
+DUPELIST=04245
+
+[ITEMDEF 04245]
+//Musical Instrument
+DUPEITEM=04244
+
+
+[ITEMDEF 042b2]
+DEFNAME=i_vase_gargoyle1
+WEIGHT=15.0
+RESOURCES=15 i_clay
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Large Gargish Vase 1
+
+[ITEMDEF 042b3]
+DEFNAME=i_vase_gargoyle2
+WEIGHT=15.0
+RESOURCES=15 i_clay
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Large Gargish Vase 1
+
+[ITEMDEF 042b4]
+DEFNAME=i_bottle_11_full
+NAME=pyramid bottle
+VALUE=13
+WEIGHT=1.0
+RESOURCES=5 i_glass_raw
+SKILLMAKE=Alchemy 50.0,t_glassblowing
+CATEGORY=Items by Professions
+SUBSECTION=Alchemist
+DESCRIPTION=Bottle 11 (full)
+
+[ITEMDEF 042b5]
+DEFNAME=i_skulls_spiked
+NAME=spiked skulls
+TYPE=t_normal
+WEIGHT=13.0
+RESOURCES=10 i_bone,3 i_bone_skull
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Bones
+DESCRIPTION=Spiked Skulls
+
+[ITEMDEF 042b6]
+DEFNAME=i_portrait_horror
+TYPE=t_normal
+FLIP=1
+WEIGHT=6.0
+RESOURCES=1 i_log_bamboo,4 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Gargish
+DESCRIPTION=Portrait
+
+[ITEMDEF 042b7]
+DEFNAME=i_book_greencover
+TYPE=t_book
+FLIP=1
+WEIGHT=2.0
+RESOURCES=20 i_paper
+CATEGORY=Items by Professions
+SUBSECTION=Artists
+DESCRIPTION=Book (green cover)
+
+[ITEMDEF 042b8]
+DEFNAME=i_book_evilcover
+TYPE=t_book
+FLIP=1
+WEIGHT=2.0
+RESOURCES=20 i_paper
+CATEGORY=Items by Professions
+SUBSECTION=Artists
+DESCRIPTION=Book (evil cover)
+
+[ITEMDEF 042b9]
+DEFNAME=i_potted_tree
+TYPE=t_normal
+WEIGHT=18.0
+RESOURCES=i_pot_flower_large,1 i_dirt
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Potted Trees
+DESCRIPTION=Potted Tree 1
+
+[ITEMDEF 042ba]
+DEFNAME=i_potted_tree_2
+TYPE=t_normal
+WEIGHT=18.0
+RESOURCES=i_pot_flower_large,1 i_dirt
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Potted Trees
+DESCRIPTION=Potted Tree 2
+
+
+[ITEMDEF 042c9]
+DEFNAME=i_banner_ultima
+NAME=Ultima banner
+WEIGHT=5.0
+RESOURCES=1 i_log,5 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Ultima Banner
+DUPELIST=042ca
+
+[ITEMDEF 042ca]
+//ultima banner
+DUPEITEM=042c9
+
+[ITEMDEF 042cb]
+DEFNAME=i_banner_chaos
+NAME=chaos banner
+WEIGHT=5.0
+RESOURCES=1 i_log,5 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Chaos Banner
+DUPELIST=042cc
+
+[ITEMDEF 042cc]
+//chaos banner
+DUPEITEM=042cb
+
+[ITEMDEF 042cd]
+DEFNAME=i_banner_serpent
+NAME=serpent banner
+WEIGHT=5.0
+RESOURCES=1 i_log,5 i_cloth
+CATEGORY=Decoration - Banners and Tapestries
+SUBSECTION=Banners
+DESCRIPTION=Serpent Banner
+DUPELIST=042ce
+
+[ITEMDEF 042ce]
+//serpent banner
+DUPEITEM=042cd
+
+
+[ITEMDEF 044d5]
+DEFNAME=i_grandfather_clock
+NAME=grandfather clock
+TYPE=t_clock
+FLIP=1
+VALUE=44
+WEIGHT=9.2
+RESOURCES=1 i_clock_frame,1 i_parchment,10 i_board,1 i_clock_parts
+SKILLMAKE=Tinkering 90.7,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Tinker
+DESCRIPTION=Grandfather Clock
+DUPELIST=044d9
+
+[ITEMDEF 044d6]
+//grandfather clock (animation frame)
+
+[ITEMDEF 044d7]
+//grandfather clock (animation frame)
+
+[ITEMDEF 044d8]
+//grandfather clock (animation frame)
+
+[ITEMDEF 044d9]
+//grandfather clock
+DUPEITEM=044d5
+
+[ITEMDEF 044da]
+//grandfather clock (animation frame)
+
+[ITEMDEF 044db]
+//grandfather clock (animation frame)
+
+[ITEMDEF 044dc]
+//grandfather clock (animation frame)
+
+[ITEMDEF 044dd]
+DEFNAME=i_grandfather_clock_2
+NAME=grandfather clock
+TYPE=t_clock
+FLIP=1
+VALUE=44
+WEIGHT=9.2
+RESOURCES=1 i_clock_frame,1 i_parchment,10 i_board,1 i_clock_parts
+SKILLMAKE=Tinkering 90.7,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Tinker
+DESCRIPTION=Grandfather Clock 2
+DUPELIST=044e1
+
+[ITEMDEF 044de]
+//grandfather clock 2 (animation frame)
+
+[ITEMDEF 044df]
+//grandfather clock 2 (animation frame)
+
+[ITEMDEF 044e0]
+//grandfather clock 2 (animation frame)
+
+[ITEMDEF 044e1]
+//grandfather clock 2
+DUPEITEM=044dd
+
+[ITEMDEF 044e2]
+//grandfather clock 2 (animation frame)
+
+[ITEMDEF 044e3]
+//grandfather clock 2 (animation frame)
+
+[ITEMDEF 044e4]
+//grandfather clock 2 (animation frame)
+
+
+[ITEMDEF 044ef]
+DEFNAME=i_planter_ancient
+NAME=ancient stone planter
+WEIGHT=15.0
+RESOURCES=3 i_rock_plain
+SKILLMAKE=Carpentry 5.0,t_masonry_tool
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Ancient Stone Planter
+
+[ITEMDEF 044f0]
+DEFNAME=i_planter_grecian
+NAME=grecian planter
+WEIGHT=20.0
+RESOURCES=4 i_rock_plain
+SKILLMAKE=Carpentry 5.0,t_masonry_tool
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Grecian Planter
+
+[ITEMDEF 044f1]
+DEFNAME=i_planter_modern
+NAME=modern stone planter
+WEIGHT=15.0
+RESOURCES=3 i_rock_plain
+SKILLMAKE=Carpentry 5.0,t_masonry_tool
+CATEGORY=Decoration - Potted Plants & Vases
+SUBSECTION=Vases & Pots
+DESCRIPTION=Modern Stone Planter
+
+
+[ITEMDEF 04515]
+//stackable bottle
+
+[ITEMDEF 04516]
+//stackable flask
+
+[ITEMDEF 04517]
+//stackable empty vial
+
+
+[ITEMDEF 04572]
+DEFNAME=i_icicles
+NAME=icicles
+TYPE=t_normal
+FLIP=1
+CATEGORY=Miscellaneous
+SUBSECTION=External House Decor
+DESCRIPTION=Icicles
+DUPELIST=04573,04574,04575,04576,04577
+
+[ITEMDEF 04573]
+//icicles
+DUPEITEM=04572
+
+[ITEMDEF 04574]
+//icicles
+DUPEITEM=04572
+
+[ITEMDEF 04575]
+//icicles
+DUPEITEM=04572
+
+[ITEMDEF 04576]
+//icicles
+DUPEITEM=04572
+
+[ITEMDEF 04577]
+//icicles
+DUPEITEM=04572
+
+
+[ITEMDEF 04580]
+DEFNAME=i_drum_gargoyle
+NAME=Gargish drum
+TYPE=t_musical
+TDATA1=038
+TDATA2=039
+VALUE=22
+WEIGHT=6.0
+RESOURCES=1 i_hides_cut,5 i_board
+SKILLMAKE=Tinkering 51.0,Musicianship 65.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Bards
+DESCRIPTION=Drum (gargoyle)
+DUPELIST=04581
+
+[ITEMDEF 04581]
+//gargoyle drum
+DUPEITEM=04580
+
+
+[ITEMDEF 045a6]
+DEFNAME=i_flute_gargoyle
+NAME=Gargish flute
+TYPE=t_musical
+TDATA1=058b
+TDATA2=058c
+FLIP=1
+VALUE=14
+WEIGHT=1.0
+RESOURCES=1 i_log_bamboo
+SKILLMAKE=Tinkering 52.0,Musicianship 65.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Bards
+DESCRIPTION=Gargish Flute
+DUPELIST=045a7
+
+[ITEMDEF 045a7]
+//Gargish Flute
+DUPEITEM=045a6
+
+
+[ITEMDEF 04686]
+DEFNAME=i_bottle_11_empty
+NAME=pyramid bottle
+VALUE=13
+WEIGHT=1.0
+RESOURCES=5 i_glass_raw
+SKILLMAKE=Alchemy 50.0,t_glassblowing
+CATEGORY=Items by Professions
+SUBSECTION=Alchemist
+DESCRIPTION=Bottle 11 (empty)
+
+
+[ITEMDEF 04699]
+DEFNAME=i_picture_ruined
+NAME=ruined picture
+FLIP=1
+WEIGHT=6.1
+RESOURCES=1 i_board,1 i_canvas
+CATEGORY=Decoration - Furniture
+SUBSECTION=Broken Furniture
+DESCRIPTION=Ruined Picture
+DUPELIST=0469a
+
+[ITEMDEF 0469a]
+//ruined picture
+DUPEITEM=04699
+
+[ITEMDEF 0469b]
+DEFNAME=i_scarecrow_2
+NAME=scarecrow
+FLIP=1
+VALUE=78
+WEIGHT=30.0
+RESOURCES=4 i_log,14 i_straw,1 i_rope,1 i_jackolantern
+SKILLMAKE=Carpentry 74.1,t_carpentry,Tailoring 65.3
+CATEGORY=Items by Professions
+SUBSECTION=Farmer
+DESCRIPTION=Scarecrow
+DUPELIST=0469c
+
+[ITEMDEF 0469c]
+//scarecrow 2
+DUPEITEM=0469b
+
+
+[ITEMDEF 046b6]
+//sea market buoy
+[ITEMDEF 046b7]
+//sea market buoy
+[ITEMDEF 046b8]
+//sea market buoy
+[ITEMDEF 046b9]
+//sea market buoy
+
+
+[ITEMDEF 046fa]
+//xmas tree angel
+[ITEMDEF 046fb]
+//xmas tree angel
+
+
+[ITEMDEF 048d4]
+DEFNAME=i_grandfather_clock_3
+NAME=grandfather clock
+TYPE=t_clock
+FLIP=1
+VALUE=44
+WEIGHT=9.2
+RESOURCES=1 i_clock_frame,1 i_parchment,10 i_board,1 i_clock_parts
+SKILLMAKE=Tinkering 90.7,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Tinker
+DESCRIPTION=Grandfather Clock 3
+DUPELIST=048d8
+
+[ITEMDEF 048d5]
+//grandfather clock (animation frame)
+
+[ITEMDEF 048d6]
+//grandfather clock (animation frame)
+
+[ITEMDEF 048d7]
+//grandfather clock (animation frame)
+
+[ITEMDEF 048d8]
+//grandfather clock
+DUPEITEM=048d4
+
+[ITEMDEF 048d9]
+//grandfather clock (animation frame)
+
+[ITEMDEF 048da]
+//grandfather clock (animation frame)
+
+[ITEMDEF 048db]
+//grandfather clock (animation frame)
+
+
+[ITEMDEF 048e0]
+DEFNAME=i_toy_bear
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Toy Valentine Bear
+DUPELIST=048e1
+
+[ITEMDEF 048e1]
+//toy valentine bear
+DUPEITEM=048e0
+
+[ITEMDEF 048e2]
+DEFNAME=i_toy_bear_2
+TYPE=t_normal
+FLIP=1
+CATEGORY=Decoration - Miscellaneous
+SUBSECTION=Holiday Gifts
+DESCRIPTION=Toy Valentine Bear 2
+DUPELIST=048e3
+
+[ITEMDEF 048e3]
+//toy valentine bear 2
+DUPEITEM=048e2
+
+
+[ITEMDEF 0493b]
+DEFNAME=i_statue_gargoyle_gryphon
+NAME=gargoyle gryphon
+FLIP=1
+VALUE=150
+WEIGHT=20.0
+RESOURCES=2 i_rock_plain
+SKILLMAKE=Carpentry 20.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Gargoyle Gryphon
+DUPELIST=0493c
+
+[ITEMDEF 0493c]
+//Gargoyle Gryphon
+DUPEITEM=0493b
+
+[ITEMDEF 0494d]
+DEFNAME=i_statue_gargoyle_traditional
+NAME=traditional gargoyle
+FLIP=1
+VALUE=150
+WEIGHT=20.0
+RESOURCES=2 i_rock_plain
+SKILLMAKE=Carpentry 20.0,t_masonry_tool
+CATEGORY=Decoration - Wall Carvings & Statues
+SUBSECTION=Statues
+DESCRIPTION=Traditional Gargoyle
+DUPELIST=0494e
+
+[ITEMDEF 0494e]
+//Traditional Gargoyle
+DUPEITEM=0494d
+
+
+[ITEMDEF 0495e]
+DEFNAME=i_jug_hooch
+NAME=hooch jug
+TYPE=t_booze
+VALUE=23
+WEIGHT=0.1
+RESOURCES=1 i_bottle,1 i_fruit_apple,1 i_pitcher_water,1 i_reag_fertile_dirt
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=Jug of Hooch
+DUPELIST=0495f
+
+[ITEMDEF 0495f]
+//Jug of Hooch
+DUPEITEM=0495e
+
+[ITEMDEF 0981c]
+DEFNAME=i_training_dummy_advanced
+NAME=advanced training dummy
+TYPE=t_train_dummy
+VALUE=330
+WEIGHT=110.5
+RESOURCES=20 i_log,35 i_cloth,50 i_cotton,5 i_thread,5 i_hides_cut
+SKILLMAKE=Carpentry 85.0,Tailoring 70.0,t_carpentry,t_sewing_kit
+CATEGORY=Items by Professions
+SUBSECTION=Fighters
+DESCRIPTION=Training Dummy (advanced)
+DUPELIST=0981d,0981e,0981f,09820,09821,09822,09823,09824,09825,09834,09835,09836,09837,09838,09839
+ON=@Create
+   TAG.OVERRIDE.PRACTICEMAX.SKILL_40=75.0
+   TAG.OVERRIDE.PRACTICEMAX.SKILL_42=75.0
+
+[ITEMDEF 0981d]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 0981e]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 0981f]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09820]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09821]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09822]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09823]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09824]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09825]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09826]
+DEFNAME=i_training_dummy_advanced_frame
+NAME=advanced training dummy frame
+TYPE=t_normal
+FLIP=1
+VALUE=330
+WEIGHT=110.5
+RESOURCES=20 i_log,10 i_rope
+SKILLMAKE=Carpentry 15.0,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Fighters
+DESCRIPTION=Training Dummy (advanced) Frame
+DUPELIST=09827,09828,09829,0982a,0982b,0982c,0982d,0982e,0982f,09830,09831,09832,09833
+
+[ITEMDEF 09827]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 09828]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 09829]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 0982a]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 0982b]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 0982c]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 0982d]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 0982e]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 0982f]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 09830]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 09831]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 09832]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 09833]
+//advanced training dummy frame
+DUPEITEM=09826
+
+[ITEMDEF 09834]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09835]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09836]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09837]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09838]
+//advanced training dummy
+DUPEITEM=0981c
+
+[ITEMDEF 09839]
+//advanced training dummy
+DUPEITEM=0981c
+
+
+[EOF]

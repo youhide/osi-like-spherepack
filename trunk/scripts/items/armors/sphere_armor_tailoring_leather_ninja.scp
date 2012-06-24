@@ -1,0 +1,131 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, March 5, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0278e]
+DEFNAME=i_leather_ninja_hood
+NAME=leather ninja hood
+TYPE=t_armor_leather
+FLIP=1
+WEIGHT=2
+REQSTR=10
+RESOURCES=14 i_hides_cut
+SKILLMAKE=Tailoring 90.0
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+CATEGORY=Provisions - Armor - Tailoring
+SUBSECTION=Leather Ninja Armor
+DESCRIPTION=Leather Ninja Hood
+DUPELIST=027d9
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027d9]
+DUPEITEM=0278e
+
+[ITEMDEF 02790]
+DEFNAME=i_leather_ninja_belt
+NAME=leather ninja belt
+TYPE=t_armor_leather
+FLIP=1
+WEIGHT=1
+REQSTR=10
+RESOURCES=5 i_hides_cut
+SKILLMAKE=Tailoring 50.0, t_sewing_kit
+//TAG.ResPhysical=2
+//TAG.ResFire=4
+//TAG.ResCold=3
+//TAG.ResPoison=3
+//TAG.ResEnergy=3
+CATEGORY=Provisions - Clothes
+SUBSECTION=Miscellaneous
+DESCRIPTION=Leather Ninja Belt
+TEVENTS=t_ninja_shuriken
+DUPELIST=027db
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027db]
+DUPEITEM=02790
+
+[ITEMDEF 02791]
+DEFNAME=i_leather_ninja_pants
+NAME=leather ninja pants
+TYPE=t_armor_leather
+FLIP=1
+WEIGHT=3
+REQSTR=10
+RESOURCES=13 i_hides_cut
+SKILLMAKE=Tailoring 80.0
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+CATEGORY=Provisions - Armor - Tailoring
+SUBSECTION=Leather Ninja Armor
+DESCRIPTION=Leather Ninja Pants
+DUPELIST=027dc
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027dc]
+DUPEITEM=02791
+
+[ITEMDEF 02792]
+DEFNAME=i_leather_ninja_mitts
+NAME=leather ninja mitts
+TYPE=t_armor_leather
+FLIP=1
+WEIGHT=2
+REQSTR=10
+RESOURCES=12 i_hides_cut
+SKILLMAKE=Tailoring 65.0
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+CATEGORY=Provisions - Armor - Tailoring
+SUBSECTION=Leather Ninja Armor
+DESCRIPTION=Leather Ninja Mitts
+DUPELIST=027dd
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027dd]
+DUPEITEM=02792
+
+[ITEMDEF 02793]
+DEFNAME=i_leather_ninja_jacket
+NAME=leather ninja jacket
+TYPE=t_armor_leather
+FLIP=1
+WEIGHT=5
+REQSTR=10
+RESOURCES=13 i_hides_cut
+SKILLMAKE=Tailoring 85.0
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+CATEGORY=Provisions - Armor - Tailoring
+SUBSECTION=Leather Ninja Armor
+DESCRIPTION=Leather Ninja Jacket
+DUPELIST=027de
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027de]
+DUPEITEM=02793
+
+[EOF]

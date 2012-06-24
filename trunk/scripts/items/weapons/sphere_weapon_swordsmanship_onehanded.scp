@@ -1,0 +1,1040 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 14, 2011
+VERSION=0.56b
+
+
+///////////////////////////////////////////////////////////////
+//////// BOKUTOS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027a8]
+DEFNAME=i_bokuto
+NAME=bokuto
+TYPE=t_weapon_sword
+DAM=9,11
+FLIP=1
+LAYER=layer_hand1
+SKILL=Swordsmanship
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=7.0
+REQSTR=20
+TWOHANDS=N
+RESOURCES=6 i_log
+SKILLMAKE=Carpentry 70.0, t_carpentry
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Bokutos
+DESCRIPTION=Bokuto
+TEVENTS=t_iprop
+DUPELIST=027f3
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027f3]
+DUPEITEM=027a8
+
+[ITEMDEF i_peasant_bokuto]
+ID=i_bokuto
+NAME=Peasant's Bokuto
+TEVENTS=t_iprop
+TAG.Slayer.Super=SSLAYER_SNAKE
+TAG.HitLowerDefense=30
+TAG.SelfRepair=3
+TAG.SwingSpeedIncrease=10
+TAG.DamageIncrease=35
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Bokutos
+DESCRIPTION=Peasant's Bokuto
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255
+
+[ITEMDEF i_dragon_tail]
+ID=i_bokuto
+NAME=The Dragon's Tail
+TEVENTS=t_iprop
+TAG.HitStaminaLeech=16
+TAG.SwingSpeedIncrease=10
+TAG.DamageIncrease=25
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Bokutos
+DESCRIPTION=The Dragon's Tail
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=120
+
+
+///////////////////////////////////////////////////////////////
+//////// BONE HARVESTERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026bb]
+DEFNAME=i_bone_harvester
+NAME=bone harvester
+TYPE=t_weapon_sword
+DAM=13,15
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.0
+//VALUE=FIXME
+WEIGHT=3.0
+REQSTR=25
+TWOHANDS=N
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 33.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Bone Harvesters
+DESCRIPTION=Bone Harvester
+TEVENTS=t_iprop
+DUPELIST=026c5
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 026c5]
+DUPEITEM=026bb
+
+
+///////////////////////////////////////////////////////////////
+//////// BROADSWORDS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f5e]
+DEFNAME=i_sword_broad
+TYPE=t_weapon_sword
+DAM=14,15
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.2
+//VALUE=FIXME
+WEIGHT=6
+REQSTR=30
+TWOHANDS=N
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 35.4
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Broadswords
+DESCRIPTION=Broadsword
+TEVENTS=t_iprop
+DUPELIST=0f5f
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f5f]
+DUPEITEM=0f5e
+
+
+///////////////////////////////////////////////////////////////
+//////// BUTCHER KNIVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013f6]
+DEFNAME=i_knife_butcher
+TYPE=t_weapon_sword
+DAM=9,11
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=1
+REQSTR=5
+TWOHANDS=N
+RESOURCES=2 i_ingot_iron
+SKILLMAKE=Tinkering 25.0,t_tinker_tools
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Butcher Knives
+DESCRIPTION=Butcher Knife
+TEVENTS=t_iprop
+DUPELIST=013f7
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013f7]
+DUPEITEM=013f6
+
+
+///////////////////////////////////////////////////////////////
+//////// CLEAVERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0ec2]
+DEFNAME=i_cleaver_meat
+TYPE=t_weapon_sword
+DAM=11,13
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.5
+//VALUE=FIXME
+WEIGHT=2
+REQSTR=10
+TWOHANDS=N
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Tinkering 20.0,t_tinker_tools
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Cleavers
+DESCRIPTION=Cleaver
+TEVENTS=t_iprop
+DUPELIST=0ec3
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0ec3]
+DUPEITEM=0ec2
+
+[ITEMDEF i_cold_blood]
+ID=i_cleaver_meat
+NAME=Cold Blood
+TEVENTS=t_iprop
+TAG.HitPointIncrease=6
+TAG.StaminaIncrease=6
+TAG.ManaIncrease=6
+TAG.SwingSpeedIncrease=40
+TAG.DamCold=100
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Cleavers
+DESCRIPTION=Cold Blood
+ON=@Create
+   COLOR=08120
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// CUTLASSES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 01440]
+DEFNAME=i_cutlass
+TYPE=t_weapon_sword
+DAM=11,13
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.5
+//VALUE=FIXME
+WEIGHT=8
+REQSTR=25
+TWOHANDS=N
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 24.3
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Cutlasses
+DESCRIPTION=Cutlass
+TEVENTS=t_iprop
+DUPELIST=01441
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 01441]
+DUPEITEM=01440
+
+[ITEMDEF i_captain_quacklebush_cutlass]
+ID=i_cutlass
+NAME=Captain Quacklebush's Cutlass
+TEVENTS=t_iprop
+TAG.DexterityBonus=5
+TAG.HitChanceIncrease=10
+TAG.SwingSpeedIncrease=20
+TAG.DamageIncrease=50
+TAG.BestWeaponSkill=1
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Cutlasses
+DESCRIPTION=Captain Quacklebush's Cutlass
+ON=@Create
+   COLOR=39
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// ELVEN MACHETES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d29]
+DEFNAME=i_elven_machete
+NAME=elven machete
+TYPE=t_weapon_sword
+DAM=13,15
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=6
+REQSTR=20
+TWOHANDS=N
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Elven Machetes
+DESCRIPTION=Elven Machete
+TEVENTS=t_iprop
+DUPELIST=02d35
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02d35]
+DUPEITEM=02d29
+
+[ITEMDEF 020e]
+// The Bone Machete is used to enter the Blighted Grove. It can be crafted
+// by Blacksmiths who have access to the elven city of Heartwood and have
+// found the proper recipe.
+DEFNAME=i_bone_machete
+NAME=bone machete
+TYPE=t_weapon_sword
+DAM=13,15
+SKILL=Swordsmanship
+SPEED=2.2
+VALUE=142
+WEIGHT=7.0
+TWOHANDS=N
+RESOURCES=14 i_ingot_iron,1 i_bone
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Elven Machetes
+DESCRIPTION=Bone Machete
+REQSTR=20
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF i_adventurer_machete]
+ID=i_elven_machete
+NAME=Adventurer's Machete
+RESOURCES=14 i_ingot_iron, 1 i_gem_white_pearl
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.Luck=20
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Elven Machetes
+DESCRIPTION=Adventurer's Machete
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_diseased_machete]
+ID=i_elven_machete
+NAME=Diseased Machete
+RESOURCES=14 i_ingot_iron, 1 i_ingredient_blight
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitPoisonArea=25
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Elven Machetes
+DESCRIPTION=Diseased Machete
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_machete_defense]
+ID=i_elven_machete
+NAME=Machete of Defense
+RESOURCES=14 i_ingot_iron, 1 i_gem_brilliant_amber
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.DefenseChanceIncrease=5
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Elven Machetes
+DESCRIPTION=Machete of Defense
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_orcish_machete]
+ID=i_elven_machete
+NAME=Orcish Machete
+RESOURCES=14 i_ingot_iron, 1 i_ingredient_scourge
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.IntelligenceBonus=-5
+TAG.DamageIncrease=10
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Elven Machetes
+DESCRIPTION=Orcish Machete
+ON=@Create
+   COLOR=0
+   HITPOINTS={36 48}
+
+[ITEMDEF i_righteous_anger]
+ID=i_elven_machete
+NAME=Righteous Anger
+TEVENTS=t_iprop
+TAG.HitChanceIncrease=15
+TAG.DefenseChanceIncrease=5
+TAG.SwingSpeedIncrease=35
+TAG.DamageIncrease=40
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Elven Machetes
+DESCRIPTION=Righteous Anger
+ON=@Create
+   COLOR=color_o_copper
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// KATANAS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013fe]
+DEFNAME=i_katana
+WEIGHT=5
+TYPE=t_weapon_sword
+DAM=11,13
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.5
+VALUE=56
+WEIGHT=10.0
+REQSTR=25
+TWOHANDS=N
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 44.1
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Katanas
+DESCRIPTION=Katana
+TEVENTS=t_iprop
+DUPELIST=013ff
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013ff]
+DUPEITEM=013fe
+
+
+///////////////////////////////////////////////////////////////
+//////// LONGSWORDS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f60]
+DEFNAME=i_sword_long
+TYPE=t_weapon_sword
+DAM=15,16
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.5
+//VALUE=FIXME
+WEIGHT=7
+REQSTR=35
+TWOHANDS=N
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 28.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Longswords
+DESCRIPTION=Longsword
+TEVENTS=t_iprop
+DUPELIST=0f61
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f61]
+DUPEITEM=0f60
+
+[ITEMDEF 013b7]
+DEFNAME=i_sword_long_b
+TYPE=t_weapon_sword
+DAM=15,16
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.5
+//VALUE=FIXME
+WEIGHT=7
+REQSTR=35
+TWOHANDS=N
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 28.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Longswords
+DESCRIPTION=Longsword (B)
+TEVENTS=t_iprop
+DUPELIST=013b8
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013b8]
+DUPEITEM=013b7
+
+[ITEMDEF i_blade_righteous]
+ID=i_sword_long
+NAME=Blade of the Righteous
+TEVENTS=t_iprop
+TAG.Artifact=10
+TAG.Slayer.Super=SSLAYER_DEMON
+TAG.HitLifeLeech=87
+TAG.HitPointIncrease=10
+TAG.DamageIncrease=50
+TAG.BestWeaponSkill=1
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Longswords
+DESCRIPTION=Blade of the Righteous
+ON=@Create
+   COLOR=0481
+   HITPOINTS=255
+
+[ITEMDEF i_dragon_end]
+ID=i_sword_long
+NAME=Dragon's End
+TEVENTS=t_iprop
+TAG.Artifact=11
+TAG.Slayer.Super=SSLAYER_DRAGON
+TAG.HitChanceIncrease=10
+TAG.DamageIncrease=60
+TAG.ResFire=20
+TAG.DamCold=100
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Longswords
+DESCRIPTION=Dragon's End
+ON=@Create
+   COLOR=<ColorElementalType>
+   HITPOINTS=255
+
+[ITEMDEF i_jockles_quicksword]
+ID=i_sword_long
+NAME=Jockles' Quicksword
+TEVENTS=t_iprop
+TAG.HitChanceIncrease=8
+TAG.SwingSpeedIncrease=10
+TAG.DamageIncrease=35
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Longswords
+DESCRIPTION=Jockles' Quicksword
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=120
+
+[ITEMDEF i_holy_sword]
+ID=i_sword_long
+NAME=The Holy Sword
+REQSTR=0
+TEVENTS=t_iprop
+TAG.Slayer.Super=SSLAYER_UNDEAD
+TAG.SelfRepair=10
+TAG.DamageIncrease=40
+TAG.BestWeaponSkill=1
+TAG.LowerRequirements=100
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Longswords
+DESCRIPTION=The Holy Sword
+ON=@Create
+   ATTR &= attr_newbie
+   COLOR=color_rock
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// PICKAXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0e85]
+DEFNAME=i_pickaxe
+TYPE=t_weapon_mace_pick
+DAM=13,15
+FLIP=1
+SKILL=Fencing
+SPEED=3.0
+//VALUE=FIXME
+WEIGHT=11
+REQSTR=50
+TWOHANDS=N
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Tinkering 40.0,t_tinker_tools
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Pickaxes
+DESCRIPTION=Pickaxe
+TEVENTS=t_iprop
+TAG.UsesRemaining=50
+DUPELIST=0e86
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0e86]
+DUPEITEM=0e85
+
+[ITEMDEF i_gargoyle_pickaxe]
+ID=i_pickaxe
+NAME=Gargoyle's Pickaxe
+TEVENTS=t_iprop
+TAG.UsesRemaining=150
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Pickaxes
+DESCRIPTION=Gargoyle's Pickaxe
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_jacob_pickaxe]
+ID=i_pickaxe
+NAME=Jacob's Pickaxe
+TEVENTS=t_iprop
+TAG.UsesRemaining=20
+TAG.Skill.Bonus.1=Mining,10.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Pickaxes
+DESCRIPTION=Jacob's Pickaxe
+ON=@Create
+   ATTR &= attr_newbie
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// RADIANT SCIMITARS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d27]
+DEFNAME=i_radiant_scimitar
+NAME=radiant scimitar
+TYPE=t_weapon_sword
+DAM=12,14
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.5
+VALUE=107
+WEIGHT=9
+REQSTR=20
+TWOHANDS=N
+RESOURCES=15 i_ingot_iron
+SKILLMAKE=Blacksmithing 75.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Radiant Scimitars
+DESCRIPTION=Radiant Scimitar
+TEVENTS=t_iprop
+DUPELIST=02d33
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02d33]
+DUPEITEM=02d27
+
+[ITEMDEF i_darkglow_scimitar]
+ID=i_radiant_scimitar
+NAME=Darkglow Scimitar
+RESOURCES=15 i_ingot_iron, 1 i_gem_dark_sapphire
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitDispel=10
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Radiant Scimitars
+DESCRIPTION=Darkglow Scimitar
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_icy_scimitar]
+ID=i_radiant_scimitar
+NAME=Icy Scimitar
+RESOURCES=15 i_ingot_iron, 1 i_gem_dark_sapphire
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.HitHarm=15
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Radiant Scimitars
+DESCRIPTION=Icy Scimitar
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_overseer_sundered_blade]
+ID=i_radiant_scimitar
+NAME=Overseer Sundered Blade
+RESOURCES=15 i_ingot_iron, 10 i_ingredient_blight, 10 i_ingredient_scourge, 1 i_ingredient_grizzled_bones
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.StaminaRegeneration=2
+TAG.HitChanceIncrease=10
+TAG.SwingSpeedIncrease=35
+TAG.DamageIncrease=45
+TAG.DamFire=100
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Radiant Scimitars
+DESCRIPTION=Overseer Sundered Blade
+ON=@Create
+   COLOR=<ColorElementalType>
+   HITPOINTS=255
+
+[ITEMDEF i_soul_seeker]
+ID=i_radiant_scimitar
+NAME=Soul Seeker
+TEVENTS=t_iprop
+TAG.HitStaminaLeech=40
+TAG.Slayer.Super=SSLAYER_REPOND
+TAG.HitManaLeech=30
+TAG.HitLifeLeech=30
+TAG.SwingSpeedIncrease=60
+TAG.DamCold=100
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Radiant Scimitars
+DESCRIPTION=Soul Seeker
+ON=@Create
+   COLOR=03e1
+   HITPOINTS=255
+
+[ITEMDEF i_true_radiant_scimitar]
+ID=i_radiant_scimitar
+NAME=True Radiant Scimitar
+RESOURCES=15 i_ingot_iron, 1 i_gem_brilliant_amber
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.NightSight=1
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Radiant Scimitars
+DESCRIPTION=True Radiant Scimitar
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_twinkling_scimitar]
+ID=i_radiant_scimitar
+NAME=Twinkling Scimitar
+RESOURCES=15 i_ingot_iron, 1 i_gem_dark_sapphire
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.DefenseChanceIncrease=6
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Radiant Scimitars
+DESCRIPTION=Twinkling Scimitar
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+///////////////////////////////////////////////////////////////
+//////// SCIMITARS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013b5]
+DEFNAME=i_scimitar
+TYPE=t_weapon_sword
+DAM=13,15
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.0
+VALUE=45
+WEIGHT=5
+REQSTR=25
+TWOHANDS=N
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 31.7
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Scimitars
+DESCRIPTION=Scimitar
+TEVENTS=t_iprop
+DUPELIST=013b6
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013b6]
+DUPEITEM=013b5
+
+
+///////////////////////////////////////////////////////////////
+//////// SKINNING KNIVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0ec4]
+DEFNAME=i_knife_skinning
+TYPE=t_weapon_fence
+DAM=9,11
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.2
+VALUE=10
+WEIGHT=1
+REQSTR=5
+TWOHANDS=N
+RESOURCES=2 i_ingot_iron
+SKILLMAKE=Tinkering 25.0,t_tinker_tools
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Skinning Knives
+DESCRIPTION=Skinning Knife
+TEVENTS=t_iprop
+DUPELIST=0ec5
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0ec5]
+DUPEITEM=0ec4
+
+
+///////////////////////////////////////////////////////////////
+//////// VIKING SWORDS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013b9]
+DEFNAME=i_sword_viking
+TYPE=t_weapon_sword
+DAM=15,17
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.2
+VALUE=115
+WEIGHT=6
+REQSTR=40
+TWOHANDS=N
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 24.3
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Viking Swords
+DESCRIPTION=Viking Sword
+TEVENTS=t_iprop
+DUPELIST=013ba
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013ba]
+DUPEITEM=013b9
+
+[ITEMDEF i_evocarius]
+ID=i_sword_viking
+NAME=Evocarius
+TEVENTS=t_set_juggernaut
+TEVENTS=t_iprop
+TAG.DamageIncrease=50
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Viking Swords
+DESCRIPTION=Evocarius
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_sword_justice]
+ID=i_sword_viking
+NAME=Sword of Justice
+TEVENTS=t_iprop
+TAG.HitLowerAttack=60
+TAG.SpellChanneling=1
+TAG.Luck=100
+TAG.FasterCasting=-1
+TAG.DamageIncrease=50
+TAG.ResPhysical=20
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Viking Swords
+DESCRIPTION=Sword of Justice
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=80
+   f_slayer // random super slayer
+
+
+///////////////////////////////////////////////////////////////
+//////// WAKIZASHIS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027a4]
+DEFNAME=i_wakizashi
+NAME=wakizashi
+TYPE=t_weapon_sword
+DAM=11,13
+FLIP=1
+//LAYER=layer_hand2
+SKILL=Swordsmanship
+SPEED=2.5
+VALUE=48
+WEIGHT=5
+REQSTR=20
+TWOHANDS=N
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 50.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Wakizashis
+DESCRIPTION=Wakizashi
+TEVENTS=t_iprop
+DUPELIST=027ef
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027ef]
+DUPEITEM=027a4
+
+
+///////////////////////////////////////////////////////////////
+//////// STONE WAR SWORDS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0900]
+DEFNAME=i_stone_war_sword
+NAME=stone war sword
+TYPE=t_weapon_sword
+DAM=15,17
+FLIP=1
+SKILL=swordsmanship
+SPEED=3.7
+//VALUE=FIXME
+WEIGHT=6.0
+REQSTR=40
+TWOHANDS=N
+RESOURCES=18 i_granite
+SKILLMAKE=Carpentry 55.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Stone War Swords
+DESCRIPTION=Stone War Sword
+TEVENTS=t_iprop
+DUPELIST=04071
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 04071]
+DUPEITEM=0900
+
+
+///////////////////////////////////////////////////////////////
+//////// DREAD SWORDS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 090b]
+DEFNAME=i_dread_sword
+NAME=dread sword
+TYPE=t_weapon_sword
+DAM=15,16
+FLIP=1
+SKILL=Swordsmanship
+SPEED=3.5
+//VALUE=FIXME
+WEIGHT=7.0
+REQSTR=35
+TWOHANDS=N
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Swordsmanship
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Dread Swords
+DESCRIPTION=Dread Sword
+TEVENTS=t_iprop
+DUPELIST=04074
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 04074]
+DUPEITEM=090b
+
+
+///////////////////////////////////////////////////////////////
+//////// GLASS SWORDS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 090c]
+DEFNAME=i_glass_sword
+NAME=glass sword
+TYPE=t_weapon_sword
+DAM=13,15
+FLIP=1
+SKILL=Swordsmanship
+SPEED=2.7
+//VALUE=FIXME
+WEIGHT=6.0
+REQSTR=20
+TWOHANDS=N
+RESOURCES=14 i_sand
+SKILLMAKE=Alchemy 55.0
+CATEGORY=Provisions - Weapons - Swordsmanship
+SUBSECTION=Glass Swords
+DESCRIPTION=Glass Sword
+TEVENTS=t_iprop
+DUPELIST=04073
+ON=@Create
+ HITPOINTS={30 50}
+
+[ITEMDEF 04073]
+DUPEITEM=090c
+
+
+///////////////////////////////////////////////////////////////
+//////// GARGISH SWORDS
+///////////////////////////////////////////////////////////////
+
+[ITEMDEF 048ae]
+DEFNAME=i_gargish_cleaver
+NAME=Gargish cleaver
+TYPE=t_weapon_sword
+DAM=11,13
+FLIP=1
+SKILL=Swordsmanship
+SPEED=50//FIXME
+VALUE=100
+WEIGHT=3.0
+TWOHANDS=N
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Tinkering 20.0,t_tinker_tools
+CATEGORY=Provisions - Weapons
+SUBSECTION=Swordsmanship
+DESCRIPTION=Gargish Cleaver
+REQSTR=10
+TAG.GargoyleOnly=1
+TEVENTS=t_iprop
+DUPELIST=048af
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048af]
+//Gargish cleaver
+DUPEITEM=048ae
+
+
+[ITEMDEF 048b6]
+DEFNAME=i_gargish_knife_butcher
+NAME=Gargish butcher knife
+TYPE=t_weapon_sword
+DAM=9,11
+FLIP=1
+SKILL=Swordsmanship
+SPEED=53//FIXME
+VALUE=11
+WEIGHT=2.0
+TWOHANDS=N
+RESOURCES=2 i_ingot_iron
+SKILLMAKE=Tinkering 0.0,t_tinker_tools
+CATEGORY=Provisions - Weapons
+SUBSECTION=Swordsmanship
+DESCRIPTION=Gargish Butcher Knife
+REQSTR=5
+TAG.GargoyleOnly=1
+TEVENTS=t_iprop
+DUPELIST=048b7
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048b7]
+//gargish butcher knife
+DUPEITEM=048b6
+
+[ITEMDEF 048ba]
+DEFNAME=i_gargish_katana
+NAME=Gargish katana
+TYPE=t_weapon_sword
+DAM=11,13
+FLIP=1
+SKILL=Swordsmanship
+SPEED=50//FIXME
+VALUE=56
+WEIGHT=6.0
+TWOHANDS=N
+RESOURCES=8 i_ingot_iron
+SKILLMAKE=Blacksmithing 44.1
+CATEGORY=Provisions - Weapons
+SUBSECTION=Swordsmanship
+DESCRIPTION=Gargish Katana
+TAG.GargoyleOnly=1
+REQSTR=25
+TEVENTS=t_iprop
+DUPELIST=048bb
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048bb]
+//gargish katana
+DUPEITEM=048ba
+
+
+[ITEMDEF 048c6]
+DEFNAME=i_gargish_bone_harvester
+NAME=Gargish bone harvester
+TYPE=t_weapon_sword
+DAM=13,15
+FLIP=1
+SKILL=Swordsmanship
+SPEED=44//FIXME
+VALUE=55
+WEIGHT=3.0
+TWOHANDS=N
+RESOURCES=10 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 33.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Swordsmanship
+DESCRIPTION=Gargish Bone Harvester
+REQSTR=25
+TEVENTS=t_iprop
+DUPELIST=048c7
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048c7]
+//Gargish bone harvester
+DUPEITEM=048c6
+
+
+[EOF]
+

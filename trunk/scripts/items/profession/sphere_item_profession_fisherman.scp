@@ -1,0 +1,62 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, March 27, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0dbf]
+DEFNAME=i_fishing_pole
+TYPE=t_fish_pole
+WEIGHT=0.2
+RESOURCES=5 i_log, 5 i_cloth
+SKILLMAKE=Carpentry 68.4,Tailoring 40.0,t_carpentry
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Fishing Pole
+DUPELIST=0dc0
+
+[ITEMDEF 0dc0]
+//fishing pole
+DUPEITEM=0dbf
+
+[ITEMDEF 044cb]
+DEFNAME=i_lobster_buoy
+NAME=lobster buoy
+TYPE=t_normal
+FLIP=0
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Lobster Buoy
+DUPELIST=044cc,044cd,044ce
+
+[ITEMDEF 044cc]
+//Lobster Buoy (animation frame)
+DUPEITEM=044cb
+
+[ITEMDEF 044cd]
+//Lobster Buoy (animation frame)
+DUPEITEM=044cb
+
+[ITEMDEF 044ce]
+//Lobster Buoy (animation frame)
+DUPEITEM=044cb
+
+[ITEMDEF 044cf]
+DEFNAME=i_lobster_cage
+NAME=lobster cage
+TYPE=t_normal
+FLIP=1
+CATEGORY=Items by Professions
+SUBSECTION=Fisherman
+DESCRIPTION=Lobster Cage
+DUPELIST=044d0
+
+[ITEMDEF 044d0]
+//Lobster Cage
+DUPEITEM=044cf
+
+
+[EOF]

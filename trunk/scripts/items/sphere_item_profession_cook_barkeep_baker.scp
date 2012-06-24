@@ -1,0 +1,388 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Friday, March 4, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0e12]
+DEFNAME=i_chessmen_black
+FLIP=1
+WEIGHT=5
+RESOURCES=16 i_ebony
+CATEGORY=Items by Professions
+SUBSECTION=Barkeep
+DESCRIPTION=Black Chessmen
+DUPELIST=0e13
+
+[ITEMDEF 0e13]
+//black chessmen
+DUPEITEM=0e12
+
+[ITEMDEF 0e14]
+DEFNAME=i_chessman_white
+FLIP=1
+WEIGHT=5
+RESOURCES=16 i_ivory
+CATEGORY=Items by Professions
+SUBSECTION=Barkeep
+DESCRIPTION=White Chessman
+DUPELIST=0fa8
+
+[ITEMDEF 0e15]
+DEFNAME=i_cards
+FLIP=1
+WEIGHT=0.1
+RESOURCES=9 i_paper
+CATEGORY=Items by Professions
+SUBSECTION=Barkeep
+DESCRIPTION=Playing Cards
+DUPELIST=0e16,0e17,0e18,0e19,0fa2,0fa3
+
+[ITEMDEF 0e16]
+//playing cards
+DUPEITEM=0e15
+
+[ITEMDEF 0e17]
+//playing cards
+DUPEITEM=0e15
+
+[ITEMDEF 0e18]
+//playing cards
+DUPEITEM=0e15
+
+[ITEMDEF 0e19]
+//playing cards
+DUPEITEM=0e15
+
+[ITEMDEF 0e1a]
+DEFNAME=i_checkers_pile_red
+FLIP=1
+WEIGHT=0.1
+RESOURCES=5 i_ivory
+CATEGORY=Items by Professions
+SUBSECTION=Barkeep
+DESCRIPTION=Pile of Checkers (red)
+DUPELIST=0fa4
+
+[ITEMDEF 0e1b]
+DEFNAME=i_checkers_pile_black
+FLIP=1
+WEIGHT=0.1
+RESOURCES=5 i_ebony
+CATEGORY=Items by Professions
+SUBSECTION=Barkeep
+DESCRIPTION=Pile of Checkers (black)
+DUPELIST=0fa5
+
+[ITEMDEF 0e1c]
+DEFNAME=i_backgammon_game
+TYPE=t_game_board
+TDATA2=092e
+FLIP=1
+WEIGHT=5
+RESOURCES=3 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Barkeep
+SKILLMAKE=Tinkering 30.0,t_tinker_tools
+DUPELIST=0fad
+ON=@Create
+   MORE1=2
+
+[ITEMDEF 0fa2]
+//playing cards
+DUPEITEM=0e15
+
+[ITEMDEF 0fa3]
+//playing cards
+DUPEITEM=0e15
+
+[ITEMDEF 0fa4]
+//pile of red checkers
+DUPEITEM=0e1a
+
+[ITEMDEF 0fa5]
+//pile of white checkers
+DUPEITEM=0e1b
+
+[ITEMDEF 0fa6]
+DEFNAME=i_game_board
+TYPE=t_game_board
+TDATA2=091a
+WEIGHT=5
+RESOURCES=3 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Barkeep
+DESCRIPTION=Game Board
+SKILLMAKE=Tinkering 30.0,t_tinker_tools
+
+[ITEMDEF 0fa7]
+DEFNAME=i_dice_cup
+WEIGHT=1
+RESOURCES=3 i_log
+SKILLMAKE=Tinkering 30.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Barkeep
+DESCRIPTION=Dice and Cup
+ON=@DClick
+   SRC.EMOTE rolls a <EVAL(RAND(6)+1)>,<EVAL(RAND(6)+1)>
+   RETURN 1
+
+[ITEMDEF 0fa8]
+//white chessmen
+DUPEITEM=0e14
+
+[ITEMDEF 0fad]
+//backgammon game
+DUPEITEM=0e1c
+
+[ITEMDEF 01003]
+DEFNAME=i_spittoon
+RESOURCES=3 i_ingot_iron
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=Spitton
+SKILLMAKE=Tinkering 42.0,t_tinker_tools
+
+[ITEMDEF 01004]
+DEFNAME=i_barrel_tap
+RESOURCES=1 i_ingot_iron
+SKILLMAKE=Tinkering 52.0,t_tinker_tools
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=Barrel Tap
+
+[ITEMDEF 010e1]
+DEFNAME=i_barrel_hoops
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Tinkering 42.0,t_tinker_tools
+WEIGHT=4
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=Barrel Hoops
+DUPELIST=010e2
+
+[ITEMDEF 010e2]
+//barrel hoops
+DUPEITEM=010e1
+
+[ITEMDEF 01882]
+//A winnowing basket is used to separate the grain from the chaff before
+//the grain is milled into flour using the millstone.
+DEFNAME=i_basket_winnowing
+RESOURCES=10 i_straw
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Winnowing Basket
+
+[ITEMDEF 01883]
+DEFNAME=i_millstone
+RESOURCES=10 i_rock_plain
+WEIGHT=10
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Millstone
+DUPELIST=01884,01885,01886,01887,01888,01889,0188a
+
+[ITEMDEF 01884]
+//millstone
+DUPEITEM=01883
+
+[ITEMDEF 01885]
+//millstone
+DUPEITEM=01883
+
+[ITEMDEF 01886]
+//millstone
+DUPEITEM=01883
+
+[ITEMDEF 01887]
+//millstones
+DUPEITEM=01883
+
+[ITEMDEF 01888]
+//millstones
+DUPEITEM=01883
+
+[ITEMDEF 01889]
+//millstones
+DUPEITEM=01883
+
+[ITEMDEF 0188a]
+//millstones
+DUPEITEM=01883
+
+[ITEMDEF 0188b]
+WEIGHT=435.2
+RESOURCES=1 i_millstone,4 i_log,2 i_nails,20 i_board,20 i_grain_loose,1 i_flour_mill_crank
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Flour Mill (unused?)
+DUPELIST=01893
+
+[ITEMDEF 01893]
+//flour mill
+DUPEITEM=0188b
+
+[ITEMDEF 01920]
+DEFNAME=i_flour_mill
+RESOURCES=1 i_millstone, 4 i_log, 2 i_nails, 20 i_board, 20 i_grain_loose, 1 i_flour_mill_crank
+WEIGHT=40
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Flour Mill
+DUPELIST=01921,01922,01923,01925,01926,01927,0192c,0192d,0192e,0192f,01931,01932,01933
+
+[ITEMDEF 01921]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01922]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01923]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01924]
+DEFNAME=i_flour_mill_crank
+RESOURCES=2 i_ingot_iron
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Flour Mill (Crank)
+
+[ITEMDEF 01925]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01926]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01927]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01928]
+DEFNAME=i_flour_mill_crank_2
+RESOURCES=2 i_ingot_iron
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Flour Mill (Crank)
+
+[ITEMDEF 01929]
+DEFNAME=i_flour_mill_crank_3
+RESOURCES=2 i_ingot_iron
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Flour Mill (Crank)
+
+[ITEMDEF 0192a]
+DEFNAME=i_flour_mill_crank_4
+RESOURCES=2 i_ingot_iron
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Flour Mill (Crank)
+
+[ITEMDEF 0192b]
+DEFNAME=i_flour_mill_crank_5
+RESOURCES=2 i_ingot_iron
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Flour Mill (Crank)
+
+[ITEMDEF 0192c]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 0192d]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 0192e]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 0192f]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01930]
+DEFNAME=i_flour_mill_crank_6
+RESOURCES=2 i_ingot_iron
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Baker
+DESCRIPTION=Flour Mill (Crank)
+DUPELIST=01934,01935,01936,01937
+
+[ITEMDEF 01931]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01932]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01933]
+//flour mill
+DUPEITEM=01920
+
+[ITEMDEF 01934]
+//crank
+DUPEITEM=01930
+
+[ITEMDEF 01935]
+//crank
+DUPEITEM=01930
+
+[ITEMDEF 01936]
+//crank
+DUPEITEM=01930
+
+[ITEMDEF 01937]
+//crank
+DUPEITEM=01930
+
+[ITEMDEF 01e30]
+DEFNAME=i_dartboard_axe
+RESOURCES=1 i_dartboard, i_axe
+WEIGHT=2
+//TYPE=T_GAME_BOARD
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=Dartboard (Axe)
+DUPELIST=01e31
+
+[ITEMDEF 01e31]
+//dartboard w/axe facing SW
+DUPEITEM=01e30
+
+[ITEMDEF 01e32]
+DEFNAME=i_dartboard_knives
+RESOURCES=1 i_dartboard, 3 i_dagger
+WEIGHT=5
+//dartboard w/knives facing SE
+//TYPE=T_GAME_BOARD
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=Dartboard (Knives)
+DUPELIST=01e33
+
+[ITEMDEF 01e33]
+//dartboard w/knives facing SW
+DUPEITEM=01e32
+
+
+[EOF]

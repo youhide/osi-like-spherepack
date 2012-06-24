@@ -1,0 +1,768 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 14, 2011
+VERSION=0.56b
+
+
+///////////////////////////////////////////////////////////////
+//////// CLUBS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013b3]
+DEFNAME=i_club
+NAME=club
+TYPE=t_weapon_mace_smith
+DAM=11,12
+FLIP=1
+SKILL=MaceFighting
+SPEED=2.5
+//VALUE=FIXME
+WEIGHT=9
+REQSTR=40
+TWOHANDS=N
+RESOURCES=4 i_log
+SKILLMAKE=Carpentry 65.0, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Clubs
+DESCRIPTION=Club
+TEVENTS=t_iprop
+DUPELIST=013b4
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013b4]
+DUPEITEM=013b3
+
+[ITEMDEF i_cavorting_club]
+ID=i_club
+NAME=Cavorting Club
+TEVENTS=t_iprop
+TAG.SelfRepair=3
+TAG.SwingSpeedIncrease=35
+TAG.DamageIncrease=35
+TAG.ResFire=8
+TAG.ResCold=8
+TAG.ResPoison=8
+TAG.ResEnergy=8
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Clubs
+DESCRIPTION=Cavorting Club
+ON=@Create
+   COLOR=0305
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// DIAMOND MACES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d24]
+DEFNAME=i_diamond_mace
+NAME=diamond mace
+TYPE=t_weapon_mace_sharp
+DAM=14,17
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.0
+//VALUE=FIXME
+WEIGHT=10.0
+REQSTR=35
+TWOHANDS=N
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Diamond Maces
+DESCRIPTION=Diamond Mace
+TEVENTS=t_iprop
+DUPELIST=02d30
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02d30]
+DUPEITEM=02d24
+
+[ITEMDEF i_bonesmasher]
+ID=i_diamond_mace
+NAME=Bonesmasher
+TEVENTS=t_iprop
+TAG.Skill.Bonus.1=MaceFighting,10.0
+TAG.HitStaminaLeech=40
+TAG.SelfRepair=2
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Diamond Maces
+DESCRIPTION=Bonesmasher
+ON=@Create
+   COLOR=0482
+   HITPOINTS=255
+
+[ITEMDEF i_emerald_mace]
+ID=i_diamond_mace
+NAME=Emerald Mace
+RESOURCES=20 i_ingot_iron, 1 i_gem_perfect_emerald
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.ResPoison=5
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Diamond Maces
+DESCRIPTION=Emerald Mace
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_ruby_mace]
+ID=i_diamond_mace
+NAME=Ruby Mace
+RESOURCES=20 i_ingot_iron, 1 i_gem_fire_ruby
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.DamageIncrease=5
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Diamond Maces
+DESCRIPTION=Ruby Mace
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_sapphire_mace]
+ID=i_diamond_mace
+NAME=Sapphire Mace
+RESOURCES=20 i_ingot_iron, 1 i_gem_dark_sapphire
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.ResEnergy=5
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Diamond Maces
+DESCRIPTION=Sapphire Mace
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_shard_thrasher]
+ID=i_diamond_mace
+NAME=Shard Thrasher
+RESOURCES=20 i_ingot_iron, 10 i_ingredient_corruption, 10 i_ingredient_muculent, 1 i_ingredient_travesty_eye
+SKILLMAKE=Blacksmithing 70.0
+TEVENTS=t_iprop
+TAG.HitPhysicalArea=30
+TAG.StaminaIncrease=8
+TAG.HitChanceIncrease=10
+TAG.SwingSpeedIncrease=35
+TAG.DamageIncrease=40
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Diamond Maces
+DESCRIPTION=Shard Thrasher
+ON=@Create
+   COLOR=04f2
+   HITPOINTS=255
+
+[ITEMDEF i_silver_etched_mace]
+ID=i_diamond_mace
+NAME=Silver-Etched Mace
+RESOURCES=20 i_ingot_iron, 1 i_gem_blue_diamond
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.Slayer.Super=SSLAYER_UNDEAD
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Diamond Maces
+DESCRIPTION=Silver-Etched Mace
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// HAMMER PICKS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0143c]
+DEFNAME=i_hammer_pick
+NAME=hammer pick
+TYPE=t_weapon_mace_pick
+DAM=15,17
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.2
+//VALUE=FIXME
+WEIGHT=9
+REQSTR=45
+TWOHANDS=N
+RESOURCES=16 i_ingot_iron
+SKILLMAKE=Blacksmithing 34.2
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Maces & Hammers
+DESCRIPTION=Hammer Pick
+TEVENTS=t_iprop
+DUPELIST=0143d
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0143d]
+DUPEITEM=0143c
+
+
+///////////////////////////////////////////////////////////////
+//////// MACES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f5c]
+DEFNAME=i_mace
+NAME=mace
+TYPE=t_weapon_mace_smith
+DAM=12,14
+FLIP=1
+SKILL=MaceFighting
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=14
+REQSTR=45
+TWOHANDS=N
+RESOURCES=6 i_ingot_iron
+SKILLMAKE=Blacksmithing 14.5
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Maces
+DESCRIPTION=Mace
+TEVENTS=t_iprop
+DUPELIST=0f5d
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f5d]
+DUPEITEM=0f5c
+
+[ITEMDEF i_scepter_chief]
+ID=i_mace
+NAME=Scepter of the Chief
+DAM=14,17
+SPEED=3.5
+TEVENTS=t_iprop
+TAG.HitDispel=100
+TAG.HitManaLeech=100
+TAG.HitPointRegeneration
+TAG.ReflectPhysicalDamage=15
+TAG.DamageIncrease=45
+TAG.DamPoison=100
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Maces
+DESCRIPTION=Scepter of the Chief
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255//FIXME: Is this correct?
+
+
+///////////////////////////////////////////////////////////////
+//////// MAULS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0143a]
+DEFNAME=i_maul
+NAME=maul
+TYPE=t_weapon_mace_smith
+DAM=14,16
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.5
+//VALUE=FIXME
+WEIGHT=10.0
+REQSTR=45
+TWOHANDS=N
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 19.4
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Mauls
+DESCRIPTION=Maul
+TEVENTS=t_iprop
+DUPELIST=0143b
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0143b]
+DUPEITEM=0143a
+
+
+///////////////////////////////////////////////////////////////
+//////// SCEPTERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026bc]
+DEFNAME=i_scepter
+NAME=scepter
+TYPE=t_weapon_mace_smith
+DAM=14,17
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.5
+VALUE=190
+WEIGHT=8
+REQSTR=40
+TWOHANDS=N
+RESOURCES=10 i_ingot_iron
+SKILLMAKE=Blacksmithing 21.4
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Scepters
+DESCRIPTION=Scepter
+TEVENTS=t_iprop
+DUPELIST=026c6
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 026c6]
+DUPEITEM=026bc
+
+[ITEMDEF i_pixie_swatter]
+ID=i_scepter
+NAME=Pixie Swatter
+TEVENTS=t_iprop
+TAG.Slayer.Super=SSLAYER_FEY
+TAG.HitPoisonArea=75
+TAG.SwingSpeedIncrease=30
+TAG.ResFire=12
+TAG.ResEnergy=12
+TAG.BestWeaponSkill=1
+TAG.DamFire=100
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Scepters
+DESCRIPTION=Pixie Swatter
+ON=@Create
+   COLOR=<ColorElementalType>
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// SLEDGE HAMMERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0fb4]
+DEFNAME=i_hammer_sledge
+NAME=sledge hammer
+TYPE=t_weapon_mace_smith
+DAM=13,15
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.2
+//VALUE=FIXME
+WEIGHT=10
+REQSTR=40
+TWOHANDS=N
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Tinkering 54.1,t_tinker_tools
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Sledge Hammers
+DESCRIPTION=Sledge Hammer
+TEVENTS=t_iprop
+DUPELIST=0fb5
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0fb5]
+DUPEITEM=0fb4
+
+[ITEMDEF i_prospector_tool]
+ID=i_hammer_sledge
+NAME=Prospector's Tool
+TEVENTS=t_iprop
+TAG.UsesRemaining=40
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Sledge Hammers
+DESCRIPTION=Prospector's Tool
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=43
+
+
+///////////////////////////////////////////////////////////////
+//////// SMITH HAMMERS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013e3]
+DEFNAME=i_hammer_smith
+NAME=smith hammer
+TYPE=t_weapon_mace_smith
+DAM=13,15
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.2
+//VALUE=FIXME
+WEIGHT=8
+REQSTR=5
+TWOHANDS=N
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Tinkering 40.0,t_tinker_tools
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Smith Hammers
+DESCRIPTION=Smith Hammer
+TEVENTS=t_iprop
+DUPELIST=013e4
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013e4]
+DUPEITEM=013e3
+
+[ITEMDEF i_hammer_hephaestus]
+ID=i_hammer_smith
+NAME=Hammer of Hephaestus
+TEVENTS=t_iprop
+TAG.Skill.Bonus.1=Blacksmithing,10.0
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Smith Hammers
+DESCRIPTION=Hammer of Hephaestus
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// WANDS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0df2]
+DEFNAME=i_wand_1
+TYPE=t_wand
+DAM=9,11
+SKILL=MaceFighting
+SPEED=2.2
+VALUE=77
+WEIGHT=5
+REQSTR=5
+TWOHANDS=N
+RESOURCES=2 i_ingot_iron, 2 i_ingot_gold, 1 i_gem_diamond
+SKILLMAKE=Carpentry 37.1,t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wands
+DESCRIPTION=Wand
+TEVENTS=t_iprop
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0df3]
+DEFNAME=i_wand_2
+TYPE=t_wand
+DAM=9,11
+SKILL=MaceFighting
+SPEED=2.2
+VALUE=77
+WEIGHT=5
+REQSTR=5
+TWOHANDS=N
+RESOURCES=2 i_ingot_iron, 2 i_ingot_gold, 1 i_gem_diamond
+SKILLMAKE=Carpentry 37.1,t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wands
+DESCRIPTION=Wand
+TEVENTS=t_iprop
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0df4]
+DEFNAME=i_wand_3
+TYPE=t_wand
+DAM=9,11
+SKILL=MaceFighting
+SPEED=2.2
+VALUE=77
+WEIGHT=5
+REQSTR=5
+TWOHANDS=N
+RESOURCES=1 i_log, 1 i_gem_diamond
+SKILLMAKE=Carpentry 37.1,t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wands
+DESCRIPTION=Wand
+TEVENTS=t_iprop
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0df5]
+DEFNAME=i_wand_4
+TYPE=t_wand
+DAM=9,11
+SKILL=MaceFighting
+SPEED=2.2
+VALUE=77
+WEIGHT=5
+REQSTR=5
+TWOHANDS=N
+RESOURCES=1 i_log, 1 i_gem_diamond
+SKILLMAKE=Carpentry 37.1,t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wands
+DESCRIPTION=Wand
+TEVENTS=t_iprop
+ON=@Create
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// WAR AXES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 013af]
+DEFNAME=i_axe_war
+NAME=war axe
+TYPE=t_weapon_mace_sharp
+DAM=14,15
+FLIP=1
+SKILL=MaceFighting
+SPEED=3.2
+//VALUE=FIXME
+WEIGHT=8
+REQSTR=35
+TWOHANDS=N
+RESOURCES=16 i_ingot_iron
+SKILLMAKE=Blacksmithing 39.1
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=War Axes
+DESCRIPTION=War Axe
+TEVENTS=t_iprop
+DUPELIST=013b0
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 013B0]
+DUPEITEM=013af
+
+
+///////////////////////////////////////////////////////////////
+//////// WAR MACES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 01406]
+DEFNAME=i_mace_war
+NAME=war mace
+TYPE=t_weapon_mace_smith
+DAM=16,17
+FLIP=1
+SKILL=MaceFighting
+SPEED=4.0
+//VALUE=FIXME
+WEIGHT=17
+REQSTR=80
+TWOHANDS=N
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 28.0
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=War Maces
+DESCRIPTION=War Mace
+TEVENTS=t_iprop
+DUPELIST=01407
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 01407]
+DUPEITEM=01406
+
+[ITEMDEF i_arctic_death_dealer]
+ID=i_mace_war
+NAME=Arctic Death Dealer
+TEVENTS=t_iprop
+TAG.HitHarm=33
+TAG.HitLowerAttack=40
+TAG.SwingSpeedIncrease=20
+TAG.DamageIncrease=40
+TAG.ResCold=10
+TAG.DamPhysical=50
+TAG.DamCold=50
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=War Maces
+DESCRIPTION=Arctic Death Dealer
+ON=@Create
+   COLOR=0480
+   HITPOINTS=255
+
+[ITEMDEF i_churchill_war_mace]
+ID=i_mace_war
+NAME=Churchill's War Mace
+REQSTR=24
+TEVENTS=t_iprop
+TAG.HitChanceIncrease=8
+TAG.SwingSpeedIncrease=10
+TAG.DamageIncrease=35
+TAG.LowerRequirements=70
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=War Maces
+DESCRIPTION=Churchill's War Mace
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=36
+
+
+///////////////////////////////////////////////////////////////
+//////// WILD STAVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d25]
+DEFNAME=i_wild_staff
+NAME=wild staff
+TYPE=t_weapon_mace_staff
+DAM=11,13
+FLIP=1
+SKILL=MaceFighting
+SPEED=2.5
+//VALUE=FIXME
+WEIGHT=9.0
+REQSTR=40
+TWOHANDS=N
+RESOURCES=16 i_log
+SKILLMAKE=CARPENTRY 63.8, t_carpentry
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wild Staves
+DESCRIPTION=Wild Staff
+TEVENTS=t_iprop
+DUPELIST=02d31
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02d31]
+DUPEITEM=02d25
+
+[ITEMDEF i_ancient_wild_staff]
+ID=i_wild_staff
+NAME=Ancient Wild Staff
+RESOURCES=16 i_log, 1 i_gem_perfect_emerald
+SKILLMAKE=CARPENTRY 63.8, t_carpentry
+TEVENTS=t_iprop
+TAG.ResPoison=5
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wild Staves
+DESCRIPTION=Ancient Wild Staff
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_arcanist_wild_staff]
+ID=i_wild_staff
+NAME=Arcanist Wild Staff
+RESOURCES=16 i_log, 1 i_gem_white_pearl
+SKILLMAKE=CARPENTRY 63.8, t_carpentry
+TEVENTS=t_iprop
+TAG.ManaIncrease=3
+TAG.DamageIncrease=3
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wild Staves
+DESCRIPTION=Arcanist's Wild Staff
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_boomstick]
+ID=i_wild_staff
+NAME=Boomstick
+DAM=10,12
+SPEED=2.2
+REQSTR=15
+TEVENTS=t_iprop
+TAG.SpellChanneling=1
+TAG.ManaRegeneration=3
+TAG.FasterCasting=1
+TAG.LowerReagentCost=20
+TAG.ChaosDamage=100
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wild Staves
+DESCRIPTION=Boomstick
+ON=@Create
+   COLOR=39
+   HITPOINTS=255
+
+[ITEMDEF i_hardened_wild_staff]
+ID=i_wild_staff
+NAME=Hardened Wild Staff
+RESOURCES=16 i_log, 1 i_gem_turquoise
+SKILLMAKE=Carpentry 63.8, t_carpentry
+TEVENTS=t_iprop
+TAG.DamageIncrease=5
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wild Staves
+DESCRIPTION=Hardened Wild Staff
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_phantom_staff]
+ID=i_wild_staff
+NAME=Phantom Staff
+RESOURCES=16 i_log, 10 i_ingredient_putrefaction, 10 i_ingredient_taint, 1 i_ingredient_diseased_bark
+SKILLMAKE=Carpentry 90.0, t_carpentry
+TEVENTS=t_iprop
+TAG.HitPointRegeneration=2
+TAG.NightSight=1
+TAG.SwingSpeedIncrease=20
+TAG.DamageIncrease=60
+TAG.DamCold=50
+TAG.DamPoison=50
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wild Staves
+DESCRIPTION=Phantom Staff
+ON=@Create
+   COLOR=01
+   HITPOINTS=255
+
+[ITEMDEF i_thorned_wild_staff]
+ID=i_wild_staff
+NAME=Thorned Wild Staff
+RESOURCES=16 i_log, 1 i_gem_fire_ruby
+SKILLMAKE=Carpentry 63.8, t_carpentry
+TEVENTS=t_iprop
+TAG.ReflectPhysicalDamage=12
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Wild Staves
+DESCRIPTION=Thorned Wild Staff
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// DISC MACES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0903]
+DEFNAME=i_disc_mace
+NAME=disc mace
+TYPE=t_weapon_mace_smith
+DAM=12,14
+FLIP=1
+SKILL=Macefighting
+SPEED=2.7
+//VALUE=FIXME
+WEIGHT=14.0
+REQSTR=45
+TWOHANDS=N
+RESOURCES=20 i_ingot_iron
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - MaceFighting
+SUBSECTION=Disc Maces
+DESCRIPTION=Disc Mace
+TEVENTS=t_iprop
+TAG.Item.Gargoyle=1
+DUPELIST=0406e
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 0406e]
+DUPEITEM=0903
+
+
+///////////////////////////////////////////////////////////////
+//////// GARGISH
+///////////////////////////////////////////////////////////////
+
+[ITEMDEF 048c2]
+DEFNAME=i_gargish_maul
+NAME=Gargish maul
+TYPE=t_weapon_mace_smith
+DAM=14,16
+FLIP=1
+SKILL=Macefighting
+SPEED=38//FIXME
+VALUE=59
+WEIGHT=10.0
+TWOHANDS=N
+RESOURCES=10 i_ingot_iron,1 i_log
+SKILLMAKE=Blacksmithing 19.4
+CATEGORY=Provisions - Weapons
+SUBSECTION=Macefighting
+DESCRIPTION=Gargish Maul
+REQSTR=45
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=048c3
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048c3]
+//Gargish maul
+DUPEITEM=048c2
+
+[EOF]
+

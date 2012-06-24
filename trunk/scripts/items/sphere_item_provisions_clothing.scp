@@ -1,0 +1,2684 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Monday, April 25, 2011
+VERSION=0.56b
+
+
+///////////////////////////////////////////////////////////////
+//////// FOOTWEAR
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0170b]
+DEFNAME=i_boots_calf
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=8 i_hides_cut
+SKILLMAKE=Tailoring 33.1, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Footwear
+DESCRIPTION=Calf Boots
+DUPELIST=0170c
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0170c]
+//calf boots
+DUPEITEM=0170b
+
+[ITEMDEF 02307]
+DEFNAME=i_fur_boots
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 50.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Footwear
+DESCRIPTION=Fur Boots
+DUPELIST=02308
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02308]
+//fur boots
+DUPEITEM=02307
+
+[ITEMDEF 041d8]
+DEFNAME=i_leather_gargoyle_talons
+NAME=Gargish leather talons
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=6 i_hides_cut
+SKILLMAKE=Tailoring 40.4, t_sewing_kit
+TAG.Item.Gargoyle=1
+CATEGORY=Provisions - Clothing
+SUBSECTION=Footwear
+DESCRIPTION=Gargish Leather Talons
+DUPELIST=041d9
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 041d9]
+//gargish leather talons
+DUPEITEM=041d8
+
+[ITEMDEF 02797]
+DEFNAME=i_ninja_tabi
+NAME=ninja tabi
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 70.0,t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Footwear
+DESCRIPTION=Ninja Tabi
+DUPELIST=027e2
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027e2]
+//ninja tabi
+DUPEITEM=02797
+
+[ITEMDEF 0170d]
+DEFNAME=i_sandals
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=4 i_hides_cut
+SKILLMAKE=Tailoring 12.4, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Footwear
+DESCRIPTION=Sandals
+DUPELIST=0170e
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0170e]
+DUPEITEM=0170d
+
+[ITEMDEF 0170f]
+DEFNAME=i_shoes_plain
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=6 i_hides_cut
+SKILLMAKE=Tailoring 16.5, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Footwear
+DESCRIPTION=Shoes (plain)
+DUPELIST=01710
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01710]
+//shoes (plain)
+DUPEITEM=0170f
+
+[ITEMDEF 01711]
+DEFNAME=i_boots_thigh
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=5.0
+REQSTR=10
+RESOURCES=10 i_hides_cut
+SKILLMAKE=Tailoring 41.4, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Footwear
+DESCRIPTION=Thigh Boots
+DUPELIST=01712
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01712]
+//thigh boots
+DUPEITEM=01711
+
+[ITEMDEF 02796]
+DEFNAME=i_waraji_tabi
+NAME=waraji and tabi
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=6 i_cloth
+SKILLMAKE=Tailoring 20.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Footwear
+DESCRIPTION=Waraji and Tabi
+DUPELIST=027e1
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027e1]
+//waraji and tabi
+DUPEITEM=02796
+
+[ITEMDEF 02fc4]
+DEFNAME=i_elven_boots
+NAME=elven boots
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=15 i_hides_cut
+SKILLMAKE=Tailoring 80.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Footwear
+DESCRIPTION=Elven Boots
+DUPELIST=0317a
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0317a]
+//elven boots
+DUPEITEM=02fc4
+
+
+///////////////////////////////////////////////////////////////
+//////// HATS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0153f]
+DEFNAME=i_bandana
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=2 i_cloth
+SKILLMAKE=Tailoring 0.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Bandana
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=8
+TAG.ResEnergy=8
+DUPELIST=01540
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01540]
+//bandana
+DUPEITEM=0153f
+
+[ITEMDEF 01719]
+DEFNAME=i_bonnet
+TYPE=t_clothing
+DYE=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=11 i_cloth
+SKILLMAKE=Tailoring 6.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Bonnet
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01715]
+DEFNAME=i_cap
+TYPE=t_clothing
+DYE=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=11 i_cloth
+SKILLMAKE=Tailoring 6.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Cap
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0278f]
+DEFNAME=i_cloth_ninja_hood
+NAME=cloth ninja hood
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=13 i_cloth
+SKILLMAKE=Tailoring 80.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Cloth Ninja Hood
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+DUPELIST=027da
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027da]
+//cloth ninja hood
+DUPEITEM=0278f
+
+[ITEMDEF 0171a]
+DEFNAME=i_hat_feather
+TYPE=t_clothing
+DYE=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=11 i_cloth, 1 i_feather
+SKILLMAKE=Tailoring 6.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Feathered Hat
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01713]
+DEFNAME=i_hat_floppy
+TYPE=t_clothing
+DYE=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=11 i_cloth
+SKILLMAKE=Tailoring 6.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Floppy Hat
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02305]
+DEFNAME=i_flower_garland
+NAME=flower garland
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=5 i_cloth
+SKILLMAKE=Tailoring 10.0,t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Flower Garland
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+DUPELIST=02306
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02306]
+//flower garland
+DUPEITEM=02305
+
+[ITEMDEF 0171c]
+DEFNAME=i_hat_jester
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=15 i_cloth
+SKILLMAKE=Tailoring 7.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Jester Hat
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+DUPELIST=0172e
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0172e]
+//jester hat
+DUPEITEM=0171c
+
+[ITEMDEF 02798]
+DEFNAME=i_kasa
+NAME=kasa
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 60.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Kasa
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+DUPELIST=027e3
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027e3]
+//kasa
+DUPEITEM=02798
+
+[ITEMDEF 01543]
+DEFNAME=i_skull_cap
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=2 i_cloth
+SKILLMAKE=Tailoring 0.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Skullcap
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=8
+TAG.ResEnergy=8
+DUPELIST=01544
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01544]
+//skullcap
+DUPEITEM=01543
+
+[ITEMDEF 01717]
+DEFNAME=i_hat_straw
+TYPE=t_clothing
+DYE=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 6.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Straw Hat
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01716]
+DEFNAME=i_hat_straw_tall
+TYPE=t_clothing
+DYE=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=13 i_cloth
+SKILLMAKE=Tailoring 6.7, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Tall Straw Hat
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0171b]
+DEFNAME=i_hat_tricorne
+TYPE=t_clothing
+DYE=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 6.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Tricorne Hat
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01714]
+DEFNAME=i_hat_wide_brim
+TYPE=t_clothing
+DYE=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 6.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Wide Brim Hat
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01718]
+DEFNAME=i_hat_wizards
+TYPE=t_clothing
+DYE=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=15 i_cloth
+SKILLMAKE=Tailoring 7.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Hats
+DESCRIPTION=Wizard Hat
+TAG.ResFire=5
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01545]
+DEFNAME=i_mask_bear
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=5.0
+REQSTR=10
+RESOURCES=15 i_cloth
+SKILLMAKE=Tailoring 77.5, t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Bear Mask
+TAG.ResPhysical=5
+TAG.ResFire=3
+TAG.ResCold=8
+TAG.ResPoison=4
+TAG.ResEnergy=4
+DUPELIST=01546
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 01546]
+//bear mask
+DUPEITEM=01545
+
+[ITEMDEF 01547]
+DEFNAME=i_mask_deer
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=4.0
+REQSTR=10
+RESOURCES=15 i_cloth
+SKILLMAKE=Tailoring 77.5, t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Deer Mask
+TAG.ResPhysical=2
+TAG.ResFire=6
+TAG.ResCold=8
+TAG.ResPoison=1
+TAG.ResEnergy=7
+DUPELIST=01548
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 01548]
+//deer mask
+DUPEITEM=01547
+
+[ITEMDEF 01549]
+DEFNAME=i_mask_blue
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 82.5, t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Tribal Mask (large)
+TAG.ResPhysical=6
+TAG.ResFire=9
+TAG.ResCold=0
+TAG.ResPoison=4
+TAG.ResEnergy=5
+DUPELIST=0154a
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0154a]
+//tribal mask (large)
+DUPEITEM=01549
+
+[ITEMDEF 0154b]
+DEFNAME=i_mask_tribal_red
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 82.5, t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Tribal Mask (small)
+TAG.ResPhysical=3
+TAG.ResFire=0
+TAG.ResCold=6
+TAG.ResPoison=10
+TAG.ResEnergy=5
+DUPELIST=0154c
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0154c]
+//tribal mask (small)
+DUPEITEM=0154b
+
+
+///////////////////////////////////////////////////////////////
+//////// PANTS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02fc3]
+DEFNAME=i_elven_pants
+NAME=elven pants
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 80.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Pants
+DESCRIPTION=Elven Pants
+DUPELIST=03179
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 03179]
+//elven pants
+DUPEITEM=02fc3
+
+[ITEMDEF 0230b]
+DEFNAME=i_fur_sarong
+NAME=fur sarong
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 35.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Pants
+DESCRIPTION=Fur Sarong
+DUPELIST=0230c
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0230c]
+//fur sarong
+DUPEITEM=0230b
+
+[ITEMDEF 0279a]
+DEFNAME=i_hakama
+NAME=hakama
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=16 i_cloth
+SKILLMAKE=Tailoring 50.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Pants
+DESCRIPTION=Hakama
+DUPELIST=027e5
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027e5]
+//hakama
+DUPEITEM=0279a
+
+[ITEMDEF 01537]
+DEFNAME=i_kilt
+NAME=kilt
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 20.7, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Pants
+DESCRIPTION=Kilt
+DUPELIST=01538
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01538]
+//kilt
+DUPEITEM=01537
+
+[ITEMDEF 01539]
+DEFNAME=i_pants_long
+NAME=long pants
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 24.8, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Pants
+DESCRIPTION=Long Pants
+DUPELIST=0153a
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0153a]
+//long pants
+DUPEITEM=01539
+
+[ITEMDEF 0152e]
+DEFNAME=i_pants_short
+NAME=short pants
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=6 i_cloth
+SKILLMAKE=Tailoring 24.8, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Pants
+DESCRIPTION=Short Pants
+DUPELIST=0152f
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0152f]
+//short pants
+DUPEITEM=0152e
+
+[ITEMDEF 01516]
+DEFNAME=i_skirt_long
+NAME=skirt
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=4.0
+REQSTR=10
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 29.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Pants
+DESCRIPTION=Skirt
+DUPELIST=01531
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01531]
+//skirt
+DUPEITEM=01516
+
+[ITEMDEF 0279b]
+DEFNAME=i_tattsuke_hakama
+NAME=tattsuke-hakama
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=16 i_cloth
+SKILLMAKE=Tailoring 50.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Pants
+DESCRIPTION=Tattsuke-Hakama
+DUPELIST=027e6
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027e6]
+DUPEITEM=0279b
+
+
+///////////////////////////////////////////////////////////////
+//////// SHIRTS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 01515]
+DEFNAME=i_cape
+NAME=cloak
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=5.0
+REQSTR=10
+RESOURCES=14 i_cloth
+SKILLMAKE=Tailoring 41.4, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Cloak
+DUPELIST=01530
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01530]
+//cloak
+DUPEITEM=01515
+
+[ITEMDEF 02794]
+DEFNAME=i_cloth_ninja_jacket
+NAME=cloth ninja jacket
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=5.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 75.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Cloth Ninja Jacket
+DUPELIST=027df
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027DF]
+//cloth ninja jacket
+DUPEITEM=02794
+
+[ITEMDEF 01f7b]
+DEFNAME=i_doublet
+NAME=doublet
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 0.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Doublet
+DUPELIST=01f7c
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01f7c]
+//doublet
+DUPEITEM=01f7b
+
+[ITEMDEF 02fb9]
+DEFNAME=i_elven_robe
+NAME=elven robe
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=30 i_cloth
+SKILLMAKE=Tailoring 80.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Elven Robe
+DUPELIST=03173
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 03173]
+//elven robe
+DUPEITEM=02fb9
+
+[ITEMDEF 03175]
+DEFNAME=i_elven_shirt
+NAME=elven shirt
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 80.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Elven Shirt (brown)
+DUPELIST=03177
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 03177]
+//elven shirt (brown)
+DUPEITEM=03175
+
+[ITEMDEF 03176]
+DEFNAME=i_elven_shirt_dark
+NAME=elven shirt
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 80.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Elven Shirt (grey)
+DUPELIST=03178
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 03178]
+//elven shirt (grey)
+DUPEITEM=03176
+
+[ITEMDEF 01eff]
+DEFNAME=i_dress_full
+NAME=fancy dress
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 33.1, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Fancy Dress
+DUPELIST=01f00
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01f00]
+//fancy dress
+DUPEITEM=01eff
+
+[ITEMDEF 01efd]
+DEFNAME=i_shirt_fancy
+NAME=fancy shirt
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 24.8, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Fancy Shirt
+DUPELIST=01efe
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01efe]
+//fancy shirt
+DUPEITEM=01efd
+
+[ITEMDEF 02fba]
+DEFNAME=i_elven_robe_female
+NAME=female elven robe
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=30 i_cloth
+SKILLMAKE=Tailoring 80.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Female Elven Robe
+DUPELIST=03174
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 03174]
+//female elven robe
+DUPEITEM=02fba
+
+[ITEMDEF 02783]
+DEFNAME=i_kimono_female
+NAME=female kimono
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=4.0
+REQSTR=10
+RESOURCES=16 i_cloth
+SKILLMAKE=Tailoring 50.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Female Kimono
+DUPELIST=027ce
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027ce]
+//female kimono
+DUPEITEM=02783
+
+[ITEMDEF 0230f]
+DEFNAME=i_shirt_formal
+NAME=formal shirt
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=16 i_cloth
+SKILLMAKE=Tailoring 26.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Formal Shirt
+DUPELIST=02310
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02310]
+//formal shirt
+DUPEITEM=0230f
+
+[ITEMDEF 02309]
+DEFNAME=i_fur_cape
+NAME=fur cape
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=4.0
+REQSTR=10
+RESOURCES=13 i_cloth
+SKILLMAKE=Tailoring 35.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Fur Cape
+DUPELIST=0230a
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0230a]
+//fur cape
+DUPEITEM=02309
+
+[ITEMDEF 04002]
+DEFNAME=i_gargish_robe_fancy
+NAME=Gargish fancy robe
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=18 i_cloth
+SKILLMAKE=Tailoring 75.0, t_sewing_kit
+TAG.Item.Gargoyle=1
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Gargish Fancy Robe
+DUPELIST=04003
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 04003]
+//gargish fancy robe
+DUPEITEM=04002
+
+[ITEMDEF 04000]
+DEFNAME=i_gargish_robe
+NAME=Gargish robe
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=16 i_cloth
+SKILLMAKE=Tailoring 53.9, t_sewing_kit
+TAG.Item.Gargoyle=1
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Gargish Robe
+DUPELIST=04001
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 04001]
+//gargish robe
+DUPEITEM=04000
+
+[ITEMDEF 0230d]
+DEFNAME=i_gilded_dress
+NAME=gilded dress
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=16 i_cloth
+SKILLMAKE=Tailoring 37.5, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Gilded Dress
+DUPELIST=0230e
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0230e]
+//gilded dress
+DUPEITEM=0230d
+
+[ITEMDEF 0279c]
+DEFNAME=i_hakama_shita
+NAME=hakama-shita
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=14 i_cloth
+SKILLMAKE=Tailoring 40.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Hakama-Shita
+DUPELIST=027e7
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027e7]
+//hakama-shita
+DUPEITEM=0279c
+
+[ITEMDEF 01f9f]
+DEFNAME=i_jester_suit
+NAME=jester suit
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=4.0
+REQSTR=10
+RESOURCES=24 i_cloth
+SKILLMAKE=Tailoring 8.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Jester Suit
+DUPELIST=01fa0
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01fa0]
+//jester suit
+DUPEITEM=01f9f
+
+[ITEMDEF 027a1]
+DEFNAME=i_jin_baori
+NAME=jin-baori
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 30.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Jin-Baori
+DUPELIST=027ec
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027ec]
+//jin-baori
+DUPEITEM=027a1
+
+[ITEMDEF 02799]
+DEFNAME=i_kamishimo
+NAME=kamishimo
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=15 i_cloth
+SKILLMAKE=Tailoring 75.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Kamashimo
+DUPELIST=027e4
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027e4]
+//kamishimo
+DUPEITEM=02799
+
+[ITEMDEF 02782]
+DEFNAME=i_kimono_male
+NAME=male kimono
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=4.0
+REQSTR=10
+RESOURCES=16 i_cloth
+SKILLMAKE=Tailoring 50.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Male Kimono
+DUPELIST=027cd
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027cd]
+//male kimono
+DUPEITEM=02782
+
+[ITEMDEF 01f01]
+DEFNAME=i_dress_plain
+NAME=plain dress
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 12.4, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Plain Dress
+DUPELIST=01f02
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01f02]
+//plain dress
+DUPEITEM=01f01
+
+[ITEMDEF 01f03]
+DEFNAME=i_robe
+NAME=robe
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=3.0
+REQSTR=10
+RESOURCES=16 i_cloth
+SKILLMAKE=Tailoring 53.9, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Robe
+DUPELIST=01f04
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01f04]
+//robe
+DUPEITEM=01f03
+
+[ITEMDEF 01517]
+DEFNAME=i_shirt_plain
+NAME=shirt
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=8 i_cloth
+SKILLMAKE=Tailoring 20.7, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Shirt
+DUPELIST=01518
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01518]
+//shirt
+DUPEITEM=01517
+
+[ITEMDEF 01ffd]
+DEFNAME=i_surcoat
+NAME=surcoat
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=6.0
+REQSTR=10
+RESOURCES=14 i_cloth
+SKILLMAKE=Tailoring 8.2, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Surcoat
+DUPELIST=01ffe
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01ffe]
+//surcoat
+DUPEITEM=01ffd
+
+[ITEMDEF 01fa1]
+DEFNAME=i_tunic
+NAME=tunic
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=5.0
+REQSTR=10
+RESOURCES=12 i_cloth
+SKILLMAKE=Tailoring 0.1, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Shirts
+DESCRIPTION=Tunic
+DUPELIST=01fa2
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01fa2]
+//tunic
+DUPEITEM=01fa1
+
+
+///////////////////////////////////////////////////////////////
+//////// MISCELLANEOUS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027a0]
+DEFNAME=i_obi
+NAME=obi
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=6 i_cloth
+SKILLMAKE=Tailoring 20.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Obi
+DUPELIST=027eb
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 027eb]
+//obi
+DUPEITEM=027a0
+
+[ITEMDEF 0153b]
+DEFNAME=i_apron_half
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=2.0
+REQSTR=10
+RESOURCES=6 i_cloth
+SKILLMAKE=Tailoring 20.7, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Half Apron
+DUPELIST=0153c
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0153c]
+//half apron
+DUPEITEM=0153b
+
+[ITEMDEF 0153d]
+DEFNAME=i_apron_full
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=4.0
+REQSTR=10
+RESOURCES=10 i_cloth
+SKILLMAKE=Tailoring 29.0, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Full Apron
+DUPELIST=0153e
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0153e]
+//full apron
+DUPEITEM=0153d
+
+[ITEMDEF 01541]
+DEFNAME=i_sash
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=1.0
+REQSTR=10
+RESOURCES=4 i_cloth
+SKILLMAKE=Tailoring 4.1, t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Body Sash
+DUPELIST=01542
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 01542]
+//body sash
+DUPEITEM=01541
+
+[ITEMDEF 02fb8]
+DEFNAME=i_elven_glasses
+NAME=elven glasses
+TYPE=t_clothing
+DYE=0//dye using pigments of tokuno only
+FLIP=1
+WEIGHT=2.0
+REQSTR=45
+//RESOURCES=
+//SKILLMAKE=
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Elven Glasses
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=2
+DUPELIST=03172
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 03172]
+//elven glasses
+DUPEITEM=02fb8
+
+[ITEMDEF 045b1]
+DEFNAME=i_gargish_glasses_female
+NAME=Gargish female glasses
+TYPE=t_armor
+DYE=0//dye using pigments of tokuno only
+FLIP=1
+WEIGHT=2.2
+REQSTR=45
+//RESOURCES=
+//SKILLMAKE=
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargish Female Glasses
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResEnergy=2
+TAG.ResPoison=3
+TAG.Item.Gargoyle=1
+TAG.FemaleOnly=1
+TEVENTS=t_iprop
+DUPELIST=045b3
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 045b3]
+//gargish female glasses
+DUPEITEM=045b1
+
+[ITEMDEF 04644]
+DEFNAME=i_gargish_glasses
+NAME=Gargish glasses
+TYPE=t_armor
+DYE=0//dye using pigments of tokuno only
+FLIP=1
+WEIGHT=2.2
+REQSTR=45
+//RESOURCES=
+//SKILLMAKE=
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargish Glasses
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResEnergy=2
+TAG.ResPoison=3
+TAG.Item.Gargoyle=1
+TEVENTS=t_iprop
+DUPELIST=04645
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 04645]
+//gargish glasses
+DUPEITEM=04644
+
+///////////////////////////////////////////////////////////////
+//////// OLD CLOTH (Not rescripted yet)
+///////////////////////////////////////////////////////////////
+[ITEMDEF 01535]
+//This item is unwearable but may be used for decoration.
+DEFNAME=i_belt_gold
+FLIP=1
+WEIGHT=0.2
+RESOURCES=1 i_ingot_gold, 1 i_cloth
+CATEGORY=Provisions - Clothes
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gold Belt (Unwearable)
+DUPELIST=01536
+
+[ITEMDEF 01536]
+//gold belt
+DUPEITEM=01535
+
+[ITEMDEF 02683]
+DEFNAME=i_hooded_shroud
+NAME=hooded shroud
+WEIGHT=4
+TYPE=t_clothing
+LAYER=layer_robe
+FLIP=1
+DUPELIST=02684
+DYE=1
+SKILLMAKE=Tailoring 79.0, t_sewing_kit
+RESOURCES=400 i_cloth
+ARMOR=0 // 0
+
+Category=Provisions - Clothes
+Subsection=Shirts & Robes
+Description=Hooded Shroud
+
+On=@Create
+HITPOINTS={31 33}
+
+[ITEMDEF 02684]
+// hooded shroud
+DUPEITEM=02683
+
+
+[ITEMDEF i_gem_arcane]
+ID=i_worldgem_lg
+TYPE=t_eq_script
+VALUE=5000
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Special Jewels
+DESCRIPTION=Arcane Gem
+
+ON=@DCLICK
+   TARGET Select the item you wish to enchant
+   RETURN 1
+
+ON=@TARGON_ITEM
+   IF (<SRC.TARG.ID>==01f03)||(<SRC.TARG.ID>==01515)||(<SRC.TARG.ID>==01711)||(<SRC.TARG.ID>==013c6)
+      IF (<SRC.TARG.TOPOBJ.UID>==<SRC.UID>)
+         IF (<SRC.TARG.QUALITY> > 176)
+            IF !(<SRC.TARG.ATTR>&(attr_magic|attr_newbie))
+               SRC.EMOTE enchant the <SRC.TARG.NAME>
+               SRC.SOUND snd_SPELL_PROTECTION
+               IF (<SRC.TARG.ID>==01f03)
+                  SRC.NEWITEM i_robe_arcane
+                  SRC.NEW.QUALITY={177 200}
+               elif (<SRC.TARG.ID>==01515)
+                  SRC.NEWITEM i_cape_arcane
+                  SRC.NEW.QUALITY={177 200}
+               elif (<SRC.TARG.ID>==01711)
+                  SRC.NEWITEM i_boots_thigh_arcane
+                  SRC.NEW.QUALITY={177 200}
+               elif (<SRC.TARG.ID>==013c6)
+                  SRC.NEWITEM i_leather_gloves_arcane
+                  SRC.NEW.QUALITY={177 200}
+               ELSE
+                  SERV.LOG Logic error in i_gem_arcane
+               endif
+               SRC.NEW.NAME=<SRC.NEW.NAME> crafted by <SRC.NAME>
+               SRC.NEW.ATTR=021
+               SRC.NEW.BOUNCE
+               SRC.TARG.REMOVE
+               REMOVE
+            ELSE
+               SRC.SYSMESSAGE @021 That clothing is already enchanted
+            endif
+         ELSE
+            SRC.SYSMESSAGE @021 The clothing you wish to enchant must be exceptional
+         endif
+      ELSE
+         SRC.SYSMESSAGE @021 The clothing you wish to enchant must be in your backpac
+      endif
+   elif (<SRC.TARG.ID>==026ad)||(<SRC.TARG.ID>==026ae)||(<SRC.TARG.ID>==026af)||(<SRC.TARG.ID>==026b0)
+      SRC.EMOTE recharge <SRC.TARG.NAME>
+      SRC.TARG.MORE2=<SRC.TARG.MORE2> + <EVAL <SRC.TAILORING>/50>
+      IF (<SRC.TARG.MORE2>>24)
+         SRC.TARG.MORE2=24
+      endif
+      SRC.SYSMESSAGE @030 The <SRC.TARG.NAME> now has <EVAL <SRC.TARG.MORE2>> charges
+   ELSE
+      SRC.SYSMESSAGE @021 You can not enchant that item with this gem
+   endif
+   RETURN 1
+
+[EVENTS e_arcane_clothing]
+ON=@SPELLCAST
+   // This event does nothing since @SPELLCAST is not called if the caster
+   // has no regs ... sigh
+   IF (<CANCAST <ARGN>>==0)
+      SYSMESSAGE You can not cast this spell ... but the Arcane robe uses a charge to help you!
+      TRY CAST <ARGN>
+   endif
+   RETURN 1
+
+[FUNCTION f_arcane_equip]
+IF (<MORE2> > 0)
+   SRC.EVENTS +e_arcane_clothing
+   SRC.SOUND=0fd
+   SRC.EFFECT=3,i_fx_bless_effect,6,16,0
+endif
+
+[FUNCTION f_arcane_unequip]
+LOCAL.KeepEvent=0
+IF (<ARGN>=026ad)
+   IF (<SRC.FINDLAYER(22).ID>==026ae)&&(<SRC.FINDLAYER(22).MORE2>>0)
+      LOCAL.KeepEvent=1
+   elif (<SRC.FINDLAYER(3).ID>==026af)&&(<SRC.FINDLAYER(3).MORE2>>0)
+      LOCAL.KeepEvent=1
+   elif (<SRC.FINDLAYER(7).ID>==026b0)&&(<SRC.FINDLAYER(7).MORE2>>0)
+      LOCAL.KeepEvent=1
+   ELSE
+      LOCAL.KeepEvent=0
+   endif
+elif (<ARGN>=026ae)
+   IF (<SRC.FINDLAYER(20).ID>==026ad)&&(<SRC.FINDLAYER(20).MORE2>>0)
+      LOCAL.KeepEvent=1
+   elif (<SRC.FINDLAYER(3).ID>==026af)&&(<SRC.FINDLAYER(3).MORE2>>0)
+      LOCAL.KeepEvent=1
+   elif (<SRC.FINDLAYER(7).ID>==026b0)&&(<SRC.FINDLAYER(7).MORE2>>0)
+      LOCAL.KeepEvent=1
+   ELSE
+      LOCAL.KeepEvent=0
+   endif
+elif (<ARGN>=026af)
+   IF (<SRC.FINDLAYER(20).ID>==026ad)&&(<SRC.FINDLAYER(20).MORE2>>0)
+      LOCAL.KeepEvent=1
+   elif (<SRC.FINDLAYER(22).ID>==026ae)&&(<SRC.FINDLAYER(22).MORE2>>0)
+      LOCAL.KeepEvent=1
+   elif (<SRC.FINDLAYER(7).ID>==026b0)&&(<SRC.FINDLAYER(7).MORE2>>0)
+      LOCAL.KeepEvent=1
+   ELSE
+      LOCAL.KeepEvent=0
+   endif
+elif (<ARGN>=026b0)
+   IF (<SRC.FINDLAYER(20).ID>==026ad)&&(<SRC.FINDLAYER(20).MORE2>>0)
+      LOCAL.KeepEvent=1
+   elif (<SRC.FINDLAYER(22).ID>==026ae)&&(<SRC.FINDLAYER(22).MORE2>>0)
+      LOCAL.KeepEvent=1
+   elif (<SRC.FINDLAYER(3).ID>==026af)&&(<SRC.FINDLAYER(3).MORE2>>0)
+      LOCAL.KeepEvent=1
+   ELSE
+      LOCAL.KeepEvent=0
+   endif
+ELSE
+   SERV.LOG logic error in f_arcane_unequip
+endif
+IF (<LOCAL.KeepEvent>==0)
+   SRC.EVENTS -e_arcane_clothing
+   SRC.SOUND=0fd
+endif
+
+[ITEMDEF 026ad]
+DEFNAME=i_cape_arcane
+NAME=arcane cloak
+TYPE=t_clothing
+REQSTR=16
+WEIGHT=5
+DYE=1
+ARMOR=5
+RESOURCES=14 i_cloth, 1 i_thread, 1 i_gem_arcane
+SKILLMAKE=Tailoring 45.4, t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Magic
+DESCRIPTION=Arcane Cloak
+
+ON=@Create
+   HITPOINTS={50 100}
+   MORE2=24
+
+ON=@EQUIP
+   f_arcane_equip
+
+ON=@UNEQUIP
+   f_arcane_unequip 026ad
+
+ON=@CLIENTTOOLTIP
+   SRC.ADDCLILOC 1060728,<EVAL <MORE2>>,24
+
+[ITEMDEF 026ae]
+DEFNAME=i_robe_arcane
+NAME=arcane robe
+TYPE=t_clothing
+REQSTR=32
+WEIGHT=3
+DYE=1
+ARMOR=7
+RESOURCES=16 i_cloth, 1 i_thread, 1 i_gem_arcane
+SKILLMAKE=Tailoring 59.0, t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Magic
+DESCRIPTION=Arcane Robe
+
+ON=@Create
+   HITPOINTS={50 100}
+   MORE2=24
+
+ON=@EQUIP
+   f_arcane_equip
+
+ON=@UNEQUIP
+   f_arcane_unequip 026ae
+
+ON=@CLIENTTOOLTIP
+   SRC.ADDCLILOC 1060728,<EVAL <MORE2>>,24
+
+[ITEMDEF 026af]
+DEFNAME=i_boots_thigh_arcane
+NAME=arcane thigh boots
+TYPE=t_clothing
+REQSTR=8
+WEIGHT=5
+DYE=1
+ARMOR=6
+RESOURCES=10 i_hides_cut, 1 i_thread, 1 i_gem_arcane
+SKILLMAKE=Tailoring 25.0, t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Magic
+DESCRIPTION=Arcane Thigh Boots
+
+ON=@Create
+   HITPOINTS={50 100}
+   MORE2=24
+
+ON=@EQUIP
+   f_arcane_equip
+
+ON=@UNEQUIP
+   f_arcane_unequip 026af
+
+ON=@CLIENTTOOLTIP
+   SRC.ADDCLILOC 1060728,<EVAL <MORE2>>,24
+
+[ITEMDEF 026b0]
+DEFNAME=i_leather_gloves_arcane
+NAME=arcane leather gloves
+TYPE=t_armor_leather
+REQSTR=8
+WEIGHT=1
+DYE=1
+ARMOR=13
+REQSTR=10
+RESOURCES=3 i_hides_cut, 1 i_gem_arcane
+SKILLMAKE=Tailoring 56.8, t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Magic
+DESCRIPTION=Arcane Leather Gloves
+ON=@Create
+   HITPOINTS={50 100}
+   MORE2=24
+ON=@Equip
+   f_arcane_equip
+ON=@UnEquip
+   f_arcane_unequip 026b0
+ON=@ClientToolTip
+   SRC.ADDCLILOC 1060728,<EVAL <MORE2>>,24
+
+[ITEMDEF 019bc]
+//FIXME: When held, the bearer gets the appearance of a monster.
+DEFNAME=i_costume
+NAME=costume
+TYPE=t_clothing
+FLIP=1
+DYE=1
+//LAYER=layer_hand1
+ARMOR=3
+VALUE=18
+WEIGHT=0.2
+RESOURCES=1 i_log_bamboo,1 i_thread,1 i_hides_cut,1 i_ribbon
+SKILLMAKE=Tailoring 100.0,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Costume
+TAG.REQSTR=0
+TAG.SpellChanneling=1
+TEVENTS=t_iprop
+DUPELIST=019bd
+ON=@Create
+   HITPOINTS={11 23}
+
+[ITEMDEF 019bd]
+//Costume
+DUPEITEM=019bc
+
+[ITEMDEF 02042]
+// Lord British Armor
+//**Since players wont use these should they have type assigned?
+DEFNAME=i_person_lord_british
+TYPE=t_armor
+CATEGORY=Provisions - GM Items
+SUBSECTION=Special Items
+DESCRIPTION=Lord British Armour
+ON=@Create
+   HITPOINTS=150
+ON=@Equip
+   IF (0<SRC.FINDLAYER(11)>)
+      SRC.TAG.HairID=<SRC.FINDLAYER(11).ID>
+      SRC.TAG.HairColor=<SRC.FINDLAYER(11).COLOR>
+      SRC.FINDLAYER(11).REMOVE
+   ELSE
+      SRC.TAG.HairID=0
+   ENDIF
+ON=@unequip
+   IF !(<SRC.TAG0.HairID> == 0)
+      SERV.NEWITEM=<SRC.TAG0.HairID>
+      NEW.EQUIP
+      SRC.FINDLAYER(11).COLOR=<SRC.TAG.HairColor>
+      SRC.TAG.HairColor=
+      SRC.TAG.HairID=
+   ENDIF
+
+[ITEMDEF 02043]
+// Blackthorne Robe
+DEFNAME=i_person_black_thorne
+TYPE=t_armor
+CATEGORY=Provisions - GM Items
+SUBSECTION=Special Items
+DESCRIPTION=Blackthorne Robe
+ON=@Create
+   HITPOINTS=150
+ON=@Equip
+   IF (0<SRC.FINDLAYER(11)>)
+      SRC.TAG.HairID=<SRC.FINDLAYER(11).ID>
+      SRC.TAG.HairColor=<SRC.FINDLAYER(11).COLOR>
+      SRC.FINDLAYER(11).REMOVE
+   ELSE
+      SRC.TAG.HairID=0
+   ENDIF
+ON=@unequip
+   IF !(<SRC.TAG0.HairID> == 0)
+      SERV.NEWITEM=<SRC.TAG0.HairID>
+      NEW.EQUIP
+      SRC.FINDLAYER(11).COLOR=<SRC.TAG.HairColor>
+      SRC.TAG.HairColor=
+      SRC.TAG.HairID=
+   ENDIF
+
+[ITEMDEF 0204e]
+DEFNAME=i_deathshroud
+NAME=death shroud
+TYPE=t_clothing
+CATEGORY=Provisions - GM Items
+SUBSECTION=Special Items
+DESCRIPTION=Death Shroud
+ON=@Equip
+   IF (0<SRC.FINDLAYER(11)>)
+      SRC.TAG.HairID=<SRC.FINDLAYER(11).ID>
+      SRC.TAG.HairColor=<SRC.FINDLAYER(11).COLOR>
+      SRC.FINDLAYER(11).REMOVE
+   ELSE
+      SRC.TAG.HairID=0
+   ENDIF
+ON=@unequip
+   IF !(<SRC.TAG0.HairID> == 0)
+      SERV.NEWITEM=<SRC.TAG0.HairID>
+      NEW.EQUIP
+      SRC.FINDLAYER(11).COLOR=<SRC.TAG.HairColor>
+      SRC.TAG.HairColor=
+      SRC.TAG.HairID=
+   ENDIF
+
+[ITEMDEF 0204F]
+DEFNAME=i_robe_gm
+TYPE=t_clothing
+ARMOR=500
+DYE=1
+CATEGORY=Provisions - GM Items
+SUBSECTION=GM Robes
+DESCRIPTION=GM Robes
+ON=@Create
+   HITPOINTS=150
+ON=@Equip
+   IF (0<SRC.FINDLAYER(11)>)
+      SRC.TAG.HairID=<SRC.FINDLAYER(11).ID>
+      SRC.TAG.HairColor=<SRC.FINDLAYER(11).COLOR>
+      SRC.FINDLAYER(11).REMOVE
+   ELSE
+      SRC.TAG.HairID=0
+   ENDIF
+ON=@unequip
+   IF !(<SRC.TAG0.HairID> == 0)
+      SERV.NEWITEM=<SRC.TAG0.HairID>
+      NEW.EQUIP
+      SRC.FINDLAYER(11).COLOR=<SRC.TAG.HairColor>
+      SRC.TAG.HairColor=
+      SRC.TAG.HairID=
+   ENDIF
+
+[ITEMDEF 02050]
+DEFNAME=i_dupre
+TYPE=t_armor
+ARMOR=30
+ON=@Create
+   HITPOINTS=150
+ON=@Equip
+   IF (0<SRC.FINDLAYER(11)>)
+      SRC.TAG.HairID=<SRC.FINDLAYER(11).ID>
+      SRC.TAG.HairColor=<SRC.FINDLAYER(11).COLOR>
+      SRC.FINDLAYER(11).REMOVE
+   ELSE
+      SRC.TAG.HairID=0
+   ENDIF
+ON=@unequip
+   IF !(<SRC.TAG0.HairID> == 0)
+      SERV.NEWITEM=<SRC.TAG0.HairID>
+      NEW.EQUIP
+      SRC.FINDLAYER(11).COLOR=<SRC.TAG.HairColor>
+      SRC.TAG.HairColor=
+      SRC.TAG.HairID=
+   ENDIF
+
+[ITEMDEF 025ea]
+DEFNAME=i_shirt_checkered
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_shirt
+ARMOR=5
+VALUE=52
+WEIGHT=12.1
+RESOURCES=12 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 37.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Checkered Shirt
+TEVENTS=t_iprop
+DUPELIST=025eb
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 025eb]
+//checkered shirt
+DUPEITEM=025ea
+
+[ITEMDEF 025ec]
+DEFNAME=i_robe2
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_robe
+ARMOR=7
+VALUE=80
+WEIGHT=16.1
+RESOURCES=16 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 59.0,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Robe 2
+TEVENTS=t_iprop
+DUPELIST=025ed
+ON=@Create
+   HITPOINTS={11 40}
+
+[ITEMDEF 025ed]
+//robe 2
+DUPEITEM=025ec
+
+[ITEMDEF 025ee]
+DEFNAME=i_robe3
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Hooded Robe (unwearable)
+DUPELIST=025ef
+
+[ITEMDEF 025ef]
+//hooded robe
+DUPEITEM=025ee
+
+[ITEMDEF 025f0]
+//TYPE=t_clothing
+//LAYER=layer_robe
+NAME=death shroud (unwearable)
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Death Shroud (unwearable)
+DUPELIST=025f1
+
+[ITEMDEF 025f1]
+//death shroud
+DUPEITEM=025f0
+
+[ITEMDEF 025f2]
+DEFNAME=i_skirt_knee
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_skirt
+ARMOR=4
+VALUE=42
+WEIGHT=10.1
+RESOURCES=10 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 31.8,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Pants & Skirts
+DESCRIPTION=knee Skirt (3d client only)
+TEVENTS=t_iprop
+DUPELIST=025f3
+ON=@Create
+   HITPOINTS={11 40}
+
+[ITEMDEF 025f3]
+//knee skirt
+DUPEITEM=025f2
+
+[ITEMDEF 02649]
+DEFNAME=i_pants_jester
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_pants
+ARMOR=3
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 27.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Pants & Skirts
+DESCRIPTION=Jester Pants (3d client only)
+TEVENTS=t_iprop
+DUPELIST=0264a
+ON=@Create
+   HITPOINTS={21 24}
+
+[ITEMDEF 0264a]
+//jester pants
+DUPEITEM=02649
+
+[ITEMDEF 0264b]
+DEFNAME=i_platemail_gorget2
+TYPE=t_armor
+FLIP=1
+ARMOR=30
+VALUE=63
+WEIGHT=10.0
+RESOURCES=10 i_ingot_iron
+CATEGORY=Provisions - Armor
+SUBSECTION=Platemail Armor
+DESCRIPTION=Platemail Gorget2
+SKILLMAKE=Blacksmithing 57.3
+TAG.REQSTR=30
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0264c
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 0264c]
+//platemail gorget2
+DUPEITEM=0264b
+
+[ITEMDEF 0264d]
+DEFNAME=i_haidate
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_pants
+ARMOR=3
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 27.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Pants & Skirts
+DESCRIPTION=Haidate (3d client only)
+TEVENTS=t_iprop
+DUPELIST=0264e
+ON=@Create
+   HITPOINTS={21 24}
+
+[ITEMDEF 0264e]
+//haidate
+DUPEITEM=0264d
+
+[ITEMDEF 0264f]
+DEFNAME=i_kobakama
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_pants
+ARMOR=3
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 27.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Pants & Skirts
+DESCRIPTION=Kobakama (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02650
+ON=@Create
+   HITPOINTS={21 24}
+
+[ITEMDEF 02650]
+//kobakama
+DUPEITEM=0264f
+
+[ITEMDEF 02651]
+DEFNAME=i_pants_ninja
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_pants
+ARMOR=3
+VALUE=33
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 27.2,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Pants & Skirts
+DESCRIPTION=Ninja Pants (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02652
+ON=@Create
+   HITPOINTS={21 24}
+
+[ITEMDEF 02652]
+//ninja pants
+DUPEITEM=02651
+
+[ITEMDEF 02655]
+DEFNAME=i_shoes_jester
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_shoes
+ARMOR=3
+VALUE=38
+WEIGHT=6.1
+RESOURCES=6 i_hides_cut,1 i_thread
+SKILLMAKE=Tailoring 18.1,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Footwear
+DESCRIPTION=Jester Shoes (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02656
+ON=@Create
+   HITPOINTS={21 25}
+
+[ITEMDEF 02656]
+//jester shoes
+DUPEITEM=02655
+
+[ITEMDEF 0265f]
+DEFNAME=i_shirt_plain_2
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_shirt
+ARMOR=3
+VALUE=32
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Plain Shirt 2 (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02660
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02660]
+//plain shirt 2
+DUPEITEM=0265f
+
+[ITEMDEF 02661]
+DEFNAME=i_shirt_plain_3
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_shirt
+ARMOR=3
+VALUE=32
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Plain Shirt 3 (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02662
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02662]
+//plain shirt 3
+DUPEITEM=02661
+
+[ITEMDEF 02663]
+DEFNAME=i_shirt_plain_4
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_shirt
+ARMOR=3
+VALUE=32
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Plain Shirt 4 (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02664
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02664]
+//plain shirt 4
+DUPEITEM=02663
+
+[ITEMDEF 02665]
+DEFNAME=i_shirt_plain_5
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_shirt
+ARMOR=3
+VALUE=32
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Plain Shirt 5 (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02666
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02666]
+//plain shirt 5
+DUPEITEM=02665
+
+[ITEMDEF 02667]
+DEFNAME=i_shirt_ninja
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_shirt
+ARMOR=3
+VALUE=32
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Ninja (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02668
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02668]
+//ninja
+DUPEITEM=02667
+
+[ITEMDEF 0266b]
+DEFNAME=i_sleeves_kote1
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_arms
+ARMOR=3
+VALUE=25
+WEIGHT=6.1
+RESOURCES=6 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Kote Sleeves 1 (3d client only)
+TEVENTS=t_iprop
+DUPELIST=0266c
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0266c]
+//kote sleeves 1
+DUPEITEM=0266b
+
+[ITEMDEF 0266d]
+DEFNAME=i_sleeves_kote2
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_arms
+ARMOR=3
+VALUE=25
+WEIGHT=6.1
+RESOURCES=6 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Kote Sleeves 2 (3d client only)
+TEVENTS=t_iprop
+DUPELIST=0266e
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 0266e]
+//kote sleeves 2
+DUPEITEM=0266d
+
+[ITEMDEF 02671]
+DEFNAME=i_domaru
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_chest
+ARMOR=3
+VALUE=32
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Do-maru (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02672
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02672]
+//do-maru
+DUPEITEM=02671
+
+[ITEMDEF 02673]
+DEFNAME=i_haramakido
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_chest
+ARMOR=3
+VALUE=32
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Haramaki-do (3d client only)
+TEVENTS=t_iprop
+DUPELIST=02674
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 02674]
+//haramaki-do
+DUPEITEM=02673
+
+[ITEMDEF 0267b]
+DEFNAME=i_dress_fancy2
+TYPE=t_clothing
+DYE=1
+FLIP=1
+LAYER=layer_robe//actually layer_skirt
+ARMOR=5
+VALUE=45
+WEIGHT=12.2
+RESOURCES=12 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 13.6,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Fancy Dress 2
+TEVENTS=t_iprop
+DUPELIST=0267c
+ON=@Create
+   HITPOINTS={21 30}
+
+[ITEMDEF 0267c]
+//fancy dress 2
+DUPEITEM=0267b
+
+[ITEMDEF 0267d]
+DEFNAME=i_dress_fancy3
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_robe
+ARMOR=5
+VALUE=45
+WEIGHT=12.2
+RESOURCES=12 i_cloth,2 i_thread
+SKILLMAKE=Tailoring 13.6,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Fancy Dress 3
+TEVENTS=t_iprop
+DUPELIST=0267e
+ON=@Create
+   HITPOINTS={21 30}
+
+[ITEMDEF 0267e]
+//fancy dress 3
+DUPEITEM=0267d
+
+[ITEMDEF 0267f]
+DEFNAME=i_dress_long
+TYPE=t_clothing
+DYE=1
+FLIP=1
+ARMOR=5
+//LAYER=layer_robe
+VALUE=45
+WEIGHT=12.1
+RESOURCES=12 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 13.6,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Long Dress
+TEVENTS=t_iprop
+DUPELIST=02680
+ON=@Create
+   HITPOINTS={21 30}
+
+[ITEMDEF 02680]
+//long dress
+DUPEITEM=0267f
+
+[ITEMDEF 02681]
+DEFNAME=i_kimono_female1
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_robe
+ARMOR=5
+VALUE=45
+WEIGHT=12.1
+RESOURCES=12 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 13.6,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Female Kimono 1 (unwearable)
+TAG.FemaleOnly=1
+TEVENTS=t_iprop
+DUPELIST=02682
+ON=@Create
+   HITPOINTS={21 30}
+
+[ITEMDEF 02682]
+//kimono
+DUPEITEM=02681
+
+[ITEMDEF 02685]
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Death Shroud (unwearable)
+DUPELIST=02686
+
+[ITEMDEF 02686]
+//death shroud
+DUPEITEM=02685
+
+[ITEMDEF 02687]
+NAME=hooded shroud
+//DEFNAME=i_shroud_hooded
+//NAME=hooded shroud
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_robe
+ARMOR=20
+VALUE=547
+WEIGHT=12.6
+RESOURCES=10 i_cloth,5 i_gem_diamond,1 i_wire_gold,1 i_thread,1 i_scroll_resurrection
+SKILLMAKE=Tailoring 70.0,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Death Shroud (works)
+TAG.REQSTR=30
+TEVENTS=t_iprop
+ON=@Create
+   HITPOINTS={20 30}
+
+[ITEMDEF 02691]
+DEFNAME=i_leather_cap2
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=12
+WEIGHT=2.1
+RESOURCES=2 i_hides_cut,1 i_thread
+SKILLMAKE=Tailoring 6.8,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Leather Cap 2
+TAG.REQSTR=10
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=02692
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 02692]
+//leather cap
+DUPEITEM=02691
+
+[ITEMDEF 0269d]
+DEFNAME=i_cap_feathered
+NAME=decorative feathered cap
+TYPE=t_armor_leather
+FLIP=1
+ARMOR=13
+VALUE=15
+WEIGHT=2.2
+RESOURCES=2 i_hides_cut,1 i_thread,1 i_feather
+SKILLMAKE=Tailoring 6.8,t_sewing_kit
+CATEGORY=Provisions - Armor
+SUBSECTION=Leather Armor
+DESCRIPTION=Robin Hood Cap (unwearable)
+TAG.REQSTR=25
+TAG.NotGargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0269e
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 0269e]
+//feathered cap
+DUPEITEM=0269d
+
+[ITEMDEF 026a1]
+DEFNAME=i_mask_feathered
+TYPE=t_clothing
+FLIP=1
+LAYER=layer_helm
+ARMOR=5
+VALUE=26
+WEIGHT=3.6
+RESOURCES=1 i_straw,1 i_canvas,6 i_feather,1 i_bone
+SKILLMAKE=Tailoring 16.1,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Feathered Mask (unwearable)
+TAG.REQSTR=25
+TEVENTS=t_iprop
+DUPELIST=026a2
+ON=@Create
+   HITPOINTS={21 23}
+
+[ITEMDEF 026a2]
+//feathered mask
+DUPEITEM=026a1
+
+[ITEMDEF 026a3]
+DEFNAME=i_hood_ninja_2
+NAME=ninja hood
+TYPE=t_clothing
+FLIP=1
+//LAYER=layer_helm
+ARMOR=7
+VALUE=83
+WEIGHT=14.1
+RESOURCES=14 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 90.0,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Masks
+DESCRIPTION=Ninja Hood (3d client only)
+TAG.REQSTR=10
+TEVENTS=t_iprop
+DUPELIST=026a4
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 026a4]
+//ninja hood
+DUPEITEM=026a3
+
+[ITEMDEF 02fbd]
+//FIXME: Bad tile graphic
+//FIXME: Looks good on paperdoll
+DEFNAME=i_elven_male_shirt3
+NAME=elven shirt
+TYPE=t_clothing
+DYE=1
+FLIP=1
+//LAYER=layer_shirt
+ARMOR=4
+VALUE=34
+WEIGHT=8.1
+RESOURCES=8 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 27.2,t_sewing_kit
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Shirts & Robes
+DESCRIPTION=Elven Male Shirt
+TEVENTS=t_iprop
+DUPELIST=02fbe
+ON=@Create
+   HITPOINTS={31 37}
+
+[ITEMDEF 02fbe]
+//i_elven_male_shirt3
+DUPEITEM=02fbd
+
+[ITEMDEF 0450d]
+DEFNAME=i_gargish_leather_belt
+NAME=Gargish belt
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=5.1
+REQSTR=10
+RESOURCES=5 i_hides_cut,1 i_thread
+SKILLMAKE=Tailoring 50.0,t_sewing_kit,Armslore 38.0
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargish Belt
+TAG.Item.Gargoyle=1
+TEVENTS=t_iprop
+DUPELIST=0450e
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0450e]
+//gargoyle belt
+DUPEITEM=0450d
+
+[ITEMDEF 046aa]
+DEFNAME=i_gargish_sash_female
+NAME=Gargish female sash
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=4.1
+REQSTR=10
+RESOURCES=4 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 4.5,t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargish Female Sash
+TAG.FemaleOnly=1
+TAG.Item.Gargoyle=1
+TEVENTS=t_iprop
+DUPELIST=046ab
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 046ab]
+//gargish female sash
+DUPEITEM=046aa
+
+[ITEMDEF 046b4]
+DEFNAME=i_gargish_sash
+NAME=Gargish sash
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=4.1
+REQSTR=10
+RESOURCES=4 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 4.5,t_sewing_kit
+CATEGORY=Provisions - Clothing
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargish Sash
+TAG.Item.Gargoyle=1
+TEVENTS=t_iprop
+DUPELIST=046b5
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 046b5]
+//gargish sash
+DUPEITEM=046b4
+
+[ITEMDEF 050d8]
+DEFNAME=i_gargish_apron
+NAME=Gargish half apron
+TYPE=t_clothing
+DYE=1
+FLIP=1
+WEIGHT=6.1
+REQSTR=10
+RESOURCES=6 i_cloth,1 i_thread
+SKILLMAKE=Tailoring 22.7,t_sewing_kit
+CATEGORY=Provisions - Clothes
+SUBSECTION=Miscellaneous
+DESCRIPTION=Gargish Half Apron
+TAG.Item.Gargoyle=1
+TEVENTS=t_iprop
+DUPELIST=050d9
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 050d9]
+//Gargish half apron
+DUPEITEM=050d8
+
+
+[EOF]

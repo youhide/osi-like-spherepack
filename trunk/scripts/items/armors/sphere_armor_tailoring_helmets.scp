@@ -1,0 +1,34 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, March 5, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 02776]
+DEFNAME=i_leather_jingasa
+NAME=leather jingasa
+TYPE=t_armor_leather
+FLIP=1
+WEIGHT=3
+REQSTR=25
+RESOURCES=4 i_hides_cut
+SKILLMAKE=Tailoring 45.0
+TAG.ResPhysical=4
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=2
+TAG.ResEnergy=3
+CATEGORY=Provisions - Armor - Tailoring
+SUBSECTION=Helmets
+DESCRIPTION=Leather Jingasa
+DUPELIST=027c1
+ON=@Create
+   HITPOINTS={50 60}
+
+[ITEMDEF 027c1]
+DUPEITEM=02776
+
+[EOF]

@@ -1,0 +1,146 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, March 2, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 02641]
+DEFNAME=i_dragon_chest
+NAME=dragon breastplate
+TYPE=t_armor
+DYE=0//dye using pigments of tokuno only
+FLIP=1
+WEIGHT=10.0
+REQSTR=75
+RESOURCES=36 i_reag_dragon_scale
+SKILLMAKE=Blacksmithing 85.0
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Dragon Scale Armor
+DESCRIPTION=Dragon Breastplate
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+DUPELIST=02642
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02642]
+//dragon breastplate
+DUPEITEM=02641
+
+[ITEMDEF 02643]
+DEFNAME=i_dragon_gloves
+NAME=dragon gloves
+TYPE=t_armor
+DYE=0//dye using pigments of tokuno only
+FLIP=1
+WEIGHT=2.0
+REQSTR=75
+RESOURCES=16 i_reag_dragon_scale
+SKILLMAKE=Blacksmithing 68.9
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Dragon Scale Armor
+DESCRIPTION=Dragon Gloves
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+DUPELIST=02644
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02644]
+//dragon gloves
+DUPEITEM=02643
+
+[ITEMDEF 02645]
+DEFNAME=i_dragon_helm
+NAME=dragon helm
+TYPE=t_armor
+DYE=0//dye using pigments of tokuno only
+FLIP=1
+WEIGHT=5.0
+REQSTR=75
+RESOURCES=20 i_reag_dragon_scale
+SKILLMAKE=Blacksmithing 72.6
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Dragon Scale Armor
+DESCRIPTION=Dragon Helm
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+DUPELIST=02646
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02646]
+//dragon helm
+DUPEITEM=02645
+
+[ITEMDEF 02647]
+DEFNAME=i_dragon_leggings
+NAME=dragon leggings
+TYPE=t_armor
+DYE=0//dye using pigments of tokuno only
+FLIP=1
+WEIGHT=6.0
+REQSTR=75
+RESOURCES=28 i_reag_dragon_scale
+SKILLMAKE=Blacksmithing 78.8
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Dragon Scale Armor
+DESCRIPTION=Dragon Leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+DUPELIST=02648
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02648]
+//dragon leggings
+DUPEITEM=02647
+
+[ITEMDEF 02657]
+DEFNAME=i_dragon_sleeves
+NAME=dragon sleeves
+TYPE=t_armor
+DYE=0//dye using pigments of tokuno only
+FLIP=1
+WEIGHT=2.0
+REQSTR=75
+RESOURCES=24 i_reag_dragon_scale
+SKILLMAKE=Blacksmithing 76.3
+CATEGORY=Provisions - Armor - Blacksmithing
+SUBSECTION=Dragon Scale Armor
+DESCRIPTION=Dragon Sleeves
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+DUPELIST=02658
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02658]
+//dragon sleeves
+DUPEITEM=02657
+
+
+[EOF]

@@ -1,0 +1,1552 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Monday, April 25, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 01014]
+//FIXME: Perhaps use this for bulletin board messages?
+NAME=.
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 01014
+
+[ITEMDEF 01018]
+DEFNAME=i_empty_tile
+CATEGORY=Miscellaneous
+SUBSECTION=Invisible Tiles
+DESCRIPTION=Invisible Tile 01018
+
+[ITEMDEF 017cf]
+DEFNAME=i_teleporter
+TYPE=t_telepad
+WEIGHT=60
+RESOURCES=60 i_board, 1 i_nails
+CATEGORY=Miscellaneous
+SUBSECTION=Teleporter
+DESCRIPTION=@
+DUPELIST=017d0,017d1,017d2,017d3,017d4,017d5,017d6,017d7,017d8,017d9,017da,017db,017dc,017dd,017de,017df,017e0,017e1,017e2,017e3,017e4,017e5,017e6,017e7,017e8,017e9,017ea,017eb,017ec,017ed,017ee,017ef,017f0,017f1,017f2,017fc,017fd,017fe,017ff,01800,01801,01802,01803,01804,01805,01806,01807,01808,01809,0180a,0180b,0180c,0180d
+
+[ITEMDEF 017d0]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017d1]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017d2]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017d3]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017d4]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017d5]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017d6]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017d7]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017d8]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017d9]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017da]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017db]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017dc]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017dd]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017de]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017df]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e0]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e1]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e2]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e3]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e4]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e5]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e6]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e7]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e8]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017e9]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017ea]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017eb]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017ec]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017ed]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017ee]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017ef]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017f0]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017f1]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017f2]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017fc]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017fd]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017fe]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 017ff]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01800]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01801]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01802]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01803]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01804]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01805]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01806]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01807]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01808]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01809]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 0180a]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 0180b]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 0180c]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 0180d]
+//teleporter
+DUPEITEM=017cf
+
+[ITEMDEF 01869]
+DEFNAME=i_virtstone_1
+DEFNAME2=i_virtuestone_black
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Black)
+
+[ITEMDEF 0186a]
+DEFNAME=i_virtstone_2
+DEFNAME2=i_virtuestone_blue
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Blue)
+
+[ITEMDEF 0186b]
+DEFNAME=i_virtstone_3
+DEFNAME2=i_virtuestone_green
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Green)
+
+[ITEMDEF 0186c]
+DEFNAME=i_virtstone_4
+DEFNAME2=i_virtuestone_orange
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Orange)
+
+[ITEMDEF 0186d]
+DEFNAME=i_virtstone_5
+DEFNAME2=i_virtuestone_purple
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Purple)
+
+[ITEMDEF 0186e]
+DEFNAME=i_virtstone_6
+DEFNAME2=i_virtuestone_red
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Red)
+
+[ITEMDEF 0186f]
+DEFNAME=i_virtstone_7
+DEFNAME2=i_virtuestone_aqua
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Aqua)
+
+[ITEMDEF 01870]
+DEFNAME=i_virtstone_8
+DEFNAME2=i_virtuestone_yellow
+WEIGHT=1
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Stones
+DESCRIPTION=Virtue Stone (Yellow)
+
+// The following ITEMDEFs should only be used on skillmenus or dialogs
+// since they have no visible tile within the worldfile...
+
+[ITEMDEF 01964]
+DEFNAME=i_region_caves
+NAME=cave region
+
+[ITEMDEF 01965]
+DEFNAME=i_region_forest
+NAME=forest region
+
+[ITEMDEF 01966]
+DEFNAME=i_region_grass
+NAME=grassland region
+
+[ITEMDEF 01967]
+DEFNAME=i_region_jungle
+NAME=jungle region
+
+[ITEMDEF 01968]
+DEFNAME=i_region_mountain
+NAME=mountain region
+
+[ITEMDEF 01969]
+DEFNAME=i_region_desert
+NAME=desert region
+
+[ITEMDEF 0196a]
+DEFNAME=i_region_snow
+NAME=snow region
+
+[ITEMDEF 0196b]
+DEFNAME=i_region_swamp
+NAME=swamp region
+
+[ITEMDEF 0196c]
+DEFNAME=i_region_water
+NAME=water region
+
+[ITEMDEF 0196d]
+DEFNAME=i_region_moongate_blue
+NAME=blue moongate region
+
+[ITEMDEF 0196e]
+DEFNAME=i_region_moongate_red
+NAME=red moongate region
+
+[ITEMDEF 0196f]
+DEFNAME=i_mapadd1
+NAME=detail map
+
+[ITEMDEF 01970]
+DEFNAME=i_mapadd2
+NAME=regional map
+
+[ITEMDEF 01971]
+DEFNAME=i_mapadd3
+NAME=sea chart
+
+[ITEMDEF 01972]
+DEFNAME=i_mapadd4
+NAME=world map
+
+[ITEMDEF 01973]
+DEFNAME=i_quest
+NAME=quest
+
+[ITEMDEF 01977]
+DEFNAME=i_region_dirt
+NAME=dirt region
+
+[ITEMDEF 01978]
+DEFNAME=i_region_furrows
+NAME=furrows region
+
+[ITEMDEF 01979]
+DEFNAME=i_region_lava
+NAME=lava region
+
+
+[ITEMDEF 01aa4]
+DEFNAME=i_lighthouse
+RESOURCES=66 i_stone_sand, 24 i_glass
+WEIGHT=156
+CATEGORY=Miscellaneous
+SUBSECTION=Lighthouse
+DESCRIPTION=Lighthouse
+DUPELIST=01aa5,01aa6,01aa7,01aa8,01aa9,01aaa,01aab,01aac,01aad,01aae,01aaf,01ab0,01ab1,01ab2,01ab3,01ab4,01ab5,01ab6,01ab7,01ab8,01ab9,01aba,01abb,01abc,01abd,01abe,01abf,01ac0,01ac1,01ac2,01ac3,01ac4,01ac5,01ac6,01ac7,01ac8,01ac9,01aca,01acb,01acc,01acd,01ace,01acf,01ad0,01ad1,01ad2
+
+[ITEMDEF 01aa5]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aa6]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aa7]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aa8]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aa9]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aaa]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aab]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aac]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aad]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aae]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aaf]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab0]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab1]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab2]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab3]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab4]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab5]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab6]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab7]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab8]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ab9]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aba]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01abb]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01abc]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01abd]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01abe]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01abf]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac0]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac1]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac2]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac3]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac4]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac5]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac6]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac7]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac8]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ac9]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01aca]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01acb]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01acc]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01acd]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ace]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01acf]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ad0]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ad1]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ad2]
+//lighthouse
+DUPEITEM=01aa4
+
+[ITEMDEF 01ad4]
+DEFNAME=i_nest_with_eggs
+RESOURCES=8 i_straw
+WEIGHT=3
+CATEGORY=Miscellaneous
+SUBSECTION=Birds Nest
+DESCRIPTION=@
+DUPELIST=01ad5
+
+[ITEMDEF 01ad5]
+DEFNAME=i_nest
+DUPEITEM=01ad4
+
+[ITEMDEF 01b3f]
+DEFNAME=i_treasure
+RESOURCES=15000 i_gold, 50 t_gem
+WEIGHT=200
+CATEGORY=Miscellaneous
+SUBSECTION=Treasure
+DESCRIPTION=@
+DUPELIST=01b40,01b41,01b42,01b43,01b44,01b45,01b46,01b47,01b48,01b4a,01b4b,01b4c,01b4d,01b4e,01b4f,01b50,01b51,01b53,01b54,01b55,01b56,01b57,01b58,01b59,01b5a,01b5b,01b5c,01b5d,01b5f,01b60,01b61,01b62,01b63,01b64,01b65,01b66,01b67,01b68,01b69,01b6a,01b6b
+
+[ITEMDEF 01b40]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b41]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b42]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b43]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b44]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b45]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b46]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b47]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b48]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b4a]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b4b]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b4c]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b4d]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b4e]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b4f]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b50]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b51]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b53]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b54]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b55]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b56]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b57]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b58]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b59]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b5a]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b5b]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b5c]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b5d]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b5f]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b60]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b61]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b62]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b63]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b64]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b65]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b66]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b67]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b68]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b69]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01b6a]
+//treasure
+DUPEITEM=01b3f
+
+[ITEMDEF 01c12]
+DEFNAME=i_bell_of_courage
+RESOURCES=2 i_ingot_gold, 1 i_wire_gold, 1 i_gem_diamond
+WEIGHT=5
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Items
+DESCRIPTION=Bell of Courage
+
+[ITEMDEF 01c13]
+DEFNAME=i_book_of_truth
+TYPE=T_BOOK
+RESOURCES=1 i_book_sm
+WEIGHT=5
+VALUE=500
+CATEGORY=Miscellaneous
+SUBSECTION=Virtue Items
+DESCRIPTION=Book of Truth
+
+ON=@Create
+   MORE1=b_sphere
+
+[ITEMDEF 01e5e]
+DEFNAME=i_bulletin_board
+NAME=bulletin board
+TYPE=t_bboard
+TDATA2=0866
+FLIP=1
+WEIGHT=25
+RESOURCES=20 i_board,4 i_cloth,1 i_nails,1 i_paper,1 i_feather,1 i_ink_well
+SKILLMAKE=Carpentry 85.0, t_carpentry
+CATEGORY=Miscellaneous
+SUBSECTION=Bulletin Board
+DESCRIPTION=Bulletin Board 1
+DUPELIST=01e5f
+
+[ITEMDEF 01e5f]
+//bulletin board 1
+DUPEITEM=01e5e
+
+[ITEMDEF 02311]
+DEFNAME=i_bulletin_board_2
+TYPE=t_bboard
+TDATA2=0866
+FLIP=1
+WEIGHT=25
+RESOURCES=20 i_board,4 i_cloth,1 i_nails,1 i_paper,1 i_feather,1 i_ink_well
+SKILLMAKE=Carpentry 90.0,t_carpentry
+CATEGORY=Miscellaneous
+SUBSECTION=Bulletin Board
+DESCRIPTION=Bulletin Board 2
+DUPELIST=02312
+
+[ITEMDEF 02312]
+//bulletin board 2
+DUPEITEM=02311
+
+
+[ITEMDEF i_glass_window]
+ID=i_target//this is not a good choice since its animated
+NAME=window glass
+RESOURCES=2 i_sand
+ON=@Create
+   COLOR=colors_white
+
+[ITEMDEF i_flagstone_red]
+ID=i_rock_plain
+ON=@Create
+   COLOR=colors_red
+
+[ITEMDEF i_flagstone_gray]
+ID=i_rock_plain
+ON=@Create
+   COLOR=colors_gray
+
+[ITEMDEF i_stone_slate]
+ID=i_rock_plain
+ON=@Create
+   COLOR=colors_gray
+
+[ITEMDEF i_stone_red]
+ID=i_rock_plain
+ON=@Create
+   COLOR=colors_red
+
+[ITEMDEF i_stone_cobble]
+ID=i_rock_plain
+ON=@Create
+   COLOR=colors_brown
+
+[ITEMDEF i_linen]
+ID=i_cloth
+NAME=linen
+VALUE=2
+WEIGHT=1
+RESOURCES=6 i_flax_bundle
+ON=@Create
+   COLOR=colors_yellow
+
+[ITEMDEF i_paper]
+ID=i_bedroll_open
+NAME=paper
+VALUE=2
+RESOURCES=1 i_board, 1 t_water
+SKILLMAKE=carpentry 15.7, t_carpentry
+WEIGHT=0.1
+
+[ITEMDEF i_parchment]
+ID=i_bedroll_open
+NAME=parchment
+VALUE=2
+RESOURCES=1 i_paper, 1 i_cloth
+SKILLMAKE=carpentry 20.7, t_carpentry
+WEIGHT=0.1
+
+[ITEMDEF i_crop_herb]
+ID=i_plant_grasses
+NAME=Herbs
+
+[ITEMDEF i_knitting_needles]
+ID=i_axel
+NAME=knitting needles
+VALUE=5
+WEIGHT=1
+RESOURCES=1 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Tailor
+DESCRIPTION=Knitting Needles
+
+[ITEMDEF i_screw]
+ID=i_hinge
+NAME=screw
+VALUE=1
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Items by Professions
+SUBSECTION=Tinker
+DESCRIPTION=Screw
+
+[ITEMDEF i_ebony]
+ID=i_reag_blackmoor
+NAME=ebony
+WEIGHT=0.1
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewels
+DESCRIPTION=Ebony
+
+[ITEMDEF i_ivory]
+ID=i_bone_spine
+NAME=ivory
+WEIGHT=0.1
+CATEGORY=Provisions - Jewels and Jewelry
+SUBSECTION=Jewels
+DESCRIPTION=Ivory
+ON=@Create
+   COLOR=colors_white
+
+[ITEMDEF i_hair_dyes]
+ID=i_testtube_rack_full
+NAME=hair dyes
+TYPE=t_hair_dye
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Hair Dyes
+ON=@Create
+   COLOR=colors_hair
+
+[ITEMDEF i_ribbon]
+ID=i_yarn_ball
+NAME=Ribbon
+WEIGHT=1
+ON=@Create
+   COLOR=colors_all
+
+[ITEMDEF i_hinge_brass]
+ID=i_hinge
+NAME=brass hinges
+WEIGHT=0.1
+RESOURCES=3 i_ingot_iron, 1 i_cloth
+CATEGORY=Items by Professions
+SUBSECTION=Tinker
+DESCRIPTION=Brass Hinges
+ON=@Create
+   COLOR=color_o_gold
+
+[ITEMDEF i_sewing_needle]
+ID=i_scorp
+NAME=sewing needle
+VALUE=1
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Items by Professions
+SUBSECTION=Tailor
+DESCRIPTION=Sewing Needle
+ON=@Create
+   COLOR=color_metal
+
+[ITEMDEF i_die]
+ID=i_gem_sapphire
+NAME=die
+WEIGHT=0.1
+//RESOURCES3=1 i_bone, 1 i_ink
+ON=@Create
+   COLOR=colors_white
+
+[ITEMDEF I_INK_POT]
+ID=I_SPITTOON
+NAME=Inkpot
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Artists
+DESCRIPTION=Inkpot
+
+ON=@Create
+   COLOR=color_gray_dk
+
+[ITEMDEF I_BRUSH]
+ID=I_REAG_DAEMON_BONE
+NAME=Paint Brush
+WEIGHT=1
+RESOURCES=1 i_hair_cut, 1 i_board
+CATEGORY=Items by Professions
+SUBSECTION=Artists
+DESCRIPTION=Paint Brush
+
+ON=@Create
+   COLOR=colors_brown
+
+[ITEMDEF I_BLOODSTONE]
+ID=i_rock_7
+NAME=Bloodstone
+WEIGHT=2
+RESOURCES=1 i_rock_7, 2 i_blood
+CATEGORY=Items by Professions
+SUBSECTION=Necromancer
+DESCRIPTION=Bloodstone
+
+ON=@Create
+   COLOR=colors_blood
+
+[ITEMDEF I_MARBLE]
+ID=i_rock_3   //ROCK
+TYPE=t_AROCK
+NAME=Marble
+WEIGHT=5
+CATEGORY=Items by Professions
+SUBSECTION=Jeweler
+DESCRIPTION=Marble
+
+ON=@Create
+   COLOR=color_snow
+
+[ITEMDEF i_TREE_SAPLING_PLANTED]
+ID=i_PLANT_WEED
+NAME=Planted Tree Sapling
+WEIGHT=4
+CATEGORY=Vegetation
+SUBSECTION=Planted Plants
+DESCRIPTION=Planted Tree Sapling
+
+[ITEMDEF I_BAMBOO]
+ID=i_staff_quarter
+RESOURCES=2 i_plant_cattails
+CATEGORY=Vegetation
+SUBSECTION=Sticks and Wood
+DESCRIPTION=Bamboo
+ON=@Create
+   COLOR=09a
+
+[ITEMDEF I_CAT_GUT]
+ID=i_FLESH_ENTRAILS
+NAME=Cat Gut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Bowyer
+DESCRIPTION=Cat Gut
+
+[ITEMDEF I_PEG]
+ID=i_BANNER_HANGER_NE
+NAME=Peg
+CATEGORY=Provisions - Armor
+SUBSECTION=Decorative Armor
+DESCRIPTION=Peg
+
+[ITEMDEF I_ORC_SKULL]
+ID=i_bone_skull
+NAME=Orc Skull
+CATEGORY=Items by Professions
+SUBSECTION=Tailor
+DESCRIPTION=Orc Skull
+
+[ITEMDEF I_WAX_SEAL]
+ID=I_GEM_TOURMALINE
+NAME=Wax Seal
+RESOURCES=1 i_beeswax
+CATEGORY=Items by Professions
+SUBSECTION=Beekeepers/Candlers
+DESCRIPTION=Wax Seal
+
+[ITEMDEF I_VELVET]
+ID=i_FLESH_ENTRAILS
+NAME=Velvet
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Tailor
+DESCRIPTION=Velvet
+
+[ITEMDEF I_BOOKOFHELL]
+NAME=Book of Hell
+ID=i_BOOK_OPEN
+CATEGORY=Trigger Items
+SUBSECTION=Magic Items
+DESCRIPTION=Book of Hell
+ON=@Create
+   MORE=b_hitchhiker // some book number
+ON=@DClick
+   SRC.EFFECT=3,i_FIRE_COLUMN,6,15,1   // flamestrike
+   SRC.SOUND=snd_SPELL_FLAMESTRIKE
+   SRC.DAMAGE={5 20}   // damage the person who did this
+   TIMER=4
+ON=@Timer
+   SPEAK Run away !
+   RETURN 1
+
+[ITEMDEF I_FIRE_STORM]
+NAME=a Fire Storm
+ID=i_fx_explode
+TYPE=T_SPELL
+CATEGORY=TFL Additions
+SUBSECTION=Animations
+DESCRIPTION=Fire Storm Piece
+
+ON=@Create
+   ATTR=attr_magic|attr_move_never
+   MORE=0
+   MOREP=42,55,99
+   TIMER=1
+
+ON=@DCLICK
+   MORE = <MORE> + 1
+   IF (<MORE> > 15)
+      REMOVE
+      RETURN 1
+   endif
+   MOREP=<LINK.P>
+   TAG.NEG=RAND(2)
+   TAG.TX=RAND(6)
+   IF (<TAG0.NEG> == 1)
+      MOREX= <MOREX> - <TAG0.TX>
+   ELSE
+      MOREX= <MOREX> + <TAG0.TX>
+   endif
+   TAG.NEG=RAND(2)
+   TAG.TY=RAND(6)
+   IF (<TAG0.NEG> == 1)
+      MOREY= <MOREY> - <TAG0.TY>
+   ELSE
+      MOREY= <MOREY> + <TAG0.TY>
+   endif
+   TAG.NEG =
+   TAG.TX =
+   TAG.TY =
+   ATTR=attr_move_never|attr_invis|attr_magic  //set invs
+   P=<MOREP>
+   ATTR=attr_magic|attr_move_never  //unhide object, shos it at new location
+   MOREP=42,55,99
+   TIMER=1
+   RETURN 1
+
+[ITEMDEF i_wizards_hat_plus_int]
+NAME=Mage Hat
+ID=i_hat_wizards
+RESOURCES=i_hat_wizards, i_scroll_cunning
+SKILLMAKE=Tailoring 60.0,Magery 60.0,t_sewing_kit
+
+[ITEMDEF i_crystal_of_com_t1]
+ID=i_crystal_red
+NAME=Communications Crystal
+TYPE=t_comm_crystal
+VALUE=81
+WEIGHT=0.1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Communication Crystals
+DESCRIPTION=Red Blinking (500 charges)
+ON=@Create
+   MORE=500//Charges
+
+[ITEMDEF i_crystal_of_com_t2]
+ID=i_crystal_green
+NAME=Communications Crystal
+TYPE=t_comm_crystal
+VALUE=158
+WEIGHT=0.1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Communication Crystals
+DESCRIPTION=Green Blinking (1000 charges)
+ON=@Create
+   MORE=1000//Charges
+
+[ITEMDEF i_crystal_of_com_t3]
+ID=i_crystal_green
+TYPE=t_comm_crystal
+NAME=Communications Crystal
+VALUE=310
+WEIGHT=1
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Communication Crystals
+DESCRIPTION=Green Blinking (2000 charges)
+ON=@Create
+   MORE=2000//Charges
+
+[ITEMDEF i_beard_NONE]
+ID=I_EQ_MARKER
+NAME=No Beard
+TYPE=T_BEARD
+LAYER=layer_beard
+VALUE=10
+
+ON=@Create
+   ATTR=attr_newbie
+   TIMER=550000
+
+ON=@TIMER
+   if !<cont>   // on ground?
+      return 0
+   endif
+   if <cont.npc>   // players only
+      return 1
+   endif
+   serv.newitem=i_beard_mustache
+   new.color=<cont.findlayer(layer_beard).color>
+   cont.equip <new.uid>
+   return 1
+
+[ITEMDEF i_hair_NONE]
+ID=I_EQ_MARKER
+NAME=No Hair
+TYPE=T_HAIR
+LAYER=layer_hair
+VALUE=10
+
+ON=@Create
+   ATTR=attr_newbie
+   TIMER=550000
+
+ON=@TIMER
+   if !<cont>   // on ground?
+      return 0
+   endif
+   if <cont.npc>   // players only
+      return 1
+   endif
+   serv.newitem=i_hair_krisna
+   new.color=<cont.findlayer(layer_hair).color>
+   cont.equip <new.uid>
+   return 1
+
+[ITEMDEF i_gm_robe]
+NAME=GM Robe
+ID=i_robe_gm
+ARMOR=500
+CATEGORY=Provisions - GM Items
+SUBSECTION=GM Robes
+DESCRIPTION=GM Robe
+ON=@Create
+   COLOR=021
+
+[ITEMDEF i_seer_robe]
+NAME=Seer Robe
+ID=i_robe_gm
+ARMOR=500
+CATEGORY=Provisions - GM Items
+SUBSECTION=GM Robes
+DESCRIPTION=Seer Robe
+ON=@Create
+   COLOR=01d3
+
+[ITEMDEF i_counselor_robe]
+NAME=Counselor Robe
+ID=i_robe_gm
+ARMOR=500
+CATEGORY=Provisions - GM Items
+SUBSECTION=GM Robes
+DESCRIPTION=Counselor Robe
+ON=@Create
+   COLOR=003
+
+[ITEMDEF i_checkerboard]
+ID=i_game_board
+NAME=checkerboard
+TYPE=t_game_board
+SKILLMAKE=tinkering 40.0, carpentry 40.0
+RESOURCES=3 i_board, 3 i_log
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=Checkerboard
+ON=@Create
+   MORE=1   //checkers
+
+[ITEMDEF i_chessboard]
+ID=i_game_board
+NAME=chessboard
+TYPE=t_game_board
+SKILLMAKE=tinkering 60.0, carpentry 60.0
+RESOURCES=3 i_board, 4 i_log
+CATEGORY=Items by Professions
+SUBSECTION=BarKeep
+DESCRIPTION=Chessboard
+
+[ITEMDEF i_guild_stone]
+// Guild Stone
+ID=i_guildstone
+NAME=Guildstone
+TYPE=T_STONE_GUILD
+CATEGORY=Provisions - Deeds
+SUBSECTION=Guild and Town Stones
+DESCRIPTION=Guild Stone
+
+[ITEMDEF i_town_stone]
+// Town Stone
+ID=i_guildstone
+NAME=Townstone
+TYPE=T_STONE_TOWN
+CATEGORY=Provisions - Deeds
+SUBSECTION=Guild and Town Stones
+DESCRIPTION=Town Stone
+
+[ITEMDEF i_stone_humility]
+NAME=Stone of Humility
+ID=i_virtuestone_black
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Stone of Humility
+
+[ITEMDEF i_stone_honesty]
+NAME=Stone of Honesty
+ID=i_virtstone_2
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Stone of Honesty
+
+[ITEMDEF i_stone_justice]
+NAME=Stone of Justice
+ID=i_virtstone_3
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Stone of Justice
+
+[ITEMDEF i_stone_sacrifice]
+NAME=Stone of Sacrifice
+ID=i_virtstone_4
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Stone of Sacrifice
+
+[ITEMDEF i_stone_honor]
+NAME=Stone of Honor
+ID=i_virtstone_5
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Stone of Honor
+
+[ITEMDEF i_stone_valor]
+NAME=Stone of Valor
+ID=i_virtstone_6
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Stone of Valor
+
+[ITEMDEF i_stone_spirituality]
+NAME=Stone of Spirituality
+ID=i_virtstone_7
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Stone of Spirituality
+
+[ITEMDEF i_stone_compassion]
+NAME=Stone of Compassion
+ID=i_virtstone_8
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Stone of Compassion
+
+[ITEMDEF i_bell_courage]
+NAME=Bell of Courage
+ID=i_bell_of_courage
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Bell of Courage
+
+[ITEMDEF i_book_of_truth_2]
+NAME=Book of Truth
+ID=i_book_of_truth
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Book of Truth
+
+[ITEMDEF i_candle_of_love_2]
+NAME=Candle of Love
+ID=i_candle_of_love
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Candle of Love
+
+[TYPEDEF t_grave]
+ON=@DClick
+   IF (<SRC.RESTEST 1 i_grave_delay>)
+      SRC.SYSMESSAGE You must wait to dig again.
+      RETURN 1
+   ELSEIF (<DISTANCE> > 1)
+      SRC.MESSAGE You have to be closer to dig there.
+      RETURN 1
+   ELSEIF (<SRC.RESTEST 1 i_pickaxe>) || (<SRC.RESTEST 1 i_shovel>)
+      SRC.ANIM=0b
+      SOUND=0126
+      LOCAL.RandomNumber=RAND(5)
+      IF (<LOCAL.RandomNumber>==0)
+            SERV.NEWITEM i_grave_delay
+            NEW.EQUIP
+            NEW.TIMER 120
+            SRC.NEWNPC {c_skeleton 1 c_zombie 1}
+            NEW.FLAGS |= (statf_war|statf_conjured)
+            NEW.P=<SRC.P>
+            SRC.KARMA=<SRC.KARMA> - 50
+            SRC.SYSMESSAGE You lost a little Karma.
+            SRC.MESSAGE You disturbed the dead!
+      ELSEIF (<LOCAL.RandomNumber>==1)
+            SERV.NEWITEM i_grave_delay
+            NEW.EQUIP
+            NEW.TIMER 120
+            SERV.NEWITEM backpack_meager
+            NEW.BOUNCE
+            SRC.KARMA=<SRC.KARMA> - 50
+            SRC.SYSMESSAGE You lost a little Karma.
+            SRC.MESSAGE You found some treasure!
+      ELSEIF (<LOCAL.RandomNumber>==2)
+            SERV.NEWITEM i_grave_delay
+            NEW.EQUIP
+            NEW.TIMER 120
+            SRC.NEWNPC {c_lich 1 c_mummy 1}
+            NEW.FLAGS |= (statf_war|statf_conjured)
+            NEW.P=<SRC.P>
+            SRC.KARMA=<SRC.KARMA> - 50
+            SRC.SYSMESSAGE You lost a little Karma.
+            SRC.MESSAGE You disturbed the dead greatly!
+      ELSEIF (<LOCAL.RandomNumber>==3)
+            SERV.NEWITEM i_grave_delay
+            NEW.EQUIP
+            NEW.TIMER 120
+            SRC.DAMAGE={5 10} <DEF.dam_physical>
+            SRC.KARMA=<SRC.KARMA> - 50
+            SRC.SYSMESSAGE You lost a little Karma.
+            SRC.MESSAGE You almost got drug into the grave by the dead!
+      ELSEIF (<LOCAL.RandomNumber>==4)
+            SERV.NEWITEM i_grave_delay
+            NEW.EQUIP
+            NEW.TIMER 120
+            SRC.DAMAGE={15 20} <DEF.dam_physical>
+            SRC.KARMA=<SRC.KARMA> - 50
+            SRC.SYSMESSAGE You lost a little Karma.
+            SRC.MESSAGE You got drug into the grave by the dead!
+      ELSEIF (<LOCAL.RandomNumber>==5)
+            SERV.NEWITEM i_grave_delay
+            NEW.EQUIP
+            NEW.TIMER 120
+            SERV.NEWITEM i_map_treasure
+            NEW.BOUNCE
+            SRC.DAMAGE={15 20} <DEF.dam_physical>
+            SRC.KARMA=<SRC.KARMA> - 50
+            SRC.SYSMESSAGE You lost a little Karma.
+            SRC.MESSAGE You got drug into the grave by the dead!
+      ENDIF
+   ENDIF
+   RETURN 0
+
+[ITEMDEF i_grave_delay]
+NAME=Gravedigging Delay Timer
+ID=i_handr_1
+TYPE=t_eq_script
+WEIGHT=0
+LAYER=layer_special
+ON=@Create
+   ATTR=attr_decay
+   COLOR=0480
+ON=@Timer
+   REMOVE
+
+[ITEMDEF i_egg_dragon]
+//Dragon Egg
+ID=i_fruit_coconut
+NAME=Dragons Egg
+VALUE=5000
+CATEGORY=Custom Items
+SUBSECTION=Dragons Egg
+DESCRIPTION=Dragons Egg
+
+ON=@Create
+   COLOR={ 0000 1 0033 1 0038 1 005d 1 0091 1 0175 1 0371 1 0455 1 07fff 1 }
+   ATTR=attr_identified
+   MORE=0
+
+ON=@TIMER
+   IF (<MORE>==1)
+      MORE2=2
+      LINK.NEWITEM i_dragon_spawn
+      LINK.ACT.P=<LINK.P>
+      REMOVE
+   endif
+   RETURN 1
+
+ON=@DCLICK    //on timer not executing in packs or containers, so do this for now if in someones pack
+   IF (<MORE>==1)
+      IF (<TIMER>>5800)
+         SRC.MESSAGE The egg seems soft and somewhat velvety to thine touch.
+      elif (<TIMER>>3600)
+         SRC.MESSAGE The egg seems to be getting hard and the velvet has fallen off.
+      elif (<TIMER>>1800)
+         SRC.MESSAGE The egg is very hard, it may hatch soon if you don't sell it quickly.
+      elif (<TIMER>>20)
+         SRC.MESSAGE You swear you can feel movement inside the egg...
+      ELSE
+         SRC.MESSAGE OH NO! as you pick up the egg it cracks and begings hatching!!!
+         LINK.NEWITEM i_dragon_spawn
+         LINK.ACT.P=<LINK.P>
+         REMOVE
+      endif
+   endif
+   RETURN 1
+
+ON=@PICKUP_GROUND
+   MORE=1
+   IF (<TIMER><1)
+      TIMER=7200
+   endif
+   LINK=<SRC.UID>
+   RETURN 0
+
+ON=@PICKUP_PACK
+   IF (<MORE>==1)
+      TRIGGER=@DCLICK
+      RETURN 0
+   endif
+   MORE=1
+   IF (<TIMER><1)
+      TIMER=7200
+   endif
+   LINK=<SRC.UID>
+   RETURN 0
+
+[ITEMDEF i_dragon_spawn]
+//drake egg spawn
+ID=I_HOLE
+TYPE=T_SPAWN_CHAR
+DESCRIPTION=One Shot Drake Spawn
+SUBSECTION=Dragons Egg
+CATEGORY=Custom Items
+
+ON=@Create
+   ATTR=attr_move_never|attr_invis
+   MORE1={ c_drake_red 1 c_drake 1 c_dragon_greendrake 1 c_dragon_copperdrake 1 c_dragon_bluedrake 1 c_dragon_golddrake 1 c_dragon_blackdrake 1 c_dragon_silverdrake 1 c_dragon_crystaldrake 1 }
+   MORE2=0
+   MOREP=0,1,3
+   TIMER=2
+
+ON=@TIMER
+   IF <AMOUNT>==0
+      REMOVE
+      RETURN 1
+   endif
+   IF <MORE2>==1
+      MOREP=30,30,3
+      AMOUNT=0
+      RETURN 0
+   endif
+   RETURN 0
+
+[ITEMDEF i_Book_Tennysons]
+//Tennyson's Charge of the Light Brigade
+NAME=Charge of the Light Brigade
+ID=i_BOOK_LG_PUB
+VALUE=10
+CATEGORY=Provisions - Miscellaneous
+SUBSECTION=Quest Items
+DESCRIPTION=Charge of the Light Brigade
+
+ON=@Create
+   MORE1=b_tennyson
+
+[EOF]

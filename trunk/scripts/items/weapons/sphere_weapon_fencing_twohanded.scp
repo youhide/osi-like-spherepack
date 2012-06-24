@@ -1,0 +1,528 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 14, 2011
+VERSION=0.56b
+
+
+///////////////////////////////////////////////////////////////
+//////// DOUBLE BLADED STAVES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026bf]
+DEFNAME=i_double_bladed_staff
+NAME=double bladed staff
+TYPE=t_weapon_fence
+DAM=12,13
+FLIP=1
+SKILL=Fencing
+SPEED=2.2
+RANGE=2
+VALUE=110
+WEIGHT=2
+REQSTR=50
+TWOHANDS=Y
+RESOURCES=16 i_ingot_iron
+SKILLMAKE=Blacksmithing 45.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Double Bladed Staves
+DESCRIPTION=Double Bladed Staff
+TEVENTS=t_iprop
+DUPELIST=026c9
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 026c9]
+DUPEITEM=026bf
+
+
+///////////////////////////////////////////////////////////////
+//////// ELVEN SPELLBLADES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 02d20]
+DEFNAME=i_elven_spellblade
+NAME=elven spellblade
+TYPE=t_weapon_fence
+DAM=12,14
+FLIP=1
+SKILL=Fencing
+SPEED=2.5
+//VALUE=FIXME
+WEIGHT=5
+REQSTR=35
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 70.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Elven Spellblades
+DESCRIPTION=Elven SpellBlade
+TEVENTS=t_iprop
+DUPELIST=02d2c
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 02d2c]
+DUPEITEM=02d20
+
+[ITEMDEF i_cold_forged_blade]
+ID=i_elven_spellblade
+NAME=Cold Forged Blade
+RESOURCES=18 i_ingot_iron, 10 i_ingredient_blight, 10 i_ingredient_taint, 1 i_ingredient_grizzled_bones
+SKILLMAKE=Blacksmithing 70.0
+TEVENTS=t_iprop
+TAG.SpellChanneling=1
+TAG.HitHarm=40
+TAG.NightSight=1
+TAG.SwingSpeedIncrease=25
+TAG.DamageIncrease=50
+TAG.DamCold=100
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Elven Spellblades
+DESCRIPTION=Cold Forged Blade
+ON=@Create
+   COLOR=<ColorElementalType>
+   HITPOINTS=255
+
+[ITEMDEF i_fiery_spellblade]
+ID=i_elven_spellblade
+NAME=Fiery Spellblade
+RESOURCES=14 i_ingot_iron, 1 i_gem_fire_ruby
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.ResFire=5
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Elven Spellblades
+DESCRIPTION=Fiery Spellblade
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_icy_spellblade]
+ID=i_elven_spellblade
+NAME=Icy Spellblade
+RESOURCES=14 i_ingot_iron, 1 i_gem_turquoise
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.ResCold=5
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Elven Spellblades
+DESCRIPTION=Icy Spellblade
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_spellblade_defense]
+ID=i_elven_spellblade
+NAME=Spellblade of Defense
+RESOURCES=14 i_ingot_iron, 1 i_gem_white_pearl
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.DefenseChanceIncrease=5
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Elven Spellblades
+DESCRIPTION=Spellblade of Defense
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+[ITEMDEF i_true_spellblade]
+ID=i_elven_spellblade
+NAME=True Spellblade
+RESOURCES=14 i_ingot_iron, 1 i_gem_blue_diamond
+SKILLMAKE=Blacksmithing 75.0
+TEVENTS=t_iprop
+TAG.SpellChanneling=1
+TAG.FasterCasting=-1
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Elven Spellblades
+DESCRIPTION=True Spellblade
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS={36 48}
+
+
+///////////////////////////////////////////////////////////////
+//////// KAMAS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027ad]
+DEFNAME=i_kama
+NAME=kama
+TYPE=t_weapon_fence
+DAM=9,11
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+VALUE=182
+LAYER=layer_hand2
+WEIGHT=7
+REQSTR=15
+TWOHANDS=Y
+RESOURCES=14 i_ingot_iron
+SKILLMAKE=Blacksmithing 40.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Kamas
+DESCRIPTION=Kama
+TEVENTS=t_iprop
+DUPELIST=027f8
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027f8]
+DUPEITEM=027ad
+
+[ITEMDEF i_darkened_sky]
+ID=i_kama
+NAME=Darkened Sky
+TEVENTS=t_iprop
+TAG.HitLightning=60
+TAG.SwingSpeedIncrease=25
+TAG.DamageIncrease=50
+TAG.DamCold=50
+TAG.DamEnergy=50
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Kamas
+DESCRIPTION=Darkened Sky
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// LAJATANGS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027a7]
+DEFNAME=i_lajatang
+NAME=lajatang
+TYPE=t_weapon_fence
+DAM=16,18
+SKILL=Fencing
+SPEED=3.5
+//VALUE=FIXME
+WEIGHT=12
+REQSTR=65
+TWOHANDS=Y
+RESOURCES=25 i_ingot_iron
+SKILLMAKE=Blacksmithing 80.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Lajatangs
+DESCRIPTION=Lajatang
+TEVENTS=t_iprop
+DUPELIST=027f2
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027f2]
+DUPEITEM=027a7
+
+
+///////////////////////////////////////////////////////////////
+//////// PIKES
+///////////////////////////////////////////////////////////////
+[ITEMDEF 026be]
+DEFNAME=i_pike
+NAME=pike
+TYPE=t_weapon_fence
+DAM=14,16
+FLIP=1
+SKILL=Fencing
+SPEED=3.0
+VALUE=200
+WEIGHT=8.0
+REQSTR=50
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 47.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Pikes
+DESCRIPTION=Pike
+TEVENTS=t_iprop
+DUPELIST=026c8
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 026c8]
+DUPEITEM=026be
+
+
+///////////////////////////////////////////////////////////////
+//////// PITCHFORKS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0e87]
+DEFNAME=i_pitchfork
+NAME=pitchfork
+TYPE=t_weapon_fence
+DAM=13,14
+FLIP=1
+SKILL=Fencing
+SPEED=2.5
+//VALUE=FIXME
+WEIGHT=11.0
+REQSTR=50
+TWOHANDS=Y
+RESOURCES=5 i_ingot_iron
+SKILLMAKE=Blacksmithing 20.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Pitchforks
+DESCRIPTION=Pitchfork
+TEVENTS=t_iprop
+DUPELIST=0e88
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0e88]
+DUPEITEM=0e87
+
+
+///////////////////////////////////////////////////////////////
+//////// SAI
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027af]
+DEFNAME=i_sai
+NAME=sai
+TYPE=t_weapon_fence
+DAM=9,11
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=7
+REQSTR=15
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 50.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Sai
+DESCRIPTION=Sai
+TEVENTS=t_iprop
+DUPELIST=027fa
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027fa]
+DUPEITEM=027af
+
+[ITEMDEF i_demon_fork]
+ID=i_sai
+NAME=Demon Forks
+TEVENTS=t_iprop
+TAG.ReflectPhysicalDamage=10
+TAG.DefenseChanceIncrease=10
+TAG.DamageIncrease=35
+TAG.ResFire=10
+TAG.ResPoison=10
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Sai
+DESCRIPTION=Demon Forks
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// SHORT SPEARS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 01402]
+DEFNAME=i_spear_short
+NAME=short spear
+TYPE=t_weapon_fence
+DAM=10,13
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=4
+REQSTR=40
+TWOHANDS=Y
+RESOURCES=6 i_ingot_iron
+SKILLMAKE=Blacksmithing 45.3
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Short Spears
+DESCRIPTION=Short Spear
+TEVENTS=t_iprop
+DUPELIST=01403
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 01403]
+DUPEITEM=01402
+
+[ITEMDEF i_enchanted_titan_leg_bone]
+ID=i_spear_short
+NAME=Enchanted Titan Leg Bone
+TEVENTS=t_iprop
+TAG.HitLightning=40
+TAG.HitLowerDefense=40
+TAG.HitChanceIncrese=10
+TAG.DamageIncrease=20
+TAG.PhysicalResist=10
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Short Spears
+DESCRIPTION=Enchanted Titan Leg Bone
+ON=@Create
+   COLOR=59
+   HITPOINTS=255
+
+
+///////////////////////////////////////////////////////////////
+//////// SPEARS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0f62]
+DEFNAME=i_spear
+NAME=spear
+TYPE=t_weapon_fence
+DAM=13,15
+FLIP=1
+SKILL=Fencing
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=7
+REQSTR=50
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 49.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Spears
+DESCRIPTION=Spear
+TEVENTS=t_iprop
+DUPELIST=0f63
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 0f63]
+DUPEITEM=0f62
+
+[ITEMDEF i_tribal_spear]
+ID=i_spear
+NAME=Tribal Spear
+TEVENTS=t_iprop
+TAG.DamageIncrease=80
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Spears
+DESCRIPTION=Tribal Spear
+ON=@Create
+   COLOR=0 //FIXME: unknown color
+   HITPOINTS=80
+
+
+///////////////////////////////////////////////////////////////
+//////// TEKAGI
+///////////////////////////////////////////////////////////////
+[ITEMDEF 027ab]
+DEFNAME=i_tekagi
+NAME=tekagi
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=2.0
+//VALUE=FIXME
+WEIGHT=5
+REQSTR=10
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 55.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Tekagi
+DESCRIPTION=Tekagi
+TEVENTS=t_iprop
+DUPELIST=027f6
+ON=@Create
+   HITPOINTS={36 48}
+
+[ITEMDEF 027f6]
+DUPEITEM=027ab
+
+
+///////////////////////////////////////////////////////////////
+//////// DUAL POINTED SPEARS
+///////////////////////////////////////////////////////////////
+[ITEMDEF 0904]
+DEFNAME=i_dual_pointed_spear
+NAME=dual pointed spear
+TYPE=t_weapon_fence
+DAM=12,13
+FLIP=1
+SKILL=Fencing
+SPEED=2.2
+//VALUE=FIXME
+WEIGHT=2.0
+REQSTR=40
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 47.0
+CATEGORY=Provisions - Weapons - Fencing
+SUBSECTION=Dual Pointed Spears
+DESCRIPTION=Dual Pointed Spear
+TEVENTS=t_iprop
+TAG.Item.Gargoyle=1
+DUPELIST=0406d
+ON=@Create
+   HITPOINTS={30 50}
+
+[ITEMDEF 0406d]
+DUPEITEM=0904
+
+
+///////////////////////////////////////////////////////////////
+//////// GARGISH
+///////////////////////////////////////////////////////////////
+
+[ITEMDEF 048c8]
+DEFNAME=i_gargish_pike
+NAME=Gargish pike
+TYPE=t_weapon_fence
+DAM=14,16
+FLIP=1
+SKILL=Fencing
+SPEED=44//FIXME
+VALUE=72
+WEIGHT=8.0
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron,2 i_log
+SKILLMAKE=Blacksmithing 47.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Gargish Pike
+REQSTR=50
+TEVENTS=t_iprop
+DUPELIST=048c9
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048c9]
+//Gargish pike
+DUPEITEM=048c8
+
+
+[ITEMDEF 048ce]
+DEFNAME=i_gargish_tekagi
+NAME=Gargish tekagi
+TYPE=t_weapon_fence
+DAM=10,12
+FLIP=1
+SKILL=Fencing
+SPEED=56//FIXME
+VALUE=74
+WEIGHT=5.0
+TWOHANDS=Y
+RESOURCES=12 i_ingot_iron
+SKILLMAKE=Blacksmithing 55.0
+CATEGORY=Provisions - Weapons
+SUBSECTION=Fencing
+DESCRIPTION=Gargish Tekagi
+REQSTR=10
+TEVENTS=t_iprop
+DUPELIST=048cf
+ON=@Create
+   HITPOINTS={36 48}
+   f_AddMagicTags 1 1
+
+[ITEMDEF 048cf]
+//Gargish tekagi
+DUPEITEM=048ce
+
+
+[EOF]
+

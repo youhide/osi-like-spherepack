@@ -1,0 +1,664 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Sunday, August 28, 2011
+VERSION=0.56b
+
+[COMMENT comment_profession_cooking]
+This file contains tools and equipment used by cooks, chefs, bartenders,
+candy makers, and other related professions.  For example: pots, pans,
+rolling pins, serving trays, cutlery etc.
+
+Actual food and drink items are in the sphere_item_food.scp script file.
+
+Empty containers, cups, bottles and pitchers will be in this file, however,
+if those sorts of containers have liquids in them, they will be in the
+"food" file.
+
+Similarly, plates of food will be in the "food" file, but the plate itself
+(whether clean or dirty) is in this file.
+
+NOTE: Knives that can be equiped are in the "weapons" file.
+
+
+/////////////////////////////////////////////////
+// Base food preparation and serving equipment //
+/////////////////////////////////////////////////
+
+
+[ITEMDEF 0974]
+DEFNAME=i_cauldron
+FLIP=1
+WEIGHT=30
+RESOURCES=20 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Cauldron
+DUPELIST=0975
+
+[ITEMDEF 0975]
+//cauldron
+DUPEITEM=0974
+
+[ITEMDEF 097f]
+DEFNAME=i_skillet
+WEIGHT=2
+RESOURCES=4 i_ingot_iron
+SKILLMAKE=Tinkering 30.0, t_tinker_tools
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Skillet
+
+[ITEMDEF 0991]
+DEFNAME=i_tray
+FLIP=1
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Tray
+DUPELIST=0992
+
+[ITEMDEF 0992]
+DEFNAME=i_tray_2
+DUPEITEM=0991
+
+[ITEMDEF 0995]
+DEFNAME=i_mug_ceramic
+FLIP=1
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Tinkering 42.0,t_tinker_tools
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Ceramic Mug
+DUPELIST=0996,0997,09ca
+
+[ITEMDEF 0996]
+//ceramic mug
+DUPEITEM=0995
+
+[ITEMDEF 0997]
+//ceramic mug
+DUPEITEM=0995
+
+[ITEMDEF 0998]
+DEFNAME=i_mug
+FLIP=1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Mug
+DUPELIST=0999
+
+[ITEMDEF 0999]
+//mug
+DUPEITEM=0998
+
+[ITEMDEF 099a]
+DEFNAME=i_goblet_silver
+FLIP=1
+SKILLMAKE=Tinkering 42.0,t_tinker_tools
+RESOURCES=3 i_ingot_silver
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Goblet (silver)
+DUPELIST=09cb
+
+[ITEMDEF 09a3]
+DEFNAME=i_fork
+FLIP=1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cutlery
+DESCRIPTION=Fork
+DUPELIST=09a4,09f4,09f5
+
+[ITEMDEF 09a4]
+//fork
+DUPEITEM=09a3
+
+[ITEMDEF 09a5]
+DEFNAME=i_knife
+FLIP=1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cutlery
+DESCRIPTION=Table Knife
+DUPELIST=09a6,09f6,09f7
+
+[ITEMDEF 09a6]
+//table knife
+DUPEITEM=09a5
+
+[ITEMDEF 09a7]
+DEFNAME=i_pitcher_glass
+TYPE=t_pitcher_empty
+TDATA1=i_pitcher_glass
+FLIP=1
+VALUE=10
+WEIGHT=2
+RESOURCES=6 i_glass_raw
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Empty Glass Pitcher
+DUPELIST=0ff6,0ff7
+
+[ITEMDEF 09ae]
+DEFNAME=i_plate_dirty
+RESOURCES=1 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Dirty Plate
+
+[ITEMDEF 09b3]
+DEFNAME=i_goblet_gold
+FLIP=1
+SKILLMAKE=Tinkering 42.0,t_tinker_tools
+RESOURCES=3 i_ingot_gold
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Goblet (gold)
+DUPELIST=09bf
+
+[ITEMDEF 09bd]
+DEFNAME=i_silverware
+FLIP=1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cutlery
+DESCRIPTION=Silverware
+DUPELIST=09be,09d4,09d5
+
+[ITEMDEF 09be]
+//silverware
+DUPEITEM=09bd
+
+[ITEMDEF 09bf]
+//goblet (gold)
+DUPEITEM=09b3
+
+[ITEMDEF 09c2]
+DEFNAME=i_spoon
+FLIP=1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cutlery
+DESCRIPTION=Table Spoon
+DUPELIST=09c3,09f8,09f9
+
+[ITEMDEF 09c3]
+//table spoon
+DUPEITEM=09c2
+
+[ITEMDEF 09ca]
+//ceramic mug
+DUPEITEM=0995
+
+[ITEMDEF 09cb]
+//goblet (silver)
+DUPEITEM=099a
+
+[ITEMDEF 09d4]
+//silverware
+DUPEITEM=09bd
+
+[ITEMDEF 09d5]
+//silverware
+DUPEITEM=09bd
+
+[ITEMDEF 09d6]
+DEFNAME=i_pitcher
+SKILLMAKE=Tinkering 42.0,t_tinker_tools
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Pitcher
+
+[ITEMDEF 09d7]
+DEFNAME=i_plate
+RESOURCES=1 i_clay
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Plate
+
+[ITEMDEF 09da]
+DEFNAME=i_plate_dirty_2
+RESOURCES=1 i_plate, 1 i_dirt
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Dirty Plate
+
+[ITEMDEF 09dc]
+DEFNAME=i_pot_dirty
+RESOURCES=1 i_pot, 1 i_dirt
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Dirty Pot
+
+[ITEMDEF 09dd]
+DEFNAME=i_pot_dirty_2
+RESOURCES=1 i_pot_2, 1 i_dirt
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Dirty Pot 2
+
+[ITEMDEF 09de]
+DEFNAME=i_frypan_dirty
+RESOURCES=1 i_frypan, 1 i_dirt
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Dirty Frypan
+
+[ITEMDEF 09df]
+DEFNAME=i_pot_dirty_3
+RESOURCES=1 i_pot_3, 1 i_dirt
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Dirty Pot 3
+
+[ITEMDEF 09f4]
+//fork
+DUPEITEM=09a3
+
+[ITEMDEF 09f5]
+//fork
+DUPEITEM=09a3
+
+[ITEMDEF 09f6]
+//table knife
+DUPEITEM=09a5
+
+[ITEMDEF 09f7]
+//table knife
+DUPEITEM=09a5
+
+[ITEMDEF 09f8]
+//spoon
+DUPEITEM=09c2
+
+[ITEMDEF 09f9]
+//spoon
+DUPEITEM=09c2
+
+[ITEMDEF 09e0]
+DEFNAME=i_pot
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Pot
+
+[ITEMDEF 09e1]
+DEFNAME=i_pot_2
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Pot 2
+
+[ITEMDEF 09e2]
+DEFNAME=i_frypan
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Frypan
+
+[ITEMDEF 09e3]
+DEFNAME=i_pot_3
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Pot 3
+
+[ITEMDEF 09e4]
+DEFNAME=i_pot_4
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Pot 4
+
+[ITEMDEF 09e5]
+DEFNAME=i_pot_5
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Pot 5
+
+[ITEMDEF 09e6]
+DEFNAME=i_pot_dirty_4
+RESOURCES=1 i_pot_4, 1 i_dirt
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Dirty Pot 4
+
+[ITEMDEF 09e7]
+DEFNAME=i_pot_dirty_5
+RESOURCES=1 i_pot_5, 1 i_dirt
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Dirty Pot 5
+
+[ITEMDEF 09e8]
+DEFNAME=i_pot_dirty_6
+RESOURCES=1 i_pan, 1 i_dirt
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Dirty Pot 6
+
+[ITEMDEF 09ed]
+DEFNAME=i_kettle
+RESOURCES=5 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Kettle
+
+[ITEMDEF 09f3]
+DEFNAME=i_pan
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Pan
+
+[ITEMDEF 0a19]
+DEFNAME=i_plate_dirty_3
+RESOURCES=1 i_plate, 1 i_dirt
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Dirty Plate 3
+
+[ITEMDEF 0ec1]
+DEFNAME=i_knife_broken
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cutlery
+DESCRIPTION=Knife (broken)
+
+[ITEMDEF 0ff6]
+//Pitcher (Glass)
+DUPEITEM=09a7
+
+[ITEMDEF 0ff7]
+//Pitcher (Glass)
+DUPEITEM=09a7
+
+[ITEMDEF 0ffb]
+DEFNAME=i_skull_mug
+FLIP=1
+WEIGHT=6
+RESOURCES=3 i_ingot_iron
+SKILLMAKE=Tinkering 42.0,t_tinker_tools
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Skull Mug
+DUPELIST=0ffc,0ffd,0ffe
+
+[ITEMDEF 0ffc]
+//skull mug
+DUPEITEM=0ffb
+
+[ITEMDEF 0ffd]
+//skull mug
+DUPEITEM=0ffb
+
+[ITEMDEF 0ffe]
+//skull mug
+DUPEITEM=0ffb
+
+[ITEMDEF 0fff]
+//pewter mug
+DUPEITEM=01000
+
+[ITEMDEF 01000]
+DEFNAME=i_mug_pewter
+WEIGHT=1
+FLIP=1
+RESOURCES=3 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Pewter Mug
+SKILLMAKE=Tinkering 42.0,t_tinker_tools
+DUPELIST=0fff,01001,01002
+
+[ITEMDEF 01001]
+//pewter mug
+DUPEITEM=01000
+
+[ITEMDEF 01002]
+//pewter mug
+DUPEITEM=01000
+
+[ITEMDEF 0103e]
+DEFNAME=i_flour_sifter
+TYPE=t_cooking_tool
+WEIGHT=2
+SKILLMAKE=Tinkering 50.0, t_tinker_tools
+RESOURCES=3 i_ingot_iron
+CATEGORY=Items by Professions
+SUBSECTION=Chef
+DESCRIPTION=Flour Sifter
+
+[ITEMDEF 01043]
+DEFNAME=i_rolling_pin
+TYPE=t_cooking_tool
+WEIGHT=2
+RESOURCES=5 i_log
+SKILLMAKE=Tinkering 0.0, t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Chef
+DESCRIPTION=Rolling Pin
+
+[ITEMDEF 010e8]
+DEFNAME=i_spoon_wood_small
+WEIGHT=0.1
+RESOURCES=1 i_board
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cutlery
+DESCRIPTION=Spoon (small wooden)
+
+[ITEMDEF 010e9]
+DEFNAME=i_spoon_wood_large
+WEIGHT=0.2
+RESOURCES=1 i_board
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cutlery
+DESCRIPTION=Spoon (large wooden)
+
+[ITEMDEF 014ff]
+DEFNAME=i_seive
+TYPE=t_cooking_tool
+VALUE=8
+WEIGHT=1.0
+RESOURCES=1 i_ingot_iron
+SKILLMAKE=Tinkering 40.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Chef
+DESCRIPTION=Seive
+
+[ITEMDEF 015f8]
+DEFNAME=i_bowl_wood
+WEIGHT=0.1
+RESOURCES=1 i_board
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Wooden Bowl
+
+[ITEMDEF 015fd]
+DEFNAME=i_bowl_pewter
+WEIGHT=0.1
+RESOURCES=1 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Pewter Bowl
+
+[ITEMDEF 01603]
+DEFNAME=i_bowl_pewter_lg
+WEIGHT=0.2
+RESOURCES=2 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Pewter Bowl (large)
+
+[ITEMDEF 01605]
+DEFNAME=i_bowl_wood_lg
+WEIGHT=0.2
+RESOURCES=2 i_board
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Wooden Bowl (large)
+
+[ITEMDEF 01957]
+DEFNAME=i_bottle_shochu_empty
+NAME=empty shochu bottle
+WEIGHT=0.1
+RESOURCES=1 i_clay
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Bottle of Shochu (empty)
+
+[ITEMDEF 01f81]
+DEFNAME=i_glass
+FLIP=1
+WEIGHT=1
+RESOURCES=4 i_glass_raw
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Empty Glass
+DUPELIST=01f82,01f83,01f84
+
+[ITEMDEF 01f82]
+//glass
+DUPEITEM=01f81
+
+[ITEMDEF 01f83]
+//glass
+DUPEITEM=01f81
+
+[ITEMDEF 01f84]
+//glass
+DUPEITEM=01f81
+
+[ITEMDEF 024de]
+DEFNAME=i_bowl_placemat
+TYPE=t_normal
+FLIP=1
+WEIGHT=2.0
+RESOURCES=1 i_log_bamboo,1 i_clay
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Bowl on Placemat
+DUPELIST=024df,024e0
+
+[ITEMDEF 024df]
+//bowl on placemat
+DUPEITEM=024de
+
+[ITEMDEF 024e0]
+//bowl on placemat
+DUPEITEM=024de
+
+[ITEMDEF 024e1]
+DEFNAME=i_cups_japanese
+TYPE=t_normal
+WEIGHT=4.0
+RESOURCES=4 i_clay
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Cups (4)
+
+[ITEMDEF 024e6]
+TYPE=t_normal
+FLIP=1
+WEIGHT=1.0
+RESOURCES=1 i_ingot_iron
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Tea Set
+DUPELIST=024e7
+
+[ITEMDEF 024e7]
+//tea set
+DUPEITEM=024e6
+
+[ITEMDEF 02068]
+DEFNAME=i_cauldron_2
+NAME=cauldron
+FLIP=1
+VALUE=169
+WEIGHT=39.0
+RESOURCES=8 i_ingot_iron,1 i_kettle
+SKILLMAKE=Tinkering 65.0,t_tinker_tools
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Cauldron 2
+DUPELIST=0207a
+
+[ITEMDEF 0207a]
+//Cauldron 2
+DUPEITEM=02068
+
+[ITEMDEF 0284f]
+DEFNAME=i_soup_miso_empty
+NAME=miso soup bowl
+WEIGHT=0.2
+RESOURCES=1 i_log
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Dishes
+DESCRIPTION=Empty Miso Soup Bowl
+
+[ITEMDEF 03daf]
+DEFNAME=i_cauldron_full
+NAME=Cauldron
+FLIP=1
+VALUE=168
+WEIGHT=39.0
+RESOURCES=8 i_ingot_iron,1 i_kettle
+SKILLMAKE=Tinkering 65.0,t_tinker_tools
+CATEGORY=Items by Professions
+SUBSECTION=Cook
+DESCRIPTION=Cauldron (full with white background)
+DUPELIST=03db0
+
+[ITEMDEF 03db0]
+//Cauldron (full with white background)
+DUPEITEM=03daf
+
+[ITEMDEF 03db8]
+DEFNAME=i_still
+NAME=still
+TYPE=t_normal
+FLIP=1
+WEIGHT=15.0
+RESOURCES=15 i_ingot_copper
+CATEGORY=Decoration - Kitchen and Dining
+SUBSECTION=Cookware
+DESCRIPTION=Still
+DUPELIST=03db9,03dba,03dbb
+
+[ITEMDEF 03db9]
+//still
+DUPEITEM=03db8
+
+[ITEMDEF 03dba]
+//still
+DUPEITEM=03db8
+
+[ITEMDEF 03dbb]
+//still
+DUPEITEM=03db8
+
+
+///////////////////////////////////////////////////
+// Custom food preparation and serving equipment //
+///////////////////////////////////////////////////
+
+[ITEMDEF i_cakepan]
+ID=i_basket
+ON=@Create
+   COLOR=colors_gray
+
+[ITEMDEF i_jar]
+ID=i_jar_honey
+NAME=Empty Honey Jar
+
+
+[EOF]

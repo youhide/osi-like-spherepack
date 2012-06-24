@@ -1,0 +1,945 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Monday, Febuary 21, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 0dfc]
+DEFNAME=i_scissors_barber
+RESOURCES=2 i_ingot_iron, 1 i_screw
+WEIGHT=.4
+TYPE=t_scissors
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Barber Scissors
+DUPELIST=0dfd
+
+[ITEMDEF 0dfd]
+//Barber scissors
+DUPEITEM=0dfc
+
+[ITEMDEF 0dff]
+DEFNAME=i_wig
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG
+
+[ITEMDEF 0e00]
+DEFNAME=i_wig_1
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 1
+
+[ITEMDEF 0e01]
+DEFNAME=i_wig_2
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 2
+
+[ITEMDEF 0e02]
+DEFNAME=i_wig_3
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 3
+
+[ITEMDEF 0e03]
+DEFNAME=i_wig_4
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 4
+
+[ITEMDEF 0e04]
+DEFNAME=i_wig_5
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 5
+
+[ITEMDEF 0e05]
+DEFNAME=i_wig_stand
+RESOURCES=1 i_cloth, 5 i_board
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG STAND
+
+[ITEMDEF 0e06]
+DEFNAME=i_wig_stand_2
+RESOURCES=1 i_cloth, 5 i_board
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG STAND 2
+
+[ITEMDEF 0e07]
+DEFNAME=i_wig_stand_3
+RESOURCES=1 i_cloth, 5 i_board
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG STAND 3
+
+[ITEMDEF 0e08]
+DEFNAME=i_wig_stand_4
+RESOURCES=1 i_cloth, 5 i_board
+WEIGHT=2
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG STAND 4
+
+[ITEMDEF 0e09]
+DEFNAME=i_wig_6
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 6
+
+[ITEMDEF 0e0a]
+DEFNAME=i_wig_7
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 7
+
+[ITEMDEF 0e0b]
+DEFNAME=i_wig_8
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 8
+
+[ITEMDEF 0e0c]
+DEFNAME=i_wig_9
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 9
+
+[ITEMDEF 0e0d]
+DEFNAME=i_wig_10
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 10
+
+[ITEMDEF 0e0e]
+DEFNAME=i_wig_11
+RESOURCES=1 i_cloth, 5 i_thread, 20 i_hair_cut
+WEIGHT=1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=WIG 11
+
+[ITEMDEF 0e27]
+DEFNAME=i_bottle_hair_dye
+NAME=bottle of hair dye
+TYPE=t_hair_dye
+WEIGHT=2
+RESOURCES=1 i_bottle, 1 i_dyes
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Hair Dye
+DUPELIST=0eff
+
+[ITEMDEF 0203b]
+DEFNAME=i_hair_short
+NAME=short hair
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Short Hair
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_hair_BUNS
+	new.color=<cont.findlayer(layer_hair).color>
+	new.more=1
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 0203c]
+DEFNAME=i_hair_long
+NAME=long hair
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Long Hair
+
+ON=@Create
+	ATTR=attr_newbie
+
+ON=@TIMER
+	return 1
+
+[ITEMDEF 0203d]
+DEFNAME=i_hair_ponytail
+NAME=ponytail
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Pony Tail
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_hair_LONG
+	new.color=<cont.findlayer(layer_hair).color>
+	new.more=1
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 0203e]
+DEFNAME=i_beard_long
+NAME=long beard
+TYPE=t_beard
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Long Beard
+
+ON=@Create
+	ATTR=attr_newbie
+
+ON=@TIMER
+	return 1
+
+[ITEMDEF 0203f]
+DEFNAME=i_beard_short
+NAME=short beard
+TYPE=t_beard
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Short Beard
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_beard_LONG
+	new.color=<cont.findlayer(layer_beard).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 02040]
+DEFNAME=i_beard_goatee
+NAME=goatee
+TYPE=t_beard
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Goatee
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_beard_short
+	new.color=<cont.findlayer(layer_beard).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 02041]
+DEFNAME=i_beard_mustache
+NAME=mustache
+TYPE=t_beard
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Mustache
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_beard_GOATEE
+	new.color=<cont.findlayer(layer_beard).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 02044]
+DEFNAME=i_hair_mohawk
+NAME=mohawk
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Mohawk
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_hair_SHORT
+	new.color=<cont.findlayer(layer_hair).color>
+	new.more=1
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 02045]
+DEFNAME=i_hair_pageboy
+NAME=pageboy
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Pageboy
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_hair_BUNS
+	new.color=<cont.findlayer(layer_hair).color>
+	new.more=1
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 02046]
+DEFNAME=i_hair_buns
+NAME=buns hair
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Buns Hair
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_hair_AFRO
+	new.color=<cont.findlayer(layer_hair).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 02047]
+DEFNAME=i_hair_afro
+NAME=afro
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Afro
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_hair_LONG
+	new.color=<cont.findlayer(layer_hair).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 02048]
+DEFNAME=i_hair_receding
+NAME=receeding hair
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Receeding Hair
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_hair_SHORT
+	new.color=<cont.findlayer(layer_hair).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 02049]
+DEFNAME=i_hair_2_pigtails
+NAME=2 pig tails
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Two Pig Tails
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_hair_long
+	new.color=<cont.findlayer(layer_hair).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 0204a]
+DEFNAME=i_hair_krisna
+NAME=krisna hair
+TYPE=t_hair
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Krisna Hair
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_hair_RECEDING
+	new.color=<cont.findlayer(layer_hair).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 0204b]
+DEFNAME=i_beard_short_med
+NAME=medium short beard
+TYPE=t_beard
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Medium Short Beard
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_beard_long
+	new.color=<cont.findlayer(layer_beard).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 0204c]
+DEFNAME=i_beard_long_med
+NAME=medium long beard
+TYPE=t_beard
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Medium Short Beard
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_beard_LONG_MED
+	new.color=<cont.findlayer(layer_beard).color>
+	cont.equip <new.uid>
+	return 1
+
+[ITEMDEF 0204d]
+DEFNAME=i_beard_vandyke
+NAME=vandyke
+TYPE=t_beard
+VALUE={8 12}
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Vandyke
+
+ON=@Create
+	ATTR=attr_newbie
+	TIMER=550000
+
+ON=@TIMER
+	if !<cont>	// on ground?
+		return 0
+	endif
+	if <cont.npc>	// players only
+		return 1
+	endif
+	serv.newitem=i_beard_short_med
+	new.color=<cont.findlayer(layer_beard).color>
+	cont.equip <new.uid>
+	return 1
+
+
+[ITEMDEF 02fbf]
+DEFNAME=i_hair_elven_ML
+NAME=medium length hair
+TYPE=t_hair
+VALUE=16
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Medium Length Hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fc0]
+DEFNAME=i_hair_LF
+NAME=long hair with feather
+TYPE=t_hair
+VALUE=24
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Long Hair with Feather
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fc1]
+DEFNAME=i_hair_short1
+NAME=short hair
+TYPE=t_hair
+VALUE=12
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Short Hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fc2]
+DEFNAME=i_hair_elven_mullet
+NAME=mullet hair
+TYPE=t_hair
+VALUE=10
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Mullet Hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fcc]
+DEFNAME=i_hair_elven_flower
+NAME=flower hair
+TYPE=t_hair
+VALUE=22
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Flower Hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fcd]
+DEFNAME=i_hair_elven_long2
+NAME=long elven hair
+TYPE=t_hair
+VALUE=17
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Long Hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fce]
+DEFNAME=i_hair_elven_long3
+NAME=long hair with topknot
+TYPE=t_hair
+VALUE=23
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Long Hair with Topknot
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fcf]
+DEFNAME=i_hair_elven_braid
+NAME=Long hair with braid
+TYPE=t_hair
+VALUE=25
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Long with Braid
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fd0]
+DEFNAME=i_hair_elven_long4
+NAME=long hair with bun
+TYPE=t_hair
+VALUE=27
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Long Hair with Bun
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fd1]
+DEFNAME=i_hair_elven_spike
+NAME=spiked hair
+TYPE=t_hair
+VALUE=29
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Spiked Hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 02fd2]
+DEFNAME=i_hair_elven_long5
+NAME=long hair
+TYPE=t_hair
+VALUE=19
+WEIGHT=0.1
+CATEGORY=Items by Professions
+SUBSECTION=Barber
+DESCRIPTION=Elven Long Hair 5 (duplicate)
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+
+[ITEMDEF 04258]
+DEFNAME=i_horn_gargoyle_male_1
+NAME=male gargoyle horns
+TYPE=t_hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 04259]
+DEFNAME=i_horn_gargoyle_male_2
+NAME=male gargoyle horns
+TYPE=t_hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 0425a]
+DEFNAME=i_horn_gargoyle_male_3
+NAME=male gargoyle horns
+TYPE=t_hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 0425b]
+DEFNAME=i_horn_gargoyle_male_4
+NAME=male gargoyle horns
+TYPE=t_hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 0425c]
+DEFNAME=i_horn_gargoyle_male_5
+NAME=male gargoyle horns
+TYPE=t_hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 0425d]
+DEFNAME=i_horn_gargoyle_male_6
+NAME=male gargoyle horns
+TYPE=t_hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 0425e]
+DEFNAME=i_horn_gargoyle_male_7
+NAME=male gargoyle horns
+TYPE=t_hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 0425f]
+DEFNAME=i_horn_gargoyle_male_8
+NAME=male gargoyle horns
+TYPE=t_hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 04261]
+DEFNAME=i_horn_gargoyle_female_1
+NAME=female gargoyle horns
+TYPE=t_hair
+TAG.FemaleOnly=1
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 04262]
+DEFNAME=i_horn_gargoyle_female_2
+NAME=female gargoyle horns
+TYPE=t_hair
+TAG.FemaleOnly=1
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 04273]
+DEFNAME=i_horn_gargoyle_female_3
+NAME=female gargoyle horns
+TYPE=t_hair
+TAG.FemaleOnly=1
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 04274]
+DEFNAME=i_horn_gargoyle_female_4
+NAME=female gargoyle horns
+TYPE=t_hair
+TAG.FemaleOnly=1
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 04275]
+DEFNAME=i_horn_gargoyle_female_5
+NAME=female gargoyle horns
+TYPE=t_hair
+TAG.FemaleOnly=1
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 042aa]
+DEFNAME=i_horn_gargoyle_female_6
+NAME=female gargoyle horns
+TYPE=t_hair
+TAG.FemaleOnly=1
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 042ab]
+DEFNAME=i_horn_gargoyle_female_7
+NAME=female gargoyle horns
+TYPE=t_hair
+TAG.FemaleOnly=1
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 042ad]
+DEFNAME=i_horn_gargoyle_facial_1
+NAME=facial gargoyle horns
+TYPE=t_beard
+LAYER=layer_beard
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 042ae]
+DEFNAME=i_horn_gargoyle_facial_2
+NAME=facial gargoyle horns
+TYPE=t_beard
+LAYER=layer_beard
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 042af]
+DEFNAME=i_horn_gargoyle_facial_3
+NAME=facial gargoyle horns
+TYPE=t_beard
+LAYER=layer_beard
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 042b0]
+DEFNAME=i_horn_gargoyle_facial_4
+NAME=facial gargoyle horns
+TYPE=t_beard
+LAYER=layer_beard
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+[ITEMDEF 042b1]
+DEFNAME=i_horn_gargoyle_female_8
+NAME=female gargoyle horn
+TYPE=t_hair
+ON=@Create
+	ATTR=attr_newbie
+ON=@Timer
+	RETURN 1
+
+
+[ITEMDEF i_beard_none]
+ID=i_eq_marker
+NAME=no beard
+TYPE=t_beard
+LAYER=layer_beard
+VALUE=10
+WEIGHT=0
+ON=@Create
+   ATTR=attr_newbie
+ON=@Timer
+   RETURN 1
+
+[ITEMDEF i_hair_none]
+ID=i_eq_marker
+NAME=No Hair
+TYPE=t_hair
+LAYER=layer_hair
+VALUE=10
+WEIGHT=0
+ON=@Create
+   ATTR=attr_newbie
+ON=@Timer
+   RETURN 1
+
+
+[EOF]

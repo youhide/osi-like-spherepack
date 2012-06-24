@@ -1,0 +1,329 @@
+//****************************************************************************
+// SphereServer ©1997-2009
+// This script is part from the Sphere Community Script Pack.
+// You can download the full pack from: www.sphereserver.net
+//****************************************************************************
+// FILE LAST UPDATED: Saturday, April 2, 2011
+VERSION=0.56b
+
+
+[ITEMDEF 02a5d]
+DEFNAME=i_disturbing_portrait
+NAME=disturbing portrait
+TYPE=t_portrait_creepy
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Disturbing Portrait
+DUPELIST=02a5e,02a5f,02a60
+
+[ITEMDEF 02a5e]
+//disturbing portrait
+DUPEITEM=02a5d
+
+[ITEMDEF 02a5f]
+//disturbing portrait
+DUPEITEM=02a5d
+
+[ITEMDEF 02a60]
+//disturbing portrait
+DUPEITEM=02a5d
+
+[ITEMDEF 02a61]
+DEFNAME=i_disturbing_portrait_ns
+NAME=disturbing portrait
+TYPE=t_portrait_creepy
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Disturbing Portrait
+DUPELIST=02a62,02a63,02a64
+
+[ITEMDEF 02a62]
+//disturbing portrait
+DUPEITEM=02a61
+
+[ITEMDEF 02a63]
+//disturbing portrait
+DUPEITEM=02a61
+
+[ITEMDEF 02a64]
+//disturbing portrait
+DUPEITEM=02a61
+
+[ITEMDEF 02a65]
+DEFNAME=i_unsettling_portrait
+NAME=unsettling portrait
+TYPE=t_portrait_creepy
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Unsettling Portrait
+DUPELIST=02a66,02a67,02a68
+
+[ITEMDEF 02a66]
+//unsettling portrait
+DUPEITEM=02a65
+
+[ITEMDEF 02a67]
+//unsettling portrait
+DUPEITEM=02a65
+
+[ITEMDEF 02a68]
+//unsettling portrait
+DUPEITEM=02a65
+
+[ITEMDEF 02a69]
+DEFNAME=i_creepy_portrait
+NAME=creepy portrait
+TYPE=t_portrait_creepy
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Creepy Portrait
+DUPELIST=02a6a,02a6b,02a6c
+
+[ITEMDEF 02a6a]
+//creepy portrait
+DUPEITEM=02a69
+
+[ITEMDEF 02a6b]
+//creepy portrait
+DUPEITEM=02a69
+
+[ITEMDEF 02a6c]
+//creepy portrait
+DUPEITEM=02a69
+
+[ITEMDEF 02a6e]
+DEFNAME=i_creepy_portrait_ns
+NAME=creepy portrait
+TYPE=t_portrait_creepy
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Creepy Portrait
+DUPELIST=02a6d,02a6e,02a6f
+
+[ITEMDEF 02a6d]
+//creepy portrait
+DUPEITEM=02a6e
+
+[ITEMDEF 02a6f]
+//creepy portrait
+DUPEITEM=02a6e
+
+[ITEMDEF 02a70]
+//creepy portrait
+DUPEITEM=02a6e
+
+[ITEMDEF 02a71]
+DEFNAME=i_mounted_pixie_1
+NAME=mounted pixie
+TYPE=t_mounted_pixie
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (dark green wings)
+DUPELIST=02a6f
+
+[ITEMDEF 02a72]
+//mounted pixie (dark green wings)
+DUPEITEM=02a71
+
+[ITEMDEF 02a73]
+DEFNAME=i_mounted_pixie_2
+NAME=mounted pixie
+TYPE=t_mounted_pixie
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (orange wings)
+DUPELIST=02a74
+
+[ITEMDEF 02a74]
+//mounted pixie (orange wings)
+DUPEITEM=02a73
+
+[ITEMDEF 02a75]
+DEFNAME=i_mounted_pixie_3
+NAME=mounted pixie
+TYPE=t_mounted_pixie
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (blue wings)
+DUPELIST=02a76
+
+[ITEMDEF 02a76]
+//mounted pixie (blue wings)
+DUPEITEM=02a75
+
+[ITEMDEF 02a77]
+DEFNAME=i_mounted_pixie_4
+NAME=mounted pixie
+TYPE=t_mounted_pixie
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (light green wings)
+DUPELIST=02a78
+
+[ITEMDEF 02a78]
+//mounted pixie (light green wings)
+DUPEITEM=02a77
+
+[ITEMDEF 02a79]
+DEFNAME=i_mounted_pixie_5
+NAME=mounted pixie
+TYPE=t_mounted_pixie
+FLIP=1
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Mounted Pixie (white wings)
+DUPELIST=02a7a
+
+[ITEMDEF 02a7a]
+//mounted pixie (white wings)
+DUPEITEM=02a79
+
+[ITEMDEF 02a7b]
+DEFNAME=i_haunted_mirror
+NAME=haunted mirror
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Haunted Mirror
+DUPELIST=02a7d
+ON=@Create
+   TAG.Voice={0 1}
+ON=@DClick
+   //FIXME: Change the dispid to either 02a7c or 02a7e for a few seconds
+   IF (<TAG.Voice>==1)
+      DORAND 3
+         SRC.SOUND 054f//"You've never looked betta!....Well....that ain't sayin much."
+         SRC.SOUND 0550//"You gettin enough sleep?"
+         SRC.SOUND 0551//"Hey! Look over here! I'm lookin in my crystal ball, and.. the future is.... you're ugly!"
+      ENDDO
+   ELSE
+      DORAND 3
+         SRC.SOUND 0552//"You've never looked better, although thats not saying much."
+         SRC.SOUND 0553//"Are you getting enough sleep?"
+         SRC.SOUND 0554//"Don't worry dear, its nothing a floppy hat or a mask wouldn't cover up."
+      ENDDO
+   ENDIF
+   RETURN 1
+
+[ITEMDEF 02a7c]
+//haunted mirror
+
+[ITEMDEF 02a7d]
+//haunted mirror
+DUPEITEM=02a7b
+
+[ITEMDEF 02a7e]
+//haunted mirror 2
+
+[ITEMDEF 02a81]
+DEFNAME=i_bed_of_nails_ns
+NAME=bed of nails
+FLIP=1
+WEIGHT=63.6
+RESOURCES=1 i_bone_skull,6 i_bone,40 i_ingot_iron,10 i_log
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Bed of Nails (ns)
+DUPELIST=02a82,02a83,02a84,02a85,02a86,02a87,02a88
+
+[ITEMDEF 02a82]
+//bed of nails
+DUPEITEM=02a81
+
+[ITEMDEF 02a83]
+//bed of nails
+DUPEITEM=02a81
+
+[ITEMDEF 02a84]
+//bed of nails
+DUPEITEM=02a81
+
+[ITEMDEF 02a85]
+//bed of nails
+DUPEITEM=02a81
+
+[ITEMDEF 02a86]
+//bed of nails
+DUPEITEM=02a81
+
+[ITEMDEF 02a87]
+//bed of nails
+DUPEITEM=02a81
+
+[ITEMDEF 02a88]
+//bed of nails
+DUPEITEM=02a81
+
+[ITEMDEF 02a89]
+DEFNAME=i_bed_of_nails
+NAME=bed of nails
+FLIP=1
+WEIGHT=63.6
+RESOURCES=1 i_bone_skull,6 i_bone,40 i_ingot_iron,10 i_log
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Bed of Nails (ew)
+DUPELIST=02a8a,02a8b,02a8c,02a8d,02a8e,02a8f,02a90
+
+[ITEMDEF 02a8a]
+//bed of nails
+DUPEITEM=02a89
+
+[ITEMDEF 02a8b]
+//bed of nails
+DUPEITEM=02a89
+
+[ITEMDEF 02a8c]
+//bed of nails
+DUPEITEM=02a89
+
+[ITEMDEF 02a8d]
+//bed of nails
+DUPEITEM=02a89
+
+[ITEMDEF 02a8e]
+//bed of nails
+DUPEITEM=02a89
+
+[ITEMDEF 02a8f]
+//bed of nails
+DUPEITEM=02a89
+
+[ITEMDEF 02a90]
+//bed of nails
+DUPEITEM=02a89
+
+[ITEMDEF 02a9a]
+DEFNAME=i_sacrificial_altar
+NAME=sacrificial altar
+FLIP=1
+VALUE=225
+WEIGHT=260.2
+RESOURCES=20 i_rock_plain,20 i_log,20 i_ingot_iron,2 i_candle
+CATEGORY=Decoration - Dungeons and The Dead
+SUBSECTION=Evil Home Decor
+DESCRIPTION=Sacrificial Altar
+DUPELIST=02a9b,02a9c,02a9d
+
+[ITEMDEF 02a9b]
+//sacrificial altar
+DUPEITEM=02a9a
+
+[ITEMDEF 02a9c]
+//sacrificial altar
+DUPEITEM=02a9a
+
+[ITEMDEF 02a9d]
+//sacrificial altar
+DUPEITEM=02a9a
+
+
+[EOF]
