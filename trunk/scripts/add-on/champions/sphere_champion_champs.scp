@@ -58,7 +58,9 @@ ON=@Create
    TACTICS={95.0 100.0}
    MAGICRESISTANCE={70.0 140.0}
 ON=@Hit
-   SRC.SPELLEFFECT S_POISON,1000
+IF (<FLOATVAL 0.20> > <RANDOMDOUBLE>)
+SRC.SPELLEFFECT S_POISON,1800,<UID>
+ENDIF
 ON=@NPCRestock
    ITEM=i_gold,{2500 3000}
    ITEM=random_jewel
@@ -98,13 +100,18 @@ ON=@Create
    TACTICS=100.0
    MAGICRESISTANCE={140.0 160.0}
    ANATOMY=100.0
-ON=@Hit
-   LOCAL.RIK=<UID>
-   FORCLIENTS 5
-      DAMAGE 10 02 <LOCAL.RIK>
-   ENDFOR
+ON=@NPCActFight
+IF (<FLOATVAL 0.035> > <RANDOMDOUBLE>) && (<SRC> != <UID>)
+LOCAL.RIK=<UID>
+	FORCHARS 6
+		IF ((<ISPLAYER>) || ((!(<ISPLAYER>)) && (<OWNER.ISPLAYER>))) && (<UID> != <LOCAL.RIK>)
+		DAMAGE <R50,90> <HVAL <DEF.DAM_PHYSICAL>|<DEF.DAM_DRAIN>> <LOCAL.RIK>
+		ENDIF
+	ENDFOR
+ENDIF
 ON=@NPCRestock
    ITEM=i_gold,{4000 5000}
+   ITEM=i_hide_dragon,60
 
 [CHARDEF c_lord_oaks]
 ID=c_champ_lord_oaks
@@ -120,6 +127,7 @@ TAG.LIFELEECH=30
 TAG.MANALEECH=30
 TAG.STAMLEECH=30
 TAG.CHAMPIONSKULL.COLOR=03e4
+TEVENTS=e_npc_necromancer_paladin
 ON=@Create
    NPC=BRAIN_MONSTER
    TAG.OVERRIDE.REGENVAL_1=25
@@ -222,6 +230,7 @@ SUBSECTION=Champs
 DESCRIPTION=Neira
 TAG.IAMACHAMPION=1
 TAG.CHAMPIONSKULL.COLOR=0e8
+TEVENTS=e_npc_necromancer_paladin
 ON=@Create
    NPC=BRAIN_MONSTER
    TAG.OVERRIDE.REGENVAL_1=25
@@ -270,6 +279,14 @@ ON=@NPCRestock
    ITEM=RANDOM_JEWEL
    ITEM=RANDOM_JEWEL
    ITEM=RANDOM_JEWEL
+   
+[EVENTS E_UNHOLY_BONE_SUMMONED]
+ON=@Attack
+IF (!(<SRC.ISPLAYER>))
+	IF (!(<SRC.OWNER.ISPLAYER>)) && (<SRC.BASEID> != c_revenant)
+	RETURN 1
+	ENDIF
+ENDIF
 
 [ITEMDEF i_unholy_bone]
 ID=i_reag_daemon_bone
@@ -286,6 +303,7 @@ ON=@Timer
       NEW.FLAGS |= statf_conjured
       LINK.TAME <NEW>
       NEW.REMOVETIMER <EVAL 60*5>
+	  NEW.EVENTS +E_UNHOLY_BONE_SUMMONED
    ENDIF
    REMOVE
    RETURN 1
@@ -297,7 +315,7 @@ ON=@Step
    ENDIF
 
 [CHARDEF c_barracoon]
-ID=c_satyr
+ID=c_man
 NAME=Barracoon the Piper
 CAN=MT_WALK|MT_RUN|MT_USEHANDS
 DAM=66,100
@@ -334,10 +352,12 @@ ON=@NPCRestock
 ON=@GetHit
    IF (5 >= <R1,100>)
       FOR <R2,3>
-         DORAND 3
-         SERV.NEWNPC c_ratman
-         SERV.NEWNPC c_ratman_w_sword
-         SERV.NEWNPC c_ratman_w_mace
+         DORAND 5
+          SERV.NEWNPC c_ratman
+          SERV.NEWNPC c_ratman_archer
+          SERV.NEWNPC c_ratman_w_sword
+          SERV.NEWNPC c_ratman_w_mace
+          SERV.NEWNPC c_ratman_archer
          ENDDO
       NEW.ATTACK <SRC>
       ENDFOR
@@ -377,6 +397,16 @@ ON=@NPCRestock
    //ITEM=i_semente_sa
    //ITEM=i_deed_farm55
 
+ON=@Hit
+REF1=<UID>
+IF (<FLOATVAL 0.03> > <RANDOMDOUBLE>)
+	FORCHARS 5
+		IF (!(<ISBENEFICIAL <REF1>>))
+		SPELLEFFECT S_POISON,140.0,<REF1>
+		ENDIF
+	ENDFOR
+ENDIF
+
 [CHARDEF c_Ilhenir]
 ID=c_monstrous_interred_grizzle
 NAME=Ilhenir the Stained
@@ -406,6 +436,70 @@ ON=@Create
    EVALUATINGINTEL=100.0
 ON=@NPCRestock
    ITEM=i_gold,{5000 6000}
+   
+[CHARDEF c_Twaulo]
+ID=c_Centaur
+NAME=Twaulo of the Glade
+CAN=MT_WALK
+MOVERATE=55
+DAM=26,33
+ARMOR=60
+CATEGORY=Addon
+SUBSECTION=Champs
+DESCRIPTION=Twaulo of the Glade
+TAG.IAMACHAMPION=1
+
+ON=@Create
+COLOR=03b3
+NPC=BRAIN_MONSTER
+KARMA=0
+FAME=10000
+STR=964
+MAXHITS=12500
+DEX=550
+INT=344
+TACTICS=110.0
+MAGICRESISTANCE=110.0
+ANATOMY=110.0
+WRESTLING=120.0
+MUSICIANSHIP=120.0
+PEACEMAKING=120.0
+
+ON=@NPCRestock
+ITEM=i_gold,{5000 6000}
+
+ON=@NpcLookAtChar
+SERV.B ON=@NPCLOOKATCHAR ON <NAME> NEED FIX
+RETURN 0
+IF (<FLOATVAL 0.1> > <RANDOMDOUBLE>)
+	IF (0<SRC.ISFIGHTINGME <UID>>)
+		IF !(<SRC.ISEVENT.E_PEACEMAKED>)
+		FLOAT.CHANCE=<FLOATVAL (50+(2*(((<PEACEMAKING>/2)+(<MUSICIANSHIP>/2))-<SRC.BARDDIFF <UID>>)))/100>
+			IF (<FLOAT.CHANCE> > <RANDOMDOUBLE>)
+			SRC.TIMERF 1,F_CHECK_PEACEDDISTANCE
+			SRC.TAG.PEACED.PLAYER=<UID>
+			SRC.EVENTS +E_PEACEMAKED
+			SRC.FLAGS &= ~statf_war
+			SRC.REMOVEALLMEMS memory_war_targ
+				IF (!(<SRC.ISPLAYER>))
+				SRC.ACTION=06d
+				ELSE
+				SRC.ACTION=-1
+				ENDIF
+			SOUND 1419
+			REMOVEALLMEMS memory_war_targ
+			FLAGS &= ~statf_war
+			REF1=<UID>
+				FORCLIENTS 8
+				REF1.ATTACK <UID>
+				REF1.GOTO <P>
+				ENDFOR
+			ENDIF
+		ELSE
+		RETURN 1
+		ENDIF
+	ENDIF
+ENDIF
 
 [CHARDEF c_meraktus]
 ID=c_tormented_minotaur
@@ -433,7 +527,7 @@ ON=@Create
    MAGICRESISTANCE=111.0
    ANATOMY=50.0
    WRESTLING=110.0
-   //FIXME: This needs testing... 
+   //FIXME: This needs testing...
    LOCAL.OLDNEW=<NEW>
    FOR 0 2
    SERV.NEWNPC c_tormented_minotaur

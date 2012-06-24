@@ -214,7 +214,7 @@ ON=@NPCRestock
 
 [CHARDEF 033]
 DEFNAME=c_slime
-NAME=slime
+NAME=Slime
 ICON=i_pet_slime
 SOUND=snd_monster_slime1
 CAN=MT_WALK|MT_NONHUM
@@ -2239,7 +2239,7 @@ CATEGORY=Item Templates
 SUBSECTION=Monster Loot Templates
 DESCRIPTION=Slime
 ITEM=i_gold,{25 50}
-ITEM=random_gem
+//ITEM=random_gem
 
 [TEMPLATE loot_wisp]
 CATEGORY=Item Templates

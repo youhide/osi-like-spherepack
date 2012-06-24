@@ -718,6 +718,7 @@ DEFNAME=i_mt_horse_tan
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_horse_tan
+WEIGHT=0
 
 [ITEMDEF 03ea0]
 //ship (really used as horse equipped)
@@ -725,6 +726,7 @@ DEFNAME=i_mt_horse_gray
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_horse_gray
+WEIGHT=0
 
 [ITEMDEF 03ea1]
 //ship deck (really used as horse equipped)
@@ -732,6 +734,7 @@ DEFNAME=i_mt_horse_brown_lt
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_horse_brown_lt
+WEIGHT=0
 
 [ITEMDEF 03ea2]
 //ship (really used as horse equipped)
@@ -739,6 +742,7 @@ DEFNAME=i_mt_horse_brown_dk
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_horse_brown_dk
+WEIGHT=0
 
 [ITEMDEF 03ea3]
 //ship (really used as horse equipped)
@@ -746,6 +750,7 @@ DEFNAME=i_mt_ostard_desert
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_ostard_desert
+WEIGHT=0
 
 [ITEMDEF 03ea4]
 //ship (really used as horse equipped)
@@ -753,6 +758,7 @@ DEFNAME=i_mt_ostard_frenzied
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_ostard_frenzied
+WEIGHT=0
 
 [ITEMDEF 03ea5]
 //ship (really used as horse equipped)
@@ -760,6 +766,7 @@ DEFNAME=i_mt_ostard_forest
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_ostard_Forest
+WEIGHT=0
 
 [ITEMDEF 03ea6]
 //ship (really used as horse equipped)
@@ -767,6 +774,7 @@ DEFNAME=i_mt_llama
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_llama
+WEIGHT=0
 
 [ITEMDEF 03e90]
 //ship (really used as horse equipped)
@@ -774,6 +782,7 @@ DEFNAME=i_mt_reptalon
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_reptalon
+WEIGHT=0
 
 [ITEMDEF 03e91]
 //ship (really used as horse equipped)
@@ -781,6 +790,7 @@ DEFNAME=i_mt_cu_sidhe
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_cu_sidhe
+WEIGHT=0
 
 [ITEMDEF 03e92]
 //hold (really used as horse equipped)
@@ -788,6 +798,7 @@ DEFNAME=i_mt_armor_steed
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_armor_steed
+WEIGHT=0
 
 [ITEMDEF 03e94]
 //ship (really used as horse equipped)
@@ -795,6 +806,7 @@ DEFNAME=i_mt_hiryu
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_hiryu
+WEIGHT=0
 
 [ITEMDEF 03ead]
 //deck (really used as horse equipped)
@@ -802,6 +814,7 @@ DEFNAME=i_mt_kirin
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_kirin
+WEIGHT=0
 
 [ITEMDEF 03eb4]
 //prow (really used as horse equipped)
@@ -809,6 +822,7 @@ DEFNAME=i_mt_unicorn
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_unicorn
+WEIGHT=0
 
 [ITEMDEF 03eb8]
 //stern (really used as horse equipped)
@@ -816,6 +830,7 @@ DEFNAME=i_mt_savage_ridgeback
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_savage_ridgeback
+WEIGHT=0
 
 [ITEMDEF 03eba]
 //prow (really used as horse equipped)
@@ -823,6 +838,7 @@ DEFNAME=i_mt_ridgeback
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_ridgeback
+WEIGHT=0
 
 [ITEMDEF 03ebb]
 //rudder (really used as horse equipped)
@@ -830,6 +846,7 @@ DEFNAME=i_mt_skeletal_mount
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_skeletal_mount
+WEIGHT=0
 
 [ITEMDEF 03ebc]
 //rudder (really used as horse equipped)
@@ -837,6 +854,7 @@ DEFNAME=i_mt_giant_beetle
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_giant_beetle
+WEIGHT=0
 
 [ITEMDEF 03ebd]
 //tiller (really used as horse equipped)
@@ -844,6 +862,7 @@ DEFNAME=i_mt_swamp_dragon
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_swamp_dragon
+WEIGHT=0
 
 [ITEMDEF 03ebe]
 //tiller (really used as horse equipped)
@@ -851,6 +870,7 @@ DEFNAME=i_mt_armored_swamp_dragon
 TYPE=T_EQ_HORSE
 LAYER=layer_horse
 TDATA3=c_armored_swamp_dragon
+WEIGHT=0
 
 
 [ITEMDEF 03ed3]

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SphereServer ©1997-2009
+// SphereServer ï¿½1997-2009
 // This script is part from the Sphere Community Script Pack.
 // You can download the full pack from: www.sphereserver.net
 //****************************************************************************
@@ -17,90 +17,227 @@ VERSION=0.56b
 
 [events e_PlayerTooltipEvent]
 on=@itemclienttooltip
-addcliloc 1042971,<act.name>
-if <act.amount> > 1
-addcliloc 1070722,Amount: <eval <act.amount>>
-endif
-//if <act.tag0.setid> > 0
-//addcliloc 1072376,<def.set_<act.tag0.setid>_pieces>
-//endif
-if !<isempty <act.tag.craftedby>>
-addcliloc 1050043,<act.tag0.craftedby> // crafted by ~1_NAME~
-endif
-if <act.tag0.exceptional>
-addcliloc 1018303
-endif
-if <act.weight> > 0
-addcliloc 1072225,<fval <act.weight>>
-endif
-if <act.tag0.Item.Elven>
-addcliloc 1075086 // Elves Only
-elif <act.tag0.Item.Gargoyle>
-addcliloc 1111709 // Gargoyles Only
-endif
-if <act.tag0.artifact>
-addcliloc 1061078,<act.dtag0.artifact>
-endif
-for 1 <def.itemprops>
+IF <ACT.TYPE> == T_SPAWN_CHAR
+ RETURN 0
+ENDIF
+
+IF <ACT.dTAG.DONATOR>
+ ACT.ATTR ATTR_NEWBIE
+ENDIF
+
+IF <ACT.TYPE> == T_CORPSE
+ ADDCLILOC 1042971,<ACT.NAME>
+ELSE
+ ADDCLILOC 1042971,<QVAL <ACT.AMOUNT>=1?<ACT.NAME>:<ACT.AMOUNT> <ACT.NAME>>
+ENDIF
+
+IF <ACT.ISEVENT.T_ITEM_INSURED>
+ ADDCLILOC 1061682
+ENDIF
+
+IF STRMATCH(I_SKULL*,<ACT.BASEID>)
+ IF STRMATCH(*POWER,<ACT.BASEID>)
+  ADDCLILOC 1060401,+10
+  ADDCLILOC 1060485,+8
+ ENDIF
+ RETURN 1
+ENDIF
+
+IF <ACT.dTAG.SKULLENHANCED>
+ IF <ACT.dTAG.SKULLENHANCED> == 1
+  LOCAL.SKULL Power
+ ELIF ACT.dTAG.SKULLENHANCED> == 2
+  LOCAL.SKULL Greed
+ ENDIF
+ENDIF
+
+IF <ACT.dTAG.CURSED>
+ ADDCLILOC 1049643
+ENDIF
+
+IF (<ACT.ATTR> & ATTR_NEWBIE) || ( !<ISNUM <LOCAL.SKULL>> && STRMATCH(*,<LOCAL.SKULL>) )
+ LOCAL.CLILOC "EMPTY "
+ IF (<ACT.ATTR> & ATTR_NEWBIE)
+  LOCAL.CLILOC .= "<DEF.BFONT_LGRAY>Blessed<DEF.BFONT_WHITE>"
+ ENDIF
+ IF !<ISNUM <LOCAL.SKULL>> && STRMATCH(*,<LOCAL.SKULL>)
+  IF STRMATCH(EMPTY,<LOCAL.CLILOC>)
+   LOCAL.CLILOC .= "[<DEF.BFONT_LPURPLE><LOCAL.SKULL><DEF.BFONT_WHITE>]"
+  ELSE
+   LOCAL.CLILOC .= "<DEF.BR>[<DEF.BFONT_LPURPLE><LOCAL.SKULL><DEF.BFONT_WHITE>]"
+  ENDIF
+ ENDIF
+ ADDCLILOC 1070722,<STREAT <LOCAL.CLILOC>>
+ENDIF
+
+IF <ACT.dTAG.DONATOR>
+ ADDCLILOC 1049644,<DEF.BFONT_LGREEN>Donator Reward<DEF.BFONT_WHITE>
+ENDIF
+
+IF <ACT.TAG0.SETID> > 0
+ ADDCLILOC 1072376,<DEF.SET_<ACT.TAG0.SETID>_PIECES>
+ENDIF
+
+IF !<ISNUM <ACT.TAG0.EXCEPTIONAL>>
+ ADDCLILOC 1050043,<ACT.TAG0.EXCEPTIONAL> // crafted by ~1_NAME~
+ENDIF
+
+IF ( <ACT.WEIGHT> > 0 ) && !( STRMATCH(T_SPELLBOOK*,<ACT.TYPE> )
+ ADDCLILOC 1072225,<FVAL <ACT.WEIGHT>>
+ENDIF
+
+IF <ACT.TAG0.ITEM.GARGOYLE>
+ ADDCLILOC 1111709
+ELIF <ACT.TAG0.ITEM.ELVEN>
+ ADDCLILOC 1075086
+ENDIF
+
+IF <ACT.TAG0.EXPANSION>
+ IF <ACT.dTAG0.EXPANSION> == 8
+  ADDCLILOC 1078597,High Seas
+ ELIF <ACT.dTAG0.EXPANSION> == 7
+  ADDCLILOC 1078597,Stygian Abyss
+ ELIF <ACT.dTAG0.EXPANSION> == 6
+  ADDCLILOC 1078597,Mondain's Legacy
+ ELIF <ACT.dTAG0.EXPANSION> == 5
+  ADDCLILOC 1078597,Samurai Empire
+ ELIF <ACT.dTAG0.EXPANSION> == 4
+  ADDCLILOC 1078597,Age of Shadows
+ ENDIF
+ENDIF
+
+IF <ACT.TAG0.ARTIFACT>
+ ADDCLILOC 1061078,<ACT.dTAG0.ARTIFACT>
+ENDIF
+
+IF ( <ACT.BASEID> == T_WEAPON_BOW ) && ( <ACT.TAG0.BALANCED> )
+ ADDCLILOC 1072792
+ENDIF
+
+F_SLAYER_CLILOC
+F_SKILLBONUS_CLILOC
+
+for 3 <def.itemprops>
 local.prop = <getargv 5 <def.itemprop_<local._for>>>
 local.clil = <getargv 0 <def.itemprop_<local._for>>>
-	if <local.clil> < 0
-	<local.prop>_cliloc
-	elif <local.clil> > 0
-		if <act.tag0.<local.prop>>
-			if <def.scp.ItemProp_<local.prop>> == 1
-			addcliloc <local.clil>,<act.dtag0.<local.prop>>
-			endif
-		endif
-	endif
+    if <local.clil> < 0
+     try uid.<uid>.<local.prop>_cliloc
+     serv.b @,,1 ae <name> <act.name>
+    elif <local.clil> > 0
+        if <act.tag0.<local.prop>>
+            addcliloc <local.clil>,<act.dtag0.<local.prop>>
+            //addcliloc <local.clil>,<act.dtag0.<local.prop>> <qval <src.findlayer.<act.layer>.dtag.<local.prop>>?[<DEF.BFONT_LPURPLE><src.findlayer.<act.layer>.dtag.<local.prop>><DEF.BFONT_WHITE>]:>
+        endif
+    endif
 endfor
-if <act.tag0.DamPhysical> || <act.isweapon>
-local.physical = <eval 100 - (<act.tag0.DamFire> + <act.tag0.DamCold> + <act.tag0.DamPoison> + <act.tag0.DamEnergy>)>
-addcliloc 1060403,<dlocal.physical>
+
+IF <ACT.TAG0.RESPHYSICAL>
+ ADDCLILOC 1060448,<ACT.dTAG0.RESPHYSICAL>
+ENDIF
+IF <ACT.TAG0.RESFIRE>
+ ADDCLILOC 1060447,<ACT.dTAG0.RESFIRE>
+ENDIF
+IF <ACT.TAG0.RESCOLD>
+ ADDCLILOC 1060445,<ACT.dTAG0.RESCOLD>
+ENDIF
+IF <ACT.TAG0.RESPOISON>
+ ADDCLILOC 1060449,<ACT.dTAG0.RESPOISON>
+ENDIF
+IF <ACT.TAG0.RESENERGY>
+ ADDCLILOC 1060446,<ACT.dTAG0.RESENERGY>
+ENDIF
+
+local.prop = <getargv 5 <def.itemprop_30>>
+local.clil = <getargv 0 <def.itemprop_30>>
+if <local.clil> > 0
+ if <act.tag0.<local.prop>>
+   addcliloc <local.clil>,<act.dtag0.<local.prop>>
+ endif
 endif
-if <act.tag0.DamFire>
-addcliloc 1060405,<act.dtag0.DamFire>
-endif
-if <act.tag0.DamCold>
-addcliloc 1060404,<act.dtag0.DamCold>
-endif
-if <act.tag0.DamPoison>
-addcliloc 1060406,<act.dtag0.DamPoison>
-endif
-if <act.tag0.DamEnergy>
-addcliloc 1060407,<act.dtag0.DamEnergy>
-endif
-if <act.isweapon> // Yes! Again, to keep order of this thing.
-addcliloc 1061168,<act.dam>
-addcliloc 1061167,<fval <act.speed>>
-endif
-if <act.range> > 1
-addcliloc 1061169,<getargv 1 <act.range>>
-endif
-if <act.tag0.ResPhysical>
-addcliloc 1060448,<act.dtag0.ResPhysical>
-endif
-if <act.tag0.ResFire>
-addcliloc 1060447,<act.dtag0.ResFire>
-endif
-if <act.tag0.ResCold>
-addcliloc 1060445,<act.dtag0.ResCold>
-endif
-if <act.tag0.ResPoison>
-addcliloc 1060449,<act.dtag0.ResPoison>
-endif
-if <act.tag0.ResEnergy>
-addcliloc 1060446,<act.dtag0.ResEnergy>
-endif
+
+IF <ACT.ISWEAPON>
+ IF <ACT.TAG0.DAMPHYSICAL> || <EVAL 100 - (<ACT.dTAG.DAMFIRE> + <ACT.dTAG.DAMCOLD> + <ACT.dTAG.DAMPOISON> + <ACT.dTAG.DAMENERGY>)> > 0
+  LOCAL.PHYSICAL <EVAL 100 - (<ACT.dTAG.DAMFIRE> + <ACT.dTAG.DAMCOLD> + <ACT.dTAG.DAMPOISON> + <ACT.dTAG.DAMENERGY>)>
+  ADDCLILOC 1060403,<dLOCAL.PHYSICAL>
+ ENDIF
+ IF <ACT.TAG0.DAMFIRE>
+  ADDCLILOC 1060405,<ACT.dTAG.DAMFIRE>
+ ENDIF
+ IF <ACT.TAG0.DAMCOLD>
+  ADDCLILOC 1060404,<ACT.dTAG.DAMCOLD>
+ ENDIF
+ IF <ACT.TAG0.DAMPOISON>
+  ADDCLILOC 1060406,<ACT.dTAG.DAMPOISON>
+ ENDIF
+ IF <ACT.TAG0.DAMENERGY>
+  ADDCLILOC 1060407,<ACT.dTAG.DAMENERGY>
+ ENDIF
+ENDIF
+
+IF <ACT.ISWEAPON>
+ ADDCLILOC 1061168,<ACT.DAM>
+ IF ( <EVAL <FVAL ((<ACT.SPEED>) - <EVAL (<ACT.SPEED>/10)*10>)>> == 2 ) || ( <EVAL <FVAL ((<ACT.SPEED>) - <EVAL (<ACT.SPEED>/10)*10>)>> == 7 )
+  ADDCLILOC 1061167,<FVAL <ACT.SPEED>>5s
+ ELSE
+  ADDCLILOC 1061167,<FVAL <ACT.SPEED>>s
+ ENDIF
+ENDIF
+IF <ACT.RANGE> > 1
+ ADDCLILOC 1061169,<GETARGV 1 <ACT.RANGE>>
+ENDIF
+IF <ACT.TAG0.LOWERREQUIREMENTS>
+ ADDCLILOC 1060435,<ACT.dTAG.LOWERREQUIREMENTS>
+ENDIF
 if (<act.reqstr> > 0) && ((<act.isweapon>) || (<act.isarmor>) || (<act.type> == t_shield) || (<act.type> == t_clothing))
-addcliloc 1061170,<eval <act.reqstr>>
+IF <ACT.TAG0.LOWERREQUIREMENTS>
+ LOCAL.REQSTR <EVAL <ACT.REQSTR> - ((<ACT.REQSTR>*<ACT.TAG0.LOWERREQUIREMENTS>)/100)>
+ IF <dLOCAL.REQSTR> > 0
+  addcliloc 1061170,<dLOCAL.REQSTR>
+ ENDIF
+ELSEIF <ACT.REQSTR>
+ addcliloc 1061170,<ACT.REQSTR>
+ENDIF
 endif
-if (<act.layer> == 2) && <act.isweapon>
-addcliloc 1061171
+if <act.isweapon>
+ if (<act.layer> == 2)
+  addcliloc 1061171
+ elseif (<act.layer> == 1) 
+  addcliloc 1061824
+ endif
+ if <serv.skill.<act.skill>.name> == Swordsmanship
+  addcliloc 1061172
+ elseif <serv.skill.<act.skill>.name> == Macefighting
+  addcliloc 1061173
+ elseif <serv.skill.<act.skill>.name> == Fencing
+  addcliloc 1061174
+ elseif <serv.skill.<act.skill>.name> == Archery
+  addcliloc 1061175
+ elseif <serv.skill.<act.skill>.name> == Throwing
+  addcliloc 1112075
+ end if
 endif
-if <act.hitpoints> > 0
+if ( <act.hitpoints> > 0 ) || ( ( <act.more1l> > 0 ) && ( <act.more1h> > 0 ) && ( <act.type> == t_jewelry ) )
 addcliloc 1060639,<act.more1l>,<act.more1h>
 endif
-return 1
+if strmatch(t_spellbook*,<act.type>)
+ addcliloc 1042886, <act.checkspells>
+endif
+IF <ACT.TAG0.FACTION>
+ ADDCLILOC 1041350
+ ADDCLILOC 1094805,<ACT.dTAG0.RANK>
+ENDIF
+IF <ACT.TAG0.LIFESPAN>
+ ADDCLILOC 1072517,<ACT.dTAG0.LIFESPAN>
+ENDIF
+IF <ACT.BASEID> == I_PIGMENTS_OF_TOKUNO
+ ADDCLILOC 1060584,<ACT.dMORE1>
+ENDIF
+IF <ACT.BASEID> == I_ANCIENT_URN
+ ADDCLILOC 1070935,<ACT.TAG.NAME>
+ENDIF
+IF <ACT.BASEID> == I_HONORABLE_SWORDS
+ ADDCLILOC 1070936,<ACT.TAG.NAME>
+ENDIF
+RETURN 1
 
 [eof]

@@ -524,7 +524,7 @@ dtext 305 388 0480 Make Item
 args = <ref1.skillmake>
 dorigin 170 112
 for 1 <argv>
-   if (<serv.skill.<ref1.skillmake.<local._for>.key>>)
+   if (<serv.skill.<ref1.skillmake.<dlocal._for>.key>>)
       if <local.recipe> == 1
          dcroppedtext 170 *20 170 20 0480 ??????????
          dcroppedtext 430 *0 50 20 0480 ??.?

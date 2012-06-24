@@ -1,5 +1,5 @@
 //****************************************************************************
-// SphereServer ©1997-2009
+// SphereServer ï¿½1997-2009
 // This script is part from the Sphere Community Script Pack.
 // You can download the full pack from: www.sphereserver.net
 //****************************************************************************
@@ -85,7 +85,7 @@ DEFNAME=i_soul_glaive
 NAME=soul glaive
 TYPE=t_weapon_bow
 TDATA3=//nothing is consumed... the weapon itself is thrown
-TDATA4=i_glaive_anim_x
+TDATA4=i_glaive_animation
 DAM=18,22
 FLIP=1
 SKILL=Throwing

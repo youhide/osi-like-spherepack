@@ -1036,7 +1036,7 @@ ON=@Create
 
 [CHARDEF 0d7]
 DEFNAME=c_rat_giant
-NAME=giant rat
+NAME=Giant Rat
 ICON=i_pet_rat_2
 SOUND=snd_monster_grat1
 CAN=MT_WALK|MT_RUN|MT_NONHUM
@@ -1078,7 +1078,7 @@ ON=@NPCRestock
 
 [CHARDEF 0dd]
 DEFNAME=c_walrus
-NAME=walrus
+NAME=Walrus
 ICON=i_pet_walrus
 SOUND=snd_animals_walrus1
 CAN=MT_WALK|MT_SWIM|MT_NONHUM

@@ -1,0 +1,82 @@
+[DEFNAME TREASUREOFTOKUNOSETTINGS]
+ToTs_Are_Active 1 //1 on, 0 off
+LesserTots { I_ANCIENT_FARMERS_KASA 1 I_ANCIENT_SAMURAI_DO 1 I_ANCIENT_URN 1 I_ARMS_OF_TACTICAL_EXCELLENCE 1 I_BLACK_LOTUS_HOOD 1 I_CHEST_OF_HEIRLOOMS 1 I_DAIMYOS_HELM 1 I_DEMON_FORKS 1 I_DRAGON_NUNCHAKU 1 I_EXILER 1 I_GLOVES_OF_THE_SUN 1 I_HANZOS_BOW 1 I_HONORABLE_SWORDS 1 I_LEGS_OF_STABILITY 1 I_LEUROCIANS_MEMPO_OF_FORTUNE 1 I_PEASANTS_BOKUTO 1 I_PILFERED_DANCER_FANS 1 I_THE_DESTROYER 1 I_TOME_OF_ENLIGHTENMENT 1 }
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+[FUNCTION F_TOT_SET_OWNERNAME]
+DORAND 35
+ TAG.NAME=Akira
+ TAG.NAME=Avaniaga
+ TAG.NAME=Aya
+ TAG.NAME=Chie
+ TAG.NAME=Emiko
+ TAG.NAME=Fumiyo
+ TAG.NAME=Gennai
+ TAG.NAME=Gennosuke 
+ TAG.NAME=Genjo
+ TAG.NAME=Hamato
+ TAG.NAME=Harumi
+ TAG.NAME=Ikuyo
+ TAG.NAME=Juri
+ TAG.NAME=Kaori
+ TAG.NAME=Kaoru
+ TAG.NAME=Kiyomori
+ TAG.NAME=Mayako
+ TAG.NAME=Motoki
+ TAG.NAME=Musashi
+ TAG.NAME=Nami
+ TAG.NAME=Nobukazu
+ TAG.NAME=Roku
+ TAG.NAME=Romi
+ TAG.NAME=Ryo
+ TAG.NAME=Sanzo
+ TAG.NAME=Sakamae
+ TAG.NAME=Satoshi
+ TAG.NAME=Takamori
+ TAG.NAME=Takuro
+ TAG.NAME=Teruyo
+ TAG.NAME=Toshiro
+ TAG.NAME=Yago
+ TAG.NAME=Yeijiro
+ TAG.NAME=Yoshi
+ TAG.NAME=Zeshin
+ENDDO
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+[CHARDEF c_IharaSoko]
+ID=c_man
+NAME=Ihara Soko the Imperial Minister of Trade
+CAN=MT_USEHANDS|MT_EQUIP|MT_NONMOVER
+
+ON=@Create
+COLOR=08403
+FLAGS=statf_invul|statf_paralyzed
+STR=1
+DEX=1
+INT=1
+NPC=brain_human
+ITEMNEWBIE=i_kamishimo
+ITEMNEWBIE=i_stormgrip
+ITEMNEWBIE=i_kasa
+
+ON=@NpcSeeNewPlayer
+IF (<SRC.ISPLAYER>)
+	IF (<SRC.ISONLINE>)
+		IF (!(<SRC.ISDIALOGOPEN D_TOT_REDEEM>))
+			IF (<SRC.HASLESSERTOT>) && (<SRC.TAG0.TOTSGIVEN> < 10)
+			DIALOG D_TOT_REDEEM 2
+			ELIF (<SRC.TAG0.TOTSGIVEN> >= 10)
+			DIALOG D_TOT_REDEEM 1
+			ELSE
+			SAY @,,2 1071013
+			ENDIF
+		ENDIF
+	ENDIF
+ENDIF
+
+ON=@DClick
+TRIGGER @NpcSeeNewPlayer
+
+[EOF]

@@ -91,7 +91,7 @@ ref8 = <ref8.memoryfindtype.memory_ipet.link.uid>
 endif
 if <tag0.luck> > 0
 	if <def.scp.ItemProp_LuckLoot> == 1
-	local.chanceinc = <feval <floatval <ref8.luck> @ <def.scp.ItemProp_LuckScaleFactor>>
+	local.chanceinc = <feval <floatval <ref8.luck> @ <def.scp.ItemProp_LuckScaleFactor>>>
 		if <r100> < <local.chanceinc>
 		serv.newitem <tag0.luck.loot>
 		new.cont = <local.corpse>
@@ -147,70 +147,256 @@ local.items = <r<argv[0]>>
 	endfor
 endif
 
+ON=@GETHIT
+IF (<def.scp.ItemProp_HitManaLeech> == 1) && (<ARGN2> < 10)
+ IF <src.weapon.dtag.HitManaLeech>
+  IF <FLOATVAL <R100>> < <QVAL <SRC.WEAPON.RANGE> == 1?<FLOATVAL ((<SRC.WEAPON.SPEED>/10)*2500)/(100+<SRC.WEAPON.dTAG.SWINGSPEEDINCREASE>)>:<FLOATVAL ((<SRC.WEAPON.SPEED>/10)*2500/2)/(100+<SRC.WEAPON.dTAG.SWINGSPEEDINCREASE>)>>
+   SRC.MANA += <EVAL <R<FVAL <FLOATVAL (<ARGN1>*(<SRC.WEAPON.dTAG.HITLIFELEECH>/100))*0.3>/1000000>>>
+   IF <SRC.MANA> > <SRC.MAXMANA>
+    SRC.MANA <SRC.MAXMANA>
+   ENDIF
+  ENDIF
+ ENDIF
+ENDIF
+IF (<def.scp.ItemProp_HitLifeLeech> == 1) && (<ARGN2> < 10)
+ IF <src.weapon.dtag.HitLifeLeech>
+  IF <FLOATVAL <R100>> < <QVAL <SRC.WEAPON.RANGE> == 1?<FLOATVAL ((<SRC.WEAPON.SPEED>/10)*2500)/(100+<SRC.WEAPON.dTAG.SWINGSPEEDINCREASE>)>:<FLOATVAL ((<SRC.WEAPON.SPEED>/10)*2500/2)/(100+<SRC.WEAPON.dTAG.SWINGSPEEDINCREASE>)>>
+   SRC.HITS += <EVAL <R<FVAL <FLOATVAL (<ARGN1>*(<SRC.WEAPON.dTAG.HITLIFELEECH>/100))*0.3>/1000000>>>
+   IF <SRC.HITS> > <SRC.MAXHITS>
+    SRC.HITS <SRC.MAXHITS>
+   ENDIF
+  ENDIF
+ ENDIF
+ENDIF
+if (<def.scp.ItemProp_HitStaminaLeech> == 1) && (<ARGN2> < 10)
+ IF <SRC.WEAPON.dTAG.HITSTAMINALEECH>
+  IF <R100> < <SRC.WEAPON.dTAG.HITSTAMINALEECH>
+   SRC.STAM += <dARGN1>
+   IF <SRC.STAM> > <SRC.MAXSTAM>
+    SRC.STAM <SRC.MAXSTAM>
+   ENDIF
+  ENDIF
+ ENDIF
+ENDIF
+
+[ITEMDEF I_MEMORY_REGEN]
+ID I_MEMORY
+TYPE T_EQ_SCRIPT
+NAME Regeneration Memory
+
+ON=@CREATE
+ATTR 090
+TAG._HPR 0
+TAG._SR 0
+TAG._MR 0
+TIMER -1
+COLOR 0481
+MOREX 1
+
+ON=@DCLICK
+SRC.EQUIP
+TIMER 1
+RETURN 1
+
+ON=@TIMER
+//TAG._HPR 0
+//TAG._SR 0
+//TAG._MR 0
+
+
+IF <CONT.dTAG.HITPOINTREGENERATION> > <getargv 3 <def.itemprop_01a>>
+ LOCAL.HPR <getargv 3 <def.itemprop_01a>>
+ELSE
+ LOCAL.HPR <EVAL <CONT.dTAG.HITPOINTREGENERATION> + 1>
+ENDIF
+IF <CONT.dTAG.HORRIFICBEAST>
+ LOCAL.HPR += 20
+ENDIF
+
+IF <CONT.dTAG.STAMINAREGENERATION> > <getargv 3 <def.itemprop_01b>>
+ LOCAL.SR <getargv 3 <def.itemprop_01b>>
+ELSE
+ LOCAL.SR <EVAL <CONT.dTAG.STAMINAREGENERATION> + 1>
+ENDIF
+
+IF <CONT.dTAG.MANAREGENERATION> > <getargv 3 <def.itemprop_01c>>
+ LOCAL.MR <getargv 3 <def.itemprop_01c>>
+ELSE
+ LOCAL.MR <EVAL <CONT.dTAG.MANAREGENERATION>*10>
+ENDIF
+IF <CONT.dTAG.LICHFORM> == 1
+ LOCAL.MR += 130
+ENDIF
+
+IF <CONT.MEDITATION> >= 100.0
+ LOCAL.MRmi = <FVAL (1.1*<EVAL ((<CONT.MEDITATION>/10)*3) + <CONT.INT>>)/40>
+ELSE
+ LOCAL.MRmi = <FVAL (<EVAL ((<CONT.MEDITATION>/10)*3) + <CONT.INT>>)/4>
+ENDIF
+
+IF <CONT.TAG0.MEDITATION.ACTIVE>
+ LOCAL.MRmi *= 2
+ENDIF
+
+LOCAL.MRmi <FVAL 20+<LOCAL.MRmi>>
+
+LOCAL.MRf <EVAL <CONT.FOCUS>/20>
+
+LOCAL.MRt <FVAL <LOCAL.MRmi> + <LOCAL.MRf> + <LOCAL.MR>>
+
+//SERV.B @063,,1 (Mana Regen de Medit e Int) MRmi: <FVAL <LOCAL.MRmi>>
+//SERV.B @044,,1 (Mana Regen de Focus) MRf: <FVAL <LOCAL.MRf>*10>
+//SERV.B @035,,1 (Mana Regen de Items) MR: <FVAL <LOCAL.MR>*10>
+//SERV.B @0481,,1 (Mana Regen Total) MRt: <FVAL <LOCAL.MRt>>
+
+//SERV.B @0481,,1 Current Regeneration Values
+//SERV.B @026,,1 HPR: [<dLOCAL.HPR>]
+//SERV.B @035,,1 SR: [<dLOCAL.SR>]
+//SERV.B @063,,1 MR: [<EVAL <dLOCAL.MRt>/10>]
+
+
+TAG._HPR += <dLOCAL.HPR>
+TAG._SR += ( <dLOCAL.SR> + <EVAL <dCONT.FOCUS>/100> )
+TAG._MR += <EVAL <dLOCAL.MRt>/10>
+
+IF (<FVAL <TAG._HPR>> >= <FVAL <EVAL (<dTAG._HPR>/10)*10>>) && (<dTAG._HPR> >= 10)
+ IF <CONT.HITS> < <CONT.MAXHITS>
+  CONT.HITS += <EVAL (<dTAG._HPR>/10)>
+  IF <CONT.HITS> > <CONT.MAXHITS>
+   CONT.HITS <CONT.MAXHITS>
+  ENDIF
+ ENDIF
+ TAG._HPR -= <EVAL (<dTAG._HPR>/10)*10>
+ENDIF
+
+IF (<FVAL <TAG._SR>> >= <FVAL <EVAL (<dTAG._SR>/10)*10>>) && (<dTAG._SR> >= 10)
+ IF <CONT.STAM> < <CONT.MAXSTAM>
+  CONT.STAM += <EVAL (<dTAG._SR>/10)>
+  IF <CONT.STAM> > <CONT.MAXSTAM>
+   CONT.STAM <CONT.MAXSTAM>
+  ENDIF
+ ENDIF
+ TAG._SR -= <EVAL (<dTAG._SR>/10)*10>
+ENDIF
+
+IF (<FVAL <TAG._MR>> >= <FVAL <EVAL (<dTAG._MR>/10)*10>>) && (<dTAG._MR> >= 10)
+ IF <CONT.MANA> < <CONT.MAXMANA>
+  CONT.MANA += <EVAL (<dTAG._MR>/10)>
+  IF <CONT.MANA> > <CONT.MAXMANA>
+   CONT.MANA <CONT.MAXMANA>
+  ENDIF
+ ENDIF
+ TAG._MR -= <EVAL (<dTAG._MR>/10)*10>
+ENDIF
+
+IF <CONT.dTAG.LICHFORM>
+ IF !<dMOREX>
+  SERV.B ADICIONANDO MOREX
+  MOREX 1
+ ENDIF
+ IF <EVAL <dMOREX>%2> == 0
+  IF <CONT.HITS> > 1
+   CONT.HITS -= 1
+  ENDIF
+ ENDIF
+ MOREX += 1
+ IF <dMOREX> > 10
+  MOREX 1
+ ENDIF
+ENDIF
+
+TIMER 1
+RETURN 1
+
 [FUNCTION f_PlayerCheckStats]
 // Hit Point Increase, just add the TAG or Cap (whichever is smaller) to the maxhits
 // Safe zone since EVENTS on EventsPlayer are called last.
 // Same goes for ManaIncrease, StaminaIncrease
-if <def.scp.OSIStats> == 1
-maxhits = <eval (<str>/2) + <modstr> + 50>
-	if <hits> > <maxhits>
-	hits = <maxhits>
-	endif
-maxmana = <eval <int> + <modint>>
-maxstam = <eval <dex> + <moddex>>
-endif
+
 if <def.scp.ItemProp_HitPointIncrease> == 1
-maxhits += <min <tag0.HitPointIncrease>,<getargv 3 <def.itemprop_010>>>
+ maxhits += <min <tag0.HitPointIncrease>,<getargv 3 <def.itemprop_017>>>
 endif
+
 if <def.scp.ItemProp_ManaIncrease> == 1
-maxmana += <min <tag0.ManaIncrease>,<getargv 3 <def.itemprop_017>>>
+ maxmana += <min <tag0.ManaIncrease>,<getargv 3 <def.itemprop_019>>>
 endif
+
 if <def.scp.ItemProp_StaminaIncrease> == 1
-maxstam += <min <tag0.StaminaIncrease>,<getargv 3 <def.itemprop_01f>>>
+ maxstam += <min <tag0.StaminaIncrease>,<getargv 3 <def.itemprop_018>>>
 endif
+
+if <def.scp.OSIStats> == 1
+ maxhits = <eval ((<str>+<modstr>)/2) + 50>
+ maxmana = <eval <int> + <modint>>
+ maxstam = <eval <dex> + <moddex>>
+endif
+
+if <def.scp.ItemProp_HitPointIncrease> == 1
+ maxhits += <min <tag0.HitPointIncrease>,<getargv 3 <def.itemprop_017>>>
+endif
+if <hits> > <maxhits>
+ hits = <maxhits>
+endif
+
+if <def.scp.ItemProp_ManaIncrease> == 1
+ maxmana += <min <tag0.ManaIncrease>,<getargv 3 <def.itemprop_019>>>
+endif
+if <mana> > <maxmana>
+ mana = <maxmana>
+endif
+
+if <def.scp.ItemProp_StaminaIncrease> == 1
+ maxstam += <min <tag0.StaminaIncrease>,<getargv 3 <def.itemprop_018>>>
+endif
+if <stam> > <maxstam>
+ stam = <maxstam>
+endif
+
 // Hit Point Generation increases value in the regeneration
 // Formula: (0.1 * intensity)
-if <def.scp.ItemProp_HitPointRegeneration> == 1
-tag0.override.regenval_0 = <eval 1 + <tag0.HitPointRegeneration>>
-endif
-if <def.scp.ItemProp_StaminaRegeneration> == 1
-tag0.override.regenval_2 = <eval 1 + <tag0.StaminaRegeneration>>
-endif
+//if <def.scp.ItemProp_HitPointRegeneration> == 1
+//tag0.override.regenval_0 = <eval 1 + <tag0.HitPointRegeneration>>
+//endif
+//if <def.scp.ItemProp_StaminaRegeneration> == 1
+//tag0.override.regenval_2 = <eval 1 + <tag0.StaminaRegeneration>>
+//endif
+
+
 // Mana Regeneration is more complicated, since we have to look at:
 // Passive/Active Meditation, Intelligence, Battle Focus, Equipment
 // If you wonder why Medit / 10 and Focus / 200. Because in Sphere, GM Medit = 1000 and not 100.0
-if <def.scp.NewSkills_Meditation> == 1
-	if <meditation> > 99.9 // GM Meditation or better gets 10% bonus.
-	local.MRmi = <feval <floatval (1.1 * ((<meditation> * 3) + <int>)) / 40)>>
-	else
-	local.MRmi = <feval <floatval ((<meditation> * 3) + <int>) / 40>>
-	endif
-	if <tag0.meditation.active>
-	local.MRmi *= 2 // Active Meditation gets regen * 2
-	endif
-else
-local.MRmi = 0
-endif
-if <def.scp.NewSkills_Focus> == 1
-local.MRf = <eval <focus> / 200>
-else
-local.MRf = 0
-endif
-if <def.scp.ItemProp_ManaRegeneration> == 1
-local.MRe = <tag0.ManaRegeneration>
-	if <local.MRe> > <getargv 3 <def.itemprop_018>>
-	local.MRe = <getargv 3 <def.itemprop_018>>
-	endif
-else
-endif
-local.MRt = <eval 2 + <local.MRmi> + <local.MRf> + <local.MRe>> // This is the amount of points in 10 seconds
-if <tag0.meditation.active>
-tag0.override.regenval_1 = <eval <local.MRt> / 10>
-tag0.override.regen_1 = 10.0
-else
-tag0.override.regenval_1 = <local.MRt>
-tag.override.regen_1 =
-endif
+//if <def.scp.NewSkills_Meditation> == 1
+//	if <meditation> > 99.9 // GM Meditation or better gets 10% bonus.
+//	local.MRmi = <feval <floatval (1.1 * ((<meditation> * 3) + <int>)) / 40)>>
+//	else
+//	local.MRmi = <feval <floatval ((<meditation> * 3) + <int>) / 40>>
+//	endif
+//	if <tag0.meditation.active>
+//	local.MRmi *= 2 // Active Meditation gets regen * 2
+//	endif
+//else
+//local.MRmi = 0
+//endif
+//if <def.scp.NewSkills_Focus> == 1
+//local.MRf = <eval <focus> / 200>
+//else
+//local.MRf = 0
+//endif
+//if <def.scp.ItemProp_ManaRegeneration> == 1
+//local.MRe = <tag0.ManaRegeneration>
+//	if <local.MRe> > <getargv 3 <def.itemprop_018>>
+//	local.MRe = <getargv 3 <def.itemprop_018>>
+//	endif
+//else
+//endif
+//local.MRt = <eval 2 + <local.MRmi> + <local.MRf> + <local.MRe>> // This is the amount of points in 10 seconds
+//if <tag0.meditation.active>
+//tag0.override.regenval_1 = <eval <local.MRt> / 10>
+//tag0.override.regen_1 = 10.0
+//else
+//tag0.override.regenval_1 = <local.MRt>
+//tag.override.regen_1 =
+//endif
 
 
 [EVENTS e_PlayerPropertiesEvent]
@@ -264,8 +450,10 @@ if <def.scp.ItemProp_SpellChanneling> == 1
 		if <argn1> != 203 // exception for Consecrate Weapon
 			if <findlayer.1.uid>
 				if <findlayer.1.type> != t_wand
-					if !<findlayer.1.tag0.SpellChanneling>
-					findlayer.1.unequip
+					if !strmatch(t_spellbook*,<findlayer.1.type>)
+						if !<findlayer.1.tag0.SpellChanneling>
+							findlayer.1.unequip
+						endif
 					endif
 				endif
 			endif
@@ -282,11 +470,11 @@ endif
 // So just do (cap * 2) in the last case.
 if <def.scp.ItemProp_FasterCasting> == 1
 local.fcast = <src.tag0.FasterCasting>
-	if <tag0.FasterCasting> > <getargv 3 <def.itemprop_07>>
+	if <tag0.FasterCasting> > <getargv 3 <def.itemprop_024>>
 		if <src.magery> < 70.0
 		local.fcast = <min <tag0.FasterCasting>,4>
 		else
-		local.fcast = <getargv 3 <def.itemprop_07>>
+		local.fcast = <getargv 3 <def.itemprop_024>>
 		endif
 	endif
 argn3 -= <local.fcast>
@@ -335,28 +523,30 @@ endif
 // Hit Lower Attack and Hit Lower Defense applies directly to the target HCI/HDI
 // It lasts for 8 seconds and only a 25 percent, though the intensity is used for calculations.
 if <def.scp.ItemProp_HitLowerAttack> == 1
-	if <weapon>
-		if <r100> < <weapon.tag0.HitLowerAttack>
-			if <src.restest i_hit_lower_attack>
-			src.findid.i_hit_lower_attack.timer = 8
-			else
-			serv.newitem i_hit_lower_attack
-			src.equip <new.uid>
-			endif
-		endif
-	endif
+ if <tag0.HitLowerAttack>
+  if <r100> < <tag0.HitLowerAttack>
+   if <src.restest i_hit_lower_attack>
+    src.findid.i_hit_lower_attack.timer = 8
+   else
+    serv.newitem i_hit_lower_attack
+    src.equip <new.uid>
+    src.sysmessageloc -1,1062319 // Your attack chance has been reduced!
+   endif
+  endif
+ endif
 endif
 if <def.scp.ItemProp_HitLowerDefense> == 1
-	if <weapon>
-		if <r100> < <weapon.tag0.HitLowerDefense>
-			if <src.restest i_hit_lower_defense>
-			src.findid.i_hit_lower_defense.timer = 8
-			else
-			serv.newitem i_hit_lower_defense
-			src.equip <new.uid>
-			endif
-		endif
-	endif
+ if <tag0.HitLowerDefense>
+  if <r100> < <tag0.HitLowerDefense>
+   if <src.restest i_hit_lower_defense>
+    src.findid.i_hit_lower_defense.timer = 8
+   else
+    serv.newitem i_hit_lower_defense
+    src.equip <new.uid>
+    src.sysmessageloc -1,1062318 // Your defense chance has been reduced!
+   endif
+  endif
+ endif
 endif
 
 on=@hitdamagebonus
@@ -379,7 +569,7 @@ endif
 if <def.scp.ItemProp_DamageIncrease> == 1
 	if <tag0.DamageIncrease>
 	local.tempbonus = <tag0.DamageIncrease>
-	local.dicap = <getargv 3 <def.itemprop_02>>
+	local.dicap = <getargv 3 <def.itemprop_02a>>
 		if <tag0.DamageIncrease> > <local.dicap>
 		local.tempbonus = <local.dicap>
 		endif
@@ -391,36 +581,39 @@ on=@gethit
 // This three leech properties should be at the end of the trigger
 // AFTER the damage calcs are done. Since they work according to damage dealt.
 // Formula (for both) is: (damage * 0.4) - intensity
-if <def.scp.ItemProp_HitManaLeech> == 1
-	if <src.tag0.HitManaLeech>
-	float.mtoleech = <floatval (<argn1> * 0.4) - <src.tag0.HitManaLeech>>
-	mana -= <feval <float.mtoleech>>
-	src.mana += <feval <float.mtoleech>>
-		if <src.mana> > <src.maxmana>
-		src.mana = <src.maxmana>
-		endif
-	endif
-endif
-if <def.scp.ItemProp_HitLifeLeech> == 1
-	if <src.tag0.HitLifeLeech>
-	float.htoleech = <floatval (<argn1> * 0.4) - <src.tag0.HitLifeLeech>>
-	hits -= <feval <float.htoleech>>
-	src.hits += <feval <float.htoleech>>
-		if <src.hits> > <src.maxhits>
-		src.hits = <src.maxhits>
-		endif
-	endif
-endif
+IF (<def.scp.ItemProp_HitManaLeech> == 1) && (<ARGN2> < 10)
+ IF <src.weapon.dtag.HitManaLeech>
+  IF <FLOATVAL <R100>> < <QVAL <SRC.WEAPON.RANGE> == 1?<FLOATVAL ((<SRC.WEAPON.SPEED>/10)*2500)/(100+<SRC.WEAPON.dTAG.SWINGSPEEDINCREASE>)>:<FLOATVAL ((<SRC.WEAPON.SPEED>/10)*2500/2)/(100+<SRC.WEAPON.dTAG.SWINGSPEEDINCREASE>)>>
+   SRC.MANA += <EVAL <R<FVAL <FLOATVAL (<ARGN1>*(<SRC.WEAPON.dTAG.HITLIFELEECH>/100))*0.3>/1000000>>>
+   IF <SRC.MANA> > <SRC.MAXMANA>
+    SRC.MANA <SRC.MAXMANA>
+   ENDIF
+  ENDIF
+ ENDIF
+ENDIF
+IF (<def.scp.ItemProp_HitLifeLeech> == 1) && (<ARGN2> < 10)
+ IF <src.weapon.dtag.HitLifeLeech>
+  IF <FLOATVAL <R100>> < <QVAL <SRC.WEAPON.RANGE> == 1?<FLOATVAL ((<SRC.WEAPON.SPEED>/10)*2500)/(100+<SRC.WEAPON.dTAG.SWINGSPEEDINCREASE>)>:<FLOATVAL ((<SRC.WEAPON.SPEED>/10)*2500/2)/(100+<SRC.WEAPON.dTAG.SWINGSPEEDINCREASE>)>>
+   SRC.HITS += <EVAL <R<FVAL <FLOATVAL (<ARGN1>*(<SRC.WEAPON.dTAG.HITLIFELEECH>/100))*0.3>/1000000>>>
+   IF <SRC.HITS> > <SRC.MAXHITS>
+    SRC.HITS <SRC.MAXHITS>
+   ENDIF
+  ENDIF
+ ENDIF
+ENDIF
 // This one works a little different to the rest of the leech properties
 // It uses the % of the player to calc success and gains the damage amount in stamina
 // Still, it doesn't "leech" stamina from the target
-if <def.scp.ItemProp_HitStaminaLeech> == 1
-	if <r100> < <src.tag0.HitStaminaLeech>
-	src.stam += <argn1>
-	endif
-endif
-
-
+if (<def.scp.ItemProp_HitStaminaLeech> == 1) && (<ARGN2> < 10)
+ IF <SRC.WEAPON.dTAG.HITSTAMINALEECH>
+  IF <R100> < <SRC.WEAPON.dTAG.HITSTAMINALEECH>
+   SRC.STAM += <dARGN1>
+   IF <SRC.STAM> > <SRC.MAXSTAM>
+    SRC.STAM <SRC.MAXSTAM>
+   ENDIF
+  ENDIF
+ ENDIF
+ENDIF
 
 [Itemdef i_hit_lower_attack]
 ID=i_memory
@@ -429,10 +622,11 @@ Name=Hit Lower Attack
 
 on=@equip
 timer = 8
-src.tag.HitChanceIncrease -= 25
+cont.tag.HitChanceIncrease -= 25
 
 on=@unequip
-src.tag.HitChanceIncrease += 25
+cont.tag.HitChanceIncrease += 25
+cont.sysmessageloc -1,1062320 // Your attack chance has returned to normal.
 
 on=@timer
 remove
@@ -445,10 +639,11 @@ Name=Hit Lower Defense
 
 on=@equip
 timer = 8
-src.tag.DefenseChanceIncrease -= 25
+cont.tag.DefenseChanceIncrease -= 25
 
 on=@unequip
-src.tag.DefenseChanceIncrease += 25
+cont.tag.DefenseChanceIncrease += 25
+cont.sysmessageloc -1,1062321 // Your defense chance has returned to normal.
 
 on=@timer
 remove

@@ -1,52 +1,256 @@
 [EVENTS e_NpcGenericEvent]
+ON=@Click
+IF <TAG0.LIFETIER>
+ MESSAGE @035,,1 Lives <dTAG0.LIFETIER>
+ENDIF
+IF (<TAG0.NAME.HUE>)
+ LOCAL.COLOR=<TAG0.NAME.HUE>
+ELIF ((((<REGION.FLAGS>&region_flag_guarded) || (<REGION.FLAGS>&region_flag_safe)) && ((<BODY>==c_man) || (<BODY>==c_woman) || (<ISVENDOR>))) || (<FLAGS>&statf_invul))
+ LOCAL.COLOR=04ac
+ELIF ((<NOTOGETFLAG <SRC>,0> == 4) || (<NOTOGETFLAG <SRC>,0> == 3) || (<NOTOGETFLAG <SRC>,0> == 6))  //criminal
+ LOCAL.COLOR=946
+ELIF (<NOTOGETFLAG <SRC>,0> == 1)
+ LOCAL.COLOR=058
+ELIF (<NOTOGETFLAG <SRC>,0> == 2)
+ LOCAL.COLOR=044
+ELIF (<NOTOGETFLAG <SRC>,0> == 5)
+ LOCAL.COLOR=02b
+ENDIF
+LOCAL.REALNAME=<NAME>
+IF (STRMATCH(* the*,<SERV.CHARDEF.<BASEID>.NAME>)) && !(STRMATCH(* the*,<NAME>))
+ LOCAL.REALNAME .= , <STRSUB <HVAL (StrIndexOf(<SERV.CHARDEF.<BASEID>.NAME>,the,0))> 99 <SERV.CHARDEF.<BASEID>.NAME>>
+ENDIF
+MESSAGE @<LOCAL.COLOR>,3,1 <LOCAL.REALNAME>
+RETURN 1
+
+ON=@NPCActFight //mage AI
+IF (<FLAGS>&STATF_SPAWNED)
+ IF (<FLOATVAL <HITS>/<MAXHITS>> < <FLOATVAL 0.1>) //Flee to Spawn Point.
+  IF (<MAGERY>)
+   SPELLEFFECT S_GREATER_HEAL,<MAGERY>,<UID>
+  ENDIF
+ ACTION=067
+ TIMERF 1,GOTO <HOME>
+ ENDIF
+ENDIF
+
+//IF (<FLOATVAL <HITS>/<MAXHITS>> < <FLOATVAL 0.1>) //Flee to Spawn Point.
+// IF (<FLAGS>&STATF_SPAWNED)
+//  IF (<MAGERY>)
+//   SPELLEFFECT S_GREATER_HEAL,<MAGERY>,<UID>
+//  ENDIF
+// ACTION=067
+// TIMERF 1,GOTO <HOME>
+// ENDIF
+//ENDIF
+
+IF (<MAGERY>)
+ IF (<CANSEELOS>) && (<TAG0.LASTCASTING> <= <SERV.TIME>) && (<FLOATVAL 0.35> > <RANDOMDOUBLE>) //harmful spells
+  WHILE (!(<LOCAL.SPELL>))
+   DORAND 16
+    BEGIN
+     IF (<SRC.FLAGS>&STATF_CONJURED) && (<FLOATVAL 0.5> > <RANDOMDOUBLE>)
+      LOCAL.SPELL=s_dispel
+     ENDIF
+    END
+    BEGIN
+     IF (!(<SRC.FINDID.i_rune_curse>)) && (!(<SRC.FINDID.i_rune_feeblemind>)) && (!(<SRC.FINDID.i_rune_weaken>))
+      LOCAL.SPELL=s_feeblemind
+     ENDIF
+    END
+    BEGIN
+     IF (!(<SRC.FINDID.i_rune_curse>)) && (!(<SRC.FINDID.i_rune_feeblemind>)) && (!(<SRC.FINDID.i_rune_weaken>))
+      LOCAL.SPELL=s_weaken
+     ENDIF
+    END
+    BEGIN
+     IF (<MAGERY> <= 50.0)
+      LOCAL.SPELL=s_magic_arrow
+     ENDIF
+    END
+    BEGIN
+     IF (<DISTANCE> <= 2)
+      LOCAL.SPELL=s_harm
+     ENDIF
+    END
+    BEGIN
+     IF (!(<SRC.FLAGS>&STATF_POISONED))
+      LOCAL.SPELL=s_poison
+     ENDIF
+    END
+    BEGIN
+     IF (!(<SRC.FINDID.i_rune_curse>)) && (!(<SRC.FINDID.i_rune_feeblemind>)) && (!(<SRC.FINDID.i_rune_weaken>))
+      LOCAL.SPELL=s_curse
+     ENDIF
+    END
+    BEGIN
+     IF (!(<SRC.FLAGS>&statf_freeze)) && (<DISTANCE> >= 3)
+      LOCAL.SPELL=s_paralyze
+     ELSE
+      LOCAL.SPELL=s_explosion
+     ENDIF
+    END
+    BEGIN
+     IF (<MAGERY> >= 70.0) && (<SRC.ISPLAYER>)
+      LOCAL.SPELL=s_mana_vampire
+     ENDIF
+    END
+    BEGIN
+     IF (<MAGERY> >= 70.0)
+      LOCAL.SPELL=s_flamestrike
+     ENDIF
+    END
+    LOCAL.SPELL=s_fireball
+    LOCAL.SPELL=s_lightning
+    LOCAL.SPELL=s_mind_blast
+    LOCAL.SPELL=s_energy_bolt
+    LOCAL.SPELL=s_explosion
+    LOCAL.SPELL=s_chain_lightning
+   ENDDO
+  ENDWHILE
+  TAG.LASTCASTING=<EVAL <SERV.TIME>+50>
+  ANIM <R13,14>
+  SRC.SPELLEFFECT <LOCAL.SPELL>,<MAGERY>,<UID>
+  IF ((<LOCAL.SPELL> == s_explosion) || (<LOCAL.SPELL> == s_mind_blast)) && (<FLOATVAL 0.2> > <RANDOMDOUBLE>) && (<MAGERY> > 75.0)
+   SRC.TIMERF 2,F_GETNPC_COMBOFS <UID>
+   TAG.LASTCASTING=<EVAL <SERV.TIME>+68>
+  ENDIF
+  IF (<SERV.SPELL.<LOCAL.SPELL>.FLAGS>&spellflag_dir_anim) && (!(<SERV.SPELL.<LOCAL.SPELL>.FLAGS>&spellflag_fx_targ))
+   EFFECT 0,<SERV.SPELL.<LOCAL.SPELL>.EFFECT_ID>,5,0,1
+  ELIF (<SERV.SPELL.<LOCAL.SPELL>.EFFECT_ID>)
+   SRC.EFFECT 3,<SERV.SPELL.<LOCAL.SPELL>.EFFECT_ID>,8,30
+  ENDIF
+ ENDIF
+ IF (<FLOATVAL 0.11> > <RANDOMDOUBLE>) && (<TAG0.NextGoodSpell> <= <SERV.TIME>)
+  WHILE (!(<LOCAL.SPELL>))
+   DORAND 5
+    BEGIN
+     IF (!(<FINDID.i_rune_bless>))
+      LOCAL.SPELL=s_bless
+     ENDIF
+    END
+    BEGIN
+     IF (<MAGERY> > 50.0)
+      LOCAL.SPELL=s_greater_heal
+     ELSE
+      LOCAL.SPELL=s_heal
+     ENDIF
+    END
+    BEGIN
+     IF (<FLAGS>&STATF_POISONED)
+      LOCAL.SPELL=s_archcure
+     ENDIF
+    END
+    BEGIN
+     IF (<FLAGS>&STATF_POISONED)
+      LOCAL.SPELL=s_cure
+     ENDIF
+    END
+   ENDDO
+  ENDWHILE
+  TAG.NextGoodSpell=<EVAL <SERV.TIME>+65>
+  SPELLEFFECT <LOCAL.SPELL>,<MAGERY>,<UID>
+ ENDIF
+ENDIF
+
 on=@attack
+IF (<SRC.ISEVENT.e_young>)
+ IF (!(<SRC.TAG0.EVENT.ID>))
+  IF (!(0<SRC.ISFIGHTINGME <UID>>))
+   ACTION -1
+   RETURN 1
+  ENDIF
+ ENDIF
+ENDIF
 return <src.trigger @Attacked,<def.tat_as_argo>,<uid>>
+
+ON=@PersonalSpace
+ARGN1=0
 
 // Followers (Death)
 on=@death
-forcharmemorytype memory_fight
-color |= <def.memory_harmedby>
-endfor
+REF101=<MEMORYFINDTYPE.memory_ispawned.LINK>
+IF (<REF101>)
+REF101.TIMER=<EVAL {<REF101.MOREX> <REF101.MOREY>}*60>
+ENDIF
+IF (<ATTACKER.LAST>)
+ IF (<MEMORYFINDTYPE.MEMORY_FIGHT>)
+  FORCHARMEMORYTYPE MEMORY_FIGHT
+   COLOR |= <DEF.memory_harmedby>
+  ENDFOR
+ ENDIF
+ENDIF
+IF (!<TAG0.LUCK>)
+ IF (<UID.<ATTACKER.MAX>.FLAGS> & STATF_PET)
+  REF1=<UID.<ATTACKER.MAX>.OWNER>
+  IF <REF1.LUCK> >= 0
+   TAG.LUCK=<REF1.LUCK>
+  ENDIF
+ ELSE
+  IF (<UID.<ATTACKER.MAX>.LUCK> > 0)
+   TAG.LUCK=<UID.<ATTACKER.MAX>.LUCK>
+  ENDIF
+ ENDIF
+ENDIF
+FOR <R1,3>
+ RANDMAGICITEM
+ENDFOR
+IF (!(STRCMPI(Doom,<REGION.NAME>)))
+ NEWLOOT i_reag_daemon_bone,<HVAL (<maxhits>/17)+(<dex>/13)+(<int>/12)>
+ENDIF
+if (<MAGERY>) && (33 > <R100>)
+ NEWLOOT=random_scroll
+endif
+//IF (3 > <R100>)
+// NEWLOOT=i_bracelet_binding
+//ENDIF
+//IF (4 > <R100>)
+// NEWLOOT=i_crystal_ball_pet_summoning
+//ENDIF
+IF (<TAG0.TREASUREMAP.LEVEL>) && (<FLOATVAL <DEF.TREASUREMAPDROPCHANCE>> > <RANDOMDOUBLE>)
+ NEWLOOT=i_osi_treasure_map
+ENDIF
+
 if <def.scp.followers> == 1
-	if <src.memoryfindtype.memory_ipet>
-		if !<src.tag0.summonfail>
-		ref7 = <src.memoryfindtype.memory_ipet.link.uid>
-		ref7.curfollower -= <qval <src.tag0.control.slots> ? <src.tag0.control.slots> : 1>
-		endif
-	endif
+    if <src.memoryfindtype.memory_ipet>
+        if !<src.tag0.summonfail>
+        ref7 = <src.memoryfindtype.memory_ipet.link.uid>
+        ref7.curfollower -= <qval <src.tag0.control.slots> ? <src.tag0.control.slots> : 1>
+        endif
+    endif
 endif
 // Death Robe Fix
 if <findlayer.22>
 tag.robe=<findlayer.22.uid>
-	if <findlayer.3>
-	tag.feet=<findlayer.3.uid>
-	endif
+    if <findlayer.3>
+    tag.feet=<findlayer.3.uid>
+    endif
 endif
 // Quest System
 ref42 = <attacker.max>
 if (<ref42.tag0.quests>)
-	for <ref42.tag0.quests>
-		for x 1 <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objectiveamount>
-			if <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>_type> == 2
-				if (<baseid> == <streat <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>>)
-					if (<ref42.tag0.quest<dlocal._for>.slay<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>>>)
-						if !(<isempty <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>_location>>)
-							if (strmatch(*<def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.x>_location>*,<region.name>))
-							ref42.tag.quest<dlocal._for>.slay<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>> --
-							endif
-						else
-						ref42.tag.quest<dlocal._for>.slay<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>> --
-						endif
-						if !(<ref42.tag0.quest<dlocal._for>.slay<streat <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>>>)
-						sysmessage <def.scp.quest_complete>
-						else
-						sysmessage @,,2 1075051,<ref42.dtag0.quest<dlocal._for>.slay<streat <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>>>
-						endif
-					endif
-				endif
-			endif
-		endfor
-	endfor
+    for <ref42.tag0.quests>
+        for x 1 <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objectiveamount>
+            if <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>_type> == 2
+                if (<baseid> == <streat <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>>)
+                    if (<ref42.tag0.quest<dlocal._for>.slay<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>>>)
+                        if !(<isempty <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>_location>>)
+                            if (strmatch(*<def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.x>_location>*,<region.name>))
+                            ref42.tag.quest<dlocal._for>.slay<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>> --
+                            endif
+                        else
+                        ref42.tag.quest<dlocal._for>.slay<streat <def.quest_<dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>> --
+                        endif
+                        if !(<ref42.tag0.quest<dlocal._for>.slay<streat <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>>>)
+                        sysmessage <def.scp.quest_complete>
+                        else
+                        sysmessage @,,2 1075051,<ref42.dtag0.quest<dlocal._for>.slay<streat <def.quest_<ref42.dtag0.quest<dlocal._for>.id>_objective<dlocal.x>>>>
+                        endif
+                    endif
+                endif
+            endif
+        endfor
+    endfor
 endif
 
 // Quest System
@@ -60,30 +264,133 @@ argo.update
 endif
 ref94 = <attacker.max>
 if <ref94.tag0.quests>
-	for x 1 <ref94.tag0.quests>
-		for y 1 <def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objectiveamount>
-			if <def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_type> == 6
-				if <baseid> == <streat <def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>>>
-					if <isempty <def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_location>>
-					ref94.f_quest_gotitem <uid>,<local.x>,<local.y>
-					else
-						if (strmatch(<ref94.region.name>,*<def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_location>*))
-						ref94.f_quest_gotitem <uid>,<local.x>,<local.y>
-						endif
-					endif
-				endif
-			endif
-		endfor
-	endfor
+    for x 1 <ref94.tag0.quests>
+        for y 1 <def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objectiveamount>
+            if <def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_type> == 6
+                if <baseid> == <streat <def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>>>
+                    if <isempty <def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_location>>
+                    ref94.f_quest_gotitem <uid>,<local.x>,<local.y>
+                    else
+                        if (strmatch(<ref94.region.name>,*<def.quest_<ref94.dtag0.quest<dlocal.x>.id>_objective<dlocal.y>_location>*))
+                        ref94.f_quest_gotitem <uid>,<local.x>,<local.y>
+                        endif
+                    endif
+                endif
+            endif
+        endfor
+    endfor
 endif
+
+TAG.LASTCASTING=
+IF (STRMATCH(*<BASEID>*,<DEF.UNDEAD_SLAYER>))
+ARGO.TAG.UNDEADREMAINS=1
+ENDIF
+ARGO.TAG.OWNER.FAME=<FAME>
+LOCAL.OLDNEW=<NEW>
+IF (<ATTACKER>)
+REF5=<ATTACKER.MAX>
+    IF (!(<FLAGS>&STATF_CONJURED))
+    SERV.NEWITEM=i_gold,<EVAL (<maxhits>/14)+(<dex>/10)+(<int>/9)>,<ARGO.UID>
+        IF (<REF5.TAG0.GOLDINCREASE>)
+        SERV.NEWITEM=i_gold,<R1,<EVAL (<ARGO.RESCOUNT i_gold>*<REF5.TAG0.GOLDINCREASE>)/100>>,<ARGO.UID>
+        ENDIF
+        IF (<REF5.UID>)
+            IF (<REF5.ISPLAYER>)
+                IF (<REGION.TAG0.VIRTUEDUNGEON>)
+                FLOAT.DROPCHANCE=<FLOATVAL 0.001+(<REF5.LUCK>/500000)>
+                    IF (<FLOAT.DROPCHANCE> > <RANDOMDOUBLE>)
+                    LOCAL.OLDNEW=<NEW>
+                    SERV.NEWITEM <HVAL <DEF.virtue_artifacts>>
+                    REF5.BOUNCE <NEW>
+                    REF5.SYSMESSAGELOC -1,1062317
+                    LOCAL.ALREADYGAVEARTY=1
+                    NEW=<LOCAL.OLDNEW>
+                    ENDIF
+                ENDIF
+                IF (<REF5.GUILD>)
+                LOCAL.ALLYPOINTS=<EVAL (<maxhits>/14)+(<dex>/14)+(<int>/14)+(<skilltotal>/200)>
+                REF5.GUILD.TAG0.ALLYPOINTS += <LOCAL.ALLYPOINTS>
+                REF5.SYSMESSAGE @,3,1 You just gained <dLOCAL.ALLYPOINTS> alliance points for your guild.
+                ENDIF
+                //FOR <R3,4>
+// ARRUMAR AKI!!!        //    IF (<REF5.LUCK> >= <R<EVAL (220*<dLOCAL._FOR>)+300>>)
+                //    ARGO.RANDMAGICITEM
+                //    ENDIF
+                //ENDFOR
+            ENDIF
+        ENDIF
+        FOR y 0 <EVAL <ATTACKER>-1>
+            IF (<ATTACKER.<dLOCAL.Y>>)
+                IF (<ATTACKER.<dLOCAL.Y>.DAM>)
+                REF400=<ATTACKER.<dLOCAL.Y>>
+                    //Looting Rights
+                    IF (!(<REF400.ISINPARTY>))
+                    ARGO.TAG.LOOTRIGHTLIST .= <REF400>;
+                    ELSE
+                    //get party members
+                    ARGO.TAG.LOOTRIGHTLIST .= <REF400.F_LIST_ALLPARTYMEMBERS>
+                    ENDIF
+                    //Treasures of Tokuno
+                    IF (<DEF0.ToTs_Are_Active>)
+
+                     LOCAL.POINTS=<REF400.dTAG0.ToTPoints>
+                     FLOAT.FAME=<FLOATVAL ((<FAME>*1.1)*(1+((SQRT(<REF400.LUCK>))/100)>
+                     LOCAL.POINTS=<EVAL <LOCAL.POINTS>+(<FEVAL <FLOAT.FAME>>)>
+                     //REF400.SYSMESSAGE @,,1 [ToT Sys] OldPoints: <REF400.dTAG0.ToTPoints> NewPoints: <dLOCAL.POINTS>
+                     REF400.TAG.ToTPoints=<dLOCAL.POINTS>
+                     FLOAT.CONSTA=0.000863
+                     FLOAT.CONSTB=0.000005
+                     FLOAT.CHANCE=<FLOATVAL (<FLOAT.CONSTA>*(10@(<FLOAT.CONSTB>*<dLOCAL.POINTS>)))>
+                     IF (<FLOAT.CHANCE> > <RANDOMDOUBLE>)
+                      REF400.SYSMESSAGELOC -1,1062317
+                      REF400.CREATEITEM LesserTots
+                      REF400.TAG.ToTPoints=
+                     ENDIF
+                    ENDIF                    //Quest Handling stuff
+                    IF (<REF400.TAG0.QUESTS>)
+                        FOR <REF400.TAG0.QUESTS>
+                            FOR x 1 <DEF.QUEST_<EVAL <REF400.TAG0.QUEST<EVAL <LOCAL._FOR>>.ID>>_OBJECTIVEAMOUNT>
+                                IF (<DEF.QUEST_<EVAL <REF400.TAG0.QUEST<EVAL <LOCAL._FOR>>.ID>>_OBJECTIVE<EVAL <LOCAL.X>>_TYPE>==2)
+                                    IF (<BASEID> == <STREAT <DEF.QUEST_<EVAL <REF400.TAG0.QUEST<EVAL <LOCAL._FOR>>.ID>>_OBJECTIVE<EVAL <LOCAL.X>>>>)
+                                    LOCAL.SLAY=<REF400.TAG0.QUEST<EVAL <LOCAL._FOR>>.SLAY<STREAT <DEF.QUEST_<EVAL <REF400.TAG0.QUEST<EVAL <LOCAL._FOR>>.ID>>_OBJECTIVE<EVAL <LOCAL.X>>>>>
+                                        IF (<LOCAL.SLAY>)
+                                            IF (!(STRMATCH(*<REF400>;*,<LOCAL.UIDSGIVENKILLCOUNT>)))
+                                                IF !(<ISEMPTY <DEF.QUEST_<EVAL <REF400.TAG0.QUEST<EVAL <LOCAL._FOR>>.ID>>_OBJECTIVE<EVAL <LOCAL.X>>_LOCATION>>)
+                                                    IF (STRMATCH(*<DEF.QUEST_<EVAL <REF400.TAG0.QUEST<EVAL <LOCAL._FOR>>.ID>>_OBJECTIVE<EVAL <LOCAL.X>>_LOCATION>*,<REGION.NAME>))
+                                                    TRY REF400.TAG.QUEST<dLOCAL._FOR>.SLAY<STREAT <DEF.QUEST_<EVAL <REF400.TAG0.QUEST<dLOCAL._FOR>.ID>>_OBJECTIVE<dLOCAL.X>>>=<HVAL <LOCAL.SLAY>-1>
+                                                    ENDIF
+                                                ELSE
+                                                TRY REF400.TAG.QUEST<dLOCAL._FOR>.SLAY<STREAT <DEF.QUEST_<EVAL <REF400.TAG0.QUEST<dLOCAL._FOR>.ID>>_OBJECTIVE<dLOCAL.X>>>=<HVAL <LOCAL.SLAY>-1>
+                                                ENDIF
+                                            LOCAL.UIDSGIVENKILLCOUNT .= <REF400>;
+                                                IF (<EVAL (<LOCAL.SLAY>-1)> <= 0)
+                                                TRY REF400.TAG.QUEST<dLOCAL._FOR>.SLAY<STREAT <DEF.QUEST_<EVAL <REF400.TAG0.QUEST<dLOCAL._FOR>.ID>>_OBJECTIVE<EVAL <LOCAL.X>>>>
+                                                REF400.sysmessageloc -1,1075050
+                                                ELSE
+                                                REF400.sysmessageloc -1,1075051,<EVAL (<LOCAL.SLAY>-1)>
+                                                ENDIF
+                                            ENDIF
+                                        ENDIF
+                                    ENDIF
+                                ENDIF
+                            ENDFOR
+                        ENDFOR
+                    ENDIF
+                ENDIF
+            ENDIF
+        ENDFOR
+    ENDIF
+ENDIF
+NEW=<LOCAL.OLDNEW>
+TIMERF CLEAR
 
 // Followers (Death?)
 on=@destroy
 if <def.scp.followers> == 1
-	if <memoryfindtype.memory_ipet>
-	ref7 = <memoryfindtype.memory_ipet.link.uid>
-	ref7.curfollower -= <qval <tag0.control.slots> ? <tag0.control.slots> : 1>
-	endif
+    if <memoryfindtype.memory_ipet>
+    ref7 = <memoryfindtype.memory_ipet.link.uid>
+    ref7.curfollower -= <qval <tag0.control.slots> ? <tag0.control.slots> : 1>
+    endif
 endif
 
 // Followers (Desert)
@@ -97,55 +404,55 @@ endif
 on=@spelleffect
 tag.spellhit = <argn1>
 if <isdamagespell <argn1>>
-	if <def.scp.Combat_SpellBonus> == 1
-	tag.gothitbyspell = <argn1>
-	endif
+    if <def.scp.Combat_SpellBonus> == 1
+    tag.gothitbyspell = <argn1>
+    endif
 elif <serv.spell.<argn1>.flags>&spellflag_summon
-	if <def.scp.followers> == 1
-	local.slots = <qval <tag0.control.slots> ? <tag0.control.slots>:1>
-		if <eval <src.curfollower>+<local.slots>> > <src.maxfollower>
-		src.sysmessage You have too many followers
-		tag.summonfail = 1
-		hits = 0
-		else
-		src.curfollower += <local.slots>
-		events +e_NpcSummoned
-		endif
-	endif
+    if <def.scp.followers> == 1
+    local.slots = <qval <tag0.control.slots> ? <tag0.control.slots>:1>
+        if <eval <src.curfollower>+<local.slots>> > <src.maxfollower>
+        src.sysmessage You have too many followers
+        tag.summonfail = 1
+        hits = 0
+        else
+        src.curfollower += <local.slots>
+        events +e_NpcSummoned
+        endif
+    endif
 endif
 if <flags>&statf_reflection
-	if <src.uid> != <uid>
-		if (<serv.spell.<argn1>.flags>&spellflag_harm) || <argn> == 41
-		flags &= ~statf_reflection
-		findid.i_rune_magic_reflection.remove
-		effect 3,i_fx_bless_effect,16,16
-			if <src.flags>&statf_reflection
-			src.flags &= ~statf_reflection
-			src.findid.i_rune_magic_reflection.remove
-			src.effect 3,i_fx_bless_effect,16,16
-			else
-			src.spelleffect <argn1>,<argn2>
-			endif
-		return 1
-		endif
-	endif
+    if <src.uid> != <uid>
+        if (<serv.spell.<argn1>.flags>&spellflag_harm) || <argn> == 41
+        flags &= ~statf_reflection
+        findid.i_rune_magic_reflection.remove
+        effect 3,i_fx_bless_effect,16,16
+            if <src.flags>&statf_reflection
+            src.flags &= ~statf_reflection
+            src.findid.i_rune_magic_reflection.remove
+            src.effect 3,i_fx_bless_effect,16,16
+            else
+            src.spelleffect <argn1>,<argn2>
+            endif
+        return 1
+        endif
+    endif
 endif
 
 // Poisoning System
 on=@hittry
 if <def.scp.NewSkills_Poisoning> == 1
-	if <poisoning> >= <def.scp.Poisoning_MonsterPoisonous>
-	tag.skill.poisoning = <min <eval (<poisoning> + 1) / (<def.scp.Poisoning_MonsterPoisonous> + 1)>,6>
-	endif
+    if <poisoning> >= <def.scp.Poisoning_MonsterPoisonous>
+    tag.skill.poisoning = <min <eval (<poisoning> + 1) / (<def.scp.Poisoning_MonsterPoisonous> + 1)>,6>
+    endif
 poisoning = 0
 endif
 
 // Poisoning System
 on=@hit
 if <def.scp.NewSkills_Poisoning> == 1
-	if <tag0.skill.poisoning>
-	src.new_poison <max <eval <tag0.skill.poisoning>-2>,0>,<uid>
-	endif
+    if <tag0.skill.poisoning>
+    src.new_poison <max <eval <tag0.skill.poisoning>-2>,0>,<uid>
+    endif
 endif
 
 [eof]

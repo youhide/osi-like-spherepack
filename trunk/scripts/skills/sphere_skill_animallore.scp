@@ -19,7 +19,7 @@ STAT_DEX=0
 BONUS_STR=0
 BONUS_DEX=0
 BONUS_INT=100
-BONUS_STATS=50
+BONUS_STATS=0
 
 on=@wait
 if <def.scp.NewSkills_AnimalLore> == 1

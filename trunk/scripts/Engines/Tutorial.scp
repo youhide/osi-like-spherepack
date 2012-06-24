@@ -1,0 +1,220 @@
+[CHARDEF C_TUTORIAL_WANDERER]
+ID=c_man
+NAME=tutorial dummy
+DAM=1,1
+ARMOR=100
+
+ON=@Create
+NAME=The Wanderer
+NPC=brain_human
+STR=1
+DEX=0
+INT=1
+FLAGS |= statf_invul|statf_freeze
+COLOR=colors_skin
+ITEMNEWBIE=i_hair_long
+ITEMNEWBIE=i_robe
+COLOR=04ed
+
+ON=@GetHit
+RETURN 1
+
+ON=@HitTry
+ACTION -1
+RETURN 1
+
+[SPEECH spk_tutorial]
+ON=**
+sysmessageloc -1,500168
+RETURN 1
+
+[EVENTS e_tutorial]
+ON=@Login
+SDIALOG d_tutorial <TAG0.TUTORIALPAGE>
+DSPEECH +spk_tutorial
+
+ON=@GetHit
+RETURN 1
+
+ON=@HitTry
+ACTION -1
+RETURN 1
+
+ON=@SpellCast
+ACTION -1
+RETURN 1
+
+[DIALOG d_tutorial]
+350,230
+noclose
+src.closealldialogs
+
+PAGE 0
+gumppic 0 0 2702
+gumppic 0 46 2702
+gumppic 0 92 2702
+gumppic 8 0 2702
+gumppic 8 46 2702
+gumppic 8 92 2702
+
+resizepic 12 260 9200 270 40
+
+FOR 19
+IF (<LOCAL._FOR> <= 18)
+gumppic <EVAL (<LOCAL._FOR>*15)> 0 0280a
+gumppic <EVAL (<LOCAL._FOR>*15)> 286 0280a
+ENDIF
+gumppic 0 <EVAL (<LOCAL._FOR>*15)> 027dd
+gumppic 277 <EVAL (<LOCAL._FOR>*15)> 027dd
+ENDFOR
+
+gumppic 0 286 02841
+gumppic 277 286 02843
+
+gumppic 0 0 0283f
+gumppic 277 0 0283d
+
+PAGE 1
+xmfhtmlgumpcolor 23 25 248 228 1075466 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 2
+
+PAGE 2
+xmfhtmlgumpcolor 23 25 248 228 1075467 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 3
+
+PAGE 3
+xmfhtmlgumpcolor 23 25 248 228 1075468 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 4
+
+PAGE 4
+xmfhtmlgumpcolor 23 25 248 228 1075469 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 5
+
+PAGE 5
+xmfhtmlgumpcolor 23 25 248 228 1075470 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 6
+
+PAGE 6
+xmfhtmlgumpcolor 23 25 248 228 1075471 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 7
+
+PAGE 7
+xmfhtmlgumpcolor 23 25 248 228 1075472 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 8
+
+PAGE 8
+xmfhtmlgumpcolor 23 25 248 228 1075474 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 9
+
+PAGE 9
+xmfhtmlgumpcolor 23 25 248 228 1075475 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 10
+
+PAGE 10
+xmfhtmlgumpcolor 23 25 248 228 1075476 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1043353 0 0 1
+xmfhtmlgumpcolor 165 265 50 20 1006045 0 0 1
+button 130 262 4019 4018 1 0 1
+button 20 262 4005 4006 1 0 11
+
+PAGE 11
+xmfhtmlgumpcolor 23 25 248 228 1075477 0 1 26574
+xmfhtmlgumpcolor 55 265 50 20 1052072 0 0 1
+button 20 262 0fb9 0fb8 1 0 12
+
+[DIALOG d_tutorial BUTTON]
+ON=1
+SDIALOG d_TUTORIAL_SAIR
+
+ON=2 11
+TAG.TUTORIALPAGE=<ARGN1>
+SDIALOG d_TUTORIAL <ARGN1>
+IF ((<ARGN1> >= 4) && (<ARGN1> <= 9))
+REMOVEFROMVIEW
+IF (<ARGN1> == 4)
+MOVETO 1437,1698,6
+ELIF (<ARGN1> == 5)
+MOVETO 1427,1559,30
+ELIF (<ARGN1> == 6)
+MOVETO 926,510,-90,3
+ELIF (<ARGN1> == 7)
+MOVETO 1234,2281
+ELIF (<ARGN1> == 8)
+MOVETO 7038,403,6
+ELIF (<ARGN1> == 9)
+MOVETO 377,139,2,3
+ENDIF
+UPDATEX
+ENDIF
+
+ON=12
+FLAGS &= ~statf_freeze
+FLAGS &= ~statf_invul
+FLAGS &= ~statf_insubstantial
+GO <TAG0.TUTORIALSTARTP>
+FLAGS &= ~statf_invisible
+TAG.TUTORIALSTARTP
+TAG.TUTORIALPAGE
+EVENTS -e_tutorial
+DSPEECH -spk_tutorial
+TIMERF 2,OPENDNEWPLAYERDIALOG
+
+[DIALOG d_TUTORIAL_SAIR]
+100,210
+noclose
+src.closealldialogs
+PAGE 0
+resizepic 9 10 9200 301 97
+gumppictiled 14 15 290 60 2702
+xmfhtmlgumpcolor 19 20 270 40 1075520 0 0 32767
+button 15 80 4019 4018 1 0 1
+xmfhtmlgumpcolor 50 82 50 20 1075519 0 0 32767
+button 120 80 0fb9 0fb8 1 0 2
+xmfhtmlgumpcolor 155 82 50 20 1046362 0 0 32767
+
+[DIALOG d_TUTORIAL_SAIR BUTTON]
+ON=1
+SDIALOG d_tutorial <TAG0.TUTORIALPAGE>
+
+ON=2
+FLAGS &= ~statf_freeze
+FLAGS &= ~statf_invul
+FLAGS &= ~statf_insubstantial
+GO <TAG0.TUTORIALSTARTP>
+FLAGS &= ~statf_invisible
+TAG.TUTORIALSTARTP
+TAG.TUTORIALPAGE
+EVENTS -e_tutorial
+DSPEECH -spk_tutorial
+IF (<ACCOUNT.CHARS> == 1) && (<ACCOUNT.TOTALCONNECTTIME> < <EVAL 60*60*24*7>)
+TIMERF 2,OPENDNEWPLAYERDIALOG
+ENDIF
+
+[EOF]

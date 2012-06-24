@@ -80,20 +80,20 @@ return 0
 [function f_slayer]
 
 [function f_slayer_cliloc]
-if <act.tag0.slayer.less>
-addcliloc <def.slayer_<act.tag0.slayer.less>_cliloc>
-elif <act.tag0.slayer.super>
-addcliloc <def.slayer_<act.tag0.slayer.super>_cliloc>
-endif
+IF <ACT.TAG0.SLAYER.LESS>
+ ADDCLILOC <DEF.SLAYER_<DEF.<ACT.TAG0.SLAYER.LESS>>_CLILOC>
+ELIF <ACT.TAG0.SLAYER.SUPER>
+ ADDCLILOC <DEF.SLAYER_<DEF.<ACT.TAG0.SLAYER.SUPER>>_CLILOC>
+ENDIF
 
 [function f_slayer_isprop]
-if <tag0.slayer.less>
-return 1
-endif
-if <tag0.slayer.super>
-return 1
-endif
-return 0
+IF <TAG0.SLAYER.LESS>
+ RETURN 1
+ENDIF
+IF <TAG0.SLAYER.SUPER>
+ RETURN 1
+ENDIF
+RETURN 0
 
 
 ///////////////////////////////////////////////////////////////
@@ -102,34 +102,34 @@ return 0
 [function f_skillbonus]
 local.isused = 1
 for 1 5
-	if !<tag0.skill.bonus.<dlocal._for>>
+	if !<ACT.tag0.skill.bonus.<dlocal._for>>
 		while (<local.isused> > 0)
 		local.isused = 0
 		local.toset = <r56>
 			for x <local._for>
-				if <getargv 0 <tag0.skill.bonus.<dlocal.x>>> == <local.toset>
+				if <getargv 0 <ACT.tag0.skill.bonus.<dlocal.x>>> == <local.toset>
 				local.isused = 1
 				endif
 			endfor
 		endwhile
-	tag0.skill.bonus.<dlocal._for> = <local.toset>,<args>
+	ACT.tag0.skill.bonus.<dlocal._for> = <local.toset>,<args>
 	endif
 endfor
 
 [function f_skillbonus_cliloc]
 local.cliloc = 1060451 // ~1_skillname~ +~2_val~
 for 1 5
-	if <tag0.skill.bonus.<dlocal._for>>
-	args = <tag0.skill.bonus.<dlocal._for>>
-	addcliloc <local.cliloc>,<argv[0]>,<argv[1]>
-	local.cliloc ++
+	if <ACT.tag0.skill.bonus.<dlocal._for>>
+	 args = <ACT.tag0.skill.bonus.<dlocal._for>>
+	 addcliloc <local.cliloc>,<serv.skill.<argv[0]>.name>,<argv[1]>
+	 local.cliloc ++
 	endif
 endfor
 
 [function f_skillbonus_isprop]
 local.bonus = 0
 for 1 5
-	if <tag0.skill.bonus.<dlocal._for>>
+	if <ACT.tag0.skill.bonus.<dlocal._for>>
 	local.bonus ++
 	endif
 endfor

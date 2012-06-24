@@ -849,7 +849,7 @@ ON=@Hit
 //FIXME: "humans can only ride when wearing pads of the cu-sidhe."
 //FIXME: "has healing and if owner is at 80% max health and not mouted it will heal."
 DEFNAME=c_cu_sidhe
-NAME=cu sidhe
+NAME=Cu Sidhe
 ICON=i_pet_cu_sidhe
 SOUND=snd_animal_cusidhe
 CAN=MT_WALK|MT_RUN|MT_NONHUM
@@ -896,23 +896,26 @@ ON=@Create
    RESFIRE={30 45}
    RESPOISON={30 50}
 ON=@NPCRestock
-   ITEM=loot_cu_sidhe
-   //1500 - 1900 Gold. Armor, Weapons, Bandages
-   //Special: Parrot, Level 5 Maps
+ITEM=loot_cu_sidhe
+//1500 - 1900 Gold. Armor, Weapons, Bandages
+//Special: Parrot, Level 5 Maps
 ON=@Hit
-   //Bleed Attack
-   IF (<MANA> >= 25) && !(<SRC.FINDID.i_bleed_timer>)
-      MANA -= 25
-      SRC.NEWITEM i_bleed_timer
-      NEW.LINK=<UID>
-      SRC.EQUIP <NEW>
-   ENDIF
+//Bleed Attack
+IF (<MANA> >= 25) && !(<SRC.FINDID.i_bleed_timer>)
+ MANA -= 25
+ LOCAL.OLDNEW <NEW>
+ SERV.NEWITEM i_bleed_timer
+ REF1 <NEW>
+ NEW <LOCAL.OLDNEW>
+ NEW.LINK=<UID>
+ SRC.EQUIP <REF1>
+ENDIF
 
 [CHARDEF 0317]
 //FIXME: Increases speed when hit with ranged attack.
 //FIXME: Half stats when tamed.
 DEFNAME=c_giant_beetle
-NAME=giant beetle
+NAME=Giant Beetle
 ICON=i_pet_beetle_giant
 SOUND=snd_monster_rune_beetle
 CAN=MT_WALK|MT_RUN|MT_NONHUM

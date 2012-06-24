@@ -1,0 +1,244 @@
+[ITEMDEF i_quest1_coucil_mages_leater]
+ID=i_book_sm
+TYPE=T_NORMAL
+NAME=Carta para o conselho
+
+ON=@Create
+ATTR |= attr_newbie
+
+[ITEMDEF i_quest1_superior_leater]
+ID=i_book_sm
+TYPE=T_NORMAL
+NAME=Carta para o seu superior
+
+ON=@Create
+ATTR |= attr_newbie
+
+[ITEMDEF i_quest1_investigator_leater]
+ID=i_book_sm
+TYPE=T_NORMAL
+NAME=Carta para o investigador
+
+ON=@Create
+ATTR |= attr_newbie
+
+[ITEMDEF i_quest1_bloodsample]
+ID=i_reag_blood_vial
+NAME=Blood sample
+TYPE=T_NORMAL
+
+ON=@Create
+ATTR |= attr_newbie
+
+[CHARDEF c_trudor]
+ID=c_man
+CAN=MT_WALK|MT_EQUIP|MT_USEHANDS
+DAM=16,23
+NAME=Trudor
+ARMOR=65
+MOVERATE=30
+CATEGORY=Monsters
+SUBSECTION=Storyline
+DESCRIPTION=Trudor
+
+ON=@Create
+COLOR=colors_skin
+KARMA=-8000
+FAME=6000
+NPC=brain_monster
+STR=400
+MAXHITS=1200
+DEX=140
+INT=100
+SWORDSMANSHIP=100.0
+WRESTLING=100.0
+TACTICS=100.0
+ANATOMY=90.0
+MAGICRESISTANCE=70.0
+PARRYING=33.3
+ITEMNEWBIE=i_axe
+ITEMNEWBIE=i_ringmail_gloves
+ITEMNEWBIE=i_ringmail_tunic
+ITEMNEWBIE=i_ringmail_leggings
+ITEMNEWBIE=i_ringmail_sleeves
+
+[ITEMDEF i_capuz_da_figura]
+ID=i_hooded_shroud
+NAME=Black Hooded Shroud
+TYPE=T_NORMAL
+
+ON=@Create
+COLOR=colors_black
+
+ON=@EquipTest
+RETURN 1
+
+[CHARDEF c_figura_encapuzada]
+ID=c_man
+CAN=MT_WALK|MT_EQUIP|MT_USEHANDS
+DAM=20,28
+NAME=???
+ARMOR=70
+MOVERATE=30
+CATEGORY=Monsters
+SUBSECTION=Storyline
+DESCRIPTION=???
+
+ON=@Create
+COLOR=colors_skin
+NPC=brain_monster
+KARMA=-10000
+FAME=8000
+STR=550
+MAXHITS=3200
+DEX=180
+INT=400
+WRESTLING=105.0
+TACTICS=100.0
+ANATOMY=90.0
+MAGICRESISTANCE=100.0
+PARRYING=33.3
+MAGERY=105.0
+EVALUATINGINTEL=100.0
+ITEMNEWBIE=i_hooded_shroud
+COLOR=01
+
+ON=@Death
+NEWLOOT=i_capuz_da_figura
+
+[DEFNAME EVENT_STORYLINE]
+QUESTS_STORYLINE_1 01
+
+QUEST_1000_NAMELOCALIZED Trabalho de embaixador, Parte 1
+QUEST_1000_TEXTLOCALIZED Uma sombra esta' se abatendo sobre o mundo. O feitico realizado pelo Council of Mages de Magincia que falhou a decadas reverbera ate' os dias de hoje. Enviamos embaixadores para Moonglow, onde o conselho se estabeleceu, mas nunca recebemos noticias, preciso que um heroi valente va' ate a cidade e obtenha mais informacoes. Leve essa carta para o High Council Torondor e ele ira' lhe passar informacoes.
+QUEST_1000_TEXTCOMPLETELOCALIZED O que e' isso? Deixe-me ver!
+QUEST_1000_TEXTUNCOMPLETELOCALIZED Rapido, essa e' uma tarefa muito importante e precisamos de sua ajuda!
+QUEST_1000_TEXTREFUSELOCALIZED Uma pena, mas tenho certeza que ha' alguem disposto em algum lugar.
+QUEST_1000_OBJECTIVEAMOUNT 1
+QUEST_1000_OBJECTIVE1_TYPE 3
+QUEST_1000_OBJECTIVE1_RECEIVER Council Member Torondor
+QUEST_1000_OBJECTIVE1 1 i_quest1_coucil_mages_leater
+QUEST_1000_OBJECTIVE1_TIME 3600
+QUEST_1000_PRIZES 1
+QUEST_1000_PRIZETYPE1 2 //nothing
+QUEST_1000_PRIZEID1 0 Informacoes.
+QUEST_1000_CHAIN 1001
+
+QUEST_1001_NAMELOCALIZED Trabalho de embaixador, Parte 2
+QUEST_1001_TEXTLOCALIZED Hummm... Nos encontramos seus emissarios sim... infelizmente, acredito que nao da forma que voce gostaria. Eles foram encontrados mortos ha algumas leguas da cidade. Acredito que voce deva retornar a Britain e informar seu superior. Leve esta carta com a localizacao de onde os corpos foram encontrados.
+QUEST_1001_TEXTCOMPLETELOCALIZED Deixe-me ver a carta.
+QUEST_1001_TEXTUNCOMPLETELOCALIZED Voce deveria se apressar...
+QUEST_1001_TEXTREFUSELOCALIZED Entendo, tentarei enviar um de meus emissarios.
+QUEST_1001_OBJECTIVEAMOUNT 1
+QUEST_1001_OBJECTIVE1_TYPE 3
+QUEST_1001_OBJECTIVE1 1 i_quest1_superior_leater
+QUEST_1001_OBJECTIVE1_RECEIVER Embassy Member Tiristar
+QUEST_1001_OBJECTIVE1_TIME 3600
+QUEST_1001_PRIZES 1
+QUEST_1001_PRIZETYPE1 2 //nothing
+QUEST_1001_PRIZEID1 0 Informacoes.
+QUEST_1001_ISCHAIN 1000;
+QUEST_1001_CHAIN 1002
+
+QUEST_1002_NAMELOCALIZED Trabalho de embaixador, Parte 3
+QUEST_1002_TEXTLOCALIZED Nao acredito nisso! Como foi possivel? Precisamos descobrir quem estava atras disso. Leve um pedido ao investigador do Castelo.
+QUEST_1002_TEXTCOMPLETELOCALIZED Meu deus, precisamos ir ja'!
+QUEST_1002_TEXTUNCOMPLETELOCALIZED Rapido, procure o investigador...
+QUEST_1002_TEXTREFUSELOCALIZED Hunf! Eu mesmo irei la, ja' que e' uma tarefa que exige demais de sua grandeza!
+QUEST_1002_OBJECTIVEAMOUNT 1
+QUEST_1002_OBJECTIVE1_TYPE 3
+QUEST_1002_OBJECTIVE1 1 i_quest1_investigator_leater
+QUEST_1002_OBJECTIVE1_RECEIVER Investigator John
+QUEST_1002_OBJECTIVE1_TIME 3600
+QUEST_1002_PRIZES 1
+QUEST_1002_PRIZETYPE1 2 //nothing
+QUEST_1002_PRIZEID1 0 Informacoes.
+QUEST_1002_ISCHAIN 1000;1001;
+QUEST_1002_CHAIN 1003
+
+QUEST_1003_NAMELOCALIZED Trabalho de embaixador, Parte 4
+QUEST_1003_TEXTLOCALIZED Sera' que voce poderia me levar ao local onde aconteceu a morte?
+QUEST_1003_TEXTCOMPLETELOCALIZED Interessante... Examine aquela poca de sangue atentamente meu jovem.
+QUEST_1003_TEXTUNCOMPLETELOCALIZED Segundo o mapa que voce trouxe, o local fica proximo a moonglow, descendo a estrada, do lado de uma arvore alaranjada solitaria proxima ao mar e ao cemiterio.
+QUEST_1003_TEXTREFUSELOCALIZED Certo, eu entendo. Vou procurar um guarda da cidade disposto a me ajudar.
+QUEST_1003_OBJECTIVEAMOUNT 1
+QUEST_1003_OBJECTIVE1_TYPE 4
+QUEST_1003_OBJECTIVE1 Investigation Spot
+QUEST_1003_PRIZES 1
+QUEST_1003_PRIZETYPE1 2 //nothing
+QUEST_1003_PRIZEID1 0 Informacoes.
+QUEST_1003_ISCHAIN 1000;1001;1002;
+QUEST_1003_CHAIN 1004
+
+QUEST_1004_NAMELOCALIZED Trabalho de embaixador, Parte 5
+QUEST_1004_TEXTLOCALIZED *Voce examina a poca de sangue e coleta uma amostra*
+QUEST_1004_TEXTCOMPLETELOCALIZED Deixe-me examinar a amostra.
+QUEST_1004_TEXTUNCOMPLETELOCALIZED Leve a amostra para Embassy Member Tiristar.
+QUEST_1004_TEXTREFUSELOCALIZED *...*
+QUEST_1004_OBJECTIVEAMOUNT 1
+QUEST_1004_OBJECTIVE1_TYPE 3
+QUEST_1004_OBJECTIVE1 1 i_quest1_bloodsample
+QUEST_1004_OBJECTIVE1_RECEIVER Embassy Member Tiristar
+QUEST_1004_PRIZES 1
+QUEST_1004_PRIZETYPE1 2 //nothing
+QUEST_1004_PRIZEID1 0 Informacoes.
+QUEST_1004_ISCHAIN 1000;1001;1002;1003;
+QUEST_1004_CHAIN 1005
+
+QUEST_1005_NAMELOCALIZED Trabalho de embaixador, Parte 6
+QUEST_1005_TEXTLOCALIZED Com magias de reconhecimento e leitura do passado descobrimos que o assassino foi um bandido chamado Trudor. Ele vive nas proximidades de Skara Brae. Va la e retire mais informacoes dele!
+QUEST_1005_TEXTCOMPLETELOCALIZED Vamos, conte-me tudo!
+QUEST_1005_TEXTUNCOMPLETELOCALIZED Ele esta proximo a Skara Brae.
+QUEST_1005_TEXTREFUSELOCALIZED Uma pena, seu trabalho estava indo tao bem.
+QUEST_1005_OBJECTIVEAMOUNT 1
+QUEST_1005_OBJECTIVE1_TYPE 2
+QUEST_1005_OBJECTIVE1 1 c_trudor
+QUEST_1005_PRIZES 1
+QUEST_1005_PRIZETYPE1 2 //nothing
+QUEST_1005_PRIZEID1 0 Informacoes.
+QUEST_1005_ISCHAIN 1000;1001;1002;1003;1004;
+QUEST_1005_CHAIN 1006
+
+QUEST_1006_NAMELOCALIZED Trabalho de embaixador, Parte 7
+QUEST_1006_TEXTLOCALIZED O que? Ele disse que uma figura encapusada procurou ele. Ele tambem disse que essa pessoa seguiu na direcao de Despise. Va atras dele e me traga seu Robe para investigarmos.
+QUEST_1006_TEXTCOMPLETELOCALIZED Muito bem, agora poderemos avancar bem nas investigacoes! Tome uma recompensa pelo seu enorme esforco.
+QUEST_1006_TEXTUNCOMPLETELOCALIZED Lembre-se, a figura partiu na direcao de Despise.
+QUEST_1006_TEXTREFUSELOCALIZED Precisarei mandar uma guarda real entao.
+QUEST_1006_OBJECTIVEAMOUNT 1
+QUEST_1006_OBJECTIVE1_TYPE 1
+QUEST_1006_OBJECTIVE1 1 i_capuz_da_figura
+QUEST_1006_PRIZES 2
+QUEST_1006_PRIZETYPE1 3 //function
+QUEST_1006_PRIZEID1 F_STORYLINEQUEST1_GIVE_PRIZE Bandit's Axe.
+QUEST_1006_PRIZETYPE2 1 //item
+QUEST_1006_PRIZEID2 tm_questlargebagtreasure A Large bag of treasure.
+QUEST_1006_ISCHAIN 1000;1001;1002;1003;1004;1005;
+
+[FUNCTION F_STORYLINEQUEST1_GIVE_PRIZE]
+IF (!(<TAG0.STORYLINEQUEST>&<DEF.QUESTS_STORYLINE_1>))
+TAG0.STORYLINEQUEST |= <DEF.QUESTS_STORYLINE_1>
+SERV.NEWITEM=i_axe
+NEW.COLOR=0482
+NEW.NAME=Bandit's Axe (first quest prize)
+NEW.GIVEITEMEVENT T_PROPRIEDADES
+NEW.TAG.DAMAGEINCREASE=35
+NEW.TAG.SWINGSPEEDINCREASE=20
+NEW.TAG.SPELLCHANNELING=1
+NEW.TAG.SPELLDAMAGEINCREASE=15
+NEW.TAG.FASTERCASTING=1
+NEW.ATTR |= <DEF.ATTR_NEWBIE>
+BOUNCE <NEW>
+OBJ.SAY @,3,1 Congratulations!
+EFFECT 3,i_fx_sparkle,16,30
+ELSE
+OBJ.SAY @,3,1 You have already done this quest.
+ENDIF
+
+[AREADEF a_firstquest_spot]
+EVENTS=r_default,r_default_rock,r_default_water,r_default_tree,r_default_grass
+NAME=Investigation Spot
+GROUP=ALLMAP
+P=4561,1277
+RECT=4557,1281,4568,1272,0
+
+[EOF]

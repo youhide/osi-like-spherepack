@@ -1,0 +1,276 @@
+[FUNCTION F_HASSKILLGREATER]
+FOR 0 54
+	IF (<I.<SERV.SKILL.<dLOCAL._FOR>.KEY>> >= 80.0)
+	RETURN 1
+	ENDIF
+ENDFOR
+RETURN 0
+
+[SPEECH spk_young]
+ON=I renounce my young player status
+IF (<ISEVENT.e_tutorial>)
+sysmessageloc -1,500168
+RETURN 1
+ENDIF
+IF (<ISEVENT.e_young>)
+MESSAGE @946,3,1 You lose your young status.
+NAME=<TAG0.BEFOREYOUNGNAME>
+TAG.BEFOREYOUNGNAME
+EVENTS -e_young
+DSPEECH -spk_young
+RESENDTOOLTIP 1
+ENDIF
+
+[EVENTS e_young]
+ON=@HitTry
+IF !(<TAG0.EVENT.ID>)
+	IF (<SRC.ISPLAYER>)
+	RETURN 1
+	ENDIF
+ENDIF
+
+ON=@PersonalSpace
+ARGN1=0
+
+ON=@SkillGain
+IF (<eval (<account.TOTALCONNECTTIME>/60)> >= 40) || (<SKILLTOTAL> >= 300.0) || (<F_HASSKILLGREATER>)
+MESSAGE @,,2 1019038
+NAME=<TAG0.BEFOREYOUNGNAME>
+TAG.BEFOREYOUNGNAME
+EVENTS -e_young
+DSPEECH -spk_young
+UPDATE
+ENDIF
+
+ON=@Hit
+IF !(<SRC.ISPLAYER>)
+	IF (<SRC.ACTION> == -1) || (<SRC.ACTION> == 069)
+	SRC.ATTACK <UID>
+	ENDIF
+ENDIF
+
+ON=@GetHit
+IF !(<TAG0.EVENT.ID>)
+	IF (<SRC.ISPLAYER>)
+	RETURN 1
+	ENDIF
+ENDIF
+
+ON=@Login
+DSPEECH +spk_young
+IF (<eval (<account.TOTALCONNECTTIME>/60)> >= 40) || (<SKILLTOTAL> >= 300.0)
+MESSAGE @,,2 1019038
+NAME=<TAG0.BEFOREYOUNGNAME>
+TAG.BEFOREYOUNGNAME
+EVENTS -e_young
+DSPEECH -spk_young
+UPDATE
+ENDIF
+
+ON=@ClientToolTip
+IF !(<TAG0.EVENT.ID>)
+SRC.ADDCLILOC 1049644,Young Player
+ENDIF
+
+ON=@DeathCorpse
+IF !(<TAG0.EVENT.ID>)
+GO 1470,1613,20
+ARGO.REMOVEFROMVIEW
+ARGO.P=1470,1613,20
+ARGO.UPDATE 1
+ENDIF
+
+ON=@SpellCast
+IF !(<TAG0.EVENT.ID>)
+	IF (<ACT.ISPLAYER>)
+		IF (!<ACT.ISEVENT.e_young>)
+		sysmessageloc -1,502650
+		ENDIF
+	ENDIF
+ENDIF
+
+ON=@LogOut
+IF !(<TAG0.EVENT.ID>)
+ARGN1=1
+ENDIF
+
+ON=@Attack
+IF !(<TAG0.EVENT.ID>)
+	IF (!<SRC.ISPLAYER>)
+	SRC.ATTACK <UID>
+	ENDIF
+ENDIF
+
+[FUNCTION HARMEDME]
+IF (!(<ISITEM>))
+FORCHARMEMORYTYPE MEMORY_HARMEDBY
+	IF (<LINK.ISITEM>)
+	RETURN 0
+	ENDIF
+	IF (<LINK> == <ARGS>)
+	RETURN 1
+	ELIF (<LINK.FLAGS>&STATF_PET)
+		IF (<LINK.OWNER> == <ARGS>)
+		RETURN 1
+		ENDIF
+	ENDIF
+ENDFOR
+ENDIF
+RETURN 0
+
+[FUNCTION ISFIGHTINGME]
+REF1=<ARGS>
+IF (<REF1.HARMEDME <UID>>)
+RETURN 1
+ENDIF
+FORCHARMEMORYTYPE MEMORY_FIGHT
+	IF (<LINK> == <ARGN1>)
+	RETURN 1
+	ENDIF
+ENDFOR
+RETURN 0
+
+[FUNCTION IAMFIGHTINGIT]
+FORCHARMEMORYTYPE MEMORY_WAR_TARG
+	IF (<LINK> == <ARGS>)
+	RETURN 1
+	ENDIF
+ENDFOR
+RETURN 0
+
+[DIALOG d_NEWPLAYER_TEXT]
+250,100
+noclose
+
+PAGE 0
+resizepic 30 15 5120 430 410
+
+FOR 29
+gumppic <EVAL (<LOCAL._FOR>*15)+15> 15 0280a
+IF (<LOCAL._FOR> < 29)
+gumppic <EVAL (<LOCAL._FOR>*15)+13> 420 0280a
+ENDIF
+ENDFOR
+gumppic 445 420 0280a
+
+gumppic 415 30 203
+gumppic 415 75 203
+gumppic 415 105 203
+FOR 13
+gumppic 415 <EVAL (<LOCAL._FOR>*30)+2> 10460
+ENDFOR
+
+gumppic 30 30 202
+gumppic 30 75 202
+gumppic 30 105 202
+gumppic 29 105 0242f
+FOR 13
+gumppic 45 <EVAL (<LOCAL._FOR>*30)+2> 10460
+ENDFOR
+
+gumppic 425 300 028ac
+gumppic 425 150 028ab
+gumppic 425 0 028aa
+
+gumppic -5 10 028b5
+gumppic 25 0 028b4
+gumppic 45 130 028ab
+gumppic -22 280 028a2
+
+gumppic 368 50 0589
+gumppic 377 60 01580
+
+gumppic 85 35 0232d
+dhtmlgump 125 45 100 35 0 0 <DEF.BFONT_WHITE>Exodus
+gumppictiled 125 65 150 1 9101
+
+PAGE 1
+
+dhtmlgump 110 130 270 250 1 1 <DEF.BFONT_SIZE7>Welcome to <SERV.SERVNAME> <SRC.NAME>!<DEF.BFONT_SIZE3><DEF.BR>Do you wish to go our UO Newbie tutorial? This guide is for new UO players to get familirized with the mechanics of the game and systems involved.<DEF.BRE><DEF.BFONTE>
+
+button 95 400 02ee0 02ee2 1 0 1
+button 310 400 02ef2 02ef4 1 0 0
+
+PAGE 2
+dhtmlgump 110 130 270 250 1 1 Very well then <NAME>, if you wish to leave just click the Refuse button!<DEF.BR>We start from the basics: Walking. To walk hold down your right mouse button and click a place on your game screen. Your character will now walk toward that direction. To RUN just hold the cursor further away from your character, or go to OPTIONS -> Interface (the mouse icon) and toggle the box for Always Run.<DEF.BR>Now, walk or run to the other end of this cave and step on the green tile.
+
+button 95 400 02ee0 02ee2 1 0 0
+button 310 400 02ef2 02ef4 1 0 100
+
+PAGE 3
+dhtmlgump 110 130 270 250 1 1 Now we cover the basics of Attacking, Resurrecting and Skill/Status locks:<DEF.BR>On your character status bar and on the skill menu you can find several Arrows on the side of the status or skill. These arrows can either be UP, Locked or Down. An arrow that is up means this status will increase, if it is locked it means that it won't be trained and down means it will lower. A status will only increase to it's limit of 125 points, or until the 230 total sum of str,dex and int is reached.<DEF.BR>Now, to attack just enter warmode and d-click a target: you can enter warmode by holding down TAB or just striking it (go to Options -> Interface to set that), or by clicking the button Peace on your paperdoll. If you die, just go near a Healer IN WARMODE or d-click an Ankh. To equip your weapon or any other kind of equipable item, just double-click it or drag it to your paperdoll.<DEF.BR>Now, take the quest from Tutorial Quester by d-clicking him and complete it to go to the next step.
+
+button 95 400 02ee0 02ee2 1 0 0
+button 310 400 02ef2 02ef4 1 0 100
+
+PAGE 4
+dhtmlgump 110 130 270 250 1 1 Now we cover the basics of trading:<DEF.BR>To buy from an NPC or sell, just say BUY or SELL, or 'Name of vendor' BUY/SELL, or you can also single-click him and choose from the Context Menu. Ah! Which reminds me: YOU also have a context menu, wich you can acess by single-clicking yourself too.<DEF.BR>Once you say BUY or SELL a trade menu will open, there you can choose the items to buy or sell and see how much this is going to take. If you don't have the money in your backpack it will be withdrawn from your bank.<DEF.BR>You can also trade with players by dragging an item and dropping on the player you wish to trade, or you can buy a Player Vendor and put it inside your house.<DEF.BR>Now take the quest from Tutorial Quester to go to the next phase.
+
+button 95 400 02ee0 02ee2 1 0 0
+button 310 400 02ef2 02ef4 1 0 100
+
+[DIALOG D_NEWPLAYER_TEXT BUTTON]
+ON=1
+TAG.EVENT.ID=200
+GO 5185,1936,0,1
+SDIALOG D_NEWPLAYER_TEXT 2
+
+ON=100
+TAG.EVENT.ID
+GO BRITAIN
+SYSMESSAGE @,3,1 Tutorial canceled!
+
+[TYPEDEF T_TUTORIAL_FLOOR_1]
+ON=@Step
+SRC.GO 5138,1914,0,1
+SRC.SDIALOG d_NEWPLAYER_TEXT 3
+
+/////////////////
+
+[CHARDEF C_TUTORIAL_ZOMBIE]
+ID=c_zombie
+NAME=Tutorial Zombie
+DAM=1,1
+CAN=MT_WALK
+ARMOR=3
+
+ON=@Create
+STR=25
+MAXHITS=5
+DEX=25
+INT=25
+NPC=BRAIN_MONSTER
+KARMA=0
+FAME=1000
+
+ON=@Death
+SERV.NEWNPC=C_TUTORIAL_ZOMBIE
+DORAND 3
+NEW.P=5144,1877,0,1
+NEW.P=5149,1882,0,1
+NEW.P=5141,1882,0,1
+ENDDO
+NEW.HOME=<NEW.P>
+NEW.HOMEDIST=2
+NEW.UPDATE
+REF1=<ATTACKER.MAX>
+IF (!(<REF1.HASQUEST 180>))
+REF1.SYSMESSAGE @,3,1 You must get the quest from Tutorial Quester before earning this kill.
+ENDIF
+
+ON=@DeathCorpse
+ARGO.REMOVE
+
+[FUNCTION F_TUTORIAL_QUEST_REWARD]
+GO 5237,2038,0,1
+NEWGOLD=200
+SDIALOG d_NEWPLAYER_TEXT 4
+
+[FUNCTION F_TUTORIAL_QUEST2_REWARD]
+TAG.EVENT.ID=
+GO BRITAIN
+
+[FUNCTION OPENDNEWPLAYERDIALOG]
+DIALOG_UP D_NEWPLAYER_TEXT
+
+[EOF]
