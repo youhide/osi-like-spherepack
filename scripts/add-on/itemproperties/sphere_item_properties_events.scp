@@ -1,5 +1,5 @@
 //****************************************************************************
-// SphereServer ©1997-2009
+// SphereServer ï¿½1997-2009
 // This script is part from the Sphere Community Script Pack.
 // You can download the full pack from: www.sphereserver.net
 //****************************************************************************
@@ -34,7 +34,7 @@ VERSION=0.56b
 // *DONE* scp.ItemProp_DamageIncrease
 // *DONE* scp.ItemProp_DefenseChanceIncrease
 // *DONE* scp.ItemProp_DexterityBonus
-// scp.ItemProp_EnhancePotion			// ATTACH TO CRAFTING SYS
+// scp.ItemProp_EnhancePotion            // ATTACH TO CRAFTING SYS
 // *DONE* scp.ItemProp_FasterCastRecovery
 // *DONE* scp.ItemProp_FasterCasting
 // *DONE* scp.ItemProp_HitChanceIncrease
@@ -90,61 +90,61 @@ if <ref8.memoryfindtype.memory_ipet>
 ref8 = <ref8.memoryfindtype.memory_ipet.link.uid>
 endif
 if <tag0.luck> > 0
-	if <def.scp.ItemProp_LuckLoot> == 1
-	local.chanceinc = <feval <floatval <ref8.luck> @ <def.scp.ItemProp_LuckScaleFactor>>>
-		if <r100> < <local.chanceinc>
-		serv.newitem <tag0.luck.loot>
-		new.cont = <local.corpse>
-		endif
-		if !<tag0.luck.randloot>
-		return 0
-		endif
-	elif <def.scp.ItemProp_LuckLoot> == 2
-		if <r<ref8.luck>> > <r<tag0.luck>>
-		serv.newitem <tag0.luck.loot>
-		new.cont = <local.corpse>
-		endif
-	return 0
-	endif
+    if <def.scp.ItemProp_LuckLoot> == 1
+    local.chanceinc = <feval <floatval <ref8.luck> @ <def.scp.ItemProp_LuckScaleFactor>>>
+        if <r100> < <local.chanceinc>
+        serv.newitem <tag0.luck.loot>
+        new.cont = <local.corpse>
+        endif
+        if !<tag0.luck.randloot>
+        return 0
+        endif
+    elif <def.scp.ItemProp_LuckLoot> == 2
+        if <r<ref8.luck>> > <r<tag0.luck>>
+        serv.newitem <tag0.luck.loot>
+        new.cont = <local.corpse>
+        endif
+    return 0
+    endif
 endif
 if ((<tag0.luck.loot>) && (<def.scp.ItemProp_LuckLoot> == 3)) || (<tag0.luck.randloot>)
 args = <qval <tag0.luck.randloot>?<tag0.luck.randloot>:<tag.luck.loot>>
 local.chanceinc = <feval <floatval <ref8.luck> @ <def.scp.ItemProp_LuckScaleFactor>>
 local.items = <r<argv[0]>>
-	if <r100> < <local.chanceinc>
-	local.items ++
-	endif
-	if <argv[1]>
-	local.props = <r<argv[1]>>
-		if <r100> < <local.chanceinc>
-		local.props ++
-		endif
-	else
-	local.props = <r<argv[0]>>
-	endif
-	for 1 <local.items>
-		if <r2>
-		serv.newitem random_weapon
-		else
-		serv.newitem {random_armor 1 {i_bracelet_gold 1 i_ring_gold 1} 1}
-		endif
-	local.type = <new.f_GetBaseType>
-	new.events +t_iprop
-		for x 1 <local.props>
-		local.proptemp = <f_GetRandomProperty <local.type>>
-			while <new.f_IsProperty <local.proptemp>>
-			local.proptemp = <f_GetRandomProperty <local.type>>
-			endwhile
-		local.intensity = <eval <r<getargv 2 <def.itemprop_<local.proptemp>>>>>
-		args = <def.itemprop_<local.proptemp>>
-			doswitch <argv[4]>
-			local.blank
-			new.tag0.<argv[5]> = <local.intensity>
-			new.<argv[5]> <local.intensity>
-			enddo
-		endfor
-	new.cont = <local.corpse>
-	endfor
+    if <r100> < <local.chanceinc>
+    local.items ++
+    endif
+    if <argv[1]>
+    local.props = <r<argv[1]>>
+        if <r100> < <local.chanceinc>
+        local.props ++
+        endif
+    else
+    local.props = <r<argv[0]>>
+    endif
+    for 1 <local.items>
+        if <r2>
+        serv.newitem random_weapon
+        else
+        serv.newitem {random_armor 1 {i_bracelet_gold 1 i_ring_gold 1} 1}
+        endif
+    local.type = <new.f_GetBaseType>
+    new.events +t_iprop
+        for x 1 <local.props>
+        local.proptemp = <f_GetRandomProperty <local.type>>
+            while <new.f_IsProperty <local.proptemp>>
+            local.proptemp = <f_GetRandomProperty <local.type>>
+            endwhile
+        local.intensity = <eval <r<getargv 2 <def.itemprop_<local.proptemp>>>>>
+        args = <def.itemprop_<local.proptemp>>
+            doswitch <argv[4]>
+            local.blank
+            new.tag0.<argv[5]> = <local.intensity>
+            new.<argv[5]> <local.intensity>
+            enddo
+        endfor
+    new.cont = <local.corpse>
+    endfor
 endif
 
 ON=@GETHIT
@@ -313,22 +313,22 @@ RETURN 1
 // Safe zone since EVENTS on EventsPlayer are called last.
 // Same goes for ManaIncrease, StaminaIncrease
 
-if <def.scp.ItemProp_HitPointIncrease> == 1
- maxhits += <min <tag0.HitPointIncrease>,<getargv 3 <def.itemprop_017>>>
-endif
-
-if <def.scp.ItemProp_ManaIncrease> == 1
- maxmana += <min <tag0.ManaIncrease>,<getargv 3 <def.itemprop_019>>>
-endif
-
-if <def.scp.ItemProp_StaminaIncrease> == 1
- maxstam += <min <tag0.StaminaIncrease>,<getargv 3 <def.itemprop_018>>>
-endif
+//if <def.scp.ItemProp_HitPointIncrease> == 1
+// maxhits += <min <tag0.HitPointIncrease>,<getargv 3 <def.itemprop_017>>>
+//endif
+//
+//if <def.scp.ItemProp_ManaIncrease> == 1
+// maxmana += <min <tag0.ManaIncrease>,<getargv 3 <def.itemprop_019>>>
+//endif
+//
+//if <def.scp.ItemProp_StaminaIncrease> == 1
+// maxstam += <min <tag0.StaminaIncrease>,<getargv 3 <def.itemprop_018>>>
+//endif
 
 if <def.scp.OSIStats> == 1
- maxhits = <eval ((<str>+<modstr>)/2) + 50>
- maxmana = <eval <int> + <modint>>
- maxstam = <eval <dex> + <moddex>>
+ maxhits = <eval ((<ostr>+<modstr>)/2) + 50>
+ maxmana = <eval <oint> + <modint>>
+ maxstam = <eval <odex> + <moddex>>
 endif
 
 if <def.scp.ItemProp_HitPointIncrease> == 1
@@ -340,6 +340,9 @@ endif
 
 if <def.scp.ItemProp_ManaIncrease> == 1
  maxmana += <min <tag0.ManaIncrease>,<getargv 3 <def.itemprop_019>>>
+endif
+if <iselven>
+ maxmana += 20
 endif
 if <mana> > <maxmana>
  mana = <maxmana>
@@ -366,14 +369,14 @@ endif
 // Passive/Active Meditation, Intelligence, Battle Focus, Equipment
 // If you wonder why Medit / 10 and Focus / 200. Because in Sphere, GM Medit = 1000 and not 100.0
 //if <def.scp.NewSkills_Meditation> == 1
-//	if <meditation> > 99.9 // GM Meditation or better gets 10% bonus.
-//	local.MRmi = <feval <floatval (1.1 * ((<meditation> * 3) + <int>)) / 40)>>
-//	else
-//	local.MRmi = <feval <floatval ((<meditation> * 3) + <int>) / 40>>
-//	endif
-//	if <tag0.meditation.active>
-//	local.MRmi *= 2 // Active Meditation gets regen * 2
-//	endif
+//    if <meditation> > 99.9 // GM Meditation or better gets 10% bonus.
+//    local.MRmi = <feval <floatval (1.1 * ((<meditation> * 3) + <int>)) / 40)>>
+//    else
+//    local.MRmi = <feval <floatval ((<meditation> * 3) + <int>) / 40>>
+//    endif
+//    if <tag0.meditation.active>
+//    local.MRmi *= 2 // Active Meditation gets regen * 2
+//    endif
 //else
 //local.MRmi = 0
 //endif
@@ -384,9 +387,9 @@ endif
 //endif
 //if <def.scp.ItemProp_ManaRegeneration> == 1
 //local.MRe = <tag0.ManaRegeneration>
-//	if <local.MRe> > <getargv 3 <def.itemprop_018>>
-//	local.MRe = <getargv 3 <def.itemprop_018>>
-//	endif
+//    if <local.MRe> > <getargv 3 <def.itemprop_018>>
+//    local.MRe = <getargv 3 <def.itemprop_018>>
+//    endif
 //else
 //endif
 //local.MRt = <eval 2 + <local.MRmi> + <local.MRf> + <local.MRe>> // This is the amount of points in 10 seconds
@@ -408,13 +411,13 @@ f_PlayerCheckStats
 
 on=@skillsuccess
 if <argn1> == 45 // Mining, which other works like this?
-	if <def.scp.ItemProp_UsesRemaining> == 1
-	uid.<actprv>.tag0.UsesRemaining -- // ActPRV is the tool used.
-		if <uid.<actprv>.tag0.UsesRemaining> == 0
-		sysmessage <def.scp.mining_tooldestroy>
-		uid.<actprv>.remove
-		endif
-	endif
+    if <def.scp.ItemProp_UsesRemaining> == 1
+    uid.<actprv>.tag0.UsesRemaining -- // ActPRV is the tool used.
+        if <uid.<actprv>.tag0.UsesRemaining> == 0
+        sysmessage <def.scp.mining_tooldestroy>
+        uid.<actprv>.remove
+        endif
+    endif
 endif
 
 on=@spellselect
@@ -430,57 +433,57 @@ argn2 -= <eval (<argn2> * (<tag0.LowerManaCost> + 1)) / 100>
 endif
 // Lower Reagent Cost
 if <def.scp.ItemProp_LowerReagentCost> == 1
-	if <argn3> == 2
-		if <argn1> < 200
-		f_LowerReagentCost_Reagents <argn1>
-		elif <argn1> > 600
-		return 2
-		else
-		f_LowerReagentCost_Tithing <argn1>
-		endif
-	return 6
-	endif
+    if <argn3> == 2
+        if <argn1> < 200
+        f_LowerReagentCost_Reagents <argn1>
+        elif <argn1> > 600
+        return 2
+        else
+        f_LowerReagentCost_Tithing <argn1>
+        endif
+    return 6
+    endif
 endif
 
 on=@spellcast
 // Spell Channeling is the right property. Was wrong with Mage Weapon, sorry.
 // It allows the caster to cast with items equipped in Hand1 or Hand2
 if <def.scp.ItemProp_SpellChanneling> == 1
-	if <argn1> != 104 // exception for Curse Weapon
-		if <argn1> != 203 // exception for Consecrate Weapon
-			if <findlayer.1.uid>
-				if <findlayer.1.type> != t_wand
-					if !strmatch(t_spellbook*,<findlayer.1.type>)
-						if !<findlayer.1.tag0.SpellChanneling>
-							findlayer.1.unequip
-						endif
-					endif
-				endif
-			endif
-			if <findlayer.2.uid>
-				if !<findlayer.2.tag0.SpellChanneling>
-				findlayer.2.unequip
-				endif
-			endif
-		endif
-	endif
+    if <argn1> != 104 // exception for Curse Weapon
+        if <argn1> != 203 // exception for Consecrate Weapon
+            if <findlayer.1.uid>
+                if <findlayer.1.type> != t_wand
+                    if !strmatch(t_spellbook*,<findlayer.1.type>)
+                        if !<findlayer.1.tag0.SpellChanneling>
+                            findlayer.1.unequip
+                        endif
+                    endif
+                endif
+            endif
+            if <findlayer.2.uid>
+                if !<findlayer.2.tag0.SpellChanneling>
+                findlayer.2.unequip
+                endif
+            endif
+        endif
+    endif
 endif
 // A weird property actually. For Mages and Necromancers > 70.0 this is capped at 2.
 // But for Chivalry, Ninjitsu, Bushido and Spellweaving this is capped at 4.
 // So just do (cap * 2) in the last case.
 if <def.scp.ItemProp_FasterCasting> == 1
 local.fcast = <src.tag0.FasterCasting>
-	if <tag0.FasterCasting> > <getargv 3 <def.itemprop_024>>
-		if <src.magery> < 70.0
-		local.fcast = <min <tag0.FasterCasting>,4>
-		else
-		local.fcast = <getargv 3 <def.itemprop_024>>
-		endif
-	endif
+    if <tag0.FasterCasting> > <getargv 3 <def.itemprop_024>>
+        if <src.magery> < 70.0
+        local.fcast = <min <tag0.FasterCasting>,4>
+        else
+        local.fcast = <getargv 3 <def.itemprop_024>>
+        endif
+    endif
 argn3 -= <local.fcast>
-	if <argn3> < 0
-	argn3 = 0.1
-	endif
+    if <argn3> < 0
+    argn3 = 0.1
+    endif
 endif
 
 on=@spelleffect
@@ -492,33 +495,33 @@ on=@hit
 // Hit Dispel helps you to dispel a target when you hit it.
 // The % of this being activated is the intensity on the player (0-100).
 if <def.scp.ItemProp_HitDispel> == 1
-	if <src.brain>
-		if <src.flags>&statf_conjured
-			if <r100> < <tag0.HitDispel>
-			src.hits = 0
-			endif
-		endif
-	endif
+    if <src.brain>
+        if <src.flags>&statf_conjured
+            if <r100> < <tag0.HitDispel>
+            src.hits = 0
+            endif
+        endif
+    endif
 endif
 if <def.scp.ItemProp_HitFireball> == 1
-	if <r100> < <tag0.HitFireball>
-	src.spelleffect s_fireball,1000,<uid>
-	endif
+    if <r100> < <tag0.HitFireball>
+    src.spelleffect s_fireball,1000,<uid>
+    endif
 endif
 if <def.scp.ItemProp_HitHarm> == 1
-	if <r100> < <tag0.HitHarm>
-	src.spelleffect s_harm,1000,<uid>
-	endif
+    if <r100> < <tag0.HitHarm>
+    src.spelleffect s_harm,1000,<uid>
+    endif
 endif
 if <def.scp.ItemProp_HitLightning> == 1
-	if <r100> < <tag0.HitLightning>
-	src.spelleffect s_lightning,1000,<uid>
-	endif
+    if <r100> < <tag0.HitLightning>
+    src.spelleffect s_lightning,1000,<uid>
+    endif
 endif
 if <def.scp.ItemProp_HitMagicArrow> == 1
-	if <r100> < <tag0.HitMagicArrow>
-	src.spelleffect s_magic_arrow,1000,<uid>
-	endif
+    if <r100> < <tag0.HitMagicArrow>
+    src.spelleffect s_magic_arrow,1000,<uid>
+    endif
 endif
 // Hit Lower Attack and Hit Lower Defense applies directly to the target HCI/HDI
 // It lasts for 8 seconds and only a 25 percent, though the intensity is used for calculations.
@@ -554,27 +557,27 @@ on=@hitdamagebonus
 // check if the weapon got a slayer tag and if the target got a slayer tag.
 // Lesser Slayers do x3 damage while Super Slayers do x2.
 if <def.scp.ItemProp_Slayer> == 1
-	if !<isempty <argo.uid>>
-		if <src.tag0.slayer.less>
-			if <argo.tag0.slayer.less> == <src.tag0.slayer>
-			var0.<uid>_damagebonus += 200
-			endif
-		elif <src.tag0.slayer.super>
-			if <argo.tag0.slayer.super>&<src.tag0.slayer>
-			var0.<uid>_damagebonus += 100
-			endif
-		endif
-	endif
+    if !<isempty <argo.uid>>
+        if <src.tag0.slayer.less>
+            if <argo.tag0.slayer.less> == <src.tag0.slayer>
+            var0.<uid>_damagebonus += 200
+            endif
+        elif <src.tag0.slayer.super>
+            if <argo.tag0.slayer.super>&<src.tag0.slayer>
+            var0.<uid>_damagebonus += 100
+            endif
+        endif
+    endif
 endif
 if <def.scp.ItemProp_DamageIncrease> == 1
-	if <tag0.DamageIncrease>
-	local.tempbonus = <tag0.DamageIncrease>
-	local.dicap = <getargv 3 <def.itemprop_02a>>
-		if <tag0.DamageIncrease> > <local.dicap>
-		local.tempbonus = <local.dicap>
-		endif
-	var0.<uid>_damagebonus += <dlocal.tempbonus>
-	endif
+    if <tag0.DamageIncrease>
+    local.tempbonus = <tag0.DamageIncrease>
+    local.dicap = <getargv 3 <def.itemprop_02a>>
+        if <tag0.DamageIncrease> > <local.dicap>
+        local.tempbonus = <local.dicap>
+        endif
+    var0.<uid>_damagebonus += <dlocal.tempbonus>
+    endif
 endif
 
 on=@gethit

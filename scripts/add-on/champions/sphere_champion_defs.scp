@@ -11,36 +11,36 @@ SPHERECHAMPIONS_STATSUMINCREASE_4 245
 SPHERECHAMPIONS_STATSUMINCREASE_5 250
 
 [DEFNAME champions_monstergroups]
-champ_abyss_1 {c_mongbat 1 c_imp 1}
+champ_abyss_1 {c_mongbat_greater 1 c_imp 1}
 champ_abyss_2 {c_gargoyle 1 c_harpy 1}
 champ_abyss_3 {c_gargoyle_fire 1 c_gargoyle_stone 1}
 champ_abyss_4 {c_demon 1 c_succubus 1}
-champ_abyss_champion	c_semidar
-champ_abyss_reward	{i_gladiator_collar 1 i_lieutenant_royal_guard 1}
+champ_abyss_champion    c_semidar
+champ_abyss_reward    {i_gladiator_collar 1 i_lieutenant_royal_guard 1}
 
 champ_UnholyTerror_1 {c_spectre 1 c_ghoul 1 c_wraith 1 c_shade 1}
-champ_UnholyTerror_2 {c_skeleton_mage 1 c_mummy 1 c_wraith 1}
-champ_UnholyTerror_3 {c_lich 1 c_skeleton_knight 1 c_liche_lord 1}
+champ_UnholyTerror_2 {c_skeleton_mage 1 c_mummy 1 } // bone magi missing
+champ_UnholyTerror_3 {c_lich 1 c_skeleton_knight 1 } // bone knight missing
 champ_UnholyTerror_4 {c_liche_lord 1 c_rotting_corpse 1}
-champ_UnholyTerror_champion	c_neira
-champ_UnholyTerror_Reward	{i_blood_drips 50 i_captain_john_hat 11 i_detective_boots 11 i_necromancer_shroud 11 i_shroud_deceit 17}
+champ_UnholyTerror_champion    c_neira
+champ_UnholyTerror_Reward    {i_blood_drips 50 i_captain_john_hat 11 i_detective_boots 11 i_necromancer_shroud 11 i_shroud_deceit 17}
 
 // Old Champions Spawns by Cloud
-champ_Arachnid_1 {c_gargoyle_fire 1 c_spider_giant 1}
+champ_Arachnid_1 {c_scorpion_giant 1 c_spider_giant 1}
 champ_Arachnid_2 {c_terathan_drone 1 c_terathan_warrior 1}
 champ_Arachnid_3 {c_spider_dread 1 c_terathan_matriarch 1}
 champ_Arachnid_4 {c_elemental_poison 1 c_terathan_avenger 1}
 champ_Arachnid_champion c_mephitis
 champ_Arachnid_Reward {010dc 17 010db 17 i_spider_statue 17 i_calm 17 i_oblivion_needle 33}
 
-champ_ColdBlood_1 {c_lizardman 1 c_spider_dread 1}
-champ_ColdBlood_2 {c_spider_giant 1 c_ophidian_warrior 1 c_ophidian_shaman 1}
-champ_ColdBlood_3 {c_drake 1 c_drake_red 1 c_ophidian_shaman 1 c_ophidian_warrior 1}
-champ_ColdBlood_4 {c_dragon_red 1 c_dragon 1 c_ophidian_avenger 1}
+champ_ColdBlood_1 {c_lizardman 1 c_snake 1}
+champ_ColdBlood_2 {c_lava_lizard 1 1 c_ophidian_warrior 1 c_ophidian_enforcer 1}
+champ_ColdBlood_3 {c_drake 1 c_drake_red 1 c_ophidian_justicar 1 c_ophidian_zealot 1}
+champ_ColdBlood_4 {c_dragon_red 1 c_dragon 1 c_ophidian_avenger 1 c_ophidian_knight 1}
 champ_ColdBlood_champion c_rikktor
 champ_ColdBlood_Reward {i_crown_talkeesh 17 i_knowlegable_person 11 i_brave_knight_britannia 11 i_lieutenant_royal_guard 11 i_ophidianarchmage_statue 25 i_ophidianwarrior_statue 25}
 
-champ_ForestLord_1 {c_pixie 1 c_wisp_shadow 1}
+champ_ForestLord_1 {c_pixie 2 c_wisp_shadow 3}
 champ_ForestLord_2 {c_kirin 1 c_wisp 1}
 champ_ForestLord_3 {c_centaur 1 c_unicorn 1}
 champ_ForestLord_4 {c_serpentine_dragon 1 c_ethereal_warrior 1}
@@ -49,12 +49,12 @@ champ_ForestLord_Reward {i_orc_chief_helm 17 i_fx_spin_head 50 i_djinn_ring 6 i_
 
 champ_VerminHord_1 {c_slime 1 c_rat_giant 1}
 champ_VerminHord_2 {c_ratman_w_mace 1 c_ratman 1 c_wolf_dire 1}
-champ_VerminHord_3 {c_ratman_w_mace 1 c_ratman 1 c_ratman_w_sword 1 c_wolf_dire 1}
-champ_VerminHord_4 {c_ratman_w_mace 1 c_serpent_silver 1}
+champ_VerminHord_3 {c_ratman_mage 1 c_hellhound 1}
+champ_VerminHord_4 {c_ratman_archer 1 c_serpent_silver 1}
 champ_VerminHord_champion c_barracoon
 champ_VerminHord_Reward {i_fang_ractus 17 i_slime_statue 50 i_oak_leaf_cloak 9 i_gauntlets_anger 9 i_detective_boots 9 i_djinn_ring 9}
 
-champ_SleepingDragon_1 {c_deathwatch_beetle 1 c_lizardman 1}
+champ_SleepingDragon_1 {c_deathwatch_beetle 1 c_lizardman 1} // deathwatch beetle hatchling missing
 champ_SleepingDragon_2 {c_deathwatch_beetle 1 c_kappa 1}
 champ_SleepingDragon_3 {c_revenant_lion 1 c_hiryu_lesser 1}
 champ_SleepingDragon_4 {c_oni 1 c_hiryu 1}
@@ -74,6 +74,27 @@ champ_Minotaur_3 {c_minotaur_captain 1 c_minotaur 1 c_minotaur_scout 1}
 champ_Minotaur_4 {c_minotaur_captain 1 c_minotaur 1 c_minotaur_scout 1}
 champ_Minotaur_champion c_meraktus
 champ_Minotaur_Reward {i_subdue 33 i_pet_minotaur 66}
+
+champ_TwistedGlade_1 {c_pixie 2 c_wisp_shadow 3}
+champ_TwistedGlade_2 {c_centaur 4 c_dryad 1}
+champ_TwistedGlade_3 {c_satyr 3 c_cu_sidhe 2}
+champ_TwistedGlade_4 {c_treefellow_feral 2 c_raging_grizzlie 3}
+champ_TwistedGlade_champion c_Twaulo
+champ_TwistedGlade_Reward {i_oblivion_needle 20 i_knowlegable_person 20 i_brave_knight_britannia 20 i_pet_dreadhorn 40}
+
+champ_AbyssalInfernal_1 {c_horde_minion 1 c_demon_chaos 1}
+champ_AbyssalInfernal_2 {c_harpy_stone 1 c_demon_arcane 1}
+champ_AbyssalInfernal_3 {c_demon_moloch 1} // pit fiends missing
+champ_AbyssalInfernal_4 {c_demon_balron 1 } // Archdemons and Abyssal Abominations missing
+champ_AbyssalInfernal_champion    c_abyssal_infernal
+champ_AbyssalInfernal_reward    {i_detective_boots 20 } // Royal Guard Investigator and Jade Armband missing
+
+champ_PrimevalLich_1 {c_gore_fiend 1 c_vampire_bat 1}
+champ_PrimevalLich_2 {c_flesh_golem 1 c_wisp_dark 1}
+champ_PrimevalLich_3 {c_gargoyle_undead 1} wights missing
+champ_PrimevalLich_4 {c_skeletal_dragon 1 c_dream_wraith 1} // skeletal drake missing
+champ_PrimevalLich_champion    c_abyssal_infernal // c_primeval_lich missing
+champ_PrimevalLich_reward    {i_knowlegable_person 20 i_protector_battle_mage 20 i_lieutenant_royal_guard 20} // Channeler's Defender and Lights Rampart missing
 
 /////*Commented out defs with correct monsters for each champions** note:
 //champ_Abyss_1 {c_mongbat_arboreal 1 c_imp 1}
@@ -142,9 +163,9 @@ champ_Minotaur_Reward {i_subdue 33 i_pet_minotaur 66}
 
 champ_Harrower_Reward {i_harrower_evil_idol 33 i_harrower_skull_pole 33 i_acid_proof_robe 17 i_robe_britannia_ari 17}
 
-CHAMPIONLEVELMINUTE 15*60
+CHAMPIONLEVELMINUTE 10*60
 CHAMPIONCOMPLETETIME 60*60*3
-TOTALMONSTERS 96
-champion_goldprize 200000
+TOTALMONSTERS 64
+champion_goldprize 240000
 
 [EOF]

@@ -1,5 +1,5 @@
 //****************************************************************************
-// SphereServer ©1997-2009
+// SphereServer ï¿½1997-2009
 // This script is part from the Sphere Community Script Pack.
 // You can download the full pack from: www.sphereserver.net
 //****************************************************************************
@@ -409,6 +409,7 @@ DUPEITEM=013fa
 ///////////////////////////////////////////////////////////////
 [ITEMDEF 027a2]
 DEFNAME=i_no_dachi
+DEFNAME=i_nodachi
 NAME=no-dachi
 TYPE=t_weapon_sword
 DAM=16,18
@@ -626,9 +627,9 @@ TAG.DamageIncrease=30
 TAG.HitChanceIncrease=60
 TAG.Luck=70
 ON=@Create
-	COLOR=35
-	HITPOINTS=252
-	MOREM=2
+    COLOR=35
+    HITPOINTS=252
+    MOREM=2
 
 
 ///////////////////////////////////////////////////////////////

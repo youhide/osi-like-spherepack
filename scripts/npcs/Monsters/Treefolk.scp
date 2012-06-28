@@ -142,6 +142,56 @@ ON=@Hit
       SRC.DAMAGE <R15,25> <DEF.dam_physical> <UID>
    ENDIF
 
+[CHARDEF c_treefellow_feral]
+ID=c_treefellow
+NAME=feral treefellow
+ICON=i_pet_treefellow
+SOUND=snd_monster_reaper1
+CAN=MT_WALK|MT_NONHUM
+DAM=18,21
+ARMOR=0
+DESIRES=r_jungle,r_forests,t_coin,t_gold,t_gem
+AVERSIONS=t_trap,r_civilization
+FOODTYPE=45 t_fruit,t_grain
+TAG.Barding.Diff=145.0
+TAG.Slayer=SLAYER_FEY
+CATEGORY=Monsters
+SUBSECTION=Treefolk
+DESCRIPTION=Treefellow
+RESLEVEL=3
+RESDISPDNID=c_reaper
+RESDISPDNHUE=0ad
+ON=@Create
+   NPC=brain_monster
+   FAME=12500
+   KARMA=12500
+   STR={1200 1600}
+   MAXHITS={1100 1350}
+   DEX={300 550}
+   MAXSTAM={300 550}
+   INT={650 900}
+   MAXMANA={650 900}
+   ANATOMY={0}
+   MAGICRESISTANCE={99.6 113.9}
+   TACTICS={76.3 103.4}
+   WRESTLING={88.4 107.2}
+   MODAR={60 70}
+   RESCOLD={70 80}
+   RESENERGY={40 60}
+   RESFIRE=0
+   RESPOISON={60 70}
+ON=@NpcRestock
+   ITEM=loot_treefellow_feral
+   //125 - 175 Gold. 20-35 Logs
+ON=@Hit
+   //Dismount Attack
+   IF (<MANA> >= 20) && (<SRC.FLAGS> & statf_onhorse)
+      MANA -= 20
+      SRC.DISMOUNT
+      SRC.EMOTE knocked off mount!
+      SRC.DAMAGE <R15,25> <DEF.dam_physical> <UID>
+   ENDIF
+
 
 /////////////////////////////
 // Treefolk Loot Templates //
@@ -164,6 +214,14 @@ DESCRIPTION=Treefellow
 ITEM=i_gold,{125 175}
 ITEM=random_jewel,{3 5}
 ITEM=random_log,{25 35}
+
+[TEMPLATE loot_treefellow_feral]
+CATEGORY=Item Templates
+SUBSECTION=Monster Loot Templates
+DESCRIPTION=Treefellow
+ITEM=i_gold,{1100 1300}
+ITEM=random_jewel,{3 5}
+ITEM=random_log,{50}
 
 
 [EOF]

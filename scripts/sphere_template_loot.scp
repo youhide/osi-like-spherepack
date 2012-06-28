@@ -1,5 +1,5 @@
 //****************************************************************************
-//SPHERE by : Menasoft ©1997-2007
+//SPHERE by : Menasoft ï¿½1997-2007
 //www.sphereserver.net
 // All SPHERE script files and formats are copyright Menasoft & Partners.
 // This file may be freely edited for personal use, but may not be distributed
@@ -789,5 +789,12 @@ ITEM={ random_pole_arm 2 0 1 }
 //MAGIC=25 30 105
 ITEM={ random_jewel 2 0 1 },{ 1 4 }
 ITEM={ random_average_magic_loot 1 random_meager_magic_loot 2 0 300 }
+
+[TEMPLATE RANDOM_LOG]
+CATEGORY=Item Templates
+SUBSECTION=Loot Templates
+DESCRIPTION=Random Logs
+ITEM={I_LOG 1 I_LOG_OAK 1 I_LOG_ASH 1 I_LOG_YEW 1 I_LOG_BLOODWOOD 1 I_LOG_FROSTWOOD 1 I_LOG_HEARTWOOD 1 }
+
 
 [EOF]

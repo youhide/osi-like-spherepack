@@ -212,6 +212,50 @@ ON=@NPCRestock
    ITEM=loot_mongbat
    //25-50 gold
 
+[CHARDEF c_mongbat_greater]
+ID=c_mongbat
+NAME=greater mongbat
+ICON=i_pet_mongbat
+SOUND=snd_monster_mngbat1
+CAN=MT_WALK|MT_FLY|MT_USEHANDS
+DAM=5,7
+ARMOR=0
+DESIRES=r_jungle,r_forests,t_coin,t_gold,t_potion
+AVERSIONS=r_civilization
+FOODTYPE=15 t_meat_raw
+RESOURCES=1 i_ribs_raw,2 i_reag_batwing
+BLOODCOLOR=colors_blood
+MOVERATE=100
+TAG.Barding.Diff=31.3
+TAG.Control.Slots=1
+TAG.Slayer=SLAYER_BAT
+TEVENTS=e_carnivores
+CATEGORY=Monsters
+SUBSECTION=Miscellaneous
+DESCRIPTION=Greater Mongbat
+ON=@Create
+   NPC=brain_monster
+   FAME=450
+   KARMA=-450
+   STR={56 80}
+   MAXHITS={34 48}
+   DEX={61 80}
+   MAXSTAM={61 80}
+   INT={26 50}
+   MAXMANA={26 50}
+   MAGICRESISTANCE={15.1 30.0}
+   TACTICS={35.1 50.0}
+   TAMING=71.1
+   WRESTLING={20.1 35.0}
+   MODAR={15 25}
+   RESCOLD=0
+   RESENERGY=0
+   RESFIRE=0
+   RESPOISON=0
+ON=@NPCRestock
+   ITEM=loot_mongbat
+   //25-50 gold
+
 [CHARDEF 033]
 DEFNAME=c_slime
 NAME=Slime
@@ -751,42 +795,43 @@ ON=@NpcRestock
    //2 Gems, 1 Low Level Scroll
    //Special: Statue
 ON=@Death
-   FORCHARMEMORYTYPE memory_fight
-      IF (<LINK>)
+   //FORCHARMEMORYTYPE memory_fight
+   IF (<ATTACKER.LAST>)
+    REF1 <ATTACKER.LAST>
          DORAND 5
          BEGIN
-            LINK.SPELLEFFECT s_curse,100.0,0,<UID>
-            LINK.EFFECT 3,i_fx_curse,1,16,0
-            LINK.SOUND snd_spell_curse
-            SERV.LOG <LINK.NAME> was cursed by the pixie
+            REF1.SPELLEFFECT s_curse,100.0,0,<REF1.UID>
+            REF1.EFFECT 3,i_fx_curse,1,16,0
+            REF1.SOUND snd_spell_curse
+            SERV.LOG <REF1.NAME> was cursed by the pixie
          END
          BEGIN
-            LINK.SPELLEFFECT s_bless,100.0,0,<UID>
-            LINK.EFFECT 3,i_fx_bless_effect,1,16,0
-            LINK.SOUND snd_spell_bless
-            SERV.LOG <LINK.NAME> was blessed by the pixie
+            REF1.SPELLEFFECT s_bless,100.0,0,<REF1.UID>
+            REF1.EFFECT 3,i_fx_bless_effect,1,16,0
+            REF1.SOUND snd_spell_bless
+            SERV.LOG <REF1.NAME> was blessed by the pixie
          END
          BEGIN
-            LINK.SPELLEFFECT s_explosion,100.0,0,<UID>
-            LINK.EFFECT 3,i_fx_explode,1,16,0
-            LINK.SOUND snd_spell_explosion
-            SERV.LOG <LINK.NAME> was exploded by the pixie
+            REF1.SPELLEFFECT s_explosion,100.0,0,<REF1.UID>
+            REF1.EFFECT 3,i_fx_explode,1,16,0
+            REF1.SOUND snd_spell_explosion
+            SERV.LOG <REF1.NAME> was exploded by the pixie
          END
          BEGIN
-            LINK.SPELLEFFECT s_poison,100.0,0,<UID>
-            LINK.EFFECT 3,i_fx_sparkle,1,16,0,044
-            LINK.SOUND snd_spell_poison
-            SERV.LOG <LINK.NAME> was poisoned by the pixie
+            REF1.SPELLEFFECT s_poison,100.0,0,<REF1.UID>
+            REF1.EFFECT 3,i_fx_sparkle,1,16,0,044
+            REF1.SOUND snd_spell_poison
+            SERV.LOG <REF1.NAME> was poisoned by the pixie
          END
          BEGIN
-            LINK.SPELLEFFECT s_greater_heal,100.0,0,<UID>
-            LINK.EFFECT 3,i_fx_heal,1,16,0
-            LINK.SOUND snd_spell_greater_heal
-            SERV.LOG <LINK.NAME> was healed by the pixie
+            REF1.SPELLEFFECT s_greater_heal,100.0,0,<REF1.UID>
+            REF1.EFFECT 3,i_fx_heal,1,16,0
+            REF1.SOUND snd_spell_greater_heal
+            SERV.LOG <REF1.NAME> was healed by the pixie
          END
          ENDDO
       ENDIF
-   ENDFOR
+//ENDFOR
 
 [CHARDEF 091]
 DEFNAME=c_sea_serpent_deep
