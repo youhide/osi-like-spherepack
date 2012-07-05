@@ -746,7 +746,7 @@ ON=@NpcRestock
 // be one of five different ones: Bless, Curse, Explosion or Greater Poison
 // on the attacker, or it can be Greater Heal cast on the Pixie itself."
 DEFNAME=c_pixie
-NAME=pixie
+NAME=Pixie
 ICON=i_pet_pixie
 SOUND=snd_monster_pixie
 CAN=MT_WALK|MT_FLY|MT_USEHANDS|MT_EQUIP

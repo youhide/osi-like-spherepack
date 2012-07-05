@@ -1,5 +1,5 @@
 //****************************************************************************
-// SphereServer ©1997-2009
+// SphereServer ï¿½1997-2009
 // This script is part from the Sphere Community Script Pack.
 // You can download the full pack from: www.sphereserver.net
 //****************************************************************************
@@ -25,7 +25,7 @@ endif
 if <argo.baseid> == i_sos_tile
    src.anim 12
    src.sound 027
-   dorand 4//FIXME: is this right?
+   dorand 3//FIXME: is this right?
       src.f_pullout_treasure <argo.uid>
       src.f_fishing_bones <argo.uid>
       src.f_fishing_items <argo.uid>

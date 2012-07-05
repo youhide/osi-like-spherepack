@@ -1,0 +1,2639 @@
+[ITEMDEF i_ringmail_gloves_verite]
+ID=013eb
+NAME=Verite ringmail gloves
+TYPE=t_armor
+RESOURCES=10 i_ingot_verite
+SKILLMAKE=12.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite ringmail Armor
+DESCRIPTION=Verite ringmail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=6
+TAG.ResFire=6
+TAG.ResCold=3
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_ringmail_leggings_verite]
+ID=013f0
+NAME=Verite ringmail leggings
+TYPE=t_armor
+RESOURCES=16 i_ingot_verite
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite ringmail Armor
+DESCRIPTION=Verite ringmail leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=6
+TAG.ResFire=6
+TAG.ResCold=3
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_ringmail_sleeves_verite]
+ID=013ee
+NAME=Verite ringmail sleeves
+TYPE=t_armor
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=16.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite ringmail Armor
+DESCRIPTION=Verite ringmail sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=6
+TAG.ResCold=3
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_ringmail_tunic_verite]
+ID=013ec
+NAME=Verite ringmail tunic
+TYPE=t_armor
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=21.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite ringmail Armor
+DESCRIPTION=Verite ringmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=6
+TAG.ResFire=6
+TAG.ResCold=3
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_chainmail_coif_verite]
+ID=013bb
+NAME=Verite chainmail coif
+TYPE=t_armor
+RESOURCES=10 i_ingot_verite
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite chainmail coif
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=6
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_chainmail_leggings_verite]
+ID=013be
+NAME=Verite chainmail leggings
+TYPE=t_armor
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite chainmail Armor
+DESCRIPTION=Verite chainmail leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=6
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_chainmail_tunic_verite]
+ID=013bf
+NAME=Verite chainmail tunic
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite chainmail Armor
+DESCRIPTION=Verite chainmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=6
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_arms_verite]
+ID=01410
+NAME=Verite platemail arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Armor
+DESCRIPTION=Verite platemail arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_gloves_verite]
+ID=01414
+NAME=Verite platemail gloves
+TYPE=t_armor
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Armor
+DESCRIPTION=Verite platemail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_gorget_verite]
+ID=01413
+NAME=Verite platemail gorget
+TYPE=t_armor
+RESOURCES=10 i_ingot_verite
+SKILLMAKE=56.4 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Armor
+DESCRIPTION=Verite platemail gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_leggings_verite]
+ID=01411
+NAME=Verite platemail legs
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Armor
+DESCRIPTION=Verite platemail legs
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_chest_verite]
+ID=01415
+NAME=Verite platemail
+TYPE=t_armor
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Armor
+DESCRIPTION=Verite platemail
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_armor_female_plate_verite]
+ID=01c04
+NAME=Verite plate armor
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite plate Armor
+DESCRIPTION=Verite plate armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_mempo_verite]
+ID=02779
+NAME=Verite platemail mempo
+TYPE=t_armor
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Samurai Armor
+DESCRIPTION=Verite platemail mempo
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_do_verite]
+ID=0277d
+NAME=Verite platemail do
+TYPE=t_armor
+RESOURCES=28 i_ingot_verite
+SKILLMAKE=87.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Samurai Armor
+DESCRIPTION=Verite platemail do
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_hiro_sode_verite]
+ID=02780
+NAME=Verite platemail hiro sode
+TYPE=t_armor
+RESOURCES=16 i_ingot_verite
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Samurai Armor
+DESCRIPTION=Verite platemail hiro sode
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_suneate_verite]
+ID=02788
+NAME=Verite platemail suneate
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Samurai Armor
+DESCRIPTION=Verite platemail suneate
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_haidate_verite]
+ID=0278d
+NAME=Verite platemail haidate
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite platemail Samurai Armor
+DESCRIPTION=Verite platemail haidate
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_gargish_arms_verite]
+ID=0308
+NAME=Verite Gargish Platemail Arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Gargish Armor
+DESCRIPTION=Verite Gargish Platemail Arms
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=9
+TAG.ResCold=7
+TAG.ResPoison=9
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_gargish_chest_verite]
+ID=0309
+NAME=Verite Gargish Platemail Chest
+TYPE=t_armor
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Gargish Armor
+DESCRIPTION=Verite Gargish Platemail Chest
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=9
+TAG.ResCold=7
+TAG.ResPoison=9
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_gargish_kilt_verite]
+ID=030b
+NAME=Verite Gargish Platemail Kilt
+TYPE=t_armor
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Gargish Armor
+DESCRIPTION=Verite Gargish Platemail Kilt
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=9
+TAG.ResCold=7
+TAG.ResPoison=9
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_gargish_leggings_verite]
+ID=030d
+NAME=Verite Gargish Platemail Leggings
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Gargish Armor
+DESCRIPTION=Verite Gargish Platemail Leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=9
+TAG.ResCold=7
+TAG.ResPoison=9
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_bascinet_verite]
+ID=0140c
+NAME=Verite bascinet
+TYPE=t_armor
+RESOURCES=15 i_ingot_verite
+SKILLMAKE=8.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite bascinet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=10
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_helm_close_verite]
+ID=01408
+NAME=Verite close helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_verite
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite close helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=6
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_helm_open_verite]
+ID=0140a
+NAME=Verite helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_verite
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=7
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_helm_norse_verite]
+ID=0140e
+NAME=Verite norse helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_verite
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite norse helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=7
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_helm_verite]
+ID=01412
+NAME=Verite plate helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_verite
+SKILLMAKE=62.6 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite plate helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_chainmail_hatsuburi_verite]
+ID=02774
+NAME=Verite chainmail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite chainmail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_hatsuburi_verite]
+ID=02775
+NAME=Verite platemail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite platemail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_plate_jingasa_heavy_verite]
+ID=02777
+NAME=Verite heavy platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite heavy platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_plate_jingasa_light_verite]
+ID=02781
+NAME=Verite light platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite light platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_plate_jingasa_small_verite]
+ID=02784
+NAME=Verite small platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite small platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_kabuto_decorative_verite]
+ID=02778
+NAME=Verite decorative platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite decorative platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_kabuto_battle_verite]
+ID=02785
+NAME=Verite platemail battle kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite platemail battle kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_platemail_kabuto_verite]
+ID=02789
+NAME=Verite standard platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite standard platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_circlet_verite]
+ID=02b6e
+NAME=Verite circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_verite
+SKILLMAKE=62.1 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite circlet
+TAG.ResPhysical=4
+TAG.ResFire=8
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_circlet_royal_verite]
+ID=02b6f
+NAME=Verite royal circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_verite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite royal circlet
+TAG.ResPhysical=4
+TAG.ResFire=8
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_circlet_gemmed_verite]
+ID=02b70
+NAME=Verite gemmed circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_verite, 1 i_gem_amethyst, 1 i_gem_tourmaline, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Helmets
+DESCRIPTION=Verite gemmed circlet
+TAG.ResPhysical=4
+TAG.ResFire=8
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_buckler_verite]
+ID=01b73
+NAME=Verite buckler 
+TYPE=t_shield
+RESOURCES=6 i_ingot_verite
+SKILLMAKE=0.1 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite buckler 
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=4
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_round_bronze_verite]
+ID=01b72
+NAME=Verite bronze shield
+TYPE=t_shield
+RESOURCES=10 i_ingot_verite
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=12.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite bronze shield
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_heater_verite]
+ID=01b76
+NAME=Verite heater shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite heater shield
+TAG.ResPhysical=3
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_round_metal_verite]
+ID=01b7b
+NAME=Verite metal shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=11.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite metal shield
+TAG.ResPhysical=3
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_kite_metal_verite]
+ID=01b74
+NAME=Verite kite shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_verite
+SKILLMAKE=44.6 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite kite shield
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_kite_wood_verite]
+ID=01b78
+NAME=Verite kite shield
+TYPE=t_shield
+RESOURCES=8 i_ingot_verite, 4 i_log
+SKILLMAKE=12.6 Blacksmithing
+WEIGHT=9.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite kite shield
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_chaos_verite]
+ID=01bc3
+NAME=Verite Chaos shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite Chaos shield
+TAG.ResPhysical=4
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_order_verite]
+ID=01bc4
+NAME=Verite Order shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite Order shield
+TAG.ResPhysical=4
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_plate_small_verite]
+ID=04202
+NAME=Verite Small Plate Shield
+TYPE=t_shield
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite Small Plate Shield
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_kite_gargish_verite]
+ID=04201
+NAME=Verite Gargish Kite Shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_verite
+SKILLMAKE=4.6 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite Gargish Kite Shield
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_plate_medium_verite]
+ID=04203
+NAME=Verite Medium Plate Shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite Medium Plate Shield
+TAG.ResPhysical=3
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_plate_large_verite]
+ID=04204
+NAME=Verite Large Plate Shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite Large Plate Shield
+TAG.ResPhysical=3
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_chaos_gargish_verite]
+ID=04228
+NAME=Verite Gargish Chaos Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite Gargish Chaos Shield
+TAG.ResPhysical=4
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shield_order_gargish_verite]
+ID=0422a
+NAME=Verite Gargish Order Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Verite Shields
+DESCRIPTION=Verite Gargish Order Shield
+TAG.ResPhysical=4
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_bone_harvester_verite]
+ID=026bb
+NAME=Verite bone harvester
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_verite
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=3.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite bone harvester
+DESCRIPTION=Verite bone harvester
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_sword_broad_verite]
+ID=0f5e
+NAME=Verite broadsword
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_verite
+SKILLMAKE=35.4 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite broadsword
+DESCRIPTION=Verite broadsword
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_crescent_blade_verite]
+ID=026c1
+NAME=Verite crescent blade
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite crescent blade
+DESCRIPTION=Verite crescent blade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_cutlass_verite]
+ID=01440
+NAME=Verite cutlass
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_verite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite cutlass
+DESCRIPTION=Verite cutlass
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_dagger_verite]
+ID=0f51
+NAME=Verite dagger
+TYPE=t_weapon_fence
+RESOURCES=3 i_ingot_verite
+SKILLMAKE=Blacksmithing
+WEIGHT=1.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite dagger
+DESCRIPTION=Verite dagger
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_katana_verite]
+ID=013fe
+NAME=Verite katana
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_verite
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite katana
+DESCRIPTION=Verite katana
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_kryss_verite]
+ID=01400
+NAME=Verite kryss
+TYPE=t_weapon_fence
+RESOURCES=8 i_ingot_verite
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite kryss
+DESCRIPTION=Verite kryss
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_sword_long_verite]
+ID=0f60
+NAME=Verite longsword
+TYPE=t_weapon_sword
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite longsword
+DESCRIPTION=Verite longsword
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_scimitar_verite]
+ID=013b5
+NAME=Verite scimitar
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_verite
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite scimitar
+DESCRIPTION=Verite scimitar
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_sword_viking_verite]
+ID=013b9
+NAME=Verite viking sword
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite viking sword
+DESCRIPTION=Verite viking sword
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_no_dachi_verite]
+ID=027a2
+NAME=Verite no-dachi
+TYPE=t_weapon_sword
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite no-dachi
+DESCRIPTION=Verite no-dachi
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_wakizashi_verite]
+ID=027a4
+NAME=Verite wakizashi
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_verite
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite wakizashi
+DESCRIPTION=Verite wakizashi
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_lajatang_verite]
+ID=027a7
+NAME=Verite lajatang
+TYPE=t_weapon_fence
+RESOURCES=25 i_ingot_verite
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite lajatang
+DESCRIPTION=Verite lajatang
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_daisho_verite]
+ID=027a9
+NAME=Verite daisho
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite
+SKILLMAKE=60.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite daisho
+DESCRIPTION=Verite daisho
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_tekagi_verite]
+ID=027ab
+NAME=Verite tekagi
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=55.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite tekagi
+DESCRIPTION=Verite tekagi
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_shuriken_verite]
+ID=027ac
+NAME=Verite shuriken
+TYPE=t_ninja_shuriken
+RESOURCES=5 i_ingot_verite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=0.1
+CATEGORY=0 - Colored
+SUBSECTION=Verite 0
+DESCRIPTION=Verite shuriken
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=089f
+ 
+[ITEMDEF i_kama_verite]
+ID=027ad
+NAME=Verite kama
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite kama
+DESCRIPTION=Verite kama
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_sai_verite]
+ID=027af
+NAME=Verite sai
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite sai
+DESCRIPTION=Verite sai
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_radiant_scimitar_verite]
+ID=02d27
+NAME=Verite radiant scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite radiant scimitar
+DESCRIPTION=Verite radiant scimitar
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_war_cleaver_verite]
+ID=02d23
+NAME=Verite war cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite war cleaver
+DESCRIPTION=Verite war cleaver
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_elven_spellblade_verite]
+ID=02d20
+NAME=Verite elven spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite elven spellblade
+DESCRIPTION=Verite elven spellblade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_assassin_spike_verite]
+ID=02d21
+NAME=Verite assassin spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_verite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite assassin spike
+DESCRIPTION=Verite assassin spike
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_leafblade_verite]
+ID=02d22
+NAME=Verite leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite leafblade
+DESCRIPTION=Verite leafblade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_rune_blade_verite]
+ID=02d26
+NAME=Verite rune blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite rune blade
+DESCRIPTION=Verite rune blade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_elven_machete_verite]
+ID=02d29
+NAME=Verite elven machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite elven machete
+DESCRIPTION=Verite elven machete
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_true_spellblade_verite]
+ID=02d20
+NAME=Verite True Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_verite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite elven spellblade
+DESCRIPTION=Verite True Spellblade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_icy_spellblade_verite]
+ID=02d20
+NAME=Verite Icy Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_verite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite elven spellblade
+DESCRIPTION=Verite Icy Spellblade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+TAG.ResCold=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_fiery_spellblade_verite]
+ID=02d20
+NAME=Verite Fiery Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_verite, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite elven spellblade
+DESCRIPTION=Verite Fiery Spellblade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+TAG.ResFire=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_spellblade_defense_verite]
+ID=02d20
+NAME=Verite Spellblade of Defense
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_verite, 1 i_gem_white_pearl
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite elven spellblade
+DESCRIPTION=Verite Spellblade of Defense
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_true_assassin_spike_verite]
+ID=02d21
+NAME=Verite True Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_verite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite assassin spike
+DESCRIPTION=Verite True Assassin Spike
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_charged_assassin_spike_verite]
+ID=02d21
+NAME=Verite Charged Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_verite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite assassin spike
+DESCRIPTION=Verite Charged Assassin Spike
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_magekiller_assassin_spike_verite]
+ID=02d21
+NAME=Verite Magekiller Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_verite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite assassin spike
+DESCRIPTION=Verite Magekiller Assassin Spike
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_wounding_assassin_spike_verite]
+ID=02d21
+NAME=Verite Wounding Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_verite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite assassin spike
+DESCRIPTION=Verite Wounding Assassin Spike
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_true_leafblade_verite]
+ID=02d22
+NAME=Verite True Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite leafblade
+DESCRIPTION=Verite True Leafblade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_luckblade_verite]
+ID=02d22
+NAME=Verite Luckblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite leafblade
+DESCRIPTION=Verite Luckblade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_magekiller_leafblade_verite]
+ID=02d22
+NAME=Verite Magekiller Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite leafblade
+DESCRIPTION=Verite Magekiller Leafblade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_leafblade_ease_verite]
+ID=02d22
+NAME=Verite Leafblade of Ease
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite leafblade
+DESCRIPTION=Verite Leafblade of Ease
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_knight_war_cleaver_verite]
+ID=02d23
+NAME=Verite Knight's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_verite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite war cleaver
+DESCRIPTION=Verite Knight's War Cleaver
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_butcher_war_cleaver_verite]
+ID=02d23
+NAME=Verite Butcher's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_verite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite war cleaver
+DESCRIPTION=Verite Butcher's War Cleaver
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_serrated_war_cleaver_verite]
+ID=02d23
+NAME=Verite Serrated War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_verite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite war cleaver
+DESCRIPTION=Verite Serrated War Cleaver
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_true_war_cleaver_verite]
+ID=02d23
+NAME=Verite True War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_verite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite war cleaver
+DESCRIPTION=Verite True War Cleaver
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_diseased_machete_verite]
+ID=02d29
+NAME=Verite Diseased Machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_verite, 1 i_ingredient_blight
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite elven machete
+DESCRIPTION=Verite Diseased Machete
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_runesabre_verite]
+ID=02d26
+NAME=Verite Runesabre
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite rune blade
+DESCRIPTION=Verite Runesabre
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_mage_rune_blade_verite]
+ID=02d26
+NAME=Verite Mage's Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite rune blade
+DESCRIPTION=Verite Mage's Rune Blade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_rune_blade_knowledge_verite]
+ID=02d26
+NAME=Verite Rune Blade of Knowledge
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite rune blade
+DESCRIPTION=Verite Rune Blade of Knowledge
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_corrupted_rune_blade_verite]
+ID=02d26
+NAME=Verite Corruped Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite, 1 i_ingredient_corruption
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite rune blade
+DESCRIPTION=Verite Corruped Rune Blade
+TAG.DamPoison=40
+TAG.DamEnergy=20
+TAG.ResPhysical=-5
+TAG.ResPoison=12
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_true_radiant_scimitar_verite]
+ID=02d27
+NAME=Verite True Radiant Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite radiant scimitar
+DESCRIPTION=Verite True Radiant Scimitar
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_darkglow_scimitar_verite]
+ID=02d27
+NAME=Verite Darkglow Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite radiant scimitar
+DESCRIPTION=Verite Darkglow Scimitar
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_icy_scimitar_verite]
+ID=02d27
+NAME=Verite Icy Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite radiant scimitar
+DESCRIPTION=Verite Icy Scimitar
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_twinkling_scimitar_verite]
+ID=02d27
+NAME=Verite Twinkling Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_verite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite radiant scimitar
+DESCRIPTION=Verite Twinkling Scimitar
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_axe_verite]
+ID=0f49
+NAME=Verite axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite axe
+DESCRIPTION=Verite axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_axe_battle_verite]
+ID=0f47
+NAME=Verite battle axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=30.5 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite battle axe
+DESCRIPTION=Verite battle axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_axe_double_verite]
+ID=0f4b
+NAME=Verite double axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=29.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite double axe
+DESCRIPTION=Verite double axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_axe_exec_verite]
+ID=0f45
+NAME=Verite executioner's axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite executioner's axe
+DESCRIPTION=Verite executioner's axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_axe_battle_large_verite]
+ID=013fa
+NAME=Verite large battle axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite large battle axe
+DESCRIPTION=Verite large battle axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_axe_two_hand_verite]
+ID=01442
+NAME=Verite two handed axe
+TYPE=t_weapon_axe
+RESOURCES=16 i_ingot_verite
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite two handed axe
+DESCRIPTION=Verite two handed axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_axe_war_verite]
+ID=013af
+NAME=Verite war axe
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_verite
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite war axe
+DESCRIPTION=Verite war axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_ornate_axe_verite]
+ID=02d28
+NAME=Verite ornate axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite ornate axe
+DESCRIPTION=Verite ornate axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_guardian_axe_verite]
+ID=02d28
+NAME=Verite Guardian Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_verite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite ornate axe
+DESCRIPTION=Verite Guardian Axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_singing_axe_verite]
+ID=02d28
+NAME=Verite Singing Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_verite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite ornate axe
+DESCRIPTION=Verite Singing Axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_thundering_axe_verite]
+ID=02d28
+NAME=Verite Thundering Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_verite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite ornate axe
+DESCRIPTION=Verite Thundering Axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_heavy_ornate_axe_verite]
+ID=02d28
+NAME=Verite Heavy Ornate Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_verite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite ornate axe
+DESCRIPTION=Verite Heavy Ornate Axe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_bardiche_verite]
+ID=0f4d
+NAME=Verite bardiche
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_verite
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite bardiche
+DESCRIPTION=Verite bardiche
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_bladed_staff_verite]
+ID=026bd
+NAME=Verite bladed staff
+TYPE=t_weapon_mace_sharp
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite bladed staff
+DESCRIPTION=Verite bladed staff
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_double_bladed_staff_verite]
+ID=026bf
+NAME=Verite double bladed staff
+TYPE=t_weapon_fence
+RESOURCES=16 i_ingot_verite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite double bladed staff
+DESCRIPTION=Verite double bladed staff
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_lance_verite]
+ID=026c0
+NAME=Verite lance
+TYPE=t_weapon_fence
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=48.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite lance
+DESCRIPTION=Verite lance
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_pike_verite]
+ID=026be
+NAME=Verite pike
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=47.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite pike
+DESCRIPTION=Verite pike
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_spear_short_verite]
+ID=01402
+NAME=Verite short spear
+TYPE=t_weapon_fence
+RESOURCES=6 i_ingot_verite
+SKILLMAKE=45.3 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite short spear
+DESCRIPTION=Verite short spear
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_scythe_verite]
+ID=026ba
+NAME=Verite scythe
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=39.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite scythe
+DESCRIPTION=Verite scythe
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_spear_verite]
+ID=0f62
+NAME=Verite spear
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=49.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite spear
+DESCRIPTION=Verite spear
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_war_fork_verite]
+ID=01404
+NAME=Verite war fork
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_verite
+SKILLMAKE=42.9 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite war fork
+DESCRIPTION=Verite war fork
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_hammer_pick_verite]
+ID=0143c
+NAME=Verite hammer pick
+TYPE=t_weapon_mace_pick
+RESOURCES=16 i_ingot_verite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite hammer pick
+DESCRIPTION=Verite hammer pick
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_mace_verite]
+ID=0f5c
+NAME=Verite mace
+TYPE=t_weapon_mace_smith
+RESOURCES=6 i_ingot_verite
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=14.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite mace
+DESCRIPTION=Verite mace
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_maul_verite]
+ID=0143a
+NAME=Verite maul
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_verite
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite maul
+DESCRIPTION=Verite maul
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_scepter_verite]
+ID=026bc
+NAME=Verite scepter
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_verite
+SKILLMAKE=21.4 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite scepter
+DESCRIPTION=Verite scepter
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_mace_war_verite]
+ID=01406
+NAME=Verite war mace
+TYPE=t_weapon_mace_smith
+RESOURCES=14 i_ingot_verite
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=17.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite war mace
+DESCRIPTION=Verite war mace
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_hammer_war_verite]
+ID=01438
+NAME=Verite war hammer
+TYPE=t_weapon_mace_smith
+RESOURCES=16 i_ingot_verite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite war hammer
+DESCRIPTION=Verite war hammer
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_tessen_verite]
+ID=027a3
+NAME=Verite tessen
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_verite, 10 i_cloth
+SKILLMAKE=85.0 Blacksmithing, 50.0 Tailoring
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite tessen
+DESCRIPTION=Verite tessen
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_diamond_mace_verite]
+ID=02d24
+NAME=Verite diamond mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_verite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite diamond mace
+DESCRIPTION=Verite diamond mace
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_ruby_mace_verite]
+ID=02d24
+NAME=Verite Ruby Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_verite, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite diamond mace
+DESCRIPTION=Verite Ruby Mace
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_emerald_mace_verite]
+ID=02d24
+NAME=Verite Emerald Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_verite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite diamond mace
+DESCRIPTION=Verite Emerald Mace
+TAG.DamPoison=40
+TAG.DamEnergy=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_sapphire_mace_verite]
+ID=02d24
+NAME=Verite Sapphire Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_verite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite diamond mace
+DESCRIPTION=Verite Sapphire Mace
+TAG.DamPoison=40
+TAG.DamEnergy=20
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_silver_etched_mace_verite]
+ID=02d24
+NAME=Verite Silver-Etched Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_verite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite diamond mace
+DESCRIPTION=Verite Silver-Etched Mace
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_boomerang_verite]
+ID=08ff
+NAME=Verite boomerang
+TYPE=t_weapon_bow
+RESOURCES=5 i_ingot_verite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite boomerang
+DESCRIPTION=Verite boomerang
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_cyclone_verite]
+ID=0901
+NAME=Verite cyclone
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_verite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite cyclone
+DESCRIPTION=Verite cyclone
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 
+[ITEMDEF i_soul_glaive_verite]
+ID=090a
+NAME=Verite soul glaive
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_verite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Verite soul glaive
+DESCRIPTION=Verite soul glaive
+TAG.DamPoison=40
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=089f
+ 

@@ -1,0 +1,2593 @@
+[ITEMDEF i_ringmail_gloves_golden]
+ID=013eb
+NAME=Golden ringmail gloves
+TYPE=t_armor
+RESOURCES=10 i_ingot_gold
+SKILLMAKE=12.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=12
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden ringmail Armor
+DESCRIPTION=Golden ringmail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_ringmail_leggings_golden]
+ID=013f0
+NAME=Golden ringmail leggings
+TYPE=t_armor
+RESOURCES=16 i_ingot_gold
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=15.0
+REQSTR=12
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden ringmail Armor
+DESCRIPTION=Golden ringmail leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_ringmail_sleeves_golden]
+ID=013ee
+NAME=Golden ringmail sleeves
+TYPE=t_armor
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=16.9 Blacksmithing
+WEIGHT=15.0
+REQSTR=12
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden ringmail Armor
+DESCRIPTION=Golden ringmail sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_ringmail_tunic_golden]
+ID=013ec
+NAME=Golden ringmail tunic
+TYPE=t_armor
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=21.9 Blacksmithing
+WEIGHT=15.0
+REQSTR=12
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden ringmail Armor
+DESCRIPTION=Golden ringmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_chainmail_coif_golden]
+ID=013bb
+NAME=Golden chainmail coif
+TYPE=t_armor
+RESOURCES=10 i_ingot_gold
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=7.0
+REQSTR=18
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden chainmail coif
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=5
+TAG.ResCold=6
+TAG.ResPoison=1
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_chainmail_leggings_golden]
+ID=013be
+NAME=Golden chainmail leggings
+TYPE=t_armor
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=7.0
+REQSTR=18
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden chainmail Armor
+DESCRIPTION=Golden chainmail leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=5
+TAG.ResFire=5
+TAG.ResCold=6
+TAG.ResPoison=1
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_chainmail_tunic_golden]
+ID=013bf
+NAME=Golden chainmail tunic
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=7.0
+REQSTR=18
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden chainmail Armor
+DESCRIPTION=Golden chainmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=5
+TAG.ResFire=5
+TAG.ResCold=6
+TAG.ResPoison=1
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_arms_golden]
+ID=01410
+NAME=Golden platemail arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+REQSTR=24
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Armor
+DESCRIPTION=Golden platemail arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_gloves_golden]
+ID=01414
+NAME=Golden platemail gloves
+TYPE=t_armor
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=2.0
+REQSTR=21
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Armor
+DESCRIPTION=Golden platemail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_gorget_golden]
+ID=01413
+NAME=Golden platemail gorget
+TYPE=t_armor
+RESOURCES=10 i_ingot_gold
+SKILLMAKE=56.4 Blacksmithing
+WEIGHT=2.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Armor
+DESCRIPTION=Golden platemail gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_leggings_golden]
+ID=01411
+NAME=Golden platemail legs
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+REQSTR=27
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Armor
+DESCRIPTION=Golden platemail legs
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_chest_golden]
+ID=01415
+NAME=Golden platemail
+TYPE=t_armor
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=29
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Armor
+DESCRIPTION=Golden platemail
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_armor_female_plate_golden]
+ID=01c04
+NAME=Golden plate armor
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=4.0
+REQSTR=29
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden plate Armor
+DESCRIPTION=Golden plate armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_mempo_golden]
+ID=02779
+NAME=Golden platemail mempo
+TYPE=t_armor
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=3.0
+REQSTR=15
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Samurai Armor
+DESCRIPTION=Golden platemail mempo
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_do_golden]
+ID=0277d
+NAME=Golden platemail do
+TYPE=t_armor
+RESOURCES=28 i_ingot_gold
+SKILLMAKE=87.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=26
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Samurai Armor
+DESCRIPTION=Golden platemail do
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_hiro_sode_golden]
+ID=02780
+NAME=Golden platemail hiro sode
+TYPE=t_armor
+RESOURCES=16 i_ingot_gold
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=23
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Samurai Armor
+DESCRIPTION=Golden platemail hiro sode
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_suneate_golden]
+ID=02788
+NAME=Golden platemail suneate
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=24
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Samurai Armor
+DESCRIPTION=Golden platemail suneate
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_haidate_golden]
+ID=0278d
+NAME=Golden platemail haidate
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=24
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden platemail Samurai Armor
+DESCRIPTION=Golden platemail haidate
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_gargish_arms_golden]
+ID=0308
+NAME=Golden Gargish Platemail Arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+REQSTR=24
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Gargish Armor
+DESCRIPTION=Golden Gargish Platemail Arms
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=7
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_gargish_chest_golden]
+ID=0309
+NAME=Golden Gargish Platemail Chest
+TYPE=t_armor
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=29
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Gargish Armor
+DESCRIPTION=Golden Gargish Platemail Chest
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=7
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_gargish_kilt_golden]
+ID=030b
+NAME=Golden Gargish Platemail Kilt
+TYPE=t_armor
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=5.0
+REQSTR=24
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Gargish Armor
+DESCRIPTION=Golden Gargish Platemail Kilt
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=7
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_gargish_leggings_golden]
+ID=030d
+NAME=Golden Gargish Platemail Leggings
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+REQSTR=27
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Gargish Armor
+DESCRIPTION=Golden Gargish Platemail Leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=7
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_bascinet_golden]
+ID=0140c
+NAME=Golden bascinet
+TYPE=t_armor
+RESOURCES=15 i_ingot_gold
+SKILLMAKE=8.3 Blacksmithing
+WEIGHT=5.0
+REQSTR=12
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden bascinet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_helm_close_golden]
+ID=01408
+NAME=Golden close helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_gold
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+REQSTR=17
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden close helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=5
+TAG.ResPoison=3
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_helm_open_golden]
+ID=0140a
+NAME=Golden helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_gold
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=3
+TAG.ResFire=5
+TAG.ResCold=6
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_helm_norse_golden]
+ID=0140e
+NAME=Golden norse helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_gold
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+REQSTR=17
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden norse helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=2
+TAG.ResCold=6
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_helm_golden]
+ID=01412
+NAME=Golden plate helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_gold
+SKILLMAKE=62.6 Blacksmithing
+WEIGHT=5.0
+REQSTR=24
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden plate helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_chainmail_hatsuburi_golden]
+ID=02774
+NAME=Golden chainmail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden chainmail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=6
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_hatsuburi_golden]
+ID=02775
+NAME=Golden platemail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=20
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden platemail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_plate_jingasa_heavy_golden]
+ID=02777
+NAME=Golden heavy platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=17
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden heavy platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_plate_jingasa_light_golden]
+ID=02781
+NAME=Golden light platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=17
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden light platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_plate_jingasa_small_golden]
+ID=02784
+NAME=Golden small platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=17
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden small platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_kabuto_decorative_golden]
+ID=02778
+NAME=Golden decorative platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=21
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden decorative platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_kabuto_battle_golden]
+ID=02785
+NAME=Golden platemail battle kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=21
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden platemail battle kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_platemail_kabuto_golden]
+ID=02789
+NAME=Golden standard platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=21
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden standard platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_circlet_golden]
+ID=02b6e
+NAME=Golden circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_gold
+SKILLMAKE=62.1 Blacksmithing
+WEIGHT=2.0
+REQSTR=3
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden circlet
+TAG.ResPhysical=2
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_circlet_royal_golden]
+ID=02b6f
+NAME=Golden royal circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_gold
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=3
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden royal circlet
+TAG.ResPhysical=2
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_circlet_gemmed_golden]
+ID=02b70
+NAME=Golden gemmed circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_gold, 1 i_gem_amethyst, 1 i_gem_tourmaline, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=3
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Helmets
+DESCRIPTION=Golden gemmed circlet
+TAG.ResPhysical=2
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_buckler_golden]
+ID=01b73
+NAME=Golden buckler 
+TYPE=t_shield
+RESOURCES=6 i_ingot_gold
+SKILLMAKE=0.1 Blacksmithing
+WEIGHT=6.0
+REQSTR=6
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden buckler 
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResPoison=1
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_round_bronze_golden]
+ID=01b72
+NAME=Golden bronze shield
+TYPE=t_shield
+RESOURCES=10 i_ingot_gold
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=11
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden bronze shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResCold=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_heater_golden]
+ID=01b76
+NAME=Golden heater shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=14.0
+REQSTR=27
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden heater shield
+TAG.ResPhysical=1
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_round_metal_golden]
+ID=01b7b
+NAME=Golden metal shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=11.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden metal shield
+TAG.ResPhysical=1
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_kite_metal_golden]
+ID=01b74
+NAME=Golden kite shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_gold
+SKILLMAKE=44.6 Blacksmithing
+WEIGHT=14.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden kite shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_kite_wood_golden]
+ID=01b78
+NAME=Golden kite shield
+TYPE=t_shield
+RESOURCES=8 i_ingot_gold, 4 i_log
+SKILLMAKE=12.6 Blacksmithing
+WEIGHT=9.0
+REQSTR=6
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden kite shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_chaos_golden]
+ID=01bc3
+NAME=Golden Chaos shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+REQSTR=29
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden Chaos shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_order_golden]
+ID=01bc4
+NAME=Golden Order shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+REQSTR=29
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden Order shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_plate_small_golden]
+ID=04202
+NAME=Golden Small Plate Shield
+TYPE=t_shield
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+REQSTR=6
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden Small Plate Shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResCold=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_kite_gargish_golden]
+ID=04201
+NAME=Golden Gargish Kite Shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_gold
+SKILLMAKE=4.6 Blacksmithing
+WEIGHT=7.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden Gargish Kite Shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_plate_medium_golden]
+ID=04203
+NAME=Golden Medium Plate Shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden Medium Plate Shield
+TAG.ResPhysical=1
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_plate_large_golden]
+ID=04204
+NAME=Golden Large Plate Shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+REQSTR=27
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden Large Plate Shield
+TAG.ResPhysical=1
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_chaos_gargish_golden]
+ID=04228
+NAME=Golden Gargish Chaos Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=29
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden Gargish Chaos Shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shield_order_gargish_golden]
+ID=0422a
+NAME=Golden Gargish Order Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=29
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Golden Shields
+DESCRIPTION=Golden Gargish Order Shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_bone_harvester_golden]
+ID=026bb
+NAME=Golden bone harvester
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_gold
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=3.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden bone harvester
+DESCRIPTION=Golden bone harvester
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_sword_broad_golden]
+ID=0f5e
+NAME=Golden broadsword
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_gold
+SKILLMAKE=35.4 Blacksmithing
+WEIGHT=6.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden broadsword
+DESCRIPTION=Golden broadsword
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_crescent_blade_golden]
+ID=026c1
+NAME=Golden crescent blade
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=28
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden crescent blade
+DESCRIPTION=Golden crescent blade
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_cutlass_golden]
+ID=01440
+NAME=Golden cutlass
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_gold
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden cutlass
+DESCRIPTION=Golden cutlass
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_dagger_golden]
+ID=0f51
+NAME=Golden dagger
+TYPE=t_weapon_fence
+RESOURCES=3 i_ingot_gold
+SKILLMAKE=Blacksmithing
+WEIGHT=1.0
+REQSTR=5
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden dagger
+DESCRIPTION=Golden dagger
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_katana_golden]
+ID=013fe
+NAME=Golden katana
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_gold
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=10.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden katana
+DESCRIPTION=Golden katana
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_kryss_golden]
+ID=01400
+NAME=Golden kryss
+TYPE=t_weapon_fence
+RESOURCES=8 i_ingot_gold
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=2.0
+REQSTR=5
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden kryss
+DESCRIPTION=Golden kryss
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_sword_long_golden]
+ID=0f60
+NAME=Golden longsword
+TYPE=t_weapon_sword
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden longsword
+DESCRIPTION=Golden longsword
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_scimitar_golden]
+ID=013b5
+NAME=Golden scimitar
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_gold
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=5.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden scimitar
+DESCRIPTION=Golden scimitar
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_sword_viking_golden]
+ID=013b9
+NAME=Golden viking sword
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=6.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden viking sword
+DESCRIPTION=Golden viking sword
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_no_dachi_golden]
+ID=027a2
+NAME=Golden no-dachi
+TYPE=t_weapon_sword
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden no-dachi
+DESCRIPTION=Golden no-dachi
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_wakizashi_golden]
+ID=027a4
+NAME=Golden wakizashi
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_gold
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden wakizashi
+DESCRIPTION=Golden wakizashi
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_lajatang_golden]
+ID=027a7
+NAME=Golden lajatang
+TYPE=t_weapon_fence
+RESOURCES=25 i_ingot_gold
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=33
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden lajatang
+DESCRIPTION=Golden lajatang
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_daisho_golden]
+ID=027a9
+NAME=Golden daisho
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold
+SKILLMAKE=60.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden daisho
+DESCRIPTION=Golden daisho
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_tekagi_golden]
+ID=027ab
+NAME=Golden tekagi
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=55.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=5
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden tekagi
+DESCRIPTION=Golden tekagi
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_shuriken_golden]
+ID=027ac
+NAME=Golden shuriken
+TYPE=t_ninja_shuriken
+RESOURCES=5 i_ingot_gold
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=0.1
+CATEGORY=0 - Colored
+SUBSECTION=Golden 0
+DESCRIPTION=Golden shuriken
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=08a5
+ 
+[ITEMDEF i_kama_golden]
+ID=027ad
+NAME=Golden kama
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden kama
+DESCRIPTION=Golden kama
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_sai_golden]
+ID=027af
+NAME=Golden sai
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden sai
+DESCRIPTION=Golden sai
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_radiant_scimitar_golden]
+ID=02d27
+NAME=Golden radiant scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden radiant scimitar
+DESCRIPTION=Golden radiant scimitar
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_war_cleaver_golden]
+ID=02d23
+NAME=Golden war cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden war cleaver
+DESCRIPTION=Golden war cleaver
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_elven_spellblade_golden]
+ID=02d20
+NAME=Golden elven spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden elven spellblade
+DESCRIPTION=Golden elven spellblade
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_assassin_spike_golden]
+ID=02d21
+NAME=Golden assassin spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_gold
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden assassin spike
+DESCRIPTION=Golden assassin spike
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_leafblade_golden]
+ID=02d22
+NAME=Golden leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden leafblade
+DESCRIPTION=Golden leafblade
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_rune_blade_golden]
+ID=02d26
+NAME=Golden rune blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden rune blade
+DESCRIPTION=Golden rune blade
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_elven_machete_golden]
+ID=02d29
+NAME=Golden elven machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden elven machete
+DESCRIPTION=Golden elven machete
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_true_spellblade_golden]
+ID=02d20
+NAME=Golden True Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_gold, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden elven spellblade
+DESCRIPTION=Golden True Spellblade
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_icy_spellblade_golden]
+ID=02d20
+NAME=Golden Icy Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_gold, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden elven spellblade
+DESCRIPTION=Golden Icy Spellblade
+TAG.ResCold=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_fiery_spellblade_golden]
+ID=02d20
+NAME=Golden Fiery Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_gold, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden elven spellblade
+DESCRIPTION=Golden Fiery Spellblade
+TAG.ResFire=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_spellblade_defense_golden]
+ID=02d20
+NAME=Golden Spellblade of Defense
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_gold, 1 i_gem_white_pearl
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden elven spellblade
+DESCRIPTION=Golden Spellblade of Defense
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_true_assassin_spike_golden]
+ID=02d21
+NAME=Golden True Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_gold, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden assassin spike
+DESCRIPTION=Golden True Assassin Spike
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_charged_assassin_spike_golden]
+ID=02d21
+NAME=Golden Charged Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_gold, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden assassin spike
+DESCRIPTION=Golden Charged Assassin Spike
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_magekiller_assassin_spike_golden]
+ID=02d21
+NAME=Golden Magekiller Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_gold, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden assassin spike
+DESCRIPTION=Golden Magekiller Assassin Spike
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_wounding_assassin_spike_golden]
+ID=02d21
+NAME=Golden Wounding Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_gold, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden assassin spike
+DESCRIPTION=Golden Wounding Assassin Spike
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_true_leafblade_golden]
+ID=02d22
+NAME=Golden True Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden leafblade
+DESCRIPTION=Golden True Leafblade
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_luckblade_golden]
+ID=02d22
+NAME=Golden Luckblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden leafblade
+DESCRIPTION=Golden Luckblade
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_magekiller_leafblade_golden]
+ID=02d22
+NAME=Golden Magekiller Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden leafblade
+DESCRIPTION=Golden Magekiller Leafblade
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_leafblade_ease_golden]
+ID=02d22
+NAME=Golden Leafblade of Ease
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden leafblade
+DESCRIPTION=Golden Leafblade of Ease
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_knight_war_cleaver_golden]
+ID=02d23
+NAME=Golden Knight's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_gold, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden war cleaver
+DESCRIPTION=Golden Knight's War Cleaver
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_butcher_war_cleaver_golden]
+ID=02d23
+NAME=Golden Butcher's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_gold, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden war cleaver
+DESCRIPTION=Golden Butcher's War Cleaver
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_serrated_war_cleaver_golden]
+ID=02d23
+NAME=Golden Serrated War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_gold, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden war cleaver
+DESCRIPTION=Golden Serrated War Cleaver
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_true_war_cleaver_golden]
+ID=02d23
+NAME=Golden True War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_gold, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden war cleaver
+DESCRIPTION=Golden True War Cleaver
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_diseased_machete_golden]
+ID=02d29
+NAME=Golden Diseased Machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_gold, 1 i_ingredient_blight
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden elven machete
+DESCRIPTION=Golden Diseased Machete
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_runesabre_golden]
+ID=02d26
+NAME=Golden Runesabre
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden rune blade
+DESCRIPTION=Golden Runesabre
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_mage_rune_blade_golden]
+ID=02d26
+NAME=Golden Mage's Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden rune blade
+DESCRIPTION=Golden Mage's Rune Blade
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_rune_blade_knowledge_golden]
+ID=02d26
+NAME=Golden Rune Blade of Knowledge
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden rune blade
+DESCRIPTION=Golden Rune Blade of Knowledge
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_corrupted_rune_blade_golden]
+ID=02d26
+NAME=Golden Corruped Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold, 1 i_ingredient_corruption
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden rune blade
+DESCRIPTION=Golden Corruped Rune Blade
+TAG.ResPhysical=-5
+TAG.ResPoison=12
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_true_radiant_scimitar_golden]
+ID=02d27
+NAME=Golden True Radiant Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden radiant scimitar
+DESCRIPTION=Golden True Radiant Scimitar
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_darkglow_scimitar_golden]
+ID=02d27
+NAME=Golden Darkglow Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden radiant scimitar
+DESCRIPTION=Golden Darkglow Scimitar
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_icy_scimitar_golden]
+ID=02d27
+NAME=Golden Icy Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden radiant scimitar
+DESCRIPTION=Golden Icy Scimitar
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_twinkling_scimitar_golden]
+ID=02d27
+NAME=Golden Twinkling Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_gold, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden radiant scimitar
+DESCRIPTION=Golden Twinkling Scimitar
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_axe_golden]
+ID=0f49
+NAME=Golden axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=4.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden axe
+DESCRIPTION=Golden axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_axe_battle_golden]
+ID=0f47
+NAME=Golden battle axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=30.5 Blacksmithing
+WEIGHT=4.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden battle axe
+DESCRIPTION=Golden battle axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_axe_double_golden]
+ID=0f4b
+NAME=Golden double axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=29.3 Blacksmithing
+WEIGHT=8.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden double axe
+DESCRIPTION=Golden double axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_axe_exec_golden]
+ID=0f45
+NAME=Golden executioner's axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=8.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden executioner's axe
+DESCRIPTION=Golden executioner's axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_axe_battle_large_golden]
+ID=013fa
+NAME=Golden large battle axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=40
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden large battle axe
+DESCRIPTION=Golden large battle axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_axe_two_hand_golden]
+ID=01442
+NAME=Golden two handed axe
+TYPE=t_weapon_axe
+RESOURCES=16 i_ingot_gold
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden two handed axe
+DESCRIPTION=Golden two handed axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_axe_war_golden]
+ID=013af
+NAME=Golden war axe
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_gold
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=8.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden war axe
+DESCRIPTION=Golden war axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_ornate_axe_golden]
+ID=02d28
+NAME=Golden ornate axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden ornate axe
+DESCRIPTION=Golden ornate axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_guardian_axe_golden]
+ID=02d28
+NAME=Golden Guardian Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_gold, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden ornate axe
+DESCRIPTION=Golden Guardian Axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_singing_axe_golden]
+ID=02d28
+NAME=Golden Singing Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_gold, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden ornate axe
+DESCRIPTION=Golden Singing Axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_thundering_axe_golden]
+ID=02d28
+NAME=Golden Thundering Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_gold, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden ornate axe
+DESCRIPTION=Golden Thundering Axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_heavy_ornate_axe_golden]
+ID=02d28
+NAME=Golden Heavy Ornate Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_gold, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden ornate axe
+DESCRIPTION=Golden Heavy Ornate Axe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_bardiche_golden]
+ID=0f4d
+NAME=Golden bardiche
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_gold
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=7.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden bardiche
+DESCRIPTION=Golden bardiche
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_bladed_staff_golden]
+ID=026bd
+NAME=Golden bladed staff
+TYPE=t_weapon_mace_sharp
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden bladed staff
+DESCRIPTION=Golden bladed staff
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_double_bladed_staff_golden]
+ID=026bf
+NAME=Golden double bladed staff
+TYPE=t_weapon_fence
+RESOURCES=16 i_ingot_gold
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=25
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden double bladed staff
+DESCRIPTION=Golden double bladed staff
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_lance_golden]
+ID=026c0
+NAME=Golden lance
+TYPE=t_weapon_fence
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=48.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=48
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden lance
+DESCRIPTION=Golden lance
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_pike_golden]
+ID=026be
+NAME=Golden pike
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=47.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=25
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden pike
+DESCRIPTION=Golden pike
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_spear_short_golden]
+ID=01402
+NAME=Golden short spear
+TYPE=t_weapon_fence
+RESOURCES=6 i_ingot_gold
+SKILLMAKE=45.3 Blacksmithing
+WEIGHT=4.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden short spear
+DESCRIPTION=Golden short spear
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_scythe_golden]
+ID=026ba
+NAME=Golden scythe
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=39.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden scythe
+DESCRIPTION=Golden scythe
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_spear_golden]
+ID=0f62
+NAME=Golden spear
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=49.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=25
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden spear
+DESCRIPTION=Golden spear
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_war_fork_golden]
+ID=01404
+NAME=Golden war fork
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_gold
+SKILLMAKE=42.9 Blacksmithing
+WEIGHT=9.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden war fork
+DESCRIPTION=Golden war fork
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_hammer_pick_golden]
+ID=0143c
+NAME=Golden hammer pick
+TYPE=t_weapon_mace_pick
+RESOURCES=16 i_ingot_gold
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=9.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden hammer pick
+DESCRIPTION=Golden hammer pick
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_mace_golden]
+ID=0f5c
+NAME=Golden mace
+TYPE=t_weapon_mace_smith
+RESOURCES=6 i_ingot_gold
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=14.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden mace
+DESCRIPTION=Golden mace
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_maul_golden]
+ID=0143a
+NAME=Golden maul
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_gold
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=10.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden maul
+DESCRIPTION=Golden maul
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_scepter_golden]
+ID=026bc
+NAME=Golden scepter
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_gold
+SKILLMAKE=21.4 Blacksmithing
+WEIGHT=8.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden scepter
+DESCRIPTION=Golden scepter
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_mace_war_golden]
+ID=01406
+NAME=Golden war mace
+TYPE=t_weapon_mace_smith
+RESOURCES=14 i_ingot_gold
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=17.0
+REQSTR=40
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden war mace
+DESCRIPTION=Golden war mace
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_hammer_war_golden]
+ID=01438
+NAME=Golden war hammer
+TYPE=t_weapon_mace_smith
+RESOURCES=16 i_ingot_gold
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=10.0
+REQSTR=48
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden war hammer
+DESCRIPTION=Golden war hammer
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_tessen_golden]
+ID=027a3
+NAME=Golden tessen
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_gold, 10 i_cloth
+SKILLMAKE=85.0 Blacksmithing, 50.0 Tailoring
+WEIGHT=6.0
+REQSTR=5
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden tessen
+DESCRIPTION=Golden tessen
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_diamond_mace_golden]
+ID=02d24
+NAME=Golden diamond mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_gold
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden diamond mace
+DESCRIPTION=Golden diamond mace
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_ruby_mace_golden]
+ID=02d24
+NAME=Golden Ruby Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_gold, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden diamond mace
+DESCRIPTION=Golden Ruby Mace
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_emerald_mace_golden]
+ID=02d24
+NAME=Golden Emerald Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_gold, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden diamond mace
+DESCRIPTION=Golden Emerald Mace
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_sapphire_mace_golden]
+ID=02d24
+NAME=Golden Sapphire Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_gold, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden diamond mace
+DESCRIPTION=Golden Sapphire Mace
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_silver_etched_mace_golden]
+ID=02d24
+NAME=Golden Silver-Etched Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_gold, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden diamond mace
+DESCRIPTION=Golden Silver-Etched Mace
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_boomerang_golden]
+ID=08ff
+NAME=Golden boomerang
+TYPE=t_weapon_bow
+RESOURCES=5 i_ingot_gold
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden boomerang
+DESCRIPTION=Golden boomerang
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_cyclone_golden]
+ID=0901
+NAME=Golden cyclone
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_gold
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden cyclone
+DESCRIPTION=Golden cyclone
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 
+[ITEMDEF i_soul_glaive_golden]
+ID=090a
+NAME=Golden soul glaive
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_gold
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=30
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Golden soul glaive
+DESCRIPTION=Golden soul glaive
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08a5
+ 

@@ -138,9 +138,9 @@ ELSE
 ENDIF
 LOCAL.FIRSTNEW=<NEW>
 DORAND 7
-SERV.NEWITEM { i_ring_gold 1 i_bracelet_gold 1 i_ring_silver 1 i_bracelet_silver 1 }
-SERV.NEWITEM {i_elven_composite_longbow 1 i_magical_shortbow 1 i_Elven_Spellblade 1 i_sword_Assassin_Spike 1 i_sword_leafblade 1 i_sword_warcleaver 1 i_elven_Machete 1 i_Ornate_Axe 1 i_Radiant_Scimitar 1 i_Rune_Blade 1 i_mace_diamondmace 1 i_mace_Wildstaff 1}
-SERV.NEWITEM {i_double_blade 1 i_lance 1 i_scyth 1 i_bone_harvester 1 i_scepter 1 i_bladed_staff 1 i_pike 1 i_double_bladed_staff 1 i_nodachi 1 i_daicho 1 i_sai 1 i_tekagi 1 i_horseman_bow 1 i_composite_bow 1 i_yumi 1 i_bokuto 1}
+SERV.NEWITEM { i_ring_gold 5 i_bracelet_gold 5 i_ring_silver 5 i_bracelet_silver 5 random_jewelry 1 }
+SERV.NEWITEM { i_elven_composite_longbow 1 i_magical_shortbow 1 i_Elven_Spellblade 1 i_sword_Assassin_Spike 1 i_sword_leafblade 1 i_sword_warcleaver 1 i_elven_Machete 1 i_Ornate_Axe 1 i_Radiant_Scimitar 1 i_Rune_Blade 1 i_mace_diamondmace 1 i_mace_Wildstaff 1}
+SERV.NEWITEM { i_lance 1 i_scythe 1 i_bone_harvester 1 i_scepter 1 i_bladed_staff 1 i_pike 1 i_double_bladed_staff 1 i_no_dachi 1 i_daisho 1 i_sai 1 i_tekagi 1 i_bow_horseman 1 i_composite_bow 1 i_yumi 1 i_bokuto 1}
 SERV.NEWITEM RANDOM_WEAPON
 SERV.NEWITEM { i_ring_gold 1 i_bracelet_gold 1 i_ring_silver 1 i_bracelet_silver 1 }
 SERV.NEWITEM RANDOM_ARMOR
@@ -412,10 +412,10 @@ ENDIF
 LOCAL.FIRSTNEW=<NEW>
 DORAND 5
 SERV.NEWITEM {i_lute 1 i_lyre 1 i_tambourine 1 i_drum 1}
-//SERV.NEWITEM {i_elven_composite_longbow 1 i_magical_shortbow 1 i_Elven_Spellblade 1 i_sword_Assassin_Spike 1 i_sword_leafblade 1 i_sword_warcleaver 1 i_elven_Machete 1 i_Ornate_Axe 1 i_Radiant_Scimitar 1 i_Rune_Blade 1 i_mace_diamondmace 1 i_mace_Wildstaff 1}
-//SERV.NEWITEM {i_double_blade 1 i_lance 1 i_scyth 1 i_bone_harvester 1 i_scepter 1 i_bladed_staff 1 i_pike 1 i_double_bladed_staff 1 i_nodachi 1 i_daicho 1 i_sai 1 i_tekagi 1 i_horseman_bow 1 i_composite_bow 1 i_yumi 1 i_bokuto 1}
+SERV.NEWITEM {i_elven_composite_longbow 1 i_magical_shortbow 1 i_Elven_Spellblade 1 i_sword_Assassin_Spike 1 i_sword_leafblade 1 i_sword_warcleaver 1 i_elven_Machete 1 i_Ornate_Axe 1 i_Radiant_Scimitar 1 i_Rune_Blade 1 i_mace_diamondmace 1 i_mace_Wildstaff 1}
+SERV.NEWITEM {i_double_blade 1 i_lance 1 i_scyth 1 i_bone_harvester 1 i_scepter 1 i_bladed_staff 1 i_pike 1 i_double_bladed_staff 1 i_no_dachi 1 i_daisho 1 i_sai 1 i_tekagi 1 i_bow_horseman 1 i_composite_bow 1 i_yumi 1 i_bokuto 1}
 SERV.NEWITEM RANDOM_WEAPON
-SERV.NEWITEM { i_ring_gold 1 i_bracelet_gold 1 i_ring_silver 1 i_bracelet_silver 1 }
+SERV.NEWITEM { i_ring_gold 5 i_bracelet_gold 5 i_ring_silver 5 i_bracelet_silver 5 random_jewelry 1 }
 SERV.NEWITEM RANDOM_ARMOR
 SERV.NEWITEM RANDOM_SHIELD
 ENDDO

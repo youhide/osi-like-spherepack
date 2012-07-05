@@ -1,0 +1,1201 @@
+[ITEMDEF i_bone_arms_Horned]
+ID=0144e
+NAME=HORNED bone arms
+TYPE=t_armor_leather
+RESOURCES=, 4  i_reag_bone
+SKILLMAKE=92.0 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED bone Armor
+DESCRIPTION=HORNED bone arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=6
+TAG.ResPoison=4
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_bone_chest_Horned]
+ID=0144f
+NAME=HORNED bone armor
+TYPE=t_armor_leather
+RESOURCES=, 10  i_reag_bone
+SKILLMAKE=96.0 Tailoring, 1 t_sewing_kit
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED bone Armor
+DESCRIPTION=HORNED bone armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=6
+TAG.ResPoison=4
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_bone_gloves_Horned]
+ID=01450
+NAME=HORNED bone gloves
+TYPE=t_armor_leather
+RESOURCES=, 2  i_reag_bone
+SKILLMAKE=89.0 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED bone Armor
+DESCRIPTION=HORNED bone gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=6
+TAG.ResPoison=4
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_bone_helmet_Horned]
+ID=01451
+NAME=HORNED bone helmet
+TYPE=t_armor_leather
+RESOURCES=, 2  i_reag_bone
+SKILLMAKE=85.0 Tailoring, 1 t_sewing_kit
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED Helmets
+DESCRIPTION=HORNED bone helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=6
+TAG.ResPoison=4
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_armor_female_leather_Horned]
+ID=01c06
+NAME=HORNED female leather armor
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_horned
+SKILLMAKE=62.2 Tailoring
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED female Armor
+DESCRIPTION=HORNED female leather armor
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_armor_female_bustier_Horned]
+ID=01c0a
+NAME=HORNED leather bustier
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_horned
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Armor
+DESCRIPTION=HORNED leather bustier
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_armor_female_shorts_Horned]
+ID=01c00
+NAME=HORNED leather shorts
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_horned
+SKILLMAKE=62.2 Tailoring
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Armor
+DESCRIPTION=HORNED leather shorts
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_armor_female_skirt_Horned]
+ID=01c08
+NAME=HORNED leather skirt
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_horned
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Armor
+DESCRIPTION=HORNED leather skirt
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_armor_female_studded_Horned]
+ID=01c02
+NAME=HORNED studded armor
+TYPE=t_armor_leather
+RESOURCES=1 i_leather_horned
+SKILLMAKE=87.1 Tailoring
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Armor
+DESCRIPTION=HORNED studded armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_armor_female_bustier_studded_Horned]
+ID=01c0c
+NAME=HORNED studded bustier
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_horned
+SKILLMAKE=82.9 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Armor
+DESCRIPTION=HORNED studded bustier
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gargoyle_arms_1_Horned]
+ID=0301
+NAME=HORNED gargish leather arms
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_horned
+SKILLMAKE=53.9 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED gargish Armor
+DESCRIPTION=HORNED gargish leather arms
+TAG.ResPhysical=7
+TAG.ResFire=9
+TAG.ResCold=9
+TAG.ResPoison=8
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gargoyle_arms_2_Horned]
+ID=0302
+NAME=HORNED gargish leather arms
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_horned
+SKILLMAKE=53.9 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED gargish Armor
+DESCRIPTION=HORNED gargish leather arms
+TAG.ResPhysical=7
+TAG.ResFire=9
+TAG.ResCold=9
+TAG.ResPoison=8
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gargoyle_chest_1_Horned]
+ID=0304
+NAME=HORNED gargish leather chest
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_horned
+SKILLMAKE=70.5 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED gargish Armor
+DESCRIPTION=HORNED gargish leather chest
+TAG.ResPhysical=7
+TAG.ResFire=9
+TAG.ResCold=9
+TAG.ResPoison=8
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gargoyle_chest_2_Horned]
+ID=0303
+NAME=HORNED gargish leather chest
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_horned
+SKILLMAKE=70.5 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED gargish Armor
+DESCRIPTION=HORNED gargish leather chest
+TAG.ResPhysical=7
+TAG.ResFire=9
+TAG.ResCold=9
+TAG.ResPoison=8
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gargoyle_kilt_1_Horned]
+ID=0311
+NAME=HORNED gargish leather kilt
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_horned
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED gargish Armor
+DESCRIPTION=HORNED gargish leather kilt
+TAG.ResPhysical=7
+TAG.ResFire=9
+TAG.ResCold=9
+TAG.ResPoison=8
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gargoyle_kilt_2_Horned]
+ID=0310
+NAME=HORNED gargish leather kilt
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_horned
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED gargish Armor
+DESCRIPTION=HORNED gargish leather kilt
+TAG.ResPhysical=7
+TAG.ResFire=9
+TAG.ResCold=9
+TAG.ResPoison=8
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gargoyle_leggings_1_Horned]
+ID=0305
+NAME=HORNED gargish leather leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_horned
+SKILLMAKE=66.3 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED gargish Armor
+DESCRIPTION=HORNED gargish leather leggings
+TAG.ResPhysical=7
+TAG.ResFire=9
+TAG.ResCold=9
+TAG.ResPoison=8
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gargoyle_leggings_2_Horned]
+ID=0306
+NAME=HORNED gargish leather leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_horned
+SKILLMAKE=66.3 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED gargish Armor
+DESCRIPTION=HORNED gargish leather leggings
+TAG.ResPhysical=7
+TAG.ResFire=9
+TAG.ResCold=9
+TAG.ResPoison=8
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_gargish_leather_wings_Horned]
+ID=0457e
+NAME=HORNED gargish leather wing armor
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=65.0 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED gargish Armor
+DESCRIPTION=HORNED gargish leather wing armor
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leaf_arms_Horned]
+ID=02fc8
+NAME=HORNED leaf arms
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=60.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leaf Armor
+DESCRIPTION=HORNED leaf arms
+TAG.ResPhysical=4
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leaf_gloves_Horned]
+ID=02fc6
+NAME=HORNED leaf gloves
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_horned
+SKILLMAKE=60.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leaf Armor
+DESCRIPTION=HORNED leaf gloves
+TAG.ResPhysical=4
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leaf_gorget_Horned]
+ID=02fc7
+NAME=HORNED leaf gorget
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=65.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leaf Armor
+DESCRIPTION=HORNED leaf gorget
+TAG.ResPhysical=4
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leaf_leggings_Horned]
+ID=02fc9
+NAME=HORNED leaf leggings
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_horned
+SKILLMAKE=75.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leaf Armor
+DESCRIPTION=HORNED leaf leggings
+TAG.ResPhysical=4
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leaf_tonlet_Horned]
+ID=02fca
+NAME=HORNED leaf tonlet
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=70.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leaf Armor
+DESCRIPTION=HORNED leaf tonlet
+TAG.ResPhysical=4
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leaf_tunic_Horned]
+ID=02fc5
+NAME=HORNED leaf tunic
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_horned
+SKILLMAKE=75.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leaf Armor
+DESCRIPTION=HORNED leaf tunic
+TAG.ResPhysical=4
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_cap_Horned]
+ID=01db9
+NAME=HORNED leather cap
+TYPE=t_armor_leather
+RESOURCES=2 i_leather_horned
+SKILLMAKE=6.2 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED Helmets
+DESCRIPTION=HORNED leather cap
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_do_Horned]
+ID=0277b
+NAME=HORNED leather do
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=75.0 Tailoring
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Samurai Armor
+DESCRIPTION=HORNED leather do
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gloves_Horned]
+ID=013c6
+NAME=HORNED leather gloves
+TYPE=t_armor_leather
+RESOURCES=3 i_leather_horned
+SKILLMAKE=51.8 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Armor
+DESCRIPTION=HORNED leather gloves
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_gorget_Horned]
+ID=013c7
+NAME=HORNED leather gorget
+TYPE=t_armor_leather
+RESOURCES=4 i_leather_horned
+SKILLMAKE=53.9 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Armor
+DESCRIPTION=HORNED leather gorget
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_haidate_Horned]
+ID=0278a
+NAME=HORNED leather haidate
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=68.0 Tailoring
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Samurai Armor
+DESCRIPTION=HORNED leather haidate
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_hiro_sode_Horned]
+ID=0277e
+NAME=HORNED leather hiro sode
+TYPE=t_armor_leather
+RESOURCES=5 i_leather_horned
+SKILLMAKE=55.0 Tailoring
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Samurai Armor
+DESCRIPTION=HORNED leather hiro sode
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_jingasa_Horned]
+ID=02776
+NAME=HORNED leather jingasa
+TYPE=t_armor_leather
+RESOURCES=4 i_leather_horned
+SKILLMAKE=45.0 Tailoring
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED Helmets
+DESCRIPTION=HORNED leather jingasa
+TAG.ResPhysical=6
+TAG.ResFire=6
+TAG.ResCold=5
+TAG.ResPoison=4
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_leggings_Horned]
+ID=013cb
+NAME=HORNED leather leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_horned
+SKILLMAKE=66.3 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Armor
+DESCRIPTION=HORNED leather leggings
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_mempo_Horned]
+ID=0277a
+NAME=HORNED leather mempo
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_horned
+SKILLMAKE=80.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Samurai Armor
+DESCRIPTION=HORNED leather mempo
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_ninja_belt_Horned]
+ID=02790
+NAME=HORNED leather ninja belt
+TYPE=t_armor_leather
+RESOURCES=5 i_leather_horned
+SKILLMAKE=50.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Samurai Armor
+DESCRIPTION=HORNED leather ninja belt
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_ninja_hood_Horned]
+ID=0278e
+NAME=HORNED leather ninja hood
+TYPE=t_armor_leather
+RESOURCES=14 i_leather_horned
+SKILLMAKE=90.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED Helmets
+DESCRIPTION=HORNED leather ninja hood
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_ninja_jacket_Horned]
+ID=02793
+NAME=HORNED leather ninja jacket
+TYPE=t_armor_leather
+RESOURCES=13 i_leather_horned
+SKILLMAKE=85.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Samurai Armor
+DESCRIPTION=HORNED leather ninja jacket
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_leather_ninja_mitts_Horned]
+ID=02792
+NAME=HORNED leather ninja mitts
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=65.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED leather Samurai Armor
+DESCRIPTION=HORNED leather ninja mitts
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_sash_Horned]
+ID=01541
+NAME=HORNED body sash
+TYPE=t_clothing
+RESOURCES=4 i_cloth
+SKILLMAKE=4.1 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED body Armor
+DESCRIPTION=HORNED body sash
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_apron_full_Horned]
+ID=0153d
+NAME=HORNED full apron
+TYPE=t_clothing
+RESOURCES=10 i_cloth
+SKILLMAKE=29.0 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED full Armor
+DESCRIPTION=HORNED full apron
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_gargish_apron_Horned]
+ID=050d8
+NAME=HORNED Gargish half apron
+TYPE=t_clothing
+RESOURCES=, 6  i_cloth
+SKILLMAKE=22.7 Tailoring, 1 t_sewing_kit
+WEIGHT=6.1
+TEVENTS=t_iprop
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED Gargish Armor
+DESCRIPTION=HORNED Gargish half apron
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_gargish_sash_Horned]
+ID=046b4
+NAME=HORNED Gargish sash
+TYPE=t_clothing
+RESOURCES=, 4  i_cloth
+SKILLMAKE=4.5 Tailoring, 1 t_sewing_kit
+WEIGHT=4.1
+TEVENTS=t_iprop
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED Gargish Armor
+DESCRIPTION=HORNED Gargish sash
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_apron_half_Horned]
+ID=0153b
+NAME=HORNED half apron
+TYPE=t_clothing
+RESOURCES=6 i_cloth
+SKILLMAKE=20.7 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED half Armor
+DESCRIPTION=HORNED half apron
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_obi_Horned]
+ID=027a0
+NAME=HORNED obi
+TYPE=t_clothing
+RESOURCES=6 i_cloth
+SKILLMAKE=20.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED obi Samurai Armor
+DESCRIPTION=HORNED obi
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_hide_gloves_Horned]
+ID=02b75
+NAME=HORNED hide gloves
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_horned
+SKILLMAKE=75.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED hide Armor
+DESCRIPTION=HORNED hide gloves
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_hide_gorget_Horned]
+ID=02b76
+NAME=HORNED hide gorget
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=90.0 Tailoring
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED hide Armor
+DESCRIPTION=HORNED hide gorget
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_hide_pants_Horned]
+ID=02b78
+NAME=HORNED hide pants
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_horned
+SKILLMAKE=92.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED hide Armor
+DESCRIPTION=HORNED hide pants
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_hide_pauldrons_Horned]
+ID=02b77
+NAME=HORNED hide pauldrons
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=75.0 Tailoring
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED hide Armor
+DESCRIPTION=HORNED hide pauldrons
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_hide_tunic_Horned]
+ID=02b74
+NAME=HORNED hide tunic
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_horned
+SKILLMAKE=85.0 Tailoring
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED hide Armor
+DESCRIPTION=HORNED hide tunic
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_studded_do_Horned]
+ID=0277c
+NAME=HORNED studded do
+TYPE=t_armor_leather
+RESOURCES=14 t_leather
+SKILLMAKE=95.0 Tailoring
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Samurai Armor
+DESCRIPTION=HORNED studded do
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_studded_gloves_Horned]
+ID=013d5
+NAME=HORNED studded gloves
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_horned
+SKILLMAKE=82.9 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Armor
+DESCRIPTION=HORNED studded gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=2
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_studded_gorget_Horned]
+ID=013d6
+NAME=HORNED studded gorget
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_horned
+SKILLMAKE=78.8 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Armor
+DESCRIPTION=HORNED studded gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=2
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_studded_haidate_Horned]
+ID=0278b
+NAME=HORNED studded haidate
+TYPE=t_armor_leather
+RESOURCES=14 t_leather
+SKILLMAKE=92.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Samurai Armor
+DESCRIPTION=HORNED studded haidate
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF 0_Horned]
+ID=0
+NAME=0
+TYPE=0
+RESOURCES=00
+SKILLMAKE=0
+WEIGHT=0.0
+CATEGORY=0 - Colored
+SUBSECTION=HORNED 0
+DESCRIPTION=0
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=0
+ 
+[ITEMDEF i_studded_leggings_Horned]
+ID=013da
+NAME=HORNED studded leggings
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_horned
+SKILLMAKE=91.2 Tailoring, 1 t_sewing_kit
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Armor
+DESCRIPTION=HORNED studded leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=6
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_studded_mempo_Horned]
+ID=0279d
+NAME=HORNED studded mempo
+TYPE=t_armor_leather
+RESOURCES=8 t_leather
+SKILLMAKE=80.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Samurai Armor
+DESCRIPTION=HORNED studded mempo
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_studded_sleeves_Horned]
+ID=013d4
+NAME=HORNED studded sleeves
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_horned
+SKILLMAKE=87.1 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Armor
+DESCRIPTION=HORNED studded sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=4
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_studded_suneate_Horned]
+ID=02787
+NAME=HORNED studded suneate
+TYPE=t_armor_leather
+RESOURCES=14 t_leather
+SKILLMAKE=92.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Samurai Armor
+DESCRIPTION=HORNED studded suneate
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 
+[ITEMDEF i_studded_tunic_Horned]
+ID=013db
+NAME=HORNED studded tunic
+TYPE=t_armor_leather
+RESOURCES=14 i_leather_horned
+SKILLMAKE=94.0 Tailoring, 1 t_sewing_kit
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=HORNED studded Armor
+DESCRIPTION=HORNED studded tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0845
+ 

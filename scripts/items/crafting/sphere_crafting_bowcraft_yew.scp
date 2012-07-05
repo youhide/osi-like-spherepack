@@ -256,3 +256,259 @@ HITPOINTS={36 48}
 COLOR=04a8
  
 [EOF]
+[ITEMDEF i_bow_yew]
+ID=013b1
+NAME=Yew bow
+TYPE=t_weapon_bow
+RESOURCES=7 i_log_yew
+SKILLMAKE=30.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew bow
+DESCRIPTION=Yew bow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_composite_bow_yew]
+ID=026c2
+NAME=Yew composite bow
+TYPE=t_weapon_bow
+RESOURCES=7 i_log_yew
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew composite bow
+DESCRIPTION=Yew composite bow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_crossbow_yew]
+ID=0f4f
+NAME=Yew crossbow
+TYPE=t_weapon_xbow
+RESOURCES=7 i_log_yew
+SKILLMAKE=60.0 Bowcraft
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew crossbow
+DESCRIPTION=Yew crossbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_elven_composite_longbow_yew]
+ID=02d1e
+NAME=Yew elven composite longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_yew
+SKILLMAKE=95.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew elven composite longbow
+DESCRIPTION=Yew elven composite longbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_crossbow_heavy_yew]
+ID=013fc
+NAME=Yew heavy crossbow
+TYPE=t_weapon_xbow
+RESOURCES=10 i_log_yew
+SKILLMAKE=80.0 Bowcraft
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew heavy crossbow
+DESCRIPTION=Yew heavy crossbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_magical_shortbow_yew]
+ID=02d1f
+NAME=Yew magical shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_yew
+SKILLMAKE=85.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew magical shortbow
+DESCRIPTION=Yew magical shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_repeating_crossbow_yew]
+ID=026c3
+NAME=Yew repeating crossbow
+TYPE=t_weapon_xbow
+RESOURCES=10 i_log_yew
+SKILLMAKE=90.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew repeating crossbow
+DESCRIPTION=Yew repeating crossbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_yumi_yew]
+ID=027a5
+NAME=Yew yumi
+TYPE=t_weapon_bow
+RESOURCES=10 i_log_yew
+SKILLMAKE=90.0 Bowcraft
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew yumi
+DESCRIPTION=Yew yumi
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_barbed_longbow_yew]
+ID=02d1e
+NAME=Yew Barbed Longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_yew, 1 i_gem_fire_ruby
+SKILLMAKE=95.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew elven composite longbow
+DESCRIPTION=Yew Barbed Longbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_slayer_longbow_yew]
+ID=02d1e
+NAME=Yew Slayer Longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_yew, 1 i_gem_brilliant_amber
+SKILLMAKE=70.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew elven composite longbow
+DESCRIPTION=Yew Slayer Longbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_frozen_longbow_yew]
+ID=02d1e
+NAME=Yew Frozen Longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_yew, 1 i_gem_turquoise
+SKILLMAKE=70.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew elven composite longbow
+DESCRIPTION=Yew Frozen Longbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_longbow_might_yew]
+ID=02d1e
+NAME=Yew Longbow of Might
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_yew, 1 i_gem_blue_diamond
+SKILLMAKE=70.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew elven composite longbow
+DESCRIPTION=Yew Longbow of Might
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_ranger_shortbow_yew]
+ID=02d1f
+NAME=Yew Ranger's Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_yew, 1 i_gem_perfect_emerald
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew magical shortbow
+DESCRIPTION=Yew Ranger's Shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_lightweight_shortbow_yew]
+ID=02d1f
+NAME=Yew Lightweight Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_yew, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew magical shortbow
+DESCRIPTION=Yew Lightweight Shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_mystical_shortbow_yew]
+ID=02d1f
+NAME=Yew Mystical Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_yew, 1 i_gem_ecru_citrine
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew magical shortbow
+DESCRIPTION=Yew Mystical Shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 
+[ITEMDEF i_assassin_shortbow_yew]
+ID=02d1f
+NAME=Yew Assassin's Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_yew, 1 i_gem_dark_sapphire
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Yew magical shortbow
+DESCRIPTION=Yew Assassin's Shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04a8
+ 

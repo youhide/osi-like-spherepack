@@ -1,5 +1,5 @@
 //****************************************************************************
-// SphereServer ©1997-2009
+// SphereServer ï¿½1997-2009
 // This script is part from the Sphere Community Script Pack.
 // You can download the full pack from: www.sphereserver.net
 //****************************************************************************
@@ -172,22 +172,24 @@ endwhile
 [function f_craft_exceptionalbonus] // ITEM.f_craft_exceptionalbonus <UID>
 ref1 = <args>
 if <isweapon>
-	local.totalbonus = <min 40,<eval 35 + (<ref1.armslore> / 200)>>
-	tag0.DamageIncrease += <local.totalbonus>
+    //local.totalbonus = <min 40,<eval 35 + (<ref1.armslore> / 200)>> // default
+    local.totalbonus = <min 50,<eval 45 + (<ref1.armslore> / 200)>>
+    tag0.DamageIncrease += <local.totalbonus>
 elif <isarmor>
-	local.totalbonus = <min 20,<eval 15 + (<ref1.armslore> / 200)>>
-	for <local.totalbonus>
-		dorand 5
-			tag0.ResPhysical ++
-			tag0.ResFire ++
-			tag0.ResCold ++
-			tag0.ResEnergy ++
-			tag0.ResPoison ++
-		enddo
-	endfor
+    //local.totalbonus = <min 20,<eval 15 + (<ref1.armslore> / 200)>> // default
+    local.totalbonus = <min 25,<eval 20 + (<ref1.armslore> / 200)>>
+    for <local.totalbonus>
+        dorand 5
+            tag0.ResPhysical ++
+            tag0.ResFire ++
+            tag0.ResCold ++
+            tag0.ResEnergy ++
+            tag0.ResPoison ++
+        enddo
+    endfor
 elif <tag0.UsesRemaining>
-	local.totalbonus = <min 40,<eval 35 + (<ref1.armslore> / 200)>> // FIXME: couldn't find any information on the actual formula so this is completely made up.
-	tag0.UsesRemaining += <local.totalbonus>
+    //local.totalbonus = <min 40,<eval 35 + (<ref1.armslore> / 200)>> // FIXME: couldn't find any information on the actual formula so this is completely made up.
+    tag0.UsesRemaining += <local.totalbonus>
 endif
 
 

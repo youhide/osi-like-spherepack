@@ -1,0 +1,2529 @@
+[ITEMDEF i_ringmail_gloves_shadow]
+ID=013eb
+NAME=Shadow ringmail gloves
+TYPE=t_armor
+RESOURCES=10 i_ingot_shadow
+SKILLMAKE=12.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow ringmail Armor
+DESCRIPTION=Shadow ringmail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_ringmail_leggings_shadow]
+ID=013f0
+NAME=Shadow ringmail leggings
+TYPE=t_armor
+RESOURCES=16 i_ingot_shadow
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow ringmail Armor
+DESCRIPTION=Shadow ringmail leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_ringmail_sleeves_shadow]
+ID=013ee
+NAME=Shadow ringmail sleeves
+TYPE=t_armor
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=16.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow ringmail Armor
+DESCRIPTION=Shadow ringmail sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_ringmail_tunic_shadow]
+ID=013ec
+NAME=Shadow ringmail tunic
+TYPE=t_armor
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=21.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow ringmail Armor
+DESCRIPTION=Shadow ringmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_chainmail_coif_shadow]
+ID=013bb
+NAME=Shadow chainmail coif
+TYPE=t_armor
+RESOURCES=10 i_ingot_shadow
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow chainmail coif
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=1
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_chainmail_leggings_shadow]
+ID=013be
+NAME=Shadow chainmail leggings
+TYPE=t_armor
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow chainmail Armor
+DESCRIPTION=Shadow chainmail leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=6
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=1
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_chainmail_tunic_shadow]
+ID=013bf
+NAME=Shadow chainmail tunic
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow chainmail Armor
+DESCRIPTION=Shadow chainmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=6
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=1
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_arms_shadow]
+ID=01410
+NAME=Shadow platemail arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Armor
+DESCRIPTION=Shadow platemail arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_gloves_shadow]
+ID=01414
+NAME=Shadow platemail gloves
+TYPE=t_armor
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Armor
+DESCRIPTION=Shadow platemail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_gorget_shadow]
+ID=01413
+NAME=Shadow platemail gorget
+TYPE=t_armor
+RESOURCES=10 i_ingot_shadow
+SKILLMAKE=56.4 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Armor
+DESCRIPTION=Shadow platemail gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_leggings_shadow]
+ID=01411
+NAME=Shadow platemail legs
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Armor
+DESCRIPTION=Shadow platemail legs
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_chest_shadow]
+ID=01415
+NAME=Shadow platemail
+TYPE=t_armor
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Armor
+DESCRIPTION=Shadow platemail
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_armor_female_plate_shadow]
+ID=01c04
+NAME=Shadow plate armor
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow plate Armor
+DESCRIPTION=Shadow plate armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_mempo_shadow]
+ID=02779
+NAME=Shadow platemail mempo
+TYPE=t_armor
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Samurai Armor
+DESCRIPTION=Shadow platemail mempo
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_do_shadow]
+ID=0277d
+NAME=Shadow platemail do
+TYPE=t_armor
+RESOURCES=28 i_ingot_shadow
+SKILLMAKE=87.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Samurai Armor
+DESCRIPTION=Shadow platemail do
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_hiro_sode_shadow]
+ID=02780
+NAME=Shadow platemail hiro sode
+TYPE=t_armor
+RESOURCES=16 i_ingot_shadow
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Samurai Armor
+DESCRIPTION=Shadow platemail hiro sode
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_suneate_shadow]
+ID=02788
+NAME=Shadow platemail suneate
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Samurai Armor
+DESCRIPTION=Shadow platemail suneate
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_haidate_shadow]
+ID=0278d
+NAME=Shadow platemail haidate
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow platemail Samurai Armor
+DESCRIPTION=Shadow platemail haidate
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_gargish_arms_shadow]
+ID=0308
+NAME=Shadow Gargish Platemail Arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Gargish Armor
+DESCRIPTION=Shadow Gargish Platemail Arms
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_gargish_chest_shadow]
+ID=0309
+NAME=Shadow Gargish Platemail Chest
+TYPE=t_armor
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Gargish Armor
+DESCRIPTION=Shadow Gargish Platemail Chest
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_gargish_kilt_shadow]
+ID=030b
+NAME=Shadow Gargish Platemail Kilt
+TYPE=t_armor
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Gargish Armor
+DESCRIPTION=Shadow Gargish Platemail Kilt
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_gargish_leggings_shadow]
+ID=030d
+NAME=Shadow Gargish Platemail Leggings
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Gargish Armor
+DESCRIPTION=Shadow Gargish Platemail Leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_bascinet_shadow]
+ID=0140c
+NAME=Shadow bascinet
+TYPE=t_armor
+RESOURCES=15 i_ingot_shadow
+SKILLMAKE=8.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow bascinet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_helm_close_shadow]
+ID=01408
+NAME=Shadow close helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_shadow
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow close helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_helm_open_shadow]
+ID=0140a
+NAME=Shadow helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_shadow
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_helm_norse_shadow]
+ID=0140e
+NAME=Shadow norse helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_shadow
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow norse helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=2
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_helm_shadow]
+ID=01412
+NAME=Shadow plate helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_shadow
+SKILLMAKE=62.6 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow plate helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_chainmail_hatsuburi_shadow]
+ID=02774
+NAME=Shadow chainmail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow chainmail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=9
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_hatsuburi_shadow]
+ID=02775
+NAME=Shadow platemail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow platemail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_plate_jingasa_heavy_shadow]
+ID=02777
+NAME=Shadow heavy platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow heavy platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_plate_jingasa_light_shadow]
+ID=02781
+NAME=Shadow light platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow light platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_plate_jingasa_small_shadow]
+ID=02784
+NAME=Shadow small platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow small platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_kabuto_decorative_shadow]
+ID=02778
+NAME=Shadow decorative platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow decorative platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_kabuto_battle_shadow]
+ID=02785
+NAME=Shadow platemail battle kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow platemail battle kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_platemail_kabuto_shadow]
+ID=02789
+NAME=Shadow standard platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow standard platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_circlet_shadow]
+ID=02b6e
+NAME=Shadow circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_shadow
+SKILLMAKE=62.1 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow circlet
+TAG.ResPhysical=3
+TAG.ResFire=6
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_circlet_royal_shadow]
+ID=02b6f
+NAME=Shadow royal circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_shadow
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow royal circlet
+TAG.ResPhysical=3
+TAG.ResFire=6
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_circlet_gemmed_shadow]
+ID=02b70
+NAME=Shadow gemmed circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_shadow, 1 i_gem_amethyst, 1 i_gem_tourmaline, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Helmets
+DESCRIPTION=Shadow gemmed circlet
+TAG.ResPhysical=3
+TAG.ResFire=6
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_buckler_shadow]
+ID=01b73
+NAME=Shadow buckler 
+TYPE=t_shield
+RESOURCES=6 i_ingot_shadow
+SKILLMAKE=0.1 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow buckler 
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResPoison=1
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_round_bronze_shadow]
+ID=01b72
+NAME=Shadow bronze shield
+TYPE=t_shield
+RESOURCES=10 i_ingot_shadow
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=12.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow bronze shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=1
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_heater_shadow]
+ID=01b76
+NAME=Shadow heater shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow heater shield
+TAG.ResPhysical=2
+TAG.ResFire=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_round_metal_shadow]
+ID=01b7b
+NAME=Shadow metal shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=11.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow metal shield
+TAG.ResPhysical=2
+TAG.ResFire=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_kite_metal_shadow]
+ID=01b74
+NAME=Shadow kite shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_shadow
+SKILLMAKE=44.6 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow kite shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_kite_wood_shadow]
+ID=01b78
+NAME=Shadow kite shield
+TYPE=t_shield
+RESOURCES=8 i_ingot_shadow, 4 i_log
+SKILLMAKE=12.6 Blacksmithing
+WEIGHT=9.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow kite shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_chaos_shadow]
+ID=01bc3
+NAME=Shadow Chaos shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow Chaos shield
+TAG.ResPhysical=3
+TAG.ResFire=1
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_order_shadow]
+ID=01bc4
+NAME=Shadow Order shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow Order shield
+TAG.ResPhysical=3
+TAG.ResFire=1
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_plate_small_shadow]
+ID=04202
+NAME=Shadow Small Plate Shield
+TYPE=t_shield
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow Small Plate Shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=1
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_kite_gargish_shadow]
+ID=04201
+NAME=Shadow Gargish Kite Shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_shadow
+SKILLMAKE=4.6 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow Gargish Kite Shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_plate_medium_shadow]
+ID=04203
+NAME=Shadow Medium Plate Shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow Medium Plate Shield
+TAG.ResPhysical=2
+TAG.ResFire=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_plate_large_shadow]
+ID=04204
+NAME=Shadow Large Plate Shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow Large Plate Shield
+TAG.ResPhysical=2
+TAG.ResFire=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_chaos_gargish_shadow]
+ID=04228
+NAME=Shadow Gargish Chaos Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow Gargish Chaos Shield
+TAG.ResPhysical=3
+TAG.ResFire=1
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_shield_order_gargish_shadow]
+ID=0422a
+NAME=Shadow Gargish Order Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Shadow Shields
+DESCRIPTION=Shadow Gargish Order Shield
+TAG.ResPhysical=3
+TAG.ResFire=1
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0966
+ 
+[ITEMDEF i_bone_harvester_shadow]
+ID=026bb
+NAME=Shadow bone harvester
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_shadow
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=3.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow bone harvester
+DESCRIPTION=Shadow bone harvester
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_sword_broad_shadow]
+ID=0f5e
+NAME=Shadow broadsword
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_shadow
+SKILLMAKE=35.4 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow broadsword
+DESCRIPTION=Shadow broadsword
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_crescent_blade_shadow]
+ID=026c1
+NAME=Shadow crescent blade
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow crescent blade
+DESCRIPTION=Shadow crescent blade
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_cutlass_shadow]
+ID=01440
+NAME=Shadow cutlass
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_shadow
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow cutlass
+DESCRIPTION=Shadow cutlass
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_dagger_shadow]
+ID=0f51
+NAME=Shadow dagger
+TYPE=t_weapon_fence
+RESOURCES=3 i_ingot_shadow
+SKILLMAKE=Blacksmithing
+WEIGHT=1.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow dagger
+DESCRIPTION=Shadow dagger
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_katana_shadow]
+ID=013fe
+NAME=Shadow katana
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_shadow
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow katana
+DESCRIPTION=Shadow katana
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_kryss_shadow]
+ID=01400
+NAME=Shadow kryss
+TYPE=t_weapon_fence
+RESOURCES=8 i_ingot_shadow
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow kryss
+DESCRIPTION=Shadow kryss
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_sword_long_shadow]
+ID=0f60
+NAME=Shadow longsword
+TYPE=t_weapon_sword
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow longsword
+DESCRIPTION=Shadow longsword
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_scimitar_shadow]
+ID=013b5
+NAME=Shadow scimitar
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_shadow
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow scimitar
+DESCRIPTION=Shadow scimitar
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_sword_viking_shadow]
+ID=013b9
+NAME=Shadow viking sword
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow viking sword
+DESCRIPTION=Shadow viking sword
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_no_dachi_shadow]
+ID=027a2
+NAME=Shadow no-dachi
+TYPE=t_weapon_sword
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow no-dachi
+DESCRIPTION=Shadow no-dachi
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_wakizashi_shadow]
+ID=027a4
+NAME=Shadow wakizashi
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_shadow
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow wakizashi
+DESCRIPTION=Shadow wakizashi
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_lajatang_shadow]
+ID=027a7
+NAME=Shadow lajatang
+TYPE=t_weapon_fence
+RESOURCES=25 i_ingot_shadow
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow lajatang
+DESCRIPTION=Shadow lajatang
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_daisho_shadow]
+ID=027a9
+NAME=Shadow daisho
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow
+SKILLMAKE=60.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow daisho
+DESCRIPTION=Shadow daisho
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_tekagi_shadow]
+ID=027ab
+NAME=Shadow tekagi
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=55.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow tekagi
+DESCRIPTION=Shadow tekagi
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_shuriken_shadow]
+ID=027ac
+NAME=Shadow shuriken
+TYPE=t_ninja_shuriken
+RESOURCES=5 i_ingot_shadow
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=0.1
+CATEGORY=0 - Colored
+SUBSECTION=Shadow 0
+DESCRIPTION=Shadow shuriken
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=0966
+ 
+[ITEMDEF i_kama_shadow]
+ID=027ad
+NAME=Shadow kama
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow kama
+DESCRIPTION=Shadow kama
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_sai_shadow]
+ID=027af
+NAME=Shadow sai
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow sai
+DESCRIPTION=Shadow sai
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_radiant_scimitar_shadow]
+ID=02d27
+NAME=Shadow radiant scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow radiant scimitar
+DESCRIPTION=Shadow radiant scimitar
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_war_cleaver_shadow]
+ID=02d23
+NAME=Shadow war cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow war cleaver
+DESCRIPTION=Shadow war cleaver
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_elven_spellblade_shadow]
+ID=02d20
+NAME=Shadow elven spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow elven spellblade
+DESCRIPTION=Shadow elven spellblade
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_assassin_spike_shadow]
+ID=02d21
+NAME=Shadow assassin spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_shadow
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow assassin spike
+DESCRIPTION=Shadow assassin spike
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_leafblade_shadow]
+ID=02d22
+NAME=Shadow leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow leafblade
+DESCRIPTION=Shadow leafblade
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_rune_blade_shadow]
+ID=02d26
+NAME=Shadow rune blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow rune blade
+DESCRIPTION=Shadow rune blade
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_elven_machete_shadow]
+ID=02d29
+NAME=Shadow elven machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow elven machete
+DESCRIPTION=Shadow elven machete
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_true_spellblade_shadow]
+ID=02d20
+NAME=Shadow True Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_shadow, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow elven spellblade
+DESCRIPTION=Shadow True Spellblade
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_icy_spellblade_shadow]
+ID=02d20
+NAME=Shadow Icy Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_shadow, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow elven spellblade
+DESCRIPTION=Shadow Icy Spellblade
+TAG.DamCold=20
+TAG.ResCold=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_fiery_spellblade_shadow]
+ID=02d20
+NAME=Shadow Fiery Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_shadow, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow elven spellblade
+DESCRIPTION=Shadow Fiery Spellblade
+TAG.DamCold=20
+TAG.ResFire=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_spellblade_defense_shadow]
+ID=02d20
+NAME=Shadow Spellblade of Defense
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_shadow, 1 i_gem_white_pearl
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow elven spellblade
+DESCRIPTION=Shadow Spellblade of Defense
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_true_assassin_spike_shadow]
+ID=02d21
+NAME=Shadow True Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_shadow, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow assassin spike
+DESCRIPTION=Shadow True Assassin Spike
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_charged_assassin_spike_shadow]
+ID=02d21
+NAME=Shadow Charged Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_shadow, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow assassin spike
+DESCRIPTION=Shadow Charged Assassin Spike
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_magekiller_assassin_spike_shadow]
+ID=02d21
+NAME=Shadow Magekiller Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_shadow, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow assassin spike
+DESCRIPTION=Shadow Magekiller Assassin Spike
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_wounding_assassin_spike_shadow]
+ID=02d21
+NAME=Shadow Wounding Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_shadow, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow assassin spike
+DESCRIPTION=Shadow Wounding Assassin Spike
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_true_leafblade_shadow]
+ID=02d22
+NAME=Shadow True Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow leafblade
+DESCRIPTION=Shadow True Leafblade
+TAG.DamCold=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_luckblade_shadow]
+ID=02d22
+NAME=Shadow Luckblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow leafblade
+DESCRIPTION=Shadow Luckblade
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_magekiller_leafblade_shadow]
+ID=02d22
+NAME=Shadow Magekiller Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow leafblade
+DESCRIPTION=Shadow Magekiller Leafblade
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_leafblade_ease_shadow]
+ID=02d22
+NAME=Shadow Leafblade of Ease
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow leafblade
+DESCRIPTION=Shadow Leafblade of Ease
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_knight_war_cleaver_shadow]
+ID=02d23
+NAME=Shadow Knight's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_shadow, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow war cleaver
+DESCRIPTION=Shadow Knight's War Cleaver
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_butcher_war_cleaver_shadow]
+ID=02d23
+NAME=Shadow Butcher's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_shadow, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow war cleaver
+DESCRIPTION=Shadow Butcher's War Cleaver
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_serrated_war_cleaver_shadow]
+ID=02d23
+NAME=Shadow Serrated War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_shadow, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow war cleaver
+DESCRIPTION=Shadow Serrated War Cleaver
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_true_war_cleaver_shadow]
+ID=02d23
+NAME=Shadow True War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_shadow, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow war cleaver
+DESCRIPTION=Shadow True War Cleaver
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_diseased_machete_shadow]
+ID=02d29
+NAME=Shadow Diseased Machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_shadow, 1 i_ingredient_blight
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow elven machete
+DESCRIPTION=Shadow Diseased Machete
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_runesabre_shadow]
+ID=02d26
+NAME=Shadow Runesabre
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow rune blade
+DESCRIPTION=Shadow Runesabre
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_mage_rune_blade_shadow]
+ID=02d26
+NAME=Shadow Mage's Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow rune blade
+DESCRIPTION=Shadow Mage's Rune Blade
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_rune_blade_knowledge_shadow]
+ID=02d26
+NAME=Shadow Rune Blade of Knowledge
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow rune blade
+DESCRIPTION=Shadow Rune Blade of Knowledge
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_corrupted_rune_blade_shadow]
+ID=02d26
+NAME=Shadow Corruped Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow, 1 i_ingredient_corruption
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow rune blade
+DESCRIPTION=Shadow Corruped Rune Blade
+TAG.DamCold=20
+TAG.ResPhysical=-5
+TAG.ResPoison=12
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_true_radiant_scimitar_shadow]
+ID=02d27
+NAME=Shadow True Radiant Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow radiant scimitar
+DESCRIPTION=Shadow True Radiant Scimitar
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_darkglow_scimitar_shadow]
+ID=02d27
+NAME=Shadow Darkglow Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow radiant scimitar
+DESCRIPTION=Shadow Darkglow Scimitar
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_icy_scimitar_shadow]
+ID=02d27
+NAME=Shadow Icy Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow radiant scimitar
+DESCRIPTION=Shadow Icy Scimitar
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_twinkling_scimitar_shadow]
+ID=02d27
+NAME=Shadow Twinkling Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_shadow, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow radiant scimitar
+DESCRIPTION=Shadow Twinkling Scimitar
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_axe_shadow]
+ID=0f49
+NAME=Shadow axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow axe
+DESCRIPTION=Shadow axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_axe_battle_shadow]
+ID=0f47
+NAME=Shadow battle axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=30.5 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow battle axe
+DESCRIPTION=Shadow battle axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_axe_double_shadow]
+ID=0f4b
+NAME=Shadow double axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=29.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow double axe
+DESCRIPTION=Shadow double axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_axe_exec_shadow]
+ID=0f45
+NAME=Shadow executioner's axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow executioner's axe
+DESCRIPTION=Shadow executioner's axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_axe_battle_large_shadow]
+ID=013fa
+NAME=Shadow large battle axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow large battle axe
+DESCRIPTION=Shadow large battle axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_axe_two_hand_shadow]
+ID=01442
+NAME=Shadow two handed axe
+TYPE=t_weapon_axe
+RESOURCES=16 i_ingot_shadow
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow two handed axe
+DESCRIPTION=Shadow two handed axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_axe_war_shadow]
+ID=013af
+NAME=Shadow war axe
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_shadow
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow war axe
+DESCRIPTION=Shadow war axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_ornate_axe_shadow]
+ID=02d28
+NAME=Shadow ornate axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow ornate axe
+DESCRIPTION=Shadow ornate axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_guardian_axe_shadow]
+ID=02d28
+NAME=Shadow Guardian Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_shadow, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow ornate axe
+DESCRIPTION=Shadow Guardian Axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_singing_axe_shadow]
+ID=02d28
+NAME=Shadow Singing Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_shadow, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow ornate axe
+DESCRIPTION=Shadow Singing Axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_thundering_axe_shadow]
+ID=02d28
+NAME=Shadow Thundering Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_shadow, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow ornate axe
+DESCRIPTION=Shadow Thundering Axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_heavy_ornate_axe_shadow]
+ID=02d28
+NAME=Shadow Heavy Ornate Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_shadow, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow ornate axe
+DESCRIPTION=Shadow Heavy Ornate Axe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_bardiche_shadow]
+ID=0f4d
+NAME=Shadow bardiche
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_shadow
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow bardiche
+DESCRIPTION=Shadow bardiche
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_bladed_staff_shadow]
+ID=026bd
+NAME=Shadow bladed staff
+TYPE=t_weapon_mace_sharp
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow bladed staff
+DESCRIPTION=Shadow bladed staff
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_double_bladed_staff_shadow]
+ID=026bf
+NAME=Shadow double bladed staff
+TYPE=t_weapon_fence
+RESOURCES=16 i_ingot_shadow
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow double bladed staff
+DESCRIPTION=Shadow double bladed staff
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_lance_shadow]
+ID=026c0
+NAME=Shadow lance
+TYPE=t_weapon_fence
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=48.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow lance
+DESCRIPTION=Shadow lance
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_pike_shadow]
+ID=026be
+NAME=Shadow pike
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=47.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow pike
+DESCRIPTION=Shadow pike
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_spear_short_shadow]
+ID=01402
+NAME=Shadow short spear
+TYPE=t_weapon_fence
+RESOURCES=6 i_ingot_shadow
+SKILLMAKE=45.3 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow short spear
+DESCRIPTION=Shadow short spear
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_scythe_shadow]
+ID=026ba
+NAME=Shadow scythe
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=39.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow scythe
+DESCRIPTION=Shadow scythe
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_spear_shadow]
+ID=0f62
+NAME=Shadow spear
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=49.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow spear
+DESCRIPTION=Shadow spear
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_war_fork_shadow]
+ID=01404
+NAME=Shadow war fork
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_shadow
+SKILLMAKE=42.9 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow war fork
+DESCRIPTION=Shadow war fork
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_hammer_pick_shadow]
+ID=0143c
+NAME=Shadow hammer pick
+TYPE=t_weapon_mace_pick
+RESOURCES=16 i_ingot_shadow
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow hammer pick
+DESCRIPTION=Shadow hammer pick
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_mace_shadow]
+ID=0f5c
+NAME=Shadow mace
+TYPE=t_weapon_mace_smith
+RESOURCES=6 i_ingot_shadow
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=14.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow mace
+DESCRIPTION=Shadow mace
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_maul_shadow]
+ID=0143a
+NAME=Shadow maul
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_shadow
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow maul
+DESCRIPTION=Shadow maul
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_scepter_shadow]
+ID=026bc
+NAME=Shadow scepter
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_shadow
+SKILLMAKE=21.4 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow scepter
+DESCRIPTION=Shadow scepter
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_mace_war_shadow]
+ID=01406
+NAME=Shadow war mace
+TYPE=t_weapon_mace_smith
+RESOURCES=14 i_ingot_shadow
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=17.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow war mace
+DESCRIPTION=Shadow war mace
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_hammer_war_shadow]
+ID=01438
+NAME=Shadow war hammer
+TYPE=t_weapon_mace_smith
+RESOURCES=16 i_ingot_shadow
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow war hammer
+DESCRIPTION=Shadow war hammer
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_tessen_shadow]
+ID=027a3
+NAME=Shadow tessen
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_shadow, 10 i_cloth
+SKILLMAKE=85.0 Blacksmithing, 50.0 Tailoring
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow tessen
+DESCRIPTION=Shadow tessen
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_diamond_mace_shadow]
+ID=02d24
+NAME=Shadow diamond mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_shadow
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow diamond mace
+DESCRIPTION=Shadow diamond mace
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_ruby_mace_shadow]
+ID=02d24
+NAME=Shadow Ruby Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_shadow, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow diamond mace
+DESCRIPTION=Shadow Ruby Mace
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_emerald_mace_shadow]
+ID=02d24
+NAME=Shadow Emerald Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_shadow, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow diamond mace
+DESCRIPTION=Shadow Emerald Mace
+TAG.DamCold=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_sapphire_mace_shadow]
+ID=02d24
+NAME=Shadow Sapphire Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_shadow, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow diamond mace
+DESCRIPTION=Shadow Sapphire Mace
+TAG.DamCold=20
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_silver_etched_mace_shadow]
+ID=02d24
+NAME=Shadow Silver-Etched Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_shadow, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow diamond mace
+DESCRIPTION=Shadow Silver-Etched Mace
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_boomerang_shadow]
+ID=08ff
+NAME=Shadow boomerang
+TYPE=t_weapon_bow
+RESOURCES=5 i_ingot_shadow
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow boomerang
+DESCRIPTION=Shadow boomerang
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_cyclone_shadow]
+ID=0901
+NAME=Shadow cyclone
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_shadow
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow cyclone
+DESCRIPTION=Shadow cyclone
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 
+[ITEMDEF i_soul_glaive_shadow]
+ID=090a
+NAME=Shadow soul glaive
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_shadow
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Shadow soul glaive
+DESCRIPTION=Shadow soul glaive
+TAG.DamCold=20
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0966
+ 

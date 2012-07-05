@@ -1,0 +1,2544 @@
+[ITEMDEF i_ringmail_gloves_bronze]
+ID=013eb
+NAME=Bronze ringmail gloves
+TYPE=t_armor
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=12.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze ringmail Armor
+DESCRIPTION=Bronze ringmail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=6
+TAG.ResFire=3
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_ringmail_leggings_bronze]
+ID=013f0
+NAME=Bronze ringmail leggings
+TYPE=t_armor
+RESOURCES=16 i_ingot_bronze
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze ringmail Armor
+DESCRIPTION=Bronze ringmail leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=6
+TAG.ResFire=3
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_ringmail_sleeves_bronze]
+ID=013ee
+NAME=Bronze ringmail sleeves
+TYPE=t_armor
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=16.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze ringmail Armor
+DESCRIPTION=Bronze ringmail sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=3
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_ringmail_tunic_bronze]
+ID=013ec
+NAME=Bronze ringmail tunic
+TYPE=t_armor
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=21.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze ringmail Armor
+DESCRIPTION=Bronze ringmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=6
+TAG.ResFire=3
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_chainmail_coif_bronze]
+ID=013bb
+NAME=Bronze chainmail coif
+TYPE=t_armor
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze chainmail coif
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=9
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_chainmail_leggings_bronze]
+ID=013be
+NAME=Bronze chainmail leggings
+TYPE=t_armor
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze chainmail Armor
+DESCRIPTION=Bronze chainmail leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=9
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_chainmail_tunic_bronze]
+ID=013bf
+NAME=Bronze chainmail tunic
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze chainmail Armor
+DESCRIPTION=Bronze chainmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=9
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_arms_bronze]
+ID=01410
+NAME=Bronze platemail arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Armor
+DESCRIPTION=Bronze platemail arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_gloves_bronze]
+ID=01414
+NAME=Bronze platemail gloves
+TYPE=t_armor
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Armor
+DESCRIPTION=Bronze platemail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_gorget_bronze]
+ID=01413
+NAME=Bronze platemail gorget
+TYPE=t_armor
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=56.4 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Armor
+DESCRIPTION=Bronze platemail gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_leggings_bronze]
+ID=01411
+NAME=Bronze platemail legs
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Armor
+DESCRIPTION=Bronze platemail legs
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_chest_bronze]
+ID=01415
+NAME=Bronze platemail
+TYPE=t_armor
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Armor
+DESCRIPTION=Bronze platemail
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_armor_female_plate_bronze]
+ID=01c04
+NAME=Bronze plate armor
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze plate Armor
+DESCRIPTION=Bronze plate armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_mempo_bronze]
+ID=02779
+NAME=Bronze platemail mempo
+TYPE=t_armor
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Samurai Armor
+DESCRIPTION=Bronze platemail mempo
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_do_bronze]
+ID=0277d
+NAME=Bronze platemail do
+TYPE=t_armor
+RESOURCES=28 i_ingot_bronze
+SKILLMAKE=87.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Samurai Armor
+DESCRIPTION=Bronze platemail do
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_hiro_sode_bronze]
+ID=02780
+NAME=Bronze platemail hiro sode
+TYPE=t_armor
+RESOURCES=16 i_ingot_bronze
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Samurai Armor
+DESCRIPTION=Bronze platemail hiro sode
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_suneate_bronze]
+ID=02788
+NAME=Bronze platemail suneate
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Samurai Armor
+DESCRIPTION=Bronze platemail suneate
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_haidate_bronze]
+ID=0278d
+NAME=Bronze platemail haidate
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze platemail Samurai Armor
+DESCRIPTION=Bronze platemail haidate
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_gargish_arms_bronze]
+ID=0308
+NAME=Bronze Gargish Platemail Arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Gargish Armor
+DESCRIPTION=Bronze Gargish Platemail Arms
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=6
+TAG.ResCold=10
+TAG.ResPoison=7
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_gargish_chest_bronze]
+ID=0309
+NAME=Bronze Gargish Platemail Chest
+TYPE=t_armor
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Gargish Armor
+DESCRIPTION=Bronze Gargish Platemail Chest
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=6
+TAG.ResCold=10
+TAG.ResPoison=7
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_gargish_kilt_bronze]
+ID=030b
+NAME=Bronze Gargish Platemail Kilt
+TYPE=t_armor
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Gargish Armor
+DESCRIPTION=Bronze Gargish Platemail Kilt
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=6
+TAG.ResCold=10
+TAG.ResPoison=7
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_gargish_leggings_bronze]
+ID=030d
+NAME=Bronze Gargish Platemail Leggings
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Gargish Armor
+DESCRIPTION=Bronze Gargish Platemail Leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=6
+TAG.ResCold=10
+TAG.ResPoison=7
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_bascinet_bronze]
+ID=0140c
+NAME=Bronze bascinet
+TYPE=t_armor
+RESOURCES=15 i_ingot_bronze
+SKILLMAKE=8.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze bascinet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=10
+TAG.ResFire=2
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_helm_close_bronze]
+ID=01408
+NAME=Bronze close helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_bronze
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze close helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=3
+TAG.ResCold=8
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_helm_open_bronze]
+ID=0140a
+NAME=Bronze helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_bronze
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=9
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_helm_norse_bronze]
+ID=0140e
+NAME=Bronze norse helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_bronze
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze norse helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=1
+TAG.ResCold=9
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_helm_bronze]
+ID=01412
+NAME=Bronze plate helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_bronze
+SKILLMAKE=62.6 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze plate helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_chainmail_hatsuburi_bronze]
+ID=02774
+NAME=Bronze chainmail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze chainmail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=2
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_hatsuburi_bronze]
+ID=02775
+NAME=Bronze platemail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze platemail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_plate_jingasa_heavy_bronze]
+ID=02777
+NAME=Bronze heavy platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze heavy platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=2
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_plate_jingasa_light_bronze]
+ID=02781
+NAME=Bronze light platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze light platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=2
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_plate_jingasa_small_bronze]
+ID=02784
+NAME=Bronze small platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze small platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=2
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_kabuto_decorative_bronze]
+ID=02778
+NAME=Bronze decorative platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze decorative platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=2
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_kabuto_battle_bronze]
+ID=02785
+NAME=Bronze platemail battle kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze platemail battle kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=2
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_platemail_kabuto_bronze]
+ID=02789
+NAME=Bronze standard platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze standard platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=2
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_circlet_bronze]
+ID=02b6e
+NAME=Bronze circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_bronze
+SKILLMAKE=62.1 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze circlet
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_circlet_royal_bronze]
+ID=02b6f
+NAME=Bronze royal circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_bronze
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze royal circlet
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_circlet_gemmed_bronze]
+ID=02b70
+NAME=Bronze gemmed circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_bronze, 1 i_gem_amethyst, 1 i_gem_tourmaline, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Helmets
+DESCRIPTION=Bronze gemmed circlet
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=7
+TAG.ResPoison=3
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_buckler_bronze]
+ID=01b73
+NAME=Bronze buckler 
+TYPE=t_shield
+RESOURCES=6 i_ingot_bronze
+SKILLMAKE=0.1 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze buckler 
+TAG.ResPhysical=3
+TAG.ResCold=5
+TAG.ResPoison=2
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_round_bronze_bronze]
+ID=01b72
+NAME=Bronze bronze shield
+TYPE=t_shield
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=12.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze bronze shield
+TAG.ResPhysical=3
+TAG.ResCold=6
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_heater_bronze]
+ID=01b76
+NAME=Bronze heater shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze heater shield
+TAG.ResPhysical=3
+TAG.ResFire=1
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_round_metal_bronze]
+ID=01b7b
+NAME=Bronze metal shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=11.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze metal shield
+TAG.ResPhysical=3
+TAG.ResFire=1
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_kite_metal_bronze]
+ID=01b74
+NAME=Bronze kite shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_bronze
+SKILLMAKE=44.6 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze kite shield
+TAG.ResPhysical=3
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_kite_wood_bronze]
+ID=01b78
+NAME=Bronze kite shield
+TYPE=t_shield
+RESOURCES=8 i_ingot_bronze, 4 i_log
+SKILLMAKE=12.6 Blacksmithing
+WEIGHT=9.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze kite shield
+TAG.ResPhysical=3
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_chaos_bronze]
+ID=01bc3
+NAME=Bronze Chaos shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze Chaos shield
+TAG.ResPhysical=4
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_order_bronze]
+ID=01bc4
+NAME=Bronze Order shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze Order shield
+TAG.ResPhysical=4
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_plate_small_bronze]
+ID=04202
+NAME=Bronze Small Plate Shield
+TYPE=t_shield
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze Small Plate Shield
+TAG.ResPhysical=3
+TAG.ResCold=6
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_kite_gargish_bronze]
+ID=04201
+NAME=Bronze Gargish Kite Shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_bronze
+SKILLMAKE=4.6 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze Gargish Kite Shield
+TAG.ResPhysical=3
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_plate_medium_bronze]
+ID=04203
+NAME=Bronze Medium Plate Shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze Medium Plate Shield
+TAG.ResPhysical=3
+TAG.ResFire=1
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_plate_large_bronze]
+ID=04204
+NAME=Bronze Large Plate Shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze Large Plate Shield
+TAG.ResPhysical=3
+TAG.ResFire=1
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_chaos_gargish_bronze]
+ID=04228
+NAME=Bronze Gargish Chaos Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze Gargish Chaos Shield
+TAG.ResPhysical=4
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shield_order_gargish_bronze]
+ID=0422a
+NAME=Bronze Gargish Order Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Bronze Shields
+DESCRIPTION=Bronze Gargish Order Shield
+TAG.ResPhysical=4
+TAG.ResCold=5
+TAG.ResPoison=1
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_bone_harvester_bronze]
+ID=026bb
+NAME=Bronze bone harvester
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=3.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze bone harvester
+DESCRIPTION=Bronze bone harvester
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_sword_broad_bronze]
+ID=0f5e
+NAME=Bronze broadsword
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=35.4 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze broadsword
+DESCRIPTION=Bronze broadsword
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_crescent_blade_bronze]
+ID=026c1
+NAME=Bronze crescent blade
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze crescent blade
+DESCRIPTION=Bronze crescent blade
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_cutlass_bronze]
+ID=01440
+NAME=Bronze cutlass
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_bronze
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze cutlass
+DESCRIPTION=Bronze cutlass
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_dagger_bronze]
+ID=0f51
+NAME=Bronze dagger
+TYPE=t_weapon_fence
+RESOURCES=3 i_ingot_bronze
+SKILLMAKE=Blacksmithing
+WEIGHT=1.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze dagger
+DESCRIPTION=Bronze dagger
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_katana_bronze]
+ID=013fe
+NAME=Bronze katana
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_bronze
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze katana
+DESCRIPTION=Bronze katana
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_kryss_bronze]
+ID=01400
+NAME=Bronze kryss
+TYPE=t_weapon_fence
+RESOURCES=8 i_ingot_bronze
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze kryss
+DESCRIPTION=Bronze kryss
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_sword_long_bronze]
+ID=0f60
+NAME=Bronze longsword
+TYPE=t_weapon_sword
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze longsword
+DESCRIPTION=Bronze longsword
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_scimitar_bronze]
+ID=013b5
+NAME=Bronze scimitar
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze scimitar
+DESCRIPTION=Bronze scimitar
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_sword_viking_bronze]
+ID=013b9
+NAME=Bronze viking sword
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze viking sword
+DESCRIPTION=Bronze viking sword
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_no_dachi_bronze]
+ID=027a2
+NAME=Bronze no-dachi
+TYPE=t_weapon_sword
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze no-dachi
+DESCRIPTION=Bronze no-dachi
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_wakizashi_bronze]
+ID=027a4
+NAME=Bronze wakizashi
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_bronze
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze wakizashi
+DESCRIPTION=Bronze wakizashi
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_lajatang_bronze]
+ID=027a7
+NAME=Bronze lajatang
+TYPE=t_weapon_fence
+RESOURCES=25 i_ingot_bronze
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze lajatang
+DESCRIPTION=Bronze lajatang
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_daisho_bronze]
+ID=027a9
+NAME=Bronze daisho
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze
+SKILLMAKE=60.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze daisho
+DESCRIPTION=Bronze daisho
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_tekagi_bronze]
+ID=027ab
+NAME=Bronze tekagi
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=55.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze tekagi
+DESCRIPTION=Bronze tekagi
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_shuriken_bronze]
+ID=027ac
+NAME=Bronze shuriken
+TYPE=t_ninja_shuriken
+RESOURCES=5 i_ingot_bronze
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=0.1
+CATEGORY=0 - Colored
+SUBSECTION=Bronze 0
+DESCRIPTION=Bronze shuriken
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=0972
+ 
+[ITEMDEF i_kama_bronze]
+ID=027ad
+NAME=Bronze kama
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze kama
+DESCRIPTION=Bronze kama
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_sai_bronze]
+ID=027af
+NAME=Bronze sai
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze sai
+DESCRIPTION=Bronze sai
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_radiant_scimitar_bronze]
+ID=02d27
+NAME=Bronze radiant scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze radiant scimitar
+DESCRIPTION=Bronze radiant scimitar
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_war_cleaver_bronze]
+ID=02d23
+NAME=Bronze war cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze war cleaver
+DESCRIPTION=Bronze war cleaver
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_elven_spellblade_bronze]
+ID=02d20
+NAME=Bronze elven spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze elven spellblade
+DESCRIPTION=Bronze elven spellblade
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_assassin_spike_bronze]
+ID=02d21
+NAME=Bronze assassin spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_bronze
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze assassin spike
+DESCRIPTION=Bronze assassin spike
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_leafblade_bronze]
+ID=02d22
+NAME=Bronze leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze leafblade
+DESCRIPTION=Bronze leafblade
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_rune_blade_bronze]
+ID=02d26
+NAME=Bronze rune blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze rune blade
+DESCRIPTION=Bronze rune blade
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_elven_machete_bronze]
+ID=02d29
+NAME=Bronze elven machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze elven machete
+DESCRIPTION=Bronze elven machete
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_true_spellblade_bronze]
+ID=02d20
+NAME=Bronze True Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_bronze, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze elven spellblade
+DESCRIPTION=Bronze True Spellblade
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_icy_spellblade_bronze]
+ID=02d20
+NAME=Bronze Icy Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_bronze, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze elven spellblade
+DESCRIPTION=Bronze Icy Spellblade
+TAG.DamFire=40
+TAG.ResCold=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_fiery_spellblade_bronze]
+ID=02d20
+NAME=Bronze Fiery Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_bronze, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze elven spellblade
+DESCRIPTION=Bronze Fiery Spellblade
+TAG.DamFire=40
+TAG.ResFire=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_spellblade_defense_bronze]
+ID=02d20
+NAME=Bronze Spellblade of Defense
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_bronze, 1 i_gem_white_pearl
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze elven spellblade
+DESCRIPTION=Bronze Spellblade of Defense
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_true_assassin_spike_bronze]
+ID=02d21
+NAME=Bronze True Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_bronze, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze assassin spike
+DESCRIPTION=Bronze True Assassin Spike
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_charged_assassin_spike_bronze]
+ID=02d21
+NAME=Bronze Charged Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_bronze, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze assassin spike
+DESCRIPTION=Bronze Charged Assassin Spike
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_magekiller_assassin_spike_bronze]
+ID=02d21
+NAME=Bronze Magekiller Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_bronze, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze assassin spike
+DESCRIPTION=Bronze Magekiller Assassin Spike
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_wounding_assassin_spike_bronze]
+ID=02d21
+NAME=Bronze Wounding Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_bronze, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze assassin spike
+DESCRIPTION=Bronze Wounding Assassin Spike
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_true_leafblade_bronze]
+ID=02d22
+NAME=Bronze True Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze leafblade
+DESCRIPTION=Bronze True Leafblade
+TAG.DamFire=40
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_luckblade_bronze]
+ID=02d22
+NAME=Bronze Luckblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze leafblade
+DESCRIPTION=Bronze Luckblade
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_magekiller_leafblade_bronze]
+ID=02d22
+NAME=Bronze Magekiller Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze leafblade
+DESCRIPTION=Bronze Magekiller Leafblade
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_leafblade_ease_bronze]
+ID=02d22
+NAME=Bronze Leafblade of Ease
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze leafblade
+DESCRIPTION=Bronze Leafblade of Ease
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_knight_war_cleaver_bronze]
+ID=02d23
+NAME=Bronze Knight's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_bronze, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze war cleaver
+DESCRIPTION=Bronze Knight's War Cleaver
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_butcher_war_cleaver_bronze]
+ID=02d23
+NAME=Bronze Butcher's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_bronze, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze war cleaver
+DESCRIPTION=Bronze Butcher's War Cleaver
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_serrated_war_cleaver_bronze]
+ID=02d23
+NAME=Bronze Serrated War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_bronze, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze war cleaver
+DESCRIPTION=Bronze Serrated War Cleaver
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_true_war_cleaver_bronze]
+ID=02d23
+NAME=Bronze True War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_bronze, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze war cleaver
+DESCRIPTION=Bronze True War Cleaver
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_diseased_machete_bronze]
+ID=02d29
+NAME=Bronze Diseased Machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_bronze, 1 i_ingredient_blight
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze elven machete
+DESCRIPTION=Bronze Diseased Machete
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_runesabre_bronze]
+ID=02d26
+NAME=Bronze Runesabre
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze rune blade
+DESCRIPTION=Bronze Runesabre
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_mage_rune_blade_bronze]
+ID=02d26
+NAME=Bronze Mage's Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze rune blade
+DESCRIPTION=Bronze Mage's Rune Blade
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_rune_blade_knowledge_bronze]
+ID=02d26
+NAME=Bronze Rune Blade of Knowledge
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze rune blade
+DESCRIPTION=Bronze Rune Blade of Knowledge
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_corrupted_rune_blade_bronze]
+ID=02d26
+NAME=Bronze Corruped Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze, 1 i_ingredient_corruption
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze rune blade
+DESCRIPTION=Bronze Corruped Rune Blade
+TAG.DamFire=40
+TAG.ResPhysical=-5
+TAG.ResPoison=12
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_true_radiant_scimitar_bronze]
+ID=02d27
+NAME=Bronze True Radiant Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze radiant scimitar
+DESCRIPTION=Bronze True Radiant Scimitar
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_darkglow_scimitar_bronze]
+ID=02d27
+NAME=Bronze Darkglow Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze radiant scimitar
+DESCRIPTION=Bronze Darkglow Scimitar
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_icy_scimitar_bronze]
+ID=02d27
+NAME=Bronze Icy Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze radiant scimitar
+DESCRIPTION=Bronze Icy Scimitar
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_twinkling_scimitar_bronze]
+ID=02d27
+NAME=Bronze Twinkling Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_bronze, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze radiant scimitar
+DESCRIPTION=Bronze Twinkling Scimitar
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_axe_bronze]
+ID=0f49
+NAME=Bronze axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze axe
+DESCRIPTION=Bronze axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_axe_battle_bronze]
+ID=0f47
+NAME=Bronze battle axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=30.5 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze battle axe
+DESCRIPTION=Bronze battle axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_axe_double_bronze]
+ID=0f4b
+NAME=Bronze double axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=29.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze double axe
+DESCRIPTION=Bronze double axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_axe_exec_bronze]
+ID=0f45
+NAME=Bronze executioner's axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze executioner's axe
+DESCRIPTION=Bronze executioner's axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_axe_battle_large_bronze]
+ID=013fa
+NAME=Bronze large battle axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze large battle axe
+DESCRIPTION=Bronze large battle axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_axe_two_hand_bronze]
+ID=01442
+NAME=Bronze two handed axe
+TYPE=t_weapon_axe
+RESOURCES=16 i_ingot_bronze
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze two handed axe
+DESCRIPTION=Bronze two handed axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_axe_war_bronze]
+ID=013af
+NAME=Bronze war axe
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_bronze
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze war axe
+DESCRIPTION=Bronze war axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_ornate_axe_bronze]
+ID=02d28
+NAME=Bronze ornate axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze ornate axe
+DESCRIPTION=Bronze ornate axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_guardian_axe_bronze]
+ID=02d28
+NAME=Bronze Guardian Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_bronze, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze ornate axe
+DESCRIPTION=Bronze Guardian Axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_singing_axe_bronze]
+ID=02d28
+NAME=Bronze Singing Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_bronze, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze ornate axe
+DESCRIPTION=Bronze Singing Axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_thundering_axe_bronze]
+ID=02d28
+NAME=Bronze Thundering Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_bronze, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze ornate axe
+DESCRIPTION=Bronze Thundering Axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_heavy_ornate_axe_bronze]
+ID=02d28
+NAME=Bronze Heavy Ornate Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_bronze, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze ornate axe
+DESCRIPTION=Bronze Heavy Ornate Axe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_bardiche_bronze]
+ID=0f4d
+NAME=Bronze bardiche
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_bronze
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze bardiche
+DESCRIPTION=Bronze bardiche
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_bladed_staff_bronze]
+ID=026bd
+NAME=Bronze bladed staff
+TYPE=t_weapon_mace_sharp
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze bladed staff
+DESCRIPTION=Bronze bladed staff
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_double_bladed_staff_bronze]
+ID=026bf
+NAME=Bronze double bladed staff
+TYPE=t_weapon_fence
+RESOURCES=16 i_ingot_bronze
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze double bladed staff
+DESCRIPTION=Bronze double bladed staff
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_lance_bronze]
+ID=026c0
+NAME=Bronze lance
+TYPE=t_weapon_fence
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=48.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze lance
+DESCRIPTION=Bronze lance
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_pike_bronze]
+ID=026be
+NAME=Bronze pike
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=47.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze pike
+DESCRIPTION=Bronze pike
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_spear_short_bronze]
+ID=01402
+NAME=Bronze short spear
+TYPE=t_weapon_fence
+RESOURCES=6 i_ingot_bronze
+SKILLMAKE=45.3 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze short spear
+DESCRIPTION=Bronze short spear
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_scythe_bronze]
+ID=026ba
+NAME=Bronze scythe
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=39.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze scythe
+DESCRIPTION=Bronze scythe
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_spear_bronze]
+ID=0f62
+NAME=Bronze spear
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=49.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze spear
+DESCRIPTION=Bronze spear
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_war_fork_bronze]
+ID=01404
+NAME=Bronze war fork
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_bronze
+SKILLMAKE=42.9 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze war fork
+DESCRIPTION=Bronze war fork
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_hammer_pick_bronze]
+ID=0143c
+NAME=Bronze hammer pick
+TYPE=t_weapon_mace_pick
+RESOURCES=16 i_ingot_bronze
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze hammer pick
+DESCRIPTION=Bronze hammer pick
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_mace_bronze]
+ID=0f5c
+NAME=Bronze mace
+TYPE=t_weapon_mace_smith
+RESOURCES=6 i_ingot_bronze
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=14.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze mace
+DESCRIPTION=Bronze mace
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_maul_bronze]
+ID=0143a
+NAME=Bronze maul
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze maul
+DESCRIPTION=Bronze maul
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_scepter_bronze]
+ID=026bc
+NAME=Bronze scepter
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_bronze
+SKILLMAKE=21.4 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze scepter
+DESCRIPTION=Bronze scepter
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_mace_war_bronze]
+ID=01406
+NAME=Bronze war mace
+TYPE=t_weapon_mace_smith
+RESOURCES=14 i_ingot_bronze
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=17.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze war mace
+DESCRIPTION=Bronze war mace
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_hammer_war_bronze]
+ID=01438
+NAME=Bronze war hammer
+TYPE=t_weapon_mace_smith
+RESOURCES=16 i_ingot_bronze
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze war hammer
+DESCRIPTION=Bronze war hammer
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_tessen_bronze]
+ID=027a3
+NAME=Bronze tessen
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_bronze, 10 i_cloth
+SKILLMAKE=85.0 Blacksmithing, 50.0 Tailoring
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze tessen
+DESCRIPTION=Bronze tessen
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_diamond_mace_bronze]
+ID=02d24
+NAME=Bronze diamond mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_bronze
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze diamond mace
+DESCRIPTION=Bronze diamond mace
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_ruby_mace_bronze]
+ID=02d24
+NAME=Bronze Ruby Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_bronze, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze diamond mace
+DESCRIPTION=Bronze Ruby Mace
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_emerald_mace_bronze]
+ID=02d24
+NAME=Bronze Emerald Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_bronze, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze diamond mace
+DESCRIPTION=Bronze Emerald Mace
+TAG.DamFire=40
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_sapphire_mace_bronze]
+ID=02d24
+NAME=Bronze Sapphire Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_bronze, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze diamond mace
+DESCRIPTION=Bronze Sapphire Mace
+TAG.DamFire=40
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_silver_etched_mace_bronze]
+ID=02d24
+NAME=Bronze Silver-Etched Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_bronze, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze diamond mace
+DESCRIPTION=Bronze Silver-Etched Mace
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_boomerang_bronze]
+ID=08ff
+NAME=Bronze boomerang
+TYPE=t_weapon_bow
+RESOURCES=5 i_ingot_bronze
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze boomerang
+DESCRIPTION=Bronze boomerang
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_cyclone_bronze]
+ID=0901
+NAME=Bronze cyclone
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_bronze
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze cyclone
+DESCRIPTION=Bronze cyclone
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 
+[ITEMDEF i_soul_glaive_bronze]
+ID=090a
+NAME=Bronze soul glaive
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_bronze
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bronze soul glaive
+DESCRIPTION=Bronze soul glaive
+TAG.DamFire=40
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0972
+ 

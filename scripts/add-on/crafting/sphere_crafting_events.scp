@@ -1,5 +1,5 @@
 //****************************************************************************
-// SphereServer ©1997-2009
+// SphereServer ï¿½1997-2009
 // This script is part from the Sphere Community Script Pack.
 // You can download the full pack from: www.sphereserver.net
 //****************************************************************************
@@ -58,7 +58,8 @@ if <ref2.craft_exceptionalchance> > <r>
       if <ctag0.craft.mark> == 2
          ref2.dialog d_craft_prompt
       elif <ctag0.craft.mark> == 1
-         ref2.tag.craftedby = <qval (<fame> < 10000) ? "<name>":"<sex Lord/Lady> <name>">
+          ref2.tag.craftedby <src.name>
+          //ref2.tag.craftedby = <qval (<fame> < 10000) ? "<name>":"<sex Lord/Lady> <name>">
          ctag.craft.message = <def.scp.craft_msg_excepmark>
       endif
    endif
