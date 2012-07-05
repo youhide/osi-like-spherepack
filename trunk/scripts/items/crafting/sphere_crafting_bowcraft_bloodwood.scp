@@ -256,3 +256,259 @@ HITPOINTS={36 48}
 COLOR=04aa
  
 [EOF]
+[ITEMDEF i_bow_bloodwood]
+ID=013b1
+NAME=Bloodwood bow
+TYPE=t_weapon_bow
+RESOURCES=7 i_log_bloodwood
+SKILLMAKE=30.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood bow
+DESCRIPTION=Bloodwood bow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_composite_bow_bloodwood]
+ID=026c2
+NAME=Bloodwood composite bow
+TYPE=t_weapon_bow
+RESOURCES=7 i_log_bloodwood
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood composite bow
+DESCRIPTION=Bloodwood composite bow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_crossbow_bloodwood]
+ID=0f4f
+NAME=Bloodwood crossbow
+TYPE=t_weapon_xbow
+RESOURCES=7 i_log_bloodwood
+SKILLMAKE=60.0 Bowcraft
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood crossbow
+DESCRIPTION=Bloodwood crossbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_elven_composite_longbow_bloodwood]
+ID=02d1e
+NAME=Bloodwood elven composite longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_bloodwood
+SKILLMAKE=95.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood elven composite longbow
+DESCRIPTION=Bloodwood elven composite longbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_crossbow_heavy_bloodwood]
+ID=013fc
+NAME=Bloodwood heavy crossbow
+TYPE=t_weapon_xbow
+RESOURCES=10 i_log_bloodwood
+SKILLMAKE=80.0 Bowcraft
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood heavy crossbow
+DESCRIPTION=Bloodwood heavy crossbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_magical_shortbow_bloodwood]
+ID=02d1f
+NAME=Bloodwood magical shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_bloodwood
+SKILLMAKE=85.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood magical shortbow
+DESCRIPTION=Bloodwood magical shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_repeating_crossbow_bloodwood]
+ID=026c3
+NAME=Bloodwood repeating crossbow
+TYPE=t_weapon_xbow
+RESOURCES=10 i_log_bloodwood
+SKILLMAKE=90.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood repeating crossbow
+DESCRIPTION=Bloodwood repeating crossbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_yumi_bloodwood]
+ID=027a5
+NAME=Bloodwood yumi
+TYPE=t_weapon_bow
+RESOURCES=10 i_log_bloodwood
+SKILLMAKE=90.0 Bowcraft
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood yumi
+DESCRIPTION=Bloodwood yumi
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_barbed_longbow_bloodwood]
+ID=02d1e
+NAME=Bloodwood Barbed Longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_bloodwood, 1 i_gem_fire_ruby
+SKILLMAKE=95.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood elven composite longbow
+DESCRIPTION=Bloodwood Barbed Longbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_slayer_longbow_bloodwood]
+ID=02d1e
+NAME=Bloodwood Slayer Longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_bloodwood, 1 i_gem_brilliant_amber
+SKILLMAKE=70.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood elven composite longbow
+DESCRIPTION=Bloodwood Slayer Longbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_frozen_longbow_bloodwood]
+ID=02d1e
+NAME=Bloodwood Frozen Longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_bloodwood, 1 i_gem_turquoise
+SKILLMAKE=70.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood elven composite longbow
+DESCRIPTION=Bloodwood Frozen Longbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_longbow_might_bloodwood]
+ID=02d1e
+NAME=Bloodwood Longbow of Might
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_bloodwood, 1 i_gem_blue_diamond
+SKILLMAKE=70.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood elven composite longbow
+DESCRIPTION=Bloodwood Longbow of Might
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_ranger_shortbow_bloodwood]
+ID=02d1f
+NAME=Bloodwood Ranger's Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_bloodwood, 1 i_gem_perfect_emerald
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood magical shortbow
+DESCRIPTION=Bloodwood Ranger's Shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_lightweight_shortbow_bloodwood]
+ID=02d1f
+NAME=Bloodwood Lightweight Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_bloodwood, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood magical shortbow
+DESCRIPTION=Bloodwood Lightweight Shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_mystical_shortbow_bloodwood]
+ID=02d1f
+NAME=Bloodwood Mystical Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_bloodwood, 1 i_gem_ecru_citrine
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood magical shortbow
+DESCRIPTION=Bloodwood Mystical Shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 
+[ITEMDEF i_assassin_shortbow_bloodwood]
+ID=02d1f
+NAME=Bloodwood Assassin's Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_bloodwood, 1 i_gem_dark_sapphire
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Bloodwood magical shortbow
+DESCRIPTION=Bloodwood Assassin's Shortbow
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=04aa
+ 

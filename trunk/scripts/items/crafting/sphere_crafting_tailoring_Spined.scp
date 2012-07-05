@@ -1,0 +1,1169 @@
+[ITEMDEF i_bone_arms_Spined]
+ID=0144e
+NAME=SPINED bone arms
+TYPE=t_armor_leather
+RESOURCES=, 4  i_reag_bone
+SKILLMAKE=92.0 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED bone Armor
+DESCRIPTION=SPINED bone arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_bone_chest_Spined]
+ID=0144f
+NAME=SPINED bone armor
+TYPE=t_armor_leather
+RESOURCES=, 10  i_reag_bone
+SKILLMAKE=96.0 Tailoring, 1 t_sewing_kit
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED bone Armor
+DESCRIPTION=SPINED bone armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_bone_gloves_Spined]
+ID=01450
+NAME=SPINED bone gloves
+TYPE=t_armor_leather
+RESOURCES=, 2  i_reag_bone
+SKILLMAKE=89.0 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED bone Armor
+DESCRIPTION=SPINED bone gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_bone_helmet_Spined]
+ID=01451
+NAME=SPINED bone helmet
+TYPE=t_armor_leather
+RESOURCES=, 2  i_reag_bone
+SKILLMAKE=85.0 Tailoring, 1 t_sewing_kit
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED Helmets
+DESCRIPTION=SPINED bone helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=2
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_armor_female_leather_Spined]
+ID=01c06
+NAME=SPINED female leather armor
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_spined
+SKILLMAKE=62.2 Tailoring
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED female Armor
+DESCRIPTION=SPINED female leather armor
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_armor_female_bustier_Spined]
+ID=01c0a
+NAME=SPINED leather bustier
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_spined
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Armor
+DESCRIPTION=SPINED leather bustier
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_armor_female_shorts_Spined]
+ID=01c00
+NAME=SPINED leather shorts
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_spined
+SKILLMAKE=62.2 Tailoring
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Armor
+DESCRIPTION=SPINED leather shorts
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_armor_female_skirt_Spined]
+ID=01c08
+NAME=SPINED leather skirt
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_spined
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Armor
+DESCRIPTION=SPINED leather skirt
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_armor_female_studded_Spined]
+ID=01c02
+NAME=SPINED studded armor
+TYPE=t_armor_leather
+RESOURCES=1 i_leather_spined
+SKILLMAKE=87.1 Tailoring
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Armor
+DESCRIPTION=SPINED studded armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_armor_female_bustier_studded_Spined]
+ID=01c0c
+NAME=SPINED studded bustier
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_spined
+SKILLMAKE=82.9 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Armor
+DESCRIPTION=SPINED studded bustier
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gargoyle_arms_1_Spined]
+ID=0301
+NAME=SPINED gargish leather arms
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_spined
+SKILLMAKE=53.9 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED gargish Armor
+DESCRIPTION=SPINED gargish leather arms
+TAG.ResPhysical=10
+TAG.ResFire=6
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gargoyle_arms_2_Spined]
+ID=0302
+NAME=SPINED gargish leather arms
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_spined
+SKILLMAKE=53.9 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED gargish Armor
+DESCRIPTION=SPINED gargish leather arms
+TAG.ResPhysical=10
+TAG.ResFire=6
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gargoyle_chest_1_Spined]
+ID=0304
+NAME=SPINED gargish leather chest
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_spined
+SKILLMAKE=70.5 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED gargish Armor
+DESCRIPTION=SPINED gargish leather chest
+TAG.ResPhysical=10
+TAG.ResFire=6
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gargoyle_chest_2_Spined]
+ID=0303
+NAME=SPINED gargish leather chest
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_spined
+SKILLMAKE=70.5 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED gargish Armor
+DESCRIPTION=SPINED gargish leather chest
+TAG.ResPhysical=10
+TAG.ResFire=6
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gargoyle_kilt_1_Spined]
+ID=0311
+NAME=SPINED gargish leather kilt
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_spined
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED gargish Armor
+DESCRIPTION=SPINED gargish leather kilt
+TAG.ResPhysical=10
+TAG.ResFire=6
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gargoyle_kilt_2_Spined]
+ID=0310
+NAME=SPINED gargish leather kilt
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_spined
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED gargish Armor
+DESCRIPTION=SPINED gargish leather kilt
+TAG.ResPhysical=10
+TAG.ResFire=6
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gargoyle_leggings_1_Spined]
+ID=0305
+NAME=SPINED gargish leather leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_spined
+SKILLMAKE=66.3 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED gargish Armor
+DESCRIPTION=SPINED gargish leather leggings
+TAG.ResPhysical=10
+TAG.ResFire=6
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gargoyle_leggings_2_Spined]
+ID=0306
+NAME=SPINED gargish leather leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_spined
+SKILLMAKE=66.3 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED gargish Armor
+DESCRIPTION=SPINED gargish leather leggings
+TAG.ResPhysical=10
+TAG.ResFire=6
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_gargish_leather_wings_Spined]
+ID=0457e
+NAME=SPINED gargish leather wing armor
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=65.0 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED gargish Armor
+DESCRIPTION=SPINED gargish leather wing armor
+TAG.ResPhysical=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leaf_arms_Spined]
+ID=02fc8
+NAME=SPINED leaf arms
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=60.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leaf Armor
+DESCRIPTION=SPINED leaf arms
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leaf_gloves_Spined]
+ID=02fc6
+NAME=SPINED leaf gloves
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_spined
+SKILLMAKE=60.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leaf Armor
+DESCRIPTION=SPINED leaf gloves
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leaf_gorget_Spined]
+ID=02fc7
+NAME=SPINED leaf gorget
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=65.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leaf Armor
+DESCRIPTION=SPINED leaf gorget
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leaf_leggings_Spined]
+ID=02fc9
+NAME=SPINED leaf leggings
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_spined
+SKILLMAKE=75.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leaf Armor
+DESCRIPTION=SPINED leaf leggings
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leaf_tonlet_Spined]
+ID=02fca
+NAME=SPINED leaf tonlet
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=70.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leaf Armor
+DESCRIPTION=SPINED leaf tonlet
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leaf_tunic_Spined]
+ID=02fc5
+NAME=SPINED leaf tunic
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_spined
+SKILLMAKE=75.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leaf Armor
+DESCRIPTION=SPINED leaf tunic
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_cap_Spined]
+ID=01db9
+NAME=SPINED leather cap
+TYPE=t_armor_leather
+RESOURCES=2 i_leather_spined
+SKILLMAKE=6.2 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED Helmets
+DESCRIPTION=SPINED leather cap
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_do_Spined]
+ID=0277b
+NAME=SPINED leather do
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=75.0 Tailoring
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Samurai Armor
+DESCRIPTION=SPINED leather do
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gloves_Spined]
+ID=013c6
+NAME=SPINED leather gloves
+TYPE=t_armor_leather
+RESOURCES=3 i_leather_spined
+SKILLMAKE=51.8 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Armor
+DESCRIPTION=SPINED leather gloves
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_gorget_Spined]
+ID=013c7
+NAME=SPINED leather gorget
+TYPE=t_armor_leather
+RESOURCES=4 i_leather_spined
+SKILLMAKE=53.9 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Armor
+DESCRIPTION=SPINED leather gorget
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_haidate_Spined]
+ID=0278a
+NAME=SPINED leather haidate
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=68.0 Tailoring
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Samurai Armor
+DESCRIPTION=SPINED leather haidate
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_hiro_sode_Spined]
+ID=0277e
+NAME=SPINED leather hiro sode
+TYPE=t_armor_leather
+RESOURCES=5 i_leather_spined
+SKILLMAKE=55.0 Tailoring
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Samurai Armor
+DESCRIPTION=SPINED leather hiro sode
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_jingasa_Spined]
+ID=02776
+NAME=SPINED leather jingasa
+TYPE=t_armor_leather
+RESOURCES=4 i_leather_spined
+SKILLMAKE=45.0 Tailoring
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED Helmets
+DESCRIPTION=SPINED leather jingasa
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_leggings_Spined]
+ID=013cb
+NAME=SPINED leather leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_spined
+SKILLMAKE=66.3 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Armor
+DESCRIPTION=SPINED leather leggings
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_mempo_Spined]
+ID=0277a
+NAME=SPINED leather mempo
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_spined
+SKILLMAKE=80.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Samurai Armor
+DESCRIPTION=SPINED leather mempo
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_ninja_belt_Spined]
+ID=02790
+NAME=SPINED leather ninja belt
+TYPE=t_armor_leather
+RESOURCES=5 i_leather_spined
+SKILLMAKE=50.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Samurai Armor
+DESCRIPTION=SPINED leather ninja belt
+TAG.ResPhysical=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_ninja_hood_Spined]
+ID=0278e
+NAME=SPINED leather ninja hood
+TYPE=t_armor_leather
+RESOURCES=14 i_leather_spined
+SKILLMAKE=90.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED Helmets
+DESCRIPTION=SPINED leather ninja hood
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_ninja_jacket_Spined]
+ID=02793
+NAME=SPINED leather ninja jacket
+TYPE=t_armor_leather
+RESOURCES=13 i_leather_spined
+SKILLMAKE=85.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Samurai Armor
+DESCRIPTION=SPINED leather ninja jacket
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_leather_ninja_mitts_Spined]
+ID=02792
+NAME=SPINED leather ninja mitts
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=65.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED leather Samurai Armor
+DESCRIPTION=SPINED leather ninja mitts
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_sash_Spined]
+ID=01541
+NAME=SPINED body sash
+TYPE=t_clothing
+RESOURCES=4 i_cloth
+SKILLMAKE=4.1 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED body Armor
+DESCRIPTION=SPINED body sash
+TAG.ResPhysical=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_apron_full_Spined]
+ID=0153d
+NAME=SPINED full apron
+TYPE=t_clothing
+RESOURCES=10 i_cloth
+SKILLMAKE=29.0 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED full Armor
+DESCRIPTION=SPINED full apron
+TAG.ResPhysical=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_gargish_apron_Spined]
+ID=050d8
+NAME=SPINED Gargish half apron
+TYPE=t_clothing
+RESOURCES=, 6  i_cloth
+SKILLMAKE=22.7 Tailoring, 1 t_sewing_kit
+WEIGHT=6.1
+TEVENTS=t_iprop
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED Gargish Armor
+DESCRIPTION=SPINED Gargish half apron
+TAG.ResPhysical=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_gargish_sash_Spined]
+ID=046b4
+NAME=SPINED Gargish sash
+TYPE=t_clothing
+RESOURCES=, 4  i_cloth
+SKILLMAKE=4.5 Tailoring, 1 t_sewing_kit
+WEIGHT=4.1
+TEVENTS=t_iprop
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED Gargish Armor
+DESCRIPTION=SPINED Gargish sash
+TAG.ResPhysical=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_apron_half_Spined]
+ID=0153b
+NAME=SPINED half apron
+TYPE=t_clothing
+RESOURCES=6 i_cloth
+SKILLMAKE=20.7 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED half Armor
+DESCRIPTION=SPINED half apron
+TAG.ResPhysical=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_obi_Spined]
+ID=027a0
+NAME=SPINED obi
+TYPE=t_clothing
+RESOURCES=6 i_cloth
+SKILLMAKE=20.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED obi Samurai Armor
+DESCRIPTION=SPINED obi
+TAG.ResPhysical=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_hide_gloves_Spined]
+ID=02b75
+NAME=SPINED hide gloves
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_spined
+SKILLMAKE=75.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED hide Armor
+DESCRIPTION=SPINED hide gloves
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_hide_gorget_Spined]
+ID=02b76
+NAME=SPINED hide gorget
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=90.0 Tailoring
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED hide Armor
+DESCRIPTION=SPINED hide gorget
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_hide_pants_Spined]
+ID=02b78
+NAME=SPINED hide pants
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_spined
+SKILLMAKE=92.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED hide Armor
+DESCRIPTION=SPINED hide pants
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_hide_pauldrons_Spined]
+ID=02b77
+NAME=SPINED hide pauldrons
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=75.0 Tailoring
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED hide Armor
+DESCRIPTION=SPINED hide pauldrons
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_hide_tunic_Spined]
+ID=02b74
+NAME=SPINED hide tunic
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_spined
+SKILLMAKE=85.0 Tailoring
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED hide Armor
+DESCRIPTION=SPINED hide tunic
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_studded_do_Spined]
+ID=0277c
+NAME=SPINED studded do
+TYPE=t_armor_leather
+RESOURCES=14 t_leather
+SKILLMAKE=95.0 Tailoring
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Samurai Armor
+DESCRIPTION=SPINED studded do
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_studded_gloves_Spined]
+ID=013d5
+NAME=SPINED studded gloves
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_spined
+SKILLMAKE=82.9 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Armor
+DESCRIPTION=SPINED studded gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=2
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_studded_gorget_Spined]
+ID=013d6
+NAME=SPINED studded gorget
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_spined
+SKILLMAKE=78.8 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Armor
+DESCRIPTION=SPINED studded gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=2
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_studded_haidate_Spined]
+ID=0278b
+NAME=SPINED studded haidate
+TYPE=t_armor_leather
+RESOURCES=14 t_leather
+SKILLMAKE=92.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Samurai Armor
+DESCRIPTION=SPINED studded haidate
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF 0_Spined]
+ID=0
+NAME=0
+TYPE=0
+RESOURCES=00
+SKILLMAKE=0
+WEIGHT=0.0
+CATEGORY=0 - Colored
+SUBSECTION=SPINED 0
+DESCRIPTION=0
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=0
+ 
+[ITEMDEF i_studded_leggings_Spined]
+ID=013da
+NAME=SPINED studded leggings
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_spined
+SKILLMAKE=91.2 Tailoring, 1 t_sewing_kit
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Armor
+DESCRIPTION=SPINED studded leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=6
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_studded_mempo_Spined]
+ID=0279d
+NAME=SPINED studded mempo
+TYPE=t_armor_leather
+RESOURCES=8 t_leather
+SKILLMAKE=80.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Samurai Armor
+DESCRIPTION=SPINED studded mempo
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_studded_sleeves_Spined]
+ID=013d4
+NAME=SPINED studded sleeves
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_spined
+SKILLMAKE=87.1 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Armor
+DESCRIPTION=SPINED studded sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=4
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_studded_suneate_Spined]
+ID=02787
+NAME=SPINED studded suneate
+TYPE=t_armor_leather
+RESOURCES=14 t_leather
+SKILLMAKE=92.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Samurai Armor
+DESCRIPTION=SPINED studded suneate
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 
+[ITEMDEF i_studded_tunic_Spined]
+ID=013db
+NAME=SPINED studded tunic
+TYPE=t_armor_leather
+RESOURCES=14 i_leather_spined
+SKILLMAKE=94.0 Tailoring, 1 t_sewing_kit
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=SPINED studded Armor
+DESCRIPTION=SPINED studded tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ac
+ 

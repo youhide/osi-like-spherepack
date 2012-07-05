@@ -494,35 +494,60 @@ endif
 on=@hit
 // Hit Dispel helps you to dispel a target when you hit it.
 // The % of this being activated is the intensity on the player (0-100).
-if <def.scp.ItemProp_HitDispel> == 1
-    if <src.brain>
-        if <src.flags>&statf_conjured
-            if <r100> < <tag0.HitDispel>
-            src.hits = 0
+IF <tag0.HitDispel>
+    if <def.scp.ItemProp_HitDispel> == 1
+        if <src.brain>
+            if <src.flags>&statf_conjured
+                if <r100> < <tag0.HitDispel>
+                    src.hits = 0
+                endif
             endif
         endif
     endif
-endif
-if <def.scp.ItemProp_HitFireball> == 1
-    if <r100> < <tag0.HitFireball>
-    src.spelleffect s_fireball,1000,<uid>
+ENDIF
+IF <tag0.HitFireball>
+    if <def.scp.ItemProp_HitFireball> == 1
+        if <r100> < <tag0.HitFireball>
+            src.spelleffect s_fireball,1000,<uid>
+        endif
     endif
-endif
-if <def.scp.ItemProp_HitHarm> == 1
-    if <r100> < <tag0.HitHarm>
-    src.spelleffect s_harm,1000,<uid>
+ENDIF
+IF <tag0.HitHarm>
+    if <def.scp.ItemProp_HitHarm> == 1
+        if <r100> < <tag0.HitHarm>
+            if <distance <src>> > 2
+                local.power 250
+            elif <distance <src>> = 2
+                local.power 500
+            elif <distance <src>> < 2
+                local.power 1000
+            endif
+            src.damage <min <r23,29>,<eval (<r23,29>*<dlocal.power>)/1000>> dam_cold <uid>
+            //src.spelleffect s_harm,<dlocal.power>,<uid>
+        endif
     endif
-endif
-if <def.scp.ItemProp_HitLightning> == 1
-    if <r100> < <tag0.HitLightning>
-    src.spelleffect s_lightning,1000,<uid>
+ENDIF
+IF <tag0.HitLightning>
+    if <def.scp.ItemProp_HitLightning> == 1
+        if <r100> < <tag0.HitLightning>
+            src.spelleffect s_lightning,1000,<uid>
+        endif
     endif
-endif
-if <def.scp.ItemProp_HitMagicArrow> == 1
-    if <r100> < <tag0.HitMagicArrow>
-    src.spelleffect s_magic_arrow,1000,<uid>
+ENDIF
+IF <tag0.HitMagicArrow>
+    if <def.scp.ItemProp_HitMagicArrow> == 1
+        if <r100> < <tag0.HitMagicArrow>
+            src.spelleffect s_magic_arrow,1000,<uid>
+        endif
     endif
-endif
+ENDIF
+IF <TAG0.VELOCITY>
+    IF <R100> < <TAG0.VELOCITY>
+        SRC.DAMAGE <DISTANCE <SRC>> 01 <UID>
+        SYSMESSAGELOC -1,1072794 // Your arrow hits its mark with velocity!
+        SRC.SYSMESSAGELOC -1,1072795 // You have been hit by an arrow with velocity!
+    ENDIF
+ENDIF
 // Hit Lower Attack and Hit Lower Defense applies directly to the target HCI/HDI
 // It lasts for 8 seconds and only a 25 percent, though the intensity is used for calculations.
 if <def.scp.ItemProp_HitLowerAttack> == 1

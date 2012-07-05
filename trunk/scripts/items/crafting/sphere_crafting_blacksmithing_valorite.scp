@@ -1,0 +1,2799 @@
+[ITEMDEF i_ringmail_gloves_valorite]
+ID=013eb
+NAME=Valorite ringmail gloves
+TYPE=t_armor
+RESOURCES=10 i_ingot_valorite
+SKILLMAKE=12.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite ringmail Armor
+DESCRIPTION=Valorite ringmail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=8
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_ringmail_leggings_valorite]
+ID=013f0
+NAME=Valorite ringmail leggings
+TYPE=t_armor
+RESOURCES=16 i_ingot_valorite
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite ringmail Armor
+DESCRIPTION=Valorite ringmail leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=8
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_ringmail_sleeves_valorite]
+ID=013ee
+NAME=Valorite ringmail sleeves
+TYPE=t_armor
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=16.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite ringmail Armor
+DESCRIPTION=Valorite ringmail sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=8
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_ringmail_tunic_valorite]
+ID=013ec
+NAME=Valorite ringmail tunic
+TYPE=t_armor
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=21.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite ringmail Armor
+DESCRIPTION=Valorite ringmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=4
+TAG.ResPoison=8
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_chainmail_coif_valorite]
+ID=013bb
+NAME=Valorite chainmail coif
+TYPE=t_armor
+RESOURCES=10 i_ingot_valorite
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite chainmail coif
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=4
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_chainmail_leggings_valorite]
+ID=013be
+NAME=Valorite chainmail leggings
+TYPE=t_armor
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite chainmail Armor
+DESCRIPTION=Valorite chainmail leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=8
+TAG.ResFire=4
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_chainmail_tunic_valorite]
+ID=013bf
+NAME=Valorite chainmail tunic
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite chainmail Armor
+DESCRIPTION=Valorite chainmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=8
+TAG.ResFire=4
+TAG.ResCold=7
+TAG.ResPoison=4
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_arms_valorite]
+ID=01410
+NAME=Valorite platemail arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Armor
+DESCRIPTION=Valorite platemail arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_gloves_valorite]
+ID=01414
+NAME=Valorite platemail gloves
+TYPE=t_armor
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Armor
+DESCRIPTION=Valorite platemail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_gorget_valorite]
+ID=01413
+NAME=Valorite platemail gorget
+TYPE=t_armor
+RESOURCES=10 i_ingot_valorite
+SKILLMAKE=56.4 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Armor
+DESCRIPTION=Valorite platemail gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_leggings_valorite]
+ID=01411
+NAME=Valorite platemail legs
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Armor
+DESCRIPTION=Valorite platemail legs
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_chest_valorite]
+ID=01415
+NAME=Valorite platemail
+TYPE=t_armor
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Armor
+DESCRIPTION=Valorite platemail
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_armor_female_plate_valorite]
+ID=01c04
+NAME=Valorite plate armor
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite plate Armor
+DESCRIPTION=Valorite plate armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_mempo_valorite]
+ID=02779
+NAME=Valorite platemail mempo
+TYPE=t_armor
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Samurai Armor
+DESCRIPTION=Valorite platemail mempo
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_do_valorite]
+ID=0277d
+NAME=Valorite platemail do
+TYPE=t_armor
+RESOURCES=28 i_ingot_valorite
+SKILLMAKE=87.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Samurai Armor
+DESCRIPTION=Valorite platemail do
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_hiro_sode_valorite]
+ID=02780
+NAME=Valorite platemail hiro sode
+TYPE=t_armor
+RESOURCES=16 i_ingot_valorite
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Samurai Armor
+DESCRIPTION=Valorite platemail hiro sode
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_suneate_valorite]
+ID=02788
+NAME=Valorite platemail suneate
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Samurai Armor
+DESCRIPTION=Valorite platemail suneate
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_haidate_valorite]
+ID=0278d
+NAME=Valorite platemail haidate
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite platemail Samurai Armor
+DESCRIPTION=Valorite platemail haidate
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_gargish_arms_valorite]
+ID=0308
+NAME=Valorite Gargish Platemail Arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Gargish Armor
+DESCRIPTION=Valorite Gargish Platemail Arms
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=12
+TAG.ResFire=6
+TAG.ResCold=8
+TAG.ResPoison=9
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_gargish_chest_valorite]
+ID=0309
+NAME=Valorite Gargish Platemail Chest
+TYPE=t_armor
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Gargish Armor
+DESCRIPTION=Valorite Gargish Platemail Chest
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=12
+TAG.ResFire=6
+TAG.ResCold=8
+TAG.ResPoison=9
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_gargish_kilt_valorite]
+ID=030b
+NAME=Valorite Gargish Platemail Kilt
+TYPE=t_armor
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Gargish Armor
+DESCRIPTION=Valorite Gargish Platemail Kilt
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=12
+TAG.ResFire=6
+TAG.ResCold=8
+TAG.ResPoison=9
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_gargish_leggings_valorite]
+ID=030d
+NAME=Valorite Gargish Platemail Leggings
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Gargish Armor
+DESCRIPTION=Valorite Gargish Platemail Leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=12
+TAG.ResFire=6
+TAG.ResCold=8
+TAG.ResPoison=9
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_bascinet_valorite]
+ID=0140c
+NAME=Valorite bascinet
+TYPE=t_armor
+RESOURCES=15 i_ingot_valorite
+SKILLMAKE=8.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite bascinet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=11
+TAG.ResFire=2
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_helm_close_valorite]
+ID=01408
+NAME=Valorite close helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_valorite
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite close helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_helm_open_valorite]
+ID=0140a
+NAME=Valorite helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_valorite
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=7
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_helm_norse_valorite]
+ID=0140e
+NAME=Valorite norse helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_valorite
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite norse helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=1
+TAG.ResCold=7
+TAG.ResPoison=7
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_helm_valorite]
+ID=01412
+NAME=Valorite plate helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_valorite
+SKILLMAKE=62.6 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite plate helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_chainmail_hatsuburi_valorite]
+ID=02774
+NAME=Valorite chainmail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite chainmail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=2
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_hatsuburi_valorite]
+ID=02775
+NAME=Valorite platemail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite platemail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_plate_jingasa_heavy_valorite]
+ID=02777
+NAME=Valorite heavy platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite heavy platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=2
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_plate_jingasa_light_valorite]
+ID=02781
+NAME=Valorite light platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite light platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=2
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_plate_jingasa_small_valorite]
+ID=02784
+NAME=Valorite small platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite small platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=2
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_kabuto_decorative_valorite]
+ID=02778
+NAME=Valorite decorative platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite decorative platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=2
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_kabuto_battle_valorite]
+ID=02785
+NAME=Valorite platemail battle kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite platemail battle kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=2
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_platemail_kabuto_valorite]
+ID=02789
+NAME=Valorite standard platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite standard platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=2
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_circlet_valorite]
+ID=02b6e
+NAME=Valorite circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_valorite
+SKILLMAKE=62.1 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite circlet
+TAG.ResPhysical=5
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_circlet_royal_valorite]
+ID=02b6f
+NAME=Valorite royal circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_valorite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite royal circlet
+TAG.ResPhysical=5
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_circlet_gemmed_valorite]
+ID=02b70
+NAME=Valorite gemmed circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_valorite, 1 i_gem_amethyst, 1 i_gem_tourmaline, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Helmets
+DESCRIPTION=Valorite gemmed circlet
+TAG.ResPhysical=5
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_buckler_valorite]
+ID=01b73
+NAME=Valorite buckler 
+TYPE=t_shield
+RESOURCES=6 i_ingot_valorite
+SKILLMAKE=0.1 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite buckler 
+TAG.ResPhysical=4
+TAG.ResCold=3
+TAG.ResPoison=4
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_round_bronze_valorite]
+ID=01b72
+NAME=Valorite bronze shield
+TYPE=t_shield
+RESOURCES=10 i_ingot_valorite
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=12.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite bronze shield
+TAG.ResPhysical=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_heater_valorite]
+ID=01b76
+NAME=Valorite heater shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite heater shield
+TAG.ResPhysical=4
+TAG.ResFire=1
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_round_metal_valorite]
+ID=01b7b
+NAME=Valorite metal shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=11.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite metal shield
+TAG.ResPhysical=4
+TAG.ResFire=1
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_kite_metal_valorite]
+ID=01b74
+NAME=Valorite kite shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_valorite
+SKILLMAKE=44.6 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite kite shield
+TAG.ResPhysical=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_kite_wood_valorite]
+ID=01b78
+NAME=Valorite kite shield
+TYPE=t_shield
+RESOURCES=8 i_ingot_valorite, 4 i_log
+SKILLMAKE=12.6 Blacksmithing
+WEIGHT=9.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite kite shield
+TAG.ResPhysical=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_chaos_valorite]
+ID=01bc3
+NAME=Valorite Chaos shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite Chaos shield
+TAG.ResPhysical=5
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_order_valorite]
+ID=01bc4
+NAME=Valorite Order shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite Order shield
+TAG.ResPhysical=5
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_plate_small_valorite]
+ID=04202
+NAME=Valorite Small Plate Shield
+TYPE=t_shield
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite Small Plate Shield
+TAG.ResPhysical=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_kite_gargish_valorite]
+ID=04201
+NAME=Valorite Gargish Kite Shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_valorite
+SKILLMAKE=4.6 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite Gargish Kite Shield
+TAG.ResPhysical=4
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_plate_medium_valorite]
+ID=04203
+NAME=Valorite Medium Plate Shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite Medium Plate Shield
+TAG.ResPhysical=4
+TAG.ResFire=1
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_plate_large_valorite]
+ID=04204
+NAME=Valorite Large Plate Shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite Large Plate Shield
+TAG.ResPhysical=4
+TAG.ResFire=1
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_chaos_gargish_valorite]
+ID=04228
+NAME=Valorite Gargish Chaos Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite Gargish Chaos Shield
+TAG.ResPhysical=5
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_shield_order_gargish_valorite]
+ID=0422a
+NAME=Valorite Gargish Order Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Valorite Shields
+DESCRIPTION=Valorite Gargish Order Shield
+TAG.ResPhysical=5
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=08ab
+ 
+[ITEMDEF i_bone_harvester_valorite]
+ID=026bb
+NAME=Valorite bone harvester
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_valorite
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=3.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite bone harvester
+DESCRIPTION=Valorite bone harvester
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_sword_broad_valorite]
+ID=0f5e
+NAME=Valorite broadsword
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_valorite
+SKILLMAKE=35.4 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite broadsword
+DESCRIPTION=Valorite broadsword
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_crescent_blade_valorite]
+ID=026c1
+NAME=Valorite crescent blade
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite crescent blade
+DESCRIPTION=Valorite crescent blade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_cutlass_valorite]
+ID=01440
+NAME=Valorite cutlass
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_valorite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite cutlass
+DESCRIPTION=Valorite cutlass
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_dagger_valorite]
+ID=0f51
+NAME=Valorite dagger
+TYPE=t_weapon_fence
+RESOURCES=3 i_ingot_valorite
+SKILLMAKE=Blacksmithing
+WEIGHT=1.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite dagger
+DESCRIPTION=Valorite dagger
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_katana_valorite]
+ID=013fe
+NAME=Valorite katana
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_valorite
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite katana
+DESCRIPTION=Valorite katana
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_kryss_valorite]
+ID=01400
+NAME=Valorite kryss
+TYPE=t_weapon_fence
+RESOURCES=8 i_ingot_valorite
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite kryss
+DESCRIPTION=Valorite kryss
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_sword_long_valorite]
+ID=0f60
+NAME=Valorite longsword
+TYPE=t_weapon_sword
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite longsword
+DESCRIPTION=Valorite longsword
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_scimitar_valorite]
+ID=013b5
+NAME=Valorite scimitar
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_valorite
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite scimitar
+DESCRIPTION=Valorite scimitar
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_sword_viking_valorite]
+ID=013b9
+NAME=Valorite viking sword
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite viking sword
+DESCRIPTION=Valorite viking sword
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_no_dachi_valorite]
+ID=027a2
+NAME=Valorite no-dachi
+TYPE=t_weapon_sword
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite no-dachi
+DESCRIPTION=Valorite no-dachi
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_wakizashi_valorite]
+ID=027a4
+NAME=Valorite wakizashi
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_valorite
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite wakizashi
+DESCRIPTION=Valorite wakizashi
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_lajatang_valorite]
+ID=027a7
+NAME=Valorite lajatang
+TYPE=t_weapon_fence
+RESOURCES=25 i_ingot_valorite
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite lajatang
+DESCRIPTION=Valorite lajatang
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_daisho_valorite]
+ID=027a9
+NAME=Valorite daisho
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite
+SKILLMAKE=60.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite daisho
+DESCRIPTION=Valorite daisho
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_tekagi_valorite]
+ID=027ab
+NAME=Valorite tekagi
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=55.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite tekagi
+DESCRIPTION=Valorite tekagi
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_shuriken_valorite]
+ID=027ac
+NAME=Valorite shuriken
+TYPE=t_ninja_shuriken
+RESOURCES=5 i_ingot_valorite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=0.1
+CATEGORY=0 - Colored
+SUBSECTION=Valorite 0
+DESCRIPTION=Valorite shuriken
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=08ab
+ 
+[ITEMDEF i_kama_valorite]
+ID=027ad
+NAME=Valorite kama
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite kama
+DESCRIPTION=Valorite kama
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_sai_valorite]
+ID=027af
+NAME=Valorite sai
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite sai
+DESCRIPTION=Valorite sai
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_radiant_scimitar_valorite]
+ID=02d27
+NAME=Valorite radiant scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite radiant scimitar
+DESCRIPTION=Valorite radiant scimitar
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_war_cleaver_valorite]
+ID=02d23
+NAME=Valorite war cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite war cleaver
+DESCRIPTION=Valorite war cleaver
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_elven_spellblade_valorite]
+ID=02d20
+NAME=Valorite elven spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite elven spellblade
+DESCRIPTION=Valorite elven spellblade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_assassin_spike_valorite]
+ID=02d21
+NAME=Valorite assassin spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_valorite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite assassin spike
+DESCRIPTION=Valorite assassin spike
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_leafblade_valorite]
+ID=02d22
+NAME=Valorite leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite leafblade
+DESCRIPTION=Valorite leafblade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_rune_blade_valorite]
+ID=02d26
+NAME=Valorite rune blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite rune blade
+DESCRIPTION=Valorite rune blade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_elven_machete_valorite]
+ID=02d29
+NAME=Valorite elven machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite elven machete
+DESCRIPTION=Valorite elven machete
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_true_spellblade_valorite]
+ID=02d20
+NAME=Valorite True Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_valorite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite elven spellblade
+DESCRIPTION=Valorite True Spellblade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_icy_spellblade_valorite]
+ID=02d20
+NAME=Valorite Icy Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_valorite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite elven spellblade
+DESCRIPTION=Valorite Icy Spellblade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResCold=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_fiery_spellblade_valorite]
+ID=02d20
+NAME=Valorite Fiery Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_valorite, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite elven spellblade
+DESCRIPTION=Valorite Fiery Spellblade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResFire=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_spellblade_defense_valorite]
+ID=02d20
+NAME=Valorite Spellblade of Defense
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_valorite, 1 i_gem_white_pearl
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite elven spellblade
+DESCRIPTION=Valorite Spellblade of Defense
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_true_assassin_spike_valorite]
+ID=02d21
+NAME=Valorite True Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_valorite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite assassin spike
+DESCRIPTION=Valorite True Assassin Spike
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_charged_assassin_spike_valorite]
+ID=02d21
+NAME=Valorite Charged Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_valorite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite assassin spike
+DESCRIPTION=Valorite Charged Assassin Spike
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_magekiller_assassin_spike_valorite]
+ID=02d21
+NAME=Valorite Magekiller Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_valorite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite assassin spike
+DESCRIPTION=Valorite Magekiller Assassin Spike
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_wounding_assassin_spike_valorite]
+ID=02d21
+NAME=Valorite Wounding Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_valorite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite assassin spike
+DESCRIPTION=Valorite Wounding Assassin Spike
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_true_leafblade_valorite]
+ID=02d22
+NAME=Valorite True Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite leafblade
+DESCRIPTION=Valorite True Leafblade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_luckblade_valorite]
+ID=02d22
+NAME=Valorite Luckblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite leafblade
+DESCRIPTION=Valorite Luckblade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_magekiller_leafblade_valorite]
+ID=02d22
+NAME=Valorite Magekiller Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite leafblade
+DESCRIPTION=Valorite Magekiller Leafblade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_leafblade_ease_valorite]
+ID=02d22
+NAME=Valorite Leafblade of Ease
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite leafblade
+DESCRIPTION=Valorite Leafblade of Ease
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_knight_war_cleaver_valorite]
+ID=02d23
+NAME=Valorite Knight's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_valorite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite war cleaver
+DESCRIPTION=Valorite Knight's War Cleaver
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_butcher_war_cleaver_valorite]
+ID=02d23
+NAME=Valorite Butcher's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_valorite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite war cleaver
+DESCRIPTION=Valorite Butcher's War Cleaver
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_serrated_war_cleaver_valorite]
+ID=02d23
+NAME=Valorite Serrated War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_valorite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite war cleaver
+DESCRIPTION=Valorite Serrated War Cleaver
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_true_war_cleaver_valorite]
+ID=02d23
+NAME=Valorite True War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_valorite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite war cleaver
+DESCRIPTION=Valorite True War Cleaver
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_diseased_machete_valorite]
+ID=02d29
+NAME=Valorite Diseased Machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_valorite, 1 i_ingredient_blight
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite elven machete
+DESCRIPTION=Valorite Diseased Machete
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_runesabre_valorite]
+ID=02d26
+NAME=Valorite Runesabre
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite rune blade
+DESCRIPTION=Valorite Runesabre
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_mage_rune_blade_valorite]
+ID=02d26
+NAME=Valorite Mage's Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite rune blade
+DESCRIPTION=Valorite Mage's Rune Blade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_rune_blade_knowledge_valorite]
+ID=02d26
+NAME=Valorite Rune Blade of Knowledge
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite rune blade
+DESCRIPTION=Valorite Rune Blade of Knowledge
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_corrupted_rune_blade_valorite]
+ID=02d26
+NAME=Valorite Corruped Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite, 1 i_ingredient_corruption
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite rune blade
+DESCRIPTION=Valorite Corruped Rune Blade
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResPhysical=-5
+TAG.ResPoison=12
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_true_radiant_scimitar_valorite]
+ID=02d27
+NAME=Valorite True Radiant Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite radiant scimitar
+DESCRIPTION=Valorite True Radiant Scimitar
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_darkglow_scimitar_valorite]
+ID=02d27
+NAME=Valorite Darkglow Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite radiant scimitar
+DESCRIPTION=Valorite Darkglow Scimitar
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_icy_scimitar_valorite]
+ID=02d27
+NAME=Valorite Icy Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite radiant scimitar
+DESCRIPTION=Valorite Icy Scimitar
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_twinkling_scimitar_valorite]
+ID=02d27
+NAME=Valorite Twinkling Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_valorite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite radiant scimitar
+DESCRIPTION=Valorite Twinkling Scimitar
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_axe_valorite]
+ID=0f49
+NAME=Valorite axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite axe
+DESCRIPTION=Valorite axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_axe_battle_valorite]
+ID=0f47
+NAME=Valorite battle axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=30.5 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite battle axe
+DESCRIPTION=Valorite battle axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_axe_double_valorite]
+ID=0f4b
+NAME=Valorite double axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=29.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite double axe
+DESCRIPTION=Valorite double axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_axe_exec_valorite]
+ID=0f45
+NAME=Valorite executioner's axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite executioner's axe
+DESCRIPTION=Valorite executioner's axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_axe_battle_large_valorite]
+ID=013fa
+NAME=Valorite large battle axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite large battle axe
+DESCRIPTION=Valorite large battle axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_axe_two_hand_valorite]
+ID=01442
+NAME=Valorite two handed axe
+TYPE=t_weapon_axe
+RESOURCES=16 i_ingot_valorite
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite two handed axe
+DESCRIPTION=Valorite two handed axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_axe_war_valorite]
+ID=013af
+NAME=Valorite war axe
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_valorite
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite war axe
+DESCRIPTION=Valorite war axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_ornate_axe_valorite]
+ID=02d28
+NAME=Valorite ornate axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite ornate axe
+DESCRIPTION=Valorite ornate axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_guardian_axe_valorite]
+ID=02d28
+NAME=Valorite Guardian Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_valorite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite ornate axe
+DESCRIPTION=Valorite Guardian Axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_singing_axe_valorite]
+ID=02d28
+NAME=Valorite Singing Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_valorite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite ornate axe
+DESCRIPTION=Valorite Singing Axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_thundering_axe_valorite]
+ID=02d28
+NAME=Valorite Thundering Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_valorite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite ornate axe
+DESCRIPTION=Valorite Thundering Axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_heavy_ornate_axe_valorite]
+ID=02d28
+NAME=Valorite Heavy Ornate Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_valorite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite ornate axe
+DESCRIPTION=Valorite Heavy Ornate Axe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_bardiche_valorite]
+ID=0f4d
+NAME=Valorite bardiche
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_valorite
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite bardiche
+DESCRIPTION=Valorite bardiche
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_bladed_staff_valorite]
+ID=026bd
+NAME=Valorite bladed staff
+TYPE=t_weapon_mace_sharp
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite bladed staff
+DESCRIPTION=Valorite bladed staff
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_double_bladed_staff_valorite]
+ID=026bf
+NAME=Valorite double bladed staff
+TYPE=t_weapon_fence
+RESOURCES=16 i_ingot_valorite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite double bladed staff
+DESCRIPTION=Valorite double bladed staff
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_lance_valorite]
+ID=026c0
+NAME=Valorite lance
+TYPE=t_weapon_fence
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=48.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite lance
+DESCRIPTION=Valorite lance
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_pike_valorite]
+ID=026be
+NAME=Valorite pike
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=47.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite pike
+DESCRIPTION=Valorite pike
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_spear_short_valorite]
+ID=01402
+NAME=Valorite short spear
+TYPE=t_weapon_fence
+RESOURCES=6 i_ingot_valorite
+SKILLMAKE=45.3 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite short spear
+DESCRIPTION=Valorite short spear
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_scythe_valorite]
+ID=026ba
+NAME=Valorite scythe
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=39.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite scythe
+DESCRIPTION=Valorite scythe
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_spear_valorite]
+ID=0f62
+NAME=Valorite spear
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=49.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite spear
+DESCRIPTION=Valorite spear
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_war_fork_valorite]
+ID=01404
+NAME=Valorite war fork
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_valorite
+SKILLMAKE=42.9 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite war fork
+DESCRIPTION=Valorite war fork
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_hammer_pick_valorite]
+ID=0143c
+NAME=Valorite hammer pick
+TYPE=t_weapon_mace_pick
+RESOURCES=16 i_ingot_valorite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite hammer pick
+DESCRIPTION=Valorite hammer pick
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_mace_valorite]
+ID=0f5c
+NAME=Valorite mace
+TYPE=t_weapon_mace_smith
+RESOURCES=6 i_ingot_valorite
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=14.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite mace
+DESCRIPTION=Valorite mace
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_maul_valorite]
+ID=0143a
+NAME=Valorite maul
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_valorite
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite maul
+DESCRIPTION=Valorite maul
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_scepter_valorite]
+ID=026bc
+NAME=Valorite scepter
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_valorite
+SKILLMAKE=21.4 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite scepter
+DESCRIPTION=Valorite scepter
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_mace_war_valorite]
+ID=01406
+NAME=Valorite war mace
+TYPE=t_weapon_mace_smith
+RESOURCES=14 i_ingot_valorite
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=17.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite war mace
+DESCRIPTION=Valorite war mace
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_hammer_war_valorite]
+ID=01438
+NAME=Valorite war hammer
+TYPE=t_weapon_mace_smith
+RESOURCES=16 i_ingot_valorite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite war hammer
+DESCRIPTION=Valorite war hammer
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_tessen_valorite]
+ID=027a3
+NAME=Valorite tessen
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_valorite, 10 i_cloth
+SKILLMAKE=85.0 Blacksmithing, 50.0 Tailoring
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite tessen
+DESCRIPTION=Valorite tessen
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_diamond_mace_valorite]
+ID=02d24
+NAME=Valorite diamond mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_valorite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite diamond mace
+DESCRIPTION=Valorite diamond mace
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_ruby_mace_valorite]
+ID=02d24
+NAME=Valorite Ruby Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_valorite, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite diamond mace
+DESCRIPTION=Valorite Ruby Mace
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_emerald_mace_valorite]
+ID=02d24
+NAME=Valorite Emerald Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_valorite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite diamond mace
+DESCRIPTION=Valorite Emerald Mace
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_sapphire_mace_valorite]
+ID=02d24
+NAME=Valorite Sapphire Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_valorite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite diamond mace
+DESCRIPTION=Valorite Sapphire Mace
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_silver_etched_mace_valorite]
+ID=02d24
+NAME=Valorite Silver-Etched Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_valorite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite diamond mace
+DESCRIPTION=Valorite Silver-Etched Mace
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_boomerang_valorite]
+ID=08ff
+NAME=Valorite boomerang
+TYPE=t_weapon_bow
+RESOURCES=5 i_ingot_valorite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite boomerang
+DESCRIPTION=Valorite boomerang
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_cyclone_valorite]
+ID=0901
+NAME=Valorite cyclone
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_valorite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite cyclone
+DESCRIPTION=Valorite cyclone
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 
+[ITEMDEF i_soul_glaive_valorite]
+ID=090a
+NAME=Valorite soul glaive
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_valorite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Valorite soul glaive
+DESCRIPTION=Valorite soul glaive
+TAG.DamFire=10
+TAG.DamCold=20
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=08ab
+ 

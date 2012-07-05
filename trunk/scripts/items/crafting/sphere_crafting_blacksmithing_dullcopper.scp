@@ -1,0 +1,2560 @@
+[ITEMDEF i_ringmail_gloves_dullcopper]
+ID=013eb
+NAME=Dull Copper ringmail gloves
+TYPE=t_armor
+RESOURCES=10 i_ingot_dull_copper
+SKILLMAKE=12.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=8
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper ringmail Armor
+DESCRIPTION=Dull Copper ringmail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_ringmail_leggings_dullcopper]
+ID=013f0
+NAME=Dull Copper ringmail leggings
+TYPE=t_armor
+RESOURCES=16 i_ingot_dull_copper
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=15.0
+REQSTR=8
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper ringmail Armor
+DESCRIPTION=Dull Copper ringmail leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_ringmail_sleeves_dullcopper]
+ID=013ee
+NAME=Dull Copper ringmail sleeves
+TYPE=t_armor
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=16.9 Blacksmithing
+WEIGHT=15.0
+REQSTR=8
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper ringmail Armor
+DESCRIPTION=Dull Copper ringmail sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_ringmail_tunic_dullcopper]
+ID=013ec
+NAME=Dull Copper ringmail tunic
+TYPE=t_armor
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=21.9 Blacksmithing
+WEIGHT=15.0
+REQSTR=8
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper ringmail Armor
+DESCRIPTION=Dull Copper ringmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_chainmail_coif_dullcopper]
+ID=013bb
+NAME=Dull Copper chainmail coif
+TYPE=t_armor
+RESOURCES=10 i_ingot_dull_copper
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=7.0
+REQSTR=12
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper chainmail coif
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=10
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=1
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_chainmail_leggings_dullcopper]
+ID=013be
+NAME=Dull Copper chainmail leggings
+TYPE=t_armor
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=7.0
+REQSTR=12
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper chainmail Armor
+DESCRIPTION=Dull Copper chainmail leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=10
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=1
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_chainmail_tunic_dullcopper]
+ID=013bf
+NAME=Dull Copper chainmail tunic
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=7.0
+REQSTR=12
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper chainmail Armor
+DESCRIPTION=Dull Copper chainmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=10
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=1
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_arms_dullcopper]
+ID=01410
+NAME=Dull Copper platemail arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+REQSTR=16
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Armor
+DESCRIPTION=Dull Copper platemail arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_gloves_dullcopper]
+ID=01414
+NAME=Dull Copper platemail gloves
+TYPE=t_armor
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=2.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Armor
+DESCRIPTION=Dull Copper platemail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_gorget_dullcopper]
+ID=01413
+NAME=Dull Copper platemail gorget
+TYPE=t_armor
+RESOURCES=10 i_ingot_dull_copper
+SKILLMAKE=56.4 Blacksmithing
+WEIGHT=2.0
+REQSTR=9
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Armor
+DESCRIPTION=Dull Copper platemail gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_leggings_dullcopper]
+ID=01411
+NAME=Dull Copper platemail legs
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+REQSTR=18
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Armor
+DESCRIPTION=Dull Copper platemail legs
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_chest_dullcopper]
+ID=01415
+NAME=Dull Copper platemail
+TYPE=t_armor
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=19
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Armor
+DESCRIPTION=Dull Copper platemail
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_armor_female_plate_dullcopper]
+ID=01c04
+NAME=Dull Copper plate armor
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=4.0
+REQSTR=19
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper plate Armor
+DESCRIPTION=Dull Copper plate armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_mempo_dullcopper]
+ID=02779
+NAME=Dull Copper platemail mempo
+TYPE=t_armor
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=3.0
+REQSTR=10
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Samurai Armor
+DESCRIPTION=Dull Copper platemail mempo
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_do_dullcopper]
+ID=0277d
+NAME=Dull Copper platemail do
+TYPE=t_armor
+RESOURCES=28 i_ingot_dull_copper
+SKILLMAKE=87.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=17
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Samurai Armor
+DESCRIPTION=Dull Copper platemail do
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_hiro_sode_dullcopper]
+ID=02780
+NAME=Dull Copper platemail hiro sode
+TYPE=t_armor
+RESOURCES=16 i_ingot_dull_copper
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=15
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Samurai Armor
+DESCRIPTION=Dull Copper platemail hiro sode
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_suneate_dullcopper]
+ID=02788
+NAME=Dull Copper platemail suneate
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=16
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Samurai Armor
+DESCRIPTION=Dull Copper platemail suneate
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_haidate_dullcopper]
+ID=0278d
+NAME=Dull Copper platemail haidate
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=16
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper platemail Samurai Armor
+DESCRIPTION=Dull Copper platemail haidate
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_gargish_arms_dullcopper]
+ID=0308
+NAME=Dull Copper Gargish Platemail Arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+REQSTR=16
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Gargish Armor
+DESCRIPTION=Dull Copper Gargish Platemail Arms
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=14
+TAG.ResFire=6
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_gargish_chest_dullcopper]
+ID=0309
+NAME=Dull Copper Gargish Platemail Chest
+TYPE=t_armor
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=19
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Gargish Armor
+DESCRIPTION=Dull Copper Gargish Platemail Chest
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=14
+TAG.ResFire=6
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_gargish_kilt_dullcopper]
+ID=030b
+NAME=Dull Copper Gargish Platemail Kilt
+TYPE=t_armor
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=5.0
+REQSTR=16
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Gargish Armor
+DESCRIPTION=Dull Copper Gargish Platemail Kilt
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=14
+TAG.ResFire=6
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_gargish_leggings_dullcopper]
+ID=030d
+NAME=Dull Copper Gargish Platemail Leggings
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+REQSTR=18
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Gargish Armor
+DESCRIPTION=Dull Copper Gargish Platemail Leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=14
+TAG.ResFire=6
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_bascinet_dullcopper]
+ID=0140c
+NAME=Dull Copper bascinet
+TYPE=t_armor
+RESOURCES=15 i_ingot_dull_copper
+SKILLMAKE=8.3 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper bascinet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=13
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_helm_close_dullcopper]
+ID=01408
+NAME=Dull Copper close helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_dull_copper
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+REQSTR=11
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper close helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=9
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=3
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_helm_open_dullcopper]
+ID=0140a
+NAME=Dull Copper helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_dull_copper
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+REQSTR=9
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_helm_norse_dullcopper]
+ID=0140e
+NAME=Dull Copper norse helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_dull_copper
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+REQSTR=11
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper norse helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=10
+TAG.ResFire=1
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_helm_dullcopper]
+ID=01412
+NAME=Dull Copper plate helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_dull_copper
+SKILLMAKE=62.6 Blacksmithing
+WEIGHT=5.0
+REQSTR=16
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper plate helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_chainmail_hatsuburi_dullcopper]
+ID=02774
+NAME=Dull Copper chainmail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=10
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper chainmail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_hatsuburi_dullcopper]
+ID=02775
+NAME=Dull Copper platemail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=13
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper platemail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=11
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_plate_jingasa_heavy_dullcopper]
+ID=02777
+NAME=Dull Copper heavy platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=11
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper heavy platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=13
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_plate_jingasa_light_dullcopper]
+ID=02781
+NAME=Dull Copper light platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=11
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper light platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=13
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_plate_jingasa_small_dullcopper]
+ID=02784
+NAME=Dull Copper small platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=11
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper small platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=13
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_kabuto_decorative_dullcopper]
+ID=02778
+NAME=Dull Copper decorative platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper decorative platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=12
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_kabuto_battle_dullcopper]
+ID=02785
+NAME=Dull Copper platemail battle kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper platemail battle kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=12
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_platemail_kabuto_dullcopper]
+ID=02789
+NAME=Dull Copper standard platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=14
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper standard platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=12
+TAG.ResFire=2
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_circlet_dullcopper]
+ID=02b6e
+NAME=Dull Copper circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_dull_copper
+SKILLMAKE=62.1 Blacksmithing
+WEIGHT=2.0
+REQSTR=2
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper circlet
+TAG.ResPhysical=7
+TAG.ResFire=5
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_circlet_royal_dullcopper]
+ID=02b6f
+NAME=Dull Copper royal circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_dull_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=2
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper royal circlet
+TAG.ResPhysical=7
+TAG.ResFire=5
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_circlet_gemmed_dullcopper]
+ID=02b70
+NAME=Dull Copper gemmed circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_dull_copper, 1 i_gem_amethyst, 1 i_gem_tourmaline, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=2
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Helmets
+DESCRIPTION=Dull Copper gemmed circlet
+TAG.ResPhysical=7
+TAG.ResFire=5
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_buckler_dullcopper]
+ID=01b73
+NAME=Dull Copper buckler 
+TYPE=t_shield
+RESOURCES=6 i_ingot_dull_copper
+SKILLMAKE=0.1 Blacksmithing
+WEIGHT=6.0
+REQSTR=4
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper buckler 
+TAG.ResPhysical=6
+TAG.ResPoison=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_round_bronze_dullcopper]
+ID=01b72
+NAME=Dull Copper bronze shield
+TYPE=t_shield
+RESOURCES=10 i_ingot_dull_copper
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=7
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper bronze shield
+TAG.ResPhysical=6
+TAG.ResCold=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_heater_dullcopper]
+ID=01b76
+NAME=Dull Copper heater shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=14.0
+REQSTR=18
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper heater shield
+TAG.ResPhysical=6
+TAG.ResFire=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_round_metal_dullcopper]
+ID=01b7b
+NAME=Dull Copper metal shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=11.0
+REQSTR=9
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper metal shield
+TAG.ResPhysical=6
+TAG.ResFire=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_kite_metal_dullcopper]
+ID=01b74
+NAME=Dull Copper kite shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_dull_copper
+SKILLMAKE=44.6 Blacksmithing
+WEIGHT=14.0
+REQSTR=9
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper kite shield
+TAG.ResPhysical=6
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_kite_wood_dullcopper]
+ID=01b78
+NAME=Dull Copper kite shield
+TYPE=t_shield
+RESOURCES=8 i_ingot_dull_copper, 4 i_log
+SKILLMAKE=12.6 Blacksmithing
+WEIGHT=9.0
+REQSTR=4
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper kite shield
+TAG.ResPhysical=6
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_chaos_dullcopper]
+ID=01bc3
+NAME=Dull Copper Chaos shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+REQSTR=19
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper Chaos shield
+TAG.ResPhysical=7
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_order_dullcopper]
+ID=01bc4
+NAME=Dull Copper Order shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+REQSTR=19
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper Order shield
+TAG.ResPhysical=7
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_plate_small_dullcopper]
+ID=04202
+NAME=Dull Copper Small Plate Shield
+TYPE=t_shield
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+REQSTR=4
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper Small Plate Shield
+TAG.ResPhysical=6
+TAG.ResCold=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_kite_gargish_dullcopper]
+ID=04201
+NAME=Dull Copper Gargish Kite Shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_dull_copper
+SKILLMAKE=4.6 Blacksmithing
+WEIGHT=7.0
+REQSTR=9
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper Gargish Kite Shield
+TAG.ResPhysical=6
+TAG.ResEnergy=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_plate_medium_dullcopper]
+ID=04203
+NAME=Dull Copper Medium Plate Shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+REQSTR=9
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper Medium Plate Shield
+TAG.ResPhysical=6
+TAG.ResFire=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_plate_large_dullcopper]
+ID=04204
+NAME=Dull Copper Large Plate Shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+REQSTR=18
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper Large Plate Shield
+TAG.ResPhysical=6
+TAG.ResFire=1
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_chaos_gargish_dullcopper]
+ID=04228
+NAME=Dull Copper Gargish Chaos Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=19
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper Gargish Chaos Shield
+TAG.ResPhysical=7
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_shield_order_gargish_dullcopper]
+ID=0422a
+NAME=Dull Copper Gargish Order Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=19
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Dull Copper Shields
+DESCRIPTION=Dull Copper Gargish Order Shield
+TAG.ResPhysical=7
+ 
+ON=@Create
+HITPOINTS={86 98}
+COLOR=0973
+ 
+[ITEMDEF i_bone_harvester_dullcopper]
+ID=026bb
+NAME=Dull Copper bone harvester
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_dull_copper
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=3.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper bone harvester
+DESCRIPTION=Dull Copper bone harvester
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_sword_broad_dullcopper]
+ID=0f5e
+NAME=Dull Copper broadsword
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_dull_copper
+SKILLMAKE=35.4 Blacksmithing
+WEIGHT=6.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper broadsword
+DESCRIPTION=Dull Copper broadsword
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_crescent_blade_dullcopper]
+ID=026c1
+NAME=Dull Copper crescent blade
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=28
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper crescent blade
+DESCRIPTION=Dull Copper crescent blade
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_cutlass_dullcopper]
+ID=01440
+NAME=Dull Copper cutlass
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_dull_copper
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper cutlass
+DESCRIPTION=Dull Copper cutlass
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_dagger_dullcopper]
+ID=0f51
+NAME=Dull Copper dagger
+TYPE=t_weapon_fence
+RESOURCES=3 i_ingot_dull_copper
+SKILLMAKE=Blacksmithing
+WEIGHT=1.0
+REQSTR=5
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper dagger
+DESCRIPTION=Dull Copper dagger
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_katana_dullcopper]
+ID=013fe
+NAME=Dull Copper katana
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_dull_copper
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=10.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper katana
+DESCRIPTION=Dull Copper katana
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_kryss_dullcopper]
+ID=01400
+NAME=Dull Copper kryss
+TYPE=t_weapon_fence
+RESOURCES=8 i_ingot_dull_copper
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=2.0
+REQSTR=5
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper kryss
+DESCRIPTION=Dull Copper kryss
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_sword_long_dullcopper]
+ID=0f60
+NAME=Dull Copper longsword
+TYPE=t_weapon_sword
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper longsword
+DESCRIPTION=Dull Copper longsword
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_scimitar_dullcopper]
+ID=013b5
+NAME=Dull Copper scimitar
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_dull_copper
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=5.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper scimitar
+DESCRIPTION=Dull Copper scimitar
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_sword_viking_dullcopper]
+ID=013b9
+NAME=Dull Copper viking sword
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=6.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper viking sword
+DESCRIPTION=Dull Copper viking sword
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_no_dachi_dullcopper]
+ID=027a2
+NAME=Dull Copper no-dachi
+TYPE=t_weapon_sword
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper no-dachi
+DESCRIPTION=Dull Copper no-dachi
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_wakizashi_dullcopper]
+ID=027a4
+NAME=Dull Copper wakizashi
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_dull_copper
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper wakizashi
+DESCRIPTION=Dull Copper wakizashi
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_lajatang_dullcopper]
+ID=027a7
+NAME=Dull Copper lajatang
+TYPE=t_weapon_fence
+RESOURCES=25 i_ingot_dull_copper
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=33
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper lajatang
+DESCRIPTION=Dull Copper lajatang
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_daisho_dullcopper]
+ID=027a9
+NAME=Dull Copper daisho
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper
+SKILLMAKE=60.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper daisho
+DESCRIPTION=Dull Copper daisho
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_tekagi_dullcopper]
+ID=027ab
+NAME=Dull Copper tekagi
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=55.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=5
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper tekagi
+DESCRIPTION=Dull Copper tekagi
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_shuriken_dullcopper]
+ID=027ac
+NAME=Dull Copper shuriken
+TYPE=t_ninja_shuriken
+RESOURCES=5 i_ingot_dull_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=0.1
+CATEGORY=0 - Colored
+SUBSECTION=Dull Copper 0
+DESCRIPTION=Dull Copper shuriken
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=0973
+ 
+[ITEMDEF i_kama_dullcopper]
+ID=027ad
+NAME=Dull Copper kama
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper kama
+DESCRIPTION=Dull Copper kama
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_sai_dullcopper]
+ID=027af
+NAME=Dull Copper sai
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper sai
+DESCRIPTION=Dull Copper sai
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_radiant_scimitar_dullcopper]
+ID=02d27
+NAME=Dull Copper radiant scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper radiant scimitar
+DESCRIPTION=Dull Copper radiant scimitar
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_war_cleaver_dullcopper]
+ID=02d23
+NAME=Dull Copper war cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper war cleaver
+DESCRIPTION=Dull Copper war cleaver
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_elven_spellblade_dullcopper]
+ID=02d20
+NAME=Dull Copper elven spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper elven spellblade
+DESCRIPTION=Dull Copper elven spellblade
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_assassin_spike_dullcopper]
+ID=02d21
+NAME=Dull Copper assassin spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_dull_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper assassin spike
+DESCRIPTION=Dull Copper assassin spike
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_leafblade_dullcopper]
+ID=02d22
+NAME=Dull Copper leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper leafblade
+DESCRIPTION=Dull Copper leafblade
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_rune_blade_dullcopper]
+ID=02d26
+NAME=Dull Copper rune blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper rune blade
+DESCRIPTION=Dull Copper rune blade
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_elven_machete_dullcopper]
+ID=02d29
+NAME=Dull Copper elven machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper elven machete
+DESCRIPTION=Dull Copper elven machete
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_true_spellblade_dullcopper]
+ID=02d20
+NAME=Dull Copper True Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_dull_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper elven spellblade
+DESCRIPTION=Dull Copper True Spellblade
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_icy_spellblade_dullcopper]
+ID=02d20
+NAME=Dull Copper Icy Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_dull_copper, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper elven spellblade
+DESCRIPTION=Dull Copper Icy Spellblade
+TAG.ResCold=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_fiery_spellblade_dullcopper]
+ID=02d20
+NAME=Dull Copper Fiery Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_dull_copper, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper elven spellblade
+DESCRIPTION=Dull Copper Fiery Spellblade
+TAG.ResFire=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_spellblade_defense_dullcopper]
+ID=02d20
+NAME=Dull Copper Spellblade of Defense
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_dull_copper, 1 i_gem_white_pearl
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper elven spellblade
+DESCRIPTION=Dull Copper Spellblade of Defense
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_true_assassin_spike_dullcopper]
+ID=02d21
+NAME=Dull Copper True Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_dull_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper assassin spike
+DESCRIPTION=Dull Copper True Assassin Spike
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_charged_assassin_spike_dullcopper]
+ID=02d21
+NAME=Dull Copper Charged Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_dull_copper, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper assassin spike
+DESCRIPTION=Dull Copper Charged Assassin Spike
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_magekiller_assassin_spike_dullcopper]
+ID=02d21
+NAME=Dull Copper Magekiller Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_dull_copper, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper assassin spike
+DESCRIPTION=Dull Copper Magekiller Assassin Spike
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_wounding_assassin_spike_dullcopper]
+ID=02d21
+NAME=Dull Copper Wounding Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_dull_copper, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper assassin spike
+DESCRIPTION=Dull Copper Wounding Assassin Spike
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_true_leafblade_dullcopper]
+ID=02d22
+NAME=Dull Copper True Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper leafblade
+DESCRIPTION=Dull Copper True Leafblade
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_luckblade_dullcopper]
+ID=02d22
+NAME=Dull Copper Luckblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper leafblade
+DESCRIPTION=Dull Copper Luckblade
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_magekiller_leafblade_dullcopper]
+ID=02d22
+NAME=Dull Copper Magekiller Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper leafblade
+DESCRIPTION=Dull Copper Magekiller Leafblade
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_leafblade_ease_dullcopper]
+ID=02d22
+NAME=Dull Copper Leafblade of Ease
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper leafblade
+DESCRIPTION=Dull Copper Leafblade of Ease
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_knight_war_cleaver_dullcopper]
+ID=02d23
+NAME=Dull Copper Knight's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_dull_copper, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper war cleaver
+DESCRIPTION=Dull Copper Knight's War Cleaver
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_butcher_war_cleaver_dullcopper]
+ID=02d23
+NAME=Dull Copper Butcher's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_dull_copper, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper war cleaver
+DESCRIPTION=Dull Copper Butcher's War Cleaver
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_serrated_war_cleaver_dullcopper]
+ID=02d23
+NAME=Dull Copper Serrated War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_dull_copper, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper war cleaver
+DESCRIPTION=Dull Copper Serrated War Cleaver
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_true_war_cleaver_dullcopper]
+ID=02d23
+NAME=Dull Copper True War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_dull_copper, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=8
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper war cleaver
+DESCRIPTION=Dull Copper True War Cleaver
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_diseased_machete_dullcopper]
+ID=02d29
+NAME=Dull Copper Diseased Machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_dull_copper, 1 i_ingredient_blight
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper elven machete
+DESCRIPTION=Dull Copper Diseased Machete
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_runesabre_dullcopper]
+ID=02d26
+NAME=Dull Copper Runesabre
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper rune blade
+DESCRIPTION=Dull Copper Runesabre
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_mage_rune_blade_dullcopper]
+ID=02d26
+NAME=Dull Copper Mage's Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper rune blade
+DESCRIPTION=Dull Copper Mage's Rune Blade
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_rune_blade_knowledge_dullcopper]
+ID=02d26
+NAME=Dull Copper Rune Blade of Knowledge
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper rune blade
+DESCRIPTION=Dull Copper Rune Blade of Knowledge
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_corrupted_rune_blade_dullcopper]
+ID=02d26
+NAME=Dull Copper Corruped Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper, 1 i_ingredient_corruption
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=15
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper rune blade
+DESCRIPTION=Dull Copper Corruped Rune Blade
+TAG.ResPhysical=-5
+TAG.ResPoison=12
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_true_radiant_scimitar_dullcopper]
+ID=02d27
+NAME=Dull Copper True Radiant Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper radiant scimitar
+DESCRIPTION=Dull Copper True Radiant Scimitar
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_darkglow_scimitar_dullcopper]
+ID=02d27
+NAME=Dull Copper Darkglow Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper radiant scimitar
+DESCRIPTION=Dull Copper Darkglow Scimitar
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_icy_scimitar_dullcopper]
+ID=02d27
+NAME=Dull Copper Icy Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper radiant scimitar
+DESCRIPTION=Dull Copper Icy Scimitar
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_twinkling_scimitar_dullcopper]
+ID=02d27
+NAME=Dull Copper Twinkling Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_dull_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+REQSTR=10
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper radiant scimitar
+DESCRIPTION=Dull Copper Twinkling Scimitar
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_axe_dullcopper]
+ID=0f49
+NAME=Dull Copper axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=4.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper axe
+DESCRIPTION=Dull Copper axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_axe_battle_dullcopper]
+ID=0f47
+NAME=Dull Copper battle axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=30.5 Blacksmithing
+WEIGHT=4.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper battle axe
+DESCRIPTION=Dull Copper battle axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_axe_double_dullcopper]
+ID=0f4b
+NAME=Dull Copper double axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=29.3 Blacksmithing
+WEIGHT=8.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper double axe
+DESCRIPTION=Dull Copper double axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_axe_exec_dullcopper]
+ID=0f45
+NAME=Dull Copper executioner's axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=8.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper executioner's axe
+DESCRIPTION=Dull Copper executioner's axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_axe_battle_large_dullcopper]
+ID=013fa
+NAME=Dull Copper large battle axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=40
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper large battle axe
+DESCRIPTION=Dull Copper large battle axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_axe_two_hand_dullcopper]
+ID=01442
+NAME=Dull Copper two handed axe
+TYPE=t_weapon_axe
+RESOURCES=16 i_ingot_dull_copper
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper two handed axe
+DESCRIPTION=Dull Copper two handed axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_axe_war_dullcopper]
+ID=013af
+NAME=Dull Copper war axe
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_dull_copper
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=8.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper war axe
+DESCRIPTION=Dull Copper war axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_ornate_axe_dullcopper]
+ID=02d28
+NAME=Dull Copper ornate axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper ornate axe
+DESCRIPTION=Dull Copper ornate axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_guardian_axe_dullcopper]
+ID=02d28
+NAME=Dull Copper Guardian Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_dull_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper ornate axe
+DESCRIPTION=Dull Copper Guardian Axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_singing_axe_dullcopper]
+ID=02d28
+NAME=Dull Copper Singing Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_dull_copper, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper ornate axe
+DESCRIPTION=Dull Copper Singing Axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_thundering_axe_dullcopper]
+ID=02d28
+NAME=Dull Copper Thundering Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_dull_copper, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper ornate axe
+DESCRIPTION=Dull Copper Thundering Axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_heavy_ornate_axe_dullcopper]
+ID=02d28
+NAME=Dull Copper Heavy Ornate Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_dull_copper, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper ornate axe
+DESCRIPTION=Dull Copper Heavy Ornate Axe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_bardiche_dullcopper]
+ID=0f4d
+NAME=Dull Copper bardiche
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_dull_copper
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=7.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper bardiche
+DESCRIPTION=Dull Copper bardiche
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_bladed_staff_dullcopper]
+ID=026bd
+NAME=Dull Copper bladed staff
+TYPE=t_weapon_mace_sharp
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper bladed staff
+DESCRIPTION=Dull Copper bladed staff
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_double_bladed_staff_dullcopper]
+ID=026bf
+NAME=Dull Copper double bladed staff
+TYPE=t_weapon_fence
+RESOURCES=16 i_ingot_dull_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=2.0
+REQSTR=25
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper double bladed staff
+DESCRIPTION=Dull Copper double bladed staff
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_lance_dullcopper]
+ID=026c0
+NAME=Dull Copper lance
+TYPE=t_weapon_fence
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=48.0 Blacksmithing
+WEIGHT=12.0
+REQSTR=48
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper lance
+DESCRIPTION=Dull Copper lance
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_pike_dullcopper]
+ID=026be
+NAME=Dull Copper pike
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=47.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=25
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper pike
+DESCRIPTION=Dull Copper pike
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_spear_short_dullcopper]
+ID=01402
+NAME=Dull Copper short spear
+TYPE=t_weapon_fence
+RESOURCES=6 i_ingot_dull_copper
+SKILLMAKE=45.3 Blacksmithing
+WEIGHT=4.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper short spear
+DESCRIPTION=Dull Copper short spear
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_scythe_dullcopper]
+ID=026ba
+NAME=Dull Copper scythe
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=39.0 Blacksmithing
+WEIGHT=5.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper scythe
+DESCRIPTION=Dull Copper scythe
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_spear_dullcopper]
+ID=0f62
+NAME=Dull Copper spear
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=49.0 Blacksmithing
+WEIGHT=7.0
+REQSTR=25
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper spear
+DESCRIPTION=Dull Copper spear
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_war_fork_dullcopper]
+ID=01404
+NAME=Dull Copper war fork
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_dull_copper
+SKILLMAKE=42.9 Blacksmithing
+WEIGHT=9.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper war fork
+DESCRIPTION=Dull Copper war fork
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_hammer_pick_dullcopper]
+ID=0143c
+NAME=Dull Copper hammer pick
+TYPE=t_weapon_mace_pick
+RESOURCES=16 i_ingot_dull_copper
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=9.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper hammer pick
+DESCRIPTION=Dull Copper hammer pick
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_mace_dullcopper]
+ID=0f5c
+NAME=Dull Copper mace
+TYPE=t_weapon_mace_smith
+RESOURCES=6 i_ingot_dull_copper
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=14.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper mace
+DESCRIPTION=Dull Copper mace
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_maul_dullcopper]
+ID=0143a
+NAME=Dull Copper maul
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_dull_copper
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=10.0
+REQSTR=23
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper maul
+DESCRIPTION=Dull Copper maul
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_scepter_dullcopper]
+ID=026bc
+NAME=Dull Copper scepter
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_dull_copper
+SKILLMAKE=21.4 Blacksmithing
+WEIGHT=8.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper scepter
+DESCRIPTION=Dull Copper scepter
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_mace_war_dullcopper]
+ID=01406
+NAME=Dull Copper war mace
+TYPE=t_weapon_mace_smith
+RESOURCES=14 i_ingot_dull_copper
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=17.0
+REQSTR=40
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper war mace
+DESCRIPTION=Dull Copper war mace
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_hammer_war_dullcopper]
+ID=01438
+NAME=Dull Copper war hammer
+TYPE=t_weapon_mace_smith
+RESOURCES=16 i_ingot_dull_copper
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=10.0
+REQSTR=48
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper war hammer
+DESCRIPTION=Dull Copper war hammer
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_tessen_dullcopper]
+ID=027a3
+NAME=Dull Copper tessen
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_dull_copper, 10 i_cloth
+SKILLMAKE=85.0 Blacksmithing, 50.0 Tailoring
+WEIGHT=6.0
+REQSTR=5
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper tessen
+DESCRIPTION=Dull Copper tessen
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_diamond_mace_dullcopper]
+ID=02d24
+NAME=Dull Copper diamond mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_dull_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper diamond mace
+DESCRIPTION=Dull Copper diamond mace
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_ruby_mace_dullcopper]
+ID=02d24
+NAME=Dull Copper Ruby Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_dull_copper, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper diamond mace
+DESCRIPTION=Dull Copper Ruby Mace
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_emerald_mace_dullcopper]
+ID=02d24
+NAME=Dull Copper Emerald Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_dull_copper, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper diamond mace
+DESCRIPTION=Dull Copper Emerald Mace
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_sapphire_mace_dullcopper]
+ID=02d24
+NAME=Dull Copper Sapphire Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_dull_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper diamond mace
+DESCRIPTION=Dull Copper Sapphire Mace
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_silver_etched_mace_dullcopper]
+ID=02d24
+NAME=Dull Copper Silver-Etched Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_dull_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+REQSTR=18
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper diamond mace
+DESCRIPTION=Dull Copper Silver-Etched Mace
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_boomerang_dullcopper]
+ID=08ff
+NAME=Dull Copper boomerang
+TYPE=t_weapon_bow
+RESOURCES=5 i_ingot_dull_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+REQSTR=13
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper boomerang
+DESCRIPTION=Dull Copper boomerang
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_cyclone_dullcopper]
+ID=0901
+NAME=Dull Copper cyclone
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_dull_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+REQSTR=20
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper cyclone
+DESCRIPTION=Dull Copper cyclone
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 
+[ITEMDEF i_soul_glaive_dullcopper]
+ID=090a
+NAME=Dull Copper soul glaive
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_dull_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+REQSTR=30
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Dull Copper soul glaive
+DESCRIPTION=Dull Copper soul glaive
+ 
+ON=@Create
+HITPOINTS={136 148}
+COLOR=0973
+ 

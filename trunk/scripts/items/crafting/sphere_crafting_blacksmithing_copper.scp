@@ -1,0 +1,2627 @@
+[ITEMDEF i_ringmail_gloves_copper]
+ID=013eb
+NAME=Copper ringmail gloves
+TYPE=t_armor
+RESOURCES=10 i_ingot_copper
+SKILLMAKE=12.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper ringmail Armor
+DESCRIPTION=Copper ringmail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=1
+TAG.ResPoison=10
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_ringmail_leggings_copper]
+ID=013f0
+NAME=Copper ringmail leggings
+TYPE=t_armor
+RESOURCES=16 i_ingot_copper
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper ringmail Armor
+DESCRIPTION=Copper ringmail leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=1
+TAG.ResPoison=10
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_ringmail_sleeves_copper]
+ID=013ee
+NAME=Copper ringmail sleeves
+TYPE=t_armor
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=16.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper ringmail Armor
+DESCRIPTION=Copper ringmail sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=1
+TAG.ResPoison=10
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_ringmail_tunic_copper]
+ID=013ec
+NAME=Copper ringmail tunic
+TYPE=t_armor
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=21.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper ringmail Armor
+DESCRIPTION=Copper ringmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=1
+TAG.ResPoison=10
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_chainmail_coif_copper]
+ID=013bb
+NAME=Copper chainmail coif
+TYPE=t_armor
+RESOURCES=10 i_ingot_copper
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper chainmail coif
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_chainmail_leggings_copper]
+ID=013be
+NAME=Copper chainmail leggings
+TYPE=t_armor
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper chainmail Armor
+DESCRIPTION=Copper chainmail leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=5
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_chainmail_tunic_copper]
+ID=013bf
+NAME=Copper chainmail tunic
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper chainmail Armor
+DESCRIPTION=Copper chainmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=5
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=6
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_arms_copper]
+ID=01410
+NAME=Copper platemail arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Armor
+DESCRIPTION=Copper platemail arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_gloves_copper]
+ID=01414
+NAME=Copper platemail gloves
+TYPE=t_armor
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Armor
+DESCRIPTION=Copper platemail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_gorget_copper]
+ID=01413
+NAME=Copper platemail gorget
+TYPE=t_armor
+RESOURCES=10 i_ingot_copper
+SKILLMAKE=56.4 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Armor
+DESCRIPTION=Copper platemail gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_leggings_copper]
+ID=01411
+NAME=Copper platemail legs
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Armor
+DESCRIPTION=Copper platemail legs
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_chest_copper]
+ID=01415
+NAME=Copper platemail
+TYPE=t_armor
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Armor
+DESCRIPTION=Copper platemail
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_armor_female_plate_copper]
+ID=01c04
+NAME=Copper plate armor
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper plate Armor
+DESCRIPTION=Copper plate armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_mempo_copper]
+ID=02779
+NAME=Copper platemail mempo
+TYPE=t_armor
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Samurai Armor
+DESCRIPTION=Copper platemail mempo
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_do_copper]
+ID=0277d
+NAME=Copper platemail do
+TYPE=t_armor
+RESOURCES=28 i_ingot_copper
+SKILLMAKE=87.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Samurai Armor
+DESCRIPTION=Copper platemail do
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_hiro_sode_copper]
+ID=02780
+NAME=Copper platemail hiro sode
+TYPE=t_armor
+RESOURCES=16 i_ingot_copper
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Samurai Armor
+DESCRIPTION=Copper platemail hiro sode
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_suneate_copper]
+ID=02788
+NAME=Copper platemail suneate
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Samurai Armor
+DESCRIPTION=Copper platemail suneate
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_haidate_copper]
+ID=0278d
+NAME=Copper platemail haidate
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper platemail Samurai Armor
+DESCRIPTION=Copper platemail haidate
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_gargish_arms_copper]
+ID=0308
+NAME=Copper Gargish Platemail Arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Gargish Armor
+DESCRIPTION=Copper Gargish Platemail Arms
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=11
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_gargish_chest_copper]
+ID=0309
+NAME=Copper Gargish Platemail Chest
+TYPE=t_armor
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Gargish Armor
+DESCRIPTION=Copper Gargish Platemail Chest
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=11
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_gargish_kilt_copper]
+ID=030b
+NAME=Copper Gargish Platemail Kilt
+TYPE=t_armor
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Gargish Armor
+DESCRIPTION=Copper Gargish Platemail Kilt
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=11
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_gargish_leggings_copper]
+ID=030d
+NAME=Copper Gargish Platemail Leggings
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Gargish Armor
+DESCRIPTION=Copper Gargish Platemail Leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=7
+TAG.ResCold=5
+TAG.ResPoison=11
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_bascinet_copper]
+ID=0140c
+NAME=Copper bascinet
+TYPE=t_armor
+RESOURCES=15 i_ingot_copper
+SKILLMAKE=8.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper bascinet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_helm_close_copper]
+ID=01408
+NAME=Copper close helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_copper
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper close helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=3
+TAG.ResPoison=8
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_helm_open_copper]
+ID=0140a
+NAME=Copper helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_copper
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=3
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_helm_norse_copper]
+ID=0140e
+NAME=Copper norse helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_copper
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper norse helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=2
+TAG.ResCold=4
+TAG.ResPoison=9
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_helm_copper]
+ID=01412
+NAME=Copper plate helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_copper
+SKILLMAKE=62.6 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper plate helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=8
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_chainmail_hatsuburi_copper]
+ID=02774
+NAME=Copper chainmail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper chainmail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=6
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_hatsuburi_copper]
+ID=02775
+NAME=Copper platemail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper platemail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_plate_jingasa_heavy_copper]
+ID=02777
+NAME=Copper heavy platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper heavy platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_plate_jingasa_light_copper]
+ID=02781
+NAME=Copper light platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper light platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_plate_jingasa_small_copper]
+ID=02784
+NAME=Copper small platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper small platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_kabuto_decorative_copper]
+ID=02778
+NAME=Copper decorative platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper decorative platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_kabuto_battle_copper]
+ID=02785
+NAME=Copper platemail battle kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper platemail battle kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_platemail_kabuto_copper]
+ID=02789
+NAME=Copper standard platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper standard platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_circlet_copper]
+ID=02b6e
+NAME=Copper circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_copper
+SKILLMAKE=62.1 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper circlet
+TAG.ResPhysical=2
+TAG.ResFire=6
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_circlet_royal_copper]
+ID=02b6f
+NAME=Copper royal circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper royal circlet
+TAG.ResPhysical=2
+TAG.ResFire=6
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_circlet_gemmed_copper]
+ID=02b70
+NAME=Copper gemmed circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_copper, 1 i_gem_amethyst, 1 i_gem_tourmaline, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Helmets
+DESCRIPTION=Copper gemmed circlet
+TAG.ResPhysical=2
+TAG.ResFire=6
+TAG.ResCold=2
+TAG.ResPoison=7
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_buckler_copper]
+ID=01b73
+NAME=Copper buckler 
+TYPE=t_shield
+RESOURCES=6 i_ingot_copper
+SKILLMAKE=0.1 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper buckler 
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResPoison=6
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_round_bronze_copper]
+ID=01b72
+NAME=Copper bronze shield
+TYPE=t_shield
+RESOURCES=10 i_ingot_copper
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=12.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper bronze shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_heater_copper]
+ID=01b76
+NAME=Copper heater shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper heater shield
+TAG.ResPhysical=1
+TAG.ResFire=2
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_round_metal_copper]
+ID=01b7b
+NAME=Copper metal shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=11.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper metal shield
+TAG.ResPhysical=1
+TAG.ResFire=2
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_kite_metal_copper]
+ID=01b74
+NAME=Copper kite shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_copper
+SKILLMAKE=44.6 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper kite shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_kite_wood_copper]
+ID=01b78
+NAME=Copper kite shield
+TYPE=t_shield
+RESOURCES=8 i_ingot_copper, 4 i_log
+SKILLMAKE=12.6 Blacksmithing
+WEIGHT=9.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper kite shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_chaos_copper]
+ID=01bc3
+NAME=Copper Chaos shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper Chaos shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_order_copper]
+ID=01bc4
+NAME=Copper Order shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper Order shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_plate_small_copper]
+ID=04202
+NAME=Copper Small Plate Shield
+TYPE=t_shield
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper Small Plate Shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResCold=1
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_kite_gargish_copper]
+ID=04201
+NAME=Copper Gargish Kite Shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_copper
+SKILLMAKE=4.6 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper Gargish Kite Shield
+TAG.ResPhysical=1
+TAG.ResFire=1
+TAG.ResPoison=5
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_plate_medium_copper]
+ID=04203
+NAME=Copper Medium Plate Shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper Medium Plate Shield
+TAG.ResPhysical=1
+TAG.ResFire=2
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_plate_large_copper]
+ID=04204
+NAME=Copper Large Plate Shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper Large Plate Shield
+TAG.ResPhysical=1
+TAG.ResFire=2
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_chaos_gargish_copper]
+ID=04228
+NAME=Copper Gargish Chaos Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper Gargish Chaos Shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shield_order_gargish_copper]
+ID=0422a
+NAME=Copper Gargish Order Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Copper Shields
+DESCRIPTION=Copper Gargish Order Shield
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResPoison=5
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_bone_harvester_copper]
+ID=026bb
+NAME=Copper bone harvester
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_copper
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=3.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper bone harvester
+DESCRIPTION=Copper bone harvester
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_sword_broad_copper]
+ID=0f5e
+NAME=Copper broadsword
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_copper
+SKILLMAKE=35.4 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper broadsword
+DESCRIPTION=Copper broadsword
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_crescent_blade_copper]
+ID=026c1
+NAME=Copper crescent blade
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper crescent blade
+DESCRIPTION=Copper crescent blade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_cutlass_copper]
+ID=01440
+NAME=Copper cutlass
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_copper
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper cutlass
+DESCRIPTION=Copper cutlass
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_dagger_copper]
+ID=0f51
+NAME=Copper dagger
+TYPE=t_weapon_fence
+RESOURCES=3 i_ingot_copper
+SKILLMAKE=Blacksmithing
+WEIGHT=1.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper dagger
+DESCRIPTION=Copper dagger
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_katana_copper]
+ID=013fe
+NAME=Copper katana
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_copper
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper katana
+DESCRIPTION=Copper katana
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_kryss_copper]
+ID=01400
+NAME=Copper kryss
+TYPE=t_weapon_fence
+RESOURCES=8 i_ingot_copper
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper kryss
+DESCRIPTION=Copper kryss
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_sword_long_copper]
+ID=0f60
+NAME=Copper longsword
+TYPE=t_weapon_sword
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper longsword
+DESCRIPTION=Copper longsword
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_scimitar_copper]
+ID=013b5
+NAME=Copper scimitar
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_copper
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper scimitar
+DESCRIPTION=Copper scimitar
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_sword_viking_copper]
+ID=013b9
+NAME=Copper viking sword
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper viking sword
+DESCRIPTION=Copper viking sword
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_no_dachi_copper]
+ID=027a2
+NAME=Copper no-dachi
+TYPE=t_weapon_sword
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper no-dachi
+DESCRIPTION=Copper no-dachi
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_wakizashi_copper]
+ID=027a4
+NAME=Copper wakizashi
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_copper
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper wakizashi
+DESCRIPTION=Copper wakizashi
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_lajatang_copper]
+ID=027a7
+NAME=Copper lajatang
+TYPE=t_weapon_fence
+RESOURCES=25 i_ingot_copper
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper lajatang
+DESCRIPTION=Copper lajatang
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_daisho_copper]
+ID=027a9
+NAME=Copper daisho
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper
+SKILLMAKE=60.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper daisho
+DESCRIPTION=Copper daisho
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_tekagi_copper]
+ID=027ab
+NAME=Copper tekagi
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=55.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper tekagi
+DESCRIPTION=Copper tekagi
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_shuriken_copper]
+ID=027ac
+NAME=Copper shuriken
+TYPE=t_ninja_shuriken
+RESOURCES=5 i_ingot_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=0.1
+CATEGORY=0 - Colored
+SUBSECTION=Copper 0
+DESCRIPTION=Copper shuriken
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=096d
+ 
+[ITEMDEF i_kama_copper]
+ID=027ad
+NAME=Copper kama
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper kama
+DESCRIPTION=Copper kama
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_sai_copper]
+ID=027af
+NAME=Copper sai
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper sai
+DESCRIPTION=Copper sai
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_radiant_scimitar_copper]
+ID=02d27
+NAME=Copper radiant scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper radiant scimitar
+DESCRIPTION=Copper radiant scimitar
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_war_cleaver_copper]
+ID=02d23
+NAME=Copper war cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper war cleaver
+DESCRIPTION=Copper war cleaver
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_elven_spellblade_copper]
+ID=02d20
+NAME=Copper elven spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper elven spellblade
+DESCRIPTION=Copper elven spellblade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_assassin_spike_copper]
+ID=02d21
+NAME=Copper assassin spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper assassin spike
+DESCRIPTION=Copper assassin spike
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_leafblade_copper]
+ID=02d22
+NAME=Copper leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper leafblade
+DESCRIPTION=Copper leafblade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_rune_blade_copper]
+ID=02d26
+NAME=Copper rune blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper rune blade
+DESCRIPTION=Copper rune blade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_elven_machete_copper]
+ID=02d29
+NAME=Copper elven machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper elven machete
+DESCRIPTION=Copper elven machete
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_true_spellblade_copper]
+ID=02d20
+NAME=Copper True Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper elven spellblade
+DESCRIPTION=Copper True Spellblade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_icy_spellblade_copper]
+ID=02d20
+NAME=Copper Icy Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_copper, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper elven spellblade
+DESCRIPTION=Copper Icy Spellblade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResCold=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_fiery_spellblade_copper]
+ID=02d20
+NAME=Copper Fiery Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_copper, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper elven spellblade
+DESCRIPTION=Copper Fiery Spellblade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResFire=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_spellblade_defense_copper]
+ID=02d20
+NAME=Copper Spellblade of Defense
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_copper, 1 i_gem_white_pearl
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper elven spellblade
+DESCRIPTION=Copper Spellblade of Defense
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_true_assassin_spike_copper]
+ID=02d21
+NAME=Copper True Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper assassin spike
+DESCRIPTION=Copper True Assassin Spike
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_charged_assassin_spike_copper]
+ID=02d21
+NAME=Copper Charged Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_copper, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper assassin spike
+DESCRIPTION=Copper Charged Assassin Spike
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_magekiller_assassin_spike_copper]
+ID=02d21
+NAME=Copper Magekiller Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_copper, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper assassin spike
+DESCRIPTION=Copper Magekiller Assassin Spike
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_wounding_assassin_spike_copper]
+ID=02d21
+NAME=Copper Wounding Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_copper, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper assassin spike
+DESCRIPTION=Copper Wounding Assassin Spike
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_true_leafblade_copper]
+ID=02d22
+NAME=Copper True Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper leafblade
+DESCRIPTION=Copper True Leafblade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_luckblade_copper]
+ID=02d22
+NAME=Copper Luckblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper leafblade
+DESCRIPTION=Copper Luckblade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_magekiller_leafblade_copper]
+ID=02d22
+NAME=Copper Magekiller Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper leafblade
+DESCRIPTION=Copper Magekiller Leafblade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_leafblade_ease_copper]
+ID=02d22
+NAME=Copper Leafblade of Ease
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper leafblade
+DESCRIPTION=Copper Leafblade of Ease
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_knight_war_cleaver_copper]
+ID=02d23
+NAME=Copper Knight's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_copper, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper war cleaver
+DESCRIPTION=Copper Knight's War Cleaver
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_butcher_war_cleaver_copper]
+ID=02d23
+NAME=Copper Butcher's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_copper, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper war cleaver
+DESCRIPTION=Copper Butcher's War Cleaver
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_serrated_war_cleaver_copper]
+ID=02d23
+NAME=Copper Serrated War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_copper, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper war cleaver
+DESCRIPTION=Copper Serrated War Cleaver
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_true_war_cleaver_copper]
+ID=02d23
+NAME=Copper True War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_copper, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper war cleaver
+DESCRIPTION=Copper True War Cleaver
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_diseased_machete_copper]
+ID=02d29
+NAME=Copper Diseased Machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_copper, 1 i_ingredient_blight
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper elven machete
+DESCRIPTION=Copper Diseased Machete
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_runesabre_copper]
+ID=02d26
+NAME=Copper Runesabre
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper rune blade
+DESCRIPTION=Copper Runesabre
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_mage_rune_blade_copper]
+ID=02d26
+NAME=Copper Mage's Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper rune blade
+DESCRIPTION=Copper Mage's Rune Blade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_rune_blade_knowledge_copper]
+ID=02d26
+NAME=Copper Rune Blade of Knowledge
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper rune blade
+DESCRIPTION=Copper Rune Blade of Knowledge
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_corrupted_rune_blade_copper]
+ID=02d26
+NAME=Copper Corruped Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper, 1 i_ingredient_corruption
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper rune blade
+DESCRIPTION=Copper Corruped Rune Blade
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResPhysical=-5
+TAG.ResPoison=12
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_true_radiant_scimitar_copper]
+ID=02d27
+NAME=Copper True Radiant Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper radiant scimitar
+DESCRIPTION=Copper True Radiant Scimitar
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_darkglow_scimitar_copper]
+ID=02d27
+NAME=Copper Darkglow Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper radiant scimitar
+DESCRIPTION=Copper Darkglow Scimitar
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_icy_scimitar_copper]
+ID=02d27
+NAME=Copper Icy Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper radiant scimitar
+DESCRIPTION=Copper Icy Scimitar
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_twinkling_scimitar_copper]
+ID=02d27
+NAME=Copper Twinkling Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper radiant scimitar
+DESCRIPTION=Copper Twinkling Scimitar
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_axe_copper]
+ID=0f49
+NAME=Copper axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper axe
+DESCRIPTION=Copper axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_axe_battle_copper]
+ID=0f47
+NAME=Copper battle axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=30.5 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper battle axe
+DESCRIPTION=Copper battle axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_axe_double_copper]
+ID=0f4b
+NAME=Copper double axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=29.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper double axe
+DESCRIPTION=Copper double axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_axe_exec_copper]
+ID=0f45
+NAME=Copper executioner's axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper executioner's axe
+DESCRIPTION=Copper executioner's axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_axe_battle_large_copper]
+ID=013fa
+NAME=Copper large battle axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper large battle axe
+DESCRIPTION=Copper large battle axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_axe_two_hand_copper]
+ID=01442
+NAME=Copper two handed axe
+TYPE=t_weapon_axe
+RESOURCES=16 i_ingot_copper
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper two handed axe
+DESCRIPTION=Copper two handed axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_axe_war_copper]
+ID=013af
+NAME=Copper war axe
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_copper
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper war axe
+DESCRIPTION=Copper war axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_ornate_axe_copper]
+ID=02d28
+NAME=Copper ornate axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper ornate axe
+DESCRIPTION=Copper ornate axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_guardian_axe_copper]
+ID=02d28
+NAME=Copper Guardian Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper ornate axe
+DESCRIPTION=Copper Guardian Axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_singing_axe_copper]
+ID=02d28
+NAME=Copper Singing Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_copper, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper ornate axe
+DESCRIPTION=Copper Singing Axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_thundering_axe_copper]
+ID=02d28
+NAME=Copper Thundering Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_copper, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper ornate axe
+DESCRIPTION=Copper Thundering Axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_heavy_ornate_axe_copper]
+ID=02d28
+NAME=Copper Heavy Ornate Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_copper, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper ornate axe
+DESCRIPTION=Copper Heavy Ornate Axe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_bardiche_copper]
+ID=0f4d
+NAME=Copper bardiche
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_copper
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper bardiche
+DESCRIPTION=Copper bardiche
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_bladed_staff_copper]
+ID=026bd
+NAME=Copper bladed staff
+TYPE=t_weapon_mace_sharp
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper bladed staff
+DESCRIPTION=Copper bladed staff
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_double_bladed_staff_copper]
+ID=026bf
+NAME=Copper double bladed staff
+TYPE=t_weapon_fence
+RESOURCES=16 i_ingot_copper
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper double bladed staff
+DESCRIPTION=Copper double bladed staff
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_lance_copper]
+ID=026c0
+NAME=Copper lance
+TYPE=t_weapon_fence
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=48.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper lance
+DESCRIPTION=Copper lance
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_pike_copper]
+ID=026be
+NAME=Copper pike
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=47.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper pike
+DESCRIPTION=Copper pike
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_spear_short_copper]
+ID=01402
+NAME=Copper short spear
+TYPE=t_weapon_fence
+RESOURCES=6 i_ingot_copper
+SKILLMAKE=45.3 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper short spear
+DESCRIPTION=Copper short spear
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_scythe_copper]
+ID=026ba
+NAME=Copper scythe
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=39.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper scythe
+DESCRIPTION=Copper scythe
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_spear_copper]
+ID=0f62
+NAME=Copper spear
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=49.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper spear
+DESCRIPTION=Copper spear
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_war_fork_copper]
+ID=01404
+NAME=Copper war fork
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_copper
+SKILLMAKE=42.9 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper war fork
+DESCRIPTION=Copper war fork
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_hammer_pick_copper]
+ID=0143c
+NAME=Copper hammer pick
+TYPE=t_weapon_mace_pick
+RESOURCES=16 i_ingot_copper
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper hammer pick
+DESCRIPTION=Copper hammer pick
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_mace_copper]
+ID=0f5c
+NAME=Copper mace
+TYPE=t_weapon_mace_smith
+RESOURCES=6 i_ingot_copper
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=14.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper mace
+DESCRIPTION=Copper mace
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_maul_copper]
+ID=0143a
+NAME=Copper maul
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_copper
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper maul
+DESCRIPTION=Copper maul
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_scepter_copper]
+ID=026bc
+NAME=Copper scepter
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_copper
+SKILLMAKE=21.4 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper scepter
+DESCRIPTION=Copper scepter
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_mace_war_copper]
+ID=01406
+NAME=Copper war mace
+TYPE=t_weapon_mace_smith
+RESOURCES=14 i_ingot_copper
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=17.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper war mace
+DESCRIPTION=Copper war mace
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_hammer_war_copper]
+ID=01438
+NAME=Copper war hammer
+TYPE=t_weapon_mace_smith
+RESOURCES=16 i_ingot_copper
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper war hammer
+DESCRIPTION=Copper war hammer
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_tessen_copper]
+ID=027a3
+NAME=Copper tessen
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_copper, 10 i_cloth
+SKILLMAKE=85.0 Blacksmithing, 50.0 Tailoring
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper tessen
+DESCRIPTION=Copper tessen
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_diamond_mace_copper]
+ID=02d24
+NAME=Copper diamond mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_copper
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper diamond mace
+DESCRIPTION=Copper diamond mace
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_ruby_mace_copper]
+ID=02d24
+NAME=Copper Ruby Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_copper, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper diamond mace
+DESCRIPTION=Copper Ruby Mace
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_emerald_mace_copper]
+ID=02d24
+NAME=Copper Emerald Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_copper, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper diamond mace
+DESCRIPTION=Copper Emerald Mace
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_sapphire_mace_copper]
+ID=02d24
+NAME=Copper Sapphire Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_copper, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper diamond mace
+DESCRIPTION=Copper Sapphire Mace
+TAG.DamPoison=10
+TAG.DamEnergy=20
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_silver_etched_mace_copper]
+ID=02d24
+NAME=Copper Silver-Etched Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_copper, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper diamond mace
+DESCRIPTION=Copper Silver-Etched Mace
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_boomerang_copper]
+ID=08ff
+NAME=Copper boomerang
+TYPE=t_weapon_bow
+RESOURCES=5 i_ingot_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper boomerang
+DESCRIPTION=Copper boomerang
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_cyclone_copper]
+ID=0901
+NAME=Copper cyclone
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper cyclone
+DESCRIPTION=Copper cyclone
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 
+[ITEMDEF i_soul_glaive_copper]
+ID=090a
+NAME=Copper soul glaive
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_copper
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Copper soul glaive
+DESCRIPTION=Copper soul glaive
+TAG.DamPoison=10
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=096d
+ 

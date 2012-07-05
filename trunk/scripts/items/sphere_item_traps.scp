@@ -106,8 +106,7 @@ DUPEITEM=010fe
 [ITEMDEF 01103]
 DEFNAME=i_trap_saw
 TYPE=t_trap
-RESOURCES=10 i_ingot_iron,1 i_springs,1 i_hinge,1 i_axel_and
-_gears
+RESOURCES=10 i_ingot_iron,1 i_springs,1 i_hinge,1 i_axel_and_gears
 CATEGORY=Traps
 SUBSECTION=Saws
 DESCRIPTION=Saw Trap 01
@@ -706,9 +705,9 @@ DUPELIST=0151c
 
 ON=@DCLICK
 if ( <dispid> == i_decorative_armor )
-	ID=i_decorative_armor_d
+    ID=i_decorative_armor_d
 else
-	ID=i_decorative_armor_d2
+    ID=i_decorative_armor_d2
 endif
 sfx snd_WEAPONS_GILOTIN1
 update
@@ -725,9 +724,9 @@ DUPELIST=0151d
 
 ON=@DCLICK
 if ( <dispid> == i_decorative_armor_d )
-	ID=i_decorative_armor
+    ID=i_decorative_armor
 else
-	ID=i_decorative_armor_2
+    ID=i_decorative_armor_2
 endif
 update
 return 1
@@ -744,9 +743,9 @@ DUPELIST=0151a
 
 ON=@DCLICK
 if ( <dispid> == i_decorative_armor2 )
-	ID=i_decorative_armor2_d
+    ID=i_decorative_armor2_d
 else
-	ID=i_decorative_armor2_d2
+    ID=i_decorative_armor2_d2
 endif
 sfx snd_WEAPONS_GILOTIN1
 update
@@ -763,9 +762,9 @@ DUPELIST=0151b
 
 ON=@DCLICK
 if ( <dispid> == i_decorative_armor2_d )
-	ID=i_decorative_armor2
+    ID=i_decorative_armor2
 else
-	ID=i_decorative_armor2_2
+    ID=i_decorative_armor2_2
 endif
 update
 return 1

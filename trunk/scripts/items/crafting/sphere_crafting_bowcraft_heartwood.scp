@@ -272,3 +272,275 @@ HITPOINTS={36 48}
 COLOR=04a9
  
 [EOF]
+[ITEMDEF i_bow_heartwood]
+ID=013b1
+NAME=Heartwood bow
+TYPE=t_weapon_bow
+RESOURCES=7 i_log_heartwood
+SKILLMAKE=30.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood bow
+DESCRIPTION=Heartwood bow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_composite_bow_heartwood]
+ID=026c2
+NAME=Heartwood composite bow
+TYPE=t_weapon_bow
+RESOURCES=7 i_log_heartwood
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood composite bow
+DESCRIPTION=Heartwood composite bow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_crossbow_heartwood]
+ID=0f4f
+NAME=Heartwood crossbow
+TYPE=t_weapon_xbow
+RESOURCES=7 i_log_heartwood
+SKILLMAKE=60.0 Bowcraft
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood crossbow
+DESCRIPTION=Heartwood crossbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_elven_composite_longbow_heartwood]
+ID=02d1e
+NAME=Heartwood elven composite longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_heartwood
+SKILLMAKE=95.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood elven composite longbow
+DESCRIPTION=Heartwood elven composite longbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_crossbow_heavy_heartwood]
+ID=013fc
+NAME=Heartwood heavy crossbow
+TYPE=t_weapon_xbow
+RESOURCES=10 i_log_heartwood
+SKILLMAKE=80.0 Bowcraft
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood heavy crossbow
+DESCRIPTION=Heartwood heavy crossbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_magical_shortbow_heartwood]
+ID=02d1f
+NAME=Heartwood magical shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_heartwood
+SKILLMAKE=85.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood magical shortbow
+DESCRIPTION=Heartwood magical shortbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_repeating_crossbow_heartwood]
+ID=026c3
+NAME=Heartwood repeating crossbow
+TYPE=t_weapon_xbow
+RESOURCES=10 i_log_heartwood
+SKILLMAKE=90.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood repeating crossbow
+DESCRIPTION=Heartwood repeating crossbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_yumi_heartwood]
+ID=027a5
+NAME=Heartwood yumi
+TYPE=t_weapon_bow
+RESOURCES=10 i_log_heartwood
+SKILLMAKE=90.0 Bowcraft
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood yumi
+DESCRIPTION=Heartwood yumi
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_barbed_longbow_heartwood]
+ID=02d1e
+NAME=Heartwood Barbed Longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_heartwood, 1 i_gem_fire_ruby
+SKILLMAKE=95.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood elven composite longbow
+DESCRIPTION=Heartwood Barbed Longbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_slayer_longbow_heartwood]
+ID=02d1e
+NAME=Heartwood Slayer Longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_heartwood, 1 i_gem_brilliant_amber
+SKILLMAKE=70.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood elven composite longbow
+DESCRIPTION=Heartwood Slayer Longbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_frozen_longbow_heartwood]
+ID=02d1e
+NAME=Heartwood Frozen Longbow
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_heartwood, 1 i_gem_turquoise
+SKILLMAKE=70.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood elven composite longbow
+DESCRIPTION=Heartwood Frozen Longbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_longbow_might_heartwood]
+ID=02d1e
+NAME=Heartwood Longbow of Might
+TYPE=t_weapon_bow
+RESOURCES=20 i_log_heartwood, 1 i_gem_blue_diamond
+SKILLMAKE=70.0 Bowcraft, 1 elven bowstringer
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood elven composite longbow
+DESCRIPTION=Heartwood Longbow of Might
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_ranger_shortbow_heartwood]
+ID=02d1f
+NAME=Heartwood Ranger's Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_heartwood, 1 i_gem_perfect_emerald
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood magical shortbow
+DESCRIPTION=Heartwood Ranger's Shortbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_lightweight_shortbow_heartwood]
+ID=02d1f
+NAME=Heartwood Lightweight Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_heartwood, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood magical shortbow
+DESCRIPTION=Heartwood Lightweight Shortbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_mystical_shortbow_heartwood]
+ID=02d1f
+NAME=Heartwood Mystical Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_heartwood, 1 i_gem_ecru_citrine
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood magical shortbow
+DESCRIPTION=Heartwood Mystical Shortbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 
+[ITEMDEF i_assassin_shortbow_heartwood]
+ID=02d1f
+NAME=Heartwood Assassin's Shortbow
+TYPE=t_weapon_bow
+RESOURCES=15 i_log_heartwood, 1 i_gem_dark_sapphire
+SKILLMAKE=70.0 Bowcraft
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Heartwood magical shortbow
+DESCRIPTION=Heartwood Assassin's Shortbow
+ 
+ON=@Create
+f_colored_weaps_heartwood
+HITPOINTS={36 48}
+COLOR=04a9
+ 

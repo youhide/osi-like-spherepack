@@ -1,0 +1,2639 @@
+[ITEMDEF i_ringmail_gloves_agapite]
+ID=013eb
+NAME=Agapite ringmail gloves
+TYPE=t_armor
+RESOURCES=10 i_ingot_agapite
+SKILLMAKE=12.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite ringmail Armor
+DESCRIPTION=Agapite ringmail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=3
+TAG.ResPoison=7
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_ringmail_leggings_agapite]
+ID=013f0
+NAME=Agapite ringmail leggings
+TYPE=t_armor
+RESOURCES=16 i_ingot_agapite
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite ringmail Armor
+DESCRIPTION=Agapite ringmail leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=3
+TAG.ResPoison=7
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_ringmail_sleeves_agapite]
+ID=013ee
+NAME=Agapite ringmail sleeves
+TYPE=t_armor
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=16.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite ringmail Armor
+DESCRIPTION=Agapite ringmail sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=3
+TAG.ResPoison=7
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_ringmail_tunic_agapite]
+ID=013ec
+NAME=Agapite ringmail tunic
+TYPE=t_armor
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=21.9 Blacksmithing
+WEIGHT=15.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite ringmail Armor
+DESCRIPTION=Agapite ringmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=3
+TAG.ResPoison=7
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_chainmail_coif_agapite]
+ID=013bb
+NAME=Agapite chainmail coif
+TYPE=t_armor
+RESOURCES=10 i_ingot_agapite
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite chainmail coif
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=7
+TAG.ResCold=6
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_chainmail_leggings_agapite]
+ID=013be
+NAME=Agapite chainmail leggings
+TYPE=t_armor
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite chainmail Armor
+DESCRIPTION=Agapite chainmail leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=6
+TAG.ResFire=7
+TAG.ResCold=6
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_chainmail_tunic_agapite]
+ID=013bf
+NAME=Agapite chainmail tunic
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite chainmail Armor
+DESCRIPTION=Agapite chainmail tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=6
+TAG.ResFire=7
+TAG.ResCold=6
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_arms_agapite]
+ID=01410
+NAME=Agapite platemail arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Armor
+DESCRIPTION=Agapite platemail arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_gloves_agapite]
+ID=01414
+NAME=Agapite platemail gloves
+TYPE=t_armor
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Armor
+DESCRIPTION=Agapite platemail gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_gorget_agapite]
+ID=01413
+NAME=Agapite platemail gorget
+TYPE=t_armor
+RESOURCES=10 i_ingot_agapite
+SKILLMAKE=56.4 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Armor
+DESCRIPTION=Agapite platemail gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_leggings_agapite]
+ID=01411
+NAME=Agapite platemail legs
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Armor
+DESCRIPTION=Agapite platemail legs
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=15
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_chest_agapite]
+ID=01415
+NAME=Agapite platemail
+TYPE=t_armor
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Armor
+DESCRIPTION=Agapite platemail
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_armor_female_plate_agapite]
+ID=01c04
+NAME=Agapite plate armor
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite plate Armor
+DESCRIPTION=Agapite plate armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_mempo_agapite]
+ID=02779
+NAME=Agapite platemail mempo
+TYPE=t_armor
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Samurai Armor
+DESCRIPTION=Agapite platemail mempo
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_do_agapite]
+ID=0277d
+NAME=Agapite platemail do
+TYPE=t_armor
+RESOURCES=28 i_ingot_agapite
+SKILLMAKE=87.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Samurai Armor
+DESCRIPTION=Agapite platemail do
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_hiro_sode_agapite]
+ID=02780
+NAME=Agapite platemail hiro sode
+TYPE=t_armor
+RESOURCES=16 i_ingot_agapite
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Samurai Armor
+DESCRIPTION=Agapite platemail hiro sode
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_suneate_agapite]
+ID=02788
+NAME=Agapite platemail suneate
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Samurai Armor
+DESCRIPTION=Agapite platemail suneate
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_haidate_agapite]
+ID=0278d
+NAME=Agapite platemail haidate
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=65.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite platemail Samurai Armor
+DESCRIPTION=Agapite platemail haidate
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_gargish_arms_agapite]
+ID=0308
+NAME=Agapite Gargish Platemail Arms
+TYPE=t_armor
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=66.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Gargish Armor
+DESCRIPTION=Agapite Gargish Platemail Arms
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=9
+TAG.ResCold=7
+TAG.ResPoison=8
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_gargish_chest_agapite]
+ID=0309
+NAME=Agapite Gargish Platemail Chest
+TYPE=t_armor
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Gargish Armor
+DESCRIPTION=Agapite Gargish Platemail Chest
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=9
+TAG.ResCold=7
+TAG.ResPoison=8
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_gargish_kilt_agapite]
+ID=030b
+NAME=Agapite Gargish Platemail Kilt
+TYPE=t_armor
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=58.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Gargish Armor
+DESCRIPTION=Agapite Gargish Platemail Kilt
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=9
+TAG.ResCold=7
+TAG.ResPoison=8
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_gargish_leggings_agapite]
+ID=030d
+NAME=Agapite Gargish Platemail Leggings
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=68.8 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Gargish Armor
+DESCRIPTION=Agapite Gargish Platemail Leggings
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=10
+TAG.ResFire=9
+TAG.ResCold=7
+TAG.ResPoison=8
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_bascinet_agapite]
+ID=0140c
+NAME=Agapite bascinet
+TYPE=t_armor
+RESOURCES=15 i_ingot_agapite
+SKILLMAKE=8.3 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite bascinet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=9
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_helm_close_agapite]
+ID=01408
+NAME=Agapite close helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_agapite
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite close helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=6
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_helm_open_agapite]
+ID=0140a
+NAME=Agapite helmet
+TYPE=t_armor
+RESOURCES=15 i_ingot_agapite
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=7
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_helm_norse_agapite]
+ID=0140e
+NAME=Agapite norse helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_agapite
+SKILLMAKE=37.9 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite norse helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_helm_agapite]
+ID=01412
+NAME=Agapite plate helm
+TYPE=t_armor
+RESOURCES=15 i_ingot_agapite
+SKILLMAKE=62.6 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite plate helm
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=5
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_chainmail_hatsuburi_agapite]
+ID=02774
+NAME=Agapite chainmail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite chainmail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_hatsuburi_agapite]
+ID=02775
+NAME=Agapite platemail hatsuburi
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite platemail hatsuburi
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=7
+TAG.ResFire=6
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_plate_jingasa_heavy_agapite]
+ID=02777
+NAME=Agapite heavy platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite heavy platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_plate_jingasa_light_agapite]
+ID=02781
+NAME=Agapite light platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite light platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_plate_jingasa_small_agapite]
+ID=02784
+NAME=Agapite small platemail jingasa
+TYPE=t_armor
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite small platemail jingasa
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=9
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_kabuto_decorative_agapite]
+ID=02778
+NAME=Agapite decorative platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite decorative platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_kabuto_battle_agapite]
+ID=02785
+NAME=Agapite platemail battle kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite platemail battle kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_platemail_kabuto_agapite]
+ID=02789
+NAME=Agapite standard platemail kabuto
+TYPE=t_armor
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=90.0 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite standard platemail kabuto
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=8
+TAG.ResFire=5
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_circlet_agapite]
+ID=02b6e
+NAME=Agapite circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_agapite
+SKILLMAKE=62.1 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite circlet
+TAG.ResPhysical=3
+TAG.ResFire=8
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_circlet_royal_agapite]
+ID=02b6f
+NAME=Agapite royal circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_agapite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite royal circlet
+TAG.ResPhysical=3
+TAG.ResFire=8
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_circlet_gemmed_agapite]
+ID=02b70
+NAME=Agapite gemmed circlet
+TYPE=t_armor
+RESOURCES=6 i_ingot_agapite, 1 i_gem_amethyst, 1 i_gem_tourmaline, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Helmets
+DESCRIPTION=Agapite gemmed circlet
+TAG.ResPhysical=3
+TAG.ResFire=8
+TAG.ResCold=4
+TAG.ResPoison=4
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_buckler_agapite]
+ID=01b73
+NAME=Agapite buckler 
+TYPE=t_shield
+RESOURCES=6 i_ingot_agapite
+SKILLMAKE=0.1 Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite buckler 
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_round_bronze_agapite]
+ID=01b72
+NAME=Agapite bronze shield
+TYPE=t_shield
+RESOURCES=10 i_ingot_agapite
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=12.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite bronze shield
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_heater_agapite]
+ID=01b76
+NAME=Agapite heater shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite heater shield
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_round_metal_agapite]
+ID=01b7b
+NAME=Agapite metal shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=30.0 Blacksmithing
+WEIGHT=11.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite metal shield
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_kite_metal_agapite]
+ID=01b74
+NAME=Agapite kite shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_agapite
+SKILLMAKE=44.6 Blacksmithing
+WEIGHT=14.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite kite shield
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_kite_wood_agapite]
+ID=01b78
+NAME=Agapite kite shield
+TYPE=t_shield
+RESOURCES=8 i_ingot_agapite, 4 i_log
+SKILLMAKE=12.6 Blacksmithing
+WEIGHT=9.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite kite shield
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_chaos_agapite]
+ID=01bc3
+NAME=Agapite Chaos shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite Chaos shield
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_order_agapite]
+ID=01bc4
+NAME=Agapite Order shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite Order shield
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_plate_small_agapite]
+ID=04202
+NAME=Agapite Small Plate Shield
+TYPE=t_shield
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite Small Plate Shield
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=3
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_kite_gargish_agapite]
+ID=04201
+NAME=Agapite Gargish Kite Shield
+TYPE=t_shield
+RESOURCES=16 i_ingot_agapite
+SKILLMAKE=4.6 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite Gargish Kite Shield
+TAG.ResPhysical=2
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=3
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_plate_medium_agapite]
+ID=04203
+NAME=Agapite Medium Plate Shield
+TYPE=t_shield
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=Blacksmithing
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite Medium Plate Shield
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_plate_large_agapite]
+ID=04204
+NAME=Agapite Large Plate Shield
+TYPE=t_shield
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite Large Plate Shield
+TAG.ResPhysical=2
+TAG.ResFire=4
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_chaos_gargish_agapite]
+ID=04228
+NAME=Agapite Gargish Chaos Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite Gargish Chaos Shield
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shield_order_gargish_agapite]
+ID=0422a
+NAME=Agapite Gargish Order Shield
+TYPE=t_shield
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=85.0 Blacksmithing
+WEIGHT=7.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=Agapite Shields
+DESCRIPTION=Agapite Gargish Order Shield
+TAG.ResPhysical=3
+TAG.ResFire=3
+TAG.ResCold=2
+TAG.ResPoison=2
+TAG.ResEnergy=2
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_bone_harvester_agapite]
+ID=026bb
+NAME=Agapite bone harvester
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_agapite
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=3.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite bone harvester
+DESCRIPTION=Agapite bone harvester
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_sword_broad_agapite]
+ID=0f5e
+NAME=Agapite broadsword
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_agapite
+SKILLMAKE=35.4 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite broadsword
+DESCRIPTION=Agapite broadsword
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_crescent_blade_agapite]
+ID=026c1
+NAME=Agapite crescent blade
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite crescent blade
+DESCRIPTION=Agapite crescent blade
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_cutlass_agapite]
+ID=01440
+NAME=Agapite cutlass
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_agapite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite cutlass
+DESCRIPTION=Agapite cutlass
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_dagger_agapite]
+ID=0f51
+NAME=Agapite dagger
+TYPE=t_weapon_fence
+RESOURCES=3 i_ingot_agapite
+SKILLMAKE=Blacksmithing
+WEIGHT=1.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite dagger
+DESCRIPTION=Agapite dagger
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_katana_agapite]
+ID=013fe
+NAME=Agapite katana
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_agapite
+SKILLMAKE=44.1 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite katana
+DESCRIPTION=Agapite katana
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_kryss_agapite]
+ID=01400
+NAME=Agapite kryss
+TYPE=t_weapon_fence
+RESOURCES=8 i_ingot_agapite
+SKILLMAKE=36.7 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite kryss
+DESCRIPTION=Agapite kryss
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_sword_long_agapite]
+ID=0f60
+NAME=Agapite longsword
+TYPE=t_weapon_sword
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite longsword
+DESCRIPTION=Agapite longsword
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_scimitar_agapite]
+ID=013b5
+NAME=Agapite scimitar
+TYPE=t_weapon_sword
+RESOURCES=10 i_ingot_agapite
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite scimitar
+DESCRIPTION=Agapite scimitar
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_sword_viking_agapite]
+ID=013b9
+NAME=Agapite viking sword
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=24.3 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite viking sword
+DESCRIPTION=Agapite viking sword
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_no_dachi_agapite]
+ID=027a2
+NAME=Agapite no-dachi
+TYPE=t_weapon_sword
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite no-dachi
+DESCRIPTION=Agapite no-dachi
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_wakizashi_agapite]
+ID=027a4
+NAME=Agapite wakizashi
+TYPE=t_weapon_sword
+RESOURCES=8 i_ingot_agapite
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite wakizashi
+DESCRIPTION=Agapite wakizashi
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_lajatang_agapite]
+ID=027a7
+NAME=Agapite lajatang
+TYPE=t_weapon_fence
+RESOURCES=25 i_ingot_agapite
+SKILLMAKE=80.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite lajatang
+DESCRIPTION=Agapite lajatang
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_daisho_agapite]
+ID=027a9
+NAME=Agapite daisho
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite
+SKILLMAKE=60.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite daisho
+DESCRIPTION=Agapite daisho
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_tekagi_agapite]
+ID=027ab
+NAME=Agapite tekagi
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=55.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite tekagi
+DESCRIPTION=Agapite tekagi
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_shuriken_agapite]
+ID=027ac
+NAME=Agapite shuriken
+TYPE=t_ninja_shuriken
+RESOURCES=5 i_ingot_agapite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=0.1
+CATEGORY=0 - Colored
+SUBSECTION=Agapite 0
+DESCRIPTION=Agapite shuriken
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=0979
+ 
+[ITEMDEF i_kama_agapite]
+ID=027ad
+NAME=Agapite kama
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite kama
+DESCRIPTION=Agapite kama
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_sai_agapite]
+ID=027af
+NAME=Agapite sai
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=50.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite sai
+DESCRIPTION=Agapite sai
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_radiant_scimitar_agapite]
+ID=02d27
+NAME=Agapite radiant scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite radiant scimitar
+DESCRIPTION=Agapite radiant scimitar
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_war_cleaver_agapite]
+ID=02d23
+NAME=Agapite war cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite war cleaver
+DESCRIPTION=Agapite war cleaver
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_elven_spellblade_agapite]
+ID=02d20
+NAME=Agapite elven spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite elven spellblade
+DESCRIPTION=Agapite elven spellblade
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_assassin_spike_agapite]
+ID=02d21
+NAME=Agapite assassin spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_agapite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite assassin spike
+DESCRIPTION=Agapite assassin spike
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_leafblade_agapite]
+ID=02d22
+NAME=Agapite leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite leafblade
+DESCRIPTION=Agapite leafblade
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_rune_blade_agapite]
+ID=02d26
+NAME=Agapite rune blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite rune blade
+DESCRIPTION=Agapite rune blade
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_elven_machete_agapite]
+ID=02d29
+NAME=Agapite elven machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite elven machete
+DESCRIPTION=Agapite elven machete
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_true_spellblade_agapite]
+ID=02d20
+NAME=Agapite True Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_agapite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite elven spellblade
+DESCRIPTION=Agapite True Spellblade
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_icy_spellblade_agapite]
+ID=02d20
+NAME=Agapite Icy Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_agapite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite elven spellblade
+DESCRIPTION=Agapite Icy Spellblade
+TAG.DamCold=30
+TAG.DamEnergy=20
+TAG.ResCold=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_fiery_spellblade_agapite]
+ID=02d20
+NAME=Agapite Fiery Spellblade
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_agapite, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite elven spellblade
+DESCRIPTION=Agapite Fiery Spellblade
+TAG.DamCold=30
+TAG.DamEnergy=20
+TAG.ResFire=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_spellblade_defense_agapite]
+ID=02d20
+NAME=Agapite Spellblade of Defense
+TYPE=t_weapon_fence
+RESOURCES=14 i_ingot_agapite, 1 i_gem_white_pearl
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite elven spellblade
+DESCRIPTION=Agapite Spellblade of Defense
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_true_assassin_spike_agapite]
+ID=02d21
+NAME=Agapite True Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_agapite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite assassin spike
+DESCRIPTION=Agapite True Assassin Spike
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_charged_assassin_spike_agapite]
+ID=02d21
+NAME=Agapite Charged Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_agapite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite assassin spike
+DESCRIPTION=Agapite Charged Assassin Spike
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_magekiller_assassin_spike_agapite]
+ID=02d21
+NAME=Agapite Magekiller Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_agapite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite assassin spike
+DESCRIPTION=Agapite Magekiller Assassin Spike
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_wounding_assassin_spike_agapite]
+ID=02d21
+NAME=Agapite Wounding Assassin Spike
+TYPE=t_weapon_fence
+RESOURCES=9 i_ingot_agapite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite assassin spike
+DESCRIPTION=Agapite Wounding Assassin Spike
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_true_leafblade_agapite]
+ID=02d22
+NAME=Agapite True Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite leafblade
+DESCRIPTION=Agapite True Leafblade
+TAG.DamCold=30
+TAG.DamEnergy=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_luckblade_agapite]
+ID=02d22
+NAME=Agapite Luckblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite, 1 i_gem_white_pearl
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite leafblade
+DESCRIPTION=Agapite Luckblade
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_magekiller_leafblade_agapite]
+ID=02d22
+NAME=Agapite Magekiller Leafblade
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite leafblade
+DESCRIPTION=Agapite Magekiller Leafblade
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_leafblade_ease_agapite]
+ID=02d22
+NAME=Agapite Leafblade of Ease
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite leafblade
+DESCRIPTION=Agapite Leafblade of Ease
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_knight_war_cleaver_agapite]
+ID=02d23
+NAME=Agapite Knight's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_agapite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite war cleaver
+DESCRIPTION=Agapite Knight's War Cleaver
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_butcher_war_cleaver_agapite]
+ID=02d23
+NAME=Agapite Butcher's War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_agapite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite war cleaver
+DESCRIPTION=Agapite Butcher's War Cleaver
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_serrated_war_cleaver_agapite]
+ID=02d23
+NAME=Agapite Serrated War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_agapite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite war cleaver
+DESCRIPTION=Agapite Serrated War Cleaver
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_true_war_cleaver_agapite]
+ID=02d23
+NAME=Agapite True War Cleaver
+TYPE=t_weapon_fence
+RESOURCES=18 i_ingot_agapite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite war cleaver
+DESCRIPTION=Agapite True War Cleaver
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_diseased_machete_agapite]
+ID=02d29
+NAME=Agapite Diseased Machete
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_agapite, 1 i_ingredient_blight
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite elven machete
+DESCRIPTION=Agapite Diseased Machete
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_runesabre_agapite]
+ID=02d26
+NAME=Agapite Runesabre
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite rune blade
+DESCRIPTION=Agapite Runesabre
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_mage_rune_blade_agapite]
+ID=02d26
+NAME=Agapite Mage's Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite rune blade
+DESCRIPTION=Agapite Mage's Rune Blade
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_rune_blade_knowledge_agapite]
+ID=02d26
+NAME=Agapite Rune Blade of Knowledge
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite rune blade
+DESCRIPTION=Agapite Rune Blade of Knowledge
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_corrupted_rune_blade_agapite]
+ID=02d26
+NAME=Agapite Corruped Rune Blade
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite, 1 i_ingredient_corruption
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite rune blade
+DESCRIPTION=Agapite Corruped Rune Blade
+TAG.DamCold=30
+TAG.DamEnergy=20
+TAG.ResPhysical=-5
+TAG.ResPoison=12
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_true_radiant_scimitar_agapite]
+ID=02d27
+NAME=Agapite True Radiant Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite radiant scimitar
+DESCRIPTION=Agapite True Radiant Scimitar
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_darkglow_scimitar_agapite]
+ID=02d27
+NAME=Agapite Darkglow Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite radiant scimitar
+DESCRIPTION=Agapite Darkglow Scimitar
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_icy_scimitar_agapite]
+ID=02d27
+NAME=Agapite Icy Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite radiant scimitar
+DESCRIPTION=Agapite Icy Scimitar
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_twinkling_scimitar_agapite]
+ID=02d27
+NAME=Agapite Twinkling Scimitar
+TYPE=t_weapon_sword
+RESOURCES=15 i_ingot_agapite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite radiant scimitar
+DESCRIPTION=Agapite Twinkling Scimitar
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_axe_agapite]
+ID=0f49
+NAME=Agapite axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite axe
+DESCRIPTION=Agapite axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_axe_battle_agapite]
+ID=0f47
+NAME=Agapite battle axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=30.5 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite battle axe
+DESCRIPTION=Agapite battle axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_axe_double_agapite]
+ID=0f4b
+NAME=Agapite double axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=29.3 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite double axe
+DESCRIPTION=Agapite double axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_axe_exec_agapite]
+ID=0f45
+NAME=Agapite executioner's axe
+TYPE=t_weapon_axe
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite executioner's axe
+DESCRIPTION=Agapite executioner's axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_axe_battle_large_agapite]
+ID=013fa
+NAME=Agapite large battle axe
+TYPE=t_weapon_axe
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite large battle axe
+DESCRIPTION=Agapite large battle axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_axe_two_hand_agapite]
+ID=01442
+NAME=Agapite two handed axe
+TYPE=t_weapon_axe
+RESOURCES=16 i_ingot_agapite
+SKILLMAKE=33.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite two handed axe
+DESCRIPTION=Agapite two handed axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_axe_war_agapite]
+ID=013af
+NAME=Agapite war axe
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_agapite
+SKILLMAKE=39.1 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite war axe
+DESCRIPTION=Agapite war axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_ornate_axe_agapite]
+ID=02d28
+NAME=Agapite ornate axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite ornate axe
+DESCRIPTION=Agapite ornate axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_guardian_axe_agapite]
+ID=02d28
+NAME=Agapite Guardian Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_agapite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite ornate axe
+DESCRIPTION=Agapite Guardian Axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_singing_axe_agapite]
+ID=02d28
+NAME=Agapite Singing Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_agapite, 1 i_gem_brilliant_amber
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite ornate axe
+DESCRIPTION=Agapite Singing Axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_thundering_axe_agapite]
+ID=02d28
+NAME=Agapite Thundering Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_agapite, 1 i_gem_ecru_citrine
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite ornate axe
+DESCRIPTION=Agapite Thundering Axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_heavy_ornate_axe_agapite]
+ID=02d28
+NAME=Agapite Heavy Ornate Axe
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_agapite, 1 i_gem_turquoise
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite ornate axe
+DESCRIPTION=Agapite Heavy Ornate Axe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_bardiche_agapite]
+ID=0f4d
+NAME=Agapite bardiche
+TYPE=t_weapon_axe
+RESOURCES=18 i_ingot_agapite
+SKILLMAKE=31.7 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite bardiche
+DESCRIPTION=Agapite bardiche
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_bladed_staff_agapite]
+ID=026bd
+NAME=Agapite bladed staff
+TYPE=t_weapon_mace_sharp
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=40.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite bladed staff
+DESCRIPTION=Agapite bladed staff
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_double_bladed_staff_agapite]
+ID=026bf
+NAME=Agapite double bladed staff
+TYPE=t_weapon_fence
+RESOURCES=16 i_ingot_agapite
+SKILLMAKE=45.0 Blacksmithing
+WEIGHT=2.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite double bladed staff
+DESCRIPTION=Agapite double bladed staff
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_lance_agapite]
+ID=026c0
+NAME=Agapite lance
+TYPE=t_weapon_fence
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=48.0 Blacksmithing
+WEIGHT=12.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite lance
+DESCRIPTION=Agapite lance
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_pike_agapite]
+ID=026be
+NAME=Agapite pike
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=47.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite pike
+DESCRIPTION=Agapite pike
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_spear_short_agapite]
+ID=01402
+NAME=Agapite short spear
+TYPE=t_weapon_fence
+RESOURCES=6 i_ingot_agapite
+SKILLMAKE=45.3 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite short spear
+DESCRIPTION=Agapite short spear
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_scythe_agapite]
+ID=026ba
+NAME=Agapite scythe
+TYPE=t_weapon_sword
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=39.0 Blacksmithing
+WEIGHT=5.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite scythe
+DESCRIPTION=Agapite scythe
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_spear_agapite]
+ID=0f62
+NAME=Agapite spear
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=49.0 Blacksmithing
+WEIGHT=7.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite spear
+DESCRIPTION=Agapite spear
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_war_fork_agapite]
+ID=01404
+NAME=Agapite war fork
+TYPE=t_weapon_fence
+RESOURCES=12 i_ingot_agapite
+SKILLMAKE=42.9 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite war fork
+DESCRIPTION=Agapite war fork
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_hammer_pick_agapite]
+ID=0143c
+NAME=Agapite hammer pick
+TYPE=t_weapon_mace_pick
+RESOURCES=16 i_ingot_agapite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=9.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite hammer pick
+DESCRIPTION=Agapite hammer pick
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_mace_agapite]
+ID=0f5c
+NAME=Agapite mace
+TYPE=t_weapon_mace_smith
+RESOURCES=6 i_ingot_agapite
+SKILLMAKE=14.5 Blacksmithing
+WEIGHT=14.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite mace
+DESCRIPTION=Agapite mace
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_maul_agapite]
+ID=0143a
+NAME=Agapite maul
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_agapite
+SKILLMAKE=19.4 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite maul
+DESCRIPTION=Agapite maul
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_scepter_agapite]
+ID=026bc
+NAME=Agapite scepter
+TYPE=t_weapon_mace_smith
+RESOURCES=10 i_ingot_agapite
+SKILLMAKE=21.4 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite scepter
+DESCRIPTION=Agapite scepter
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_mace_war_agapite]
+ID=01406
+NAME=Agapite war mace
+TYPE=t_weapon_mace_smith
+RESOURCES=14 i_ingot_agapite
+SKILLMAKE=28.0 Blacksmithing
+WEIGHT=17.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite war mace
+DESCRIPTION=Agapite war mace
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_hammer_war_agapite]
+ID=01438
+NAME=Agapite war hammer
+TYPE=t_weapon_mace_smith
+RESOURCES=16 i_ingot_agapite
+SKILLMAKE=34.2 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite war hammer
+DESCRIPTION=Agapite war hammer
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_tessen_agapite]
+ID=027a3
+NAME=Agapite tessen
+TYPE=t_weapon_mace_sharp
+RESOURCES=16 i_ingot_agapite, 10 i_cloth
+SKILLMAKE=85.0 Blacksmithing, 50.0 Tailoring
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite tessen
+DESCRIPTION=Agapite tessen
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_diamond_mace_agapite]
+ID=02d24
+NAME=Agapite diamond mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_agapite
+SKILLMAKE=70.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite diamond mace
+DESCRIPTION=Agapite diamond mace
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_ruby_mace_agapite]
+ID=02d24
+NAME=Agapite Ruby Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_agapite, 1 i_gem_fire_ruby
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite diamond mace
+DESCRIPTION=Agapite Ruby Mace
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_emerald_mace_agapite]
+ID=02d24
+NAME=Agapite Emerald Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_agapite, 1 i_gem_perfect_emerald
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite diamond mace
+DESCRIPTION=Agapite Emerald Mace
+TAG.DamCold=30
+TAG.DamEnergy=20
+TAG.ResPoison=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_sapphire_mace_agapite]
+ID=02d24
+NAME=Agapite Sapphire Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_agapite, 1 i_gem_dark_sapphire
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite diamond mace
+DESCRIPTION=Agapite Sapphire Mace
+TAG.DamCold=30
+TAG.DamEnergy=20
+TAG.ResEnergy=5
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_silver_etched_mace_agapite]
+ID=02d24
+NAME=Agapite Silver-Etched Mace
+TYPE=t_weapon_mace_sharp
+RESOURCES=20 i_ingot_agapite, 1 i_gem_blue_diamond
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=10.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite diamond mace
+DESCRIPTION=Agapite Silver-Etched Mace
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_boomerang_agapite]
+ID=08ff
+NAME=Agapite boomerang
+TYPE=t_weapon_bow
+RESOURCES=5 i_ingot_agapite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=4.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite boomerang
+DESCRIPTION=Agapite boomerang
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_cyclone_agapite]
+ID=0901
+NAME=Agapite cyclone
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_agapite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=6.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite cyclone
+DESCRIPTION=Agapite cyclone
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 
+[ITEMDEF i_soul_glaive_agapite]
+ID=090a
+NAME=Agapite soul glaive
+TYPE=t_weapon_bow
+RESOURCES=9 i_ingot_agapite
+SKILLMAKE=75.0 Blacksmithing
+WEIGHT=8.0
+TEVENTS=t_iprop
+CATEGORY=Provisions - Weapons - Colored
+SUBSECTION=Agapite soul glaive
+DESCRIPTION=Agapite soul glaive
+TAG.DamCold=30
+TAG.DamEnergy=20
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0979
+ 

@@ -1,0 +1,1201 @@
+[ITEMDEF i_bone_arms_Barbed]
+ID=0144e
+NAME=BARBED bone arms
+TYPE=t_armor_leather
+RESOURCES=, 4  i_reag_bone
+SKILLMAKE=92.0 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED bone Armor
+DESCRIPTION=BARBED bone arms
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_bone_chest_Barbed]
+ID=0144f
+NAME=BARBED bone armor
+TYPE=t_armor_leather
+RESOURCES=, 10  i_reag_bone
+SKILLMAKE=96.0 Tailoring, 1 t_sewing_kit
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED bone Armor
+DESCRIPTION=BARBED bone armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=25
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_bone_gloves_Barbed]
+ID=01450
+NAME=BARBED bone gloves
+TYPE=t_armor_leather
+RESOURCES=, 2  i_reag_bone
+SKILLMAKE=89.0 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED bone Armor
+DESCRIPTION=BARBED bone gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=5
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_bone_helmet_Barbed]
+ID=01451
+NAME=BARBED bone helmet
+TYPE=t_armor_leather
+RESOURCES=, 2  i_reag_bone
+SKILLMAKE=85.0 Tailoring, 1 t_sewing_kit
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED Helmets
+DESCRIPTION=BARBED bone helmet
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=5
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_armor_female_leather_Barbed]
+ID=01c06
+NAME=BARBED female leather armor
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_barbed
+SKILLMAKE=62.2 Tailoring
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED female Armor
+DESCRIPTION=BARBED female leather armor
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_armor_female_bustier_Barbed]
+ID=01c0a
+NAME=BARBED leather bustier
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_barbed
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Armor
+DESCRIPTION=BARBED leather bustier
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_armor_female_shorts_Barbed]
+ID=01c00
+NAME=BARBED leather shorts
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_barbed
+SKILLMAKE=62.2 Tailoring
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Armor
+DESCRIPTION=BARBED leather shorts
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_armor_female_skirt_Barbed]
+ID=01c08
+NAME=BARBED leather skirt
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_barbed
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Armor
+DESCRIPTION=BARBED leather skirt
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_armor_female_studded_Barbed]
+ID=01c02
+NAME=BARBED studded armor
+TYPE=t_armor_leather
+RESOURCES=1 i_leather_barbed
+SKILLMAKE=87.1 Tailoring
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Armor
+DESCRIPTION=BARBED studded armor
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_armor_female_bustier_studded_Barbed]
+ID=01c0c
+NAME=BARBED studded bustier
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_barbed
+SKILLMAKE=82.9 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Armor
+DESCRIPTION=BARBED studded bustier
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gargoyle_arms_1_Barbed]
+ID=0301
+NAME=BARBED gargish leather arms
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_barbed
+SKILLMAKE=53.9 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED gargish Armor
+DESCRIPTION=BARBED gargish leather arms
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=9
+TAG.ResPoison=9
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gargoyle_arms_2_Barbed]
+ID=0302
+NAME=BARBED gargish leather arms
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_barbed
+SKILLMAKE=53.9 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED gargish Armor
+DESCRIPTION=BARBED gargish leather arms
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=9
+TAG.ResPoison=9
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gargoyle_chest_1_Barbed]
+ID=0304
+NAME=BARBED gargish leather chest
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_barbed
+SKILLMAKE=70.5 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED gargish Armor
+DESCRIPTION=BARBED gargish leather chest
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=9
+TAG.ResPoison=9
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gargoyle_chest_2_Barbed]
+ID=0303
+NAME=BARBED gargish leather chest
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_barbed
+SKILLMAKE=70.5 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED gargish Armor
+DESCRIPTION=BARBED gargish leather chest
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=9
+TAG.ResPoison=9
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gargoyle_kilt_1_Barbed]
+ID=0311
+NAME=BARBED gargish leather kilt
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_barbed
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED gargish Armor
+DESCRIPTION=BARBED gargish leather kilt
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=9
+TAG.ResPoison=9
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gargoyle_kilt_2_Barbed]
+ID=0310
+NAME=BARBED gargish leather kilt
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_barbed
+SKILLMAKE=58.0 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED gargish Armor
+DESCRIPTION=BARBED gargish leather kilt
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=9
+TAG.ResPoison=9
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gargoyle_leggings_1_Barbed]
+ID=0305
+NAME=BARBED gargish leather leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_barbed
+SKILLMAKE=66.3 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED gargish Armor
+DESCRIPTION=BARBED gargish leather leggings
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=9
+TAG.ResPoison=9
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gargoyle_leggings_2_Barbed]
+ID=0306
+NAME=BARBED gargish leather leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_barbed
+SKILLMAKE=66.3 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED gargish Armor
+DESCRIPTION=BARBED gargish leather leggings
+TAG.ResPhysical=7
+TAG.ResFire=7
+TAG.ResCold=9
+TAG.ResPoison=9
+TAG.ResEnergy=10
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_gargish_leather_wings_Barbed]
+ID=0457e
+NAME=BARBED gargish leather wing armor
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=65.0 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED gargish Armor
+DESCRIPTION=BARBED gargish leather wing armor
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leaf_arms_Barbed]
+ID=02fc8
+NAME=BARBED leaf arms
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=60.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leaf Armor
+DESCRIPTION=BARBED leaf arms
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=7
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leaf_gloves_Barbed]
+ID=02fc6
+NAME=BARBED leaf gloves
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_barbed
+SKILLMAKE=60.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leaf Armor
+DESCRIPTION=BARBED leaf gloves
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=7
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leaf_gorget_Barbed]
+ID=02fc7
+NAME=BARBED leaf gorget
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=65.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leaf Armor
+DESCRIPTION=BARBED leaf gorget
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=7
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leaf_leggings_Barbed]
+ID=02fc9
+NAME=BARBED leaf leggings
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_barbed
+SKILLMAKE=75.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leaf Armor
+DESCRIPTION=BARBED leaf leggings
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=7
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leaf_tonlet_Barbed]
+ID=02fca
+NAME=BARBED leaf tonlet
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=70.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leaf Armor
+DESCRIPTION=BARBED leaf tonlet
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=7
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leaf_tunic_Barbed]
+ID=02fc5
+NAME=BARBED leaf tunic
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_barbed
+SKILLMAKE=75.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leaf Armor
+DESCRIPTION=BARBED leaf tunic
+TAG.ResPhysical=4
+TAG.ResFire=4
+TAG.ResCold=4
+TAG.ResPoison=7
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_cap_Barbed]
+ID=01db9
+NAME=BARBED leather cap
+TYPE=t_armor_leather
+RESOURCES=2 i_leather_barbed
+SKILLMAKE=6.2 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED Helmets
+DESCRIPTION=BARBED leather cap
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_do_Barbed]
+ID=0277b
+NAME=BARBED leather do
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=75.0 Tailoring
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Samurai Armor
+DESCRIPTION=BARBED leather do
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gloves_Barbed]
+ID=013c6
+NAME=BARBED leather gloves
+TYPE=t_armor_leather
+RESOURCES=3 i_leather_barbed
+SKILLMAKE=51.8 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Armor
+DESCRIPTION=BARBED leather gloves
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_gorget_Barbed]
+ID=013c7
+NAME=BARBED leather gorget
+TYPE=t_armor_leather
+RESOURCES=4 i_leather_barbed
+SKILLMAKE=53.9 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Armor
+DESCRIPTION=BARBED leather gorget
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_haidate_Barbed]
+ID=0278a
+NAME=BARBED leather haidate
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=68.0 Tailoring
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Samurai Armor
+DESCRIPTION=BARBED leather haidate
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_hiro_sode_Barbed]
+ID=0277e
+NAME=BARBED leather hiro sode
+TYPE=t_armor_leather
+RESOURCES=5 i_leather_barbed
+SKILLMAKE=55.0 Tailoring
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Samurai Armor
+DESCRIPTION=BARBED leather hiro sode
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_jingasa_Barbed]
+ID=02776
+NAME=BARBED leather jingasa
+TYPE=t_armor_leather
+RESOURCES=4 i_leather_barbed
+SKILLMAKE=45.0 Tailoring
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED Helmets
+DESCRIPTION=BARBED leather jingasa
+TAG.ResPhysical=6
+TAG.ResFire=4
+TAG.ResCold=5
+TAG.ResPoison=5
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_leggings_Barbed]
+ID=013cb
+NAME=BARBED leather leggings
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_barbed
+SKILLMAKE=66.3 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Armor
+DESCRIPTION=BARBED leather leggings
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_mempo_Barbed]
+ID=0277a
+NAME=BARBED leather mempo
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_barbed
+SKILLMAKE=80.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Samurai Armor
+DESCRIPTION=BARBED leather mempo
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_ninja_belt_Barbed]
+ID=02790
+NAME=BARBED leather ninja belt
+TYPE=t_armor_leather
+RESOURCES=5 i_leather_barbed
+SKILLMAKE=50.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Samurai Armor
+DESCRIPTION=BARBED leather ninja belt
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_ninja_hood_Barbed]
+ID=0278e
+NAME=BARBED leather ninja hood
+TYPE=t_armor_leather
+RESOURCES=14 i_leather_barbed
+SKILLMAKE=90.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED Helmets
+DESCRIPTION=BARBED leather ninja hood
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_ninja_jacket_Barbed]
+ID=02793
+NAME=BARBED leather ninja jacket
+TYPE=t_armor_leather
+RESOURCES=13 i_leather_barbed
+SKILLMAKE=85.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Samurai Armor
+DESCRIPTION=BARBED leather ninja jacket
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_leather_ninja_mitts_Barbed]
+ID=02792
+NAME=BARBED leather ninja mitts
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=65.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED leather Samurai Armor
+DESCRIPTION=BARBED leather ninja mitts
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_sash_Barbed]
+ID=01541
+NAME=BARBED body sash
+TYPE=t_clothing
+RESOURCES=4 i_cloth
+SKILLMAKE=4.1 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED body Armor
+DESCRIPTION=BARBED body sash
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_apron_full_Barbed]
+ID=0153d
+NAME=BARBED full apron
+TYPE=t_clothing
+RESOURCES=10 i_cloth
+SKILLMAKE=29.0 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED full Armor
+DESCRIPTION=BARBED full apron
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_gargish_apron_Barbed]
+ID=050d8
+NAME=BARBED Gargish half apron
+TYPE=t_clothing
+RESOURCES=, 6  i_cloth
+SKILLMAKE=22.7 Tailoring, 1 t_sewing_kit
+WEIGHT=6.1
+TEVENTS=t_iprop
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED Gargish Armor
+DESCRIPTION=BARBED Gargish half apron
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_gargish_sash_Barbed]
+ID=046b4
+NAME=BARBED Gargish sash
+TYPE=t_clothing
+RESOURCES=, 4  i_cloth
+SKILLMAKE=4.5 Tailoring, 1 t_sewing_kit
+WEIGHT=4.1
+TEVENTS=t_iprop
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED Gargish Armor
+DESCRIPTION=BARBED Gargish sash
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_apron_half_Barbed]
+ID=0153b
+NAME=BARBED half apron
+TYPE=t_clothing
+RESOURCES=6 i_cloth
+SKILLMAKE=20.7 Tailoring, 1 t_sewing_kit
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED half Armor
+DESCRIPTION=BARBED half apron
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_obi_Barbed]
+ID=027a0
+NAME=BARBED obi
+TYPE=t_clothing
+RESOURCES=6 i_cloth
+SKILLMAKE=20.0 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED obi Samurai Armor
+DESCRIPTION=BARBED obi
+TAG.ResPhysical=2
+TAG.ResFire=1
+TAG.ResCold=2
+TAG.ResPoison=3
+TAG.ResEnergy=4
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_hide_gloves_Barbed]
+ID=02b75
+NAME=BARBED hide gloves
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_barbed
+SKILLMAKE=75.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED hide Armor
+DESCRIPTION=BARBED hide gloves
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_hide_gorget_Barbed]
+ID=02b76
+NAME=BARBED hide gorget
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=90.0 Tailoring
+WEIGHT=3.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED hide Armor
+DESCRIPTION=BARBED hide gorget
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_hide_pants_Barbed]
+ID=02b78
+NAME=BARBED hide pants
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_barbed
+SKILLMAKE=92.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED hide Armor
+DESCRIPTION=BARBED hide pants
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_hide_pauldrons_Barbed]
+ID=02b77
+NAME=BARBED hide pauldrons
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=75.0 Tailoring
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED hide Armor
+DESCRIPTION=BARBED hide pauldrons
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_hide_tunic_Barbed]
+ID=02b74
+NAME=BARBED hide tunic
+TYPE=t_armor_leather
+RESOURCES=15 i_leather_barbed
+SKILLMAKE=85.0 Tailoring
+WEIGHT=6.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED hide Armor
+DESCRIPTION=BARBED hide tunic
+TAG.ResPhysical=5
+TAG.ResFire=4
+TAG.ResCold=6
+TAG.ResPoison=6
+TAG.ResEnergy=6
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_studded_do_Barbed]
+ID=0277c
+NAME=BARBED studded do
+TYPE=t_armor_leather
+RESOURCES=14 t_leather
+SKILLMAKE=95.0 Tailoring
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Samurai Armor
+DESCRIPTION=BARBED studded do
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_studded_gloves_Barbed]
+ID=013d5
+NAME=BARBED studded gloves
+TYPE=t_armor_leather
+RESOURCES=8 i_leather_barbed
+SKILLMAKE=82.9 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Armor
+DESCRIPTION=BARBED studded gloves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=2
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_studded_gorget_Barbed]
+ID=013d6
+NAME=BARBED studded gorget
+TYPE=t_armor_leather
+RESOURCES=6 i_leather_barbed
+SKILLMAKE=78.8 Tailoring, 1 t_sewing_kit
+WEIGHT=1.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Armor
+DESCRIPTION=BARBED studded gorget
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=2
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_studded_haidate_Barbed]
+ID=0278b
+NAME=BARBED studded haidate
+TYPE=t_armor_leather
+RESOURCES=14 t_leather
+SKILLMAKE=92.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Samurai Armor
+DESCRIPTION=BARBED studded haidate
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF 0_Barbed]
+ID=0
+NAME=0
+TYPE=0
+RESOURCES=00
+SKILLMAKE=0
+WEIGHT=0.0
+CATEGORY=0 - Colored
+SUBSECTION=BARBED 0
+DESCRIPTION=0
+ 
+ON=@Create
+HITPOINTS={-12 0}
+COLOR=0
+ 
+[ITEMDEF i_studded_leggings_Barbed]
+ID=013da
+NAME=BARBED studded leggings
+TYPE=t_armor_leather
+RESOURCES=12 i_leather_barbed
+SKILLMAKE=91.2 Tailoring, 1 t_sewing_kit
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Armor
+DESCRIPTION=BARBED studded leggings
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=6
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_studded_mempo_Barbed]
+ID=0279d
+NAME=BARBED studded mempo
+TYPE=t_armor_leather
+RESOURCES=8 t_leather
+SKILLMAKE=80.0 Tailoring
+WEIGHT=2.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Samurai Armor
+DESCRIPTION=BARBED studded mempo
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=7
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_studded_sleeves_Barbed]
+ID=013d4
+NAME=BARBED studded sleeves
+TYPE=t_armor_leather
+RESOURCES=10 i_leather_barbed
+SKILLMAKE=87.1 Tailoring, 1 t_sewing_kit
+WEIGHT=4.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Armor
+DESCRIPTION=BARBED studded sleeves
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=4
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_studded_suneate_Barbed]
+ID=02787
+NAME=BARBED studded suneate
+TYPE=t_armor_leather
+RESOURCES=14 t_leather
+SKILLMAKE=92.0 Tailoring
+WEIGHT=5.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Samurai Armor
+DESCRIPTION=BARBED studded suneate
+TAG.Penalty.Meditation=1
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
+[ITEMDEF i_studded_tunic_Barbed]
+ID=013db
+NAME=BARBED studded tunic
+TYPE=t_armor_leather
+RESOURCES=14 i_leather_barbed
+SKILLMAKE=94.0 Tailoring, 1 t_sewing_kit
+WEIGHT=8.0
+CATEGORY=Provisions - Armor - Colored
+SUBSECTION=BARBED studded Armor
+DESCRIPTION=BARBED studded tunic
+TAG.Penalty.Meditation=1
+TAG.Penalty.Stealth=10
+TAG.ResPhysical=4
+TAG.ResFire=5
+TAG.ResCold=5
+TAG.ResPoison=6
+TAG.ResEnergy=8
+ 
+ON=@Create
+HITPOINTS={36 48}
+COLOR=0851
+ 
